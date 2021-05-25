@@ -1,4 +1,4 @@
-# feelfree
+# feelfree ![[Build Status]](https://github.com/naschidaniel/feelfree/workflows/release/badge.svg)
 Visit us at [https://feelfree.tirol](https://feelfree.tirol).
 We are a flight school in Westendorf and offer tandem flights, paragliding training and equipment sales in Westendorf / Tirol.
 Come and share our passion with us!
