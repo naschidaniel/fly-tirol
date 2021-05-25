@@ -10,7 +10,7 @@ const routerBase =
 export default {
   ...routerBase,
   target: 'static',
-
+  ssr: false,
   head: {
     title: 'feelfree.tirol',
     htmlAttrs: {
