@@ -2,6 +2,9 @@
   "name": "feelfree",
   "version": "1.0.0",
   "private": true,
+  "description": "feel-free.tirol paragliding school Westendorf",
+  "author": "Daniel Naschberger",
+  "precommit": "npm run lint",
   "scripts": {
     "current-git-sha": "NUXT_ENV_CURRENT_GIT_SHA=`git rev-parse --short HEAD`",
     "dev": "npm run current-git-sha nuxt",
