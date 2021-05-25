@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /static
+Disallow: /dsvgo
+Disallow: /impressum
+
+Allow: /
+Allow: /media
+
+User-agent: MSNBot
+Crawl-delay: 16
+
+User-agent: bingbot
+Crawl-delay: 17
+
+User-agent: Slurp
+Crawl-delay: 18
+
+User-agent: Yahoo! Slurp
+Crawl-delay: 19
