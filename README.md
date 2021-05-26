@@ -10,7 +10,7 @@ Come and share our passion with us!
 $ npm install
 
 # serve with hot reload at localhost:3000
-$ npm run 
+$ npm run dev
 
 # lint project
 $ npm run lint

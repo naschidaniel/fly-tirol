@@ -6,13 +6,13 @@
   "author": "Daniel Naschberger",
   "precommit": "npm run lint",
   "scripts": {
-    "current-git-sha": "NUXT_ENV_CURRENT_GIT_SHA=`git rev-parse --short HEAD`",
-    "dev": "npm run current-git-sha nuxt",
-    "build": "npm run current-git-sha nuxt build",
-    "build:gh-pages": "NUXT_ENV_CURRENT_GIT_SHA=`git rev-parse --short HEAD` DEPLOY_ENV=GH_PAGES npm run build",
+    "current-git-sha": "set NUXT_ENV_CURRENT_GIT_SHA=`git rev-parse --short HEAD`",
+    "dev": "npm run current-git-sha && nuxt",
+    "build": "npm run current-git-sha && nuxt build",
+    "build:gh-pages": "npm run current-git-sha && set DEPLOY_ENV=GH_PAGES && npm run build",
     "start": "nuxt start",
     "generate": "npm run current-git-sha nuxt generate",
-    "generate:gh-pages": "NUXT_ENV_CURRENT_GIT_SHA=`git rev-parse --short HEAD` DEPLOY_ENV=GH_PAGES npm run generate",
+    "generate:gh-pages": "npm run current-git-sha && set DEPLOY_ENV=GH_PAGES && npm run generate",
     "lint:js": "eslint --fix  --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js"
   },
