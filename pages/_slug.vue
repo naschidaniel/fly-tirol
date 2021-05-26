@@ -1,8 +1,5 @@
 <template>
-  <nuxt-content
-    :document="doc"
-    class="flex-grow w-full p-6 text-gray-900 text-xl"
-  />
+  <nuxt-content :document="doc" />
 </template>
 
 <script>
