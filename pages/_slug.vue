@@ -1,12 +1,12 @@
 <template>
-  <nuxt-content :document="doc" />
+  <nuxt-content :document="page" />
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const doc = await $content(params.slug || 'index').fetch()
-    return { doc }
+    const page = await $content(params.slug).fetch()
+    return { page }
   },
 }
 </script>
