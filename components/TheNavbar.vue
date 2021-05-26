@@ -5,7 +5,9 @@
         <NuxtLink to="/">Logo</NuxtLink>
       </div>
       <ul class="flex flex-row">
-        <li class="pr-5"><NuxtLink to="/tandem">Tandemflüge</NuxtLink></li>
+        <li class="pr-5">
+          <NuxtLink to="/tandem">Tandemfliegen</NuxtLink>
+        </li>
         <li class="pr-5"><NuxtLink to="/ausbildung">Ausbildung</NuxtLink></li>
         <li class="pr-5"><NuxtLink to="/team">Team</NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
