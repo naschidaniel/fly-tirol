@@ -1,17 +1,22 @@
 <template>
   <div class="rounded-xl p-8 bg-blue-300 m-8">
-    <h3 class="text-lg font-semibold text-cyan-600">{{ title }}</h3>
+    <h3 class="text-lg font-semibold text-cyan-600">
+      {{ flight.title }}
+    </h3>
     <p class="font-medium ext-gray-500">
-      {{ description }}
+      {{ flight.description }}
     </p>
-    <span
-      ><NuxtLink :to="`/tandem/${slug}`">{{ price }}</NuxtLink></span
-    >
+    <p>
+      {{ flight.information }}
+    </p>
+    <span>
+      {{ flight.price }}
+    </span>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['title', 'description', 'slug', 'price'],
+  props: ['flight'],
 }
 </script>

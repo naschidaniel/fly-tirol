@@ -6,7 +6,7 @@
       </div>
       <ul class="flex flex-row">
         <li class="pr-5">
-          <NuxtLink to="/tandem">Tandemfliegen</NuxtLink>
+          <NuxtLink to="/tandemfliegen">Tandemfliegen</NuxtLink>
         </li>
         <li class="pr-5"><NuxtLink to="/ausbildung">Ausbildung</NuxtLink></li>
         <li class="pr-5"><NuxtLink to="/team">Team</NuxtLink></li>
