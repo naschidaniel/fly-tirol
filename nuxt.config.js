@@ -42,7 +42,9 @@ export default {
     interval: 500,
   },
 
-  content: {},
+  content: {
+    liveEdit: false,
+  },
 
   build: {},
 }
