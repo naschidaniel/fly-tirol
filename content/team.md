@@ -1,5 +1,8 @@
+---
+title: Feel Free Flugschule - Team
+description: Feel Free Flugschule - Team
+---
 # Team
-
 ## Sebastian Kahn
 Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot
 
