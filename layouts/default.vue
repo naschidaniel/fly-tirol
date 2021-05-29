@@ -1,12 +1,25 @@
 <template>
-  <div class="container mx-auto">
-    <div class="min-h-screen lg:max-w-8xl border-2">
-      <TheNavbar class="w-full p-6" />
-      <Nuxt class="flex-grow w-full p-6 text-gray-900 text-xl" />
-      <TheFooter class="border-0" />
+  <div>
+    <div class="flex min-h-screen flex-col">
+      <site-header class="p-6" />
+      <div class="flex-1 border">
+        <div class="mx-auto lg:max-w-7xl">
+          <Nuxt class="text-gray-900 text-xl" />
+        </div>
+      </div>
+      <TheFooter class="m-3" />
     </div>
   </div>
 </template>
+
+<script>
+const SiteHeader = () => import('~/components/global/SiteHeader')
+export default {
+  components: {
+    SiteHeader,
+  },
+}
+</script>
 
 <style>
 html {
