@@ -26,7 +26,7 @@ export default {
 
   css: [],
 
-  plugins: [],
+  plugins: ['~/plugins/formatters.js'],
 
   components: true,
 
