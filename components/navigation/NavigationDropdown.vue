@@ -4,7 +4,7 @@
     class="sm:hidden"
     @click="toggleDropdown()"
   >
-    <div class="px-2 pt-2 pb-3">
+    <div class="px-2 pt-2">
       <navigation-dropdown-link name="Home" to="/" />
       <navigation-dropdown-link name="Tandemfliegen" to="/tandemfliegen" />
       <navigation-dropdown-link name="Ausbildung" to="/ausbildung" />

@@ -9,7 +9,7 @@
         rounded-md
         text-base
         font-medium
-        text-gray-300
+        text-gray-500
         hover:text-white
         hover:bg-gray-700
         focus:outline-none

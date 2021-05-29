@@ -9,7 +9,7 @@
         text-sm
         font-medium
         leading-5
-        text-gray-300
+        text-gray-500
         hover:text-white
         hover:bg-gray-700
         focus:outline-none
