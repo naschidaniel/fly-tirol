@@ -7,15 +7,18 @@
           <Nuxt class="text-gray-900 text-xl" />
         </div>
       </div>
-      <TheFooter class="m-3" />
+      <site-footer class="m-3" />
     </div>
   </div>
 </template>
 
 <script>
-const SiteHeader = () => import('~/components/global/SiteHeader')
+import SiteFooter from '~/components/global/SiteFooter.vue'
+import SiteHeader from '~/components/global/SiteHeader.vue'
+
 export default {
   components: {
+    SiteFooter,
     SiteHeader,
   },
 }
