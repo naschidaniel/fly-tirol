@@ -9,10 +9,7 @@
       >
     </div>
     <div>Version: {{ NUXT_ENV_CURRENT_GIT_SHA }}</div>
-    <div>
-      Buildtime:
-      {{ NUXT_ENV_CURRENT_TIMESTAMP | formatDateTime }}
-    </div>
+    <div>Buildtime: {{ buildtime | formatDateTime }}</div>
   </div>
 </template>
 
@@ -25,7 +22,7 @@ export default {
   data() {
     return {
       NUXT_ENV_CURRENT_GIT_SHA: process.env.NUXT_ENV_CURRENT_GIT_SHA,
-      NUXT_ENV_CURRENT_TIMESTAMP: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
+      buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP * 1000,
     }
   },
 }
