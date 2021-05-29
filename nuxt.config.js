@@ -24,7 +24,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['bootstrap-icons/font/bootstrap-icons.css'],
+  css: [],
 
   plugins: [],
 
