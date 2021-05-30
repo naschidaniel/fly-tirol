@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Index</h1>
     <nuxt-content :document="index" />
   </div>
 </template>
