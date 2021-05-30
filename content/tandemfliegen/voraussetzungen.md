@@ -1,4 +1,4 @@
-# Voraussetzungen für einen Tandemflug:
+## Voraussetzungen für einen Tandemflug
 
 * Festes Schuhwerk
 * Sportliche und den Temperaturen und Wetter angepasste Kleidung
