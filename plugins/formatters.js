@@ -6,8 +6,6 @@ Vue.filter('formatDate', (date) => {
     month: '2-digit',
     day: '2-digit',
   })
-  console.log(dateFormat.format(date))
-
   return date === undefined ? '–' : dateFormat.format(date)
 })
 
