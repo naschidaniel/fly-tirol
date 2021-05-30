@@ -14,7 +14,7 @@
         :alt="name"
         :title="name"
       />
-      <div class="md:flex-1">
+      <div class="md:flex-1 md:ml-4">
         <p class="font-mono text-gray-600 text-lg md:text-xl">
           {{ position }}
         </p>
