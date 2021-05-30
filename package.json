@@ -12,7 +12,7 @@
     "dev": "npm run set-env-variables nuxt",
     "dev:windows": "npm run set-env-variables:windows && nuxt",
     "build": "npm run set-env-variables nuxt build",
-    "build:gh-pages": "npm run deploy-env:gh-pages npm run build",
+    "build:gh-pages": "npm run deploy-env:gh-pages && npm run build",
     "start": "nuxt start",
     "generate": "npm run set-env-variables nuxt generate",
     "generate:gh-pages": "npm run deploy-env:gh-pages npm run generate",
