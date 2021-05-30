@@ -1,9 +1,5 @@
 <template>
-  <div
-    :class="{ block: isOpen, hidden: !isOpen }"
-    class="sm:hidden"
-    @click="toggleDropdown()"
-  >
+  <div :class="{ block: isOpen, hidden: !isOpen }" @click="toggleDropdown()">
     <div class="px-2 pt-2">
       <navigation-dropdown-link name="Home" to="/" />
       <navigation-dropdown-link name="Tandemfliegen" to="/tandemfliegen" />

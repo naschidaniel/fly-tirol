@@ -8,18 +8,20 @@
               FeelFree.tirol
             </nuxt-link>
           </div>
-          <div class="hidden sm:block sm:ml-6">
-            <navigation-navbar class="ml-12" />
+          <div class="hidden ml-12 lg:block">
+            <navigation-navbar />
           </div>
         </div>
-        <div class="ml-auto sm:ml-6 sm:block">
+        <div class="block ml-auto lg:hidden">
           <div class="flex items-center">
             <navigation-hamburger-button />
           </div>
         </div>
       </div>
     </div>
-    <navigation-dropdown />
+    <div class="block lg:hidden">
+      <navigation-dropdown />
+    </div>
   </nav>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="-mr-2 flex sm:hidden">
+  <div class="mr-2 flex">
     <button
       class="
         inline-flex
