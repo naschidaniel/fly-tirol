@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData({ $content }) {
     const index = await $content('', 'index').fetch()
     return { index }
   },

@@ -4,12 +4,7 @@
       <div class="flex items-center justify-between h-10">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <nuxt-link
-              :to="{ name: 'index' }"
-              class="outline-none"
-              active-class=""
-              exact
-            >
+            <nuxt-link to="/" class="outline-none" active-class="" exact>
               FeelFree.tirol
             </nuxt-link>
           </div>
