@@ -15,10 +15,8 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - name: build
-        run: npm run build:gh-pages
       - name: generate
-        run: npm run generate:gh-pages
+        run: npm run generate
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
