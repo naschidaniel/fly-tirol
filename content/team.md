@@ -3,25 +3,18 @@ title: Feel Free Flugschule - Team
 description: Feel Free Flugschule - Team
 ---
 # Team
-## Sebastian Kahn
-Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot
 
-Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)
+<team-member name="Sebastian Kahn" position="Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot" description="Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)"></team-member>
 
-## Jan Kuhnert
-Geschäftsführer, kaufmännische Leitung und Management
+<team-member name="Jan Kuhnert" position="Geschäftsführer, kaufmännische Leitung und Management" description="Jan hat im Jahr 2000 in der Flugschule Westendorf mit dem Fliegen angefangen und so seine Leidenschaft für das Paragleiten entdeckt."></team-member>
 
-Jan hat im Jahr 2000 in der Flugschule Westendorf mit dem Fliegen angefangen und so seine Leidenschaft für das Paragleiten entdeckt. 
+<team-member name="James Kahn" position="Fluglehrerassistent, Tandempilot" description=""></team-member>
 
-## James Kahn
-Fluglehrerassistent, Tandempilot
+<team-member name="Ricky Kahn" position="Tandempilot" description=""></team-member>
 
-### Tandempiloten
-### Ricky Kahn
+<team-member name="Bernhard Mimmler" position="Tandempilot" description=""></team-member>
 
-### Bernhard Mimmler
-### Stefan Bischofer
-
+<team-member name="Stefan Bischofer" position="Tandempilot" description=""></team-member>
 
 ## Die Geschichte der Flugschule Westendorf
 
