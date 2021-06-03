@@ -1,17 +1,15 @@
 <template>
   <div>
     <nuxt-content :document="index" />
-    <div v-for="flight in tandemflights" :key="flight.title">
-      <flight v-if="flight.flight" :flight="flight" />
-    </div>
+    <tandem-flight-list :tandemflights="tandemflights" />
     <nuxt-content :document="prerequisites" />
   </div>
 </template>
 
 <script>
-import Flight from '@/components/Flight.vue'
+import TandemFlightList from '~/components/TandemFlightList.vue'
 export default {
-  components: { Flight },
+  components: { TandemFlightList },
   async asyncData({ $content, params }) {
     const index = await $content('tandemfliegen', 'index').fetch()
     const prerequisites = await $content(
