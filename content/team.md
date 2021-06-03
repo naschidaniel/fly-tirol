@@ -1,6 +1,6 @@
 ---
-title: Feel Free Flugschule - Team
-description: Feel Free Flugschule - Team
+title: Team
+description: Team der Flugschule
 ---
 # Team
 

@@ -1,5 +1,5 @@
 ---
-title: Feel Free Flugschule - DSVGO
-description: Feel Free Flugschule - DSVGO
+title: DSVGO
+description: DSVGO der Flugschule Feel-Free
 ---
 # DSVGO

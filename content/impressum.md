@@ -1,5 +1,5 @@
 ---
-title: Feel Free Flugschule - Impressum
+title: Impressum
 description: Feel Free Flugschule - Impressum
 ---
 # Impressum

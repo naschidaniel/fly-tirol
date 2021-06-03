@@ -1,5 +1,5 @@
 ---
-title: Feel Free Flugschule
+title: Willkommen bei der Feel Free Flugschule
 description: Feel Free Flugschule in Westendorf
 ---
 

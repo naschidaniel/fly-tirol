@@ -1,5 +1,5 @@
 ---
-title: Feel Free Flugschule - Kontakt
-description: Feel Free Flugschule - Kontakt
+title: Kontakt
+description: Unsere Kontaktdaten
 ---
 # Kontakt
