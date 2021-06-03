@@ -8,6 +8,8 @@
 
 <script>
 import TandemFlightList from '~/components/TandemFlightList.vue'
+import { generateMetatags } from '~/util/generateHeaderInformation'
+
 export default {
   components: { TandemFlightList },
   async asyncData({ $content, params }) {
@@ -20,6 +22,10 @@ export default {
       .sortBy('order', 'asc')
       .fetch()
     return { index, prerequisites, tandemflights }
+  },
+  head() {
+    const metatags = generateMetatags(this.index.title, this.index.description)
+    return { title: this.index.title, meta: metatags }
   },
 }
 </script>

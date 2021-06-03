@@ -1,21 +1,27 @@
 <template>
   <div>
-    <nuxt-content :document="page" />
+    <nuxt-content :document="index" />
     <courses-list :courses="courses" />
   </div>
 </template>
 
 <script>
+import { generateMetatags } from '~/util/generateHeaderInformation'
 import CoursesList from '~/components/CoursesList.vue'
+
 export default {
   components: { CoursesList },
   async asyncData({ $content, params }) {
-    const page = await $content('sicherheitstrainings', 'index').fetch()
+    const index = await $content('sicherheitstrainings', 'index').fetch()
     const courses = await $content('sicherheitstrainings', params.slug)
       .where({ slug: { $ne: 'index' } })
       .sortBy('order', 'asc')
       .fetch()
-    return { courses, page }
+    return { courses, index }
+  },
+  head() {
+    const metatags = generateMetatags(this.index.title, this.index.description)
+    return { title: this.index.title, meta: metatags }
   },
 }
 </script>

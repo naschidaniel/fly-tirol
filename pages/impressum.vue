@@ -14,6 +14,8 @@
 </template>
 
 <script>
+import { generateMetatags } from '~/util/generateHeaderInformation'
+
 export default {
   async asyncData({ $content }) {
     const impressum = await $content('impressum').fetch()
@@ -24,6 +26,13 @@ export default {
       NUXT_ENV_CURRENT_GIT_SHA: process.env.NUXT_ENV_CURRENT_GIT_SHA,
       buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP * 1000,
     }
+  },
+  head() {
+    const metatags = generateMetatags(
+      this.impressum.title,
+      this.impressum.description
+    )
+    return { title: this.impressum.title, meta: metatags }
   },
 }
 </script>
