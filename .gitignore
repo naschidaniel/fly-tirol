@@ -88,3 +88,7 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# image-optimizer
+image-optimizer
+image-optimizer.exe

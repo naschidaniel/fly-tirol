@@ -1,7 +1,21 @@
-# feelfree ![[Build Status]](https://github.com/naschidaniel/feelfree/workflows/release/badge.svg)
+# feelfree ![[Build Status]](https://github.com/naschidaniel/feelfree/workflows/deploy-to-gh-pages/badge.svg)
+
 Visit us at [https://feelfree.tirol](https://feelfree.tirol).
 We are a flight school in Westendorf and offer tandem flights, paragliding training and equipment sales in Westendorf / Tirol.
 Come and share our passion with us!
+
+# Development Setup
+
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000 for linux / mac
+$ npm run dev
+
+# serve with hot reload at localhost:3000 for windows
+$ npm run dev:windows
+```
 
 ## Build Setup
 
@@ -9,18 +23,22 @@ Come and share our passion with us!
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# lint project
-$ npm run lint
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
+# generate static project, optimize-images and launch server
 $ npm run generate
+$ npm run optimize-images
+$ npm run start
+```
+
+### Optimize Images for Production
+
+The `image-optimizer` tool is needed to optimise the images in the folder `./media`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the MAIN folder. 
+The original images are used for the local development environment. 
+
+The images are optimised on the basis of the screen widths from [https://tailwindcss.com/docs/responsive-design](https://tailwindcss.com/docs/responsive-design).
+
+``` bash
+# optimize images for Production
+$ npm run optimize-images
 ```
 
 # License

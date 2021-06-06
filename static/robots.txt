@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /static
 Disallow: /dsvgo
 Disallow: /impressum
+Disallow: /markdown
 
 Allow: /
 Allow: /media
