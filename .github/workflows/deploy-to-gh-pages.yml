@@ -3,7 +3,7 @@ on:
     branches:
       - main
 
-name: release
+name: deploy to gh-pages
 
 jobs:
   gh-pages:
