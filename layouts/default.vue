@@ -21,5 +21,19 @@ export default {
     SiteFooter,
     SiteHeader,
   },
+  mounted() {
+    this.setWindowWidth()
+  },
+  methods: {
+    setWindowWidth() {
+      if (window.innerWidth <= 640) {
+        this.$store.commit('setWindowWidth', 'sm')
+      } else if (window.innerWidth <= 768) {
+        this.$store.commit('setWindowWidth', 'md')
+      } else {
+        this.$store.commit('setWindowWidth', 'lg')
+      }
+    },
+  },
 }
 </script>

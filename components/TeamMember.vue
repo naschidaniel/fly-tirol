@@ -6,13 +6,14 @@
       {{ name }}
     </h3>
     <div class="md:flex mt-2">
-      <img
-        class="mb-2 object-none rounded-lg mx-auto md:m-2"
-        src="https://www.x-dreamfly.ch/wp-content/uploads/2017/06/Sebastian_Kahn_Pilot_X-dreamfly.jpg"
-        width="400"
-        height="300"
+      <responsive-image
+        v-if="picture !== ''"
+        class="mb-2 object-contain rounded-lg mx-auto md:m-2"
         :alt="name"
         :title="name"
+        :picture="picture"
+        width="400"
+        hight="300"
       />
       <div class="md:flex-1 md:ml-4">
         <p class="font-mono text-gray-600 text-lg md:text-xl">
@@ -27,7 +28,14 @@
 </template>
 
 <script>
+import ResponsiveImage from './ResponsiveImage.vue'
 export default {
-  props: ['description', 'name', 'position'],
+  components: { ResponsiveImage },
+  props: {
+    description: { type: String, default: '' },
+    name: { type: String, default: '', required: true },
+    picture: { type: String, default: '' },
+    position: { type: String, default: '' },
+  },
 }
 </script>
