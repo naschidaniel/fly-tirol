@@ -15,7 +15,11 @@
     "start": "nuxt start",
     "generate": "npm run set-env-variables nuxt generate",
     "lint:js": "eslint --fix  --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js"
+    "lint": "npm run lint:js",
+    "optimize-images:sm": "./image-optimizer ./static/media ./dist/media sm 640 90",
+    "optimize-images:md": "./image-optimizer ./static/media ./dist/media md 768 90",
+    "optimize-images:lg": "./image-optimizer ./static/media ./dist/media lg 1024 90",
+    "optimize-images": "npm run optimize-images:sm && npm run optimize-images:md && npm run optimize-images:lg"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
