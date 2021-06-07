@@ -1,4 +1,4 @@
-# feelfree ![[Build Status]](https://github.com/naschidaniel/feelfree/workflows/deploy-to-gh-pages/badge.svg)
+# feelfree ![[Build Status]](https://github.com/naschidaniel/feelfree/actions/workflows/deploy-to-gh-pages.yml/badge.svg)
 
 Visit us at [https://feelfree.tirol](https://feelfree.tirol).
 We are a flight school in Westendorf and offer tandem flights, paragliding training and equipment sales in Westendorf / Tirol.
@@ -31,7 +31,7 @@ $ npm run start
 
 ### Optimize Images for Production
 
-The `image-optimizer` tool is needed to optimise the images in the folder `./media`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the MAIN folder. 
+The `image-optimizer` tool is needed to optimise the images in the folder `./media`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the `./` directory. 
 The original images are used for the local development environment. 
 
 The images are optimised on the basis of the screen widths from [https://tailwindcss.com/docs/responsive-design](https://tailwindcss.com/docs/responsive-design).

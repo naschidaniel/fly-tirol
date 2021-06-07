@@ -30,8 +30,12 @@ export default {
         this.$store.commit('setWindowWidth', 'sm')
       } else if (window.innerWidth <= 768) {
         this.$store.commit('setWindowWidth', 'md')
-      } else {
+      } else if (window.innerWidth <= 1024) {
         this.$store.commit('setWindowWidth', 'lg')
+      } else if (window.innerWidth <= 1280) {
+        this.$store.commit('setWindowWidth', 'xl')
+      } else {
+        this.$store.commit('setWindowWidth', '2xl')
       }
     },
   },
