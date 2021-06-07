@@ -31,12 +31,14 @@ export default {
   generate: {
     interval: 500,
     fallback: '404.html',
-    async routes () {
+    async routes() {
       const { $content } = require('@nuxt/content')
       const files = await $content({ deep: true }).only(['path']).fetch()
 
-      return files.map(file => file.path.includes('/index') ? '/' : file.path)
-    }
+      return files.map((file) =>
+        file.path.includes('/index') ? '/' : file.path
+      )
+    },
   },
 
   content: {
