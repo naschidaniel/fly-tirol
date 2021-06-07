@@ -32,4 +32,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ### ContentImage.vue
 
-<ContentImage title="Team Flugschule" alt="Menschen vor der Flugschule" picture="/media/team/team.jpg"></ContentImage>
+<content-image title="Team Flugschule" alt="Menschen vor der Flugschule" picture="/media/team/team.jpg"></content-image>
+
+### ContentImageGallery.vue
+
+<content-image-gallery path="/media/sicherheitstrainings/sicherheitstraining-gardasee/"></content-image-gallery>

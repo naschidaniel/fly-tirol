@@ -18,6 +18,9 @@ Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu
 
 Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht die Gruppe zum gemeinsamen Abendessen und zusammensitzen um den Tag gemütlich ausklingen zu lassen. 
 
+
+<content-image-gallery path="/media/sicherheitstrainings/sicherheitstraining-gardasee/"></content-image-gallery>
+
 ## Ziel des Sicherheitstrainings im Überblick:
 * Das sichere Beherrschen von Abstiegshilfen (Big Ears, B-Stall, Spirale)
 * Gegensteuern und Kurs halten bei seitlichen Einklappern 
