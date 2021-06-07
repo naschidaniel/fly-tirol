@@ -41,6 +41,15 @@ The images are optimised on the basis of the screen widths from [https://tailwin
 $ npm run optimize-images
 ```
 
+### Collect Media Information
+
+The images in the `./static/media` folder are listet in the `./static/media.json` file. The image information `title` and `alt` can be added in this json file for all Views.
+
+``` bash
+# Update media.json
+$ npm run generateMediaInformation
+```
+
 # License
 The source code is licensed under the MIT licence. Please read the [LICENSE](LICENSE.md) File for more information.
 Text, informational content, graphics and images are under the licence of [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) unless stated otherwise.
