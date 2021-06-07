@@ -23,8 +23,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ## Example Components
 ### TeamMember.vue
 
-<team-member name="Sebastian Kahn" picture="media/team/sebastian.jpg" position="Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot" description="Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)"></team-member>
+<team-member name="Sebastian Kahn" picture="/media/team/sebastian.jpg" position="Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot" description="Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)"></team-member>
 
 ### ContentImage.vue
 
-<ContentImage title="Team Flugschule" alt="Menschen vor der Flugschule" picture="media/team/team.jpg"></ContentImage>
+<ContentImage title="Team Flugschule" alt="Menschen vor der Flugschule" picture="/media/team/team.jpg"></ContentImage>
