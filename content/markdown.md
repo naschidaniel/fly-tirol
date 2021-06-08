@@ -32,7 +32,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ### ContentImage.vue
 
-<content-image title="Team Flugschule" alt="Menschen vor der Flugschule" picture="/media/team/team.jpg"></content-image>
+<content-image picture="/media/team/team.jpg"></content-image>
 
 ### ContentImageGallery.vue
 
