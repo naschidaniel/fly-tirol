@@ -15,4 +15,5 @@ Mit nur wenigen Schritten hebt ihr dann gemeinsam in ein unvergessliches Erlebni
 
 Möchtest du ein bisschen mehr Action erleben, fliegen unsere Tandempiloten auf Wunsch auch gerne einige Kunstflugmanöver mit dir. 
 
+<content-image-gallery path="/media/tandemfliegen/"></content-impage-gallery>
 
