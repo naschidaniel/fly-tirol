@@ -34,8 +34,8 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: dist/media.json
-          path: media.json
+          name: media.json
+          path: dist/media.json
           retention-days: 5
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

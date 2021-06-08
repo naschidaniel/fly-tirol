@@ -43,7 +43,7 @@ $ npm run optimize-images
 
 ### Collect Media Information
 
-The images in the `./static/media` folder are listet in the `./static/media.json` file. The image information `title` and `alt` can be added in this json file for all Views.
+The images in the `./static/media` folder are listet in the `./static/media.json` file. The image information `title` and `alt` can be added in this json file for all Views. The most recently created file can be found here [https://github.com/naschidaniel/feelfree/blob/gh-pages/media.json](media.json).
 
 ``` bash
 # Update media.json
