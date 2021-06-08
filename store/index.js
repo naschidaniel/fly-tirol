@@ -1,4 +1,7 @@
+import media from '~/static/media.json'
+
 export const state = () => ({
+  media,
   windowWidth: 'lg',
 })
 
