@@ -1,5 +1,6 @@
 <template>
   <img
+    v-if="responsiveUrl != ''"
     class="cursor-pointer"
     :src="responsiveUrl"
     :width="width"
