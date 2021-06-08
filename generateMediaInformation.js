@@ -3,13 +3,14 @@ const glob = require('glob')
 
 const mediaJson = './static/media.json'
 
-let data = {}
+let dataMediaJson = {}
 if (fs.existsSync('./static/media.json')) {
-  data = JSON.parse(fs.readFileSync(mediaJson))
+  dataMediaJson = JSON.parse(fs.readFileSync(mediaJson))
 }
 
-glob
-  .sync('./static/media/**/*.{jpg,png}')
+const images = glob.sync('./static/media/**/*.{jpg,png}')
+
+images
   .sort()
   .map((filePath) => {
     const url = filePath.replace('./static', '')
@@ -18,14 +19,17 @@ glob
     return { url, path, file, alt: '', title: '' }
   })
   .forEach((img) => {
-    if (Object.keys(data).includes(img.url)) return
-    data[img.url] = img
+    if (Object.keys(dataMediaJson).includes(img.url)) return
+    dataMediaJson[img.url] = img
   })
 
-const dataSorted = Object.keys(data)
+const dataSorted = Object.keys(dataMediaJson)
+  .filter((o) => {
+    return images.includes(`./static${o}`)
+  })
   .sort()
   .reduce((obj, key) => {
-    obj[key] = data[key]
+    obj[key] = dataMediaJson[key]
     return obj
   }, {})
 
