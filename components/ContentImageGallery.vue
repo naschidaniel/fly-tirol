@@ -22,8 +22,8 @@ export default {
   },
   computed: {
     imageGalery() {
-      return Object.values(this.$store.state.media).map((img) => {
-        return img.path === this.path ? img : ''
+      return Object.values(this.$store.state.media).filter((img) => {
+        return img.path === this.path
       })
     },
   },
