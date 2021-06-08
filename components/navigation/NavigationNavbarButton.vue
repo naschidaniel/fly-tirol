@@ -58,12 +58,12 @@ export default {
   name: 'SiteNavigationButton',
   computed: {
     isOpen() {
-      return this.$store.state.navigation.isOpen
+      return this.$store.state.isOpen
     },
   },
   methods: {
     toggleDropdown() {
-      this.$store.commit('navigation/toggleDropdown')
+      this.$store.commit('toggleDropdown')
     },
   },
 }

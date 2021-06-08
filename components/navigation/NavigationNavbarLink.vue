@@ -32,7 +32,7 @@ export default {
   props: ['name', 'to'],
   methods: {
     toggleDropdown() {
-      this.$store.commit('navigation/toggleDropdown')
+      this.$store.commit('toggleDropdown')
     },
   },
 }
