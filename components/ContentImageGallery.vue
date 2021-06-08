@@ -15,21 +15,15 @@
 
 <script>
 import ResponsiveImage from './ResponsiveImage.vue'
-import media from '~/static/media.json'
 export default {
   components: { ResponsiveImage },
   props: {
     path: { type: String, default: '/media' },
   },
-  data() {
-    return {
-      media,
-    }
-  },
   computed: {
     imageGalery() {
-      return Object.values(this.media).map((img) => {
-        return img.path === this.path ? img : ''
+      return Object.values(this.$store.state.media).filter((img) => {
+        return img.path === this.path
       })
     },
   },

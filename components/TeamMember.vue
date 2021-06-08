@@ -9,8 +9,6 @@
       <responsive-image
         v-if="picture !== ''"
         class="mb-2 object-contain rounded-lg mx-auto md:m-2"
-        :alt="name"
-        :title="name"
         :picture="picture"
         width="400"
         hight="300"

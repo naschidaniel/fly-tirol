@@ -17,11 +17,11 @@
     "lint:js": "eslint --fix  --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "generateMediaInformation": "node generateMediaInformation.js",
-    "optimize-images:sm": "./image-optimizer ./static/media ./dist/media sm 640 90",
-    "optimize-images:md": "./image-optimizer ./static/media ./dist/media md 768 90",
-    "optimize-images:lg": "./image-optimizer ./static/media ./dist/media lg 1024 90",
-    "optimize-images:xl": "./image-optimizer ./static/media ./dist/media xl 1280 90",
-    "optimize-images:2xl": "./image-optimizer ./static/media ./dist/media 2xl 1536 90",
+    "optimize-images:sm": "./image-optimizer ./static/media ./dist/media sm 640 75",
+    "optimize-images:md": "./image-optimizer ./static/media ./dist/media md 768 75",
+    "optimize-images:lg": "./image-optimizer ./static/media ./dist/media lg 1024 75",
+    "optimize-images:xl": "./image-optimizer ./static/media ./dist/media xl 1280 75",
+    "optimize-images:2xl": "./image-optimizer ./static/media ./dist/media 2xl 1536 75",
     "optimize-images": "npm run optimize-images:sm && npm run optimize-images:md && npm run optimize-images:lg && npm run optimize-images:xl && npm run optimize-images:2xl"
   },
   "dependencies": {
