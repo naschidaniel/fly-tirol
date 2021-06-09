@@ -14,16 +14,16 @@
         {{ flight.price }}
       </div>
       <div class="text-right">
-        <feel-free-button name="Buchen" to="/kontakt" />
+        <card-button name="Buchen" to="/kontakt" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import FeelFreeButton from './FeelFreeButton.vue'
+import CardButton from './CardButton.vue'
 export default {
-  components: { FeelFreeButton },
+  components: { CardButton },
   props: { flight: { type: Object, required: true } },
 }
 </script>
