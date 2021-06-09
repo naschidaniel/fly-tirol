@@ -22,7 +22,15 @@ export default {
       const images = Object.values(this.$store.state.media).filter((img) => {
         return img.url === this.picture
       })
-      return images.length === 1 ? images[0] : { alt: '', title: '', url: '' }
+      if (images.length === 0) {
+        // eslint-disable-next-line no-console
+        console.warn(
+          `The image '${this.picture}' can not be found in the /media.json file. You have to run ./generateMediaInformation.js.`
+        )
+      }
+      return images.length === 1
+        ? images[0]
+        : { alt: '', title: '', url: this.picture }
     },
     responsiveUrl() {
       const extension = this.imageInformation.url?.split('.')?.reverse()[0]
