@@ -14,16 +14,16 @@
         {{ course.price }}
       </div>
       <div class="text-right">
-        <feel-free-button :to="course.path" name="Details" />
+        <card-button :to="course.path" name="Details" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import FeelFreeButton from './FeelFreeButton.vue'
+import CardButton from './CardButton.vue'
 export default {
-  components: { FeelFreeButton },
+  components: { CardButton },
   props: {
     course: { type: Object, required: true },
   },
