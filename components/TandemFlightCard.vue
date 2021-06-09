@@ -24,6 +24,6 @@
 import FeelFreeButton from './FeelFreeButton.vue'
 export default {
   components: { FeelFreeButton },
-  props: ['flight'],
+  props: { flight: { type: Object, required: true } },
 }
 </script>

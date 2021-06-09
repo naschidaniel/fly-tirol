@@ -10,6 +10,6 @@
 import TandemFlightCard from './TandemFlightCard.vue'
 export default {
   components: { TandemFlightCard },
-  props: ['tandemflights'],
+  props: { tandemflights: { type: Object, required: true } },
 }
 </script>
