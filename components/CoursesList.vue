@@ -10,6 +10,8 @@
 import CourseCard from './CourseCard.vue'
 export default {
   components: { CourseCard },
-  props: ['courses'],
+  props: {
+    courses: { type: Object, required: true },
+  },
 }
 </script>

@@ -24,6 +24,8 @@
 import FeelFreeButton from './FeelFreeButton.vue'
 export default {
   components: { FeelFreeButton },
-  props: ['course'],
+  props: {
+    course: { type: Object, required: true },
+  },
 }
 </script>
