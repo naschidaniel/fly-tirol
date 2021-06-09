@@ -29,7 +29,10 @@
 <script>
 export default {
   name: 'NavigationDropdownLink',
-  props: ['name', 'to'],
+  props: {
+    name: { type: String, required: true },
+    to: { type: String, required: true },
+  },
   methods: {
     toggleDropdown() {
       this.$store.commit('toggleDropdown')
