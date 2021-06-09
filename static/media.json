@@ -1,4 +1,18 @@
 {
+  "/media/ausbildung/uebungshang.jpg": {
+    "url": "/media/ausbildung/uebungshang.jpg",
+    "path": "/media/ausbildung/",
+    "file": "uebungshang.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/fortbildung/fortbildung.jpg": {
+    "url": "/media/fortbildung/fortbildung.jpg",
+    "path": "/media/fortbildung/",
+    "file": "fortbildung.jpg",
+    "alt": "",
+    "title": ""
+  },
   "/media/sicherheitstrainings/sicherheitstraining-gardasee/flight-direction-gardasee.jpg": {
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/flight-direction-gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/",
