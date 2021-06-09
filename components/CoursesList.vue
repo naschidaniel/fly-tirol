@@ -11,7 +11,7 @@ import CourseCard from './CourseCard.vue'
 export default {
   components: { CourseCard },
   props: {
-    courses: { type: Object, required: true },
+    courses: { type: Array, required: true },
   },
 }
 </script>
