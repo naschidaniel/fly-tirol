@@ -36,11 +36,11 @@ import LinkCard from './LinkCard.vue'
 export default {
   components: { LinkCard },
   props: {
-    advancedTrainings: { type: Object },
+    advancedTrainings: { type: Object, default: () => {} },
     basicTrainings: { type: Object, required: true },
     saftyTrainings: { type: Object, required: true },
     tandemflights: { type: Object, required: true },
-    travel: { type: Object },
+    travel: { type: Object, default: () => {} },
   },
 }
 </script>
