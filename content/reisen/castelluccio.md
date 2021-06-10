@@ -8,4 +8,24 @@ order: 4
 
 # Castelluccio - Italien
 
-dfsjsdkfj
+Unsere schöne Reise nach Italien.
+
+## Voraussetzungen
+
+* A-Schein
+* Versicherung
+* Schirm
+* COVID-TEST
+
+## Termine
+
+### 2021
+
+* Oktober
+* November
+
+### 2022
+
+* Juli 
+* August
+
