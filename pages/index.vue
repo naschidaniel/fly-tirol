@@ -31,7 +31,7 @@ export default {
       },
       basicTrainings: {
         cardTitle: 'Ausbildung',
-        cardImage: '/media/ausbildung/uebungshang.jpg',
+        cardImage: '/media/ausbildung/grundausbildung/uebungshang.jpg',
         description: 'Schulungsbetrieb in der Flugschule Fly Tirol',
         linkName: 'zu den Ausbildungen',
         to: '/ausbildung',
