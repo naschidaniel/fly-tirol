@@ -16,6 +16,11 @@ description: Team der Flugschule
 
 <team-member name="Stefan Bischofer" picture="/media/team/stefan.jpg" position="Tandempilot" description=""></team-member>
 
+<team-member name="Kilian Kuhnert" picture="/media/team/kilian.jpg" position="Orginisation Tandemflüge und Ausbildung" description="Kilian hat mit dem Fliegen 2021 begonnen."></team-member>
+
+<team-member name="Hanna Anselm" picture="/media/team/hanna.jpg" position="Orginisation Tandemflüge und Ausbildung" description="Unsere starke Frau im Shop."></team-member>
+
+
 ## Die Geschichte der Flugschule Westendorf
 
 <ContentImage picture="/media/team/team.jpg"></ContentImage>
