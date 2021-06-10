@@ -4,6 +4,11 @@ description: Unsere Kontaktdaten
 ---
 # Kontakt
 
+<content-image picture="/media/team/team.jpg"></content-image>
+
+
+## Anschrit
+
 Fly Tirol
 Flugschule Kitzbühler Alpen
 Bergliftstraße 22
