@@ -76,12 +76,26 @@
     "alt": "Bernhard Mimmler Portrait",
     "title": "Bernhard Mimmler"
   },
+  "/media/team/hanna.jpg": {
+    "url": "/media/team/hanna.jpg",
+    "path": "/media/team/",
+    "file": "hanna.jpg",
+    "alt": " Hanna Anselm Portrait",
+    "title": "Hanna Anselm"
+  },
   "/media/team/jan.jpg": {
     "url": "/media/team/jan.jpg",
     "path": "/media/team/",
     "file": "jan.jpg",
     "alt": "Jan Kuhnert Portrait",
     "title": "Jan Kuhnert "
+  },
+  "/media/team/kilian.jpg": {
+    "url": "/media/team/kilian.jpg",
+    "path": "/media/team/",
+    "file": "kilian.jpg",
+    "alt": "Kilian Kuhnert Portrait",
+    "title": "Kilian Kuhnert"
   },
   "/media/team/sebastian.jpg": {
     "url": "/media/team/sebastian.jpg",
