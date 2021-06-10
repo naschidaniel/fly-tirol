@@ -1,4 +1,39 @@
 {
+  "/media/ausbildung/1_grundausbildung.jpg": {
+    "url": "/media/ausbildung/1_grundausbildung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "1_grundausbildung.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/2_grundausbildung.jpg": {
+    "url": "/media/ausbildung/2_grundausbildung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "2_grundausbildung.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/3_grundausbildung.jpg": {
+    "url": "/media/ausbildung/3_grundausbildung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "3_grundausbildung.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/4_grundausbildung.jpg": {
+    "url": "/media/ausbildung/4_grundausbildung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "4_grundausbildung.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/5_grundausbildung.jpg": {
+    "url": "/media/ausbildung/5_grundausbildung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "5_grundausbildung.jpg",
+    "alt": "",
+    "title": ""
+  },
   "/media/ausbildung/uebungshang.jpg": {
     "url": "/media/ausbildung/uebungshang.jpg",
     "path": "/media/ausbildung/",
@@ -6,10 +41,80 @@
     "alt": "",
     "title": ""
   },
+  "/media/fortbildung/1_tandemcourse.jpg": {
+    "url": "/media/fortbildung/1_tandemcourse.jpg",
+    "path": "/media/fortbildung/",
+    "file": "1_tandemcourse.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/fortbildung/2_tandemcourse.jpg": {
+    "url": "/media/fortbildung/2_tandemcourse.jpg",
+    "path": "/media/fortbildung/",
+    "file": "2_tandemcourse.jpg",
+    "alt": "",
+    "title": ""
+  },
   "/media/fortbildung/fortbildung.jpg": {
     "url": "/media/fortbildung/fortbildung.jpg",
     "path": "/media/fortbildung/",
     "file": "fortbildung.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/fortbildung/gardasee-infinity-over-lake.jpg": {
+    "url": "/media/fortbildung/gardasee-infinity-over-lake.jpg",
+    "path": "/media/fortbildung/",
+    "file": "gardasee-infinity-over-lake.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/fortbildung/gardasee-infinity-over-land.jpg": {
+    "url": "/media/fortbildung/gardasee-infinity-over-land.jpg",
+    "path": "/media/fortbildung/",
+    "file": "gardasee-infinity-over-land.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/fortbildung/gardasee-landing.jpg": {
+    "url": "/media/fortbildung/gardasee-landing.jpg",
+    "path": "/media/fortbildung/",
+    "file": "gardasee-landing.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/fortbildung/gardasee.jpg": {
+    "url": "/media/fortbildung/gardasee.jpg",
+    "path": "/media/fortbildung/",
+    "file": "gardasee.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/reisen/gardasee_takeoff.jpg": {
+    "url": "/media/reisen/gardasee_takeoff.jpg",
+    "path": "/media/reisen/",
+    "file": "gardasee_takeoff.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/reisen/infinity-lago.jpg": {
+    "url": "/media/reisen/infinity-lago.jpg",
+    "path": "/media/reisen/",
+    "file": "infinity-lago.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/reisen/infinity_over_village.jpg": {
+    "url": "/media/reisen/infinity_over_village.jpg",
+    "path": "/media/reisen/",
+    "file": "infinity_over_village.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/reisen/paragliding_lago_de_garda.jpg": {
+    "url": "/media/reisen/paragliding_lago_de_garda.jpg",
+    "path": "/media/reisen/",
+    "file": "paragliding_lago_de_garda.jpg",
     "alt": "",
     "title": ""
   },
@@ -34,6 +139,13 @@
     "alt": "Mountain Landscape Takeoff Lago di Garda Monte Baldo",
     "title": ""
   },
+  "/media/tandemfliegen/0_tandemfliegen_getting_ready.jpg": {
+    "url": "/media/tandemfliegen/0_tandemfliegen_getting_ready.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "0_tandemfliegen_getting_ready.jpg",
+    "alt": "",
+    "title": ""
+  },
   "/media/tandemfliegen/1_takeoff-preperation-sebastian.jpg": {
     "url": "/media/tandemfliegen/1_takeoff-preperation-sebastian.jpg",
     "path": "/media/tandemfliegen/",
@@ -48,26 +160,40 @@
     "alt": "Pragliding Tandemparagliding preperation",
     "title": "Startvorbereitung"
   },
-  "/media/tandemfliegen/3_tandem-paragliding-takeoff.jpg": {
-    "url": "/media/tandemfliegen/3_tandem-paragliding-takeoff.jpg",
+  "/media/tandemfliegen/3_tandemfliegen_happy_passenger.jpg": {
+    "url": "/media/tandemfliegen/3_tandemfliegen_happy_passenger.jpg",
     "path": "/media/tandemfliegen/",
-    "file": "3_tandem-paragliding-takeoff.jpg",
-    "alt": "Paragliding Tandem Takeoff",
-    "title": "Tandemstart mit Stefan"
+    "file": "3_tandemfliegen_happy_passenger.jpg",
+    "alt": "",
+    "title": ""
   },
-  "/media/tandemfliegen/4_grouppicture.jpg": {
-    "url": "/media/tandemfliegen/4_grouppicture.jpg",
+  "/media/tandemfliegen/4_tandem-paragliding-takeoff.jpg": {
+    "url": "/media/tandemfliegen/4_tandem-paragliding-takeoff.jpg",
     "path": "/media/tandemfliegen/",
-    "file": "4_grouppicture.jpg",
-    "alt": "Grouppicture Chorealp Westendorf Tandem Paragliding",
-    "title": "Gruppenfoto auf der Choralpe in Westendorf"
+    "file": "4_tandem-paragliding-takeoff.jpg",
+    "alt": "",
+    "title": ""
   },
-  "/media/tandemfliegen/5_hohe-salve-westendorf.jpg": {
-    "url": "/media/tandemfliegen/5_hohe-salve-westendorf.jpg",
+  "/media/tandemfliegen/5_tandemfliegen_start.jpg": {
+    "url": "/media/tandemfliegen/5_tandemfliegen_start.jpg",
     "path": "/media/tandemfliegen/",
-    "file": "5_hohe-salve-westendorf.jpg",
-    "alt": "Paraglider Westendorf Chorealpe Salve Mountain Landscape",
-    "title": "Paragliding Tandemflug Westendorf"
+    "file": "5_tandemfliegen_start.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/6_tandemfliegen_westendorf.jpg": {
+    "url": "/media/tandemfliegen/6_tandemfliegen_westendorf.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "6_tandemfliegen_westendorf.jpg",
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/7_hohe-salve-westendorf.jpg": {
+    "url": "/media/tandemfliegen/7_hohe-salve-westendorf.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "7_hohe-salve-westendorf.jpg",
+    "alt": "",
+    "title": ""
   },
   "/media/team/bernie.jpg": {
     "url": "/media/team/bernie.jpg",
