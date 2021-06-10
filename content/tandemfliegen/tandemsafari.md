@@ -2,7 +2,7 @@
 title: Tandem-Safari
 description: Tandem-Safari in den Kitzbühler Alpen
 flight: Tandem-Safari
-price: XXX EUR
+price: 600 EUR
 flight-time:
 duration: mehrere Flüge über den Tag verteilt
 order: 3
