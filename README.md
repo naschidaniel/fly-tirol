@@ -56,13 +56,12 @@ $ npm run generateMediaInformation
 ## Adding Content
 
 - Adding content is easy and can be done via the Github website.
-
 - The folder structure should be identical in the content and media folder.
 ### The ./content folder
 
 The markdown markup language is used for formatting the content. Read the [www.markdownguide.org/cheat-sheet](https://www.markdownguide.org/cheat-sheet/) for most relevant commands.
 
-The first section contains variables that should be changed with care. The second part contains pure markdown markup in which components can be inserted.
+The first section contains variables that should be changed with care. The second part contains pure markdown markup in which components can be inserted. Have a look to the DemoPage for all available [https://feelfree.tirol/markdown/](https://feelfree.tirol/markdown/) components.
 
 
 ```markdown
