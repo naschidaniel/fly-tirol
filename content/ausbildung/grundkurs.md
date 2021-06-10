@@ -18,7 +18,7 @@ Während der ganzen Grundausbildung werdet ihr durch unser kompetent ausgebildet
 
 Begleitend zu der praktischen Ausbildung erhältst du einen umfangreichen und modern gestalteten Theorieunterricht sowie Videoanalysen und entsprechende Lernmaterialien.
 
-<content-image-gallery path="/media/fortbildung/"></content-impage-gallery>
+<content-image-gallery path="/media/ausbildung/grundausbildung/"></content-impage-gallery>
 
 Dein Weg zum eigenständige Fliegen als Paragleitpilot: (Evt. oben eigenen Unterpunkt “Wie werde ich Paragleitpilot?”)
 1. Grundausbildung mit mindestens fünf Höhenflügen und 25 Theorieeinheiten 
