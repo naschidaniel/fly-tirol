@@ -1,6 +1,6 @@
-# feelfree ![[Build Status]](https://github.com/naschidaniel/feelfree/actions/workflows/deploy-to-gh-pages.yml/badge.svg)
+# fly-tirol ![[Build Status]](https://github.com/naschidaniel/fly-tirol/actions/workflows/deploy-to-gh-pages.yml/badge.svg)
 
-Visit us at [https://feelfree.tirol](https://feelfree.tirol).
+Visit us at [https://fly-tirol.com](https://fly-tirol.com).
 We are a flight school in Westendorf and offer tandem flights, paragliding training and equipment sales in Westendorf / Tirol.
 Come and share our passion with us!
 
@@ -46,7 +46,7 @@ $ npm run optimize-images
 
 ### Collect Media Information
 
-The images in the `./static/media` folder are listet in the `./static/media.json` file. The image information `title` and `alt` can be added in this json file for all Views. The most recently created file can be found here [https://github.com/naschidaniel/feelfree/blob/gh-pages/media.json](media.json).
+The images in the `./static/media` folder are listet in the `./static/media.json` file. The image information `title` and `alt` can be added in this json file for all Views. The most recently created file can be found here [https://github.com/naschidaniel/fly-tirol/blob/gh-pages/media.json](media.json).
 
 ``` bash
 # Update media.json
@@ -61,7 +61,7 @@ $ npm run generateMediaInformation
 
 The markdown markup language is used for formatting the content. Read the [www.markdownguide.org/cheat-sheet](https://www.markdownguide.org/cheat-sheet/) for most relevant commands.
 
-The first section contains variables that should be changed with care. The second part contains pure markdown markup in which components can be inserted. Have a look to the DemoPage for all available [https://feelfree.tirol/markdown/](https://feelfree.tirol/markdown/) components.
+The first section contains variables that should be changed with care. The second part contains pure markdown markup in which components can be inserted. Have a look to the DemoPage for all available [https://fly-tirol.com/markdown/](https://fly-tirol.com/markdown/) components.
 
 
 ```markdown

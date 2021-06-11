@@ -2,7 +2,7 @@ export default {
   target: 'static',
   ssr: false,
   head: {
-    titleTemplate: 'Feel-Free.tirol - Flugschule Kitzbühleralpen - %s',
+    titleTemplate: 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
     htmlAttrs: {
       lang: 'de',
     },

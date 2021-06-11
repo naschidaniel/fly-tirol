@@ -1,5 +1,5 @@
 ---
 title: DSVGO
-description: DSVGO der Flugschule Feel-Free
+description: DSVGO der Flugschule Fly-Tirol.com
 ---
 # DSVGO

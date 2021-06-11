@@ -1,13 +1,13 @@
 ---
-title: Willkommen bei der Feel Free Flugschule
-description: Feel Free Flugschule in Westendorf
+title: Willkommen bei der Fly Tirol Flugschule
+description: Fly Tirol Flugschule in Westendorf
 ---
 
 "Es ist möglich, ohne Motoren zu fliegen, aber nicht ohne Wissen und Können."
 
 Orville und Wilbur Wright
 
-Die Feel Free Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!
+Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!
 
 Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in den wunderschönen Kitzbüheler Alpen genießen möchtest, du selbst ein Paragleitpilot werden möchtest oder deine vorhandenen Flugfähigkeiten ausbauen willst - wir haben genau das richtige für dich!
 

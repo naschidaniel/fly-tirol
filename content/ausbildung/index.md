@@ -1,5 +1,5 @@
 ---
 title: Ausbildung
-description: Ausbildung der Flugschule Feel Free
+description: Ausbildung der Flugschule Fly Tirol
 ---
 # Ausbildung

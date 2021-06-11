@@ -5,7 +5,7 @@
         <div class="flex items-center">
           <div class="flex-shrink-0">
             <nuxt-link to="/" class="outline-none" active-class="" exact>
-              FeelFree.tirol
+              fly-tirol.com
             </nuxt-link>
           </div>
           <div class="hidden ml-12 lg:block">

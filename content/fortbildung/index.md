@@ -1,6 +1,6 @@
 ---
 title: Fortbildung
-description: Fortbildungen der Flugschule Feel Free
+description: Fortbildungen der Flugschule Fly Tirol
 ---
 # Fortbildung
 

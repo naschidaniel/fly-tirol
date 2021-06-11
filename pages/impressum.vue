@@ -4,8 +4,8 @@
     <h2>Sourcecode der Webseite</h2>
     <div>
       Github Repository:
-      <a href="https://github.com/naschidaniel/feelfree" target="_blank"
-        >https://github.com/naschidaniel/feelfree</a
+      <a href="https://github.com/naschidaniel/fly-tirol" target="_blank"
+        >https://github.com/naschidaniel/fly-tirol</a
       >
     </div>
     <div>Version: {{ NUXT_ENV_CURRENT_GIT_SHA }}</div>
