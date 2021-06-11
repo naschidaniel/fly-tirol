@@ -23,8 +23,6 @@ description: Team der Flugschule
 
 ## Die Geschichte der Flugschule Westendorf
 
-<ContentImage picture="/media/team/team.jpg"></ContentImage>
-
 Die Flugschule Westendorf wurde im Jahr 2021 von Sebastian Kahn und seinem Geschäftspartner Jan Kuhnert von seinem Onkel Otto Kahn übernommen und komplett neu gestaltet. So bekam die Flugschule einen neuen Namen und zusätzlich noch weitere Piloten und Fluglehrer ins Team. 
 
 

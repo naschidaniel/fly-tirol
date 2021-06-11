@@ -1,11 +1,18 @@
 <template>
-  <nuxt-content :document="page" />
+  <div>
+    <nuxt-content :document="page" />
+    <button-calendar />
+    <button-contact />
+  </div>
 </template>
 
 <script>
+import ButtonCalendar from '~/components/ButtonCalendar.vue'
+import ButtonContact from '~/components/ButtonContact.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
+  components: { ButtonCalendar, ButtonContact },
   async asyncData({ $content, params }) {
     const page = await $content('ausbildung', params.slug).fetch()
     return { page }
