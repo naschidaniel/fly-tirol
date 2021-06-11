@@ -46,7 +46,7 @@ export default {
       },
       tandemflights: {
         cardTitle: 'Tandemflüge',
-        cardImage: '/media/tandemfliegen/5_hohe-salve-westendorf.jpg',
+        cardImage: '/media/tandemfliegen/7_hohe-salve-westendorf.jpg',
         description: 'Unsere Tandemflüge',
         linkName: 'zu den Tandemflügen',
         to: '/tandemfliegen',
