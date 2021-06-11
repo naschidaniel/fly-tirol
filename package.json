@@ -1,8 +1,8 @@
 {
-  "name": "feelfree",
+  "name": "fly-tirol",
   "version": "1.0.0",
   "private": true,
-  "description": "feel-free.tirol paragliding school Westendorf",
+  "description": "fly-tirol.com paragliding school Westendorf",
   "author": "Daniel Naschberger",
   "precommit": "npm run lint",
   "scripts": {
