@@ -9,7 +9,7 @@ order: 2
 # Sicherheitstraining Ölüdeniz -Türkei
 
 Du bist bereits ein Paragleitpilot und besitzt den A-Schein und möchtest optimal auf außergewöhnliche Flugsituationen vorbereitet werden? Außerdem möchtest du dein Sicherheitstraining mit einem Urlaub verbinden? 
-Dann flieg mit der Flugschule Feel Free an die wunderschöne lykische Küste der Türkei um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.
+Dann flieg mit der Flugschule Fly Tirol an die wunderschöne lykische Küste der Türkei um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.
 
 Gemeinsam mit anderen Piloten verbringst du dein Sicherheitstraining mit Gleichgesinnten in die Nähe des Küstenstädchens Fethiye in die türkischen Region Ölüdeniz, die mit ihrem klaren Meerwasser der Lagune in leuchtenden Blau- und Grünschattierungen lockt.
 

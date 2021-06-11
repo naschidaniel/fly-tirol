@@ -14,7 +14,7 @@ Unser Fluglehrer begleitet dich während der Flugsafari über Funk um dir, falls
 
 Da es sich mit leerem Magen nicht so gut fliegt, kann während dieser Flugsafari auch ein Zwischenstop bei einer der vielen urigen Tiroler Restaurants oder Hütten gemacht werden, um sich gemeinsam zu stärken und danach den Weiterflug anzugehen.
 
-Solltest du noch keine eigene Ausrüstung besitzen, kannst du dich vorab gerne in der Flugschule Feel Free informieren und einen entsprechenden Schirm samt Gurtzeug leihen.
+Solltest du noch keine eigene Ausrüstung besitzen, kannst du dich vorab gerne in der Flugschule Fly Tirol informieren und einen entsprechenden Schirm samt Gurtzeug leihen.
 
 # Voraussetzungen:
 * A-Lizenz

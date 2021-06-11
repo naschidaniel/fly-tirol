@@ -1,5 +1,5 @@
 ---
 title: Sicherheitstrainings
-description: Feel Free Flugschule in Westendorf
+description: Fly Tirol Flugschule in Westendorf
 ---
 # Sicherheitstrainings

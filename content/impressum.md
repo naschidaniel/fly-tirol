@@ -1,5 +1,5 @@
 ---
 title: Impressum
-description: Feel Free Flugschule - Impressum
+description: Fly Tirol Flugschule - Impressum
 ---
 # Impressum

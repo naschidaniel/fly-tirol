@@ -14,4 +14,4 @@ Unser Fluglehrer kann ganz individuell auf deine Wünsche und Ziele eingehen und
 
 Das begleitete Fliegen ist für jeden Piloten möglich! Der Kurs richtet sich an jeden der z.B. den Grundkurs bereits absolviert hat und Flugerfahrung sammeln möchte, als auch an fortgeschrittene Piloten die ihr Know-How verbessern wollen.
 
-Solltest du noch keine eigene Ausrüstung besitzen, kannst du dich vorab gerne in der Flugschule Feel Free informieren und einen entsprechenden Schirm samt Gurtzeug leihen.
+Solltest du noch keine eigene Ausrüstung besitzen, kannst du dich vorab gerne in der Flugschule Fly Tirol informieren und einen entsprechenden Schirm samt Gurtzeug leihen.

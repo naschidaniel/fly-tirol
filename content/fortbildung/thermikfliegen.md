@@ -14,7 +14,7 @@ Unser weitreichendes Fluggebiet in den Kitzbüheler Alpen lädt dich ein, das wu
 
 Sowohl theoretisch als auch praktisch führt dich unser Fluglehrer sicher an das Thermikfliegen heran, damit du auch in Zukunft Thermikspots leichter finden und auch richtig nutzen kannst.
 
-Solltest du noch keine eigene Ausrüstung besitzen, kannst du dich vorab gerne in der Flugschule Feel Free informieren und einen entsprechenden Schirm samt Gurtzeug leihen.
+Solltest du noch keine eigene Ausrüstung besitzen, kannst du dich vorab gerne in der Flugschule Fly Tirol informieren und einen entsprechenden Schirm samt Gurtzeug leihen.
 
 # Voraussetzungen
 * A-Lizenz

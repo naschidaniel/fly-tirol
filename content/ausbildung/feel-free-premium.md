@@ -1,11 +1,11 @@
 ---
-title: Feel Free Premium
-description: Feel Free Premium Paraglidingausbildung in Westendorf
-course: Feel Free Premium
+title: Fly Tirol Premium
+description: Fly Tirol Premium Paraglidingausbildung in Westendorf
+course: Fly Tirol Premium
 price: XXX EUR
 order: 5
 ---
 
-# Feel Free Premium
+# Fly Tirol Premium
 
 Kurs vom GK bis Lizenz mit Kauf von Gurtzeug, Schirm und Retter.
