@@ -21,6 +21,7 @@ A-6363 Westendorf / Tirol
 
 ## Tandem- und Ausbidlungshotline
 
-+43 699 10468280
+<button-phone telefonnumber="+43 699 10468280"></button-phone>
 
-info@fly-tirol.com
+<button-mail mailaddress="info@fly-tirol.com"></button-mail>
+

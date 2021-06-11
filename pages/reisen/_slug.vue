@@ -1,5 +1,9 @@
 <template>
-  <nuxt-content :document="page" />
+  <div>
+    <nuxt-content :document="page" />
+    <button-calendar />
+    <button-contact />
+  </div>
 </template>
 
 <script>

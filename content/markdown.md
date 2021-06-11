@@ -26,6 +26,24 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 
 ## Example Components
+
+Here are some example components that are easy to integrate in the markdown markup.
+
+### ButtonCalendar.vue
+
+<button-calendar></button-calendar>
+
+### ButtonContact.vue
+
+<button-contact></button-contact>
+### ButtonMail.vue
+
+<button-mail mailaddress="info@fly-tirol.com"></button-mail>
+
+### ButtonPhone.vue
+
+<button-phone telefonnumber="+43 699 10468280"></button-phone>
+
 ### TeamMember.vue
 
 <team-member name="Sebastian Kahn" picture="/media/team/sebastian.jpg" position="Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot" description="Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)"></team-member>
