@@ -7,7 +7,7 @@ description: Unsere Kontaktdaten
 <content-image picture="/media/team/team.jpg"></content-image>
 
 
-## Anschrit
+## Anschrift
 
 Fly Tirol
 
