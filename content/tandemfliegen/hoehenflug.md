@@ -6,5 +6,5 @@ price: 135 EUR
 flight-time: 20 Minuten
 duration: 90 Minuten
 order: 1
-information: Beschreibung zu Höhenflug von Westendorf 
+information: 'Das wunderschöne Flugerlebnis vom besten Flugberg der Kitzbüheler Alpen dauert ca. 15 - 20 Minuten, über eine Höhendifferenz von 1000 Meter.' 
 ---
