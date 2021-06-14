@@ -2,7 +2,7 @@
 title: Höhenflug
 description: Höhenflug von Westendorf
 flight: Höhenflug
-price: XXX EUR
+price: 135 EUR
 flight-time: 20 Minuten
 duration: 90 Minuten
 order: 1
