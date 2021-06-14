@@ -6,5 +6,5 @@ price: 600 EUR
 flight-time:
 duration: mehrere Flüge über den Tag verteilt
 order: 3
-information: 'Dir ist auch der Panoramaflug noch zu wenig? Mit der Tandem-Safari bringen wir dich an verschiedene Orte in den Kitzbüheler Alpen. Über die Kulisse der berühmten Bergdoktor-Serie oder verschiedene Täler, fliegt ihr über den Tag verteilt verschiedene Dörfer an. Auch an das leiblich Wohl wird gedacht: bei einem eurer Zwischenstopps könnt ihr Einkehren um etwas zu Essen oder ein kaltes Getränk genießen.'
+information: 'Mit der Tandem-Safari bringen wir dich an verschiedene Orte in den Kitzbüheler Alpen. Über die Kulisse der berühmten Bergdoktor-Serie und entlang des Wilden Kaisers, fliegt ihr über den Tag verteilt über viele verschiedene Dörfer. (mind. 4 wunderschöne Flüge mit einer Einkehrmöglichkeit)'
 ---
