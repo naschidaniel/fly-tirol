@@ -2,7 +2,7 @@
 title: Schnupperkurs
 description: Schnupperkurs in Westendorf
 course: Schnupperkurs
-price: XXX EUR
+price: 80 EUR
 order: 0
 ---
 
