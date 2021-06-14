@@ -1,10 +1,10 @@
 ---
-title: Panoramalfug
+title: Panoramaflug
 description: Panoramaflug von Westendorf
-flight: Panoramalfug
-price: XXX EUR
-flight-time: mindestens 30 Minuten
+flight: Panoramaflug
+price: 190 EUR
+flight-time: ca. 30-45
 duration: 120 Minuten
 order: 2
-information: 'Wenn du dein Tandem-Flugerlebnis verlängern möchtest, ist unser Panorama-Tandemflug genau das richtige für dich! Wie die Vögel können wir an schönen Sommertagen die Thermik nutzen, um das Flugerlebnis auszudehnen und noch höher hinaus zu gehen.'
+information: 'Wenn du dein Tandem-Flugerlebnis verlängern möchtest, ist unser Panorama-Tandemflug genau das richtige für dich! Wie die Vögel nutzen wir die Thermik, um das Flugerlebnis auf ca. 30-45 Mnuten auszudehnen.'
 ---
