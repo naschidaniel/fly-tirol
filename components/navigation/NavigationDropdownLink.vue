@@ -11,11 +11,8 @@
       text-base
       font-medium
       text-gray-500
-      hover:text-white
-      hover:bg-gray-700
-      focus:outline-none
-      focus:text-white
-      focus:bg-gray-700
+      hover:text-white hover:bg-gray-700
+      focus:outline-none focus:text-white focus:bg-gray-700
       transition
       duration-150
       ease-in-out
@@ -38,6 +35,6 @@ export default {
 
 <style>
 a.nuxt-link-exact-active {
-  font-weight: bold;
+  text-decoration: underline;
 }
 </style>

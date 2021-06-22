@@ -1,28 +1,7 @@
 <template>
-  <nuxt-link :to="to" exact>
-    <span
-      class="
-        ml-4
-        px-3
-        py-2
-        rounded-md
-        text-sm
-        font-medium
-        leading-5
-        text-gray-500
-        hover:text-white
-        hover:bg-gray-700
-        focus:outline-none
-        focus:text-white
-        focus:bg-gray-700
-        transition
-        duration-150
-        ease-in-out
-      "
-      @click="toggleDropdown()"
-    >
-      {{ name }}
-    </span>
+  <nuxt-link :to="to" exact class="navbar-link" @click="toggleDropdown()">
+    {{ name }}
+    <span class="decorator"></span>
   </nuxt-link>
 </template>
 
@@ -41,8 +20,48 @@ export default {
 }
 </script>
 
-<style>
-a .nuxt-link-exact-active {
-  font-weight: bold;
+<style lang="scss">
+.navbar-link {
+  @apply relative
+        inline-block
+        rounded-md
+        text-base
+        font-medium
+        mx-4
+        py-1
+        leading-5
+        text-brand
+        focus:outline-none
+        transition
+        duration-300
+        ease-in-out;
+
+  &:hover {
+    .decorator {
+      @apply scale-x-100 origin-left;
+    }
+  }
+
+  &.active {
+    .decorator {
+      @apply scale-x-100;
+    }
+  }
+
+  .decorator {
+    @apply absolute
+        bottom-0
+        left-0
+        inline-block
+        w-full
+        h-0.5
+        bg-brand
+        transition
+        duration-300
+        ease-in-out
+        transform
+        origin-right
+        scale-x-0;
+  }
 }
 </style>

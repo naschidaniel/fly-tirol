@@ -1,5 +1,5 @@
 <template>
-  <div class="mr-2 flex">
+  <div class="mx-2 flex lg:hidden">
     <button
       class="
         inline-flex
@@ -7,12 +7,9 @@
         justify-center
         p-2
         rounded-md
-        text-gray-400
-        hover:text-white
-        hover:bg-gray-700
-        focus:outline-none
-        focus:bg-gray-700
-        focus:text-white
+        text-brand
+        hover:text-white hover:bg-gray-700
+        focus:outline-none focus:bg-gray-700 focus:text-white
         transition
         duration-150
         ease-in-out
