@@ -14,7 +14,9 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['~assets/styles/tailwind.css'],
+  css: [
+    '~/assets/styles/main.scss'
+  ],
 
   plugins: ['~/plugins/formatters.js'],
 
@@ -24,9 +26,11 @@ export default {
     '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/svg',
+    'nuxt-lazy-load',
   ],
 
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/svg'],
 
   generate: {
     interval: 500,
@@ -45,5 +49,11 @@ export default {
     liveEdit: false,
   },
 
-  build: {},
+  build: {
+    extractCSS: true,
+  },
+
+  router: {
+    linkExactActiveClass: 'active',
+  },
 }

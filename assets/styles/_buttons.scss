@@ -1,0 +1,20 @@
+.btn-primary {
+    @apply relative
+    inline-flex
+    justify-center
+    items-center
+    ml-4
+    px-4
+    py-2
+    rounded-md
+    text-base
+    font-medium
+    leading-none
+    tracking-wide
+    text-white
+    bg-brand
+    focus:outline-none focus:text-white focus:bg-gray-700
+    transition
+    duration-150
+    ease-in-out;
+}

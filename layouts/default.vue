@@ -2,9 +2,9 @@
   <div>
     <div class="flex min-h-screen flex-col">
       <site-header class="p-6" />
-      <div class="flex-1 border">
+      <div class="flex-1">
         <div class="mx-auto lg:max-w-7xl p-6">
-          <Nuxt class="text-gray-900 text-xl" />
+          <Nuxt class="text-brand" />
         </div>
       </div>
       <site-footer class="m-3" />
