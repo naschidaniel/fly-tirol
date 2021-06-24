@@ -1,16 +1,19 @@
 <template>
-  <div class="flex justify-between">
-    <nav :class="{ open: isOpen, closed: !isOpen }" @click="toggleDropdown()">
-      <navigation-navbar-link name="Tandemfliegen" to="/tandemfliegen" />
-      <navigation-navbar-link name="Ausbildung" to="/ausbildung" />
-      <navigation-navbar-link name="Fortbildung" to="/fortbildung" />
-      <navigation-navbar-link
-        name="Sicherheitstrainings"
-        to="/sicherheitstrainings"
-      />
-      <navigation-navbar-link name="Reisen" to="/reisen" />
-      <navigation-navbar-link name="Team" to="/team" />
-    </nav>
+  <div class="flex justify-between w-full">
+    <div class="navbar--wrapper flex justify-center w-full">
+      <nav :class="{ open: isOpen, closed: !isOpen }" @click="toggleDropdown()">
+        <navigation-navbar-link name="Tandemfliegen" to="/tandemfliegen" />
+        <navigation-navbar-link name="Ausbildung" to="/ausbildung" />
+        <navigation-navbar-link name="Fortbildung" to="/fortbildung" />
+        <navigation-navbar-link
+          name="Sicherheitstrainings"
+          to="/sicherheitstrainings"
+        />
+        <navigation-navbar-link name="Reisen" to="/reisen" />
+        <navigation-navbar-link name="Team" to="/team" />
+      </nav>
+    </div>
+
     <div class="navbar-controls">
       <navigation-navbar-cta name="Kontakt" to="/kontakt" />
       <navigation-hamburger-button />
@@ -46,6 +49,5 @@ export default {
 <style>
 .navbar-controls {
   @apply flex;
-  padding-left: 7vw;
 }
 </style>

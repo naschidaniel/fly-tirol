@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="to" exact class="navbar-link" @click="toggleDropdown()">
+  <nuxt-link :to="to" exact class="navbar--link" @click="toggleDropdown()">
     {{ name }}
     <span class="decorator"></span>
   </nuxt-link>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss">
-.navbar-link {
+.navbar--link {
   @apply relative
         inline-block
         rounded-md

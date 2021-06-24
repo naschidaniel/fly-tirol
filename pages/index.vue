@@ -22,6 +22,7 @@ export default {
   },
   data() {
     return {
+      dev: process.dev,
       advancedTrainings: {
         cardTitle: 'Fortbildung',
         cardImage: '/media/fortbildung/fortbildung.jpg',
@@ -56,6 +57,10 @@ export default {
   head() {
     const metatags = generateMetatags(this.index.title, this.index.description)
     return { title: this.index.title, meta: metatags }
+  },
+  mounted() {
+    // eslint-disable-next-line no-unused-expressions
+    process.dev === true ? document.body.classList.add('debug-screens') : ''
   },
 }
 </script>

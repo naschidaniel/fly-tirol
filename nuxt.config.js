@@ -1,4 +1,5 @@
 export default {
+  dev: process.env.NODE_ENV !== 'production',
   target: 'static',
   ssr: false,
   head: {
@@ -14,9 +15,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: [
-    '~/assets/styles/main.scss'
-  ],
+  css: ['~/assets/styles/main.scss'],
 
   plugins: ['~/plugins/formatters.js'],
 
@@ -27,6 +26,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
+    '@nuxt-hero-icons/solid/nuxt',
     'nuxt-lazy-load',
   ],
 

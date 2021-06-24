@@ -3,7 +3,6 @@
     inline-flex
     justify-center
     items-center
-    ml-4
     px-4
     py-2
     rounded-md
@@ -17,4 +16,8 @@
     transition
     duration-150
     ease-in-out;
+}
+
+.btn--large {
+    @apply px-6 py-4;
 }
