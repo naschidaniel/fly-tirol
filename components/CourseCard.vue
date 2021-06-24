@@ -1,6 +1,6 @@
 <template>
-  <div class="rounded-xl p-4 bg-gray-50 border-2 border-gray-300 shadow-sm">
-    <h3 class="text-cyan-600">
+  <div class="rounded-xl border-2 border-gray-200 shadow-sm">
+    <h3 class="text-2xl font-medium">
       {{ course.title }}
     </h3>
     <p class="text-gray-600">

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl w-full mx-auto">
+  <div class="max-w-90 w-full mx-auto">
     <div class="flex items-center justify-between h-10">
       <div class="flex-shrink-0">
         <nuxt-link to="/" class="block outline-none w-24" exact>

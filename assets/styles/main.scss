@@ -1,59 +1,28 @@
 @use 'buttons';
+@use 'typo';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'RedHatDisplay';
-    src: url("~/assets/fonts/RedHatDisplayVF.woff2") format('woff2-variations');
-    font-weight: 300 900;
-    font-style: normal;
-    font-display: fallback;
+@layer base {
+  @font-face {
+      font-family: 'RedHatDisplay';
+      src: url("~/assets/fonts/RedHatDisplayVF.woff2") format('woff2-variations');
+      font-weight: 300 900;
+      font-style: normal;
+      font-display: fallback;
+    }
+
+  @font-face {
+      font-family: 'RedHatText';
+      src: url("~/assets/fonts/RedHatTextVF.woff2") format('woff2-variations');
+      font-weight: 300 700;
+      font-style: normal;
+      font-display: fallback;
+    }
+
+  body {
+    @apply font-sans text-base leading-normal bg-white;
   }
-
-@font-face {
-    font-family: 'RedHatText';
-    src: url("~/assets/fonts/RedHatTextVF.woff2") format('woff2-variations');
-    font-weight: 300 700;
-    font-style: normal;
-    font-display: fallback;
-  }
-
-html {
-  @apply font-sans text-base bg-white;
-  font-family: 'RedHatText', sans-serif;
-}
-
-h1 {
-  @apply text-3xl font-medium mt-2 mb-2;
-}
-
-
-h2 {
-  @apply text-2xl font-medium mt-2 mb-2;
-}
-
-
-h3 {
-  @apply text-xl font-medium mt-2 mb-2;
-}
-
-
-h4 {
-  @apply text-lg font-medium mt-2 mb-2;
-}
-
-
-h5 {
-  @apply font-medium mt-2 mb-2;
-}
-
-
-h6 {
-  @apply font-medium mt-2 mb-2;
-}
-
-ul {
-  @apply list-disc m-6;
 }
