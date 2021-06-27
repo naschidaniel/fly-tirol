@@ -1,7 +1,3 @@
-<!-- should we use this instead? 
-https://github.com/PivaleCo/nuxt-image-loader-module
--->
-
 <template>
   <div id="image-box" ref="imageBox">
     <img

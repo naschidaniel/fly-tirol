@@ -2,11 +2,7 @@
   <div>
     <div class="flex min-h-screen flex-col">
       <site-header class="py-6" />
-      <div class="flex-1">
-        <div class="py-6">
-          <Nuxt class="text-brand" />
-        </div>
-      </div>
+      <Nuxt class="text-brand pb-6" />
       <site-footer class="m-3" />
     </div>
   </div>

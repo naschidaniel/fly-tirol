@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div v-for="course in courses" :key="course.slug">
+  <div class="flex flex-wrap">
+    <div v-for="course in courses" :key="course.slug" class="flex-shrink-0">
       <course-card class="m-2" :course="course" />
     </div>
   </div>

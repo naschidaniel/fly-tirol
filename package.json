@@ -25,6 +25,7 @@
     "optimize-images": "npm run optimize-images:sm && npm run optimize-images:md && npm run optimize-images:lg && npm run optimize-images:xl && npm run optimize-images:2xl"
   },
   "dependencies": {
+    "@nuxt-hero-icons/outline": "^1.0.1",
     "@nuxt-hero-icons/solid": "^1.0.1",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/composition-api": "^0.24.0",

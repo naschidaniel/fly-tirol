@@ -1,7 +1,19 @@
 <template>
-  <div class="flex justify-between w-full">
-    <div class="navbar--wrapper flex justify-center w-full">
-      <nav :class="{ open: isOpen, closed: !isOpen }" @click="toggleDropdown()">
+  <div class="flex justify-between lg:w-full">
+    <div
+      class="
+        navbar--wrapper
+        fixed
+        lg:relative
+        flex
+        justify-end
+        lg:flex lg:justify-center
+        w-full
+      "
+      :class="{ open: isOpen, closed: !isOpen }"
+      @click="toggleDropdown()"
+    >
+      <nav class="navigation--main flex flex-col items-start lg:flex-row">
         <navigation-navbar-link name="Tandemfliegen" to="/tandemfliegen" />
         <navigation-navbar-link name="Ausbildung" to="/ausbildung" />
         <navigation-navbar-link name="Fortbildung" to="/fortbildung" />
@@ -46,8 +58,41 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .navbar-controls {
   @apply flex;
+}
+.navbar--wrapper {
+  top: 5rem;
+  right: 0;
+  height: calc(100vh - 5rem);
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+  z-index: 99;
+  @apply p-16;
+  transition-duration: 0.5s;
+
+  @screen lg {
+    top: auto;
+    height: auto;
+    background-color: transparent;
+    backdrop-filter: none;
+    z-index: unset;
+    @apply p-0;
+  }
+
+  &.closed {
+    transform: translateX(100%);
+
+    @screen lg {
+      transform: none;
+    }
+  }
+  &.open {
+    transform: none;
+  }
+}
+
+.navigation--main {
 }
 </style>

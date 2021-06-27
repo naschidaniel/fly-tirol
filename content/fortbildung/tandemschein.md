@@ -1,6 +1,7 @@
 ---
 title: Tandemschein
 description: Tandemausbildung in Westendorf
+location: Westendorf
 course: Tandemschein
 price: XXX EUR
 order: 4
