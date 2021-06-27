@@ -1,6 +1,8 @@
 ---
 title: Schnupperkurs
 description: Schnupperkurs in Westendorf
+location: Westendorf
+image: /media/ausbildung/grundausbildung/2_grundausbildung.jpg
 course: Schnupperkurs
 price: 80 EUR
 order: 0

@@ -25,9 +25,9 @@ export default {
   @apply relative
         inline-block
         rounded-md
-        text-base
+        text-lg
         font-medium
-        mx-4
+        mb-6
         py-1
         leading-5
         text-brand
@@ -35,6 +35,14 @@ export default {
         transition
         duration-300
         ease-in-out;
+
+  @screen lg {
+    @apply text-base mx-4 my-0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover {
     .decorator {

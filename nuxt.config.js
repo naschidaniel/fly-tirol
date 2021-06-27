@@ -1,3 +1,6 @@
+import path from 'path'
+import fs from 'fs'
+
 export default {
   dev: process.env.NODE_ENV !== 'production',
   target: 'static',
@@ -27,6 +30,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/svg',
     '@nuxt-hero-icons/solid/nuxt',
+    '@nuxt-hero-icons/outline/nuxt',
     'nuxt-lazy-load',
   ],
 
@@ -55,5 +59,13 @@ export default {
 
   router: {
     linkExactActiveClass: 'active',
+  },
+
+  server: {
+    host: '0.0.0.0', // default: localhost,
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, 'localhost.key')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'localhost.crt')),
+    }
   },
 }

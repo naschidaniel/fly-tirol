@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-5p w-full overflow-hidden">
+  <div class="w-10/12 ml-auto overflow-hidden">
     <div class="flex justify-end pr-5p mb-8">
       <button
         class="

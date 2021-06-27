@@ -1,6 +1,7 @@
 ---
 title: Grundkurs
 description: Grundkurs in Westendorf
+location: Westendorf
 course: Grundkurs
 price: 490 EUR
 order: 1

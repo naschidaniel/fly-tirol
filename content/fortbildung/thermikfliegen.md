@@ -1,6 +1,7 @@
 ---
 title: Thermikfliegen
 description: Thermikfliegen in Westendorf
+location: Westendorf
 course: Thermikfliegen
 price: XXX EUR
 order: 2

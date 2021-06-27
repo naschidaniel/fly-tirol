@@ -1,6 +1,7 @@
 ---
 title: Kombikurs
 description: Kombikurs in Westendorf
+location: Westendorf
 course: Kombi-Kurs
 price: 1490 EUR
 order: 4

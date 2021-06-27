@@ -1,4 +1,11 @@
 {
+  "/media/ft_hero.jpg": {
+    "url": "/media/ft_hero.jpg",
+    "path": "/media/",
+    "file": "ft_hero.jpg",
+    "alt": "Paraglider in den Wolken mit Sicht auf Berge",
+    "title": ""
+  },
   "/media/ausbildung/grundausbildung/1_grundausbildung.jpg": {
     "url": "/media/ausbildung/grundausbildung/1_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",

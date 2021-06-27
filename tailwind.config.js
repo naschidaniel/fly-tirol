@@ -1,15 +1,15 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
-const em = px => `${px / 16}em`
+const em = (px) => `${px / 16}em`
 
 const screensizes = {
-  'sm': em(640),
+  sm: em(640),
   // => @media (min-width: 640px) { ... }
-  'md': em(768),
+  md: em(768),
   // => @media (min-width: 768px) { ... }
-  'lg': em(1024),
+  lg: em(1024),
   // => @media (min-width: 1024px) { ... }
-  'xl': em(1280),
+  xl: em(1280),
   // => @media (min-width: 1280px) { ... }
   '2xl': em(1536),
   // => @media (min-width: 1536px) { ... }
@@ -37,15 +37,19 @@ module.exports = {
       maxWidth: {
         // eslint-disable-next-line prettier/prettier
         '90': '90%',
-        '95': '95%',
+        95: '95%',
       },
       minWidth: {
-        '0': '0',
+        0: '0',
         '1/4': '25%',
         '1/2': '50%',
         '3/4': '75%',
-        'full': '100%',
-       }
+        full: '100%',
+      },
+      minHeight: {
+        'screen-70': '70vh',
+        'screen-80': '80vh',
+      },
     },
   },
   variants: {

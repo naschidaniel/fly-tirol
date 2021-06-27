@@ -5,7 +5,6 @@ https://github.com/PivaleCo/nuxt-image-loader-module
 <template>
   <img
     v-if="responsiveUrl != ''"
-    class="cursor-pointer"
     :src="responsiveUrl"
     :width="width"
     :height="height"
