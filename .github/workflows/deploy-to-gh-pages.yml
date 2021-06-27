@@ -2,15 +2,14 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 name: deploy to gh-pages
 
 jobs:
-  gh-pages:
+  build:
     runs-on: ubuntu-latest
     name: Build fly-tirol.com
-    env:
-      commitnumber: git rev-parse --short HEAD
     steps:
       - name: Set the CURRENT_GIT_SHA
         run: echo "CURRENT_GIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
@@ -47,6 +46,15 @@ jobs:
           name: fly-tirol_build_${{ env.CURRENT_GIT_SHA}}
           path: dist
           retention-days: 10
+
+  gh-pages:
+    runs-on: ubuntu-latest
+    name: deploy
+    needs: [build]
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Set the CURRENT_GIT_SHA
+        run: echo "CURRENT_GIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
