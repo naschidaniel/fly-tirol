@@ -43,7 +43,7 @@ jobs:
         with:
           name: fly-tirol_build
           path: dist
-          retention-days: 10
+          retention-days: 0.5
 
   gh-pages:
     runs-on: ubuntu-latest
