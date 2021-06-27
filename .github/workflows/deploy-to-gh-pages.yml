@@ -9,7 +9,11 @@ jobs:
   gh-pages:
     runs-on: ubuntu-latest
     name: Build fly-tirol.com
+    env:
+      commitnumber: git rev-parse --short HEAD
     steps:
+      - name: Set the CURRENT_GIT_SHA
+        run: echo "CURRENT_GIT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
@@ -37,6 +41,12 @@ jobs:
           name: media.json
           path: dist/media.json
           retention-days: 5
+      - name: Build Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: fly-tirol_build_${{ env.CURRENT_GIT_SHA}}
+          path: dist
+          retention-days: 10
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
