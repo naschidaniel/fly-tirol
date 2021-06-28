@@ -23,6 +23,8 @@ jobs:
         run: npm run generate
       - name: get image-optimizer
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
+      - name: delete ./dist/static/media
+        run: rm -rf ./dist/static/media
       - name: optimize-images:sm
         run: npm run optimize-images:sm
       - name: optimize-images:md
