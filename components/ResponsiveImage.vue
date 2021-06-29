@@ -18,6 +18,7 @@ export default {
   },
   data() {
     return {
+      buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
       imageBoxWidthTailwindClass: '2xl',
       width: undefined,
       height: undefined,
@@ -48,12 +49,13 @@ export default {
     responsiveUrl() {
       const extension = this.imageInformation.url?.split('.')?.reverse()[0]
       if (process.env.NODE_ENV === 'development' || extension === undefined) {
-        return this.imageInformation.url
+        return `${this.imageInformation.url}?v=${this.buildtime}`
       }
-      return this.imageInformation.url.replace(
+      const responsiveUrl = this.imageInformation.url.replace(
         `.${extension}`,
         `_${this.imageBoxWidthTailwindClass}.${extension}`
       )
+      return responsiveUrl !== '' ? `${responsiveUrl}?v=${this.buildtime}` : ''
     },
   },
   mounted() {
