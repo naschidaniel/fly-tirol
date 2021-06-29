@@ -14,13 +14,20 @@
 <script>
 export default {
   props: {
-    height: { type: String, default: '' },
     picture: { type: String, default: '', required: true },
-    width: { type: String, default: '' },
   },
   data() {
     return {
       imageBoxWidthTailwindClass: '2xl',
+      width: undefined,
+      height: undefined,
+      screenSizes: {
+        sm: 640,
+        md: 768,
+        lg: 1080,
+        xl: 1280,
+        '2xl': 1536,
+      },
     }
   },
   computed: {
@@ -56,15 +63,20 @@ export default {
     getimageBoxWidth() {
       const imageBoxWidth = this.$refs.imageBox?.clientWidth
       this.imageBoxWidthTailwindClass =
-        imageBoxWidth <= 640
+        imageBoxWidth <= this.screenSizes.sm
           ? 'sm'
-          : imageBoxWidth <= 768
+          : imageBoxWidth <= this.screenSizes.md
           ? 'md'
-          : imageBoxWidth <= 1024
+          : imageBoxWidth <= this.screenSizes.lg
           ? 'lg'
-          : imageBoxWidth <= 1280
+          : imageBoxWidth <= this.screenSizes.xl
           ? 'xl'
           : '2xl'
+      this.width = this.screenSizes[this.imageBoxWidthTailwindClass]
+      this.height = Math.round(
+        this.screenSizes[this.imageBoxWidthTailwindClass] /
+          this.imageInformation.dimensions.ratio
+      )
     },
   },
 }
