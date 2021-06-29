@@ -42,8 +42,8 @@ export default {
   data() {
     return {
       title: {
-        pre: 'Das ist',
-        main: 'unser Team',
+        pre: 'Dein Fly Tirol',
+        main: 'Team',
       },
     }
   },
