@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 const em = (px) => `${px / 16}em`
 
 const screensizes = {
@@ -38,7 +36,8 @@ module.exports = {
       maxWidth: {
         // eslint-disable-next-line prettier/prettier
         '90': '90%',
-        95: '95%',
+        // eslint-disable-next-line prettier/prettier
+        '95': '95%',
       },
       minWidth: {
         0: '0',

@@ -18,6 +18,7 @@
   >
     <!-- https://heroicons.dev/ - chat - MIT Licence  -->
     <svg
+      licence="<!-- https://heroicons.dev/ - chat - MIT Licence  -->"
       xmlns="http://www.w3.org/2000/svg"
       class="h-6 w-6"
       fill="none"

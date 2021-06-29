@@ -16,6 +16,7 @@
   >
     <!-- https://heroicons.dev/ - mail - MIT Licence  -->
     <svg
+      licence="<!-- https://heroicons.dev/ - mail - MIT Licence  -->"
       class="w-6 h-6"
       fill="none"
       stroke="currentColor"

@@ -20,8 +20,10 @@
       "
       @click="toggleDropdown()"
     >
+      <!-- https://heroicons.dev/ - x - MIT Licence  -->
       <svg
         v-if="isOpen"
+        licence="<!-- https://heroicons.dev/ - x - MIT Licence  -->"
         xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6"
         fill="none"
@@ -35,8 +37,10 @@
           d="M6 18L18 6M6 6l12 12"
         />
       </svg>
+      <!-- https://heroicons.dev/ - menu - MIT Licence  -->
       <svg
         v-else
+        licence="<!-- https://heroicons.dev/ - menu - MIT Licence  -->"
         xmlns="http://www.w3.org/2000/svg"
         class="h-6 w-6"
         fill="none"
