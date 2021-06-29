@@ -3,7 +3,7 @@
     <p class="text-cyan-600">
       {{ cardTitle }}
     </p>
-    <responsive-image height="h-100" :picture="cardImage" width="h-100" />
+    <responsive-image :picture="cardImage" />
     <p class="text-gray-600">
       {{ description }}
     </p>

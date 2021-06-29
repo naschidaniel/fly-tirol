@@ -10,8 +10,6 @@
         v-if="picture !== ''"
         class="mb-2 object-contain rounded-lg mx-auto md:m-2"
         :picture="picture"
-        width="400"
-        hight="300"
       />
       <div class="md:flex-1 md:ml-4">
         <p class="font-mono text-gray-600 text-lg md:text-xl">
