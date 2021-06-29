@@ -1,13 +1,14 @@
 <template>
-  <img
-    v-if="responsiveUrl != ''"
-    class="cursor-pointer"
-    :src="responsiveUrl"
-    :width="width"
-    :height="height"
-    :alt="imageInformation['alt']"
-    :title="imageInformation['title']"
-  />
+  <div id="image-box" ref="imageBox">
+    <img
+      v-if="responsiveUrl != ''"
+      :src="responsiveUrl"
+      :width="width"
+      :height="height"
+      :alt="imageInformation['alt']"
+      :title="imageInformation['title']"
+    />
+  </div>
 </template>
 
 <script>
@@ -16,6 +17,11 @@ export default {
     height: { type: String, default: '' },
     picture: { type: String, default: '', required: true },
     width: { type: String, default: '' },
+  },
+  data() {
+    return {
+      imageBoxWidthTailwindClass: '2xl',
+    }
   },
   computed: {
     imageInformation() {
@@ -39,8 +45,26 @@ export default {
       }
       return this.imageInformation.url.replace(
         `.${extension}`,
-        `_${this.$store.state.windowWidth}.${extension}`
+        `_${this.imageBoxWidthTailwindClass}.${extension}`
       )
+    },
+  },
+  mounted() {
+    this.getimageBoxWidth()
+  },
+  methods: {
+    getimageBoxWidth() {
+      const imageBoxWidth = this.$refs.imageBox?.clientWidth
+      this.imageBoxWidthTailwindClass =
+        imageBoxWidth <= 640
+          ? 'sm'
+          : imageBoxWidth <= 768
+          ? 'md'
+          : imageBoxWidth <= 1024
+          ? 'lg'
+          : imageBoxWidth <= 1280
+          ? 'xl'
+          : '2xl'
     },
   },
 }
