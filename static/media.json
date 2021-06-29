@@ -3,6 +3,12 @@
     "url": "/media/ausbildung/grundausbildung/1_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "1_grundausbildung.jpg",
+    "dimensions": {
+      "height": 2048,
+      "width": 1365,
+      "type": "jpg",
+      "ratio": 0.667
+    },
     "alt": "",
     "title": ""
   },
@@ -10,6 +16,12 @@
     "url": "/media/ausbildung/grundausbildung/2_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "2_grundausbildung.jpg",
+    "dimensions": {
+      "height": 1365,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -17,6 +29,12 @@
     "url": "/media/ausbildung/grundausbildung/3_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "3_grundausbildung.jpg",
+    "dimensions": {
+      "height": 1365,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -24,6 +42,12 @@
     "url": "/media/ausbildung/grundausbildung/4_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "4_grundausbildung.jpg",
+    "dimensions": {
+      "height": 1365,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -31,6 +55,12 @@
     "url": "/media/ausbildung/grundausbildung/5_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "5_grundausbildung.jpg",
+    "dimensions": {
+      "height": 1365,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -38,6 +68,12 @@
     "url": "/media/ausbildung/grundausbildung/uebungshang.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "uebungshang.jpg",
+    "dimensions": {
+      "height": 1365,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -45,6 +81,12 @@
     "url": "/media/fortbildung/1_tandemcourse.jpg",
     "path": "/media/fortbildung/",
     "file": "1_tandemcourse.jpg",
+    "dimensions": {
+      "height": 2362,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 0.667
+    },
     "alt": "",
     "title": ""
   },
@@ -52,6 +94,12 @@
     "url": "/media/fortbildung/2_tandemcourse.jpg",
     "path": "/media/fortbildung/",
     "file": "2_tandemcourse.jpg",
+    "dimensions": {
+      "height": 2362,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 0.667
+    },
     "alt": "",
     "title": ""
   },
@@ -59,6 +107,12 @@
     "url": "/media/fortbildung/fortbildung.jpg",
     "path": "/media/fortbildung/",
     "file": "fortbildung.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -66,6 +120,12 @@
     "url": "/media/fortbildung/gardasee-infinity-over-lake.jpg",
     "path": "/media/fortbildung/",
     "file": "gardasee-infinity-over-lake.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -73,6 +133,12 @@
     "url": "/media/fortbildung/gardasee-infinity-over-land.jpg",
     "path": "/media/fortbildung/",
     "file": "gardasee-infinity-over-land.jpg",
+    "dimensions": {
+      "height": 2500,
+      "width": 1667,
+      "type": "jpg",
+      "ratio": 0.667
+    },
     "alt": "",
     "title": ""
   },
@@ -80,6 +146,12 @@
     "url": "/media/fortbildung/gardasee-landing.jpg",
     "path": "/media/fortbildung/",
     "file": "gardasee-landing.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -87,6 +159,12 @@
     "url": "/media/fortbildung/gardasee.jpg",
     "path": "/media/fortbildung/",
     "file": "gardasee.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -94,6 +172,12 @@
     "url": "/media/reisen/gardasee_takeoff.jpg",
     "path": "/media/reisen/",
     "file": "gardasee_takeoff.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -101,6 +185,12 @@
     "url": "/media/reisen/infinity-lago.jpg",
     "path": "/media/reisen/",
     "file": "infinity-lago.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -108,6 +198,12 @@
     "url": "/media/reisen/infinity_over_village.jpg",
     "path": "/media/reisen/",
     "file": "infinity_over_village.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -115,6 +211,12 @@
     "url": "/media/reisen/paragliding_lago_de_garda.jpg",
     "path": "/media/reisen/",
     "file": "paragliding_lago_de_garda.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -122,27 +224,51 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/flight-direction-gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/",
     "file": "flight-direction-gardasee.jpg",
-    "alt": "Paraglider Lake Gardasee Landscape Mountain",
-    "title": "Sebastain auf den Weg in die Manöverbox am Gardasee"
+    "dimensions": {
+      "height": 1280,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/sicherheitstrainings/sicherheitstraining-gardasee/infinit-gardasee.jpg": {
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/infinit-gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/",
     "file": "infinit-gardasee.jpg",
-    "alt": "Paraglider Lake Infinity Thumbling",
-    "title": "Sebastain beim Infinity"
+    "dimensions": {
+      "height": 1280,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/sicherheitstrainings/sicherheitstraining-gardasee/takeoff-gardasee.jpg": {
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/takeoff-gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/",
     "file": "takeoff-gardasee.jpg",
-    "alt": "Mountain Landscape Takeoff Lago di Garda Monte Baldo",
+    "dimensions": {
+      "height": 1280,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
     "title": ""
   },
   "/media/tandemfliegen/0_tandemfliegen_getting_ready.jpg": {
     "url": "/media/tandemfliegen/0_tandemfliegen_getting_ready.jpg",
     "path": "/media/tandemfliegen/",
     "file": "0_tandemfliegen_getting_ready.jpg",
+    "dimensions": {
+      "height": 2362,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 0.667
+    },
     "alt": "",
     "title": ""
   },
@@ -150,20 +276,38 @@
     "url": "/media/tandemfliegen/1_takeoff-preperation-sebastian.jpg",
     "path": "/media/tandemfliegen/",
     "file": "1_takeoff-preperation-sebastian.jpg",
-    "alt": "Paragliding Tandem Takeoff Preperation",
-    "title": "Schirmvorbereitung"
+    "dimensions": {
+      "height": 2362,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/tandemfliegen/2_takeoff-preperation-stefan.jpg": {
     "url": "/media/tandemfliegen/2_takeoff-preperation-stefan.jpg",
     "path": "/media/tandemfliegen/",
     "file": "2_takeoff-preperation-stefan.jpg",
-    "alt": "Pragliding Tandemparagliding preperation",
-    "title": "Startvorbereitung"
+    "dimensions": {
+      "height": 2362,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/tandemfliegen/3_tandemfliegen_happy_passenger.jpg": {
     "url": "/media/tandemfliegen/3_tandemfliegen_happy_passenger.jpg",
     "path": "/media/tandemfliegen/",
     "file": "3_tandemfliegen_happy_passenger.jpg",
+    "dimensions": {
+      "height": 1575,
+      "width": 2362,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -171,6 +315,12 @@
     "url": "/media/tandemfliegen/4_tandem-paragliding-takeoff.jpg",
     "path": "/media/tandemfliegen/",
     "file": "4_tandem-paragliding-takeoff.jpg",
+    "dimensions": {
+      "height": 2362,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 0.667
+    },
     "alt": "",
     "title": ""
   },
@@ -178,6 +328,12 @@
     "url": "/media/tandemfliegen/5_tandemfliegen_start.jpg",
     "path": "/media/tandemfliegen/",
     "file": "5_tandemfliegen_start.jpg",
+    "dimensions": {
+      "height": 1575,
+      "width": 2362,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -185,6 +341,12 @@
     "url": "/media/tandemfliegen/6_tandemfliegen_westendorf.jpg",
     "path": "/media/tandemfliegen/",
     "file": "6_tandemfliegen_westendorf.jpg",
+    "dimensions": {
+      "height": 2362,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 0.667
+    },
     "alt": "",
     "title": ""
   },
@@ -192,6 +354,12 @@
     "url": "/media/tandemfliegen/7_hohe-salve-westendorf.jpg",
     "path": "/media/tandemfliegen/",
     "file": "7_hohe-salve-westendorf.jpg",
+    "dimensions": {
+      "height": 1575,
+      "width": 2362,
+      "type": "jpg",
+      "ratio": 1.5
+    },
     "alt": "",
     "title": ""
   },
@@ -199,49 +367,91 @@
     "url": "/media/team/bernie.jpg",
     "path": "/media/team/",
     "file": "bernie.jpg",
-    "alt": "Bernhard Mimmler Portrait",
-    "title": "Bernhard Mimmler"
+    "dimensions": {
+      "height": 1890,
+      "width": 1260,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/team/hanna.jpg": {
     "url": "/media/team/hanna.jpg",
     "path": "/media/team/",
     "file": "hanna.jpg",
-    "alt": " Hanna Anselm Portrait",
-    "title": "Hanna Anselm"
+    "dimensions": {
+      "height": 1890,
+      "width": 1260,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/team/jan.jpg": {
     "url": "/media/team/jan.jpg",
     "path": "/media/team/",
     "file": "jan.jpg",
-    "alt": "Jan Kuhnert Portrait",
-    "title": "Jan Kuhnert "
+    "dimensions": {
+      "height": 1890,
+      "width": 1260,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/team/kilian.jpg": {
     "url": "/media/team/kilian.jpg",
     "path": "/media/team/",
     "file": "kilian.jpg",
-    "alt": "Kilian Kuhnert Portrait",
-    "title": "Kilian Kuhnert"
+    "dimensions": {
+      "height": 1890,
+      "width": 1260,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/team/sebastian.jpg": {
     "url": "/media/team/sebastian.jpg",
     "path": "/media/team/",
     "file": "sebastian.jpg",
-    "alt": "Sebastain Kahn Portrait",
-    "title": "Sebastain Kahn"
+    "dimensions": {
+      "height": 1890,
+      "width": 1260,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/team/stefan.jpg": {
     "url": "/media/team/stefan.jpg",
     "path": "/media/team/",
     "file": "stefan.jpg",
-    "alt": "Stefan Bischofer Portrait",
-    "title": "Stefan Bischofer"
+    "dimensions": {
+      "height": 1890,
+      "width": 1260,
+      "type": "jpg",
+      "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/team/team.jpg": {
     "url": "/media/team/team.jpg",
     "path": "/media/team/",
     "file": "team.jpg",
-    "alt": "Fly Tirol Team Foto Flugschule Westendorf",
-    "title": "Das Team der Flugschule Westendorf"
+    "dimensions": {
+      "height": 1575,
+      "width": 2362,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
   }
 }
