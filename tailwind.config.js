@@ -50,6 +50,10 @@ module.exports = {
         'screen-70': '70vh',
         'screen-80': '80vh',
       },
+      borderRadius: {
+        '4xl': '2rem',
+        '5xl': '3rem',
+      },
     },
   },
   variants: {

@@ -27,7 +27,7 @@ export default {
       'voraussetzungen'
     ).fetch()
     const tandemflights = await $content('tandemfliegen', params.slug)
-      .where({ slider: true })
+      .where({ card: true })
       .sortBy('order', 'asc')
       .fetch()
     return { index, prerequisites, tandemflights }
@@ -36,7 +36,7 @@ export default {
     return {
       dev: process.dev,
       hero: {
-        pretitle: 'Gehe mit uns',
+        pretitle: 'Gehe mit FlyTirol',
         title: 'Tandemfliegen',
         intro:
           'Einmal das Gefühl der Freiheit hoch über den Gipfeln der Kitzbüheler Alpen mit Blick auf den Alpenhauptkamm und den Wilden Kaiser bei einem Tandemflug mit einem unserer Top-Tandempiloten genießen! Egal ob im Winter oder Sommer, die Fly Tirol Flugschule zeigt dir das Alpenpanorama aus der Vogelperspektive.',
