@@ -2,6 +2,8 @@
   <div id="image-box" ref="imageBox">
     <img
       v-if="responsiveUrl != ''"
+      loading="lazy"
+      :class="imgClass"
       :src="responsiveUrl"
       :width="width"
       :height="height"
@@ -15,6 +17,7 @@
 export default {
   props: {
     picture: { type: String, default: '', required: true },
+    imgClass: { type: String, default: '', required: false },
   },
   data() {
     return {
@@ -44,7 +47,7 @@ export default {
       }
       return images.length === 1
         ? images[0]
-        : { alt: '', title: '', url: this.picture }
+        : { alt: '', title: '', url: this.picture, dimensions: undefined }
     },
     responsiveUrl() {
       const extension = this.imageInformation.url?.split('.')?.reverse()[0]
@@ -77,7 +80,7 @@ export default {
       this.width = this.screenSizes[this.imageBoxWidthTailwindClass]
       this.height = Math.round(
         this.screenSizes[this.imageBoxWidthTailwindClass] /
-          this.imageInformation.dimensions.ratio
+          this.imageInformation?.dimensions?.ratio
       )
     },
   },

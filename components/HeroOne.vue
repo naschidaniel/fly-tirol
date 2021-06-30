@@ -2,7 +2,7 @@
   <div class="relative min-h-screen-70 overflow-hidden">
     <div class="absolute top-0 w-full left-0 bottom-0 right-0">
       <responsive-image
-        class="object-cover object-center w-full h-full"
+        img-class="object-cover object-center w-full h-full"
         :picture="hero.image"
       />
     </div>
