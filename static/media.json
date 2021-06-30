@@ -1,11 +1,4 @@
 {
-  "/media/ft_hero.jpg": {
-    "url": "/media/ft_hero.jpg",
-    "path": "/media/",
-    "file": "ft_hero.jpg",
-    "alt": "Paraglider in den Wolken mit Sicht auf Berge",
-    "title": ""
-  },
   "/media/ausbildung/grundausbildung/1_grundausbildung.jpg": {
     "url": "/media/ausbildung/grundausbildung/1_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
@@ -95,6 +88,13 @@
     "path": "/media/fortbildung/",
     "file": "gardasee.jpg",
     "alt": "",
+    "title": ""
+  },
+  "/media/ft_hero.jpg": {
+    "url": "/media/ft_hero.jpg",
+    "path": "/media/",
+    "file": "ft_hero.jpg",
+    "alt": "Paraglider in den Wolken mit Sicht auf Berge",
     "title": ""
   },
   "/media/reisen/gardasee_takeoff.jpg": {
@@ -202,12 +202,26 @@
     "alt": "",
     "title": ""
   },
+  "/media/tandemfliegen/8_Bischae-TakeOff_3.jpg": {
+    "url": "/media/tandemfliegen/8_Bischae-TakeOff_3.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "8_Bischae-TakeOff_3.jpg",
+    "alt": "",
+    "title": ""
+  },
   "/media/team/bernie.jpg": {
     "url": "/media/team/bernie.jpg",
     "path": "/media/team/",
     "file": "bernie.jpg",
     "alt": "Bernhard Mimmler Portrait",
     "title": "Bernhard Mimmler"
+  },
+  "/media/team/flytirol_geschichte.jpg": {
+    "url": "/media/team/flytirol_geschichte.jpg",
+    "path": "/media/team/",
+    "file": "flytirol_geschichte.jpg",
+    "alt": "",
+    "title": ""
   },
   "/media/team/hanna.jpg": {
     "url": "/media/team/hanna.jpg",
