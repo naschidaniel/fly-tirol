@@ -4,7 +4,7 @@
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
         <responsive-image img-class="object-cover" :picture="flight.image" />
       </div>
-      <div class="card--content p-4 pb-12">
+      <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
             {{ flight.title }}
@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-end pr-8">
+    <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
         <card-button name="Buchen" to="/kontakt" />
       </div>

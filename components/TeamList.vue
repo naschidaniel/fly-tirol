@@ -23,12 +23,8 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap w-full">
-      <div
-        v-for="member in members"
-        :key="member.name"
-        class="w-full lg:w-1/4 flex-grow-0 p-4"
-      >
+    <div class="card--grid grid-gap-2 w-full">
+      <div v-for="member in members" :key="member.name">
         <team-member-card v-if="member.name" :member="member" />
       </div>
     </div>

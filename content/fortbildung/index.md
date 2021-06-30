@@ -4,7 +4,7 @@ description: Fortbildungen der Flugschule Fly Tirol
 hero: 
     pretitle: Paragliding
     title: Fortbildung
-    intro: Hier sollte noch etwas Text stehen. Was kann man mit den Reisen machen?
+    intro: Du hast deinen A-Schein bereits und möchtest deine Fähigkeiten ausbauen? Ob Thermikfliegen oder Tandemschein, wir helfen dir dabei ein besserer Pilot zu werden!
     image: 
 ---
 
