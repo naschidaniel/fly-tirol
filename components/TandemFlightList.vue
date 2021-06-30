@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden">
+  <div class="overflow-hidden pt-12">
     <div class="w-full max-w-90 mx-auto">
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide
@@ -25,6 +25,8 @@ export default {
     return {
       swiperOption: {
         slidesPerView: 'auto',
+        centeredSlides: true,
+        initialSlide: 0,
         watchOverflow: true,
         spaceBetween: 12,
         grabCursor: true,
@@ -35,6 +37,7 @@ export default {
         breakpoints: {
           640: {
             spaceBetween: 32,
+            initialSlide: 1,
           },
         },
         // navigation: {
