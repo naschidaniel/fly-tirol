@@ -5,6 +5,7 @@ location: Westendorf
 course: Tandemschein
 price: XXX EUR
 order: 4
+card: true
 ---
 
 # Tandemkurs

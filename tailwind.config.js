@@ -33,6 +33,7 @@ module.exports = {
       spacing: {
         0.75: '0.1875rem',
         '5p': '5%',
+        '10p': '10%',
       },
       maxWidth: {
         // eslint-disable-next-line prettier/prettier

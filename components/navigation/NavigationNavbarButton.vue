@@ -8,8 +8,12 @@
         p-2
         rounded-md
         text-brand
-        hover:text-white hover:bg-gray-700
-        focus:outline-none focus:bg-gray-700 focus:text-white
+        focus:ring-2
+        focus:ring-blue-400
+        focus:ring-offset-2
+        focus:ring-offset-white
+        focus:ring-opacity-100
+        focus:outline-none
         transition
         duration-150
         ease-in-out

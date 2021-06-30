@@ -1,9 +1,11 @@
 ---
-title: Sicherheitstraining am Gardasee
+title: Sicherheitstraining
 description: Sicherheitstraining am Gardasee
 course: Sicherheitstraining am Gardasee
+location: Gardasee - Italien
 price: XXX EUR
 order: 1
+card: true
 ---
 
 # Sicherheitstraining am Gardasee

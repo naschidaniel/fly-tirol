@@ -27,7 +27,7 @@
       <div
         v-for="member in members"
         :key="member.name"
-        class="w-1/4 flex-grow-0 p-4"
+        class="w-full lg:w-1/4 flex-grow-0 p-4"
       >
         <team-member-card v-if="member.name" :member="member" />
       </div>

@@ -7,8 +7,10 @@
       />
     </div>
 
-    <div class="relative max-w-90 w-11/12 ml-auto py-24 z-10">
-      <div class="flex flex-col w-96 max-w-screen-sm flex-shrink-0">
+    <div
+      class="relative max-w-90 mx-auto lg:w-11/12 lg:mr-0 lg:ml-auto py-24 z-10"
+    >
+      <div class="flex flex-col lg:w-96 max-w-screen-sm lg:flex-shrink-0">
         <div class="mt-6">
           <h1 class="mb-6">
             <span
@@ -23,7 +25,7 @@
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
               <span class="inline-block">{{ hero.pretitle }}</span>
             </span>
-            <span class="text-6xl font-heading font-bold">
+            <span class="text-4xl lg:text-6xl font-heading font-bold">
               {{ hero.title }}
             </span>
           </h1>
