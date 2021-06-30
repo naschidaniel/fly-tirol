@@ -5,7 +5,8 @@
         relative
         flex flex-wrap
         lg:flex-nowrap lg:w-11/12 lg:maxw-90 lg:mr-0 lg:ml-auto lg:pt-8
-        pb-12
+        pb-4
+        md:pb-12
         2xl:pb-24
         z-10
       "
