@@ -25,19 +25,15 @@ export default {
   components: true,
 
   buildModules: [
-    '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/svg',
     '@nuxt-hero-icons/solid/nuxt',
     '@nuxt-hero-icons/outline/nuxt',
-    'nuxt-lazy-load',
   ],
 
-  modules: ['@nuxt/content', '@nuxtjs/svg'],
+  modules: ['@nuxt/content'],
 
   generate: {
-    interval: 500,
     fallback: '404.html',
     async routes() {
       const { $content } = require('@nuxt/content')
