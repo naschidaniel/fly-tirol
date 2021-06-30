@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  
+    &--slide {
+      @apply w-80;
+      flex-shrink: 0;
+      position: relative;
+      transition-property: transform;
+    }
+  
+    &--header {
+      position: relative;
+      overflow: hidden;
+      
+    }
+    &--container {
+      flex-grow: 1;
+      overflow: hidden;
+    }
+    &--content {
+      position: relative;
+
+      &__inner {
+        position: relative;
+        z-index: 20;
+      }
+
+      &:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        top: -1rem;
+        left: -5%;
+        width: 110%;
+        height: 3rem;
+        transform: rotate(-5deg) translateY(-1rem);
+        background: white;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+      }
+    }
+  }

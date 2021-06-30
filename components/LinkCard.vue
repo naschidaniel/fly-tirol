@@ -1,14 +1,22 @@
 <template>
-  <div class="rounded-xl p-4 bg-gray-50 border-2 border-gray-300 shadow-sm">
-    <p class="text-cyan-600">
-      {{ cardTitle }}
-    </p>
-    <responsive-image :picture="cardImage" />
-    <p class="text-gray-600">
-      {{ description }}
-    </p>
-    <div class="flex content-center">
-      <div class="text-right">
+  <div class="card">
+    <div class="card--container w-full rounded-xl bg-white shadow-xl">
+      <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
+        <responsive-image img-class="object-cover" :picture="cardImage" />
+      </div>
+      <div class="card--content p-4 pb-12">
+        <div class="card--content__inner">
+          <h3 class="text-2xl font-heading font-semibold mb-4">
+            {{ cardTitle }}
+          </h3>
+          <p class="text-gray-600">
+            {{ description }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-end pr-8">
+      <div class="transform -translate-y-2/4">
         <card-button :to="to" :name="linkName" />
       </div>
     </div>

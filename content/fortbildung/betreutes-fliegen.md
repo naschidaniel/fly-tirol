@@ -1,9 +1,11 @@
 ---
 title: Begleitetes Fliegen
 description: Begleitetes Fliegen in Westendorf
+location: Westendorf
 course: Begleitetes Fliegen
 price: XXX EUR
 order: 1
+card: true
 ---
 
 # Begleitetes Fliegen

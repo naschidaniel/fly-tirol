@@ -1,19 +1,31 @@
 <template>
-  <div class="rounded-xl p-4 bg-gray-50 m-8 border-2 border-gray-300 shadow-sm">
-    <h3 class="text-cyan-600">
-      {{ flight.title }}
-    </h3>
-    <p class="text-gray-600">
-      {{ flight.description }}
-    </p>
-    <p>
-      {{ flight.information }}
-    </p>
-    <div class="flex content-start">
-      <div class="flex-1">
-        {{ flight.price }}
+  <div class="card max-w-xs w-80">
+    <div class="card--container w-full rounded-xl bg-white shadow-xl">
+      <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
+        <responsive-image img-class="object-cover" :picture="flight.image" />
       </div>
-      <div class="text-right">
+      <div class="card--content p-4 pb-12">
+        <div class="card--content__inner">
+          <h3 class="text-2xl font-heading font-semibold mb-1">
+            {{ flight.title }}
+          </h3>
+          <div class="flex items-center text-sm -ml-1 mb-4">
+            <outline-location-marker-icon class="w-4 h-4" />
+            <span class="block leading-none pt-1 ml-1">
+              {{ flight.location }}
+            </span>
+          </div>
+          <p class="text-gray-600">
+            {{ flight.description }}
+          </p>
+          <div class="font-medium mt-4">
+            {{ flight.price }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-end pr-8">
+      <div class="transform -translate-y-2/4">
         <card-button name="Buchen" to="/kontakt" />
       </div>
     </div>

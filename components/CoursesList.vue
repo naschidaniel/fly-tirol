@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <div v-for="course in courses" :key="course.slug">
-      <course-card class="m-2" :course="course" />
+  <div class="flex flex-wrap max-w-90 mx-auto py-12">
+    <div v-for="course in courses" :key="course.slug" class="flex-shrink-0">
+      <course-card class="p-2" :course="course" />
     </div>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-content :document="index" />
+    <hero-one :hero="hero" />
     <link-list
       :advanced-trainings="advancedTrainings"
       :basic-trainings="basicTrainings"
@@ -11,17 +11,24 @@
 </template>
 
 <script>
-import LinkList from '~/components/LinkList.vue'
+import HeroOne from '~/components/HeroOne.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { LinkList },
+  components: { HeroOne },
   async asyncData({ $content }) {
     const index = await $content('index').fetch()
     return { index }
   },
   data() {
     return {
+      hero: {
+        pretitle: 'Fly Tirol Flugschule',
+        title: 'Flieg mit uns',
+        intro:
+          'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
+        image: '/media/ft_hero.jpg',
+      },
       advancedTrainings: {
         cardTitle: 'Fortbildung',
         cardImage: '/media/fortbildung/fortbildung.jpg',
@@ -46,8 +53,8 @@ export default {
       },
       tandemflights: {
         cardTitle: 'Tandemflüge',
-        cardImage: '/media/tandemfliegen/7_hohe-salve-westendorf.jpg',
-        description: 'Unsere Tandemflüge',
+        cardImage: '/media/tandemfliegen/8_Bischae-TakeOff_3.jpg',
+        description: 'Erlebe das Alpenpanorama aus der Vogelperspektive.',
         linkName: 'zu den Tandemflügen',
         to: '/tandemfliegen',
       },

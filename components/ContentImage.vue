@@ -1,6 +1,6 @@
 <template>
   <responsive-image
-    class="mb-2 object-contain rounded-lg mx-auto"
+    img-class="mb-2 object-contain rounded-lg mx-auto"
     :picture="picture"
   />
 </template>

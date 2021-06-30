@@ -1,9 +1,11 @@
 ---
 title: A-Schein
 description: A-Schein in Westendorf
+location: Westendorf
 course: A-Schein
 price: 495 EUR
 order: 3
+card: true
 ---
 
 # A-Schein

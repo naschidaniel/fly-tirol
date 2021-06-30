@@ -1,9 +1,11 @@
 ---
 title: Höhenflugseminar
 description: Höhenflugseminar in Westendorf
+location: Westendorf
 course: Höhenflugseminar
 price: 590 EUR
 order: 2
+card: true
 ---
 
 # Höhenflugseminar

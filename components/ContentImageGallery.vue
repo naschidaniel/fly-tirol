@@ -1,13 +1,15 @@
 <template>
-  <section class="py-8 px-2 w-100">
-    <div class="flex flex-wrap -mx-4 mb-4">
-      <div v-for="img in imageGalery" :key="img.url" class="md:w-1/3 px-4 mb-6">
-        <responsive-image
-          class="rounded shadow-md"
-          :alt="img.alt"
-          :picture="img.url"
-          :title="img.title"
-        />
+  <section class="py-8 w-100">
+    <div class="flex flex-wrap">
+      <div v-for="img in imageGalery" :key="img.url" class="w-1/2 md:w-1/4 p-2">
+        <div class="aspect-w-1 aspect-h-1 overflow-hidden">
+          <responsive-image
+            img-class="rounded shadow-md object-cover w-full h-full"
+            :alt="img.alt"
+            :picture="img.url"
+            :title="img.title"
+          />
+        </div>
       </div>
     </div>
   </section>

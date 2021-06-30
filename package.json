@@ -25,12 +25,15 @@
     "optimize-images": "npm run optimize-images:sm && npm run optimize-images:md && npm run optimize-images:lg && npm run optimize-images:xl && npm run optimize-images:2xl"
   },
   "dependencies": {
+    "@nuxt-hero-icons/outline": "^1.0.1",
+    "@nuxt-hero-icons/solid": "^1.0.1",
     "@nuxt/content": "^1.14.0",
-    "@nuxtjs/composition-api": "^0.24.0",
-    "@vue/composition-api": "^1.0.0-rc.9",
+    "@tailwindcss/aspect-ratio": "^0.2.1",
     "core-js": "^3.9.1",
     "heroicons": "^1.0.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
@@ -42,9 +45,13 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.7.0",
+    "fibers": "^5.0.0",
     "glob": "^7.1.7",
     "image-size": "^1.0.0",
     "postcss": "^8.2.8",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "sass": "^1.35.1",
+    "sass-loader": "^10.1.1",
+    "tailwindcss-debug-screens": "^2.0.0"
   }
 }

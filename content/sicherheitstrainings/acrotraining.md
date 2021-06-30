@@ -1,7 +1,8 @@
 ---
-title: Sicherheitstraining in Ölüdeniz -Türkei
-description: Sicherheitstraining in Ölüdeniz -Türkei
-course: Sicherheitstraining in Ölüdeniz -Türkei
+title: Acrobatic-Paragleit-Kurs
+description: Acrobatic-Paragleit-Kurs am Gardasee in Italien
+course: Acrobatic-Paragleit-Kurs am Gardasee in Italien
+location: Gardasee - Italien
 price: XXX EUR
 order: 3
 ---

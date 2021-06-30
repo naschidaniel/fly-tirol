@@ -1,4 +1,8 @@
+import path from 'path'
+import fs from 'fs'
+
 export default {
+  dev: process.env.NODE_ENV !== 'production',
   target: 'static',
   ssr: false,
   head: {
@@ -14,22 +18,22 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['~assets/styles/tailwind.css'],
+  css: ['~/assets/styles/main.scss'],
 
   plugins: ['~/plugins/formatters.js'],
 
   components: true,
 
   buildModules: [
-    '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
+    '@nuxt-hero-icons/solid/nuxt',
+    '@nuxt-hero-icons/outline/nuxt',
   ],
 
   modules: ['@nuxt/content'],
 
   generate: {
-    interval: 500,
     fallback: '404.html',
     async routes() {
       const { $content } = require('@nuxt/content')
@@ -45,5 +49,19 @@ export default {
     liveEdit: false,
   },
 
-  build: {},
+  build: {
+    extractCSS: true,
+  },
+
+  router: {
+    linkExactActiveClass: 'active',
+  },
+
+  server: {
+    host: '0.0.0.0', // default: localhost,
+    https: {
+      key: fs.readFileSync(path.resolve(__dirname, 'localhost.key')),
+      cert: fs.readFileSync(path.resolve(__dirname, 'localhost.crt')),
+    }
+  },
 }

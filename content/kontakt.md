@@ -1,11 +1,21 @@
 ---
-title: Kontakt
+title: Kontaktoer
 description: Unsere Kontaktdaten
+hero:
+    pretitle: 'Tandem- und Ausbidlungshotline'
+    title: 'Kontakt'
+    intro:
+        'Hier vll auch noch ein wenig Text. Wie und wann kann man uns am besten erreichen?'
+    image: /media/team/team.jpg
+    link1: 
+        href: tel:004369910468280
+        name: +43 699 10468280
+    link2:
+        href: mailto:info@fly-tirol.com
+        name: info@fly-tirol.com
 ---
-# Kontakt
 
-<content-image picture="/media/team/team.jpg"></content-image>
-
+<hero-three :hero="hero"></hero-three>
 
 ## Anschrift
 
@@ -19,9 +29,5 @@ A-6363 Westendorf / Tirol
 
 Österreich
 
-## Tandem- und Ausbidlungshotline
 
-<button-phone telefonnumber="+43 699 10468280"></button-phone>
-
-<button-mail mailaddress="info@fly-tirol.com"></button-mail>
 

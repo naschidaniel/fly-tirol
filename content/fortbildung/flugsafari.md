@@ -1,9 +1,11 @@
 ---
 title: Flugsafari
 description: Flugsafari in den Kitzbühler Alpen
+location: Kitzbühler Alpen
 course: Flugsafari
 price: XXX EUR
 order: 3
+card: true
 ---
 
 # Flugsafari

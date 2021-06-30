@@ -11,6 +11,8 @@
       />
       <navigation-dropdown-link name="Reisen" to="/reisen" />
       <navigation-dropdown-link name="Team" to="/team" />
+    </div>
+    <div class="px-2 p-2">
       <navigation-dropdown-link name="Kontakt" to="/kontakt" />
     </div>
   </div>
