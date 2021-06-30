@@ -1,5 +1,5 @@
 <template>
-  <div id="image-box" ref="imageBox">
+  <div class="image-box" ref="imageBox">
     <img
       v-if="responsiveUrl != ''"
       loading="lazy"
