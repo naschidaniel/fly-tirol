@@ -2,6 +2,9 @@
   <div>
     <nuxt-content :document="index" />
     <courses-list :courses="courses" />
+    <div v-if="index.gallery" class="w-full max-w-90 mx-auto">
+      <content-image-gallery :path="index.gallery" />
+    </div>
   </div>
 </template>
 
