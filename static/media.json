@@ -1,11 +1,4 @@
 {
-  "/media/ft_hero.jpg": {
-    "url": "/media/ft_hero.jpg",
-    "path": "/media/",
-    "file": "ft_hero.jpg",
-    "alt": "Paraglider in den Wolken mit Sicht auf Berge",
-    "title": ""
-  },
   "/media/ausbildung/grundausbildung/1_grundausbildung.jpg": {
     "url": "/media/ausbildung/grundausbildung/1_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
@@ -173,6 +166,19 @@
       "ratio": 1.5
     },
     "alt": "",
+    "title": ""
+  },
+  "/media/ft_hero.jpg": {
+    "url": "/media/ft_hero.jpg",
+    "path": "/media/",
+    "file": "ft_hero.jpg",
+    "dimensions": {
+      "height": 1329,
+      "width": 2362,
+      "type": "jpg",
+      "ratio": 1.777
+    },
+    "alt": "Paraglider in den Wolken mit Sicht auf Berge",
     "title": ""
   },
   "/media/reisen/gardasee_takeoff.jpg": {
@@ -370,6 +376,19 @@
     "alt": "",
     "title": ""
   },
+  "/media/tandemfliegen/8_Bischae-TakeOff_3.jpg": {
+    "url": "/media/tandemfliegen/8_Bischae-TakeOff_3.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "8_Bischae-TakeOff_3.jpg",
+    "dimensions": {
+      "height": 886,
+      "width": 1575,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/team/bernie.jpg": {
     "url": "/media/team/bernie.jpg",
     "path": "/media/team/",
@@ -379,6 +398,19 @@
       "width": 1260,
       "type": "jpg",
       "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/flytirol_geschichte.jpg": {
+    "url": "/media/team/flytirol_geschichte.jpg",
+    "path": "/media/team/",
+    "file": "flytirol_geschichte.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
