@@ -2,7 +2,7 @@
   <div class="card max-w-xs w-80">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
-        <responsive-image class="object-cover" :picture="course.image" />
+        <responsive-image img-class="object-cover" :picture="course.image" />
       </div>
       <div class="card--content p-4 pb-12">
         <div class="card--content__inner">

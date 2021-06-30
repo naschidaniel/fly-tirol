@@ -45,7 +45,7 @@
           "
         ></span>
         <responsive-image
-          class="object-cover object-center w-full h-full"
+          img-class="object-cover object-center w-full h-full"
           :picture="hero.image"
         />
       </div>

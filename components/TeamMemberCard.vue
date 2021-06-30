@@ -4,7 +4,7 @@
       <div class="card--header aspect-w-2 aspect-h-3 rounded-t-xl bg-gray-200">
         <responsive-image
           v-if="member.picture"
-          class="object-contain"
+          img-class="object-contain"
           :picture="member.picture"
           width="400"
           hight="300"
