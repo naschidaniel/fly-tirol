@@ -3,7 +3,10 @@
     <hero-two :hero="hero" />
     <tandem-flight-list :tandemflights="tandemflights" />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
-      <nuxt-content :document="index" class="w-full md:w-1/3" />
+      <nuxt-content
+        :document="index"
+        class="w-full md:w-1/3 text-lg leading-relaxed max-w-prose"
+      />
       <content-image-gallery
         path="/media/tandemfliegen/"
         class="w-full md:w-2/3 md:pl-8"
