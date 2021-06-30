@@ -5,6 +5,7 @@ location: Westendorf
 course: Grundkurs
 price: 490 EUR
 order: 1
+card: true
 ---
 
 # Grundkurs

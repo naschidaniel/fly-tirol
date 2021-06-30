@@ -5,6 +5,7 @@ location: Westendorf
 course: Thermikfliegen
 price: XXX EUR
 order: 2
+card: true
 ---
 
 # Thermikfliegen

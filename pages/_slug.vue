@@ -1,5 +1,7 @@
 <template>
-  <nuxt-content :document="page" />
+  <div class="max-w-90 mx-auto pt-8">
+    <nuxt-content :document="page" />
+  </div>
 </template>
 
 <script>

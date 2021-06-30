@@ -5,6 +5,7 @@ location: Westendorf
 course: Begleitetes Fliegen
 price: XXX EUR
 order: 1
+card: true
 ---
 
 # Begleitetes Fliegen

@@ -1,13 +1,15 @@
 <template>
-  <div class="flex space-x-8 overflow-hidden w-full">
-    <div v-swiper="swiperOption">
-      <div class="swiper-wrapper">
-        <div
-          v-for="flight in tandemflights"
-          :key="flight.title"
-          class="flex-shrink-0 flex-grow-0 card--slide"
-        >
-          <tandem-flight-card v-if="flight.flight" :flight="flight" />
+  <div class="overflow-hidden">
+    <div class="flex lg:space-x-8 w-full max-w-90 lg:max-w-none mx-auto">
+      <div v-swiper="swiperOption">
+        <div class="swiper-wrapper">
+          <div
+            v-for="flight in tandemflights"
+            :key="flight.title"
+            class="card--slide"
+          >
+            <tandem-flight-card v-if="flight.flight" :flight="flight" />
+          </div>
         </div>
       </div>
     </div>
@@ -29,12 +31,17 @@ export default {
       swiperOption: {
         slidesPerView: 'auto',
         watchOverflow: true,
-        spaceBetween: 32,
+        spaceBetween: 8,
         grabCursor: true,
         keyboard: {
           enabled: true,
         },
         slideClass: 'card--slide',
+        breakpoints: {
+          640: {
+            spaceBetween: 32,
+          },
+        },
         // navigation: {
         //   nextEl: '.slider-button-next',
         //   prevEl: '.slider-button-prev',

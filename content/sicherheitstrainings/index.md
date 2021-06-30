@@ -1,5 +1,12 @@
 ---
 title: Sicherheitstrainings
 description: Fly Tirol Flugschule in Westendorf
+hero: 
+    pretitle: Paragliding
+    title: Sicherheitstrainings
+    intro: Hier sollte noch etwas Text stehen. Was kann man mit den Reisen machen?
+    image: 
 ---
-# Sicherheitstrainings
+
+<hero-two :hero="hero"></hero-two>
+

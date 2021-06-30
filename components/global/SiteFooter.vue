@@ -1,11 +1,20 @@
 <template>
-  <div class="text-center">
-    <small class="text-sm text-gray-500 mr-6"> &#169; fly-tirol.com </small>
-    <nuxt-link to="/dsvgo">
-      <small class="text-sm text-gray-500 mr-6">DSVGO</small>
-    </nuxt-link>
-    <nuxt-link to="/impressum">
-      <small class="text-sm text-gray-500 mr-6">Impressum</small>
-    </nuxt-link>
+  <div class="w-full pt-8">
+    <div class="bg-gray-200">
+      <!-- <div class="h-0.5 bg-brand rounded-full w-full"></div> -->
+      <div class="flex justify-between py-4 text-xs max-w-90 mx-auto">
+        <div>
+          <span class="mr-6"> &#169; fly-tirol.com </span>
+        </div>
+        <div>
+          <nuxt-link to="/dsvgo" class="underline">
+            <span class="ml-6">DSVGO</span>
+          </nuxt-link>
+          <nuxt-link to="/impressum" class="underline">
+            <span class="ml-6">Impressum</span>
+          </nuxt-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

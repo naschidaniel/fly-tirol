@@ -2,6 +2,7 @@
   <div>
     <nuxt-content :document="index" />
     <courses-list :courses="courses" />
+    <content-image-gallery path="/media/fortbildung/" />
   </div>
 </template>
 

@@ -5,6 +5,7 @@ location: Westendorf
 course: A-Schein
 price: 495 EUR
 order: 3
+card: true
 ---
 
 # A-Schein

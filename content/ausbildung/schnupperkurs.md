@@ -6,6 +6,7 @@ image: /media/ausbildung/grundausbildung/2_grundausbildung.jpg
 course: Schnupperkurs
 price: 80 EUR
 order: 0
+card: true
 ---
 
 # Paragleit-Schnupperkurs

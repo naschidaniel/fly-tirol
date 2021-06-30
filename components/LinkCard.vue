@@ -6,7 +6,7 @@
       </div>
       <div class="card--content p-4 pb-12">
         <div class="card--content__inner">
-          <h3 class="text-2xl font-heading font-bold mb-4">
+          <h3 class="text-2xl font-heading font-semibold mb-4">
             {{ cardTitle }}
           </h3>
           <p class="text-gray-600">

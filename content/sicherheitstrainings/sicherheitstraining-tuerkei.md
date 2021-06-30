@@ -1,7 +1,8 @@
 ---
-title: Sicherheitstraining in Ölüdeniz -Türkei
+title: Sicherheitstraining
 description: Sicherheitstraining in Ölüdeniz -Türkei
 course: Sicherheitstraining in Ölüdeniz -Türkei
+location: Ölüdeniz -Türkei
 price: XXX EUR
 order: 2
 ---

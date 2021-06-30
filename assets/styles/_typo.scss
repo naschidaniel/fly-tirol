@@ -2,12 +2,12 @@
 
   .nuxt-content {
     h1 {
-      @apply text-6xl font-medium mb-6;
+      @apply text-4xl lg:text-6xl font-medium mb-6;
     }
     
     
     h2 {
-      @apply text-5xl font-medium mb-8;
+      @apply text-3xl lg:text-5xl font-medium mb-8;
     }
     
     

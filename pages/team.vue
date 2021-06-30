@@ -19,17 +19,11 @@ export default {
     return { index, members }
   },
   data() {
-    return {
-      dev: process.dev,
-    }
+    return {}
   },
   head() {
     const metatags = generateMetatags(this.index.title, this.index.description)
     return { title: this.index.title, meta: metatags }
-  },
-  mounted() {
-    // eslint-disable-next-line no-unused-expressions
-    process.dev === true ? document.body.classList.add('debug-screens') : ''
   },
 }
 </script>

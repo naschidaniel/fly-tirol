@@ -2,8 +2,10 @@
 title: Kolumbien - Südamerika
 description: Fliegen in Kolumbien
 course: Kolumbien
+location: Kolumbien - Südamerika
 price: XXX EUR
 order: 5
+card: true
 ---
 
 # Südamerika - Kolumbien

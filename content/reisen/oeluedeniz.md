@@ -2,8 +2,10 @@
 title: Ölüdeniz - Türkei
 description: Flugreise Ölüdeniz
 course: Ölüdeniz
+location: Ölüdeniz - Türkei
 price: XXX EUR
 order: 1
+card: true
 ---
 
 # Ölüdeniz - Türkei

@@ -6,7 +6,7 @@
       </div>
       <div class="card--content p-4 pb-12">
         <div class="card--content__inner">
-          <h3 class="text-2xl font-heading font-bold mb-1">
+          <h3 class="text-2xl font-heading font-semibold mb-1">
             {{ course.title }}
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-4">

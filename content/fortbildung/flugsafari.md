@@ -5,6 +5,7 @@ location: Kitzbühler Alpen
 course: Flugsafari
 price: XXX EUR
 order: 3
+card: true
 ---
 
 # Flugsafari

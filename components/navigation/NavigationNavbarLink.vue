@@ -50,6 +50,12 @@ export default {
     }
   }
 
+  &:focus {
+    .decorator {
+      @apply scale-x-100 origin-left;
+    }
+  }
+
   &.active {
     .decorator {
       @apply scale-x-100;
