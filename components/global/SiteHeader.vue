@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between h-10">
       <div class="flex-shrink-0">
         <nuxt-link to="/" class="block outline-none w-24" exact>
-          <FTLogo class="w-full" />
+          <FlyTirolLogo class="w-full" />
         </nuxt-link>
       </div>
       <navigation-navbar />
@@ -12,14 +12,14 @@
 </template>
 
 <script>
-import FTLogo from '@/assets/flytirol-logo.svg?inline'
+import FlyTirolLogo from '../FlyTirolLogo.vue'
 import NavigationNavbar from '../navigation/NavigationNavbar.vue'
 
 export default {
   name: 'SiteHeader',
   components: {
     NavigationNavbar,
-    FTLogo,
+    FlyTirolLogo,
   },
 }
 </script>
