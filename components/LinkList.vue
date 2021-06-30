@@ -111,7 +111,6 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
-// import { CheckIcon } from '@nuxt-hero-icons/solid/nuxt'
 import LinkCard from './LinkCard.vue'
 
 export default {
