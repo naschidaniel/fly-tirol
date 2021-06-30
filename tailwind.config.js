@@ -1,5 +1,3 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 const em = (px) => `${px / 16}em`
 
 const screensizes = {
