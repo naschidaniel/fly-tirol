@@ -17,18 +17,18 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-  
+
     &--slide {
       @apply w-80;
       flex-shrink: 0;
       position: relative;
       transition-property: transform;
     }
-  
+
     &--header {
       position: relative;
       overflow: hidden;
-      
+
     }
     &--container {
       flex-grow: 1;
