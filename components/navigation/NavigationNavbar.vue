@@ -9,6 +9,8 @@
         justify-end
         lg:flex lg:justify-center
         w-full
+        h-screen
+        lg:h-auto
       "
       :class="{ open: isOpen, closed: !isOpen }"
       @click="toggleDropdown()"
@@ -60,21 +62,18 @@ export default {
 
 <style lang="scss">
 .navbar-controls {
-  @apply flex;
+  @apply flex z-50;
 }
 .navbar--wrapper {
-  top: 5rem;
+  top: 0;
   right: 0;
-  height: calc(100vh - 5rem);
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(2px);
-  z-index: 99;
-  @apply p-16;
+  @apply p-16 pt-32 z-40;
   transition-duration: 0.5s;
 
   @screen lg {
     top: auto;
-    height: auto;
     background-color: transparent;
     backdrop-filter: none;
     z-index: unset;

@@ -1,5 +1,5 @@
 <template>
-  <div class="card max-w-xs">
+  <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-2 aspect-h-3 rounded-t-xl bg-gray-200">
         <responsive-image
@@ -13,7 +13,7 @@
           <outline-emoji-happy-icon class="w-36 h-36 text-gray-400" />
         </div>
       </div>
-      <div class="card--content p-4 pb-12">
+      <div class="card--content px-8 pb-8">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
             {{ member.name }}

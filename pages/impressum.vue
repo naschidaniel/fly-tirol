@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="max-w-90 w-full mx-auto py-6">
     <nuxt-content :document="impressum" />
     <h2>Sourcecode der Webseite</h2>
     <div>
