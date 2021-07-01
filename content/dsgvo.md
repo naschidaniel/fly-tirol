@@ -1,5 +1,5 @@
 ---
-title: DSVGO
-description: DSVGO der Flugschule Fly-Tirol.com
+title: DSGVO
+description: DSGVO der Flugschule Fly-Tirol.com
 ---
-# DSVGO
+# DSGVO

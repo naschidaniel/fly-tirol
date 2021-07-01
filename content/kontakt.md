@@ -1,5 +1,5 @@
 ---
-title: Kontaktoer
+title: Kontakt
 description: Unsere Kontaktdaten
 hero:
     pretitle: 'Tandem- und Ausbidlungshotline'
