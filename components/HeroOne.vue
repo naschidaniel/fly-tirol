@@ -15,7 +15,7 @@
   >
     <div class="md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0">
       <responsive-image
-        img-class="object-cover object-bottom w-full h-full"
+        img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
         :picture="hero.image"
       />
     </div>
@@ -67,3 +67,9 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+.image-box {
+  @apply md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0;
+}
+</style>
