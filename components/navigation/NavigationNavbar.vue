@@ -29,6 +29,7 @@
     </div>
 
     <div class="navbar-controls">
+      <navigation-cart />
       <navigation-navbar-cta name="Kontakt" to="/kontakt" />
       <navigation-hamburger-button />
     </div>
@@ -37,6 +38,7 @@
 
 <script>
 import NavigationHamburgerButton from '../navigation/NavigationNavbarButton.vue'
+import NavigationCart from './NavigationCart.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
 import NavigationNavbarCta from './NavigationNavbarCta.vue'
 
@@ -46,6 +48,7 @@ export default {
     NavigationNavbarLink,
     NavigationNavbarCta,
     NavigationHamburgerButton,
+    NavigationCart,
   },
   computed: {
     isOpen() {
