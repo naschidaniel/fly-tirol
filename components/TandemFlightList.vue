@@ -7,7 +7,7 @@
           :key="flight.title"
           class="card--slide"
         >
-          <tandem-flight-card v-if="flight.flight" :flight="flight" />
+          <tandem-flight-card :flight="flight" />
         </swiper-slide>
       </swiper>
     </div>

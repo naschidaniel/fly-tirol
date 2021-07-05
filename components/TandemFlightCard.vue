@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
-        <responsive-image img-class="object-cover" :picture="flight.image" />
+        <img loading="lazy" :src="flight.images[0].src" class="object-cover" />
       </div>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">

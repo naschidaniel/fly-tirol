@@ -29,11 +29,7 @@ export default {
       'tandemfliegen',
       'voraussetzungen'
     ).fetch()
-    const tandemflights = await $content('tandemfliegen', params.slug)
-      .where({ card: true })
-      .sortBy('order', 'asc')
-      .fetch()
-    return { index, prerequisites, tandemflights }
+    return { index, prerequisites }
   },
   data() {
     return {
@@ -48,6 +44,11 @@ export default {
   head() {
     const metatags = generateMetatags(this.index.title, this.index.description)
     return { title: this.index.title, meta: metatags }
+  },
+  computed: {
+    tandemflights() {
+      return this.$store.state.tandemflights
+    },
   },
 }
 </script>
