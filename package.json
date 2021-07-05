@@ -32,6 +32,7 @@
     "core-js": "^3.9.1",
     "heroicons": "^1.0.1",
     "nuxt": "^2.15.3",
+    "nuxt-shopify": "^1.10.8",
     "swiper": "^5.4.5",
     "vue-awesome-swiper": "^4.1.1"
   },

@@ -29,8 +29,13 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxt-hero-icons/solid/nuxt',
     '@nuxt-hero-icons/outline/nuxt',
+    'nuxt-shopify',
   ],
-
+  shopify: {
+    domain: process.env.SHOPIFY_DOMAIN,
+    storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+    unoptimized: true,
+  },
   modules: ['@nuxt/content'],
 
   generate: {
