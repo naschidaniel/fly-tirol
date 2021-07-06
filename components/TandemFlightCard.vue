@@ -10,16 +10,25 @@
             {{ flight.title }}
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-4">
+            <outline-cash-icon class="w-4 h-4" />
             <outline-location-marker-icon class="w-4 h-4" />
-            <span class="block leading-none pt-1 ml-1">
-              {{ flight.location }}
-            </span>
+            <span class="block leading-none pt-1 ml-1"> METATAGLOCATION </span>
           </div>
           <p class="text-gray-600">
             {{ flight.description }}
           </p>
+          <select v-model="selectedVariant" class="mt-2">
+            <option selected>Wähle deinen Flug</option>
+            <option
+              v-for="variant in variants"
+              :key="variant.id"
+              :value="variant"
+            >
+              {{ variant.title }}
+            </option>
+          </select>
           <div class="font-medium mt-4">
-            {{ flight.price }}
+            {{ price.preText }} {{ price.price | formatPrice }}
           </div>
         </div>
       </div>
@@ -37,5 +46,21 @@ import CardButton from './CardButton.vue'
 export default {
   components: { CardButton },
   props: { flight: { type: Object, required: true } },
+  data() {
+    return {
+      selectedVariant: 'Wähle deinen Flug',
+    }
+  },
+  computed: {
+    price() {
+      const rudi = this.flight?.variants.map((v) => parseFloat(v.price))
+      const uniquePrices = [...new Set(rudi)]
+      const preText = uniquePrices.length >= 2 ? 'ab' : ''
+      return { preText, price: uniquePrices[0] }
+    },
+    variants() {
+      return this.flight?.variants || []
+    },
+  },
 }
 </script>
