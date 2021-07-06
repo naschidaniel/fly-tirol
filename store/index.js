@@ -17,7 +17,7 @@ export const mutations = {
   setCollections(state, collections) {
     const tandemflights = collections.filter(
       (c) => c.title === 'Tandemflüge'
-    )[0].products
+    )[0]?.products
     state.tandemflights = tandemflights
   },
 }
