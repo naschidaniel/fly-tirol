@@ -4,6 +4,17 @@ Visit us at [https://fly-tirol.com](https://fly-tirol.com).
 We are a flight school in Westendorf and offer tandem flights, paragliding training and equipment sales in Westendorf / Tirol.
 Come and share our passion with us!
 
+
+## Shopify
+
+To display data from Shopify the module [Gomah/nuxt-shopify](https://github.com/Gomah/nuxt-shopify) is used. For local development the `SHOPIFY_DOMAIN` and `SHOPIFY_ACCESS_TOKEN` is needed.
+
+```
+echo 'SHOPIFY_DOMAIN="MyPersonalShopShopifyUrl" > .env
+echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
+```
+
+
 ## Development Setup
 
 ```bash
