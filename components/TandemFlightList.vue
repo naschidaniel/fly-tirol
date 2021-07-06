@@ -7,7 +7,10 @@
           :key="flight.title"
           class="card--slide"
         >
-          <tandem-flight-card :flight="flight" />
+          <tandem-flight-card
+            v-if="flight.title === 'Tandem Höhenflug'"
+            :flight="flight"
+          />
         </swiper-slide>
       </swiper>
     </div>
