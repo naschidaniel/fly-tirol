@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-two :hero="hero" />
+    <hero-two :hero="index.hero" />
     <tandem-flight-list :tandemflights="tandemflights" />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
       <nuxt-content
@@ -30,16 +30,6 @@ export default {
       'voraussetzungen'
     ).fetch()
     return { index, prerequisites }
-  },
-  data() {
-    return {
-      hero: {
-        pretitle: 'Gehe mit FlyTirol',
-        title: 'Tandemfliegen',
-        intro:
-          'Einmal das Gefühl der Freiheit hoch über den Gipfeln der Kitzbüheler Alpen mit Blick auf den Alpenhauptkamm und den Wilden Kaiser bei einem Tandemflug mit einem unserer Top-Tandempiloten genießen! Egal ob im Winter oder Sommer, die Fly Tirol Flugschule zeigt dir das Alpenpanorama aus der Vogelperspektive.',
-      },
-    }
   },
   head() {
     const metatags = generateMetatags(this.index.title, this.index.description)
