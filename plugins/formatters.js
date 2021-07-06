@@ -19,3 +19,11 @@ Vue.filter('formatDateTime', (date) => {
   })
   return date === undefined ? '–' : dateTimeFormat.format(date)
 })
+
+Vue.filter('formatPrice', (price) => {
+  const priceFormat = new Intl.NumberFormat('de-DE', {
+    style: 'currency',
+    currency: 'EUR',
+  })
+  return price === undefined ? '–' : priceFormat.format(price)
+})
