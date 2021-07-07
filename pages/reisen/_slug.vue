@@ -1,7 +1,6 @@
 <template>
   <div>
     <nuxt-content :document="page" />
-    <button-calendar />
     <button-contact />
   </div>
 </template>
