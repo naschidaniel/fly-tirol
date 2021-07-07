@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
-        <responsive-image img-class="object-cover" :picture="course.image" />
+        <img loading="lazy" :src="course.images[0].src" class="object-cover" />
       </div>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
@@ -12,21 +12,19 @@
           <div class="flex items-center text-sm -ml-1 mb-4">
             <outline-location-marker-icon class="w-4 h-4" />
             <span class="block leading-none pt-1 ml-1">
-              {{ course.location }}
+              <!-- {{ course.location }} -->
+              Westendorf
             </span>
           </div>
-          <!-- <p class="text-gray-600">
-            {{ course.description }}
-          </p> -->
           <div class="font-medium mt-4">
-            {{ course.price }}
+            {{ price.preText }} {{ price.price | formatPrice }}
           </div>
         </div>
       </div>
     </div>
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
-        <card-button :to="course.path" name="Mehr erfahren" />
+        <card-button :to="slug" name="Mehr erfahren" />
       </div>
     </div>
   </div>
@@ -37,7 +35,17 @@ import CardButton from './CardButton.vue'
 export default {
   components: { CardButton },
   props: {
+    conentFolder: { type: Object, default: () => {}, required: false },
     course: { type: Object, required: true },
+    slug: { type: String, default: '', required: false },
+  },
+  computed: {
+    price() {
+      const price = this.course?.variants.map((v) => parseFloat(v.price))
+      const uniquePrices = [...new Set(price)]
+      const preText = uniquePrices.length >= 2 ? 'ab' : ''
+      return { preText, price: uniquePrices[0] }
+    },
   },
 }
 </script>
