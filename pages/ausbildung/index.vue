@@ -1,7 +1,7 @@
 <template>
   <div>
     <nuxt-content :document="index" />
-    <courses-list :courses="courses" />
+    <courses-list category="ausbildung" :courses="basicTrainings" />
   </div>
 </template>
 
@@ -11,17 +11,18 @@ import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
   components: { CoursesList },
-  async asyncData({ $content, params }) {
+  async asyncData({ $content }) {
     const index = await $content('ausbildung', 'index').fetch()
-    const courses = await $content('ausbildung', params.slug)
-      .where({ slug: { $ne: 'index' } })
-      .sortBy('order', 'asc')
-      .fetch()
-    return { courses, index }
+    return { index }
   },
   head() {
     const metatags = generateMetatags(this.index.title, this.index.description)
     return { title: this.index.title, meta: metatags }
+  },
+  computed: {
+    basicTrainings() {
+      return this.$store.state.basicTrainings
+    },
   },
 }
 </script>
