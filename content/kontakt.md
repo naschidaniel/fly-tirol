@@ -17,4 +17,4 @@ hero:
 
 <hero-three :hero="hero"></hero-three>
 
-<info-box-two address="Fly Tirol - Flugschule Kitzbühler Alpen | Bergliftstraße 22 | A-6363 Westendorf | Tirol | Österreich" title="Anschrift"></info-box-two>
+<info-box-two address="Fly Tirol - Flugschule Kitzbühler Alpen | Bergliftstraße 22 | A-6363 Westendorf | Tirol | Österreich" headline="Anschrift"></info-box-two>
