@@ -5,11 +5,11 @@ hero:
     pretitle: 'Tandem- und Ausbidlungshotline'
     title: 'Kontakt'
     intro:
-        'Hier vll auch noch ein wenig Text. Wie und wann kann man uns am besten erreichen?'
+        'Wir haben dein Interesse an einem Tandemflug oder an einem Kurs geweckt? Dann Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns auf dich!'
     image: /media/team/team.jpg
     link1: 
-        href: tel:004369910468280
-        name: +43 699 10468280
+        href: tel:00436766422095
+        name: +43 676 6422095
     link2:
         href: mailto:info@fly-tirol.com
         name: info@fly-tirol.com
@@ -17,17 +17,4 @@ hero:
 
 <hero-three :hero="hero"></hero-three>
 
-## Anschrift
-
-Fly Tirol
-
-Flugschule Kitzbühler Alpen
-
-Bergliftstraße 22
-
-A-6363 Westendorf / Tirol
-
-Österreich
-
-
-
+<info-box-two address="Fly Tirol - Flugschule Kitzbühler Alpen | Bergliftstraße 22 | A-6363 Westendorf | Tirol | Österreich" title="Anschrift"></info-box-two>
