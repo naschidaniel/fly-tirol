@@ -2,14 +2,9 @@
 title: Schnupperkurs
 description: Schnupperkurs in Westendorf
 location: Westendorf
-image: /media/ausbildung/grundausbildung/2_grundausbildung.jpg
-course: Schnupperkurs
-price: 80 EUR
-order: 0
-card: true
 ---
 
-# Paragleit-Schnupperkurs
+# Schnupperkurs
 
 Solltest du noch nicht sicher sein, ob du den Paragleitschein machen möchtest um mit den Vögeln zu fliegen, ist ein Schnupperkurs genau das richtige für dich!
 
