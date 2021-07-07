@@ -10,9 +10,8 @@
             {{ flight.title }}
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-4">
-            <outline-cash-icon class="w-4 h-4" />
             <outline-location-marker-icon class="w-4 h-4" />
-            <span class="block leading-none pt-1 ml-1"> METATAGLOCATION </span>
+            <span class="block leading-none pt-1 ml-1"> Westendorf </span>
           </div>
           <p class="text-gray-600">
             {{ flight.description }}
@@ -53,8 +52,8 @@ export default {
   },
   computed: {
     price() {
-      const rudi = this.flight?.variants.map((v) => parseFloat(v.price))
-      const uniquePrices = [...new Set(rudi)]
+      const price = this.flight?.variants.map((v) => parseFloat(v.price))
+      const uniquePrices = [...new Set(price)]
       const preText = uniquePrices.length >= 2 ? 'ab' : ''
       return { preText, price: uniquePrices[0] }
     },
