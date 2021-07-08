@@ -1,16 +1,13 @@
 <template>
   <div>
     <nuxt-content :document="index" />
-    <courses-list :courses="courses" />
   </div>
 </template>
 
 <script>
 import { generateMetatags } from '~/util/generateHeaderInformation'
-import CoursesList from '~/components/CoursesList.vue'
 
 export default {
-  components: { CoursesList },
   async asyncData({ $content, params }) {
     const index = await $content('sicherheitstrainings', 'index').fetch()
     const courses = await $content('sicherheitstrainings', params.slug)

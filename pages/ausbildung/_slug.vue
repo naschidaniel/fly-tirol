@@ -2,7 +2,7 @@
   <div class="max-w-90 mx-auto pt-8">
     <nuxt-content :document="page" />
     <button-contact />
-    <product-variants class="m-4" :variants="productVariants" />
+    <product-variants />
   </div>
 </template>
 
@@ -20,14 +20,6 @@ export default {
   head() {
     const metatags = generateMetatags(this.page.title, this.page.description)
     return { title: this.page.title, meta: metatags }
-  },
-  computed: {
-    productVariants() {
-      const products = this.$store.state.products.filter(
-        (p) => p.handle === this.$route.params.slug
-      )
-      return products[0]?.variants
-    },
   },
 }
 </script>
