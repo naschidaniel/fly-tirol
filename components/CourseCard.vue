@@ -9,15 +9,24 @@
           <h3 class="text-2xl font-heading font-semibold mb-1">
             {{ course.title }}
           </h3>
-          <div class="flex items-center text-sm -ml-1 mb-4">
+          <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
             <span class="block leading-none pt-1 ml-1">
               <!-- {{ course.location }} -->
               Westendorf
             </span>
           </div>
-          <div class="font-medium mt-4">
-            {{ price.preText }} {{ price.price | formatPrice }}
+          <div class="flex items-center text-sm -ml-1 mb-2">
+            <outline-cash-icon class="w-4 h-4" />
+            <span class="block leading-none pt-1 ml-1 font-bold">
+              {{ price.preText }} {{ price.price | formatPrice }}
+            </span>
+          </div>
+          <div class="flex items-center text-sm -ml-1 mb-4">
+            <outline-calendar-icon class="w-4 h-4" />
+            <span class="block leading-none pt-1 ml-1"
+              >{{ course.variants.length }} Termine</span
+            >
           </div>
         </div>
       </div>

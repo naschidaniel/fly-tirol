@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="m-4">
     Termine
     <ul>
-      <li v-for="variant in variants" :key="variant.id">
+      <li v-for="variant in productVariants" :key="variant.id">
         {{ variant.title }}
       </li>
     </ul>
@@ -11,8 +11,13 @@
 
 <script>
 export default {
-  props: {
-    variants: { type: Object, required: true },
+  computed: {
+    productVariants() {
+      const products = this.$store.state.products.filter(
+        (p) => p.handle === this.$route.params.slug
+      )
+      return products[0]?.variants
+    },
   },
 }
 </script>
