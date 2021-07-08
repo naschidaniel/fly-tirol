@@ -1,5 +1,5 @@
 <template>
-  <div><outline-shopping-cart-icon class="w-6 h-6 mr-4" /></div>
+  <div><outline-shopping-cart-icon class="w-6 h-6 mr-4 hidden" /></div>
 </template>
 
 <script>
