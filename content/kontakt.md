@@ -9,7 +9,7 @@ hero:
     image: /media/team/team.jpg
     link1: 
         href: tel:00436766422095
-        name: +43 676 6422095
+        name: "+43 676 6422095"
     link2:
         href: mailto:info@fly-tirol.com
         name: info@fly-tirol.com

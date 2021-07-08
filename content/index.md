@@ -4,11 +4,9 @@ description: Fly Tirol Flugschule in Westendorf
 hero: 
     pretitle: Fly Tirol Flugschule
     title: Flieg mit uns
-    intro: Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!
+    intro: 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!'
     image: /media/ft_hero.jpg
 ---
-
-<hero-one :hero="hero"></hero-one>
 
 "Es ist möglich, ohne Motoren zu fliegen, aber nicht ohne Wissen und Können."
 

@@ -9,3 +9,5 @@ hero:
 ---
 
 <hero-two :hero="hero"></hero-two>
+
+<courses-list></courses-list>
