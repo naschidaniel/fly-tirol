@@ -86,7 +86,7 @@
             <a
               v-if="hero.link1"
               :href="hero.link1.href"
-              class="btn-primary btn--large"
+              class="btn-primary btn--large mr-2"
             >
               {{ hero.link1.name }}
             </a>
