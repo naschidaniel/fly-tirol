@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-one :hero="hero" />
+    <hero-one :hero="index.hero" />
     <link-list
       :advanced-trainings="advancedTrainings"
       :basic-trainings="basicTrainings"
@@ -22,13 +22,6 @@ export default {
   },
   data() {
     return {
-      hero: {
-        pretitle: 'Fly Tirol Flugschule',
-        title: 'Flieg mit uns',
-        intro:
-          'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
-        image: '/media/ft_hero.jpg',
-      },
       advancedTrainings: {
         cardTitle: 'Fortbildung',
         cardImage: '/media/fortbildung/fortbildung.jpg',
