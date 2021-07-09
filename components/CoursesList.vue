@@ -20,7 +20,7 @@
       <span class="text-lg font-bold"
         >Vielen Dank für dein Interesse. Leider sind die Produkte noch nicht
         online. Gerne kannst du mit uns
-        <nuxt-link class="underline" to="\kontakt">kontakt</nuxt-link>
+        <nuxt-link class="underline" to="/kontakt">kontakt</nuxt-link>
         aufnehmen.</span
       >
     </div>
