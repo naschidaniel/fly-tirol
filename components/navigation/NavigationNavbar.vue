@@ -30,7 +30,11 @@
 
     <div class="navbar-controls">
       <navigation-cart />
-      <navigation-navbar-cta name="Kontakt" to="/kontakt" />
+      <div @click="toggleIfDropdownIsOpen()">
+        <nuxt-link class="btn-primary" to="/kontakt" exact>
+          <span>Kontakt</span>
+        </nuxt-link>
+      </div>
       <navigation-hamburger-button />
     </div>
   </div>
@@ -40,13 +44,11 @@
 import NavigationHamburgerButton from '../navigation/NavigationNavbarButton.vue'
 import NavigationCart from './NavigationCart.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
-import NavigationNavbarCta from './NavigationNavbarCta.vue'
 
 export default {
   name: 'NavigationNavbar',
   components: {
     NavigationNavbarLink,
-    NavigationNavbarCta,
     NavigationHamburgerButton,
     NavigationCart,
   },
@@ -58,6 +60,11 @@ export default {
   methods: {
     toggleDropdown() {
       this.$store.commit('toggleDropdown')
+    },
+    toggleIfDropdownIsOpen() {
+      if (this.isOpen) {
+        this.toggleDropdown()
+      }
     },
   },
 }
