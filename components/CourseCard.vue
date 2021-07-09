@@ -1,6 +1,11 @@
 <template>
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
+      <nuxt-link
+        class="block md:hidden absolute w-full h-full z-50"
+        :to="slug"
+        :title="course.title"
+      />
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
         <img loading="lazy" :src="course.images[0].src" class="object-cover" />
       </div>
