@@ -1,18 +1,21 @@
 <template>
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
-      <nuxt-link
-        class="block md:hidden absolute w-full h-full z-50"
-        :to="slug"
-        :title="course.title"
-      />
-      <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
-        <img loading="lazy" :src="course.images[0].src" class="object-cover" />
-      </div>
+      <nuxt-link :to="slug" :title="course.title">
+        <div
+          class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200"
+        >
+          <img
+            loading="lazy"
+            :src="course.images[0].src"
+            class="object-cover"
+          />
+        </div>
+      </nuxt-link>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
-            {{ course.title }}
+            <nuxt-link :to="slug">{{ course.title }}</nuxt-link>
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
