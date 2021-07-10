@@ -1,19 +1,6 @@
 <template>
   <div>
     <div
-      v-if="courses.length != 0"
-      class="card--grid grid-gap-1 max-w-90 mx-auto py-4 md:py-12"
-    >
-      <div v-for="course in courses" :key="course.handle">
-        <course-card
-          v-if="course.variants"
-          class="p-4"
-          :course="course"
-          :slug="`${category}/${course.handle}`"
-        />
-      </div>
-    </div>
-    <div
       v-if="courses.length === 0"
       class="flex justify-center max-w-90 mx-auto py-4"
     >
@@ -23,6 +10,16 @@
         <nuxt-link class="underline" to="/kontakt">kontakt</nuxt-link>
         aufnehmen.</span
       >
+    </div>
+    <div v-else class="card--grid grid-gap-1 max-w-90 mx-auto py-4 md:py-12">
+      <div v-for="course in courses" :key="course.handle">
+        <course-card
+          v-if="course.variants"
+          class="p-4"
+          :course="course"
+          :slug="`${category}/${course.handle}`"
+        />
+      </div>
     </div>
   </div>
 </template>
