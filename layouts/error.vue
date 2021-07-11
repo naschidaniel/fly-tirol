@@ -1,8 +1,31 @@
 <template>
-  <div>
-    <h1 v-if="error.statusCode === 404">404 Page not found</h1>
-    <h1 v-else>Es ist ein Fehler aufgetretten</h1>
-    <nuxt-link to="/">zurück zur Startseite</nuxt-link>
+  <div class="flex justify-center items-center max-w-90 mx-auto py-8">
+    <div>
+      <h1 class="mb-8 sm:mb-16">
+        <span
+          class="
+            text-lg
+            font-heading font-medium
+            flex flex-row
+            items-center
+            mb-2
+          "
+        >
+          <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
+          <span v-if="error.statusCode === 404" class="inline-block">404</span>
+        </span>
+        <span
+          v-if="error.statusCode === 404"
+          class="text-4xl lg:text-6xl font-heading font-bold"
+        >
+          Seite wurde nicht gefunden
+        </span>
+        <span v-else>Es ist ein Fehler aufgetreten</span>
+      </h1>
+      <nuxt-link to="/" class="btn-primary btn--large">
+        zurück zur Startseite
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
