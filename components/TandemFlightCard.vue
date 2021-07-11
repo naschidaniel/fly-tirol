@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card p-4">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
         <img loading="lazy" :src="flight.images[0].src" class="object-cover" />
