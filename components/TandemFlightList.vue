@@ -1,13 +1,7 @@
 <template>
-  <div class="max-w-90 mx-auto md:py-4 md:py-12">
-    <div class="flex flex-wrap justify-center">
-      <div
-        v-for="flight in tandemflights"
-        :key="flight.title"
-        class="m-1 md:m-3 w-80"
-      >
-        <tandem-flight-card :flight="flight" />
-      </div>
+  <div class="card--grid grid-gap-1 max-w-90 mx-auto py-4 md:py-12">
+    <div v-for="flight in tandemflights" :key="flight.title">
+      <tandem-flight-card :flight="flight" />
     </div>
   </div>
 </template>
