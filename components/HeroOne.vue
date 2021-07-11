@@ -32,7 +32,16 @@
         z-10
       "
     >
-      <div class="flex flex-col lg:w-96 max-w-screen-sm lg:flex-shrink-0">
+      <div
+        class="
+          flex flex-col
+          lg:w-96
+          max-w-screen-sm
+          lg:flex-shrink-0
+          -mt-24
+          sm:mt-0
+        "
+      >
         <div class="mt-6">
           <h1 class="mb-6">
             <span
