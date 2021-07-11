@@ -1,5 +1,10 @@
 @layer base {
 
+  .ft-icon {
+    width: 1em;
+    height: 1em;
+  }
+
   .nuxt-content {
     h1 {
       @apply text-4xl lg:text-6xl font-medium mb-6;
