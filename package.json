@@ -13,7 +13,7 @@
     "dev:windows": "npm run set-env-variables:windows && nuxt",
     "build": "npm run set-env-variables nuxt build",
     "start": "nuxt start",
-    "generate": "npm run set-env-variables nuxt generate",
+    "generate": "npm run set-env-variables nuxt generate --modern",
     "lint:js": "eslint --fix  --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js",
     "generateMediaInformation": "node generateMediaInformation.js",
