@@ -48,7 +48,7 @@ $ npm run start
 The `image-optimizer` tool is needed to optimise the images in the folder `./media`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the `./` directory. 
 The original images are used for the local development environment. 
 
-The images are optimized on the basis of the screen widths from [https://tailwindcss.com/docs/responsive-design](https://tailwindcss.com/docs/responsive-design).
+The images are optimized on the basis of the screen widths from [https://tailwindcss.com/docs/responsive-design](https://tailwindcss.com/docs/responsive-design) and the two additional sizes `xs: 512 px` and `2xs: 384 px`.
 
 ``` bash
 # optimize images for Production
