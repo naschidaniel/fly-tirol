@@ -28,6 +28,10 @@ jobs:
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: delete ./dist/media
         run: rm -rf ./dist/media
+      - name: optimize-images:2xs
+        run: npm run optimize-images:2xs
+      - name: optimize-images:xs
+        run: npm run optimize-images:xs
       - name: optimize-images:sm
         run: npm run optimize-images:sm
       - name: optimize-images:md
