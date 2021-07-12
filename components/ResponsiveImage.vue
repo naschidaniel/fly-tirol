@@ -18,14 +18,17 @@ export default {
   props: {
     picture: { type: String, default: '', required: true },
     imgClass: { type: String, default: '', required: false },
+    fixSize: { type: String, default: undefined, required: false },
   },
   data() {
     return {
       buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
-      imageBoxWidthTailwindClass: '2xl',
+      imageBoxWidthTailwindClass: 'lg',
       width: undefined,
       height: undefined,
       screenSizes: {
+        '2xs': 384,
+        xs: 512,
         sm: 640,
         md: 768,
         lg: 1080,
@@ -54,9 +57,12 @@ export default {
       if (process.env.NODE_ENV === 'development' || extension === undefined) {
         return `${this.imageInformation.url}?v=${this.buildtime}`
       }
+      const filePostFix = this.fixSize
+        ? `${this.fixSize}.${extension}`
+        : `${this.imageBoxWidthTailwindClass}.${extension}`
       const responsiveUrl = this.imageInformation.url.replace(
         `.${extension}`,
-        `_${this.imageBoxWidthTailwindClass}.${extension}`
+        `_${filePostFix}`
       )
       return responsiveUrl !== '' ? `${responsiveUrl}?v=${this.buildtime}` : ''
     },
@@ -68,7 +74,11 @@ export default {
     getimageBoxWidth() {
       const imageBoxWidth = this.$refs.imageBox?.clientWidth
       this.imageBoxWidthTailwindClass =
-        imageBoxWidth <= this.screenSizes.sm
+        imageBoxWidth <= this.screenSizes['2xs']
+          ? '2xs'
+          : imageBoxWidth <= this.screenSizes.xs
+          ? 'xs'
+          : imageBoxWidth <= this.screenSizes.sm
           ? 'sm'
           : imageBoxWidth <= this.screenSizes.md
           ? 'md'
