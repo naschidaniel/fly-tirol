@@ -69,4 +69,15 @@ export default {
       cert: fs.readFileSync(path.resolve(__dirname, 'localhost.crt')),
     },
   },
+
+  babel: {
+    presets: [
+      [
+        '@nuxtjs/babel-preset-app',
+        {
+          targets: '> 5%, not dead',
+        },
+      ],
+    ],
+  },
 }
