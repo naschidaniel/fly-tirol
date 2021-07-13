@@ -8,8 +8,8 @@ hero:
         'Wir haben dein Interesse an einem Tandemflug oder an einem Kurs geweckt? Dann Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns auf dich!'
     image: /media/team/team.jpg
     link1: 
-        href: tel:00436766422095
-        name: "+43 676 6422095"
+        href: tel:00436766422088
+        name: "+43 676 6422088"
     link2:
         href: mailto:info@fly-tirol.com
         name: info@fly-tirol.com

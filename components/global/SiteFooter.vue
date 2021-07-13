@@ -21,10 +21,10 @@
                 info@fly-tirol.com
               </a>
               <a
-                href="tel:00436766422095"
+                href="tel:00436766422088"
                 class="underline ml-8 sm:ml-4 md:ml-6 whitespace-nowrap"
               >
-                +43 676 642209
+                +43 676 6422088
               </a>
               <div class="mt-8 sm:mt-0 sm:ml-4 md:ml-6 w-full sm:w-auto">
                 <a
