@@ -26,6 +26,19 @@
               >
                 +43 676 6422088
               </a>
+              <span
+                class="
+                  hidden
+                  lg:block
+                  underline
+                  ml-8
+                  sm:ml-4
+                  md:ml-6
+                  whitespace-nowrap
+                "
+              >
+                Bergliftstraße 2, 6363 Westendorf
+              </span>
               <div class="mt-8 sm:mt-0 sm:ml-4 md:ml-6 w-full sm:w-auto">
                 <a
                   href="https://www.instagram.com/fly.tirol/"
