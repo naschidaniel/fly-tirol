@@ -37,7 +37,7 @@
                   whitespace-nowrap
                 "
               >
-                Bergliftstraße 2, 6363 Westendorf
+                Bergliftstraße 22, 6363 Westendorf
               </span>
               <div class="mt-8 sm:mt-0 sm:ml-4 md:ml-6 w-full sm:w-auto">
                 <a
