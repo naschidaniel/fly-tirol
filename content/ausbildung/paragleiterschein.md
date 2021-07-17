@@ -1,6 +1,6 @@
 ---
 title: Paragleiterschein
-description: Paragleiterschein in Westendorf
+description: Der Paragleiterschein erlaubt dir national und international in allen Fluggebieten zu fliegen und baut sich auf dem absolvierten Grundkurs und dem Höhenflugseminar auf. Die Voraussetzungen hierfür sind mindesten 40 Höhenflüge. Der Abschluss dieses Kurses ist die schriftliche Theorieprüfung und eine Praktische Flugprüfung
 location: Westendorf
 ---
 
