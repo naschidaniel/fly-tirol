@@ -1,6 +1,6 @@
 ---
 title: Begleitetes Fliegen
-description: Begleitetes Fliegen in Westendorf
+description: Du möchtest einen Tag lang ganz alleine mit einem Fluglehrer arbeiten? Dann ist das begleitete Fliegen genau das richtige für dich! Begleitet von einem absoluten Profi, der individuell genau auf deine Ziele und Wünsche eingeht, helfen wir dir ein besserer Pilot zu werden.
 location: Westendorf
 course: Begleitetes Fliegen
 price: XXX EUR
