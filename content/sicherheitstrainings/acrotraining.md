@@ -1,7 +1,7 @@
 ---
 title: Acrobatic-Paragleit-Kurs
-description: Acrobatic-Paragleit-Kurs am Gardasee in Italien
-course: Acrobatic-Paragleit-Kurs am Gardasee in Italien
+description: Beim Fly Tirol Acrobatic-Paragleit-Kurs am Gardasee in Italien kannst du unter Anleitung von Team-Weltmeister im Acro-Paragleiten und Syncro-Paragleit Vize-Weltmeister Sebastian Kahn dein Paragleitkönnen auf ein neues Level setzen.
+course: Acrobatic-Paragleit-Kurs am Gardasee in Italien 
 location: Gardasee - Italien
 price: XXX EUR
 order: 3
