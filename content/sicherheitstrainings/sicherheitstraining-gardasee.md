@@ -1,6 +1,6 @@
 ---
 title: Sicherheitstraining
-description: Sicherheitstraining am Gardasee
+description: Fahr mit der Flugschule Fly Tirol an den wunderschönen Lago Di Garda um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.
 course: Sicherheitstraining am Gardasee
 location: Gardasee - Italien
 price: XXX EUR
