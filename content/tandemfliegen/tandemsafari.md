@@ -1,7 +1,7 @@
 ---
 title: Tandem-Safari
 description: Mit der Tandem-Safari bringen wir dich an verschiedene Orte in den Kitzbüheler Alpen.
-location: Kitzbühler Alpen
+location: Kitzbüheler Alpen
 flight: Tandem-Safari
 price: 600 EUR
 flight-time:
