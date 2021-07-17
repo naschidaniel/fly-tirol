@@ -1,6 +1,6 @@
 ---
 title: Thermikfliegen
-description: Thermikfliegen in Westendorf
+description: Wie die Vögel können Paragleitpiloten die Thermik nutzen um das Flugerlebnis deutlich zu verlängern. Bei unserem Thermikflug-Angebot bekommst du einen unserer gut ausgebildeten Fluglehrer zur Seite gestellt, der dir während des Flugs über Funk wichtige Informationen und Tipps gibt.
 location: Westendorf
 course: Thermikfliegen
 price: XXX EUR
