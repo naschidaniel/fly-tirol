@@ -1,6 +1,6 @@
 ---
 title: Tandemschein
-description: Tandemausbildung in Westendorf
+description: In unserer Flugschule bekommst du alles was du brauchst um deinen Tandemschein machen zu können. Von modernem Theorieunterricht, über Praxis mit von uns bereitgestellten Schirm, Gurtzeug und Funkanleitung durch unsere kompetenten Fluglehrer, bis hin zur Prüfung. 
 location: Westendorf
 course: Tandemschein
 price: XXX EUR
