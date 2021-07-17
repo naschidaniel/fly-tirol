@@ -1,6 +1,6 @@
 ---
 title: Flugsafari
-description: Flugsafari in den Kitzbühler Alpen
+description: Wenn du den wunderschönen Großraum der Kitzbüheler Alpen gerne nutzen möchtest um über den Tag verteilt mehrere Berge anfliegen und an anderen Spots wieder starten zu können, dann kannst du dieses Abenteuer gemeinsam mit einem unserer Piloten erleben! Wir zeigen dir die besten Flugplätze mit tollem Panorama rund um den Wilden Kaiser.
 location: Kitzbühler Alpen
 course: Flugsafari
 price: XXX EUR
@@ -10,7 +10,7 @@ card: true
 
 # Flugsafari
 
-Wenn du den wunderschönen Großraum der Kitzbüheler Alpen gerne nutzen möchtest um über den Tag verteilt mehrere Berge anfliegen und an anderen Spots wieder starten zu können, dann kannst du dieses Abenteuer gemeinsam mit einem unserer Pilot erleben! Wir zeigen dir die besten Flugplätze mit tollem Panorama rund um den Wilden Kaiser.
+Wenn du den wunderschönen Großraum der Kitzbüheler Alpen gerne nutzen möchtest um über den Tag verteilt mehrere Berge anfliegen und an anderen Spots wieder starten zu können, dann kannst du dieses Abenteuer gemeinsam mit einem unserer Piloten erleben! Wir zeigen dir die besten Flugplätze mit tollem Panorama rund um den Wilden Kaiser.
 
 Unser Fluglehrer begleitet dich während der Flugsafari über Funk um dir, falls nötig, helfend zur Seite stehen zu können. 
 
