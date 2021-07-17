@@ -1,6 +1,6 @@
 ---
 title: Höhenflugseminar
-description: Höhenflugseminar in Westendorf
+description: Bei einem Höhenflugseminar der Fly Tirol Flugschule lernst du unter der Begleitung von absoluten Profis Sicherheit beim Starten, Landen und der Kurventechnik. Während dieses Seminars absolvierst du möglichst viele Flüge um den 40 Höhenflügen die für die Prüfung des A-Scheins notwendig sind, näher zu kommen.
 location: Westendorf
 ---
 
