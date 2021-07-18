@@ -14,6 +14,14 @@ echo 'SHOPIFY_DOMAIN="MyPersonalShopShopifyUrl" > .env
 echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
 ```
 
+## Google-Analytics
+
+Google Analytics is used to track visitors. The `GOOGLE_ANALYTICS_ID` can be set as an Env variable. The [nuxt/google-analytics](https://google-analytics.nuxtjs.org/) module is used.
+
+```
+echo 'GOOGLE_ANALYTICS_ID="GoogleAnalyticsId"' >> .env
+```
+
 
 ## Development Setup
 
