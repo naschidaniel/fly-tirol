@@ -23,7 +23,7 @@ import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
   components: { TandemFlightList, InfoBox },
-  async asyncData({ $content, params }) {
+  async asyncData({ $content }) {
     const index = await $content('tandemfliegen', 'index').fetch()
     const prerequisites = await $content(
       'tandemfliegen',

@@ -26,7 +26,7 @@ export default {
         cardTitle: 'Fortbildung',
         cardImage: '/media/fortbildung/fortbildung.jpg',
         description: 'Fortbildungen in der Flugschule Fly Tirol',
-        linkName: 'zu den Ausbildungen',
+        linkName: 'zu den Fortbildungen',
         to: '/fortbildung',
       },
       basicTrainings: {
