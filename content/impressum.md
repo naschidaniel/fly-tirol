@@ -17,13 +17,21 @@ Steuer-Nummer: 83 226/5748
 Firmenbuchnummer: 559621y
 
 Firmenbuchgericht:  Landgericht Innsbruck
+
 Firmensitz: 6363 Westendorf
+
 Tel.: 0043 676 6422088
+
 E-Mail: info@fly-tirol.com
+
 Berufsrecht: Gewerbeordnung: www.ris.bka.gv.at
+
 Aufsichtsbehörde/Gewerbebehörde: AERO-Club Wien GmbH
+
 Berufsbezeichnung: Flugschule 
+
 Verleihungsstaat: Österreich
+
 Geschäftsführer
 Sebastian Kahn, Jan Kuhnert
  
@@ -36,6 +44,7 @@ Haftung für Links auf dieser Webseite
 Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Wenn Ihnen rechtswidrige Links auf unserer Webseite auffallen, bitte wir Sie uns zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
 Urheberrechtshinweis
 Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.
+
 Bildernachweis
 Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.
 Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen:
