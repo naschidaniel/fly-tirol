@@ -3,34 +3,38 @@
     :class="{ hidden: isCookieAgreement }"
     class="
       w-screen
-      h-40
       bg-gray-200
       flex
       items-center
       justify-center
-      px-5
-      py-5
+      px-3
+      py-3
       relative
+      text-sm
     "
   >
-    <div>
-      Informationen zu Cookies
+    <div class="flex-grow">
+      <strong>Informationen zu Cookies</strong>
       <p>
         Diese Seite verwendet Cookies. Diese dienen dazu, die Funktionalität
         dieser Website zu gewährleisten sowie die Nutzung der Website zu
         analysieren. Weiters verwenden wir optionale Cookies, um unsere
-        Werbeaktivitäten zu unterstützen.<br />
+        Werbeaktivitäten zu unterstützen.
+        <nuxt-link to="/dsgvo" class="underline" exact>
+          Nähere Informationen finden Sie in unseren
+          Datenschutzbestimmungen.</nuxt-link
+        >
       </p>
-      <nuxt-link
-        to="/dsgvo"
-        class="block outline-none w-24 whitespace-nowrap underline"
-        exact
-        >Nähere Informationen finden Sie in unseren
-        Datenschutzbestimmungen.</nuxt-link
-      >
-      <button class="btn-primary" @click="acceptCookieAgreement()">
-        Alle Cookies akzeptieren
-      </button>
+      <div class="flex ml-2 mt-2">
+        <div class="flex-grow text-right border-1">
+          <button
+            class="btn-primary bg-green-600"
+            @click="acceptCookieAgreement()"
+          >
+            Alle Cookies akzeptieren
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
