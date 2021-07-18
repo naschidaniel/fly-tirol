@@ -4,13 +4,18 @@ description: Fly Tirol Flugschule - Impressum
 ---
 # Impressum: 
 Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.
+
 Feel Free Sport GmbH
 Bergliftstr. 22, 
 6363 Westendorf,
 Österreich
+
 Unternehmensgegenstand: Paragleiter - Flugschule und Tandemflüge
+
 Steuer-Nummer: 83 226/5748
+
 Firmenbuchnummer: 559621y
+
 Firmenbuchgericht:  Landgericht Innsbruck
 Firmensitz: 6363 Westendorf
 Tel.: 0043 676 6422088
