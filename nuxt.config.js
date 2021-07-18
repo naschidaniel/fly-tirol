@@ -32,7 +32,8 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
+        content:
+          'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
       },
       {
         hid: 'og:image',
