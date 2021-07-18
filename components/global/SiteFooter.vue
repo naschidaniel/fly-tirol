@@ -55,6 +55,22 @@
                   Folge uns auf Instagram
                 </a>
               </div>
+              <div class="mt-8 sm:mt-0 sm:ml-4 md:ml-6 w-full sm:w-auto">
+                <a
+                  href="https://wa.me/436766422088"
+                  target="_blank"
+                  class="
+                    inline-flex
+                    items-center
+                    leading-none
+                    whitespace-nowrap
+                    underline
+                  "
+                >
+                  <WhatsAppLogo class="ft-icon mr-2" />
+                  Schreibe uns auf WhatsApp
+                </a>
+              </div>
             </div>
             <div class="flex w-full sm:w-auto sm:ml-4">
               <nuxt-link to="/dsgvo" class="underline">
