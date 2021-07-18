@@ -1,6 +1,11 @@
 export function generateMetatags(title, description) {
   return [
     {
+      hid: 'twitter:card',
+      name: 'twitter:card',
+      content: 'summary',
+    },
+    {
       hid: 'description',
       name: 'description',
       content: description,
@@ -12,14 +17,9 @@ export function generateMetatags(title, description) {
       content: description,
     },
     {
-      hid: 'twitter:title',
-      name: 'twitter:title',
-      content: title,
-    },
-    {
-      hid: 'twitter:description',
-      name: 'twitter:description',
-      content: description,
+      hid: 'og:image',
+      property: 'og:image',
+      content: 'https://feel-free.tirol/media/FlyTirolLogo.jpg',
     },
   ]
 }
