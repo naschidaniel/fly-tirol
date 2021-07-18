@@ -38,7 +38,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://feel-free.tirol/media/FlyTirolLogo.jpg',
+        content: 'https://feel-free.tirol/media/FlyTirolLogo_sm.jpg',
       },
       {
         hid: 'og:type',
