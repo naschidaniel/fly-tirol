@@ -1,8 +1,10 @@
 import path from 'path'
 import fs from 'fs'
 
+const production = process.env.NODE_ENV !== 'production'
+
 export default {
-  dev: process.env.NODE_ENV !== 'production',
+  dev: production,
   target: 'static',
   ssr: false,
   head: {
@@ -63,6 +65,7 @@ export default {
   buildModules: [
     'cookie-universal-nuxt',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/tailwindcss',
     '@nuxt-hero-icons/solid/nuxt',
     '@nuxt-hero-icons/outline/nuxt',
@@ -74,7 +77,10 @@ export default {
     unoptimized: true,
   },
   modules: ['@nuxt/content'],
-
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID,
+    dev: production,
+  },
   generate: {
     fallback: '404.html',
     async routes() {
