@@ -13,6 +13,32 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://feel-free.tirol/media/FlyTirolLogo.jpg',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
