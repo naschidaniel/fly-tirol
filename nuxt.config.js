@@ -61,6 +61,7 @@ export default {
   components: true,
 
   buildModules: [
+    'cookie-universal-nuxt',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxt-hero-icons/solid/nuxt',
