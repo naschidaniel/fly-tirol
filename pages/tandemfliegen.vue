@@ -32,7 +32,11 @@ export default {
     return { index, prerequisites }
   },
   head() {
-    const metatags = generateMetatags(this.index.title, this.index.description)
+    const metatags = generateMetatags(
+      this.index.title,
+      this.index.description,
+      this.$route.fullPath
+    )
     return { title: this.index.title, meta: metatags }
   },
   computed: {

@@ -1,4 +1,4 @@
-export function generateMetatags(title, description) {
+export function generateMetatags(title, description, url) {
   return [
     {
       hid: 'twitter:card',
@@ -20,6 +20,16 @@ export function generateMetatags(title, description) {
       hid: 'og:image',
       property: 'og:image',
       content: 'https://feel-free.tirol/media/FlyTirolLogo.jpg',
+    },
+    {
+      hid: 'og:type',
+      property: 'og:type',
+      content: 'article',
+    },
+    {
+      hid: 'og:url',
+      property: 'og:url',
+      content: `https://feel-free.tirol${url}`,
     },
   ]
 }

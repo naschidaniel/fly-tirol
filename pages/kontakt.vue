@@ -17,7 +17,11 @@ export default {
     return {}
   },
   head() {
-    const metatags = generateMetatags(this.page.title, this.page.description)
+    const metatags = generateMetatags(
+      this.page.title,
+      this.page.description,
+      this.$route.fullPath
+    )
     return { title: this.page.title, meta: metatags }
   },
 }

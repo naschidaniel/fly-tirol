@@ -30,7 +30,8 @@ export default {
   head() {
     const metatags = generateMetatags(
       this.impressum.title,
-      this.impressum.description
+      this.impressum.description,
+      this.$route.fullPath
     )
     return { title: this.impressum.title, meta: metatags }
   },

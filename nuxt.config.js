@@ -40,6 +40,16 @@ export default {
         property: 'og:image',
         content: 'https://feel-free.tirol/media/FlyTirolLogo.jpg',
       },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'article',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://feel-free.tirol',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
