@@ -25,7 +25,7 @@
           Datenschutzbestimmungen.</nuxt-link
         >
       </p>
-      <div class="flex ml-2 mt-2">
+      <div class="flex m-2 lg:mx-4 lg:mt-4">
         <div class="flex-grow text-right border-1">
           <button
             class="btn-primary bg-green-600"
