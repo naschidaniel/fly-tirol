@@ -1,14 +1,16 @@
 <template>
   <div>
     <nuxt-content :document="page" />
-    <button-contact />
+    <product-variants />
   </div>
 </template>
 
 <script>
 import { generateMetatags } from '~/util/generateHeaderInformation'
+import ProductVariants from '~/components/ProductVariants.vue'
 
 export default {
+  components: { ProductVariants },
   async asyncData({ $content, params }) {
     const page = await $content('reisen', params.slug).fetch()
     return { page }

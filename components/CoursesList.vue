@@ -37,6 +37,10 @@ export default {
         ? this.$store.state.basicTrainings
         : this.category === 'fortbildung'
         ? this.$store.state.advancedTrainings
+        : this.category === 'reisen'
+        ? this.$store.state.travels
+        : this.category === 'sicherheitstrainings'
+        ? this.$store.state.saftyTrainings
         : []
     },
   },

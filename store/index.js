@@ -7,6 +7,7 @@ export const state = () => ({
   media,
   saftyTrainings: [],
   tandemflights: [],
+  travels: [],
   products: [],
 })
 
