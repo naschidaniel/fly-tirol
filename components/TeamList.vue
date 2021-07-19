@@ -14,11 +14,9 @@
               "
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
-              <span class="inline-block">{{ title.pre }}</span>
+              <span class="inline-block">Dein Fly Tirol</span>
             </span>
-            <span class="text-5xl font-heading font-bold">
-              {{ title.main }}
-            </span>
+            <span class="text-5xl font-heading font-bold">Team</span>
           </h2>
         </div>
       </div>
@@ -35,13 +33,5 @@
 export default {
   components: {},
   props: { members: { type: Array, required: true } },
-  data() {
-    return {
-      title: {
-        pre: 'Dein Fly Tirol',
-        main: 'Team',
-      },
-    }
-  },
 }
 </script>
