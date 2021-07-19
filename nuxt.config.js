@@ -38,7 +38,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://feel-free.tirol/media/FlyTirolLogo_sm.jpg',
+        content: 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
       {
         hid: 'og:type',
@@ -48,7 +48,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://feel-free.tirol',
+        content: 'https://fly-tirol.com',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

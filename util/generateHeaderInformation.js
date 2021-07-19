@@ -19,7 +19,7 @@ export function generateMetatags(title, description, url) {
     {
       hid: 'og:image',
       property: 'og:image',
-      content: 'https://feel-free.tirol/media/FlyTirolLogo.jpg',
+      content: 'https://fly-tirol.com/media/FlyTirolLogo.jpg',
     },
     {
       hid: 'og:type',
@@ -29,7 +29,7 @@ export function generateMetatags(title, description, url) {
     {
       hid: 'og:url',
       property: 'og:url',
-      content: `https://feel-free.tirol${url}`,
+      content: `https://fly-tirol.com${url}`,
     },
   ]
 }
