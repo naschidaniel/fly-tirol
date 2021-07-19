@@ -7,16 +7,9 @@
 </template>
 
 <script>
-import 'swiper/css/swiper.css'
 import TandemFlightCard from './TandemFlightCard.vue'
 export default {
   components: { TandemFlightCard },
   props: { tandemflights: { type: Array, required: true } },
 }
 </script>
-
-<style lang="scss">
-.swiper-container {
-  overflow: visible !important;
-}
-</style>
