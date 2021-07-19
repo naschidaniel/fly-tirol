@@ -32,6 +32,7 @@
     "@nuxt-hero-icons/solid": "^1.0.1",
     "@nuxt/content": "^1.14.0",
     "@tailwindcss/aspect-ratio": "^0.2.1",
+    "cookie-universal-nuxt": "^2.1.5",
     "core-js": "^3.9.1",
     "heroicons": "^1.0.1",
     "nuxt": "^2.15.3",

@@ -96,6 +96,13 @@ Möchten Sie verhindern, dass die Facebook. Inc. diese Daten mit Ihrem Facebook-
 
 Welche Daten, zu welchem Zweck und in welchem Umfang Facebook Daten erhebt, nutzt und verarbeitet und welche Rechte sowie Einstellungsmöglichkeiten Sie zum Schutz Ihrer Privatsphäre haben, können Sie in den Datenschutzrichtlinien von Facebook nachlesen. Diese finden Sie hier: https://www.facebook.com/about/privacy/ 
 
+
+## Cookies von Dritten
+
+Wenn Sie in Ihrem Browser Cookies von Dritten akzeptieren, werden im Rahmen unserer Angebote Cookies von Dritten gesetzt und genutzt.
+
+<reset-cookie-agreement></reset-cookie-agreement>
+
 Newsletter-Abonnement
 
 Der Websitebetreiber bietet Ihnen einen Newsletter an, in welchem er Sie über aktuelle Geschehnisse und Angebote informiert. Möchten Sie den Newsletter abonnieren, müssen Sie eine valide E-Mail-Adresse angeben. Wenn Sie den Newsletter abonnieren, erklären Sie sich mit dem Newsletter-Empfang und den erläuterten Verfahren einverstanden.
@@ -117,8 +124,3 @@ Nutzer dieser Webseite können von ihrem Widerspruchsrecht Gebrauch machen und d
 Wenn Sie eine Berichtigung, Sperrung, Löschung oder Auskunft über die zu Ihrer Person gespeicherten personenbezogenen Daten wünschen oder Fragen bzgl. der Erhebung, Verarbeitung oder Verwendung Ihrer personenbezogenen Daten haben oder erteilte Einwilligungen widerrufen möchten, wenden Sie sich bitte an folgende E-Mail-Adresse: 
 
 info@fly-tirol.com
-
-
-
-
-
