@@ -21,27 +21,27 @@ jobs:
           node-version: '14'
       - run: npm install
       - name: generateMediaInformation
-        run: npm run generateMediaInformation
+        run: yarn generateMediaInformation
       - name: generate
-        run: npm run generate
+        run: yarn generate
       - name: get image-optimizer
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: delete ./dist/media
         run: rm -rf ./dist/media
       - name: optimize-images:2xs
-        run: npm run optimize-images:2xs
+        run: yarn optimize-images:2xs
       - name: optimize-images:xs
-        run: npm run optimize-images:xs
+        run: yarn optimize-images:xs
       - name: optimize-images:sm
-        run: npm run optimize-images:sm
+        run: yarn optimize-images:sm
       - name: optimize-images:md
-        run: npm run optimize-images:md
+        run: yarn optimize-images:md
       - name: optimize-images:lg
-        run: npm run optimize-images:lg
+        run: yarn optimize-images:lg
       - name: optimize-images:xl
-        run: npm run optimize-images:xl
+        run: yarn optimize-images:xl
       - name: optimize-images:2xl
-        run: npm run optimize-images:2xl
+        run: yarn optimize-images:2xl
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:

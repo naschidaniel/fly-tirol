@@ -19,28 +19,28 @@ echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
 
 ```bash
 # install dependencies
-$ npm install
+$ yarn
 
 # serve with hot reload at localhost:3000 for linux / mac
-$ npm run dev
+$ yarn dev
 
 # serve with hot reload at localhost:3000 for windows
-$ npm run dev:windows
+$ yarn dev:windows
 
 # if new media was added
-$ npm run generateMediaInformation
+$ yarn generateMediaInformation
 ```
 
 ## Build Setup
 
 ```bash
 # install dependencies
-$ npm install
+$ yarn
 
 # generate static project, optimize-images and launch server
-$ npm run generate
-$ npm run optimize-images
-$ npm run start
+$ yarn generate
+$ yarn optimize-images
+$ yarn start
 ```
 
 ### Optimize Images for Production
@@ -52,7 +52,7 @@ The images are optimized on the basis of the screen widths from [https://tailwin
 
 ``` bash
 # optimize images for Production
-$ npm run optimize-images
+$ yarn optimize-images
 ```
 
 ### Collect Media Information
@@ -61,7 +61,7 @@ The images in the `./static/media` folder are listet in the `./static/media.json
 
 ``` bash
 # Update media.json
-$ npm run generateMediaInformation
+$ yarn generateMediaInformation
 ```
 
 ## Adding Content
