@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
-      imageBoxWidthTailwindClass: 'lg',
+      imageSizeTailwindClass: 'lg',
       width: undefined,
       height: undefined,
       screenSizes: {
@@ -59,7 +59,7 @@ export default {
       }
       const filePostFix = this.fixSize
         ? `${this.fixSize}.${extension}`
-        : `${this.imageBoxWidthTailwindClass}.${extension}`
+        : `${this.imageSizeTailwindClass}.${extension}`
       const responsiveUrl = this.imageInformation.url.replace(
         `.${extension}`,
         `_${filePostFix}`
@@ -68,10 +68,10 @@ export default {
     },
   },
   mounted() {
-    this.getimageBoxWidth()
+    this.getImageSizeTailwindClass()
   },
   methods: {
-    getimageBoxWidth() {
+    getImageSizeTailwindClass() {
       const imageBoxWidth = this.$refs.imageBox?.clientWidth
       const devicePixelRatio = window?.devicePixelRatio ?? 1
       const imageSize = imageBoxWidth * devicePixelRatio
