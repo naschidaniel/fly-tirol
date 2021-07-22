@@ -49,8 +49,17 @@
 
 <script>
 import CardButton from './CardButton.vue'
+import OutlineCashIcon from './icons/OutlineCashIcon.vue'
+import OutlineCalendarIcon from './icons/OutlineCalendarIcon.vue'
+import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
+
 export default {
-  components: { CardButton },
+  components: {
+    CardButton,
+    OutlineCashIcon,
+    OutlineCalendarIcon,
+    OutlineLocationMarkerIcon,
+  },
   props: {
     conentFolder: { type: Object, default: () => {}, required: false },
     course: { type: Object, required: true },

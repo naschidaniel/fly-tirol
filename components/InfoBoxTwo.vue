@@ -15,7 +15,12 @@
 </template>
 
 <script>
+import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
+
 export default {
+  components: {
+    OutlineLocationMarkerIcon,
+  },
   props: {
     address: { type: String, required: true },
     headline: { type: String, required: true },

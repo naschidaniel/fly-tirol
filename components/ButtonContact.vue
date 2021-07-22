@@ -4,3 +4,11 @@
     <nuxt-link to="/kontakt" class="ml-4">Buchen</nuxt-link>
   </button>
 </template>
+
+<script>
+import OutlineChatIcon from './icons/OutlineChatIcon.vue'
+
+export default {
+  components: { OutlineChatIcon },
+}
+</script>

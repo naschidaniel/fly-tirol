@@ -26,7 +26,10 @@
 </template>
 
 <script>
+import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
+
 export default {
+  components: { OutlineInformationCircleIcon },
   props: {
     infobox: { type: Object, required: true },
   },

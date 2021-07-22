@@ -34,9 +34,16 @@
 </template>
 
 <script>
+import OutlineClipboardListIcon from './icons/OutlineClipboardListIcon.vue'
+import OutlineEmojiHappyIcon from './icons/OutlineEmojiHappyIcon.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
+
 export default {
-  components: { ResponsiveImage },
+  components: {
+    ResponsiveImage,
+    OutlineClipboardListIcon,
+    OutlineEmojiHappyIcon,
+  },
   props: { member: { type: Object, required: true } },
 }
 </script>
