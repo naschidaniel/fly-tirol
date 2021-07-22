@@ -45,8 +45,11 @@
 
 <script>
 import CardButton from './CardButton.vue'
+import OutlineCashIcon from './icons/OutlineCashIcon.vue'
+import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
+
 export default {
-  components: { CardButton },
+  components: { CardButton, OutlineCashIcon, OutlineLocationMarkerIcon },
   props: { flight: { type: Object, required: true } },
   data() {
     return {

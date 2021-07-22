@@ -112,9 +112,17 @@
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/swiper-bundle.css'
 import LinkCard from './LinkCard.vue'
+import SolidChevronLeftIcon from './icons/SolidChevronLeftIcon.vue'
+import SolidChevronRightIcon from './icons/SolidChevronRightIcon.vue'
 
 export default {
-  components: { Swiper, SwiperSlide, LinkCard },
+  components: {
+    LinkCard,
+    SolidChevronLeftIcon,
+    SolidChevronRightIcon,
+    Swiper,
+    SwiperSlide,
+  },
   props: {
     advancedTrainings: { type: Object, default: () => {} },
     basicTrainings: { type: Object, required: true },

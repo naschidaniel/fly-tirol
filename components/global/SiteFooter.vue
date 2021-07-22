@@ -88,8 +88,8 @@
 </template>
 
 <script>
-import InstagramIcon from '../InstagramIcon.vue'
-import WhatsAppIcon from '../WhatsAppIcon.vue'
+import InstagramIcon from '../icons/InstagramIcon.vue'
+import WhatsAppIcon from '../icons/WhatsAppIcon.vue'
 
 export default {
   components: { InstagramIcon, WhatsAppIcon },

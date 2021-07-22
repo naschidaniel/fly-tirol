@@ -3,8 +3,11 @@
 </template>
 
 <script>
+import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
+
 export default {
   name: 'NavigationCart',
+  components: { OutlineShoppingCartIcon },
   mounted() {
     this.fetchCollections()
     this.fetchProduct()
