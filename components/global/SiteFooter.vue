@@ -51,7 +51,7 @@
                     underline
                   "
                 >
-                  <InstagramLogo class="ft-icon mr-2" />
+                  <instagram-icon class="ft-icon mr-2" />
                   Folge uns auf Instagram
                 </a>
               </div>
@@ -67,7 +67,7 @@
                     underline
                   "
                 >
-                  <WhatsAppLogo class="ft-icon mr-2" />
+                  <whats-app-icon class="ft-icon mr-2" />
                   Schreibe uns auf WhatsApp
                 </a>
               </div>
@@ -86,3 +86,12 @@
     </div>
   </div>
 </template>
+
+<script>
+import InstagramIcon from '../InstagramIcon.vue'
+import WhatsAppIcon from '../WhatsAppIcon.vue'
+
+export default {
+  components: { InstagramIcon, WhatsAppIcon },
+}
+</script>
