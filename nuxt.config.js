@@ -64,8 +64,6 @@ export default {
     'cookie-universal-nuxt',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxt-hero-icons/solid/nuxt',
-    '@nuxt-hero-icons/outline/nuxt',
     'nuxt-shopify',
   ],
   shopify: {
