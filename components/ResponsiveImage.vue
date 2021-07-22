@@ -73,23 +73,25 @@ export default {
   methods: {
     getimageBoxWidth() {
       const imageBoxWidth = this.$refs.imageBox?.clientWidth
-      this.imageBoxWidthTailwindClass =
-        imageBoxWidth <= this.screenSizes['2xs']
+      const devicePixelRatio = window?.devicePixelRatio ?? 1
+      const imageSize = imageBoxWidth * devicePixelRatio
+      this.imageSizeTailwindClass =
+        imageSize <= this.screenSizes['2xs']
           ? '2xs'
-          : imageBoxWidth <= this.screenSizes.xs
+          : imageSize <= this.screenSizes.xs
           ? 'xs'
-          : imageBoxWidth <= this.screenSizes.sm
+          : imageSize <= this.screenSizes.sm
           ? 'sm'
-          : imageBoxWidth <= this.screenSizes.md
+          : imageSize <= this.screenSizes.md
           ? 'md'
-          : imageBoxWidth <= this.screenSizes.lg
+          : imageSize <= this.screenSizes.lg
           ? 'lg'
-          : imageBoxWidth <= this.screenSizes.xl
+          : imageSize <= this.screenSizes.xl
           ? 'xl'
           : '2xl'
-      this.width = this.screenSizes[this.imageBoxWidthTailwindClass]
+      this.width = this.screenSizes[this.imageSizeTailwindClass]
       this.height = Math.round(
-        this.screenSizes[this.imageBoxWidthTailwindClass] /
+        this.screenSizes[this.imageSizeTailwindClass] /
           this.imageInformation?.dimensions?.ratio
       )
     },
