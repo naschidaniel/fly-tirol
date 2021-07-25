@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="max-w-90 mx-auto pt-8">
     <nuxt-content :document="page" />
     <product-variants />
   </div>
