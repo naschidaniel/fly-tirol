@@ -1,7 +1,7 @@
 <template>
-  <div class="m-4 my-auto">
+  <div class="my-auto p-4 mt-4">
     <h2 class="font-bold">Termine</h2>
-    <ul>
+    <ul class="mb-2">
       <li v-for="variant in productVariants" :key="variant.id">
         {{ variant.title }}
       </li>
