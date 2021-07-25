@@ -7,41 +7,41 @@
 
   .nuxt-content {
     h1 {
-      @apply text-4xl lg:text-6xl font-medium mb-6;
+      @apply text-4xl lg:text-6xl font-medium my-6;
     }
-    
-    
+
+
     h2 {
-      @apply text-3xl lg:text-5xl font-medium mb-8;
+      @apply text-3xl lg:text-5xl font-medium my-8;
     }
-    
-    
+
+
     h3 {
-      @apply text-xl font-medium mb-2;
+      @apply text-xl font-medium my-2;
     }
-    
-    
+
+
     h4 {
-      @apply text-lg font-medium mb-2;
+      @apply text-lg font-medium my-2;
     }
-    
-    
+
+
     h5 {
-      @apply font-medium mt-2 mb-2;
+      @apply font-medium mt-2 my-2;
     }
-    
-    
+
+
     h6 {
-      @apply font-medium mt-2 mb-2;
+      @apply font-medium mt-2 my-2;
     }
-    
+
     ul {
       @apply list-disc m-6 mt-0;
-  
+
       li {
         @apply mb-2;
       }
     }
   }
-  
+
 }
