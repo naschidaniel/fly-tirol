@@ -1,29 +1,64 @@
 <template>
-  <div class="my-auto p-4 mt-4">
-    <h2 class="font-bold">Termine</h2>
-    <ul class="mb-2">
-      <li v-for="variant in productVariants" :key="variant.id">
-        {{ variant.title }}
-      </li>
-    </ul>
-    <button class="btn-primary btn--large mt-4">
-      <outline-chat-icon class="w-6 h-6" />
-      <nuxt-link to="/kontakt" class="ml-4">Buchen</nuxt-link>
-    </button>
+  <div class="my-auto p-4 mt-4 nuxt-content">
+    <h2>Termine</h2>
+    <table class="table-fixed border">
+      <thead>
+        <tr>
+          <th class="w-1/2 p-2 border">Datum</th>
+          <th class="w-1/4 p-2 border">Preis</th>
+          <th class="w-1/4 p-2 border">Buchen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="variant in productVariants" :key="variant.id">
+          <td class="p-1 sm:p-3 text-center border">
+            <strong>{{ variant.title }}</strong>
+          </td>
+          <td class="p-1 sm:p-3 text-center border">
+            {{ variant.price | formatPrice }}
+          </td>
+          <td class="p-1 sm:p-3 border">
+            <button
+              v-if="variant.available"
+              class="btn-primary btn--large"
+              @click.prevent="bookProduct(variant.id)"
+            >
+              Buchen
+            </button>
+            <span v-else class="text-gray-700">nicht verfügbar</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
 <script>
-import OutlineChatIcon from './icons/OutlineChatIcon.vue'
-
 export default {
-  components: { OutlineChatIcon },
+  name: 'ProductVariants',
   computed: {
     productVariants() {
       const products = this.$store.state.products.filter(
         (p) => p.handle === this.$route.params.slug
       )
       return products[0]?.variants
+    },
+  },
+  methods: {
+    bookProduct(variantId) {
+      const lineItemsToAdd = [
+        {
+          variantId,
+          quantity: 1,
+          customAttributes: [],
+        },
+      ]
+      const checkoutId = this.$store.state.checkout.id
+      this.$shopify.checkout
+        .addLineItems(checkoutId, lineItemsToAdd)
+        .then((checkout) => {
+          this.$store.commit('setCheckout', checkout)
+        })
     },
   },
 }
