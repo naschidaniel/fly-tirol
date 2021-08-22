@@ -23,14 +23,14 @@ Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht
 
 <content-image-gallery path="/media/sicherheitstrainings/sicherheitstraining-gardasee/"></content-image-gallery>
 
-## Ziel des Sicherheitstrainings im Überblick:
+## Ziel des Sicherheitstrainings im Überblick
 * Das sichere Beherrschen von Abstiegshilfen (Big Ears, B-Stall, Spirale)
 * Gegensteuern und Kurs halten bei seitlichen Einklappern 
 * Sackflug und das erkennen einer Trudelbewegung
 * Weiters möglich: Fullstall, Trudeln 90° - bis über 360° und Ausleitung über Fullstall, Rettung werfen
 
 
-## Voraussetzungen für das Sicherheitstraining:
+## Voraussetzungen für das Sicherheitstraining
 * A-Lizenz
 * Eigenes Material
 * Gültiger 2-Jahres Check des Paragleitschirms

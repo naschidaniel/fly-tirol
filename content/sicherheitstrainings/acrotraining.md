@@ -17,7 +17,7 @@ Am Tag der Anreise findet eine Gebietseinweisung statt. Außerdem wird auf die W
 
 Unsere Acro-Kurse finden meistens gemeinsam mit unseren ausgeschriebenen Sicherheitstrainings am Gardasee oder Ölüdeniz in der Türkei statt. 
 
-## Voraussetzungen für den Acro-Kurs:
+## Voraussetzungen für den Acro-Kurs
 * A-Lizenz
 * Eigenes Material
 * Beherrschen der Basics (alle Klapper, Fullstal, Fly-Back)
