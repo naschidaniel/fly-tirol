@@ -52,7 +52,7 @@ export default {
         cardTitle: 'Reisen',
         cardImage: '/media/reisen/paragliding_lago_de_garda.jpg',
         description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
-        to: '/tandemfliegen',
+        to: '/reisen',
       },
     }
   },
