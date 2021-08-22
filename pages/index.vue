@@ -6,6 +6,7 @@
       :basic-trainings="basicTrainings"
       :tandemflights="tandemflights"
       :safty-trainings="saftyTrainings"
+      :travels="travels"
     />
   </div>
 </template>
@@ -26,14 +27,12 @@ export default {
         cardTitle: 'Fortbildung',
         cardImage: '/media/fortbildung/fortbildung.jpg',
         description: 'Fortbildungen in der Flugschule Fly Tirol',
-        linkName: 'zu den Fortbildungen',
         to: '/fortbildung',
       },
       basicTrainings: {
         cardTitle: 'Ausbildung',
         cardImage: '/media/ausbildung/grundausbildung/uebungshang.jpg',
         description: 'Schulungsbetrieb in der Flugschule Fly Tirol',
-        linkName: 'zu den Ausbildungen',
         to: '/ausbildung',
       },
       saftyTrainings: {
@@ -41,14 +40,18 @@ export default {
         cardImage:
           '/media/sicherheitstrainings/sicherheitstraining-gardasee/infinit-gardasee.jpg',
         description: 'Unsere Sicherheitstrainings mit Sebastian Kahn',
-        linkName: 'zu den Sicherheitstrainings',
         to: '/sicherheitstrainings',
       },
       tandemflights: {
         cardTitle: 'Tandemflüge',
         cardImage: '/media/tandemfliegen/8_Bischae-TakeOff_3.jpg',
         description: 'Erlebe das Alpenpanorama aus der Vogelperspektive.',
-        linkName: 'zu den Tandemflügen',
+        to: '/tandemfliegen',
+      },
+      travels: {
+        cardTitle: 'Reisen',
+        cardImage: '/media/reisen/paragliding_lago_de_garda.jpg',
+        description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
         to: '/tandemfliegen',
       },
     }
