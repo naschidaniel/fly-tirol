@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       NUXT_ENV_CURRENT_GIT_SHA: process.env.NUXT_ENV_CURRENT_GIT_SHA,
-      buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP * 1000,
+      buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
     }
   },
   head() {

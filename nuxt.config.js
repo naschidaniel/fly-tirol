@@ -1,5 +1,8 @@
-import path from 'path'
-import fs from 'fs'
+import { execSync } from 'child_process'
+process.env.NUXT_ENV_CURRENT_GIT_SHA = execSync('git rev-parse --short HEAD', {
+  encoding: 'utf8',
+}).trim()
+process.env.NUXT_ENV_CURRENT_TIMESTAMP = new Date().getTime().toString()
 
 export default {
   dev: process.env.NODE_ENV !== 'production',
@@ -99,10 +102,6 @@ export default {
 
   server: {
     host: '0.0.0.0', // default: localhost,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'localhost.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'localhost.crt')),
-    },
   },
 
   babel: {
