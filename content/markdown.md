@@ -29,8 +29,6 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Here are some example components that are easy to integrate in the markdown markup.
 
-### ButtonContact.vue
-
 <button-contact></button-contact>
 ### ContentImage.vue
 

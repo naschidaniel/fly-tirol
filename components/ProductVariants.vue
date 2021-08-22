@@ -6,15 +6,18 @@
         {{ variant.title }}
       </li>
     </ul>
-    <button-contact />
+    <button class="btn-primary btn--large mt-4">
+      <outline-chat-icon class="w-6 h-6" />
+      <nuxt-link to="/kontakt" class="ml-4">Buchen</nuxt-link>
+    </button>
   </div>
 </template>
 
 <script>
-import ButtonContact from '~/components/ButtonContact.vue'
+import OutlineChatIcon from './icons/OutlineChatIcon.vue'
 
 export default {
-  components: { ButtonContact },
+  components: { OutlineChatIcon },
   computed: {
     productVariants() {
       const products = this.$store.state.products.filter(

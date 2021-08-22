@@ -37,19 +37,20 @@
     </div>
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
-        <card-button name="Buchen" to="/kontakt" />
+        <nuxt-link to="/kontakt" class="btn-primary btn--large">
+          Buchen
+        </nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import CardButton from './CardButton.vue'
 import OutlineCashIcon from './icons/OutlineCashIcon.vue'
 import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
 
 export default {
-  components: { CardButton, OutlineCashIcon, OutlineLocationMarkerIcon },
+  components: { OutlineCashIcon, OutlineLocationMarkerIcon },
   props: { flight: { type: Object, required: true } },
   data() {
     return {

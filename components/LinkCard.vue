@@ -21,7 +21,9 @@
     </div>
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
-        <card-button :to="to" name="Mehr erfahren" />
+        <nuxt-link :to="to" class="btn-primary btn--large">
+          Mehr erfahren
+        </nuxt-link>
       </div>
     </div>
   </div>
