@@ -29,7 +29,9 @@
     </div>
 
     <div class="navbar-controls">
-      <navigation-cart />
+      <div class="mr-2">
+        <navigation-cart />
+      </div>
       <div @click="toggleIfDropdownIsOpen()">
         <nuxt-link class="btn-primary" to="/kontakt" exact>
           <span>Kontakt</span>
