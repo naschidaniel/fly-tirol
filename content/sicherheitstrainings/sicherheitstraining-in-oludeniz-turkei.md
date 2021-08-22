@@ -22,7 +22,7 @@ Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu
 
 Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht die Gruppe zum gemeinsamen Abendessen an die wunderschöne Strandpromenade von Ölüdeniz.
 
-## Ziel des Sicherheitstrainings im Überblick:
+## Ziel des Sicherheitstrainings im Überblick
 
 * Das sichere Beherrschen von Abstiegshilfen (Big Ears, B-Stall, Spirale)
 * Gegensteuern und Kurs halten bei seitlichen Einklappern 
@@ -30,7 +30,7 @@ Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht
 * Weiters möglich: Fullstall, Trudeln 90° - bis über 360° und Ausleitung über Fullstall, Rettung werfen
 
 
-## Voraussetzungen für das Sicherheitstraining:
+## Voraussetzungen für das Sicherheitstraining
 
 * A-Lizenz
 * Eigenes Material
