@@ -47,35 +47,30 @@
           :card-image="tandemflights.cardImage"
           :card-title="tandemflights.cardTitle"
           :description="tandemflights.description"
-          :link-name="tandemflights.linkName"
           :to="tandemflights.to"
         />
         <link-card
           :card-image="basicTrainings.cardImage"
           :card-title="basicTrainings.cardTitle"
           :description="basicTrainings.description"
-          :link-name="basicTrainings.linkName"
           :to="basicTrainings.to"
         />
         <link-card
           :card-image="advancedTrainings.cardImage"
           :card-title="advancedTrainings.cardTitle"
           :description="advancedTrainings.description"
-          :link-name="advancedTrainings.linkName"
           :to="advancedTrainings.to"
         />
         <link-card
           :card-image="saftyTrainings.cardImage"
           :card-title="saftyTrainings.cardTitle"
           :description="saftyTrainings.description"
-          :link-name="saftyTrainings.linkName"
           :to="saftyTrainings.to"
         />
         <link-card
           :card-image="travels.cardImage"
           :card-title="travels.cardTitle"
           :description="travels.description"
-          :link-name="travels.linkName"
           :to="travels.to"
         />
       </div>

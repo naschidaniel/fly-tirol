@@ -35,7 +35,6 @@ export default {
     cardTitle: { type: String, required: true },
     cardImage: { type: String, required: true },
     description: { type: String, default: '' },
-    linkName: { type: String, required: true },
     to: { type: String, required: true },
   },
 }
