@@ -1,9 +1,10 @@
+// https://seeklogo.com/vector-logo/305567/whatsapp-icon
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="20"
-    height="20"
+    width="2489"
+    height="2500"
     viewBox="0 0 1219.547 1225.016"
   >
     <path
@@ -30,7 +31,6 @@
       opacity=".08"
       width="682"
       height="639"
-      xlink:href="FCC0802E2AF8A915.png"
       transform="translate(270.984 291.372)"
     />
     <path
