@@ -14,9 +14,9 @@
         <td class="p-2">{{ value }}</td>
       </tr>
     </table>
-    <div class="btn-primary" @click="delAllCookies()">
+    <button class="btn-primary mt-2" @click="delAllCookies()">
       Alle Cookies der Website löschen
-    </div>
+    </button>
   </div>
 </template>
 
