@@ -1,4 +1,4 @@
-// https://heroicons.com/ - by @steveschoger - MIT Licensed - outline calendar icon
+<!-- https://heroicons.com/ - by @steveschoger - MIT Licensed - outline calendar icon -->
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"

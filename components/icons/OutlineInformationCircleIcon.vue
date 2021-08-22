@@ -1,4 +1,4 @@
-// https://heroicons.com/ - by @steveschoger - MIT Licensed - outline information-circle icon
+<!-- https://heroicons.com/ - by @steveschoger - MIT Licensed - outline information-circle icon -->
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
