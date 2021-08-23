@@ -2,27 +2,22 @@
   <div class="py-6">
     <hero-two :hero="index.hero" />
     <tandem-flight-list :tandemflights="tandemflights" :pages="pages" />
-    <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
-      <nuxt-content
-        :document="index"
-        class="w-full md:w-1/3 text-lg leading-relaxed max-w-prose"
-      />
+    <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
+      <h2>Bildergalerie</h2>
       <content-image-gallery
         path="/media/tandemfliegen/"
-        class="w-full md:w-2/3 md:pl-8"
+        class="w-full md:pl-8"
       />
     </div>
-    <info-box :infobox="prerequisites" />
   </div>
 </template>
 
 <script>
-import InfoBox from '~/components/InfoBox.vue'
 import TandemFlightList from '~/components/TandemFlightList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { TandemFlightList, InfoBox },
+  components: { TandemFlightList },
   async asyncData({ $content }) {
     const index = await $content('tandemfliegen', 'index').fetch()
     const pages = await $content('tandemfliegen').fetch()
