@@ -2,12 +2,20 @@
   <div class="card p-4">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
-        <img loading="lazy" :src="flight.images[0].src" class="object-cover" />
+        <nuxt-link :to="page.path" :title="page.title">
+          <img
+            loading="lazy"
+            :src="flight.images[0].src"
+            class="object-cover"
+          />
+        </nuxt-link>
       </div>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
-            {{ page.title }}
+            <nuxt-link :to="page.path" :title="page.title">
+              {{ page.title }}
+            </nuxt-link>
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
@@ -29,7 +37,11 @@
     </div>
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
-        <nuxt-link :to="page.path" class="btn-primary btn--large">
+        <nuxt-link
+          :to="page.path"
+          class="btn-primary btn--large"
+          :title="page.title"
+        >
           Mehr erfahren
         </nuxt-link>
       </div>
