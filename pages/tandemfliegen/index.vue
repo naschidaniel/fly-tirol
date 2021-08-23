@@ -1,7 +1,7 @@
 <template>
   <div class="py-6">
     <hero-two :hero="index.hero" />
-    <tandem-flight-list :tandemflights="tandemflights" />
+    <tandem-flight-list :tandemflights="tandemflights" :pages="pages" />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
       <nuxt-content
         :document="index"
@@ -25,11 +25,12 @@ export default {
   components: { TandemFlightList, InfoBox },
   async asyncData({ $content }) {
     const index = await $content('tandemfliegen', 'index').fetch()
+    const pages = await $content('tandemfliegen').fetch()
     const prerequisites = await $content(
       'tandemfliegen',
       'voraussetzungen'
     ).fetch()
-    return { index, prerequisites }
+    return { index, pages, prerequisites }
   },
   head() {
     const metatags = generateMetatags(

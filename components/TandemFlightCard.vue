@@ -7,11 +7,13 @@
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
-            {{ flight.title }}
+            {{ page.title }}
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
-            <span class="block leading-none pt-1 ml-1"> Westendorf </span>
+            <span class="block leading-none pt-1 ml-1">
+              {{ page.location }}
+            </span>
           </div>
           <div class="flex items-center text-sm -ml-1 mb-4">
             <outline-cash-icon class="w-4 h-4" />
@@ -20,25 +22,15 @@
             </span>
           </div>
           <p class="text-gray-600">
-            {{ flight.description }}
+            {{ page.description }}
           </p>
-          <!-- <select v-model="selectedVariant" class="mt-2">
-            <option selected>Wähle deinen Flug</option>
-            <option
-              v-for="variant in variants"
-              :key="variant.id"
-              :value="variant"
-            >
-              {{ variant.title }}
-            </option>
-          </select> -->
         </div>
       </div>
     </div>
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
-        <nuxt-link to="/kontakt" class="btn-primary btn--large">
-          Buchen
+        <nuxt-link :to="page.path" class="btn-primary btn--large">
+          Mehr erfahren
         </nuxt-link>
       </div>
     </div>
@@ -51,11 +43,9 @@ import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
 
 export default {
   components: { OutlineCashIcon, OutlineLocationMarkerIcon },
-  props: { flight: { type: Object, required: true } },
-  data() {
-    return {
-      selectedVariant: 'Wähle deinen Flug',
-    }
+  props: {
+    flight: { type: Object, required: true },
+    page: { type: Object, required: true },
   },
   computed: {
     price() {
@@ -63,9 +53,6 @@ export default {
       const uniquePrices = [...new Set(price)]
       const preText = uniquePrices.length >= 2 ? 'ab' : ''
       return { preText, price: uniquePrices[0] }
-    },
-    variants() {
-      return this.flight?.variants || []
     },
   },
 }
