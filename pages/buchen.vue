@@ -2,19 +2,17 @@
   <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
     <h1>Buchen</h1>
     <Cart />
-    <CartForm />
   </div>
 </template>
 
 <script>
 import Cart from '~/components/Cart.vue'
-import CartForm from '~/components/CartForm.vue'
 
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
   name: 'Buchen',
-  components: { Cart, CartForm },
+  components: { Cart },
   head() {
     const metatags = generateMetatags(
       'Buchen',
