@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="py-6">
     <hero-two :hero="index.hero" />
     <tandem-flight-list :tandemflights="tandemflights" />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
