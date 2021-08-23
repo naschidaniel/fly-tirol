@@ -55,6 +55,7 @@ export default {
       this.$cookies.set('FlyTirol-cookieAgreement', 'true', {
         path: '/',
         maxAge: 60 * 60 * 24 * 7 * 31,
+        sameSite: true,
       })
       this.$store.commit('setCookieAgreement', true)
     },
