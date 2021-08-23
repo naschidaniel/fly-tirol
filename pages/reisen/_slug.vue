@@ -1,6 +1,7 @@
 <template>
-  <div class="max-w-90 mx-auto pt-8">
+  <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
     <nuxt-content :document="page" />
+    <h2>Termine</h2>
     <product-variants />
   </div>
 </template>

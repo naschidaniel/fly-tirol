@@ -1,6 +1,5 @@
 <template>
-  <div class="my-auto p-4 mt-4 nuxt-content">
-    <h2>Termine</h2>
+  <div class="my-auto p-4 mt-4">
     <table class="table-fixed border">
       <thead>
         <tr>
