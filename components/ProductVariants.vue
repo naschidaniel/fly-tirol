@@ -59,6 +59,7 @@ export default {
         .then((checkout) => {
           this.$store.commit('setCheckout', checkout)
         })
+      this.$router.push({ path: '/buchen' })
     },
   },
 }
