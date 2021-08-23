@@ -12,11 +12,11 @@
       </div>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
-          <h3 class="text-2xl font-heading font-semibold mb-1">
-            <nuxt-link :to="page.path" :title="page.title">
+          <nuxt-link :to="page.path" :title="page.title">
+            <h3 class="text-2xl font-heading font-semibold mb-1">
               {{ page.title }}
-            </nuxt-link>
-          </h3>
+            </h3>
+          </nuxt-link>
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
             <span class="block leading-none pt-1 ml-1">
