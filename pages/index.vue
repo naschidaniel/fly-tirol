@@ -44,7 +44,7 @@ export default {
       },
       tandemflights: {
         cardTitle: 'Tandemflüge',
-        cardImage: '/media/tandemfliegen/8_Bischae-TakeOff_3.jpg',
+        cardImage: '/media/tandemfliegen/6_panoramaflug.jpg',
         description: 'Erlebe das Alpenpanorama aus der Vogelperspektive.',
         to: '/tandemfliegen',
       },
