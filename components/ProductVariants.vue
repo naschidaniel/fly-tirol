@@ -4,7 +4,7 @@
     <table class="table-fixed border">
       <thead>
         <tr>
-          <th class="w-1/2 p-2 border">Datum</th>
+          <th class="w-1/2 p-2 border">Flug / Kurs</th>
           <th class="w-1/4 p-2 border">Preis</th>
           <th class="w-1/4 p-2 border">Buchen</th>
         </tr>
