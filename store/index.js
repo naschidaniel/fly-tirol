@@ -61,6 +61,7 @@ export const mutations = {
       this.$cookies.set('FlyTirol-checkoutId', change.id, {
         path: '/',
         maxAge: 24 * 7 * 1,
+        sameSite: true,
       })
     }
     state.checkout = change
