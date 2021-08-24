@@ -8,7 +8,7 @@
         >https://github.com/naschidaniel/fly-tirol</a
       >
     </div>
-    <div>Buildtime: {{ NUXT_ENV_CURRENT_TIMESTAMP }}</div>
+    <div>Buildtime des Docker Images: {{ NUXT_ENV_CURRENT_TIMESTAMP }}</div>
   </div>
 </template>
 
@@ -22,7 +22,8 @@ export default {
   },
   data() {
     return {
-      NUXT_ENV_CURRENT_TIMESTAMP: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
+      NUXT_ENV_CURRENT_TIMESTAMP:
+        process.env.NUXT_ENV_CURRENT_TIMESTAMP || 'DEVELOPMENT',
     }
   },
   head() {
