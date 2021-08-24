@@ -34,13 +34,11 @@ $ yarn generateMediaInformation
 ## Build Setup
 
 ```bash
-# install dependencies
-$ yarn
+# generate SSR project, optimize-images and build the container
+$ docker build -t - feelfree . 
 
 # generate static project, optimize-images and launch server
-$ yarn generate
-$ yarn optimize-images
-$ yarn start
+$ docker run -p 127.0.0.1:5000:5000/tcp feelfree
 ```
 
 ### Optimize Images for Production
