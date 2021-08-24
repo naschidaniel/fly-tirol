@@ -1,5 +1,9 @@
 FROM node:lts-buster as builder
 
+ENV TZ=Europe/Berlin
+
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN apt-get update
 
 RUN apt-get install rsync -y
@@ -10,7 +14,7 @@ RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/ma
 
 COPY . .
 
-RUN echo "NUXT_ENV_CURRENT_TIMESTAMP=\"$(date '+%F_%H:%M:%S')\"" >> .env
+RUN echo "NUXT_ENV_CURRENT_TIMESTAMP=\"$(date '+%F %H:%M:%S')\"" >> .env
 
 RUN yarn install \
   --non-interactive \

@@ -8,7 +8,6 @@
         >https://github.com/naschidaniel/fly-tirol</a
       >
     </div>
-    <div>Version: {{ NUXT_ENV_CURRENT_GIT_SHA }}</div>
     <div>Buildtime: {{ NUXT_ENV_CURRENT_TIMESTAMP }}</div>
   </div>
 </template>
