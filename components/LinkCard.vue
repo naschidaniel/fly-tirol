@@ -2,16 +2,20 @@
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
-        <responsive-image
-          img-class="object-cover"
-          fix-size="sm"
-          :picture="cardImage"
-        />
+        <nuxt-link :to="to">
+          <responsive-image
+            img-class="object-cover"
+            fix-size="sm"
+            :picture="cardImage"
+          />
+        </nuxt-link>
       </div>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-xl font-heading font-semibold mb-4">
-            {{ cardTitle }}
+            <nuxt-link :to="to" :title="cardTitle">
+              {{ cardTitle }}
+            </nuxt-link>
           </h3>
           <p class="text-gray-600">
             {{ description }}
