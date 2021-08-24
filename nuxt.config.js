@@ -1,13 +1,6 @@
-import { execSync } from 'child_process'
-process.env.NUXT_ENV_CURRENT_GIT_SHA = execSync('git rev-parse --short HEAD', {
-  encoding: 'utf8',
-}).trim()
-process.env.NUXT_ENV_CURRENT_TIMESTAMP = new Date().getTime().toString()
-
 export default {
   dev: process.env.NODE_ENV !== 'production',
-  target: 'static',
-  ssr: false,
+  target: 'server',
   head: {
     titleTemplate: 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
     htmlAttrs: {
@@ -102,6 +95,7 @@ export default {
 
   server: {
     host: '0.0.0.0', // default: localhost,
+    port: 5000,
   },
 
   babel: {
