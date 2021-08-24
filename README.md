@@ -35,10 +35,10 @@ $ yarn generateMediaInformation
 
 ```bash
 # generate SSR project, optimize-images and build the container
-$ docker build -t - feelfree . 
+$ docker build -t flytirol . 
 
 # generate static project, optimize-images and launch server
-$ docker run -p 127.0.0.1:5000:5000/tcp feelfree
+$ docker run -p 127.0.0.1:5000:5000/tcp flytirol
 ```
 
 ### Optimize Images for Production
