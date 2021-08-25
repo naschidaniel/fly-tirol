@@ -35,7 +35,6 @@ export default {
             checkout.completedAt === null &&
             new Date().getTime() <= createdAt
           ) {
-            console.log(checkout)
             // eslint-disable-next-line no-console
             console.log('Found Valid CheckoutId ', checkoutId)
             return
