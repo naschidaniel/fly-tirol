@@ -29,7 +29,7 @@
     </div>
 
     <div class="navbar-controls">
-      <div class="mr-2">
+      <div class="mr-2" @click="toggleIfDropdownIsOpen()">
         <navigation-cart />
       </div>
       <div @click="toggleIfDropdownIsOpen()">
