@@ -1,25 +1,27 @@
 <template>
-  <div class="my-auto p-4 mt-4">
-    <table class="table-fixed border">
+  <div class="my-auto p-1 md:p-4 mt-4 w-full lg:w-1/2">
+    <table class="table-fixed border w-full">
       <thead>
         <tr>
-          <th class="w-1/2 p-2 border">Flug / Kurs</th>
-          <th class="w-1/4 p-2 border">Preis</th>
-          <th class="w-1/4 p-2 border">Buchen</th>
+          <th class="w-1/2 p-2 border text-sm md:text-base">Flug / Kurs</th>
+          <th class="w-1/4 p-2 border text-sm md:text-base">Preis</th>
+          <th class="w-1/4 p-2 border text-sm md:text-base">Buchen</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="variant in productVariants" :key="variant.id">
-          <td class="p-1 sm:p-3 text-center border">
-            <strong>{{ variant.title }}</strong>
+          <td
+            class="p-1 sm:p-3 text-center border font-bold text-sm md:text-base"
+          >
+            {{ variant.title }}
           </td>
-          <td class="p-1 sm:p-3 text-center border">
+          <td class="p-1 sm:p-3 text-center border text-sm md:text-base">
             {{ variant.price | formatPrice }}
           </td>
-          <td class="p-1 sm:p-3 border">
+          <td class="p-1 sm:p-3 border text-center">
             <button
               v-if="variant.available"
-              class="btn-primary btn--large"
+              class="btn-primary text-sm md:text-base"
               @click.prevent="bookProduct(variant.id)"
             >
               Buchen
