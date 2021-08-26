@@ -1,11 +1,7 @@
 ---
-title: Ölüdeniz - Türkei
+title: Flugreise Ölüdeniz - Türkei
 description: Entdecke mit Fly Tirol unter Begleitung von absoluten Profis und erfahrenen Fluglehrern die wunderschöne Türkische Küstenregion rund um Ölüdeniz.
-course: Ölüdeniz
 location: Ölüdeniz - Türkei
-price: XXX EUR
-order: 1
-card: true
 ---
 
 # Ölüdeniz - Türkei

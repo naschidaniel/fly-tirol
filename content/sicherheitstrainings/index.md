@@ -9,7 +9,3 @@ hero:
 ---
 
 <hero-two :hero="hero"></hero-two>
-
-<courses-list></courses-list>
-
-<content-image-gallery path="/media/sicherheitstrainings/"></content-image-gallery>
