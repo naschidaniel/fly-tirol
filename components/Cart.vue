@@ -30,9 +30,23 @@
         </thead>
         <tbody>
           <tr v-for="item in cartItems" :key="item.key">
-            <td class="p-1 md:p-3 text-left border">
+            <td class="p-1 sm:p-2 md:p-3 text-left border">
               <p class="text-sm md:text-base font-bold">{{ item.title }}</p>
-              <p class="text-sm md:text-md">{{ item.variant.title }}</p>
+              <p
+                v-if="item.variant.title !== 'Default Title'"
+                class="text-sm md:text-md"
+              >
+                {{ item.variant.title }}
+              </p>
+              <div v-if="item.customAttributes.length !== 0">
+                <p
+                  v-for="attribute in item.customAttributes"
+                  :key="attribute.key"
+                  class="text-sm md:text-md"
+                >
+                  {{ attribute.key }}: {{ attribute.value }}
+                </p>
+              </div>
             </td>
             <td class="text-sm md:text-base p-1 md:p-3 text-center border">
               {{ item.variant.price | formatPrice }}
@@ -75,7 +89,7 @@
           }}</span></span
         ><br />
         <span class="text-sm"
-          >Im Preis sind die gesetzlichen Steuern enthalten</span
+          >Im Preis ist die gesetzliche Mehrwertsteuer von 20% enthalten.</span
         >
       </div>
       <div class="w-full text-right mt-3">
