@@ -21,11 +21,8 @@ echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
 # install dependencies
 $ yarn
 
-# serve with hot reload at localhost:3000 for linux / mac
-$ yarn dev
-
-# serve with hot reload at localhost:3000 for windows
-$ yarn dev:windows
+# serve with hot reload at localhost:5000 for linux / mac
+$ yarn serve
 
 # if new media was added
 $ yarn generateMediaInformation
