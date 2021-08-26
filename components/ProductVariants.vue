@@ -39,14 +39,14 @@ export default {
   name: 'ProductVariants',
   computed: {
     productVariants() {
-      const products = this.$store.state.products.filter(
+      const product = this.$store.state.products.filter(
         (p) => p.handle === this.$route.params.slug
       )
-      return products[0]?.variants
+      return product[0]?.variants
     },
   },
   methods: {
-    bookProduct(variantId) {
+    async bookProduct(variantId) {
       const lineItemsToAdd = [
         {
           variantId,
@@ -55,7 +55,7 @@ export default {
         },
       ]
       const checkoutId = this.$store.state.checkout.id
-      this.$shopify.checkout
+      await this.$shopify.checkout
         .addLineItems(checkoutId, lineItemsToAdd)
         .then((checkout) => {
           this.$store.commit('setCheckout', checkout)
