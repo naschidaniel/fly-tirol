@@ -2,8 +2,14 @@
   <div>
     <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
       <nuxt-content :document="page" />
-      <h2>Tandemflüge</h2>
-      <product-variants />
+      <div v-if="page.isAppointment">
+        <h2>Buche deinen Wunschtermin</h2>
+        <product-appointment />
+      </div>
+      <div v-else>
+        <h2>Wähle deinen Flug</h2>
+        <product-variants />
+      </div>
     </div>
     <div
       v-if="page.flight"
@@ -24,10 +30,11 @@
 
 <script>
 import { generateMetatags } from '~/util/generateHeaderInformation'
+import ProductAppointment from '~/components/ProductAppointment.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
 
 export default {
-  components: { ProductVariants },
+  components: { ProductAppointment, ProductVariants },
   async asyncData({ $content, params }) {
     const page = await $content('tandemfliegen', params.slug).fetch()
     const index = await $content('tandemfliegen', 'index').fetch()
@@ -44,6 +51,11 @@ export default {
       this.$route.fullPath
     )
     return { title: this.page.title, meta: metatags }
+  },
+  computed: {
+    isAppointment() {
+      return this.page.isAppointment || false
+    },
   },
 }
 </script>

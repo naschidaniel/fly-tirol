@@ -20,8 +20,7 @@
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
             <span class="block leading-none pt-1 ml-1">
-              <!-- {{ course.location }} -->
-              Westendorf
+              {{ page.location }}
             </span>
           </div>
           <div class="flex items-center text-sm -ml-1 mb-2">
@@ -61,9 +60,9 @@ export default {
     OutlineLocationMarkerIcon,
   },
   props: {
-    conentFolder: { type: Object, default: () => {}, required: false },
     course: { type: Object, required: true },
     slug: { type: String, default: '', required: false },
+    page: { type: Object, required: true },
   },
   computed: {
     price() {

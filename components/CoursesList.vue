@@ -18,6 +18,7 @@
           class="p-4"
           :course="course"
           :slug="`${category}/${course.handle}`"
+          :page="getPage(course.title)"
         />
       </div>
     </div>
@@ -28,6 +29,9 @@
 import CourseCard from './CourseCard.vue'
 export default {
   components: { CourseCard },
+  props: {
+    pages: { type: Array, required: true },
+  },
   computed: {
     category() {
       return this.$route.name
@@ -42,6 +46,11 @@ export default {
         : this.category === 'sicherheitstrainings'
         ? this.$store.state.saftyTrainings
         : []
+    },
+  },
+  methods: {
+    getPage(title) {
+      return this.pages.find((page) => page.title === title)
     },
   },
 }
