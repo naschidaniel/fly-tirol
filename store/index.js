@@ -11,19 +11,6 @@ export const state = () => ({
   products: [],
   checkout: {},
   cookieAgreement: false,
-  shippingAddress: {
-    address1: '',
-    address2: '',
-    city: '',
-    company: null,
-    country: '',
-    email: '',
-    firstName: '',
-    lastName: '',
-    phone: '',
-    province: '',
-    zip: '',
-  },
 })
 
 export const mutations = {
@@ -65,32 +52,5 @@ export const mutations = {
       })
     }
     state.checkout = change
-  },
-  setAddress1(state, change) {
-    state.shippingAddress.address1 = change
-  },
-  setAddress2(state, change) {
-    state.shippingAddress.address2 = change
-  },
-  setCity(state, change) {
-    state.shippingAddress.city = change
-  },
-  setCountry(state, change) {
-    state.shippingAddress.country = change
-  },
-  setEmail(state, change) {
-    state.shippingAddress.email = change
-  },
-  setFirstName(state, change) {
-    state.shippingAddress.firstName = change
-  },
-  setLastName(state, change) {
-    state.shippingAddress.lastName = change
-  },
-  setPhone(state, change) {
-    state.shippingAddress.phone = change
-  },
-  setZip(state, change) {
-    state.shippingAddress.zip = change
   },
 }
