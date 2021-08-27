@@ -67,7 +67,7 @@ $ yarn generateMediaInformation
 
 The markdown markup language is used for formatting the content. Read the [www.markdownguide.org/cheat-sheet](https://www.markdownguide.org/cheat-sheet/) for most relevant commands.
 
-The first section contains variables that should be changed with care. The second part contains pure markdown markup in which components can be inserted. Have a look to the DemoPage for all available [https://fly-tirol.com/markdown/](https://fly-tirol.com/markdown/) components.
+The first section contains variables that should be changed with care. The second part contains pure markdown markup in which components can be inserted.
 
 
 ```markdown
