@@ -1,8 +1,9 @@
 <template>
   <div class="py-6">
     <hero-two :hero="index.hero" />
-    <tandem-flight-list :tandemflights="tandemflights" :pages="pages" />
+    <product-list :pages="pages" />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
+      <nuxt-content :document="index" />
       <h2>Bildergalerie</h2>
       <content-image-gallery
         path="/media/tandemfliegen/"
@@ -13,11 +14,11 @@
 </template>
 
 <script>
-import TandemFlightList from '~/components/TandemFlightList.vue'
+import ProductList from '~/components/ProductList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { TandemFlightList },
+  components: { ProductList },
   async asyncData({ $content }) {
     const index = await $content('tandemfliegen', 'index').fetch()
     const pages = await $content('tandemfliegen').fetch()
@@ -34,11 +35,6 @@ export default {
       this.$route.fullPath
     )
     return { title: this.index.title, meta: metatags }
-  },
-  computed: {
-    tandemflights() {
-      return this.$store.state.tandemflights
-    },
   },
 }
 </script>

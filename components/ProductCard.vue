@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
-      <nuxt-link :to="slug" :title="course.title">
+      <nuxt-link :to="page.path" :title="course.title">
         <div
           class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200"
         >
@@ -15,7 +15,7 @@
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
-            <nuxt-link :to="slug">{{ course.title }}</nuxt-link>
+            <nuxt-link :to="page.path">{{ course.title }}</nuxt-link>
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
@@ -29,18 +29,28 @@
               {{ price.preText }} {{ price.price | formatPrice }}
             </span>
           </div>
-          <div class="flex items-center text-sm -ml-1 mb-4">
+          <div
+            v-if="!isTandemflight"
+            class="flex items-center text-sm -ml-1 mb-4"
+          >
             <outline-calendar-icon class="w-4 h-4" />
             <span class="block leading-none pt-1 ml-1"
               >{{ course.variants.length }} Termine</span
             >
           </div>
+          <p v-if="isTandemflight" class="text-gray-600">
+            {{ page.description }}
+          </p>
         </div>
       </div>
     </div>
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
-        <nuxt-link :to="slug" class="btn-primary btn--large">
+        <nuxt-link
+          :to="page.path"
+          class="btn-primary btn--large"
+          :title="page.title"
+        >
           Mehr erfahren
         </nuxt-link>
       </div>
@@ -61,10 +71,12 @@ export default {
   },
   props: {
     course: { type: Object, required: true },
-    slug: { type: String, default: '', required: false },
     page: { type: Object, required: true },
   },
   computed: {
+    isTandemflight() {
+      return this.page.path.includes('/tandemfliegen')
+    },
     price() {
       const price = this.course?.variants.map((v) => parseFloat(v.price))
       const uniquePrices = [...new Set(price)]

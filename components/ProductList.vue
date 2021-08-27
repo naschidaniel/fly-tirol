@@ -13,12 +13,12 @@
     </div>
     <div v-else class="card--grid grid-gap-1 max-w-90 mx-auto py-4 md:py-12">
       <div v-for="course in courses" :key="course.handle">
-        <course-card
+        <product-card
           v-if="course.variants"
           class="p-4"
           :course="course"
           :slug="`${category}/${course.handle}`"
-          :page="getPage(course.title)"
+          :page="getPage(course.handle)"
         />
       </div>
     </div>
@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import CourseCard from './CourseCard.vue'
+import ProductCard from './ProductCard.vue'
 export default {
-  components: { CourseCard },
+  components: { ProductCard },
   props: {
     pages: { type: Array, required: true },
   },
@@ -43,14 +43,16 @@ export default {
         ? this.$store.state.advancedTrainings
         : this.category === 'reisen'
         ? this.$store.state.travels
+        : this.category === 'tandemfliegen'
+        ? this.$store.state.tandemflights
         : this.category === 'sicherheitstrainings'
         ? this.$store.state.saftyTrainings
         : []
     },
   },
   methods: {
-    getPage(title) {
-      return this.pages.find((page) => page.title === title)
+    getPage(handle) {
+      return this.pages.find((p) => p.slug === handle)
     },
   },
 }

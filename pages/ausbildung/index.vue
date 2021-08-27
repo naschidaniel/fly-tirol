@@ -1,18 +1,18 @@
 <template>
   <div>
     <nuxt-content :document="index" />
-    <courses-list :pages="pages" />
+    <product-list :pages="pages" />
     <info-box :infobox="prerequisites" />
   </div>
 </template>
 
 <script>
-import CoursesList from '~/components/CoursesList.vue'
+import ProductList from '~/components/ProductList.vue'
 import InfoBox from '~/components/InfoBox.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { CoursesList, InfoBox },
+  components: { ProductList, InfoBox },
   async asyncData({ $content }) {
     const index = await $content('ausbildung', 'index').fetch()
     const pages = await $content('ausbildung').fetch()
