@@ -1,13 +1,6 @@
 <template>
   <div class="w-full lg:w-5/6 xl:w-2/3">
-    <div
-      v-if="isCartItems"
-      class="flex border border-blue-900 text-blue-900 px-4 py-3"
-      role="alert"
-    >
-      <div class="py-2">
-        <outline-information-circle-icon class="h-6 w-6 text-teal-500 mr-4" />
-      </div>
+    <Alert v-if="isCartItems">
       <div>
         <p class="font-bold">
           Es wurden noch keine Produkte in den Warenkorb hinzugefügt.
@@ -16,7 +9,7 @@
           <nuxt-link to="/">Hier geht es zur Startseite</nuxt-link>
         </p>
       </div>
-    </div>
+    </Alert>
     <div v-else>
       <table class="table-fixed border w-full">
         <thead>
@@ -113,14 +106,14 @@
 </template>
 
 <script>
-import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
+import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
 
 export default {
   name: 'Cart',
   components: {
-    OutlineInformationCircleIcon,
+    Alert,
     OutlineRefreshIcon,
     OutlineShoppingBagIcon,
   },

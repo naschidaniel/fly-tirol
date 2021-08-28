@@ -3,6 +3,15 @@
     <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
       <nuxt-content :document="page" />
       <div v-if="page.isAppointment">
+        <div class="max-w-5xl">
+          <Alert class="mt-6">
+            <div class="my-2">
+              Buche jetzt dein Wunschdatum und vereinbare dann einen Zeitpunkt
+              unter <a href="tel:00436766422088">+43 6766422088</a> oder
+              <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>.
+            </div>
+          </Alert>
+        </div>
         <h2>Buche deinen Wunschtermin</h2>
         <product-appointment />
       </div>
@@ -29,12 +38,13 @@
 </template>
 
 <script>
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import Alert from '~/components/Alert.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
+import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { ProductAppointment, ProductVariants },
+  components: { Alert, ProductAppointment, ProductVariants },
   async asyncData({ $content, params }) {
     const page = await $content('tandemfliegen', params.slug).fetch()
     const index = await $content('tandemfliegen', 'index').fetch()
