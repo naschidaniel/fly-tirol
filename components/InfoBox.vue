@@ -14,12 +14,12 @@
     <div class="flex flex-wrap max-w-max mx-auto">
       <div class="flex space-x-2 mb-8 md:w-1/2">
         <outline-information-circle-icon class="w-6 h-6" />
-        <h1 class="text-xl font-heading font-semibold leading-snug">
-          {{ infobox.title }}
-        </h1>
+        <h2 class="text-xl font-heading font-semibold leading-snug">
+          {{ headline }}
+        </h2>
       </div>
-      <div class="md:w-1/2">
-        <nuxt-content :document="infobox" class="max-w-lg" />
+      <div class="max-w-lg md:w-1/2 nuxt-content">
+        <slot />
       </div>
     </div>
   </div>
@@ -31,7 +31,7 @@ import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.v
 export default {
   components: { OutlineInformationCircleIcon },
   props: {
-    infobox: { type: Object, required: true },
+    headline: { type: String, required: true },
   },
 }
 </script>
