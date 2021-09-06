@@ -92,3 +92,6 @@ sw.*
 # image-optimizer
 image-optimizer
 image-optimizer.exe
+
+# deploy
+deploy.sh
