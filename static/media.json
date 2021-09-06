@@ -13,6 +13,19 @@
     "alt": "Logo Fly Tirol Flugschule Westendorf",
     "title": "Logo Fly Tirol"
   },
+  "/media/ausbildung/ausbildung.jpg": {
+    "url": "/media/ausbildung/ausbildung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "ausbildung.jpg",
+    "dimensions": {
+      "height": 1365,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/ausbildung/grundausbildung/1_grundausbildung.jpg": {
     "url": "/media/ausbildung/grundausbildung/1_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
@@ -36,8 +49,8 @@
       "type": "jpg",
       "ratio": 1.5
     },
-    "alt": "Paragliding Grundkurs Übungshang Fluglehrer Berg Wiese Wald Bäume Gondel sonnig kirchbichberg kitzbüheler alpen westendorf tirol",
-    "title": "Einweisung in die Startphase des Gleitschirmfliegens von Fluglehrer Sebastian Kahn"
+    "alt": "",
+    "title": ""
   },
   "/media/ausbildung/grundausbildung/3_grundausbildung.jpg": {
     "url": "/media/ausbildung/grundausbildung/3_grundausbildung.jpg",
@@ -49,8 +62,8 @@
       "type": "jpg",
       "ratio": 1.5
     },
-    "alt": "Paragleiter Schüler Wiese Schirme Wald Berg kirchbichberg kitzbüheler alpen westendorf tirol",
-    "title": "Grundkurs am Übungshang bereit für die ersten Starts"
+    "alt": "",
+    "title": ""
   },
   "/media/ausbildung/grundausbildung/4_grundausbildung.jpg": {
     "url": "/media/ausbildung/grundausbildung/4_grundausbildung.jpg",
@@ -78,44 +91,85 @@
     "alt": "Paragleiter Wiese Wald Berg Schirm kirchbichberg kitzbüheler alpen westendorf tirol",
     "title": "erste Starts von Grundkurs am Übungshang"
   },
-  "/media/ausbildung/grundausbildung/uebungshang.jpg": {
-    "url": "/media/ausbildung/grundausbildung/uebungshang.jpg",
-    "path": "/media/ausbildung/grundausbildung/",
-    "file": "uebungshang.jpg",
+  "/media/ausbildung/grundkurs.jpg": {
+    "url": "/media/ausbildung/grundkurs.jpg",
+    "path": "/media/ausbildung/",
+    "file": "grundkurs.jpg",
     "dimensions": {
-      "height": 1365,
-      "width": 2048,
+      "height": 770,
+      "orientation": 1,
+      "width": 1365,
+      "type": "jpg",
+      "ratio": 1.773
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/hoehenflugseminar.jpg": {
+    "url": "/media/ausbildung/hoehenflugseminar.jpg",
+    "path": "/media/ausbildung/",
+    "file": "hoehenflugseminar.jpg",
+    "dimensions": {
+      "height": 899,
+      "width": 1599,
+      "type": "jpg",
+      "ratio": 1.779
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/hoehenflugseminartagesbetreuung.jpg": {
+    "url": "/media/ausbildung/hoehenflugseminartagesbetreuung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "hoehenflugseminartagesbetreuung.jpg",
+    "dimensions": {
+      "height": 2048,
+      "width": 1152,
+      "type": "jpg",
+      "ratio": 0.563
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/kombikurs.jpg": {
+    "url": "/media/ausbildung/kombikurs.jpg",
+    "path": "/media/ausbildung/",
+    "file": "kombikurs.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
       "type": "jpg",
       "ratio": 1.5
     },
     "alt": "flugschüler schirm wiese wald berg tal kirchbichberg kitzbüheler alpen westendorf tirol",
     "title": "Flugschüler im Grundkurs am Übungshang in Kirchbichl Kitzbüheler Alpen"
   },
-  "/media/fortbildung/1_tandemcourse.jpg": {
-    "url": "/media/fortbildung/1_tandemcourse.jpg",
-    "path": "/media/fortbildung/",
-    "file": "1_tandemcourse.jpg",
+  "/media/ausbildung/paragleiterschein.jpg": {
+    "url": "/media/ausbildung/paragleiterschein.jpg",
+    "path": "/media/ausbildung/",
+    "file": "paragleiterschein.jpg",
     "dimensions": {
-      "height": 2362,
-      "width": 1575,
+      "height": 735,
+      "orientation": 1,
+      "width": 1306,
       "type": "jpg",
-      "ratio": 0.667
+      "ratio": 1.777
     },
-    "alt": "fluglehrer schüler gleitschirm tandem tandempilot himmel wiese leinen dach helm",
-    "title": "Flugschüler vor dem Start beim Tandemkurs in Westendorf Kitzbüheler Alpen"
+    "alt": "",
+    "title": ""
   },
-  "/media/fortbildung/2_tandemcourse.jpg": {
-    "url": "/media/fortbildung/2_tandemcourse.jpg",
-    "path": "/media/fortbildung/",
-    "file": "2_tandemcourse.jpg",
+  "/media/ausbildung/schnupperkurs.jpg": {
+    "url": "/media/ausbildung/schnupperkurs.jpg",
+    "path": "/media/ausbildung/",
+    "file": "schnupperkurs.jpg",
     "dimensions": {
-      "height": 2362,
-      "width": 1575,
+      "height": 1365,
+      "width": 2048,
       "type": "jpg",
-      "ratio": 0.667
+      "ratio": 1.5
     },
-    "alt": "gleitschirm berge wald felder wiesen himmel tandempilot fluggast westendorf kitzbüheler alpen paragleiter ",
-    "title": "Flugschüler im Tandemkurs über Westendorf Kitzbüheler Alpen"
+    "alt": "",
+    "title": ""
   },
   "/media/fortbildung/fortbildung.jpg": {
     "url": "/media/fortbildung/fortbildung.jpg",
@@ -130,58 +184,6 @@
     "alt": "gleitschirm wolken himmel berge felsen gardasee acro paragliding infinity roll sebastian kahn sicherheitstraining",
     "title": "Sebastian Kahn beim Sicherheitstraining am Gardasee"
   },
-  "/media/fortbildung/gardasee-infinity-over-lake.jpg": {
-    "url": "/media/fortbildung/gardasee-infinity-over-lake.jpg",
-    "path": "/media/fortbildung/",
-    "file": "gardasee-infinity-over-lake.jpg",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "see wasser gardasee boote gleitschirm paraglider sebastian kahn infinity italien ",
-    "title": "Sebastian Kahn bei infinity roll über Gardasee Italien"
-  },
-  "/media/fortbildung/gardasee-infinity-over-land.jpg": {
-    "url": "/media/fortbildung/gardasee-infinity-over-land.jpg",
-    "path": "/media/fortbildung/",
-    "file": "gardasee-infinity-over-land.jpg",
-    "dimensions": {
-      "height": 2500,
-      "width": 1667,
-      "type": "jpg",
-      "ratio": 0.667
-    },
-    "alt": "paragleiter schirm see berge stadt felsen sebastian kahn gardasee italien dorf küste himmel wolken strand",
-    "title": "Sebastian Kahn beim acro paragleiten am gardasee in Italien"
-  },
-  "/media/fortbildung/gardasee-landing.jpg": {
-    "url": "/media/fortbildung/gardasee-landing.jpg",
-    "path": "/media/fortbildung/",
-    "file": "gardasee-landing.jpg",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "Paragleiter gleitschirmflieger sebastian kahn landung gardasee wiese see küste berge felsen gurtzeug schirm boot wolken himmel",
-    "title": "Sebastian Kahn bei der Landung am Ufer der Gardasee in Italien"
-  },
-  "/media/fortbildung/gardasee.jpg": {
-    "url": "/media/fortbildung/gardasee.jpg",
-    "path": "/media/fortbildung/",
-    "file": "gardasee.jpg",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "wiese berge pilot gardasee wasser himmel steine",
-    "title": "Acro Pilot und Fluglehrer Sebastian Kahn am Gardasee"
-  },
   "/media/ft_hero.jpg": {
     "url": "/media/ft_hero.jpg",
     "path": "/media/",
@@ -195,31 +197,18 @@
     "alt": "Paraglider in den Wolken mit Sicht auf Berge Tandempilot gleitschirm",
     "title": "Tandempilot Paraglider in den Wolken"
   },
-  "/media/reisen/gardasee_takeoff.jpg": {
-    "url": "/media/reisen/gardasee_takeoff.jpg",
+  "/media/reisen/flugreise-oludeniz-turkei.png": {
+    "url": "/media/reisen/flugreise-oludeniz-turkei.png",
     "path": "/media/reisen/",
-    "file": "gardasee_takeoff.jpg",
+    "file": "flugreise-oludeniz-turkei.png",
     "dimensions": {
       "height": 1667,
       "width": 2500,
-      "type": "jpg",
+      "type": "png",
       "ratio": 1.5
     },
-    "alt": "paraglider acro gleitschirmflieger sebastian kahn beim takeoff im schnee gardasee berge wasser wolken himmer schirm gleitschirm reise",
-    "title": "Sebastian Kahn beim Start mit Gleitschirm im Schnee am Gardasee"
-  },
-  "/media/reisen/infinity-lago.jpg": {
-    "url": "/media/reisen/infinity-lago.jpg",
-    "path": "/media/reisen/",
-    "file": "infinity-lago.jpg",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "paraglider acro pilot sebastian kahn bei infinity dumpling ueber wasser am gardasee boote berge gipfel schnee gleitschirm reise",
-    "title": "Paraglider Sebastian Kahn beim Infinity dumpling ueber dem Gardasee m it Blick auf die Berge"
+    "alt": "",
+    "title": ""
   },
   "/media/reisen/infinity_over_village.jpg": {
     "url": "/media/reisen/infinity_over_village.jpg",
@@ -231,8 +220,8 @@
       "type": "jpg",
       "ratio": 1.5
     },
-    "alt": "paraglider infinity roll sebastian kahn dorf dächer schirm strassen gleitschirm reise",
-    "title": "Paraglider Sebastian Kahn über Dorf am Gardasee bei Acroflug"
+    "alt": "paragleiter schirm see berge stadt felsen sebastian kahn gardasee italien dorf küste himmel wolken strand",
+    "title": "Sebastian Kahn beim acro paragleiten am gardasee in Italien"
   },
   "/media/reisen/paragliding_lago_de_garda.jpg": {
     "url": "/media/reisen/paragliding_lago_de_garda.jpg",
@@ -244,47 +233,138 @@
       "type": "jpg",
       "ratio": 1.5
     },
-    "alt": "paraglider gardasee blick auf berge wasser boote schirm gleitschirm reise blau strand haus dorf ",
-    "title": "Paraglider am Gardasee fliegt mit Blick auf Berge und Boote"
+    "alt": "wiese berge pilot gardasee wasser himmel steine",
+    "title": "Acro Pilot und Fluglehrer Sebastian Kahn am Gardasee"
   },
-  "/media/sicherheitstrainings/sicherheitstraining-gardasee/flight-direction-gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/flight-direction-gardasee.jpg",
-    "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/",
-    "file": "flight-direction-gardasee.jpg",
+  "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg",
+    "path": "/media/sicherheitstrainings/",
+    "file": "sicherheitstraining-am-gardasee.jpg",
     "dimensions": {
-      "height": 1280,
-      "width": 1920,
+      "height": 1667,
+      "width": 2500,
       "type": "jpg",
       "ratio": 1.5
     },
-    "alt": "paraglider sebastian kahn after take off flying towards gardasee gleitdschirm pilot sicherheitstraining italien",
-    "title": "Sebastian Kahn beim Sicherheitstraining am Gardasee kurz nach dem Start im Flug richtung Wasser"
+    "alt": "wiese berge pilot gardasee wasser himmel steine",
+    "title": "Acro Pilot und Fluglehrer Sebastian Kahn am Gardasee"
   },
-  "/media/sicherheitstrainings/sicherheitstraining-gardasee/infinit-gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/infinit-gardasee.jpg",
-    "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/",
-    "file": "infinit-gardasee.jpg",
+  "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/1_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/1_sicherheitstraining_gardasee.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
+    "file": "1_sicherheitstraining_gardasee.jpg",
     "dimensions": {
-      "height": 1280,
-      "width": 1920,
+      "height": 1667,
+      "width": 2500,
       "type": "jpg",
       "ratio": 1.5
     },
-    "alt": "Paraglider schirm sebastian kahn wasser boote gardasee",
-    "title": "Paraglidingpilot Sebastian Kahn bei infinity roll am Gardasee ueber Wasser"
+    "alt": "",
+    "title": ""
   },
-  "/media/sicherheitstrainings/sicherheitstraining-gardasee/takeoff-gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/takeoff-gardasee.jpg",
-    "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/",
-    "file": "takeoff-gardasee.jpg",
+  "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/2_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/2_sicherheitstraining_gardasee.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
+    "file": "2_sicherheitstraining_gardasee.jpg",
     "dimensions": {
-      "height": 1280,
-      "width": 1920,
+      "height": 1667,
+      "width": 2500,
       "type": "jpg",
       "ratio": 1.5
     },
-    "alt": "paragliding pilot sebastian kahn takeoff am gardasee wiese berge schirm leinen",
-    "title": "Sebastian Kahn beim Start am Gardasee bei Sicherheitstraining"
+    "alt": "",
+    "title": ""
+  },
+  "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/3_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/3_sicherheitstraining_gardasee.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
+    "file": "3_sicherheitstraining_gardasee.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/4_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/4_sicherheitstraining_gardasee.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
+    "file": "4_sicherheitstraining_gardasee.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/sicherheitstrainings/sicherheitstraining-in-oludeniz-turkei.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-in-oludeniz-turkei.jpg",
+    "path": "/media/sicherheitstrainings/",
+    "file": "sicherheitstraining-in-oludeniz-turkei.jpg",
+    "dimensions": {
+      "height": 1024,
+      "width": 1536,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/1_sicherheitstraining_oelideniz.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/1_sicherheitstraining_oelideniz.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/",
+    "file": "1_sicherheitstraining_oelideniz.jpg",
+    "dimensions": {
+      "height": 1024,
+      "width": 1536,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/2_sicherheitstraining_oelideniz.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/2_sicherheitstraining_oelideniz.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/",
+    "file": "2_sicherheitstraining_oelideniz.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/3_sicherheitstraining_oelideniz.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/3_sicherheitstraining_oelideniz.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/",
+    "file": "3_sicherheitstraining_oelideniz.jpg",
+    "dimensions": {
+      "height": 1024,
+      "width": 1536,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/4_sicherheitstraining_oelideniz.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/4_sicherheitstraining_oelideniz.jpg",
+    "path": "/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/",
+    "file": "4_sicherheitstraining_oelideniz.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/tandemfliegen/galerie/0_tandemfliegen_getting_ready.jpg": {
     "url": "/media/tandemfliegen/galerie/0_tandemfliegen_getting_ready.jpg",
@@ -390,6 +470,89 @@
     "alt": "Paragleiter Tandem gleitschirm mit Blick auf die Hohe Salve in Westendorf Tirol Kitzbüheler Alpen",
     "title": "Tandempilot und Passagier im Flug von Westendorf mit Blick auf die Hohe Salve Tirol"
   },
+  "/media/tandemfliegen/hoehenflug.jpg": {
+    "url": "/media/tandemfliegen/hoehenflug.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "hoehenflug.jpg",
+    "dimensions": {
+      "height": 894,
+      "orientation": 1,
+      "width": 1589,
+      "type": "jpg",
+      "ratio": 1.777
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/panoramaflug.jpg": {
+    "url": "/media/tandemfliegen/panoramaflug.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "panoramaflug.jpg",
+    "dimensions": {
+      "height": 1946,
+      "orientation": 1,
+      "width": 3459,
+      "type": "jpg",
+      "ratio": 1.777
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/tandemfluege.jpg": {
+    "url": "/media/tandemfliegen/tandemfluege.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "tandemfluege.jpg",
+    "dimensions": {
+      "height": 1575,
+      "width": 2362,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/tandemflug-geschenkkarte.jpg": {
+    "url": "/media/tandemfliegen/tandemflug-geschenkkarte.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "tandemflug-geschenkkarte.jpg",
+    "dimensions": {
+      "height": 1231,
+      "orientation": 1,
+      "width": 2189,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/tandemflug-gutscheincode.jpg": {
+    "url": "/media/tandemfliegen/tandemflug-gutscheincode.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "tandemflug-gutscheincode.jpg",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/tandemsafari.jpg": {
+    "url": "/media/tandemfliegen/tandemsafari.jpg",
+    "path": "/media/tandemfliegen/",
+    "file": "tandemsafari.jpg",
+    "dimensions": {
+      "height": 876,
+      "orientation": 1,
+      "width": 1557,
+      "type": "jpg",
+      "ratio": 1.777
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/team/bernie.jpg": {
     "url": "/media/team/bernie.jpg",
     "path": "/media/team/",
@@ -409,6 +572,7 @@
     "file": "flytirol_geschichte.jpg",
     "dimensions": {
       "height": 1667,
+      "orientation": 1,
       "width": 2500,
       "type": "jpg",
       "ratio": 1.5
