@@ -1,11 +1,8 @@
 ---
 title: Dünenfliegen in Dune du Pilat
 description: Dünenfliegen in Dune du Pilat
-course: Dune du Pilat
 location: Dune du Pilat - Frankreich
-price: XXX EUR
 order: 2
-card: true
 ---
 
 # Dünenfliegen in Dune du Pilat

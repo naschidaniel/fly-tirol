@@ -1,8 +1,9 @@
 ---
-title: Sicherheitstraining in Ölüdeniz -Türkei mit Team-Weltmeister Sebastian Kahn
+title: Sicherheitstraining in Ölüdeniz - Türkei mit Team-Weltmeister Sebastian Kahn
 description: Flieg mit der Flugschule Fly Tirol an die wunderschöne lykische Küste der Türkei um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.
-course: Sicherheitstraining in Ölüdeniz -Türkei
-location: Ölüdeniz -Türkei
+location: Ölüdeniz - Türkei
+image: /media/sicherheitstrainings/sicherheitstraining-in-oludeniz-turkei.jpg
+order: 2
 ---
 
 # Sicherheitstraining Ölüdeniz - Türkei
@@ -19,6 +20,8 @@ Am Tag der Anreise beginnen das Sicherheitstraining mit einer Gebietseinweisung,
 Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu unterstützen, werden die Piloten über Funk von unserem Fluglehrer angeleitet. So können die einzelnen Manöver mehrfach während eines Fluges wiederholt und gegebenenfalls korrigiert werden. Die Flüge werden außerdem mit einer Kamera aufgezeichnet. Das Videomaterial wird am Abend mit den Teilnehmern analysiert und besprochen. Außerdem steht für unsere Kursteilnehmer ein Rettungsboot im Gardasee bereit.
 
 Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht die Gruppe zum gemeinsamen Abendessen an die wunderschöne Strandpromenade von Ölüdeniz.
+
+<content-image-gallery path="/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/"></content-image-gallery>
 
 ## Ziel des Sicherheitstrainings im Überblick
 
