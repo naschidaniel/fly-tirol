@@ -12,13 +12,12 @@
       >
     </div>
     <div v-else class="card--grid grid-gap-1 max-w-90 mx-auto py-4 md:py-12">
-      <div v-for="course in courses" :key="course.handle">
+      <div v-for="page in pages" :key="page.title">
         <product-card
-          v-if="course.variants"
           class="p-4"
-          :course="course"
-          :slug="`${category}/${course.handle}`"
-          :page="getPage(course.handle)"
+          :course="getCourse(page.slug)"
+          :slug="`${category}/${page.slug}`"
+          :page="page"
         />
       </div>
     </div>
@@ -51,8 +50,8 @@ export default {
     },
   },
   methods: {
-    getPage(handle) {
-      return this.pages.find((p) => p.slug === handle)
+    getCourse(slug) {
+      return this.courses.find((p) => p.handle === slug)
     },
   },
 }

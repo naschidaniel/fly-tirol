@@ -1,13 +1,13 @@
 <template>
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
-      <nuxt-link :to="page.path" :title="course.title">
+      <nuxt-link :to="page.path" :title="page.title">
         <div
           class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200"
         >
-          <img
+          <ResponsiveImage
             loading="lazy"
-            :src="course.images[0].src"
+            :picture="page.image"
             class="object-cover"
           />
         </div>
@@ -15,7 +15,7 @@
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
-            <nuxt-link :to="page.path">{{ course.title }}</nuxt-link>
+            <nuxt-link :to="page.path">{{ page.title }}</nuxt-link>
           </h3>
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
@@ -35,7 +35,7 @@
           >
             <outline-calendar-icon class="w-4 h-4" />
             <span class="block leading-none pt-1 ml-1"
-              >{{ course.variants.length }} Termine</span
+              >{{ dates }} Termine</span
             >
           </div>
           <p v-if="isTandemflight" class="text-gray-600">
@@ -62,12 +62,14 @@
 import OutlineCashIcon from './icons/OutlineCashIcon.vue'
 import OutlineCalendarIcon from './icons/OutlineCalendarIcon.vue'
 import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
+import ResponsiveImage from './ResponsiveImage.vue'
 
 export default {
   components: {
     OutlineCashIcon,
     OutlineCalendarIcon,
     OutlineLocationMarkerIcon,
+    ResponsiveImage,
   },
   props: {
     course: { type: Object, required: true },
@@ -82,6 +84,9 @@ export default {
       const uniquePrices = [...new Set(price)]
       const preText = uniquePrices.length >= 2 ? 'ab' : ''
       return { preText, price: uniquePrices[0] }
+    },
+    dates() {
+      return this.course?.variants?.length || '-'
     },
   },
 }
