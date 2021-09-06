@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6">
+  <div>
     <hero-two :hero="hero" />
     <product-list :pages="pages" />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
