@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      v-if="courses.length === 0"
+      v-if="pages.length === 0"
       class="flex justify-center max-w-90 mx-auto py-4"
     >
       <span class="text-lg font-bold"
@@ -31,27 +31,22 @@ export default {
   props: {
     pages: { type: Array, required: true },
   },
-  computed: {
-    category() {
-      return this.$route.name
-    },
-    courses() {
-      return this.category === 'ausbildung'
-        ? this.$store.state.basicTrainings
-        : this.category === 'fortbildung'
-        ? this.$store.state.advancedTrainings
-        : this.category === 'reisen'
-        ? this.$store.state.travels
-        : this.category === 'tandemfliegen'
-        ? this.$store.state.tandemflights
-        : this.category === 'sicherheitstrainings'
-        ? this.$store.state.saftyTrainings
-        : []
-    },
-  },
   methods: {
     getCourse(slug) {
-      return this.courses.find((p) => p.handle === slug)
+      const category = this.$route.name
+      const courses =
+        this.category === 'ausbildung'
+          ? this.$store.state.basicTrainings
+          : category === 'fortbildung'
+          ? this.$store.state.advancedTrainings
+          : category === 'reisen'
+          ? this.$store.state.travels
+          : category === 'tandemfliegen'
+          ? this.$store.state.tandemflights
+          : category === 'sicherheitstrainings'
+          ? this.$store.state.saftyTrainings
+          : []
+      return courses.find((p) => p.handle === slug)
     },
   },
 }
