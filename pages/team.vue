@@ -1,48 +1,78 @@
 <template>
   <div>
-    <nuxt-content :document="index" />
+    <hero-two :hero="hero"></hero-two>
     <team-list :members="members"></team-list>
   </div>
 </template>
 
 <script>
+import HeroTwo from '~/components/HeroTwo.vue'
 import TeamList from '~/components/TeamList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { TeamList },
-  async asyncData({ $content }) {
-    const index = await $content('team').fetch()
-    return { index }
+  components: { HeroTwo, TeamList },
+  data() {
+    return {
+      title: 'Team',
+      description: 'Team der Flugschule',
+      hero: {
+        pretitle: 'Die Geschichte der',
+        title: 'Flugschule Westendorf',
+        intro:
+          'Die Flugschule Westendorf wurde im Jahr 2021 von Sebastian Kahn und seinem Geschäftspartner Jan Kuhnert von seinem Onkel Otto Kahn übernommen und komplett neu gestaltet. So bekam die Flugschule einen neuen Namen und zusätzlich noch weitere Piloten und Fluglehrer ins Team. Otto Kahn hatte im Frühling 2005 die Flugschule Westendorf übernommen, die er seit den 90er Jahren mit aufgebaut hat. Durch die Leidenschaft zum Paragleiten vom Onkel angesteckt, absolvierte Sebastian bereits im Alter von 12 Jahren seine ersten eigenen Flüge.',
+        image: '/media/team/flytirol_geschichte.jpg',
+      },
+      members: [
+        {
+          name: 'Sebastian Kahn',
+          picture: '/media/team/sebastian.jpg',
+          position:
+            'Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot',
+          information:
+            'Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)',
+        },
+        {
+          name: 'Jan Kuhnert',
+          picture: '/media/team/jan.jpg',
+          position: 'Geschäftsführer, kaufmännische Leitung und Management',
+          information:
+            'Jan hat im Jahr 2000 in der Flugschule Westendorf mit dem Fliegen angefangen und so seine Leidenschaft für das Paragleiten entdeckt.',
+        },
+        {
+          name: 'Kilian Kuhnert',
+          picture: '/media/team/kilian.jpg',
+          position: 'Orginisation Tandemflüge und Ausbildung',
+          information: 'Kilian ist im Shop für euch da!',
+        },
+        {
+          name: 'Hanna Anselm',
+          picture: '/media/team/hanna.jpg',
+          position: 'Orginisation Tandemflüge und Ausbildung',
+          information: 'Unsere starke Frau im Shop.',
+        },
+        {
+          name: 'Stefan Bischofer',
+          picture: '/media/team/stefan.jpg',
+          position: 'Tandempilot',
+          information: '',
+        },
+        {
+          name: 'Bernhard Mimmler',
+          picture: '/media/team/bernie.jpg',
+          position: 'Tandempilot',
+          information: '',
+        },
+      ],
+    }
   },
   head() {
     const metatags = generateMetatags(
-      this.index.title,
-      this.index.description,
+      this.title,
+      this.description,
       this.$route.fullPath
     )
-    return { title: this.index.title, meta: metatags }
-  },
-  computed: {
-    members() {
-      return [
-        this.index?.member1,
-        this.index?.member2,
-        this.index?.member3,
-        this.index?.member4,
-        this.index?.member5,
-        this.index?.member6,
-        this.index?.member7,
-        this.index?.member8,
-        this.index?.member9,
-        this.index?.member10,
-        this.index?.member11,
-        this.index?.member12,
-        this.index?.member13,
-        this.index?.member14,
-        this.index?.member15,
-      ].filter((m) => m !== undefined)
-    },
+    return { title: this.title, meta: metatags }
   },
 }
 </script>
