@@ -2,6 +2,8 @@
 title: Grundkurs
 description: Du möchtest lernen zu fliegen? Der Grundkurs der Flugschule Fly Tirol ist der erste Schritt in diese Richtung. Unter der Leitung von Sebastian Kahn, der ausgebildeter Fluglehrer und Team-Weltmeister im Acrobatik-Paragleiten ist, erhältst du durch jahrelange Flugerfahrung auf der ganzen Welt, eine kompetente und vielseitige Flugausbildung. 
 location: Westendorf
+image: /media/ausbildung/grundkurs.jpg
+order: 2
 ---
 
 # Grundkurs

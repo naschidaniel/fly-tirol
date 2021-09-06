@@ -2,6 +2,8 @@
 title: Schnupperkurs
 description: Sammle ein paar Eindrücke im Paragliding Sport und komm einen Tag lang mit unseren top ausgebildeten und erfahrenen Fluglehrern an unseren Übungshang um den Umgang und mit einem Paragleitschirm zu sammeln.
 location: Westendorf
+image: /media/ausbildung/schnupperkurs.jpg
+order: 1
 ---
 
 # Schnupperkurs

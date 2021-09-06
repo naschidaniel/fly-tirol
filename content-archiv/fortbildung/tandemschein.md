@@ -2,10 +2,7 @@
 title: Tandemschein
 description: In unserer Flugschule bekommst du alles was du brauchst um deinen Tandemschein machen zu können. Von modernem Theorieunterricht, über Praxis mit von uns bereitgestellten Schirm, Gurtzeug und Funkanleitung durch unsere kompetenten Fluglehrer, bis hin zur Prüfung. 
 location: Westendorf
-course: Tandemschein
-price: XXX EUR
 order: 4
-card: true
 ---
 
 # Tandemkurs
@@ -16,6 +13,7 @@ In unserer Flugschule bekommst du alles was du brauchst um deinen Tandemschein m
 
 
 ## Voraussetzungen:
+
 * Besitz der A-Lizenz seit mindestens 2 Jahren
 * Mindestens 200 Höhenflüge
 * Eingangstest von einem DHV- oder ÖAeC-Beauftragten

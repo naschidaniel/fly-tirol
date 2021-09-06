@@ -1,11 +1,8 @@
 ---
 title: Castelluccio
 description: Castelluccio - Italien
-course: Castelluccio
 location: Castelluccio - Italien
-price: XXX EUR
 order: 4
-card: true
 ---
 
 # Castelluccio - Italien

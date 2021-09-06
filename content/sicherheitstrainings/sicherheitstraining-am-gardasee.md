@@ -2,6 +2,8 @@
 title: Sicherheitstraining am Gardasee mit Team-Weltmeister Sebastian Kahn
 description: Fahr mit der Flugschule Fly Tirol an den wunderschönen Lago Di Garda um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.
 location: Gardasee - Italien
+image: /media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg
+order: 1
 ---
 
 # Sicherheitstraining am Gardasee
@@ -16,8 +18,7 @@ Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu
 
 Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht die Gruppe zum gemeinsamen Abendessen und zusammensitzen um den Tag gemütlich ausklingen zu lassen. 
 
-
-<content-image-gallery path="/media/sicherheitstrainings/sicherheitstraining-gardasee/"></content-image-gallery>
+<content-image-gallery path="/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/"></content-image-gallery>
 
 ## Ziel des Sicherheitstrainings im Überblick
 * Das sichere Beherrschen von Abstiegshilfen (Big Ears, B-Stall, Spirale)
