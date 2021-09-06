@@ -35,7 +35,7 @@ export default {
     getCourse(slug) {
       const category = this.$route.name
       const courses =
-        this.category === 'ausbildung'
+        category === 'ausbildung'
           ? this.$store.state.basicTrainings
           : category === 'fortbildung'
           ? this.$store.state.advancedTrainings
