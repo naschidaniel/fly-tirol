@@ -1,6 +1,83 @@
 <template>
   <div>
-    <hero-one :hero="index.hero" />
+    <div
+      class="
+        relative
+        min-h-screen-60
+        md:min-h-screen-70
+        overflow-hidden
+        flex flex-col
+        md:flex-row
+        items-end
+        lg:items-start
+        pb-12
+        md:pb-24
+      "
+    >
+      <div class="md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0">
+        <responsive-image
+          img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
+          picture="/media/ft_hero.jpg"
+        />
+      </div>
+      <div
+        class="
+          absolute
+          h-40
+          bottom-0
+          left-0
+          right-0
+          bg-gradient-to-t
+          from-white
+        "
+      ></div>
+      <div
+        class="
+          relative
+          max-w-90
+          mx-auto
+          w-full
+          lg:w-11/12 lg:mr-0 lg:ml-auto lg:py-24
+          z-10
+        "
+      >
+        <div
+          class="
+            flex flex-col
+            lg:w-96
+            max-w-screen-sm
+            lg:flex-shrink-0
+            -mt-24
+            sm:mt-0
+          "
+        >
+          <div class="mt-6">
+            <h1 class="mb-6">
+              <span
+                class="
+                  text-lg
+                  font-heading font-medium
+                  flex flex-row
+                  items-center
+                  mb-2
+                "
+              >
+                <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
+                <span class="inline-block">Fly Tirol Flugschule</span>
+              </span>
+              <span class="text-4xl lg:text-6xl font-heading font-bold">
+                Flieg mit uns
+              </span>
+            </h1>
+            <p class="text-lg leading-relaxed max-w-prose">
+              Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner
+              rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und
+              darüber hinaus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <link-list
       :advanced-trainings="advancedTrainings"
       :basic-trainings="basicTrainings"
@@ -12,15 +89,9 @@
 </template>
 
 <script>
-import HeroOne from '~/components/HeroOne.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { HeroOne },
-  async asyncData({ $content }) {
-    const index = await $content('index').fetch()
-    return { index }
-  },
   data() {
     return {
       advancedTrainings: {
@@ -31,20 +102,20 @@ export default {
       },
       basicTrainings: {
         cardTitle: 'Ausbildung',
-        cardImage: '/media/ausbildung/grundausbildung/uebungshang.jpg',
+        cardImage: '/media/ausbildung/ausbildung.jpg',
         description: 'Schulungsbetrieb in der Flugschule Fly Tirol',
         to: '/ausbildung',
       },
       saftyTrainings: {
         cardTitle: 'Sicherheitstrainings',
         cardImage:
-          '/media/sicherheitstrainings/sicherheitstraining-gardasee/infinit-gardasee.jpg',
+          '/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg',
         description: 'Unsere Sicherheitstrainings mit Sebastian Kahn',
         to: '/sicherheitstrainings',
       },
       tandemflights: {
         cardTitle: 'Tandemflüge',
-        cardImage: '/media/tandemfliegen/6_panoramaflug.jpg',
+        cardImage: '/media/tandemfliegen/tandemfluege.jpg',
         description: 'Erlebe das Alpenpanorama aus der Vogelperspektive.',
         to: '/tandemfliegen',
       },
@@ -54,15 +125,18 @@ export default {
         description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
         to: '/reisen',
       },
+      title: 'Willkommen bei der Fly Tirol Flugschule',
+      description:
+        'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
     }
   },
   head() {
     const metatags = generateMetatags(
-      this.index.title,
-      this.index.description,
+      this.title,
+      this.description,
       this.$route.fullPath
     )
-    return { title: this.index.title, meta: metatags }
+    return { title: this.title, meta: metatags }
   },
 }
 </script>
