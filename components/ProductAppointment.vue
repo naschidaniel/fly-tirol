@@ -1,5 +1,5 @@
 <template>
-  <div class="my-auto max-w-md p-1 md:p-4 mt-4 w-full lg:w-1/2">
+  <div class="my-auto w-full lg:w-5/6">
     <div class="grid grid-cols-1 gap-6">
       <label class="block">
         <span :class="isFormValid ? 'text-gray-700' : 'text-red-600'"
