@@ -1,28 +1,41 @@
 <template>
   <div>
-    <nuxt-content :document="index" />
+    <hero-two :hero="hero" />
     <product-list :pages="pages" />
   </div>
 </template>
 
 <script>
+import HeroTwo from '~/components/HeroTwo.vue'
 import ProductList from '~/components/ProductList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { ProductList },
-  async asyncData({ $content, params }) {
-    const index = await $content('fortbildung', 'index').fetch()
-    const pages = await $content('fortbildung').fetch()
-    return { pages, index }
+  components: { ProductList, HeroTwo },
+  async asyncData({ $content }) {
+    const pages = await $content('fortbildung').sortBy('order').fetch()
+    return { pages }
+  },
+  data() {
+    return {
+      title: 'Fortbildung',
+      description:
+        'Du hast deinen A-Schein bereits und möchtest deine Fähigkeiten ausbauen? Ob Thermikfliegen oder Tandemschein, wir helfen dir dabei ein besserer Pilot zu werden!',
+      hero: {
+        pretitle: 'Paragliding',
+        title: 'Fortbildung',
+        intro:
+          'Du hast deinen A-Schein bereits und möchtest deine Fähigkeiten ausbauen? Ob Thermikfliegen oder Tandemschein, wir helfen dir dabei ein besserer Pilot zu werden!',
+      },
+    }
   },
   head() {
     const metatags = generateMetatags(
-      this.index.title,
-      this.index.description,
+      this.title,
+      this.description,
       this.$route.fullPath
     )
-    return { title: this.index.title, meta: metatags }
+    return { title: this.title, meta: metatags }
   },
 }
 </script>
