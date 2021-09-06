@@ -2,38 +2,64 @@
   <div>
     <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
       <nuxt-content :document="page" />
-      <div v-if="page.isAppointment">
-        <div class="max-w-5xl">
-          <Alert class="mt-6">
-            <div class="my-2">
+    </div>
+    <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
+      <div
+        class="w-full lg:w-1/3 text-lg leading-relaxed max-w-prose nuxt-content"
+      >
+        <h2>Ablauf</h2>
+        Treffpunkt ist unser Standort in Westendorf gegenüber der
+        Alpenrosenbahn. Hier lernst du deinen Tandempiloten kennen. Mit der
+        Gondel geht es dann zum Startplatz auf über 1800 m Seehöhe. Oben
+        angekommen bekommst du nochmals Informationen zum Startvorgang und der
+        Tandempilot checkt erneut alle nötigen Sicherheitsvorkehrungen, die für
+        einen sicheren Flug notwendig sind. Mit nur wenigen Schritten hebt ihr
+        dann gemeinsam in ein unvergessliches Erlebnis ab! Du kannst dich
+        entspannt in das bequeme Gurtzeug zurücklehnen und den atemberaubenden
+        Ausblick genießen! Möchtest du ein bisschen mehr Action erleben, fliegen
+        unsere Tandempiloten auf Wunsch auch gerne einige Kunstflugmanöver mit
+        dir.
+      </div>
+      <content-image-gallery
+        path="/media/tandemfliegen/galerie/"
+        class="w-full lg:w-2/3 lg:pl-8"
+      />
+    </div>
+    <div class="max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
+      <div v-if="page.isAppointment" class="flex flex-wrap mt-10">
+        <div class="w-full md:w-1/2 p-6">
+          <Alert class="mt-6 mr-3">
+            <div class="mx-1 md:my-2">
               Buche jetzt dein Wunschdatum und vereinbare dann einen Zeitpunkt
-              unter <a href="tel:00436766422088">+43 6766422088</a> oder
-              <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>.
+              telefonisch unter
+              <a href="tel:00436766422088" class="underline">+43 6766422088</a>
+              oder schreibe uns eine Email
+              <a href="mailto:info@fly-tirol.com" class="underline"
+                >info@fly-tirol.com</a
+              >
+              oder per
+              <a
+                href="https://wa.me/436766422088"
+                target="_blank"
+                class="underline"
+              >
+                WhatsApp </a
+              >.
             </div>
           </Alert>
         </div>
-        <h2>Buche deinen Wunschtermin</h2>
-        <product-appointment />
+        <div class="w-full md:w-1/2 md:p-6">
+          <div class="mx-1 md:my-3">
+            <h2>Dein Wunschtermin</h2>
+            <product-appointment />
+          </div>
+        </div>
       </div>
       <div v-else>
         <h2>Wähle deinen Flug</h2>
         <product-variants />
       </div>
     </div>
-    <div
-      v-if="page.flight"
-      class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24"
-    >
-      <nuxt-content
-        :document="index"
-        class="w-full md:w-1/3 text-lg leading-relaxed max-w-prose"
-      />
-      <content-image-gallery
-        path="/media/tandemfliegen/"
-        class="w-full md:w-2/3 md:pl-8"
-      />
-    </div>
-    <info-box v-if="page.flight" :infobox="prerequisites" />
   </div>
 </template>
 
@@ -47,12 +73,7 @@ export default {
   components: { Alert, ProductAppointment, ProductVariants },
   async asyncData({ $content, params }) {
     const page = await $content('tandemfliegen', params.slug).fetch()
-    const index = await $content('tandemfliegen', 'index').fetch()
-    const prerequisites = await $content(
-      'tandemfliegen',
-      'voraussetzungen'
-    ).fetch()
-    return { index, page, prerequisites }
+    return { page }
   },
   head() {
     const metatags = generateMetatags(
