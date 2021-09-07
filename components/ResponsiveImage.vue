@@ -1,5 +1,8 @@
 <template>
-  <div ref="imageBox" class="image-box">
+  <div
+    ref="imageBox"
+    class="md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0"
+  >
     <img
       v-if="responsiveUrl != ''"
       loading="lazy"
@@ -23,8 +26,7 @@ export default {
   data() {
     return {
       NUXT_ENV_CURRENT_DATE: process.env.NUXT_ENV_CURRENT_DATE,
-      buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
-      imageSizeTailwindClass: 'lg',
+      imageSizeTailwindClass: undefined,
       width: undefined,
       height: undefined,
       screenSizes: {
@@ -61,6 +63,12 @@ export default {
       if (process.env.NODE_ENV === 'development' || extension === undefined) {
         return `${this.imageInformation.url}?v=${this.buildtime}`
       }
+      if (
+        this.fixSize === undefined &&
+        this.imageSizeTailwindClass === undefined
+      ) {
+        return ''
+      }
       const filePostFix = this.fixSize
         ? `${this.fixSize}.${extension}`
         : `${this.imageSizeTailwindClass}.${extension}`
@@ -68,7 +76,7 @@ export default {
         `.${extension}`,
         `_${filePostFix}`
       )
-      return responsiveUrl !== '' ? `${responsiveUrl}?v=${this.buildtime}` : ''
+      return `${responsiveUrl}?v=${this.buildtime}`
     },
   },
   mounted() {
