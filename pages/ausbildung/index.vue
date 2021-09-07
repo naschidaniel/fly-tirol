@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader :hero="hero" />
-    <product-list :pages="pages" />
+    <ProductList :pages="pages" />
     <info-box headline="Dein Weg zum eigenständigen Fliegen als Paragleitpilot">
       <ul>
         <li>
