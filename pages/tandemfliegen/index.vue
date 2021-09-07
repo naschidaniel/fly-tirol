@@ -4,7 +4,7 @@
     <product-list :pages="pages" />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
       <h2>Bildergalerie</h2>
-      <content-image-gallery
+      <ContentImageGallery
         path="/media/tandemfliegen/galerie/"
         class="w-full md:pl-8"
       />

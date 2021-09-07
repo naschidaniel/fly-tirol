@@ -20,7 +20,7 @@
         unsere Tandempiloten auf Wunsch auch gerne einige Kunstflugmanöver mit
         dir.
       </div>
-      <content-image-gallery
+      <ContentImageGallery
         path="/media/tandemfliegen/galerie/"
         class="w-full lg:w-2/3 lg:pl-8"
       />
