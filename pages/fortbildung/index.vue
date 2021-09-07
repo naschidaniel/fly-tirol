@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader :hero="hero" />
-    <product-list :pages="pages" />
+    <ProductList :pages="pages" />
   </div>
 </template>
 
