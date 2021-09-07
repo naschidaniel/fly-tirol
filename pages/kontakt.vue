@@ -11,7 +11,6 @@
         "
       >
         <div
-          v-if="hero.image"
           class="
             relative
             w-full
