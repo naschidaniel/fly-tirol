@@ -55,7 +55,7 @@
         <div class="w-full md:w-1/2 md:p-6">
           <div class="mx-1 md:my-3">
             <h2>Dein Wunschtermin</h2>
-            <product-appointment />
+            <ProductAppointment />
           </div>
         </div>
       </div>
