@@ -1,6 +1,6 @@
 <template>
   <div>
-    <hero-two :hero="hero" />
+    <PageHeader :hero="hero" />
     <product-list :pages="pages" />
     <info-box headline="Dein Weg zum eigenständigen Fliegen als Paragleitpilot">
       <ul>
@@ -21,13 +21,13 @@
 </template>
 
 <script>
-import HeroTwo from '~/components/HeroTwo.vue'
+import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
 import InfoBox from '~/components/InfoBox.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { InfoBox, HeroTwo, ProductList },
+  components: { InfoBox, PageHeader, ProductList },
   async asyncData({ $content }) {
     const pages = await $content('ausbildung').sortBy('order').fetch()
     return { pages }
