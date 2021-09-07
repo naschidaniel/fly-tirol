@@ -14,11 +14,7 @@
               "
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
-              <span class="inline-block"
-                >Finde das richtige<picture>
-                  <source media="(min-width: )" srcset="" />
-                  <img src="" alt="" /> </picture
-              ></span>
+              <span class="inline-block">Finde das richtige</span>
             </span>
             <span class="text-5xl font-heading font-bold">Angebot</span>
           </h1>
