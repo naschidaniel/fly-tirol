@@ -46,7 +46,7 @@ export default {
           : category === 'sicherheitstrainings'
           ? this.$store.state.saftyTrainings
           : []
-      return courses.find((p) => p.handle === slug)
+      return courses.find((c) => c?.handle === slug)
     },
   },
 }
