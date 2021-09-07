@@ -1,17 +1,17 @@
 <template>
   <div>
-    <hero-two :hero="hero" />
+    <PageHeader :hero="hero" />
     <product-list :pages="pages" />
   </div>
 </template>
 
 <script>
-import HeroTwo from '~/components/HeroTwo.vue'
+import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { ProductList, HeroTwo },
+  components: { ProductList, PageHeader },
   async asyncData({ $content }) {
     const pages = await $content('reisen').sortBy('order').fetch()
     return { pages }

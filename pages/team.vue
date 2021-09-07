@@ -1,17 +1,17 @@
 <template>
   <div>
-    <hero-two :hero="hero"></hero-two>
+    <PageHeader :hero="hero" />
     <team-list :members="members"></team-list>
   </div>
 </template>
 
 <script>
-import HeroTwo from '~/components/HeroTwo.vue'
+import PageHeader from '~/components/PageHeader.vue'
 import TeamList from '~/components/TeamList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { HeroTwo, TeamList },
+  components: { PageHeader, TeamList },
   data() {
     return {
       title: 'Team',
