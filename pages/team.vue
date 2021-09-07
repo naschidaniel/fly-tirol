@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader :hero="hero" />
-    <team-list :members="members"></team-list>
+    <TeamList :members="members" />
   </div>
 </template>
 
