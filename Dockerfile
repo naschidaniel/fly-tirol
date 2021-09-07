@@ -14,7 +14,7 @@ RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/ma
 
 COPY . .
 
-RUN echo "NUXT_ENV_CURRENT_TIMESTAMP=\"$(date '+%F %H:%M:%S')\"" >> .env
+RUN echo "NUXT_ENV_CURRENT_DATE=\"$(date '+%F %H:%M:%S')\"" >> .env
 
 RUN yarn install \
   --non-interactive \
