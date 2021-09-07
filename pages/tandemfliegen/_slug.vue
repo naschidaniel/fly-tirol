@@ -32,16 +32,20 @@
             <div class="mx-1 md:my-2">
               Buche jetzt dein Wunschdatum und vereinbare dann einen Zeitpunkt
               telefonisch unter
-              <a href="tel:00436766422088" class="underline">+43 6766422088</a>
+              <a href="tel:00436766422088" class="underline whitespace-nowrap"
+                >+43 6766422088</a
+              >
               oder schreibe uns eine Email
-              <a href="mailto:info@fly-tirol.com" class="underline"
+              <a
+                href="mailto:info@fly-tirol.com"
+                class="underline whitespace-nowrap"
                 >info@fly-tirol.com</a
               >
               oder per
               <a
                 href="https://wa.me/436766422088"
                 target="_blank"
-                class="underline"
+                class="underline whitespace-nowrap"
               >
                 WhatsApp </a
               >.
@@ -57,7 +61,7 @@
       </div>
       <div v-else>
         <h2>Wähle deinen Flug</h2>
-        <product-variants />
+        <ProductVariants />
       </div>
     </div>
   </div>
