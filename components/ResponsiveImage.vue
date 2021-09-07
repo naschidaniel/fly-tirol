@@ -22,6 +22,7 @@ export default {
   },
   data() {
     return {
+      NUXT_ENV_CURRENT_DATE: process.env.NUXT_ENV_CURRENT_DATE,
       buildtime: process.env.NUXT_ENV_CURRENT_TIMESTAMP,
       imageSizeTailwindClass: 'lg',
       width: undefined,
@@ -38,6 +39,9 @@ export default {
     }
   },
   computed: {
+    buildtime() {
+      return Date.parse(this.NUXT_ENV_CURRENT_DATE)
+    },
     imageInformation() {
       const images = Object.values(this.$store.state.media).filter((img) => {
         return img.url === this.picture
