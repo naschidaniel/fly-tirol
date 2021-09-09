@@ -1,4 +1,4 @@
-FROM node:lts-buster as builder
+FROM node:lts-bullseye as builder
 
 ENV TZ=Europe/Berlin
 
@@ -36,7 +36,7 @@ RUN rm -rf node_modules && \
   --non-interactive \
   --production=true
 
-FROM node:lts-buster
+FROM node:lts-bullseye
 
 WORKDIR /app
 
