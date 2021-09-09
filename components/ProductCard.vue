@@ -72,7 +72,7 @@ export default {
     ResponsiveImage,
   },
   props: {
-    course: { type: Object, required: true },
+    course: { type: Object, default: () => {} },
     page: { type: Object, required: true },
   },
   computed: {

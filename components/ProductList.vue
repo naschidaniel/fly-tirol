@@ -31,9 +31,14 @@ export default {
   props: {
     pages: { type: Array, required: true },
   },
+  computed: {
+    category() {
+      return this.$route.name
+    },
+  },
   methods: {
     getCourse(slug) {
-      const category = this.$route.name
+      const category = this.category
       const courses =
         category === 'ausbildung'
           ? this.$store.state.basicTrainings
