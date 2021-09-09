@@ -86,7 +86,7 @@ export default {
     basicTrainings: { type: Object, required: true },
     saftyTrainings: { type: Object, required: true },
     tandemflights: { type: Object, required: true },
-    travels: { type: Object, default: () => {} },
+    travels: { type: Object, required: true },
   },
 }
 </script>
