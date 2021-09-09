@@ -29,7 +29,7 @@ export default {
       imageSizeTailwindClass: undefined,
       width: undefined,
       height: undefined,
-      screenSizes: {
+      boxSizes: {
         '2xs': 384,
         xs: 512,
         sm: 640,
@@ -43,6 +43,9 @@ export default {
   computed: {
     buildtime() {
       return Date.parse(this.NUXT_ENV_CURRENT_DATE)
+    },
+    isWebpSupported() {
+      return this.$store.state.isWebpSupported
     },
     imageInformation() {
       const images = Object.values(this.$store.state.media).filter((img) => {
@@ -72,38 +75,63 @@ export default {
       const filePostFix = this.fixSize
         ? `${this.fixSize}.${extension}`
         : `${this.imageSizeTailwindClass}.${extension}`
-      const responsiveUrl = this.imageInformation.url.replace(
+      let responsiveUrl = this.imageInformation.url.replace(
         `.${extension}`,
         `_${filePostFix}`
       )
+      if (this.isWebpSupported) {
+        responsiveUrl = responsiveUrl.replace(`.${extension}`, '.webp')
+      }
       return `${responsiveUrl}?v=${this.buildtime}`
     },
   },
   mounted() {
+    this.canUseWebP()
     this.getImageSizeTailwindClass()
   },
   methods: {
+    canUseWebP() {
+      if (this.isWebpSupported !== undefined) {
+        return
+      }
+      const isFirefoxVersionSupported =
+        navigator.userAgent?.split('Firefox/')[1] >= 65.0
+      if (isFirefoxVersionSupported) {
+        this.$store.commit('setWebPSupport', isFirefoxVersionSupported)
+        return
+      }
+
+      const elem = document.createElement('canvas')
+      if (elem.getContext && elem.getContext('2d')) {
+        this.$store.commit(
+          'setWebPSupport',
+          elem.toDataURL('image/webp').indexOf('data:image/webp') === 0
+        )
+        return
+      }
+      this.$store.commit('setWebPSupport', false)
+    },
     getImageSizeTailwindClass() {
       const imageBoxWidth = this.$refs.imageBox?.clientWidth
       const devicePixelRatio = window?.devicePixelRatio ?? 1
       const imageSize = imageBoxWidth * devicePixelRatio
       this.imageSizeTailwindClass =
-        imageSize <= this.screenSizes['2xs']
+        imageSize <= this.boxSizes['2xs']
           ? '2xs'
-          : imageSize <= this.screenSizes.xs
+          : imageSize <= this.boxSizes.xs
           ? 'xs'
-          : imageSize <= this.screenSizes.sm
+          : imageSize <= this.boxSizes.sm
           ? 'sm'
-          : imageSize <= this.screenSizes.md
+          : imageSize <= this.boxSizes.md
           ? 'md'
-          : imageSize <= this.screenSizes.lg
+          : imageSize <= this.boxSizes.lg
           ? 'lg'
-          : imageSize <= this.screenSizes.xl
+          : imageSize <= this.boxSizes.xl
           ? 'xl'
           : '2xl'
-      this.width = this.screenSizes[this.imageSizeTailwindClass]
+      this.width = this.boxSizes[this.imageSizeTailwindClass]
       this.height = Math.round(
-        this.screenSizes[this.imageSizeTailwindClass] /
+        this.boxSizes[this.imageSizeTailwindClass] /
           this.imageInformation?.dimensions?.ratio
       )
     },

@@ -4,6 +4,7 @@ export const state = () => ({
   advancedTrainings: [],
   basicTrainings: [],
   isOpen: false,
+  isWebpSupported: undefined,
   media,
   saftyTrainings: [],
   tandemflights: [],
@@ -22,6 +23,16 @@ export const mutations = {
   },
   setProducts(state, products) {
     state.products = products
+  },
+  setWebPSupport(state, value) {
+    if (value !== true) {
+      // eslint-disable-next-line no-console
+      console.warn('WebP is not supported by the browser')
+    } else {
+      // eslint-disable-next-line no-console
+      console.info('WebP is supported by the browser')
+    }
+    state.isWebpSupported = value
   },
   setCollections(state, collections) {
     const advancedTrainings = collections.filter(
