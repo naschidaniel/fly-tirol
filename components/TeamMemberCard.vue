@@ -2,12 +2,10 @@
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header aspect-w-2 aspect-h-3 rounded-t-xl bg-gray-200">
-        <responsive-image
+        <ResponsiveImage
           v-if="member.picture"
           img-class="object-contain"
           :picture="member.picture"
-          width="400"
-          hight="300"
         />
         <div v-else class="flex justify-center items-center">
           <outline-emoji-happy-icon class="w-36 h-36 text-gray-400" />

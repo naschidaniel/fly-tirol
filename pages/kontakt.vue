@@ -20,7 +20,7 @@
             lg:mt-20 lg:aspect-w-3 lg:aspect-h-1 lg:order-2 lg:ml-8
           "
         >
-          <responsive-image
+          <ResponsiveImage
             img-class="object-cover object-top w-full h-full"
             picture="/media/team/team.jpg"
           />

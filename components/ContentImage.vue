@@ -1,5 +1,5 @@
 <template>
-  <responsive-image
+  <ResponsiveImage
     img-class="mb-2 object-contain rounded-lg mx-auto"
     :picture="picture"
   />

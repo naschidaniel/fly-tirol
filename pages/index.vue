@@ -15,7 +15,7 @@
       "
     >
       <div class="md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0">
-        <responsive-image
+        <ResponsiveImage
           img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
           picture="/media/ft_hero.jpg"
         />

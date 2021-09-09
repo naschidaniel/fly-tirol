@@ -5,11 +5,7 @@
         <div
           class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200"
         >
-          <ResponsiveImage
-            loading="lazy"
-            :picture="page.image"
-            class="object-cover"
-          />
+          <ResponsiveImage img-class="object-cover" :picture="page.image" />
         </div>
       </nuxt-link>
       <div class="card--content px-8 pb-12">

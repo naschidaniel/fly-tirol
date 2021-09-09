@@ -8,11 +8,9 @@
           class="w-1/2 md:w-1/4 p-2"
         >
           <div class="aspect-w-1 aspect-h-1 overflow-hidden">
-            <responsive-image
+            <ResponsiveImage
               img-class="rounded shadow-md object-cover w-full h-full"
-              :alt="img.alt"
               :picture="img.url"
-              :title="img.title"
             />
           </div>
         </div>

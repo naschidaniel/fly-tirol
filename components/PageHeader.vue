@@ -45,7 +45,7 @@
             transform
           "
         ></span>
-        <responsive-image
+        <ResponsiveImage
           img-class="object-cover object-center w-full h-full"
           :picture="hero.image"
         />
