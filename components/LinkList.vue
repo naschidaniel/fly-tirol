@@ -3,7 +3,7 @@
     <div class="flex flex-wrap 2xl:flex-nowrap">
       <div class="flex flex-col w-full 2xl:w-96 max-w-screen-sm flex-shrink-0">
         <div class="mt-6">
-          <h1 class="mb-6">
+          <h2 class="mb-6">
             <span
               class="
                 text-lg
@@ -17,7 +17,7 @@
               <span class="inline-block">Finde das richtige</span>
             </span>
             <span class="text-5xl font-heading font-bold">Angebot</span>
-          </h1>
+          </h2>
           <p class="text-lg leading-relaxed max-w-prose">
             Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
             den wunderschönen Kitzbüheler Alpen genießen möchtest, du selbst ein
@@ -90,9 +90,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.swiper-container {
-  overflow: visible !important;
-}
-</style>
