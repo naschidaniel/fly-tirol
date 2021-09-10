@@ -1,19 +1,9 @@
 <template>
   <div
     :class="{ hidden: isCookieAgreement }"
-    class="
-      w-screen
-      bg-gray-200
-      flex
-      items-center
-      justify-center
-      px-3
-      py-3
-      relative
-      text-sm
-    "
+    class="w-full bg-gray-200 px-3 pt-3 pb-1 relative text-sm"
   >
-    <div class="flex-grow">
+    <div class="w-full">
       <strong>Informationen zu Cookies</strong>
       <p>
         Diese Seite verwendet Cookies. Diese dienen dazu, die Funktionalität
@@ -25,15 +15,14 @@
           Datenschutzbestimmungen.</nuxt-link
         >
       </p>
-      <div class="flex m-2 lg:mx-4 lg:mt-4">
-        <div class="flex-grow text-right border-1">
-          <button
-            class="btn-primary bg-green-600"
-            @click="acceptCookieAgreement()"
-          >
-            Alle Cookies akzeptieren
-          </button>
-        </div>
+      <div class="w-full text-right py-1">
+        <button
+          aria-label="accept cookie agreement"
+          class="btn-primary bg-green-600"
+          @click="acceptCookieAgreement()"
+        >
+          Alle Cookies akzeptieren
+        </button>
       </div>
     </div>
   </div>

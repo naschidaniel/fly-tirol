@@ -86,7 +86,11 @@
         >
       </div>
       <div class="w-full text-right mt-3">
-        <button class="btn-primary" @click.prevent="refreshCart()">
+        <button
+          aria-label="refresh Cart"
+          class="btn-primary"
+          @click.prevent="refreshCart()"
+        >
           <outline-refresh-icon style="hight: 1em; widht: 1em" />&nbsp;<span
             >Warenkorb aktualisieren</span
           >
@@ -94,7 +98,7 @@
       </div>
       <div class="text-center mt-14">
         <a :href="checkout.webUrl">
-          <button class="btn-primary btn--large">
+          <button aria-label="Order Products" class="btn-primary btn--large">
             <outline-shopping-bag-icon
               style="hight: 1em; widht: 1em"
             />&nbsp;<span>Bestellung abschließen</span>

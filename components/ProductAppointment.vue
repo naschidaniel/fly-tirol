@@ -29,6 +29,7 @@
         />
       </label>
       <button
+        aria-label="Book the Date"
         class="btn-primary text-sm md:text-base"
         :class="isFormValid && isDateValid ? '' : 'btn--disabled'"
         @click.prevent="bookProduct(productVariantsId)"

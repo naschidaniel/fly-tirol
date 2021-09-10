@@ -17,7 +17,11 @@
       </tr>
     </table>
     <div class="flex justify-center">
-      <button class="btn-primary w-full md:w-1/2 mt-6" @click="delAllCookies()">
+      <button
+        aria-label="Delete all cookies"
+        class="btn-primary w-full md:w-1/2 mt-6"
+        @click="delAllCookies()"
+      >
         Alle Cookies der Website löschen
       </button>
     </div>
