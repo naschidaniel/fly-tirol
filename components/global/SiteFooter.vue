@@ -52,7 +52,10 @@
                     underline
                   "
                 >
-                  <instagram-icon class="ft-icon mr-2" />
+                  <instagram-icon
+                    class="mr-2"
+                    style="width: 1em; height: 1em"
+                  />
                   Folge uns auf Instagram
                 </a>
               </div>
@@ -69,7 +72,10 @@
                     underline
                   "
                 >
-                  <whats-app-icon class="ft-icon mr-2" />
+                  <whats-app-icon
+                    class="mr-2"
+                    style="width: 1em; height: 1em"
+                  />
                   Schreibe uns auf WhatsApp
                 </a>
               </div>
