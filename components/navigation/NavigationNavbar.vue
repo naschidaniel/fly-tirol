@@ -4,43 +4,70 @@
       class="
         navbar--wrapper
         fixed
-        lg:relative
         flex
         justify-end
-        lg:flex lg:justify-center
+        p-16
+        pt-32
+        z-40
         w-full
         h-screen
-        lg:h-auto
+        lg:h-auto lg:relative lg:justify-center lg:p-0 lg:z-0
       "
       :class="{ open: isOpen, closed: !isOpen }"
       @click="toggleDropdown()"
     >
-      <nav class="navigation--main flex flex-col items-start lg:flex-row">
-        <navigation-navbar-link name="Tandemfliegen" to="/tandemfliegen" />
-        <navigation-navbar-link name="Ausbildung" to="/ausbildung" />
-        <navigation-navbar-link name="Fortbildung" to="/fortbildung" />
-        <navigation-navbar-link
+      <nav class="flex flex-col items-start lg:flex-row">
+        <NavigationNavbarLink name="Tandemfliegen" to="/tandemfliegen" />
+        <NavigationNavbarLink name="Ausbildung" to="/ausbildung" />
+        <NavigationNavbarLink name="Fortbildung" to="/fortbildung" />
+        <NavigationNavbarLink
           name="Sicherheitstrainings"
           to="/sicherheitstrainings"
         />
-        <navigation-navbar-link name="Reisen" to="/reisen" />
-        <navigation-navbar-link name="Team" to="/team" />
+        <NavigationNavbarLink name="Reisen" to="/reisen" />
+        <NavigationNavbarLink name="Team" to="/team" />
       </nav>
     </div>
 
+    <div class="flex z-50">
+      <div class="mr-2 my-1 lg:my-0" @click="toggleIfDropdownIsOpen()">
         <NavigationNavbarCart />
       </div>
-      <div @click="toggleIfDropdownIsOpen()">
+      <div class="mr-3 my-1 lg:my-0" @click="toggleIfDropdownIsOpen()">
         <nuxt-link class="btn-primary" to="/kontakt" exact>
           <span>Kontakt</span>
         </nuxt-link>
       </div>
-      <navigation-hamburger-button />
+      <div class="lg:mr-0 lg:hidden">
+        <button
+          aria-label="Toggle Dropdown Menu"
+          class="
+            p-2
+            rounded-md
+            text-brand
+            focus:ring-2
+            focus:ring-blue-400
+            focus:ring-offset-2
+            focus:ring-offset-white
+            focus:ring-opacity-100
+            focus:outline-none
+            transition
+            duration-150
+            ease-in-out
+          "
+          @click="toggleDropdown()"
+        >
+          <OutlineXIcon v-if="isOpen" />
+          <OutlineMenuIcon v-else />
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import OutlineMenuIcon from '../icons/OutlineMenuIcon.vue'
+import OutlineXIcon from '../icons/OutlineXIcon.vue'
 import NavigationNavbarCart from './NavigationNavbarCart.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
 
@@ -50,6 +77,7 @@ export default {
     NavigationNavbarLink,
     NavigationNavbarCart,
     OutlineMenuIcon,
+    OutlineXIcon,
   },
   computed: {
     isOpen() {
@@ -70,23 +98,17 @@ export default {
 </script>
 
 <style lang="scss">
-.navbar-controls {
-  @apply flex z-50;
-}
 .navbar--wrapper {
   top: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(2px);
-  @apply p-16 pt-32 z-40;
   transition-duration: 0.5s;
 
   @screen lg {
     top: auto;
     background-color: transparent;
     backdrop-filter: none;
-    z-index: unset;
-    @apply p-0;
   }
 
   &.closed {
@@ -99,8 +121,5 @@ export default {
   &.open {
     transform: none;
   }
-}
-
-.navigation--main {
 }
 </style>

@@ -1,8 +1,12 @@
 <template>
   <nuxt-link class="btn-primary" to="/buchen" exact>
     <outline-shopping-cart-icon class="mr-1" style="height: 1em; width: 1em" />
-    <span class="hidden md:block">Warenkorb&nbsp;({{ cartItemsLength }})</span>
-    <span class="block md:hidden">({{ cartItemsLength }})</span>
+    <span class="hidden md:block lg:hidden xl:block"
+      >Warenkorb&nbsp;({{ cartItemsLength }})</span
+    >
+    <span class="block md:hidden lg:block xl:hidden"
+      >({{ cartItemsLength }})</span
+    >
   </nuxt-link>
 </template>
 
@@ -10,7 +14,7 @@
 import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
 
 export default {
-  name: 'NavigationCart',
+  name: 'NavigationNavbarCart',
   components: { OutlineShoppingCartIcon },
   computed: {
     cartItemsLength() {
