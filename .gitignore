@@ -95,3 +95,6 @@ image-optimizer.exe
 
 # deploy
 deploy.sh
+
+# run docker
+run.sh

@@ -2,3 +2,4 @@ image-optimizer.exe
 image-optimizer
 node_modules
 .git
+.nuxt
