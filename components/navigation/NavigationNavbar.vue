@@ -28,9 +28,7 @@
       </nav>
     </div>
 
-    <div class="navbar-controls">
-      <div class="mr-2" @click="toggleIfDropdownIsOpen()">
-        <navigation-cart />
+        <NavigationNavbarCart />
       </div>
       <div @click="toggleIfDropdownIsOpen()">
         <nuxt-link class="btn-primary" to="/kontakt" exact>
@@ -43,16 +41,15 @@
 </template>
 
 <script>
-import NavigationHamburgerButton from '../navigation/NavigationNavbarButton.vue'
-import NavigationCart from './NavigationCart.vue'
+import NavigationNavbarCart from './NavigationNavbarCart.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
 
 export default {
   name: 'NavigationNavbar',
   components: {
     NavigationNavbarLink,
-    NavigationHamburgerButton,
-    NavigationCart,
+    NavigationNavbarCart,
+    OutlineMenuIcon,
   },
   computed: {
     isOpen() {
