@@ -42,6 +42,7 @@
               <div class="mt-8 sm:mt-0 sm:ml-4 md:ml-6 w-full sm:w-auto">
                 <a
                   href="https://www.instagram.com/fly.tirol/"
+                  rel="noopener"
                   target="_blank"
                   class="
                     inline-flex
@@ -59,6 +60,7 @@
                 <a
                   href="https://wa.me/436766422088"
                   target="_blank"
+                  rel="noopener"
                   class="
                     inline-flex
                     items-center
