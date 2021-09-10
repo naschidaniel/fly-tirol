@@ -21,6 +21,7 @@
           <td class="p-1 sm:p-3 border text-center">
             <button
               v-if="variant.available"
+              aria-label="Book the Product"
               class="btn-primary text-sm md:text-base"
               @click.prevent="bookProduct(variant.id)"
             >
