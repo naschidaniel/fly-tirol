@@ -1,6 +1,11 @@
 <template>
   <div>
-    <PageHeader :hero="hero" />
+    <PageHeader pre-headline="Paragliding" :headline="title">
+      Flieg mit uns im Urlaub! Kombiniere eine wunderschöne Reise mit deiner
+      Leidenschaft fürs fliegen und lerne dabei von absoluten Profis dazu. Sieh
+      dir unseren Reisekalender an und nutze die einmalige Möglichkeit
+      wunderbare neue Landschaften aus der Vogelperspektive zu erkunden.
+    </PageHeader>
     <ProductList :pages="pages" />
   </div>
 </template>
@@ -20,12 +25,6 @@ export default {
     return {
       title: 'Reisen',
       description: 'Reisen mit der Flugschule',
-      hero: {
-        pretitle: 'Paragliding',
-        title: 'Reisen',
-        intro:
-          'Flieg mit uns im Urlaub! Kombiniere eine wunderschöne Reise mit deiner Leidenschaft fürs fliegen und lerne dabei von absoluten Profis dazu. Sieh dir unseren Reisekalender an und nutze die einmalige Möglichkeit wunderbare neue Landschaften aus der Vogelperspektive zu erkunden.',
-      },
     }
   },
   head() {

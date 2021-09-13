@@ -1,6 +1,19 @@
 <template>
   <div>
-    <PageHeader :hero="hero" />
+    <PageHeader
+      pre-headline="Die Geschichte der"
+      headline="Flugschule Westendorf"
+      picture="/media/team/flytirol_geschichte.jpg"
+    >
+      Die Flugschule Westendorf wurde im Jahr 2021 von Sebastian Kahn und seinem
+      Geschäftspartner Jan Kuhnert von seinem Onkel Otto Kahn übernommen und
+      komplett neu gestaltet. So bekam die Flugschule einen neuen Namen und
+      zusätzlich noch weitere Piloten und Fluglehrer ins Team. Otto Kahn hatte
+      im Frühling 2005 die Flugschule Westendorf übernommen, die er seit den
+      90er Jahren mit aufgebaut hat. Durch die Leidenschaft zum Paragleiten vom
+      Onkel angesteckt, absolvierte Sebastian bereits im Alter von 12 Jahren
+      seine ersten eigenen Flüge.
+    </PageHeader>
     <TeamList :members="members" />
   </div>
 </template>
@@ -16,13 +29,6 @@ export default {
     return {
       title: 'Team',
       description: 'Team der Flugschule',
-      hero: {
-        pretitle: 'Die Geschichte der',
-        title: 'Flugschule Westendorf',
-        intro:
-          'Die Flugschule Westendorf wurde im Jahr 2021 von Sebastian Kahn und seinem Geschäftspartner Jan Kuhnert von seinem Onkel Otto Kahn übernommen und komplett neu gestaltet. So bekam die Flugschule einen neuen Namen und zusätzlich noch weitere Piloten und Fluglehrer ins Team. Otto Kahn hatte im Frühling 2005 die Flugschule Westendorf übernommen, die er seit den 90er Jahren mit aufgebaut hat. Durch die Leidenschaft zum Paragleiten vom Onkel angesteckt, absolvierte Sebastian bereits im Alter von 12 Jahren seine ersten eigenen Flüge.',
-        image: '/media/team/flytirol_geschichte.jpg',
-      },
       members: [
         {
           name: 'Sebastian Kahn',
