@@ -1,8 +1,5 @@
 <template>
-  <div
-    ref="imageBox"
-    class="md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0"
-  >
+  <div ref="imageBox" class="absolute top-0 bottom-0 left-0 right-0">
     <img
       v-if="responsiveUrl != ''"
       loading="lazy"

@@ -6,20 +6,17 @@
         min-h-screen-60
         md:min-h-screen-70
         overflow-hidden
-        flex flex-col
-        md:flex-row
+        flex flex-row
+        lg:flex-col
         items-end
         lg:items-start
-        pb-12
-        md:pb-24
+        mb-12
       "
     >
-      <div class="md:absolute md:top-0 md:bottom-0 md:left-0 md:right-0">
-        <ResponsiveImage
-          img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
-          picture="/media/ft_hero.jpg"
-        />
-      </div>
+      <ResponsiveImage
+        img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
+        picture="/media/ft_hero.jpg"
+      />
       <div
         class="
           absolute
@@ -48,10 +45,10 @@
             max-w-screen-sm
             lg:flex-shrink-0
             -mt-24
-            sm:mt-0
+            md:mt-0
           "
         >
-          <div class="mt-6">
+          <div class="mt-12 sm:mt-6">
             <h1 class="mb-6">
               <span
                 class="
