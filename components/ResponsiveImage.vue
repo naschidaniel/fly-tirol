@@ -113,7 +113,7 @@ export default {
     },
     getImageSizeTailwindClass() {
       const imageBoxWidth = this.$refs.imageBox?.clientWidth
-      const devicePixelRatio = window?.devicePixelRatio ?? 1
+      const devicePixelRatio = window?.devicePixelRatio > 1.5 ? 2 : 1
       const imageSize = imageBoxWidth * devicePixelRatio
       this.imageSizeTailwindClass =
         imageSize <= this.boxSizes['2xs']
