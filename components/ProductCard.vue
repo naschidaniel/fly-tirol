@@ -10,9 +10,9 @@
       </nuxt-link>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
-          <h3 class="text-2xl font-heading font-semibold mb-1">
+          <h2 class="text-2xl font-heading font-semibold mb-1">
             <nuxt-link :to="page.path">{{ page.title }}</nuxt-link>
-          </h3>
+          </h2>
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-location-marker-icon class="w-4 h-4" />
             <span class="block leading-none pt-1 ml-1">
