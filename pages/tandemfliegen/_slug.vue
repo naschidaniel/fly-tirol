@@ -25,37 +25,39 @@
         class="w-full lg:w-2/3 lg:pl-8"
       />
     </div>
-    <div class="max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
-      <div v-if="page.isAppointment" class="flex flex-wrap mt-10">
-        <div class="w-full md:w-1/2 p-6">
-          <Alert class="mt-6 mr-3">
-            <div class="mx-1 md:my-2">
-              Buche jetzt dein Wunschdatum und vereinbare dann einen Zeitpunkt
-              telefonisch unter
-              <a href="tel:00436766422088" class="underline whitespace-nowrap"
-                >+43 6766422088</a
-              >
-              oder schreibe uns eine Email
-              <a
-                href="mailto:info@fly-tirol.com"
-                class="underline whitespace-nowrap"
-                >info@fly-tirol.com</a
-              >
-              oder per
-              <a
-                href="https://wa.me/436766422088"
-                target="_blank"
-                class="underline whitespace-nowrap"
-              >
-                WhatsApp </a
-              >.
+    <div class="max-w-90 mx-auto -m-8 lg:py-8 nuxt-content">
+      <div v-if="page.isAppointment">
+        <h2>Dein Wunschtermin</h2>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-1/2 md:p-2">
+            <Alert class="mt-2 mr-3">
+              <div class="mx-1 md:my-2">
+                Buche jetzt dein Wunschdatum und vereinbare dann einen Zeitpunkt
+                telefonisch unter
+                <a href="tel:00436766422088" class="underline whitespace-nowrap"
+                  >+43 6766422088</a
+                >
+                oder schreibe uns eine Email
+                <a
+                  href="mailto:info@fly-tirol.com"
+                  class="underline whitespace-nowrap"
+                  >info@fly-tirol.com</a
+                >
+                oder per
+                <a
+                  href="https://wa.me/436766422088"
+                  target="_blank"
+                  class="underline whitespace-nowrap"
+                >
+                  WhatsApp </a
+                >.
+              </div>
+            </Alert>
+          </div>
+          <div class="w-full mt-2 md:w-1/2 md:mt-0 md:p-2">
+            <div class="mx-1 md:my-3">
+              <ProductAppointment />
             </div>
-          </Alert>
-        </div>
-        <div class="w-full md:w-1/2 md:p-6">
-          <div class="mx-1 md:my-3">
-            <h2>Dein Wunschtermin</h2>
-            <ProductAppointment />
           </div>
         </div>
       </div>
