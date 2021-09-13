@@ -1,4 +1,17 @@
 {
+  "/media/FlyTirolHeader.jpg": {
+    "url": "/media/FlyTirolHeader.jpg",
+    "path": "/media/",
+    "file": "FlyTirolHeader.jpg",
+    "dimensions": {
+      "height": 1329,
+      "width": 2362,
+      "type": "jpg",
+      "ratio": 1.777
+    },
+    "alt": "Paraglider in den Wolken mit Sicht auf Berge Tandempilot gleitschirm",
+    "title": "Tandempilot Paraglider in den Wolken"
+  },
   "/media/FlyTirolLogo.jpg": {
     "url": "/media/FlyTirolLogo.jpg",
     "path": "/media/",
@@ -183,19 +196,6 @@
     },
     "alt": "gleitschirm wolken himmel berge felsen gardasee acro paragliding infinity roll sebastian kahn sicherheitstraining",
     "title": "Sebastian Kahn beim Sicherheitstraining am Gardasee"
-  },
-  "/media/ft_hero.jpg": {
-    "url": "/media/ft_hero.jpg",
-    "path": "/media/",
-    "file": "ft_hero.jpg",
-    "dimensions": {
-      "height": 1329,
-      "width": 2362,
-      "type": "jpg",
-      "ratio": 1.777
-    },
-    "alt": "Paraglider in den Wolken mit Sicht auf Berge Tandempilot gleitschirm",
-    "title": "Tandempilot Paraglider in den Wolken"
   },
   "/media/reisen/flugreise-oludeniz-turkei.png": {
     "url": "/media/reisen/flugreise-oludeniz-turkei.png",
