@@ -7,12 +7,12 @@
         lg:flex-nowrap lg:w-11/12 lg:maxw-90 lg:mr-0 lg:ml-auto lg:pt-8
         pb-4
         md:pb-12
-        2xl:pb-24
+        2lg:pb-24
         z-10
       "
     >
       <div
-        v-if="hero.image"
+        v-if="picture"
         class="
           relative
           w-full
@@ -28,10 +28,10 @@
             absolute
             bg-white
             rounded-t-4xl
-            -bottom-5
+            -bottom-20
             left-0
             top-auto
-            h-20
+            h-40
             w-full
             -skew-y-6
             lg:w-48
@@ -46,8 +46,8 @@
           "
         ></span>
         <ResponsiveImage
-          img-class="object-cover object-center w-full h-full"
-          :picture="hero.image"
+          img-class="object-cover object-top w-full h-full"
+          :picture="picture"
         />
       </div>
       <div
@@ -70,32 +70,29 @@
               "
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
-              <span class="inline-block">{{ hero.pretitle }}</span>
+              <span class="inline-block">{{ preHeadline }}</span>
             </span>
             <span class="text-4xl lg:text-6xl font-heading font-bold">
-              {{ hero.title }}
+              {{ headline }}
             </span>
           </h1>
           <p class="text-lg leading-relaxed max-w-prose">
-            {{ hero.intro }}
+            <slot />
           </p>
-          <div
-            v-if="hero.link1 || hero.link2"
-            class="flex flex-wrap mt-6 space-y-4 lg:space-y-0 lg:space-x-4"
-          >
+          <div v-if="link1 || link2" class="flex flex-wrap mt-6 lg:space-x-4">
             <a
-              v-if="hero.link1"
-              :href="hero.link1.href"
-              class="btn-primary btn--large"
+              v-if="link1"
+              :href="link1.href"
+              class="btn-primary btn--large mr-2 self-end"
             >
-              {{ hero.link1.name }}
+              {{ link1.name }}
             </a>
             <a
-              v-if="hero.link2"
-              :href="hero.link2.href"
-              class="btn-primary btn--large"
+              v-if="link2"
+              :href="link2.href"
+              class="btn-primary btn--large mt-6 sm:mt-0 self-end"
             >
-              {{ hero.link2.name }}
+              {{ link2.name }}
             </a>
           </div>
         </div>
@@ -107,7 +104,11 @@
 <script>
 export default {
   props: {
-    hero: { type: Object, required: true },
+    headline: { type: String, required: true },
+    preHeadline: { type: String, required: true },
+    picture: { type: String, required: false, default: '' },
+    link1: { type: Object, required: false, default: () => {} },
+    link2: { type: Object, required: false, default: () => {} },
   },
 }
 </script>
