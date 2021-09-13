@@ -15,7 +15,7 @@
     >
       <ResponsiveImage
         img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
-        picture="/media/ft_hero.jpg"
+        picture="/media/FlyTirolHeader.jpg"
       />
       <div
         class="
