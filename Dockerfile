@@ -10,8 +10,6 @@ RUN apt-get install rsync -y
 
 WORKDIR /app
 
-RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
-
 COPY . .
 
 RUN echo "NUXT_ENV_CURRENT_DATE=\"$(date '+%F %H:%M:%S')\"" >> .env
@@ -23,6 +21,8 @@ RUN yarn install \
 RUN yarn build
 
 RUN rm -rf .git && rm -rf ./dist/media
+
+RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
 
 RUN yarn generateMediaInformation
 
