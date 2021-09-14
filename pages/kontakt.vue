@@ -11,7 +11,6 @@
       Dann Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns auf
       dich!
     </PageHeader>
-    >
     <div class="max-w-90 mx-auto text-lg font-heading font-medium leading-snug">
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
       <div class="flex justify-center py-8 px-8">

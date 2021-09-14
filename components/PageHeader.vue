@@ -79,21 +79,26 @@
           <p class="text-lg leading-relaxed max-w-prose">
             <slot />
           </p>
-          <div v-if="link1 || link2" class="flex flex-wrap mt-6 lg:space-x-4">
-            <a
-              v-if="link1"
-              :href="link1.href"
-              class="btn-primary btn--large mr-2 self-end"
-            >
-              {{ link1.name }}
-            </a>
-            <a
-              v-if="link2"
-              :href="link2.href"
-              class="btn-primary btn--large mt-6 sm:mt-0 self-end"
-            >
-              {{ link2.name }}
-            </a>
+          <div
+            v-if="link1 || link2"
+            class="flex flex-wrap justify-center mt-6 lg:space-x-4"
+          >
+            <div class="p-2">
+              <a
+                v-if="link1"
+                :href="link1.href"
+                class="btn-primary btn--large"
+                >{{ link1.name }}</a
+              >
+            </div>
+            <div class="p-2">
+              <a
+                v-if="link2"
+                :href="link2.href"
+                class="btn-primary btn--large"
+                >{{ link2.name }}</a
+              >
+            </div>
           </div>
         </div>
       </div>
