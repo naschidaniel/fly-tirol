@@ -11,6 +11,7 @@
             <ResponsiveImage
               img-class="rounded shadow-md object-cover w-full h-full"
               :picture="img.url"
+              :is-thumbnail="true"
             />
           </div>
         </div>
