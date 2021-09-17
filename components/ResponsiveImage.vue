@@ -19,6 +19,7 @@ export default {
     picture: { type: String, default: '', required: true },
     imgClass: { type: String, default: '', required: false },
     fixSize: { type: String, default: undefined, required: false },
+    isThumbnail: { type: Boolean, default: false, required: false },
   },
   data() {
     return {
@@ -69,9 +70,15 @@ export default {
       ) {
         return ''
       }
-      const filePostFix = this.fixSize
-        ? `${this.fixSize}.${extension}`
-        : `${this.imageSizeTailwindClass}.${extension}`
+      const filePostFix =
+        this.fixSize && this.isThumbnail
+          ? `${this.fixSize}_thumbnail.${extension}`
+          : this.fixSize && !this.isThumbnail
+          ? `${this.fixSize}.${extension}`
+          : this.isThumbnail
+          ? `${this.imageSizeTailwindClass}_thumbnail.${extension}`
+          : `${this.imageSizeTailwindClass}.${extension}`
+
       let responsiveUrl = this.imageInformation.url.replace(
         `.${extension}`,
         `_${filePostFix}`
@@ -127,10 +134,12 @@ export default {
           ? 'xl'
           : '2xl'
       this.width = this.boxSizes[this.imageSizeTailwindClass]
-      this.height = Math.round(
-        this.boxSizes[this.imageSizeTailwindClass] /
-          this.imageInformation?.dimensions?.ratio
-      )
+      this.height = this.isThumbnail
+        ? this.width
+        : Math.round(
+            this.boxSizes[this.imageSizeTailwindClass] /
+              this.imageInformation?.dimensions?.ratio
+          )
     },
   },
 }
