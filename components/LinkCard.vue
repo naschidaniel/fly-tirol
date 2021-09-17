@@ -1,9 +1,15 @@
 <template>
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
-      <div class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200">
+      <div
+        class="card--header aspect-w-16 aspect-h-14 rounded-t-xl bg-gray-200"
+      >
         <nuxt-link :to="to">
-          <ResponsiveImage img-class="object-cover" :picture="cardImage" />
+          <ResponsiveImage
+            img-class="object-cover"
+            :picture="cardImage"
+            :is-thumbnail="true"
+          />
         </nuxt-link>
       </div>
       <div class="card--content px-8 pb-12">

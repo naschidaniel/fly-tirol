@@ -3,9 +3,13 @@
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <nuxt-link :to="page.path" :title="page.title">
         <div
-          class="card--header aspect-w-16 aspect-h-9 rounded-t-xl bg-gray-200"
+          class="card--header aspect-w-16 aspect-h-14 rounded-t-xl bg-gray-200"
         >
-          <ResponsiveImage img-class="object-cover" :picture="page.image" />
+          <ResponsiveImage
+            img-class="object-cover"
+            :picture="page.image"
+            :is-thumbnail="true"
+          />
         </div>
       </nuxt-link>
       <div class="card--content px-8 pb-12">
