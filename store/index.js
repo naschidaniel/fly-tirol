@@ -11,15 +11,11 @@ export const state = () => ({
   travels: [],
   products: [],
   checkout: {},
-  cookieAgreement: false,
 })
 
 export const mutations = {
   toggleDropdown(state) {
     state.isOpen = !state.isOpen
-  },
-  setCookieAgreement(state, value) {
-    state.cookieAgreement = value
   },
   setProducts(state, products) {
     state.products = products

@@ -29,12 +29,14 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+import { useData } from '~/composable/useData'
+
+export default defineComponent({
   name: 'SiteCookieBanner',
-  computed: {
-    isCookieAgreement() {
-      return this.$store.state.cookieAgreement
-    },
+  setup() {
+    const { isCookieAgreement } = useData()
+    return { isCookieAgreement }
   },
   mounted() {
     this.getCookieAgreementCookie()
@@ -46,14 +48,14 @@ export default {
         maxAge: 60 * 60 * 24 * 7 * 31,
         sameSite: true,
       })
-      this.$store.commit('setCookieAgreement', true)
+      this.isCookieAgreement = true
     },
     getCookieAgreementCookie() {
       const cookieAgreement = this.$cookies.get('FlyTirol-cookieAgreement')
       if (cookieAgreement) {
-        this.$store.commit('setCookieAgreement', cookieAgreement)
+        this.isCookieAgreement = cookieAgreement
       }
     },
   },
-}
+})
 </script>

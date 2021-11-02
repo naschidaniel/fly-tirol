@@ -20,7 +20,7 @@
       <button
         aria-label="Delete all cookies"
         class="btn-primary w-full md:w-1/2 mt-6"
-        @click="delAllCookies()"
+        @click="removeAllCookies()"
       >
         Alle Cookies der Website löschen
       </button>
@@ -29,17 +29,14 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+import { useData } from '~/composable/useData'
+
+export default defineComponent({
   name: 'ResetCookieAgreement',
-  data() {
-    return {
-      allCokies: {},
-    }
-  },
-  computed: {
-    isCookieAgreement() {
-      return this.$store.state.cookieAgreement
-    },
+  setup() {
+    const { allCokies, isCookieAgreement } = useData()
+    return { allCokies, isCookieAgreement }
   },
   watch: {
     isCookieAgreement() {
@@ -53,11 +50,11 @@ export default {
     getAllCookies() {
       this.allCokies = this.$cookies.getAll()
     },
-    delAllCookies() {
+    removeAllCookies() {
       this.$cookies.removeAll()
-      this.$store.commit('setCookieAgreement', false)
+      this.isCookieAgreement = false
       this.getAllCookies()
     },
   },
-}
+})
 </script>
