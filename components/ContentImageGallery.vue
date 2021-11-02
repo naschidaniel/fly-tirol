@@ -21,18 +21,25 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import ResponsiveImage from './ResponsiveImage.vue'
-export default {
+import { useData } from '~/composable/useData'
+
+export default defineComponent({
   components: { ResponsiveImage },
   props: {
     path: { type: String, default: '/media' },
   },
+  setup() {
+    const { media } = useData()
+    return { media }
+  },
   computed: {
     imageGalery() {
-      return Object.values(this.$store.state.media).filter((img) => {
+      return Object.values(this.media).filter((img) => {
         return img.path === this.path
       })
     },
   },
-}
+})
 </script>

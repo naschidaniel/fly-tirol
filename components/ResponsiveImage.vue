@@ -14,12 +14,19 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+import { useData } from '~/composable/useData'
+
+export default defineComponent({
   props: {
     picture: { type: String, default: '', required: true },
     imgClass: { type: String, default: '', required: false },
     fixSize: { type: String, default: undefined, required: false },
     isThumbnail: { type: Boolean, default: false, required: false },
+  },
+  setup() {
+    const { media } = useData()
+    return { media }
   },
   data() {
     return {
@@ -46,7 +53,7 @@ export default {
       return this.$store.state.isWebpSupported
     },
     imageInformation() {
-      const images = Object.values(this.$store.state.media).filter((img) => {
+      const images = Object.values(this.media).filter((img) => {
         return img.url === this.picture
       })
       if (images.length === 0) {
@@ -142,5 +149,5 @@ export default {
           )
     },
   },
-}
+})
 </script>

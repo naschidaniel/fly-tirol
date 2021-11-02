@@ -1,10 +1,7 @@
-import media from '~/static/media.json'
-
 export const state = () => ({
   advancedTrainings: [],
   basicTrainings: [],
   isWebpSupported: undefined,
-  media,
   saftyTrainings: [],
   tandemflights: [],
   travels: [],

@@ -1,4 +1,5 @@
 import { ref } from '@nuxtjs/composition-api'
+import media from '~/static/media.json'
 
 const allCookies = ref({})
 const isCookieAgreement = ref(false)
@@ -9,5 +10,6 @@ export function useData() {
     allCookies,
     isCookieAgreement,
     isOpen,
+    media,
   }
 }
