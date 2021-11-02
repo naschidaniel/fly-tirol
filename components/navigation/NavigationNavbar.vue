@@ -14,7 +14,7 @@
         lg:h-auto lg:relative lg:justify-center lg:p-0 lg:z-0
       "
       :class="{ open: isOpen, closed: !isOpen }"
-      @click="toggleDropdown()"
+      @click="isOpen = !isOpen"
     >
       <nav class="flex flex-col items-start lg:flex-row">
         <NavigationNavbarLink name="Tandemfliegen" to="/tandemfliegen" />
@@ -55,7 +55,7 @@
             duration-150
             ease-in-out
           "
-          @click="toggleDropdown()"
+          @click="isOpen = !isOpen"
         >
           <OutlineXIcon v-if="isOpen" />
           <OutlineMenuIcon v-else />
@@ -66,12 +66,14 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import OutlineMenuIcon from '../icons/OutlineMenuIcon.vue'
 import OutlineXIcon from '../icons/OutlineXIcon.vue'
 import NavigationNavbarCart from './NavigationNavbarCart.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
+import { useData } from '~/composable/useData'
 
-export default {
+export default defineComponent({
   name: 'NavigationNavbar',
   components: {
     NavigationNavbarLink,
@@ -79,22 +81,18 @@ export default {
     OutlineMenuIcon,
     OutlineXIcon,
   },
-  computed: {
-    isOpen() {
-      return this.$store.state.isOpen
-    },
+  setup() {
+    const { isOpen } = useData()
+    return { isOpen }
   },
   methods: {
-    toggleDropdown() {
-      this.$store.commit('toggleDropdown')
-    },
     toggleIfDropdownIsOpen() {
       if (this.isOpen) {
-        this.toggleDropdown()
+        this.isOpen = false
       }
     },
   },
-}
+})
 </script>
 
 <style lang="scss">

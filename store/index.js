@@ -3,7 +3,6 @@ import media from '~/static/media.json'
 export const state = () => ({
   advancedTrainings: [],
   basicTrainings: [],
-  isOpen: false,
   isWebpSupported: undefined,
   media,
   saftyTrainings: [],
@@ -14,9 +13,6 @@ export const state = () => ({
 })
 
 export const mutations = {
-  toggleDropdown(state) {
-    state.isOpen = !state.isOpen
-  },
   setProducts(state, products) {
     state.products = products
   },
