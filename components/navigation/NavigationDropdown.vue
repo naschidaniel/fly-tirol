@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ block: isOpen, hidden: !isOpen }" @click="toggleDropdown()">
+  <div :class="{ block: isOpen, hidden: !isOpen }" @click="isOpen = !isOpen">
     <div class="px-2 pt-2">
       <navigation-dropdown-link name="Home" to="/" />
       <navigation-dropdown-link name="Tandemfliegen" to="/tandemfliegen" />
@@ -19,22 +19,18 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import NavigationDropdownLink from './NavigationDropdownLink.vue'
+import { useData } from '~/composable/useData'
 
-export default {
+export default defineComponent({
   name: 'NavigationDropdown',
   components: {
     NavigationDropdownLink,
   },
-  computed: {
-    isOpen() {
-      return this.$store.state.isOpen
-    },
+  setup() {
+    const { isOpen } = useData()
+    return { isOpen }
   },
-  methods: {
-    toggleDropdown() {
-      this.$store.commit('toggleDropdown')
-    },
-  },
-}
+})
 </script>

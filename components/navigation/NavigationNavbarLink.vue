@@ -1,23 +1,25 @@
 <template>
-  <nuxt-link :to="to" exact class="navbar--link" @click="toggleDropdown()">
+  <nuxt-link :to="to" exact class="navbar--link" @click="isOpen = !isOpen">
     {{ name }}
     <span class="decorator"></span>
   </nuxt-link>
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+import { useData } from '~/composable/useData'
+
+export default defineComponent({
   name: 'NavigationDropdownLink',
   props: {
     name: { type: String, required: true },
     to: { type: String, required: true },
   },
-  methods: {
-    toggleDropdown() {
-      this.$store.commit('toggleDropdown')
-    },
+  setup() {
+    const { isOpen } = useData()
+    return { isOpen }
   },
-}
+})
 </script>
 
 <style lang="scss">
