@@ -58,6 +58,7 @@ export default {
 
   buildModules: [
     'cookie-universal-nuxt',
+    '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     'nuxt-shopify',
@@ -71,6 +72,9 @@ export default {
 
   generate: {
     fallback: '404.html',
+    generate: {
+      interval: 2000,
+    },
     async routes() {
       const { $content } = require('@nuxt/content')
       const files = await $content({ deep: true }).only(['path']).fetch()
