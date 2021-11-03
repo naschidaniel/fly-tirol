@@ -61,13 +61,15 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import OutlineCashIcon from './icons/OutlineCashIcon.vue'
 import OutlineCalendarIcon from './icons/OutlineCalendarIcon.vue'
 import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import SpinnerIcon from './icons/SpinnerIcon.vue'
+import { useShop } from '~/composable/useShop'
 
-export default {
+export default defineComponent({
   components: {
     OutlineCashIcon,
     OutlineCalendarIcon,
@@ -75,13 +77,17 @@ export default {
     ResponsiveImage,
     SpinnerIcon,
   },
-  props: {
-    course: { type: Object, default: () => {} },
-    page: { type: Object, required: true },
+  props: { page: { type: Object, required: true } },
+  setup() {
+    const { getCourse } = useShop()
+    return { getCourse }
   },
   computed: {
     isTandemflight() {
       return this.page.path.includes('/tandemfliegen')
+    },
+    course() {
+      return this.getCourse(this.page.slug)
     },
     price() {
       const price = this.course?.variants.map((v) => parseFloat(v.price))
@@ -93,5 +99,5 @@ export default {
       return this.course?.variants?.length
     },
   },
-}
+})
 </script>

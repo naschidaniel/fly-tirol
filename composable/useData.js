@@ -2,7 +2,7 @@ import { computed, ref } from '@nuxtjs/composition-api'
 import { useMedia } from './useMedia'
 
 const allCookies = ref({})
-const isCookieAgreement = ref(false)
+export const isCookieAgreement = ref(false)
 const isOpen = ref(false)
 
 export function useData() {
