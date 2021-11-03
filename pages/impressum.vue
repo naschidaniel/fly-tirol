@@ -1,29 +1,33 @@
 <template>
   <div class="max-w-90 w-full mx-auto py-6">
     <nuxt-content :document="impressum" />
-    <h2>Sourcecode der Webseite</h2>
-    <div>
-      Github Repository:
-      <a href="https://github.com/naschidaniel/fly-tirol" target="_blank"
-        >https://github.com/naschidaniel/fly-tirol</a
-      >
+    <div class="nuxt-content">
+      <h2 class="mt-2">Sourcecode der Webseite</h2>
+      <div>
+        Github Repository:
+        <a href="https://github.com/naschidaniel/fly-tirol" target="_blank"
+          >https://github.com/naschidaniel/fly-tirol</a
+        >
+      </div>
+      <div>Buildtime des Docker Images: {{ formatDateTime(buildtime) }}</div>
     </div>
-    <div>Buildtime des Docker Images: {{ NUXT_ENV_CURRENT_DATE }}</div>
   </div>
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import { generateMetatags } from '~/util/generateHeaderInformation'
+import { formatDateTime } from '~/util/formatDate'
+import { useData } from '~/composable/useData'
 
-export default {
+export default defineComponent({
+  setup() {
+    const { buildtime } = useData()
+    return { buildtime }
+  },
   async asyncData({ $content }) {
     const impressum = await $content('impressum').fetch()
     return { impressum }
-  },
-  data() {
-    return {
-      NUXT_ENV_CURRENT_DATE: process.env.NUXT_ENV_CURRENT_DATE || 'DEVELOPMENT',
-    }
   },
   head() {
     const metatags = generateMetatags(
@@ -33,5 +37,8 @@ export default {
     )
     return { title: this.impressum.title, meta: metatags }
   },
-}
+  methods: {
+    formatDateTime,
+  },
+})
 </script>
