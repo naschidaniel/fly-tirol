@@ -25,12 +25,11 @@ export default defineComponent({
     isThumbnail: { type: Boolean, default: false, required: false },
   },
   setup() {
-    const { media } = useData()
-    return { media }
+    const { buildtime, isWebpSupported, media } = useData()
+    return { buildtime, isWebpSupported, media }
   },
   data() {
     return {
-      NUXT_ENV_CURRENT_DATE: process.env.NUXT_ENV_CURRENT_DATE,
       imageSizeTailwindClass: undefined,
       width: undefined,
       height: undefined,
@@ -46,12 +45,6 @@ export default defineComponent({
     }
   },
   computed: {
-    buildtime() {
-      return Date.parse(this.NUXT_ENV_CURRENT_DATE)
-    },
-    isWebpSupported() {
-      return this.$store.state.isWebpSupported
-    },
     imageInformation() {
       const images = Object.values(this.media).filter((img) => {
         return img.url === this.picture
@@ -97,31 +90,9 @@ export default defineComponent({
     },
   },
   mounted() {
-    this.canUseWebP()
     this.getImageSizeTailwindClass()
   },
   methods: {
-    canUseWebP() {
-      if (this.isWebpSupported !== undefined) {
-        return
-      }
-      const isFirefoxVersionSupported =
-        navigator.userAgent?.split('Firefox/')[1] >= 65.0
-      if (isFirefoxVersionSupported) {
-        this.$store.commit('setWebPSupport', isFirefoxVersionSupported)
-        return
-      }
-
-      const elem = document.createElement('canvas')
-      if (elem.getContext && elem.getContext('2d')) {
-        this.$store.commit(
-          'setWebPSupport',
-          elem.toDataURL('image/webp').indexOf('data:image/webp') === 0
-        )
-        return
-      }
-      this.$store.commit('setWebPSupport', false)
-    },
     getImageSizeTailwindClass() {
       const imageBoxWidth = this.$refs.imageBox?.clientWidth
       const devicePixelRatio = window?.devicePixelRatio > 1.5 ? 2 : 1
