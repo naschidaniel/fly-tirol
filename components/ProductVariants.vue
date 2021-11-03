@@ -36,11 +36,18 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+import { useShop } from '~/composable/useShop'
+
+export default defineComponent({
   name: 'ProductVariants',
+  setup() {
+    const { checkout, products, setCheckout } = useShop()
+    return { checkout, products, setCheckout }
+  },
   computed: {
     productVariants() {
-      const product = this.$store.state.products.filter(
+      const product = this.products.filter(
         (p) => p.handle === this.$route.params.slug
       )
       return product[0]?.variants
@@ -55,14 +62,14 @@ export default {
           customAttributes: [],
         },
       ]
-      const checkoutId = this.$store.state.checkout.id
+      const checkoutId = this.checkout.id
       await this.$shopify.checkout
         .addLineItems(checkoutId, lineItemsToAdd)
         .then((checkout) => {
-          this.$store.commit('setCheckout', checkout)
+          this.setCheckout(checkout)
         })
       this.$router.push({ path: '/buchen' })
     },
   },
-}
+})
 </script>

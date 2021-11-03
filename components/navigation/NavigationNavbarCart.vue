@@ -11,14 +11,28 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
+import { useData } from '~/composable/useData'
+import { useShop } from '~/composable/useShop'
 
-export default {
+export default defineComponent({
   name: 'NavigationNavbarCart',
   components: { OutlineShoppingCartIcon },
+  setup() {
+    const { isCookieAgreement } = useData()
+    const { checkout, setCheckout, setCollections, setProducts } = useShop()
+    return {
+      checkout,
+      isCookieAgreement,
+      setCheckout,
+      setCollections,
+      setProducts,
+    }
+  },
   computed: {
     cartItemsLength() {
-      return this.$store.state.checkout?.lineItems?.length || 0
+      return this.checkout?.lineItems?.length || 0
     },
   },
   mounted() {
@@ -28,11 +42,11 @@ export default {
   },
   methods: {
     async createCheckout() {
-      if (this.$store.state.cookieAgreement) {
+      if (this.isCookieAgreement) {
         try {
           const checkoutId = this.$cookies.get('FlyTirol-checkoutId')
           const checkout = await this.$shopify.checkout.fetch(checkoutId)
-          this.$store.commit('setCheckout', checkout)
+          this.setCheckout(checkout)
           const createdAt = Date.parse(checkout.createdAt) + 24 * 60 * 60 * 1000
           if (
             checkout.ready === true &&
@@ -52,16 +66,16 @@ export default {
         }
       }
       const checkout = await this.$shopify.checkout.create()
-      this.$store.commit('setCheckout', checkout)
+      this.setCheckout(checkout)
     },
     async fetchProduct() {
       const products = await this.$shopify.product.fetchAll()
-      this.$store.commit('setProducts', products)
+      this.setProducts(products)
     },
     async fetchCollections() {
       const collections = await this.$shopify.collection.fetchAllWithProducts()
-      this.$store.commit('setCollections', collections)
+      this.setCollections(collections)
     },
   },
-}
+})
 </script>

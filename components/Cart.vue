@@ -110,16 +110,22 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
+import { useShop } from '~/composable/useShop'
 
-export default {
+export default defineComponent({
   name: 'Cart',
   components: {
     Alert,
     OutlineRefreshIcon,
     OutlineShoppingBagIcon,
+  },
+  setup() {
+    const { cartItems, checkout, setCheckout } = useShop()
+    return { cartItems, checkout, setCheckout }
   },
   data() {
     return {
@@ -127,16 +133,10 @@ export default {
     }
   },
   computed: {
-    checkout() {
-      return this.$store.state.checkout
-    },
-    cartItems() {
-      return this.$store.state.checkout?.lineItems
-    },
     isCartItems() {
       return (
-        this.$store.state.checkout?.lineItems?.length === 0 ||
-        this.$store.state.checkout?.lineItems === undefined
+        this.checkout?.lineItems?.length === 0 ||
+        this.checkout?.lineItems === undefined
       )
     },
   },
@@ -159,8 +159,8 @@ export default {
       if (lineItemsToRemove.length !== 0) {
         await this.$shopify.checkout
           .removeLineItems(checkoutId, lineItemsToRemove)
-          .then((checkout) => {
-            this.$store.commit('setCheckout', checkout)
+          .then((c) => {
+            this.setCheckout(c)
           })
       }
     },
@@ -171,17 +171,17 @@ export default {
       if (lineItemsToUpdate.length !== 0) {
         await this.$shopify.checkout
           .updateLineItems(checkoutId, lineItemsToUpdate)
-          .then((checkout) => {
-            this.$store.commit('setCheckout', checkout)
+          .then((c) => {
+            this.setCheckout(c)
           })
       }
     },
     async refreshCart() {
-      const checkoutId = this.$store.state.checkout?.id
+      const checkoutId = this.checkout?.id
       if (checkoutId === undefined) return
       await this.removeItems(checkoutId)
       await this.updateItems(checkoutId)
     },
   },
-}
+})
 </script>

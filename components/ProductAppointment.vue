@@ -44,10 +44,16 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import { formatDate } from '~/util/formatDate.js'
+import { useShop } from '~/composable/useShop'
 
-export default {
+export default defineComponent({
   name: 'ProductAppointment',
+  setup() {
+    const { checkout, products, setCheckout } = useShop()
+    return { checkout, products, setCheckout }
+  },
   data() {
     return {
       selectedDate: '',
@@ -57,7 +63,7 @@ export default {
   },
   computed: {
     productVariantsId() {
-      const products = this.$store.state.products.filter(
+      const products = this.products.filter(
         (p) => p.handle === this.$route.params.slug
       )
       return products[0]?.variants[0].id
@@ -95,14 +101,14 @@ export default {
           ],
         },
       ]
-      const checkoutId = this.$store.state.checkout.id
+      const checkoutId = this.checkout?.id
       await this.$shopify.checkout
         .addLineItems(checkoutId, lineItemsToAdd)
         .then((checkout) => {
-          this.$store.commit('setCheckout', checkout)
+          this.setCheckout(checkout)
         })
       this.$router.push({ path: '/buchen' })
     },
   },
-}
+})
 </script>

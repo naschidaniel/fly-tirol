@@ -15,7 +15,6 @@
       <div v-for="page in pages" :key="page.title">
         <product-card
           class="p-4"
-          :course="getCourse(page.slug)"
           :slug="`${category}/${page.slug}`"
           :page="page"
         />
@@ -25,34 +24,18 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import ProductCard from './ProductCard.vue'
-export default {
+import { useShop } from '~/composable/useShop'
+
+export default defineComponent({
   components: { ProductCard },
   props: {
     pages: { type: Array, required: true },
   },
-  computed: {
-    category() {
-      return this.$route.name
-    },
+  setup() {
+    const { category, getCourse } = useShop()
+    return { category, getCourse }
   },
-  methods: {
-    getCourse(slug) {
-      const category = this.category
-      const courses =
-        category === 'ausbildung'
-          ? this.$store.state.basicTrainings
-          : category === 'fortbildung'
-          ? this.$store.state.advancedTrainings
-          : category === 'reisen'
-          ? this.$store.state.travels
-          : category === 'tandemfliegen'
-          ? this.$store.state.tandemflights
-          : category === 'sicherheitstrainings'
-          ? this.$store.state.saftyTrainings
-          : []
-      return courses.find((c) => c?.handle === slug)
-    },
-  },
-}
+})
 </script>
