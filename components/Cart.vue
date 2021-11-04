@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, onMounted } from '@vue/composition-api'
 import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
@@ -125,8 +125,17 @@ export default defineComponent({
     OutlineShoppingBagIcon,
   },
   setup() {
-    const { cartItems, checkout, isCartItems, refreshCart, updateLineItems } =
-      useShop()
+    const {
+      cartItems,
+      lineItemsChanged,
+      checkout,
+      isCartItems,
+      refreshCart,
+      updateLineItems,
+    } = useShop()
+    onMounted(() => {
+      lineItemsChanged.value = []
+    })
     return {
       cartItems,
       checkout,
