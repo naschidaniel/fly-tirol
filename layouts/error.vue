@@ -30,7 +30,10 @@
 </template>
 
 <script>
-export default {
+import { defineComponent, onMounted } from '@vue/composition-api'
+import { useShop } from '@/composable/useShop'
+
+export default defineComponent({
   layout: 'error',
   props: {
     error: {
@@ -45,5 +48,13 @@ export default {
       required: false,
     },
   },
-}
+  setup() {
+    const { fetchCollections, fetchProduct, resetCart } = useShop()
+    onMounted(() => {
+      resetCart()
+      fetchCollections()
+      fetchProduct()
+    })
+  },
+})
 </script>

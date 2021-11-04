@@ -124,64 +124,15 @@ export default defineComponent({
     OutlineShoppingBagIcon,
   },
   setup() {
-    const { cartItems, checkout, setCheckout } = useShop()
-    return { cartItems, checkout, setCheckout }
-  },
-  data() {
+    const { cartItems, checkout, isCartItems, refreshCart, updateLineItems } =
+      useShop()
     return {
-      lineItemsChanged: [],
+      cartItems,
+      checkout,
+      isCartItems,
+      refreshCart,
+      updateLineItems,
     }
-  },
-  computed: {
-    isCartItems() {
-      return (
-        this.checkout?.lineItems?.length === 0 ||
-        this.checkout?.lineItems === undefined
-      )
-    },
-  },
-  methods: {
-    updateLineItems(id, e) {
-      const quantity = parseInt(e.target.value)
-      const updateIndex = this.lineItemsChanged
-        .map((item) => item?.id)
-        .indexOf(id)
-      if (updateIndex === -1) {
-        this.lineItemsChanged.push({ id, quantity })
-      } else {
-        this.lineItemsChanged[updateIndex] = { id, quantity }
-      }
-    },
-    async removeItems(checkoutId) {
-      const lineItemsToRemove = this.lineItemsChanged
-        .filter((item) => item.quantity === 0)
-        .map((item) => item.id)
-      if (lineItemsToRemove.length !== 0) {
-        await this.$shopify.checkout
-          .removeLineItems(checkoutId, lineItemsToRemove)
-          .then((c) => {
-            this.setCheckout(c)
-          })
-      }
-    },
-    async updateItems(checkoutId) {
-      const lineItemsToUpdate = this.lineItemsChanged.filter(
-        (item) => item.quantity !== 0
-      )
-      if (lineItemsToUpdate.length !== 0) {
-        await this.$shopify.checkout
-          .updateLineItems(checkoutId, lineItemsToUpdate)
-          .then((c) => {
-            this.setCheckout(c)
-          })
-      }
-    },
-    async refreshCart() {
-      const checkoutId = this.checkout?.id
-      if (checkoutId === undefined) return
-      await this.removeItems(checkoutId)
-      await this.updateItems(checkoutId)
-    },
   },
 })
 </script>

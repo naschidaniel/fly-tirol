@@ -1,22 +1,24 @@
 import {
   computed,
   ref,
-  wrapProperty,
   useRoute,
   unref,
+  wrapProperty,
 } from '@nuxtjs/composition-api'
 import { isCookieAgreement } from './useData'
 
 const useCookies = wrapProperty('$cookies', false)
+const useShopify = wrapProperty('$shopify', false)
 
 const collections = ref([])
 const checkout = ref({})
+const lineItemsChanged = ref([])
 const products = ref([])
-const travels = ref([])
 
 export function useShop() {
   const cookies = useCookies()
   const route = useRoute()
+  const shopify = useShopify()
 
   const advancedTrainings = computed(
     () =>
@@ -46,6 +48,12 @@ export function useShop() {
 
   const category = route.value.name
 
+  const isCartItems = computed(
+    () =>
+      checkout.value?.lineItems?.length === 0 ||
+      checkout.value?.lineItems === undefined
+  )
+
   function getCourse(slug) {
     const courses =
       category === 'ausbildung'
@@ -61,6 +69,7 @@ export function useShop() {
         : []
     return courses?.find((c) => c?.handle === slug)
   }
+
   function setCheckout(change) {
     if (isCookieAgreement.value) {
       cookies.set('FlyTirol-checkoutId', change.id, {
@@ -72,12 +81,96 @@ export function useShop() {
     checkout.value = change
   }
 
-  function setCollections(change) {
+  async function fetchCollections() {
+    const change = await shopify.collection.fetchAllWithProducts()
     collections.value = change
   }
 
-  function setProducts(change) {
+  async function fetchProduct() {
+    const change = await shopify.product.fetchAll()
     products.value = change
+  }
+
+  async function loadCheckout() {
+    if (isCookieAgreement.value) {
+      const checkoutId = cookies.get('FlyTirol-checkoutId')
+      try {
+        const fetchedCheckout = await shopify.checkout.fetch(checkoutId)
+        const createdAt =
+          Date.parse(fetchedCheckout.createdAt) + 24 * 60 * 60 * 1000
+        if (
+          fetchedCheckout.ready === true &&
+          fetchedCheckout.completedAt === null &&
+          new Date().getTime() <= createdAt
+        ) {
+          // eslint-disable-next-line no-console
+          console.log('Found Valid CheckoutId ', checkoutId)
+          setCheckout(fetchedCheckout)
+          return
+        }
+      } catch (e) {
+        cookies.remove('FlyTirol-checkoutId')
+        // eslint-disable-next-line no-console
+        console.error(
+          'The CheckoutId could not be loaded from the local storage.'
+        )
+      }
+    }
+    const createdCheckout = await shopify.checkout.create()
+    setCheckout(createdCheckout)
+  }
+
+  function updateLineItems(id, e) {
+    const quantity = parseInt(e.target.value)
+    const updateIndex = unref(lineItemsChanged)
+      .map((item) => item?.id)
+      .indexOf(id)
+    if (updateIndex === -1) {
+      lineItemsChanged.value.push({ id, quantity })
+    } else {
+      const rudi = unref(lineItemsChanged)
+      rudi[updateIndex] = { id, quantity }
+      lineItemsChanged.value = rudi
+    }
+  }
+
+  async function removeItems(checkoutId) {
+    const lineItemsToRemove = unref(lineItemsChanged)
+      .filter((item) => item.quantity === 0)
+      .map((item) => item.id)
+    if (lineItemsToRemove.length !== 0) {
+      await shopify.checkout
+        .removeLineItems(checkoutId, lineItemsToRemove)
+        .then((c) => {
+          setCheckout(c)
+        })
+    }
+  }
+
+  async function refreshCart() {
+    const checkoutId = checkout.value?.id
+    if (checkoutId === undefined) return
+    await removeItems(checkoutId)
+    await updateItems(checkoutId)
+    lineItemsChanged.value = []
+  }
+
+  function resetCart() {
+    cookies.remove('FlyTirol-checkoutId')
+    loadCheckout()
+  }
+
+  async function updateItems(checkoutId) {
+    const lineItemsToUpdate = unref(lineItemsChanged).filter(
+      (item) => item.quantity !== 0
+    )
+    if (lineItemsToUpdate.length !== 0) {
+      await shopify.checkout
+        .updateLineItems(checkoutId, lineItemsToUpdate)
+        .then((c) => {
+          setCheckout(c)
+        })
+    }
   }
 
   return {
@@ -86,13 +179,21 @@ export function useShop() {
     cartItems,
     category,
     checkout,
+    isCartItems,
+    fetchCollections,
+    fetchProduct,
+    loadCheckout,
     getCourse,
     products,
+    lineItemsChanged,
+    refreshCart,
+    removeItems,
+    resetCart,
     saftyTrainings,
     setCheckout,
-    setCollections,
-    setProducts,
     tandemflights,
     travels,
+    updateItems,
+    updateLineItems,
   }
 }
