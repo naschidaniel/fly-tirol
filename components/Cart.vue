@@ -42,7 +42,7 @@
               </div>
             </td>
             <td class="text-sm md:text-base p-1 md:p-3 text-center border">
-              {{ item.variant.price | formatPrice }}
+              {{ formatPrice(item.variant.price) }}
             </td>
             <td class="p-1 sm:p-3 align-middle border">
               <div class="flex justify-center">
@@ -78,7 +78,7 @@
         <span
           >Gesamtpreis:
           <span class="font-bold">{{
-            checkout.subtotalPrice | formatPrice
+            formatPrice(checkout.subtotalPrice)
           }}</span></span
         ><br />
         <span class="text-sm"
@@ -115,6 +115,7 @@ import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
 import { useShop } from '~/composable/useShop'
+import { formatPrice } from '~/util/formatPrice'
 
 export default defineComponent({
   name: 'Cart',
@@ -133,6 +134,9 @@ export default defineComponent({
       refreshCart,
       updateLineItems,
     }
+  },
+  methods: {
+    formatPrice,
   },
 })
 </script>
