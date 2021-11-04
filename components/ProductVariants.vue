@@ -16,7 +16,7 @@
             {{ variant.title }}
           </td>
           <td class="p-1 sm:p-3 text-center border text-sm md:text-base">
-            {{ variant.price | formatPrice }}
+            {{ formatPrice(variant.price) }}
           </td>
           <td class="p-1 sm:p-3 border text-center">
             <button
@@ -38,6 +38,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useShop } from '~/composable/useShop'
+import { formatPrice } from '~/util/formatPrice'
 
 export default defineComponent({
   name: 'ProductVariants',
@@ -54,6 +55,7 @@ export default defineComponent({
     },
   },
   methods: {
+    formatPrice,
     async bookProduct(variantId) {
       const lineItemsToAdd = [
         {

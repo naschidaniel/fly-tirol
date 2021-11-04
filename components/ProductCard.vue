@@ -26,7 +26,7 @@
           <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-cash-icon class="w-4 h-4 mr-1" />
             <span v-if="price.price" class="block leading-none pt-1 font-bold">
-              {{ price.preText }} {{ price.price | formatPrice }}
+              {{ price.preText }} {{ formatPrice(price.price) }}
             </span>
             <SpinnerIcon v-else class="animate-spin h-4 w-4 text-brand" />
           </div>
@@ -68,6 +68,7 @@ import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import SpinnerIcon from './icons/SpinnerIcon.vue'
 import { useShop } from '~/composable/useShop'
+import { formatPrice } from '~/util/formatPrice'
 
 export default defineComponent({
   components: {
@@ -98,6 +99,9 @@ export default defineComponent({
     dates() {
       return this.course?.variants?.length
     },
+  },
+  methods: {
+    formatPrice,
   },
 })
 </script>
