@@ -43,8 +43,8 @@ import { formatPrice } from '~/util/formatPrice'
 export default defineComponent({
   name: 'ProductVariants',
   setup() {
-    const { checkout, products, setCheckout } = useShop()
-    return { checkout, products, setCheckout }
+    const { bookProduct, checkout, products, setCheckout } = useShop()
+    return { bookProduct, checkout, products, setCheckout }
   },
   computed: {
     productVariants() {
@@ -56,22 +56,6 @@ export default defineComponent({
   },
   methods: {
     formatPrice,
-    async bookProduct(variantId) {
-      const lineItemsToAdd = [
-        {
-          variantId,
-          quantity: 1,
-          customAttributes: [],
-        },
-      ]
-      const checkoutId = this.checkout.id
-      await this.$shopify.checkout
-        .addLineItems(checkoutId, lineItemsToAdd)
-        .then((checkout) => {
-          this.setCheckout(checkout)
-        })
-      this.$router.push({ path: '/buchen' })
-    },
   },
 })
 </script>

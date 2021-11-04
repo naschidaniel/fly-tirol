@@ -2,6 +2,7 @@ import {
   computed,
   ref,
   useRoute,
+  useRouter,
   unref,
   wrapProperty,
 } from '@nuxtjs/composition-api'
@@ -18,6 +19,7 @@ const products = ref([])
 export function useShop() {
   const cookies = useCookies()
   const route = useRoute()
+  const router = useRouter()
   const shopify = useShopify()
 
   const advancedTrainings = computed(
@@ -53,6 +55,23 @@ export function useShop() {
       checkout.value?.lineItems?.length === 0 ||
       checkout.value?.lineItems === undefined
   )
+
+  async function bookProduct(variantId) {
+    const lineItemsToAdd = [
+      {
+        variantId,
+        quantity: 1,
+        customAttributes: [],
+      },
+    ]
+    const checkoutId = this.checkout.id
+    await shopify.checkout
+      .addLineItems(checkoutId, lineItemsToAdd)
+      .then((checkout) => {
+        this.setCheckout(checkout)
+      })
+    router.push({ path: '/buchen' })
+  }
 
   function getCourse(slug) {
     const courses =
@@ -176,6 +195,7 @@ export function useShop() {
   return {
     advancedTrainings,
     basicTrainings,
+    bookProduct,
     cartItems,
     category,
     checkout,
