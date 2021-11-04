@@ -1,10 +1,10 @@
-FROM node:lts-bullseye as builder
+FROM node:14-bullseye as builder
 
 ENV TZ=Europe/Berlin
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt-get update
+RUN apt-get update -y
 
 RUN apt-get install rsync -y
 
@@ -36,7 +36,9 @@ RUN rm -rf node_modules && \
   --non-interactive \
   --production=true
 
-FROM node:lts-bullseye
+FROM node:14-bullseye
+
+RUN apt-get update -y
 
 WORKDIR /app
 
