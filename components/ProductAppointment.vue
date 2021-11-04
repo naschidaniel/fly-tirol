@@ -36,7 +36,7 @@
       >
         Buche deinen Wunschtermin
         <span v-if="isDateValid"
-          >&nbsp; {{ selectedDateTimestamp | formatDate }}</span
+          >&nbsp; {{ formatDate(selectedDateTimestamp) }}</span
         >
       </button>
     </div>
@@ -83,6 +83,7 @@ export default defineComponent({
       this.isFormValid = validation
       this.isDateValid = validation
     },
+    formatDate,
     async bookProduct(variantId) {
       if (this.selectedDate === '' || !this.isDateValid) {
         this.isDateValid = false
