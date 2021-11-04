@@ -35,26 +35,8 @@ import { useData } from '~/composable/useData'
 export default defineComponent({
   name: 'ResetCookieAgreement',
   setup() {
-    const { allCokies, isCookieAgreement } = useData()
-    return { allCokies, isCookieAgreement }
-  },
-  watch: {
-    isCookieAgreement() {
-      this.getAllCookies()
-    },
-  },
-  mounted() {
-    this.getAllCookies()
-  },
-  methods: {
-    getAllCookies() {
-      this.allCokies = this.$cookies.getAll()
-    },
-    removeAllCookies() {
-      this.$cookies.removeAll()
-      this.isCookieAgreement = false
-      this.getAllCookies()
-    },
+    const { allCokies, isCookieAgreement, removeAllCookies } = useData()
+    return { allCokies, isCookieAgreement, removeAllCookies }
   },
 })
 </script>

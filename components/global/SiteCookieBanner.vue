@@ -35,27 +35,8 @@ import { useData } from '~/composable/useData'
 export default defineComponent({
   name: 'SiteCookieBanner',
   setup() {
-    const { isCookieAgreement } = useData()
-    return { isCookieAgreement }
-  },
-  mounted() {
-    this.getCookieAgreementCookie()
-  },
-  methods: {
-    acceptCookieAgreement() {
-      this.$cookies.set('FlyTirol-cookieAgreement', 'true', {
-        path: '/',
-        maxAge: 60 * 60 * 24 * 7 * 31,
-        sameSite: true,
-      })
-      this.isCookieAgreement = true
-    },
-    getCookieAgreementCookie() {
-      const cookieAgreement = this.$cookies.get('FlyTirol-cookieAgreement')
-      if (cookieAgreement) {
-        this.isCookieAgreement = cookieAgreement
-      }
-    },
+    const { isCookieAgreement, acceptCookieAgreement } = useData()
+    return { isCookieAgreement, acceptCookieAgreement }
   },
 })
 </script>
