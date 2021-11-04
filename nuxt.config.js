@@ -52,8 +52,6 @@ export default {
 
   css: ['~/assets/styles/main.scss'],
 
-  plugins: ['~/plugins/formatters.js'],
-
   components: true,
 
   buildModules: [
