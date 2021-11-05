@@ -1,10 +1,4 @@
-import {
-  computed,
-  onMounted,
-  ref,
-  watch,
-  wrapProperty,
-} from '@nuxtjs/composition-api'
+import { onMounted, ref, watch, wrapProperty } from '@nuxtjs/composition-api'
 import { useMedia } from './useMedia'
 
 const useCookies = wrapProperty('$cookies', false)
@@ -15,11 +9,10 @@ const isOpen = ref(false)
 
 export function useData() {
   const cookies = useCookies()
-  const buildtime = computed(() =>
-    process.env?.NUXT_ENV_CURRENT_DATE === undefined
+  const buildtime =
+    process.env.NUXT_ENV_CURRENT_DATE === undefined
       ? undefined
       : Date.parse(process.env.NUXT_ENV_CURRENT_DATE)
-  )
 
   watch(isCookieAgreement, (_newValue, _oldValue) => {
     getAllCookies()

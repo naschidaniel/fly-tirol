@@ -1,5 +1,4 @@
 export default {
-  dev: process.env.NODE_ENV !== 'production',
   target: 'server',
   head: {
     titleTemplate: 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',

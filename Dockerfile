@@ -12,7 +12,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN echo "NUXT_ENV_CURRENT_DATE=\"$(date '+%F %H:%M:%S')\"" >> .env
+RUN echo "NUXT_ENV_CURRENT_DATE=\"$(date '+%FT%H:%M:%S')\"" >> .env
 
 RUN yarn install \
   --non-interactive \
@@ -20,7 +20,9 @@ RUN yarn install \
 
 RUN yarn build
 
-RUN rm -rf .git && rm -rf ./dist/media
+RUN rm -rf .git
+
+RUN rm -rf ./dist/media
 
 RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
 
@@ -30,8 +32,9 @@ RUN yarn optimize-images
 
 RUN rsync -a ./dist/media/ ./static/media/
 
-RUN rm -rf node_modules && \
-  NODE_ENV=production yarn install \
+RUN rm -rf node_modules
+
+RUN NODE_ENV=production yarn install \
   --pure-lockfile \
   --non-interactive \
   --production=true

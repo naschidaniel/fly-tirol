@@ -15,15 +15,15 @@ import SiteFooter from '~/components/global/SiteFooter.vue'
 import SiteHeader from '~/components/global/SiteHeader.vue'
 
 export default {
-  dev: process.dev,
   components: {
     SiteCookieBanner,
     SiteFooter,
     SiteHeader,
   },
   mounted() {
-    // eslint-disable-next-line no-unused-expressions
-    process.dev === true ? document.body.classList.add('debug-screens') : ''
+    if (process.env.NODE_ENV === 'development') {
+      document.body.classList.add('debug-screens')
+    }
   },
 }
 </script>
