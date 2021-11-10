@@ -25,6 +25,7 @@
           to="/sicherheitstrainings"
         />
         <NavigationNavbarLink name="Reisen" to="/reisen" />
+        <NavigationNavbarLink name="Termine" to="/termine" />
         <NavigationNavbarLink name="Team" to="/team" />
       </nav>
     </div>
