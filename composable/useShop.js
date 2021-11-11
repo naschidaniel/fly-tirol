@@ -11,7 +11,11 @@ import { isCookieAgreement } from './useData'
 const useCookies = wrapProperty('$cookies', false)
 const useShopify = wrapProperty('$shopify', false)
 
-const collections = ref([])
+const advancedTrainings = ref([])
+const basicTrainings = ref([])
+const saftyTrainings = ref([])
+const tandemflights = ref([])
+const travels = ref([])
 const checkout = ref({})
 const lineItemsChanged = ref([])
 const products = ref([])
@@ -22,32 +26,7 @@ export function useShop() {
   const router = useRouter()
   const shopify = useShopify()
 
-  const advancedTrainings = computed(
-    () =>
-      collections.value.filter((c) => c.title === 'Fortbildung')[0]?.products
-  )
-
-  const basicTrainings = computed(
-    () => collections.value.filter((c) => c.title === 'Ausbildung')[0]?.products
-  )
-
   const cartItems = computed(() => checkout.value?.lineItems)
-
-  const saftyTrainings = computed(
-    () =>
-      collections.value.filter((c) => c.title === 'Sicherheitstrainings')[0]
-        ?.products
-  )
-
-  const tandemflights = computed(
-    () =>
-      collections.value.filter((c) => c.title === 'Tandemflüge')[0]?.products
-  )
-
-  const travels = computed(
-    () => collections.value.filter((c) => c.title === 'Reisen')[0]?.products
-  )
-
   const category = route.value.name
 
   const isCartItems = computed(
@@ -101,13 +80,24 @@ export function useShop() {
   }
 
   async function fetchCollections() {
-    const change = await shopify.collection.fetchAllWithProducts()
-    collections.value = change
+    const collections = await shopify.collection.fetchAllWithProducts()
+    advancedTrainings.value = collections.filter(
+      (c) => c.title === 'Fortbildung'
+    )[0]?.products
+    basicTrainings.value = collections.filter(
+      (c) => c.title === 'Ausbildung'
+    )[0]?.products
+    saftyTrainings.value = collections.filter(
+      (c) => c.title === 'Sicherheitstrainings'
+    )[0]?.products
+    tandemflights.value = collections.filter(
+      (c) => c.title === 'Tandemflüge'
+    )[0]?.products
+    travels.value = collections.filter((c) => c.title === 'Reisen')[0]?.products
   }
 
   async function fetchProduct() {
-    const change = await shopify.product.fetchAll()
-    products.value = change
+    products.value = await shopify.product.fetchAll()
   }
 
   async function loadCheckout() {
@@ -147,9 +137,9 @@ export function useShop() {
     if (updateIndex === -1) {
       lineItemsChanged.value.push({ id, quantity })
     } else {
-      const rudi = unref(lineItemsChanged)
-      rudi[updateIndex] = { id, quantity }
-      lineItemsChanged.value = rudi
+      const change = unref(lineItemsChanged)
+      change[updateIndex] = { id, quantity }
+      lineItemsChanged.value = change
     }
   }
 
