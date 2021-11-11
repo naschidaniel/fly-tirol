@@ -13,6 +13,7 @@ const useShopify = wrapProperty('$shopify', false)
 
 const advancedTrainings = ref([])
 const basicTrainings = ref([])
+const calender = ref([])
 const saftyTrainings = ref([])
 const tandemflights = ref([])
 const travels = ref([])
@@ -27,7 +28,6 @@ export function useShop() {
   const shopify = useShopify()
 
   const cartItems = computed(() => checkout.value?.lineItems)
-  const category = route.value.name
 
   const isCartItems = computed(
     () =>
@@ -43,26 +43,27 @@ export function useShop() {
         customAttributes: [],
       },
     ]
-    const checkoutId = this.checkout.id
+    const checkoutId = unref(checkout).id
     await shopify.checkout
       .addLineItems(checkoutId, lineItemsToAdd)
       .then((checkout) => {
-        this.setCheckout(checkout)
+        setCheckout(checkout)
       })
     router.push({ path: '/buchen' })
   }
 
   function getCourse(slug) {
+    const routeName = route.value.name
     const courses =
-      category === 'ausbildung'
+      routeName === 'ausbildung'
         ? unref(basicTrainings)
-        : category === 'fortbildung'
+        : routeName === 'fortbildung'
         ? unref(advancedTrainings)
-        : category === 'reisen'
+        : routeName === 'reisen'
         ? unref(travels)
-        : category === 'tandemfliegen'
+        : routeName === 'tandemfliegen'
         ? unref(tandemflights)
-        : category === 'sicherheitstrainings'
+        : routeName === 'sicherheitstrainings'
         ? unref(saftyTrainings)
         : []
     return courses?.find((c) => c?.handle === slug)
@@ -97,6 +98,30 @@ export function useShop() {
   }
 
   async function fetchProducts() {
+    const fetchedProducts = await shopify.product.fetchAll()
+    calender.value = fetchedProducts
+      .flatMap((p) =>
+        p.variants.map((v) => {
+          return {
+            title: p.title,
+            productType: p,
+            slug: p.handle,
+            dateString: v.title,
+            id: v.id,
+          }
+        })
+      )
+      .filter(
+        (e) =>
+          ![
+            'Höhenflug',
+            'Panoramaflug',
+            'Tandemsafari',
+            'Tandemflug Gutscheincode',
+            'Tandemflug Geschenkkarte',
+          ].includes(e.title)
+      )
+    products.value = fetchedProducts
   }
 
   async function loadCheckout() {
@@ -185,8 +210,8 @@ export function useShop() {
     advancedTrainings,
     basicTrainings,
     bookProduct,
+    calender,
     cartItems,
-    category,
     checkout,
     isCartItems,
     fetchCollections,
