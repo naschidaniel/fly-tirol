@@ -96,8 +96,7 @@ export function useShop() {
     travels.value = collections.filter((c) => c.title === 'Reisen')[0]?.products
   }
 
-  async function fetchProduct() {
-    products.value = await shopify.product.fetchAll()
+  async function fetchProducts() {
   }
 
   async function loadCheckout() {
@@ -191,7 +190,7 @@ export function useShop() {
     checkout,
     isCartItems,
     fetchCollections,
-    fetchProduct,
+    fetchProducts,
     loadCheckout,
     getCourse,
     products,
