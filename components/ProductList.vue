@@ -15,7 +15,7 @@
       <div v-for="page in pages" :key="page.title">
         <product-card
           class="p-4"
-          :slug="`${category}/${page.slug}`"
+          :slug="`${routeName}/${page.slug}`"
           :page="page"
         />
       </div>
@@ -34,8 +34,8 @@ export default defineComponent({
     pages: { type: Array, required: true },
   },
   setup() {
-    const { category, getCourse } = useShop()
-    return { category, getCourse }
+    const { routeName, getCourse } = useShop()
+    return { routeName, getCourse }
   },
 })
 </script>
