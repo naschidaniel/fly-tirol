@@ -1,4 +1,10 @@
-import { onMounted, ref, watch, wrapProperty } from '@nuxtjs/composition-api'
+import {
+  onMounted,
+  ref,
+  watch,
+  wrapProperty,
+  useRoute,
+} from '@nuxtjs/composition-api'
 import { useMedia } from './useMedia'
 
 const useCookies = wrapProperty('$cookies', false)
@@ -9,10 +15,15 @@ const isOpen = ref(false)
 
 export function useData() {
   const cookies = useCookies()
+  const route = useRoute()
+
   const buildtime =
     process.env.NUXT_ENV_CURRENT_DATE === undefined
       ? undefined
       : Date.parse(process.env.NUXT_ENV_CURRENT_DATE)
+
+  const routeName = route.value.name
+  const routeSlug = route.value.params.slug
 
   watch(isCookieAgreement, (_newValue, _oldValue) => {
     getAllCookies()
@@ -58,5 +69,7 @@ export function useData() {
     isCookieAgreement,
     isOpen,
     removeAllCookies,
+    routeName,
+    routeSlug,
   }
 }
