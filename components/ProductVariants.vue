@@ -37,20 +37,20 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
+import { useData } from '~/composable/useData'
 import { useShop } from '~/composable/useShop'
 import { formatPrice } from '~/util/formatPrice'
 
 export default defineComponent({
   name: 'ProductVariants',
   setup() {
-    const { bookProduct, checkout, products, setCheckout } = useShop()
-    return { bookProduct, checkout, products, setCheckout }
+    const { routeSlug } = useData()
+    const { bookProduct, products } = useShop()
+    return { bookProduct, products, routeSlug }
   },
   computed: {
     productVariants() {
-      const product = this.products.filter(
-        (p) => p.handle === this.$route.params.slug
-      )
+      const product = this.products.filter((p) => p.handle === this.routeSlug)
       return product[0]?.variants
     },
   },
