@@ -80,24 +80,23 @@ export function useShop() {
     checkout.value = change
   }
 
-  async function fetchCollections() {
-    const collections = await shopify.collection.fetchAllWithProducts()
-    advancedTrainings.value = collections.filter(
+  async function initShop() {
+    const fetchedCollections = await shopify.collection.fetchAllWithProducts()
+    advancedTrainings.value = fetchedCollections.filter(
       (c) => c.title === 'Fortbildung'
     )[0]?.products
-    basicTrainings.value = collections.filter(
+    basicTrainings.value = fetchedCollections.filter(
       (c) => c.title === 'Ausbildung'
     )[0]?.products
-    saftyTrainings.value = collections.filter(
+    saftyTrainings.value = fetchedCollections.filter(
       (c) => c.title === 'Sicherheitstrainings'
     )[0]?.products
-    tandemflights.value = collections.filter(
-      (c) => c.title === 'Tandemflüge'
+    tandemflights.value = fetchedCollections.filter(
+      (c) => c.title === 'Tandemfliegen'
     )[0]?.products
-    travels.value = collections.filter((c) => c.title === 'Reisen')[0]?.products
-  }
-
-  async function fetchProducts() {
+    travels.value = fetchedCollections.filter(
+      (c) => c.title === 'Reisen'
+    )[0]?.products
     const fetchedProducts = await shopify.product.fetchAll()
     calender.value = fetchedProducts
       .flatMap((p) =>
@@ -214,8 +213,7 @@ export function useShop() {
     cartItems,
     checkout,
     isCartItems,
-    fetchCollections,
-    fetchProducts,
+    initShop,
     loadCheckout,
     getCourse,
     products,
