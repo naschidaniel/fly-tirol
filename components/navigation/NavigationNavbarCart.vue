@@ -19,10 +19,11 @@ export default defineComponent({
   name: 'NavigationNavbarCart',
   components: { OutlineShoppingCartIcon },
   setup() {
-    const { checkout, fetchCollections, fetchProduct, loadCheckout } = useShop()
+    const { checkout, fetchCollections, fetchProducts, loadCheckout } =
+      useShop()
     onMounted(() => {
       fetchCollections()
-      fetchProduct()
+      fetchProducts()
       loadCheckout()
     })
     return {

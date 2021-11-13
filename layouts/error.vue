@@ -49,11 +49,11 @@ export default defineComponent({
     },
   },
   setup() {
-    const { fetchCollections, fetchProduct, resetCart } = useShop()
+    const { fetchCollections, fetchProducts, resetCart } = useShop()
     onMounted(() => {
       resetCart()
       fetchCollections()
-      fetchProduct()
+      fetchProducts()
     })
   },
 })
