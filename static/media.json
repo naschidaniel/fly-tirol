@@ -592,19 +592,6 @@
     "alt": "Teampic Hannah vor Flugschule Fly Tirol",
     "title": "Teampic Hannah "
   },
-  "/media/team/jan.jpg": {
-    "url": "/media/team/jan.jpg",
-    "path": "/media/team/",
-    "file": "jan.jpg",
-    "dimensions": {
-      "height": 1890,
-      "width": 1260,
-      "type": "jpg",
-      "ratio": 0.667
-    },
-    "alt": "Teampic Jan Kuhnert vor Flugschule Fly Tirol",
-    "title": "Teampic Jan"
-  },
   "/media/team/kilian.jpg": {
     "url": "/media/team/kilian.jpg",
     "path": "/media/team/",

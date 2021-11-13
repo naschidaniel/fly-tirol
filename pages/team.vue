@@ -39,13 +39,6 @@ export default {
             'Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)',
         },
         {
-          name: 'Jan Kuhnert',
-          picture: '/media/team/jan.jpg',
-          position: 'Geschäftsführer, kaufmännische Leitung und Management',
-          information:
-            'Jan hat im Jahr 2000 in der Flugschule Westendorf mit dem Fliegen angefangen und so seine Leidenschaft für das Paragleiten entdeckt.',
-        },
-        {
           name: 'Kilian Kuhnert',
           picture: '/media/team/kilian.jpg',
           position: 'Orginisation Tandemflüge und Ausbildung',
