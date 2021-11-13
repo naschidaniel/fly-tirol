@@ -197,19 +197,6 @@
     "alt": "gleitschirm wolken himmel berge felsen gardasee acro paragliding infinity roll sebastian kahn sicherheitstraining",
     "title": "Sebastian Kahn beim Sicherheitstraining am Gardasee"
   },
-  "/media/reisen/flugreise-oludeniz-turkei.png": {
-    "url": "/media/reisen/flugreise-oludeniz-turkei.png",
-    "path": "/media/reisen/",
-    "file": "flugreise-oludeniz-turkei.png",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "png",
-      "ratio": 1.5
-    },
-    "alt": "Gleitschirm Flug Reise Berg See Meer",
-    "title": "Sebaistan auf den Weg in ein neues Abenteuer"
-  },
   "/media/reisen/infinity_over_village.jpg": {
     "url": "/media/reisen/infinity_over_village.jpg",
     "path": "/media/reisen/",
@@ -222,6 +209,19 @@
     },
     "alt": "paragleiter schirm see berge stadt felsen sebastian kahn gardasee italien dorf küste himmel wolken strand",
     "title": "Sebastian Kahn beim acro paragleiten am gardasee in Italien"
+  },
+  "/media/reisen/oeluedeniz-tuerkei.png": {
+    "url": "/media/reisen/oeluedeniz-tuerkei.png",
+    "path": "/media/reisen/",
+    "file": "oeluedeniz-tuerkei.png",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "png",
+      "ratio": 1.5
+    },
+    "alt": "Gleitschirm Flug Reise Berg See Meer",
+    "title": "Sebaistan auf den Weg in ein neues Abenteuer"
   },
   "/media/reisen/paragliding_lago_de_garda.jpg": {
     "url": "/media/reisen/paragliding_lago_de_garda.jpg",
