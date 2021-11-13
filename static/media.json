@@ -118,31 +118,18 @@
     "alt": "Flugschüler Paragleiten Gleitschirm Wiese Berg",
     "title": "Flugschüler kurz vor der Startvorbereitung"
   },
-  "/media/ausbildung/hoehenflugseminar.jpg": {
-    "url": "/media/ausbildung/hoehenflugseminar.jpg",
+  "/media/ausbildung/hoehenflugkurs.jpg": {
+    "url": "/media/ausbildung/hoehenflugkurs.jpg",
     "path": "/media/ausbildung/",
-    "file": "hoehenflugseminar.jpg",
+    "file": "hoehenflugkurs.jpg",
     "dimensions": {
       "height": 899,
       "width": 1599,
       "type": "jpg",
       "ratio": 1.779
     },
-    "alt": "Gleitschirm Alpen Fly Tirol Flugschule Tagesbetreuung",
-    "title": "Tagesbetreuung bei der Flugschule Fly Tirol"
-  },
-  "/media/ausbildung/hoehenflugseminartagesbetreuung.jpg": {
-    "url": "/media/ausbildung/hoehenflugseminartagesbetreuung.jpg",
-    "path": "/media/ausbildung/",
-    "file": "hoehenflugseminartagesbetreuung.jpg",
-    "dimensions": {
-      "height": 2048,
-      "width": 1152,
-      "type": "jpg",
-      "ratio": 0.563
-    },
-    "alt": "Gleitschirm Alpen Fly Tirol Flugschule Tagesbetreuung",
-    "title": "Tagesbetreuung bei der Flugschule Fly Tirol"
+    "alt": "Gleitschirm Alpen Fly Tirol Flugschule Hoehenflugkurs",
+    "title": "Hoehenflugkurs bei der Flugschule Fly Tirol"
   },
   "/media/ausbildung/kombikurs.jpg": {
     "url": "/media/ausbildung/kombikurs.jpg",
@@ -183,6 +170,19 @@
     },
     "alt": "Gleitschirm Schnupperkurs Ausbildung Wiese Paragliding",
     "title": "Vier Flugschüler bei einem Schnupperkurs in Westendorf"
+  },
+  "/media/ausbildung/tagesbetreuung.jpg": {
+    "url": "/media/ausbildung/tagesbetreuung.jpg",
+    "path": "/media/ausbildung/",
+    "file": "tagesbetreuung.jpg",
+    "dimensions": {
+      "height": 2048,
+      "width": 1152,
+      "type": "jpg",
+      "ratio": 0.563
+    },
+    "alt": "Gleitschirm Alpen Fly Tirol Flugschule Tagesbetreuung",
+    "title": "Tagesbetreuung bei der Flugschule Fly Tirol"
   },
   "/media/fortbildung/fortbildung.jpg": {
     "url": "/media/fortbildung/fortbildung.jpg",

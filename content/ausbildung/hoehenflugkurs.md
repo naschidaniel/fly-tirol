@@ -2,7 +2,7 @@
 title: Höhenflugkurs
 description: Bei einem Höhenflugkurs der Fly Tirol Flugschule lernst du unter der Begleitung von absoluten Profis Sicherheit beim Starten, Landen und der Kurventechnik. Während dieses Seminars absolvierst du möglichst viele Flüge um den 40 Höhenflügen die für die Prüfung des A-Scheins notwendig sind, näher zu kommen.
 location: Westendorf
-image: /media/ausbildung/hoehenflugseminar.jpg
+image: /media/ausbildung/hoehenflugkurs.jpg
 order: 3
 ---
 
