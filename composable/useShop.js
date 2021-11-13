@@ -14,6 +14,7 @@ const useShopify = wrapProperty('$shopify', false)
 const advancedTrainings = ref([])
 const basicTrainings = ref([])
 const calender = ref([])
+const calenderProductsChecked = ref([])
 const saftyTrainings = ref([])
 const tandemflights = ref([])
 const travels = ref([])
@@ -28,6 +29,15 @@ export function useShop() {
   const shopify = useShopify()
 
   const cartItems = computed(() => checkout.value?.lineItems)
+  const calenderFiltered = computed(() => {
+    const rudi = unref(calenderProductsChecked)
+    return unref(calender).filter((c) => rudi.includes(c.title))
+  })
+  const calenderProductsAvailable = computed(() =>
+    [...new Set(calender.value.map((c) => c.title))].sort((a, b) =>
+      a.localeCompare(b)
+    )
+  )
 
   const isCartItems = computed(
     () =>
@@ -98,15 +108,17 @@ export function useShop() {
       (c) => c.title === 'Reisen'
     )[0]?.products
     const fetchedProducts = await shopify.product.fetchAll()
-    calender.value = fetchedProducts
+    const calenderItems = fetchedProducts
       .flatMap((p) =>
         p.variants.map((v) => {
           return {
             title: p.title,
-            productType: p,
+            productType: p.productType,
             slug: p.handle,
             dateString: v.title,
             id: v.id,
+            startDate: undefined,
+            endDate: undefined,
           }
         })
       )
@@ -116,10 +128,34 @@ export function useShop() {
             'Höhenflug',
             'Panoramaflug',
             'Tandemsafari',
-            'Tandemflug Gutscheincode',
             'Tandemflug Geschenkkarte',
           ].includes(e.title)
       )
+    calenderItems.forEach((s) => {
+      try {
+        const startDateArray = s.dateString.split(' ')[0].split('.')
+        const startDate = new Date(
+          `20${startDateArray[2]}-${startDateArray[1]}-${startDateArray[0]}`
+        )
+        const endDateArray = s.dateString.split(' ').splice(-1)[0].split('.')
+        const endDate =
+          startDateArray.join() !== endDateArray.join()
+            ? new Date(
+                `20${endDateArray[2]}-${endDateArray[1]}-${endDateArray[0]}`
+              )
+            : undefined
+        s.startDate = startDate
+        s.endDate = endDate
+      } catch (e) {
+        throw new Error(
+          `The Kursdatum ${s.dateString} of the course could not be parsed`
+        )
+      }
+    })
+    calender.value = calenderItems.sort((a, b) => a.startDate - b.startDate)
+    calenderProductsChecked.value = [
+      ...new Set(calender.value.map((c) => c.title)),
+    ].filter((p) => p !== 'Tagesbetreuung')
     products.value = fetchedProducts
   }
 
@@ -150,6 +186,15 @@ export function useShop() {
     }
     const createdCheckout = await shopify.checkout.create()
     setCheckout(createdCheckout)
+  }
+
+  function setCheckedProducts(change) {
+    const rudi = unref(calenderProductsChecked)
+    if (rudi.includes(change)) {
+      calenderProductsChecked.value = rudi.filter((c) => c !== change)
+      return
+    }
+    calenderProductsChecked.value.push(change)
   }
 
   function updateLineItems(id, e) {
@@ -210,6 +255,9 @@ export function useShop() {
     basicTrainings,
     bookProduct,
     calender,
+    calenderFiltered,
+    calenderProductsAvailable,
+    calenderProductsChecked,
     cartItems,
     checkout,
     isCartItems,
@@ -223,6 +271,7 @@ export function useShop() {
     resetCart,
     saftyTrainings,
     setCheckout,
+    setCheckedProducts,
     tandemflights,
     travels,
     updateItems,
