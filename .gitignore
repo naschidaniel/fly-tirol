@@ -98,3 +98,4 @@ deploy.sh
 
 # run docker
 run.sh
+flytirol.tar.gz
