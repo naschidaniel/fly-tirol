@@ -14,6 +14,7 @@ const useShopify = wrapProperty('$shopify', false)
 const advancedTrainings = ref([])
 const basicTrainings = ref([])
 const calender = ref([])
+const calenderCategoriesChecked = ref([])
 const calenderProductsChecked = ref([])
 const saftyTrainings = ref([])
 const tandemflights = ref([])
@@ -29,15 +30,33 @@ export function useShop() {
   const shopify = useShopify()
 
   const cartItems = computed(() => checkout.value?.lineItems)
+
   const calenderFiltered = computed(() => {
-    const rudi = unref(calenderProductsChecked)
-    return unref(calender).filter((c) => rudi.includes(c.title))
+    const categoriesSelected = unref(calenderCategoriesChecked)
+    const productsSelected = unref(calenderProductsChecked)
+    return unref(calender).filter(
+      (c) =>
+        categoriesSelected.includes(c.productType) &&
+        productsSelected.includes(c.title)
+    )
   })
-  const calenderProductsAvailable = computed(() =>
-    [...new Set(calender.value.map((c) => c.title))].sort((a, b) =>
+
+  const calenderCategoriesAvailable = computed(() =>
+    [...new Set(calender.value.map((c) => c.productType))].sort((a, b) =>
       a.localeCompare(b)
     )
   )
+
+  const calenderProductsAvailable = computed(() => {
+    const selectedCategories = unref(calenderCategoriesChecked)
+    return [
+      ...new Set(
+        calender.value
+          .filter((e) => selectedCategories.includes(e.productType))
+          .map((c) => c.title)
+      ),
+    ].sort((a, b) => a.localeCompare(b))
+  })
 
   const isCartItems = computed(
     () =>
@@ -153,6 +172,9 @@ export function useShop() {
       }
     })
     calender.value = calenderItems.sort((a, b) => a.startDate - b.startDate)
+    calenderCategoriesChecked.value = [
+      ...new Set(calender.value.map((c) => c.productType)),
+    ]
     calenderProductsChecked.value = [
       ...new Set(calender.value.map((c) => c.title)),
     ].filter((p) => p !== 'Tagesbetreuung')
@@ -188,10 +210,23 @@ export function useShop() {
     setCheckout(createdCheckout)
   }
 
+  function setCheckedCategories(change) {
+    const oldCalenderCategoriesChecked = unref(calenderCategoriesChecked)
+    if (oldCalenderCategoriesChecked.includes(change)) {
+      calenderCategoriesChecked.value = oldCalenderCategoriesChecked.filter(
+        (c) => c !== change
+      )
+      return
+    }
+    calenderCategoriesChecked.value.push(change)
+  }
+
   function setCheckedProducts(change) {
-    const rudi = unref(calenderProductsChecked)
-    if (rudi.includes(change)) {
-      calenderProductsChecked.value = rudi.filter((c) => c !== change)
+    const oldCalenderProductsChecked = unref(calenderProductsChecked)
+    if (oldCalenderProductsChecked.includes(change)) {
+      calenderProductsChecked.value = oldCalenderProductsChecked.filter(
+        (c) => c !== change
+      )
       return
     }
     calenderProductsChecked.value.push(change)
@@ -237,6 +272,11 @@ export function useShop() {
     loadCheckout()
   }
 
+  function resetFilter() {
+    calenderCategoriesChecked.value = unref(calenderCategoriesAvailable)
+    calenderProductsChecked.value = unref(calenderProductsAvailable)
+  }
+
   async function updateItems(checkoutId) {
     const lineItemsToUpdate = unref(lineItemsChanged).filter(
       (item) => item.quantity !== 0
@@ -257,7 +297,9 @@ export function useShop() {
     calender,
     calenderFiltered,
     calenderProductsAvailable,
+    calenderCategoriesAvailable,
     calenderProductsChecked,
+    calenderCategoriesChecked,
     cartItems,
     checkout,
     isCartItems,
@@ -269,8 +311,10 @@ export function useShop() {
     refreshCart,
     removeItems,
     resetCart,
+    resetFilter,
     saftyTrainings,
     setCheckout,
+    setCheckedCategories,
     setCheckedProducts,
     tandemflights,
     travels,
