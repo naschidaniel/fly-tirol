@@ -24,6 +24,18 @@
             </span>
           </div>
           <div class="flex items-center text-sm -ml-1 mb-2">
+            <OutlinePaperPlaneIconVue class="w-4 h-4" />
+            <span class="block leading-none pt-1 ml-1">
+              {{ page.praxis }}
+            </span>
+          </div>
+          <div class="flex items-center text-sm -ml-1 mb-2">
+            <OutlineAcademicCapIconVue class="w-4 h-4" />
+            <span class="block leading-none pt-1 ml-1">
+              {{ page.theorie }}
+            </span>
+          </div>
+          <div class="flex items-center text-sm -ml-1 mb-2">
             <outline-cash-icon class="w-4 h-4 mr-1" />
             <span v-if="price.price" class="block leading-none pt-1 font-bold">
               {{ price.preText }} {{ formatPrice(price.price) }}
@@ -62,9 +74,11 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
+import OutlineAcademicCapIconVue from './icons/OutlineAcademicCapIcon.vue'
 import OutlineCashIcon from './icons/OutlineCashIcon.vue'
 import OutlineCalendarIcon from './icons/OutlineCalendarIcon.vue'
 import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
+import OutlinePaperPlaneIconVue from './icons/OutlinePaperPlaneIcon.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import SpinnerIcon from './icons/SpinnerIcon.vue'
 import { useShop } from '~/composable/useShop'
@@ -72,9 +86,11 @@ import { formatPrice } from '~/util/formatPrice'
 
 export default defineComponent({
   components: {
+    OutlineAcademicCapIconVue,
     OutlineCashIcon,
     OutlineCalendarIcon,
     OutlineLocationMarkerIcon,
+    OutlinePaperPlaneIconVue,
     ResponsiveImage,
     SpinnerIcon,
   },
