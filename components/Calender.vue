@@ -8,7 +8,8 @@
           :key="categorie"
           class="inline"
         >
-          <span
+          <button
+            :aria-label="`Set Product Filter for ${categorie}`"
             class="
               inline-flex
               items-center
@@ -21,7 +22,6 @@
               text-gray-900
               bg-gray-100
               rounded-full
-              cursor-pointer
             "
             @click="setCheckedCategories(categorie)"
           >
@@ -32,7 +32,7 @@
               <OutlineXIcon class="text-red-400" />
             </span>
             {{ categorie }}
-          </span>
+          </button>
         </div>
       </div>
       <div class="md:w-2/3">
@@ -42,7 +42,8 @@
           :key="product"
           class="inline"
         >
-          <span
+          <button
+            :aria-label="`Set Product Filter for ${product}`"
             class="
               inline-flex
               items-center
@@ -55,7 +56,6 @@
               text-gray-900
               bg-gray-100
               rounded-full
-              cursor-pointer
             "
             @click="setCheckedProducts(product)"
           >
@@ -66,7 +66,7 @@
               <OutlineXIcon class="text-red-400" />
             </span>
             {{ product }}
-          </span>
+          </button>
         </div>
       </div>
     </div>
@@ -112,6 +112,7 @@
         <div class="mb-2 flex justify-between">
           {{ entry.dateString }}
           <button
+            :aria-label="`Book ${entry.title} - {{ entry.dateString }}`"
             class="cursor-pointer btn-primary"
             @click.prevent="bookProduct(entry.id)"
           >
@@ -120,7 +121,11 @@
         </div>
       </div>
       <div v-if="!calenderFiltered.length >= 1">
-        <button class="btn-primary" @click="resetFilter()">
+        <button
+          aria-label="Reset filter"
+          class="btn-primary"
+          @click="resetFilter()"
+        >
           Filter zurücksetzen
         </button>
       </div>
