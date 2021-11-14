@@ -13,6 +13,9 @@ const useShopify = wrapProperty('$shopify', false)
 
 const advancedTrainings = ref([])
 const basicTrainings = ref([])
+const calender = ref([])
+const calenderCategoriesChecked = ref([])
+const calenderProductsChecked = ref([])
 const saftyTrainings = ref([])
 const tandemflights = ref([])
 const travels = ref([])
@@ -27,7 +30,33 @@ export function useShop() {
   const shopify = useShopify()
 
   const cartItems = computed(() => checkout.value?.lineItems)
-  const category = route.value.name
+
+  const calenderFiltered = computed(() => {
+    const categoriesSelected = unref(calenderCategoriesChecked)
+    const productsSelected = unref(calenderProductsChecked)
+    return unref(calender).filter(
+      (c) =>
+        categoriesSelected.includes(c.productType) &&
+        productsSelected.includes(c.title)
+    )
+  })
+
+  const calenderCategoriesAvailable = computed(() =>
+    [...new Set(calender.value.map((c) => c.productType))].sort((a, b) =>
+      a.localeCompare(b)
+    )
+  )
+
+  const calenderProductsAvailable = computed(() => {
+    const selectedCategories = unref(calenderCategoriesChecked)
+    return [
+      ...new Set(
+        calender.value
+          .filter((e) => selectedCategories.includes(e.productType))
+          .map((c) => c.title)
+      ),
+    ].sort((a, b) => a.localeCompare(b))
+  })
 
   const isCartItems = computed(
     () =>
@@ -43,26 +72,27 @@ export function useShop() {
         customAttributes: [],
       },
     ]
-    const checkoutId = this.checkout.id
+    const checkoutId = unref(checkout).id
     await shopify.checkout
       .addLineItems(checkoutId, lineItemsToAdd)
       .then((checkout) => {
-        this.setCheckout(checkout)
+        setCheckout(checkout)
       })
     router.push({ path: '/buchen' })
   }
 
   function getCourse(slug) {
+    const routeName = route.value.name
     const courses =
-      category === 'ausbildung'
+      routeName === 'ausbildung'
         ? unref(basicTrainings)
-        : category === 'fortbildung'
+        : routeName === 'fortbildung'
         ? unref(advancedTrainings)
-        : category === 'reisen'
+        : routeName === 'reisen'
         ? unref(travels)
-        : category === 'tandemfliegen'
+        : routeName === 'tandemfliegen'
         ? unref(tandemflights)
-        : category === 'sicherheitstrainings'
+        : routeName === 'sicherheitstrainings'
         ? unref(saftyTrainings)
         : []
     return courses?.find((c) => c?.handle === slug)
@@ -79,25 +109,76 @@ export function useShop() {
     checkout.value = change
   }
 
-  async function fetchCollections() {
-    const collections = await shopify.collection.fetchAllWithProducts()
-    advancedTrainings.value = collections.filter(
+  async function initShop() {
+    const fetchedCollections = await shopify.collection.fetchAllWithProducts()
+    advancedTrainings.value = fetchedCollections.filter(
       (c) => c.title === 'Fortbildung'
     )[0]?.products
-    basicTrainings.value = collections.filter(
+    basicTrainings.value = fetchedCollections.filter(
       (c) => c.title === 'Ausbildung'
     )[0]?.products
-    saftyTrainings.value = collections.filter(
+    saftyTrainings.value = fetchedCollections.filter(
       (c) => c.title === 'Sicherheitstrainings'
     )[0]?.products
-    tandemflights.value = collections.filter(
-      (c) => c.title === 'Tandemflüge'
+    tandemflights.value = fetchedCollections.filter(
+      (c) => c.title === 'Tandemfliegen'
     )[0]?.products
-    travels.value = collections.filter((c) => c.title === 'Reisen')[0]?.products
-  }
-
-  async function fetchProduct() {
-    products.value = await shopify.product.fetchAll()
+    travels.value = fetchedCollections.filter(
+      (c) => c.title === 'Reisen'
+    )[0]?.products
+    const fetchedProducts = await shopify.product.fetchAll()
+    const calenderItems = fetchedProducts
+      .flatMap((p) =>
+        p.variants.map((v) => {
+          return {
+            title: p.title,
+            productType: p.productType,
+            slug: p.handle,
+            dateString: v.title,
+            id: v.id,
+            startDate: undefined,
+            endDate: undefined,
+          }
+        })
+      )
+      .filter(
+        (e) =>
+          ![
+            'Höhenflug',
+            'Panoramaflug',
+            'Tandemsafari',
+            'Tandemflug Geschenkkarte',
+          ].includes(e.title)
+      )
+    calenderItems.forEach((s) => {
+      try {
+        const startDateArray = s.dateString.split(' ')[0].split('.')
+        const startDate = new Date(
+          `20${startDateArray[2]}-${startDateArray[1]}-${startDateArray[0]}`
+        )
+        const endDateArray = s.dateString.split(' ').splice(-1)[0].split('.')
+        const endDate =
+          startDateArray.join() !== endDateArray.join()
+            ? new Date(
+                `20${endDateArray[2]}-${endDateArray[1]}-${endDateArray[0]}`
+              )
+            : undefined
+        s.startDate = startDate
+        s.endDate = endDate
+      } catch (e) {
+        throw new Error(
+          `The Kursdatum ${s.dateString} of the course could not be parsed`
+        )
+      }
+    })
+    calender.value = calenderItems.sort((a, b) => a.startDate - b.startDate)
+    calenderCategoriesChecked.value = [
+      ...new Set(calender.value.map((c) => c.productType)),
+    ]
+    calenderProductsChecked.value = [
+      ...new Set(calender.value.map((c) => c.title)),
+    ].filter((p) => p !== 'Tagesbetreuung')
+    products.value = fetchedProducts
   }
 
   async function loadCheckout() {
@@ -127,6 +208,28 @@ export function useShop() {
     }
     const createdCheckout = await shopify.checkout.create()
     setCheckout(createdCheckout)
+  }
+
+  function setCheckedCategories(change) {
+    const oldCalenderCategoriesChecked = unref(calenderCategoriesChecked)
+    if (oldCalenderCategoriesChecked.includes(change)) {
+      calenderCategoriesChecked.value = oldCalenderCategoriesChecked.filter(
+        (c) => c !== change
+      )
+      return
+    }
+    calenderCategoriesChecked.value.push(change)
+  }
+
+  function setCheckedProducts(change) {
+    const oldCalenderProductsChecked = unref(calenderProductsChecked)
+    if (oldCalenderProductsChecked.includes(change)) {
+      calenderProductsChecked.value = oldCalenderProductsChecked.filter(
+        (c) => c !== change
+      )
+      return
+    }
+    calenderProductsChecked.value.push(change)
   }
 
   function updateLineItems(id, e) {
@@ -169,6 +272,11 @@ export function useShop() {
     loadCheckout()
   }
 
+  function resetFilter() {
+    calenderCategoriesChecked.value = unref(calenderCategoriesAvailable)
+    calenderProductsChecked.value = unref(calenderProductsAvailable)
+  }
+
   async function updateItems(checkoutId) {
     const lineItemsToUpdate = unref(lineItemsChanged).filter(
       (item) => item.quantity !== 0
@@ -186,12 +294,16 @@ export function useShop() {
     advancedTrainings,
     basicTrainings,
     bookProduct,
+    calender,
+    calenderFiltered,
+    calenderProductsAvailable,
+    calenderCategoriesAvailable,
+    calenderProductsChecked,
+    calenderCategoriesChecked,
     cartItems,
-    category,
     checkout,
     isCartItems,
-    fetchCollections,
-    fetchProduct,
+    initShop,
     loadCheckout,
     getCourse,
     products,
@@ -199,8 +311,11 @@ export function useShop() {
     refreshCart,
     removeItems,
     resetCart,
+    resetFilter,
     saftyTrainings,
     setCheckout,
+    setCheckedCategories,
+    setCheckedProducts,
     tandemflights,
     travels,
     updateItems,

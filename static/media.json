@@ -643,5 +643,18 @@
     },
     "alt": "Teampic Fly Tirol Flugschule Kitzbüheler Alpen",
     "title": "Fly Tirol Teampic Flugschule Kitzbüheler Alpen"
+  },
+  "/media/termine/infinity_am_gardasee.jpg": {
+    "url": "/media/termine/infinity_am_gardasee.jpg",
+    "path": "/media/termine/",
+    "file": "infinity_am_gardasee.jpg",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "Termine Infinity Gardasee Paragliding",
+    "title": "Termine Fly Tirol Flugschule Kitzbüheler Alpen Infinity Gardasee Paragliding"
   }
 }
