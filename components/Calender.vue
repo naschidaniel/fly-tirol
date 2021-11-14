@@ -1,7 +1,7 @@
 <template>
   <div class="nuxt-content">
-    <div class="mb-4 flex flex-inline-between">
-      <div class="w-1/3">
+    <div class="mb-16 mb-4 md:flex md:flex-inline-between">
+      <div class="md:w-1/3">
         <h2>Kategorien</h2>
         <div
           v-for="categorie in calenderCategoriesAvailable"
@@ -35,7 +35,7 @@
           </span>
         </div>
       </div>
-      <div class="w-2/3">
+      <div class="md:w-2/3">
         <h2>Produkte</h2>
         <div
           v-for="product in calenderProductsAvailable"
@@ -70,11 +70,12 @@
         </div>
       </div>
     </div>
-    <div class="mt-16 flex flex-wrap justify-center">
+    <h3>Unsere Kursangebote</h3>
+    <div class="mt-4 md:flex md:flex-wrap md:justify-center">
       <div
         v-for="entry in calenderFiltered"
         :key="entry.id"
-        class="m-2 p-4 border-2 rounded-lg w-1/4"
+        class="m-2 p-4 border-2 rounded-lg md:w-2/3 lg:w-1/3 xl:w-1/4"
       >
         <span
           class="
