@@ -12,11 +12,27 @@
     <info-box headline="Dein Weg zum eigenständigen Fliegen als Paragleitpilot">
       <ul>
         <li>
-          Grundausbildung mit mindestens fünf Höhenflügen und 25
-          Theorieeinheiten
+          <span>Grundausbildung</span> zum Gleitschirmpiloten. Hier lernst du
+          den Start und die Landung auf unserem Übungshang. Bei diesem Kurs
+          werden dir auch die wichtigsten theoretischen Inhalte für das Fliegen
+          vermittelt. Als Kursziel sind Flüge vom Berg geplannt.
         </li>
-        <li>Höhenflugseminar</li>
-        <li>Flugaufträge</li>
+        <li>
+          Beim <span>Höhenflugkurs</span> dreht sich alles um das Fliegen. Hier
+          perfektionierst du den Start, die Landung, Kurven, Abstiegshilfen und
+          vieles mehr. In den Theorieeinheiten beschäftigt man sich mit den
+          Praxisrelevanten Themen.
+        </li>
+        <li>
+          Im <span>Paragleitschein Theoriekurs</span> erlernst du für den
+          Gleitschirmsport relevanten Fachgebiete: Aerodynamik, Flugpraxis,
+          Gerätekunde, Luftrecht und Meteorologie behandelt.
+        </li>
+        <li>
+          Der <span>Kombikurs</span> behinhaltet alle relevanten Kurselemente
+          von Grundkurs, Höhenflugkurs und Paragleitschein Theoriekus zu einem
+          vergünstigtem Komplettpreis.
+        </li>
         <li>
           Ab dem 40. bescheinigten Flug ist die Absolvierung der A-Schein
           Prüfung (international anerkannte Lizenz) bei uns in der Flugschule
