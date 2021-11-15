@@ -13,7 +13,7 @@ const useShopify = wrapProperty('$shopify', false)
 
 const advancedTrainings = ref([])
 const basicTrainings = ref([])
-const calender = ref([])
+const calender = ref({})
 const calenderCategoriesChecked = ref([])
 const calenderProductsChecked = ref([])
 const saftyTrainings = ref([])
@@ -34,26 +34,41 @@ export function useShop() {
   const calenderFiltered = computed(() => {
     const categoriesSelected = unref(calenderCategoriesChecked)
     const productsSelected = unref(calenderProductsChecked)
-    return unref(calender).filter(
-      (c) =>
-        categoriesSelected.includes(c.productType) &&
-        productsSelected.includes(c.title)
-    )
+    const calenderSorted = unref(calender)
+    const filteredEntries = {}
+    Object.keys(calenderSorted).forEach((key) => {
+      const filteredMonthEntries = calenderSorted[key].filter(
+        (c) =>
+          categoriesSelected.includes(c.productType) &&
+          productsSelected.includes(c.title)
+      )
+      if (filteredMonthEntries.length >= 1) {
+        filteredEntries[key] = filteredMonthEntries
+      }
+    })
+
+    return filteredEntries
   })
 
   const calenderCategoriesAvailable = computed(() =>
-    [...new Set(calender.value.map((c) => c.productType))].sort((a, b) =>
-      a.localeCompare(b)
-    )
+    [
+      ...new Set(
+        Object.values(calender.value).flatMap((c) =>
+          c.map((r) => r.productType)
+        )
+      ),
+    ].sort((a, b) => a.localeCompare(b))
   )
 
   const calenderProductsAvailable = computed(() => {
     const selectedCategories = unref(calenderCategoriesChecked)
     return [
       ...new Set(
-        calender.value
-          .filter((e) => selectedCategories.includes(e.productType))
-          .map((c) => c.title)
+        Object.values(calender.value).flatMap((c) =>
+          c
+            .filter((e) => selectedCategories.includes(e.productType))
+            .map((p) => p.title)
+        )
       ),
     ].sort((a, b) => a.localeCompare(b))
   })
@@ -138,6 +153,7 @@ export function useShop() {
             id: v.id,
             startDate: undefined,
             endDate: undefined,
+            month: undefined,
           }
         })
       )
@@ -165,21 +181,41 @@ export function useShop() {
             : undefined
         s.startDate = startDate
         s.endDate = endDate
+        const month = startDate.toLocaleString('de', { month: 'long' })
+        const year = startDate.getFullYear()
+        s.month = `${month} ${year}`
       } catch (e) {
         throw new Error(
           `The Kursdatum ${s.dateString} of the course could not be parsed`
         )
       }
     })
-    calender.value = calenderItems.sort((a, b) => a.startDate - b.startDate)
+    const calenderItemsSorted = calenderItems.sort(
+      (a, b) => a.startDate - b.startDate
+    )
+
     calenderCategoriesChecked.value = [
-      ...new Set(calender.value.map((c) => c.productType)),
+      ...new Set(calenderItemsSorted.map((c) => c.productType)),
     ]
     calenderProductsChecked.value = [
-      ...new Set(calender.value.map((c) => c.title)),
+      ...new Set(calenderItemsSorted.map((c) => c.title)),
     ].filter((p) => p !== 'Tagesbetreuung')
     products.value = fetchedProducts
+
+    const months = [...new Set(calenderItemsSorted.map((c) => c.month))]
+    const calenderMonths = {}
+    months.forEach(
+      (key) =>
+        (calenderMonths[key] = [
+          ...calenderItemsSorted.filter((c) => c.month === key),
+        ])
+    )
+    calender.value = calenderMonths
   }
+
+  const isCalenderFiltered = computed(
+    () => Object.keys(calender.value).length >= 0
+  )
 
   async function loadCheckout() {
     if (isCookieAgreement.value) {
@@ -304,6 +340,7 @@ export function useShop() {
     checkout,
     isCartItems,
     initShop,
+    isCalenderFiltered,
     loadCheckout,
     getCourse,
     products,
