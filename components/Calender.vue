@@ -125,7 +125,7 @@
           </h4>
 
           <div class="mb-2 flex justify-between">
-            {{ entry.dateString }}
+            {{ entry.startDay }}, {{ entry.dateString }}
             <button
               :aria-label="`Book ${entry.title} - {{ entry.dateString }}`"
               class="cursor-pointer btn-primary"
@@ -137,7 +137,7 @@
         </div>
       </div>
     </div>
-    <div v-if="isCalenderFiltered" class="text-center">
+    <div v-if="!isCalenderFiltered" class="text-center">
       <button
         aria-label="Reset filter"
         class="btn-primary"

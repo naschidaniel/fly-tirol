@@ -152,6 +152,7 @@ export function useShop() {
             dateString: v.title,
             id: v.id,
             startDate: undefined,
+            startDay: undefined,
             endDate: undefined,
             month: undefined,
           }
@@ -181,12 +182,13 @@ export function useShop() {
             : undefined
         s.startDate = startDate
         s.endDate = endDate
+        s.startDay = startDate.toLocaleString('de', { weekday: 'short' })
         const month = startDate.toLocaleString('de', { month: 'long' })
         const year = startDate.getFullYear()
         s.month = `${month} ${year}`
       } catch (e) {
         throw new Error(
-          `The Kursdatum ${s.dateString} of the course could not be parsed`
+          `The Kursdatum ${s.dateString} of the course ${s.productType} - ${s.title} could not be parsed`
         )
       }
     })
@@ -214,7 +216,7 @@ export function useShop() {
   }
 
   const isCalenderFiltered = computed(
-    () => Object.keys(calender.value).length >= 0
+    () => Object.keys(calenderFiltered.value).length >= 1
   )
 
   async function loadCheckout() {
