@@ -21,4 +21,11 @@ Während der ganzen Grundausbildung werdet ihr durch unser kompetent ausgebildet
 
 Begleitend zu der praktischen Ausbildung erhältst du einen umfangreichen und modern gestalteten Theorieunterricht sowie Videoanalysen und entsprechende Lernmaterialien.
 
+## Leistung
+
+- 15 Grundflüge vom Übunghang
+- minimum 5 Höhenflüge vom Höhenfluggelände
+- 5 Theorieeinheiten a 45 Minuten
+- inklusive Leihausrüsung für die Dauer des Grundkurses    
+
 <content-image-gallery path="/media/ausbildung/grundausbildung/"></content-impage-gallery>

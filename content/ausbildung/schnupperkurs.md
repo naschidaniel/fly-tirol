@@ -16,3 +16,8 @@ Du gehst einen Tag lang mit unseren top ausgebildeten und erfahrenen Fluglehrern
 
 Wenn du dich im Anschluss an den Schnupperkurs dazu entscheidest bei unserer Flugschule den Grundkurs zu machen, werden dir die Kosten des Schnupperkurses angerechnet. Da der Schnupperkurs immer am ersten Tag eines Grundkurses beginnt, kannst du dann auch schon direkt in diesen Grundkurs mit einsteigen. 
 Wir freuen uns auf dich! 
+
+## Leistung
+
+- 1 Tag am Übungshang mit Aufziehübungen
+- 1 Unterrichtseinheit Flugtechnik
