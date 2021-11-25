@@ -169,6 +169,30 @@ export function useShop() {
       )
     calenderItems.forEach((s) => {
       try {
+        s.isShowProduct = true
+        if (s.dateString.includes('inklusive Leihausrüstung')) {
+          const secondVariant = s.dateString.replace(
+            'inklusive Leihausrüstung',
+            'ohne Leihausrüstung'
+          )
+          s.noRentalGear = calenderItems.find(
+            (c) => c.dateString === secondVariant
+          )
+          // do not show product twice
+          s.isShowProduct = false
+          s.selectedId = s.id
+        }
+        if (s.dateString.includes('ohne Leihausrüstung')) {
+          const secondVariant = s.dateString.replace(
+            'ohne Leihausrüstung',
+            'inklusive Leihausrüstung'
+          )
+          s.rentalGear = calenderItems.find(
+            (c) => c.dateString === secondVariant
+          )
+          s.selectedId = s.id
+        }
+        s.variantTitle = s.dateString.split(' / ')[0]
         const startDateArray = s.dateString.split(' ')[0].split('.')
         const startDate = new Date(
           `20${startDateArray[2]}-${startDateArray[1]}-${startDateArray[0]}`
@@ -192,9 +216,9 @@ export function useShop() {
         )
       }
     })
-    const calenderItemsSorted = calenderItems.sort(
-      (a, b) => a.startDate - b.startDate
-    )
+    const calenderItemsSorted = calenderItems
+      .filter((c) => c.isShowProduct)
+      .sort((a, b) => a.startDate - b.startDate)
 
     calenderCategoriesChecked.value = [
       ...new Set(calenderItemsSorted.map((c) => c.productType)),
@@ -284,6 +308,15 @@ export function useShop() {
     }
   }
 
+  function updateSelectedProduct(calenderItemId, month, e) {
+    const updateCalender = unref(calender)
+    const updateIndex = updateCalender[month].findIndex(
+      (o) => o.id === calenderItemId
+    )
+    updateCalender[month][updateIndex].selectedId = e.target.value
+    calender.value = updateCalender
+  }
+
   async function removeItems(checkoutId) {
     const lineItemsToRemove = unref(lineItemsChanged)
       .filter((item) => item.quantity === 0)
@@ -359,5 +392,6 @@ export function useShop() {
     travels,
     updateItems,
     updateLineItems,
+    updateSelectedProduct,
   }
 }
