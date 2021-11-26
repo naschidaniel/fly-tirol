@@ -32,23 +32,45 @@ export function useShop() {
   const cartItems = computed(() => checkout.value?.lineItems)
 
   const calenderFiltered = computed(() => {
-    const categoriesSelected = unref(calenderCategoriesChecked)
-    const productsSelected = unref(calenderProductsChecked)
+    const categoriesSelected = unref(calenderCategoriesChecked).map((s) =>
+      s.toLowerCase()
+    )
+    const productsSelected = unref(calenderProductsChecked).map((s) =>
+      s.toLowerCase()
+    )
+    const filteredEntries = filterCalender(categoriesSelected, {
+      products: productsSelected,
+    })
+    return filteredEntries
+  })
+
+  function filterCalender(categories, { products, slug }) {
     const calenderSorted = unref(calender)
     const filteredEntries = {}
+
+    function _selectEntry(c) {
+      if (products !== undefined) {
+        return (
+          categories.includes(c.productType.toLowerCase()) &&
+          products.includes(c.title.toLowerCase())
+        )
+      } else {
+        return (
+          categories.includes(c.productType.toLowerCase()) &&
+          slug.includes(c.slug.toLowerCase())
+        )
+      }
+    }
     Object.keys(calenderSorted).forEach((key) => {
-      const filteredMonthEntries = calenderSorted[key].filter(
-        (c) =>
-          categoriesSelected.includes(c.productType) &&
-          productsSelected.includes(c.title)
+      const filteredMonthEntries = calenderSorted[key].filter((c) =>
+        _selectEntry(c)
       )
       if (filteredMonthEntries.length >= 1) {
         filteredEntries[key] = filteredMonthEntries
       }
     })
-
     return filteredEntries
-  })
+  }
 
   const calenderCategoriesAvailable = computed(() =>
     [
@@ -373,6 +395,7 @@ export function useShop() {
     calenderCategoriesChecked,
     cartItems,
     checkout,
+    filterCalender,
     isCartItems,
     initShop,
     isCalenderFiltered,

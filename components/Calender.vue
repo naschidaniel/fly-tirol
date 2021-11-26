@@ -71,14 +71,14 @@
       </div>
     </div>
     <div
-      v-for="(month, year) in calenderFiltered"
-      :key="year"
+      v-for="(course, month) in calenderFiltered"
+      :key="month"
       class="mb-6 min-w-full text-center"
     >
-      <h3>{{ year }}</h3>
+      <h3>{{ month }}</h3>
       <div class="mt-4 md:flex md:flex-wrap md:justify-center">
         <div
-          v-for="entry in month"
+          v-for="entry in course"
           :key="entry.id"
           class="
             m-2
