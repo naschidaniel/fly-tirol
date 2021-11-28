@@ -62,8 +62,7 @@
         </div>
       </div>
       <div v-else>
-        <h2>Wähle deinen Flug</h2>
-        <ProductVariants />
+        <ProductVariants :is-course="false" :page="page" />
       </div>
     </div>
   </div>

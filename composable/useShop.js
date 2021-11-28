@@ -7,6 +7,7 @@ import {
   wrapProperty,
 } from '@nuxtjs/composition-api'
 import { isCookieAgreement } from './useData'
+import { formatPrice } from '~/util/formatPrice'
 
 const useCookies = wrapProperty('$cookies', false)
 const useShopify = wrapProperty('$shopify', false)
@@ -52,7 +53,7 @@ export function useShop() {
       if (products !== undefined) {
         return (
           categories.includes(c.productType.toLowerCase()) &&
-          products.includes(c.title.toLowerCase())
+          products.includes(c.productTitle.toLowerCase())
         )
       } else {
         return (
@@ -89,7 +90,7 @@ export function useShop() {
         Object.values(calender.value).flatMap((c) =>
           c
             .filter((e) => selectedCategories.includes(e.productType))
-            .map((p) => p.title)
+            .map((p) => p.productTitle)
         )
       ),
     ].sort((a, b) => a.localeCompare(b))
@@ -163,58 +164,83 @@ export function useShop() {
     travels.value = fetchedCollections.filter(
       (c) => c.title === 'Reisen'
     )[0]?.products
-    const fetchedProducts = await shopify.product.fetchAll()
-    const calenderItems = fetchedProducts
-      .flatMap((p) =>
-        p.variants.map((v) => {
-          return {
-            title: p.title,
-            productType: p.productType,
-            slug: p.handle,
-            dateString: v.title,
-            id: v.id,
-            startDate: undefined,
-            startDay: undefined,
-            endDate: undefined,
-            month: undefined,
-          }
-        })
-      )
-      .filter(
-        (e) =>
-          ![
-            'Höhenflug',
-            'Panoramaflug',
-            'Tandemsafari',
-            'Tandemflug Geschenkkarte',
-          ].includes(e.title)
-      )
-    calenderItems.forEach((s) => {
+    const shopifyProducts = await shopify.product.fetchAll()
+    const fetchedProducts = shopifyProducts.flatMap((p) =>
+      p.variants.map((v) => {
+        return {
+          productTitle: p.title,
+          productType: p.productType,
+          productPrices: [...new Set(p.variants.map((v) => v.price))],
+          productOptions: p.options.map((o) => {
+            return { name: o.name, values: o.values }
+          }),
+          slug: p.handle,
+          variantTitle: v.title,
+          dateString: '',
+          id: v.id,
+          isShowProduct: true,
+          isDateItem: false,
+          startDate: undefined,
+          startDay: undefined,
+          endDate: undefined,
+          month: undefined,
+          optionTitle: '',
+          price: v.price,
+          variants: [],
+        }
+      })
+    )
+    fetchedProducts.forEach((s) => {
       try {
-        s.isShowProduct = true
-        if (s.dateString.includes('inklusive Leihausrüstung')) {
-          const secondVariant = s.dateString.replace(
-            'inklusive Leihausrüstung',
-            'ohne Leihausrüstung'
-          )
-          s.noRentalGear = calenderItems.find(
-            (c) => c.dateString === secondVariant
-          )
-          // do not show product twice
-          s.isShowProduct = false
-          s.selectedId = s.id
+        s.variants = [
+          {
+            productTitle: s.productTitle,
+            title: s.variantTitle,
+            option: undefined,
+            price: s.price,
+            id: s.id,
+          },
+        ]
+        if (s.productOptions[0].name !== 'Kursdatum') {
+          s.optionTitle = `${s.variantTitle} ${formatPrice(s.price)}`
+          s.isDateItem = false
+          return
         }
-        if (s.dateString.includes('ohne Leihausrüstung')) {
-          const secondVariant = s.dateString.replace(
-            'ohne Leihausrüstung',
-            'inklusive Leihausrüstung'
-          )
-          s.rentalGear = calenderItems.find(
-            (c) => c.dateString === secondVariant
-          )
-          s.selectedId = s.id
+        s.isDateItem = true
+        if (s.productOptions.length >= 2) {
+          if (s.variantTitle.includes('inklusive Leihausrüstung')) {
+            s.isShowProduct = false
+          }
+          if (s.variantTitle.includes('ohne Leihausrüstung')) {
+            const secondVariantTitle = s.variantTitle.replace(
+              'ohne Leihausrüstung',
+              'inklusive Leihausrüstung'
+            )
+            const secondVariant = fetchedProducts.find(
+              (c) =>
+                c.variantTitle === secondVariantTitle &&
+                c.productType === s.productType
+            )
+            s.variants = [
+              {
+                productTitle: s.productTitle,
+                title: s.variantTitle,
+                option: 'ohne Leihausrüstung',
+                price: s.price,
+                id: s.id,
+              },
+              {
+                productTitle: s.productTitle,
+                title: secondVariant.variantTitle,
+                option: 'inklusive Leihausrüstung',
+                price: secondVariant.price,
+                id: secondVariant.id,
+              },
+            ]
+            s.selectedId = s.id
+          }
         }
-        s.variantTitle = s.dateString.split(' / ')[0]
+        s.dateString = s.variantTitle.split(' / ')[0]
         const startDateArray = s.dateString.split(' ')[0].split('.')
         const startDate = new Date(
           `20${startDateArray[2]}-${startDateArray[1]}-${startDateArray[0]}`
@@ -232,24 +258,27 @@ export function useShop() {
         const month = startDate.toLocaleString('de', { month: 'long' })
         const year = startDate.getFullYear()
         s.month = `${month} ${year}`
+        s.optionTitle = `${s.startDay}, ${s.dateString}`
       } catch (e) {
         throw new Error(
-          `The Kursdatum ${s.dateString} of the course ${s.productType} - ${s.title} could not be parsed`
+          `The Kursdatum ${s.dateString} of the course ${s.productType} - ${s.productTitle} could not be parsed`
         )
       }
     })
-    const calenderItemsSorted = calenderItems
-      .filter((c) => c.isShowProduct)
-      .sort((a, b) => a.startDate - b.startDate)
+    const productsItemsSorted = fetchedProducts.sort(
+      (a, b) => a.startDate - b.startDate
+    )
+    const calenderItemsSorted = productsItemsSorted.filter(
+      (f) => f.isDateItem && f.isShowProduct
+    )
+    products.value = productsItemsSorted
 
     calenderCategoriesChecked.value = [
       ...new Set(calenderItemsSorted.map((c) => c.productType)),
     ]
     calenderProductsChecked.value = [
-      ...new Set(calenderItemsSorted.map((c) => c.title)),
+      ...new Set(calenderItemsSorted.map((c) => c.productTitle)),
     ].filter((p) => p !== 'Tagesbetreuung')
-    products.value = fetchedProducts
-
     const months = [...new Set(calenderItemsSorted.map((c) => c.month))]
     const calenderMonths = {}
     months.forEach(

@@ -1,8 +1,7 @@
 <template>
   <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
     <nuxt-content :document="page" />
-    <h2>Termine</h2>
-    <ProductVariants />
+    <ProductVariants :is-course="true" :page="page" />
   </div>
 </template>
 

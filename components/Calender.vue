@@ -120,19 +120,17 @@
           <h4>
             <nuxt-link
               :to="`${entry.productType.toLowerCase()}/${entry.slug}`"
-              >{{ entry.title }}</nuxt-link
+              >{{ entry.productTitle }}</nuxt-link
             >
           </h4>
 
-          <div v-if="entry.rentalGear" class="mb-2">
-            {{ entry.startDay }}, {{ entry.variantTitle }}
-            <div class="flex justify-end mt-2 md:justify-between">
+          <div v-if="entry.variants.length >= 2" class="mb-2">
+            <p>{{ entry.startDay }}, {{ entry.dateString }}</p>
+            <div class="flex mt-2">
               <select
                 class="
                   text-sm
-                  md:text-base
                   block
-                  text-center
                   rounded-md
                   border-gray-300
                   shadow-sm
@@ -144,20 +142,18 @@
                 @change="updateSelectedProduct(entry.id, entry.month, $event)"
               >
                 <option
-                  :selected="entry.selectedId === entry.id"
-                  :value="entry.id"
+                  v-for="option in entry.variants"
+                  :key="option.id"
+                  :value="option.id"
+                  :selected="entry.selectedId === option.id"
                 >
-                  keine Leihausrüstung
-                </option>
-                <option
-                  :selected="entry.selectedId === entry.rentalGear.id"
-                  :value="entry.rentalGear.id"
-                >
-                  inklusive Leihausrüstung
+                  {{ option.option }}
                 </option>
               </select>
+            </div>
+            <div class="flex justify-end mt-2">
               <button
-                :aria-label="`Book ${entry.title} - ${entry.variantTitle}`"
+                :aria-label="`Book ${entry.productTitle} - ${entry.optionTitle}`"
                 class="cursor-pointer btn-primary"
                 @click.prevent="bookProduct(entry.selectedId)"
               >
@@ -165,15 +161,17 @@
               </button>
             </div>
           </div>
-          <div v-else class="mb-2 flex justify-between">
-            {{ entry.startDay }}, {{ entry.variantTitle }}
-            <button
-              :aria-label="`Book ${entry.title} - ${entry.variantTitle}`"
-              class="cursor-pointer btn-primary"
-              @click.prevent="bookProduct(entry.id)"
-            >
-              Buchen
-            </button>
+          <div v-else class="mb-2">
+            <p>{{ entry.optionTitle }}</p>
+            <div class="flex justify-end mt-2">
+              <button
+                :aria-label="`Book ${entry.productTitle} - ${entry.optionTitle}`"
+                class="cursor-pointer btn-primary"
+                @click.prevent="bookProduct(entry.id)"
+              >
+                Buchen
+              </button>
+            </div>
           </div>
         </div>
       </div>
