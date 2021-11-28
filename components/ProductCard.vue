@@ -18,13 +18,12 @@
             <nuxt-link :to="page.path">{{ page.title }}</nuxt-link>
           </h2>
           <ProductDetails
-            :location="page.location"
             :prices="prices"
-            :praxis="page.praxis"
-            :theorie="page.theorie"
+            :page="page"
             :dates="dates"
+            :is-show-date="isCourse"
           />
-          <p v-if="isTandemflight" class="text-gray-600">
+          <p v-if="!isCourse" class="text-gray-600">
             {{ page.description }}
           </p>
         </div>
@@ -45,11 +44,11 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { computed, defineComponent, unref } from '@vue/composition-api'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
+import { useData } from '~/composable/useData'
 import { useShop } from '~/composable/useShop'
-import { formatPrice } from '~/util/formatPrice'
 
 export default defineComponent({
   components: {
@@ -57,30 +56,24 @@ export default defineComponent({
     ResponsiveImage,
   },
   props: { page: { type: Object, required: true } },
-  setup() {
-    const { getCourse } = useShop()
-    return { getCourse }
-  },
-  computed: {
-    isTandemflight() {
-      return this.page.path.includes('/tandemfliegen')
-    },
-    course() {
-      return this.getCourse(this.page.slug)
-    },
-    prices() {
-      const price = this.course?.variants.map((v) => parseFloat(v.price))
-      return [...new Set(price)]
-    },
-    dates() {
-      if (this.isTandemflight) {
-        return undefined
-      }
-      return this.course?.variants?.length
-    },
-  },
-  methods: {
-    formatPrice,
+  setup(props) {
+    const { routeName } = useData()
+    const { products } = useShop()
+    const isCourse = !props.page.path.includes('/tandemfliegen')
+    const course = computed(
+      () =>
+        unref(products).filter(
+          (s) =>
+            s.isShowProduct &&
+            s.productType.toLowerCase() === routeName &&
+            s.slug === props.page.slug
+        ) ?? []
+    )
+    const dates = computed(() => unref(course)?.length)
+    const prices = computed(() => {
+      return [...new Set(unref(course)?.flatMap((v) => v.productPrices))]
+    })
+    return { dates, isCourse, prices }
   },
 })
 </script>

@@ -1,7 +1,6 @@
 import {
   computed,
   ref,
-  useRoute,
   useRouter,
   unref,
   wrapProperty,
@@ -26,7 +25,6 @@ const products = ref([])
 
 export function useShop() {
   const cookies = useCookies()
-  const route = useRoute()
   const router = useRouter()
   const shopify = useShopify()
 
@@ -119,23 +117,6 @@ export function useShop() {
     router.push({ path: '/buchen' })
   }
 
-  function getCourse(slug) {
-    const routeName = route.value.name
-    const courses =
-      routeName === 'ausbildung'
-        ? unref(basicTrainings)
-        : routeName === 'fortbildung'
-        ? unref(advancedTrainings)
-        : routeName === 'reisen'
-        ? unref(travels)
-        : routeName === 'tandemfliegen'
-        ? unref(tandemflights)
-        : routeName === 'sicherheitstrainings'
-        ? unref(saftyTrainings)
-        : []
-    return courses?.find((c) => c?.handle === slug)
-  }
-
   function setCheckout(change) {
     if (isCookieAgreement.value) {
       cookies.set('FlyTirol-checkoutId', change.id, {
@@ -148,22 +129,6 @@ export function useShop() {
   }
 
   async function initShop() {
-    const fetchedCollections = await shopify.collection.fetchAllWithProducts()
-    advancedTrainings.value = fetchedCollections.filter(
-      (c) => c.title === 'Fortbildung'
-    )[0]?.products
-    basicTrainings.value = fetchedCollections.filter(
-      (c) => c.title === 'Ausbildung'
-    )[0]?.products
-    saftyTrainings.value = fetchedCollections.filter(
-      (c) => c.title === 'Sicherheitstrainings'
-    )[0]?.products
-    tandemflights.value = fetchedCollections.filter(
-      (c) => c.title === 'Tandemfliegen'
-    )[0]?.products
-    travels.value = fetchedCollections.filter(
-      (c) => c.title === 'Reisen'
-    )[0]?.products
     const shopifyProducts = await shopify.product.fetchAll()
     const fetchedProducts = shopifyProducts.flatMap((p) =>
       p.variants.map((v) => {
@@ -429,7 +394,6 @@ export function useShop() {
     initShop,
     isCalenderFiltered,
     loadCheckout,
-    getCourse,
     products,
     lineItemsChanged,
     refreshCart,

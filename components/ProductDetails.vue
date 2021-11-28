@@ -3,19 +3,19 @@
     <div class="flex items-center text-sm -ml-1 mb-2">
       <outline-location-marker-icon class="w-4 h-4" />
       <span class="block leading-none pt-1 ml-1">
-        {{ location }}
+        {{ page.location }}
       </span>
     </div>
-    <div v-if="praxis" class="flex items-center text-sm -ml-1 mb-2">
+    <div v-if="page.praxis" class="flex items-center text-sm -ml-1 mb-2">
       <OutlinePaperPlaneIconVue class="w-4 h-4" />
       <span class="block leading-none pt-1 ml-1">
-        {{ praxis }}
+        {{ page.praxis }}
       </span>
     </div>
-    <div v-if="theorie" class="flex items-center text-sm -ml-1 mb-2">
+    <div v-if="page.theorie" class="flex items-center text-sm -ml-1 mb-2">
       <OutlineAcademicCapIconVue class="w-4 h-4" />
       <span class="block leading-none pt-1 ml-1">
-        {{ theorie }}
+        {{ page.theorie }}
       </span>
     </div>
     <div class="flex items-center text-sm -ml-1 mb-2">
@@ -25,7 +25,7 @@
       </span>
       <SpinnerIcon v-else class="animate-spin h-4 w-4 text-brand" />
     </div>
-    <div v-if="dates" class="flex items-center text-sm -ml-1 mb-4">
+    <div v-if="isShowDate" class="flex items-center text-sm -ml-1 mb-4">
       <outline-calendar-icon class="w-4 h-4 mr-1" />
       <span v-if="dates" class="block leading-none pt-1"
         >{{ dates }} Termine</span
@@ -55,11 +55,10 @@ export default defineComponent({
     SpinnerIcon,
   },
   props: {
-    location: { type: String, default: undefined },
-    praxis: { type: String, default: undefined },
-    theorie: { type: String, default: undefined },
+    page: { type: Object, required: true },
     prices: { type: Array, default: () => [] },
     dates: { type: Number, default: undefined },
+    isShowDate: { type: Boolean, default: true },
   },
   computed: {
     price() {

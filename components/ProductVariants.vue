@@ -31,21 +31,31 @@
         </div>
       </div>
     </div>
-    <div class="mt-4 w-full lg:mt-0 lg:w-1/2">
+    <div
+      class="
+        mt-4
+        w-full
+        lg:mt-0 lg:w-1/2
+        border-2
+        rounded-lg
+        bg-gray-100
+        px-4
+        pb-2
+      "
+    >
       <h2 v-if="isCourse">Kurs Buchen</h2>
       <h2 v-else>Wähle deinen Flug</h2>
       <h3>Details zum Angebot</h3>
       <ProductDetails
-        :location="page.location"
+        :page="page"
         :prices="prices"
-        :praxis="page.praxis"
-        :theorie="page.theorie"
         :dates="undefined"
+        :is-show-date="false"
       />
       <div class="mt-4 flex flex-wrap">
         <div class="w-full p-2">
-          <Alert class="mb-4">
-            <div class="mx-1 md:my-2">
+          <Alert class="mb-4 bg-white">
+            <div class="my-2">
               Wähle im Auswahlfeld den für dich passenden<span v-if="isCourse"
                 >&nbsp; Kurs und falls vorhanden die nötigen
                 Zusatzoptionen.</span
@@ -88,7 +98,7 @@
           </option>
         </select>
       </div>
-      <div v-if="selectedCourse.length >= 2" class="block">
+      <div v-if="selectedCourse.length >= 2" class="block mt-4">
         <span class="text-gray-700">Wähle eine gewünschte Option</span>
         <div v-for="variant in selectedCourse" :key="variant.id">
           <input
@@ -104,7 +114,7 @@
       </div>
       <button
         :aria-label="`Book ${pickedCourse}`"
-        class="mt-6 btn-primary"
+        class="mt-6 btn-primary w-full"
         :class="!isCourseSelected ? 'btn--disabled' : ''"
         :disabled="!isCourseSelected"
         @click.prevent="bookProduct(pickedCourse.id)"
