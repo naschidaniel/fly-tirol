@@ -155,7 +155,9 @@
               <button
                 :aria-label="`Book ${entry.productTitle} - ${entry.optionTitle}`"
                 class="cursor-pointer btn-primary"
-                @click.prevent="bookProduct(entry.selectedId)"
+                @click.prevent="
+                  bookProduct(entry.selectedId, { customAttributes: [] })
+                "
               >
                 Buchen
               </button>
@@ -167,7 +169,7 @@
               <button
                 :aria-label="`Book ${entry.productTitle} - ${entry.optionTitle}`"
                 class="cursor-pointer btn-primary"
-                @click.prevent="bookProduct(entry.id)"
+                @click.prevent="bookProduct(entry.id, { customAttributes: [] })"
               >
                 Buchen
               </button>

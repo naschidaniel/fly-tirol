@@ -32,7 +32,16 @@
         aria-label="Book the Date"
         class="btn-primary text-sm md:text-base"
         :class="isFormValid && isDateValid ? '' : 'btn--disabled'"
-        @click.prevent="bookProduct(productVariantsId)"
+        @click.prevent="
+          bookProduct(productId, {
+            customAttributes: [
+              {
+                key: 'Wunschtermin nach Absprache',
+                value: formatDate(selectedDateTimestamp),
+              },
+            ],
+          })
+        "
       >
         Buche deinen Wunschtermin
         <span v-if="isDateValid"
@@ -44,15 +53,20 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { computed, defineComponent, unref } from '@vue/composition-api'
 import { formatDate } from '~/util/formatDate.js'
+import { useData } from '~/composable/useData'
 import { useShop } from '~/composable/useShop'
 
 export default defineComponent({
   name: 'ProductAppointment',
   setup() {
-    const { checkout, products, setCheckout } = useShop()
-    return { checkout, products, setCheckout }
+    const { routeSlug } = useData()
+    const { bookProduct, products } = useShop()
+    const productId = computed(
+      () => unref(products).find((p) => p.slug === routeSlug)?.id
+    )
+    return { bookProduct, productId }
   },
   data() {
     return {
@@ -62,12 +76,6 @@ export default defineComponent({
     }
   },
   computed: {
-    productVariantsId() {
-      const products = this.products.filter(
-        (p) => p.handle === this.$route.params.slug
-      )
-      return products[0]?.variants[0].id
-    },
     today() {
       return new Date().toISOString().split('T')[0]
     },
@@ -84,32 +92,6 @@ export default defineComponent({
       this.isDateValid = validation
     },
     formatDate,
-    async bookProduct(variantId) {
-      if (this.selectedDate === '' || !this.isDateValid) {
-        this.isDateValid = false
-        this.isFormValid = false
-        return
-      }
-      const lineItemsToAdd = [
-        {
-          variantId,
-          quantity: 1,
-          customAttributes: [
-            {
-              key: 'Wunschtermin nach Absprache',
-              value: formatDate(this.selectedDateTimestamp),
-            },
-          ],
-        },
-      ]
-      const checkoutId = this.checkout?.id
-      await this.$shopify.checkout
-        .addLineItems(checkoutId, lineItemsToAdd)
-        .then((checkout) => {
-          this.setCheckout(checkout)
-        })
-      this.$router.push({ path: '/buchen' })
-    },
   },
 })
 </script>

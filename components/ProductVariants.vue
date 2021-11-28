@@ -117,7 +117,7 @@
         class="mt-6 btn-primary w-full"
         :class="!isCourseSelected ? 'btn--disabled' : ''"
         :disabled="!isCourseSelected"
-        @click.prevent="bookProduct(pickedCourse.id)"
+        @click.prevent="bookProduct(pickedCourse.id, { customAttributes: [] })"
       >
         <span v-if="isCourseSelected"
           >{{ pickedCourse.productTitle }} am

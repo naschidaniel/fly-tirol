@@ -100,12 +100,12 @@ export function useShop() {
       checkout.value?.lineItems === undefined
   )
 
-  async function bookProduct(variantId) {
+  async function bookProduct(variantId, { customAttributes }) {
     const lineItemsToAdd = [
       {
         variantId,
         quantity: 1,
-        customAttributes: [],
+        customAttributes,
       },
     ]
     const checkoutId = unref(checkout).id
