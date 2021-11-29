@@ -23,16 +23,23 @@
       </div>
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
     </div>
+    <SocialBar
+      :description="description"
+      :title="title"
+      :url="$route.fullPath"
+      class="mt-12 lg:mt-36"
+    />
   </div>
 </template>
 
 <script>
+import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon.vue'
 
 export default {
-  components: { PageHeader, OutlineLocationMarkerIcon },
+  components: { SocialBar, PageHeader, OutlineLocationMarkerIcon },
   data() {
     return {
       title: 'Kontakt',

@@ -15,16 +15,23 @@
       seine ersten eigenen Flüge.
     </PageHeader>
     <TeamList :members="members" />
+    <SocialBar
+      :description="description"
+      :title="title"
+      :url="$route.fullPath"
+      class="mt-12 lg:mt-36"
+    />
   </div>
 </template>
 
 <script>
+import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import TeamList from '~/components/TeamList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { PageHeader, TeamList },
+  components: { SocialBar, PageHeader, TeamList },
   data() {
     return {
       title: 'Team',
