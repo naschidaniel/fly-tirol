@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center">
-    <button class="mx-2" title="Teilen per facebook" @click="openFacebook()">
+    <button class="mx-2" title="Teilen per Facebook" @click="openFacebook()">
       <span
         class="inline-flex items-center justify-center p-2 rounded-full"
         style="background-color: #1877f2"

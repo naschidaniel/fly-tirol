@@ -11,14 +11,9 @@ import { formatPrice } from '~/util/formatPrice'
 const useCookies = wrapProperty('$cookies', false)
 const useShopify = wrapProperty('$shopify', false)
 
-const advancedTrainings = ref([])
-const basicTrainings = ref([])
 const calender = ref({})
 const calenderCategoriesChecked = ref([])
 const calenderProductsChecked = ref([])
-const saftyTrainings = ref([])
-const tandemflights = ref([])
-const travels = ref([])
 const checkout = ref({})
 const lineItemsChanged = ref([])
 const products = ref([])
@@ -378,8 +373,6 @@ export function useShop() {
   }
 
   return {
-    advancedTrainings,
-    basicTrainings,
     bookProduct,
     calender,
     calenderFiltered,
@@ -400,12 +393,9 @@ export function useShop() {
     removeItems,
     resetCart,
     resetFilter,
-    saftyTrainings,
     setCheckout,
     setCheckedCategories,
     setCheckedProducts,
-    tandemflights,
-    travels,
     updateItems,
     updateLineItems,
     updateSelectedProduct,
