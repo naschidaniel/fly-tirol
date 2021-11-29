@@ -4,16 +4,23 @@
       {{ description }}
     </PageHeader>
     <ProductList :pages="pages" />
+    <SocialBar
+      :description="description"
+      :title="title"
+      :url="$route.fullPath"
+      class="mt-12 lg:mt-36"
+    />
   </div>
 </template>
 
 <script>
+import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { ProductList, PageHeader },
+  components: { SocialBar, ProductList, PageHeader },
   async asyncData({ $content }) {
     const pages = await $content('sicherheitstrainings').sortBy('order').fetch()
     return { pages }

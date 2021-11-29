@@ -75,20 +75,30 @@
         </div>
       </div>
     </div>
-    <link-list
+    <LinkList
       :advanced-trainings="advancedTrainings"
       :basic-trainings="basicTrainings"
       :tandemflights="tandemflights"
       :safty-trainings="saftyTrainings"
       :travels="travels"
     />
+    <SocialBar
+      :description="description"
+      :title="title"
+      :url="$route.fullPath"
+      class="mt-12 lg:mt-36"
+    />
   </div>
 </template>
 
 <script>
 import { generateMetatags } from '~/util/generateHeaderInformation'
+import LinkList from '~/components/LinkList.vue'
+import ResponsiveImage from '~/components/ResponsiveImage.vue'
+import SocialBar from '~/components/SocialBar.vue'
 
 export default {
+  components: { LinkList, ResponsiveImage, SocialBar },
   data() {
     return {
       advancedTrainings: {

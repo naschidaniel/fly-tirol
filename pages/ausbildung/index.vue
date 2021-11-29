@@ -9,7 +9,7 @@
       Schulungsgebiete der Welt.
     </PageHeader>
     <ProductList :pages="pages" />
-    <info-box headline="Dein Weg zum eigenständigen Fliegen als Paragleitpilot">
+    <InfoBox headline="Dein Weg zum eigenständigen Fliegen als Paragleitpilot">
       <ul>
         <li>
           <span>Grundausbildung</span> zum Gleitschirmpiloten. Hier lernst du
@@ -39,18 +39,25 @@
           möglich
         </li>
       </ul>
-    </info-box>
+    </InfoBox>
+    <SocialBar
+      :description="description"
+      :title="title"
+      :url="$route.fullPath"
+      class="mt-12 lg:mt-36"
+    />
   </div>
 </template>
 
 <script>
 import PageHeader from '~/components/PageHeader.vue'
+import SocialBar from '~/components/SocialBar.vue'
 import ProductList from '~/components/ProductList.vue'
 import InfoBox from '~/components/InfoBox.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { InfoBox, PageHeader, ProductList },
+  components: { InfoBox, SocialBar, PageHeader, ProductList },
   async asyncData({ $content }) {
     const pages = await $content('ausbildung').sortBy('order').fetch()
     return { pages }

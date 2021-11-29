@@ -65,17 +65,24 @@
         <ProductVariants :is-course="false" :page="page" />
       </div>
     </div>
+    <SocialBar
+      :description="page.description"
+      :title="page.title"
+      :url="$route.fullPath"
+      class="mt-12 lg:mt-36"
+    />
   </div>
 </template>
 
 <script>
 import Alert from '~/components/Alert.vue'
+import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { Alert, ProductAppointment, ProductVariants },
+  components: { Alert, SocialBar, ProductAppointment, ProductVariants },
   async asyncData({ $content, params }) {
     const page = await $content('tandemfliegen', params.slug).fetch()
     return { page }

@@ -11,7 +11,7 @@
         class="w-full md:pl-8"
       />
     </div>
-    <info-box headline="Voraussetzungen für einen Tandemflug">
+    <InfoBox headline="Voraussetzungen für einen Tandemflug">
       <ul>
         <li>Festes Schuhwerk</li>
         <li>Sportliche und den Temperaturen und Wetter angepasste Kleidung</li>
@@ -21,17 +21,24 @@
           damit wir dafür eine gemeinsame Lösung finden können.
         </li>
       </ul>
-    </info-box>
+    </InfoBox>
+    <SocialBar
+      :description="description"
+      :title="title"
+      :url="$route.fullPath"
+      class="mt-12 lg:mt-36"
+    />
   </div>
 </template>
 
 <script>
 import InfoBox from '~/components/InfoBox.vue'
+import SocialBar from '~/components/SocialBar.vue'
 import ProductList from '~/components/ProductList.vue'
 import { generateMetatags } from '~/util/generateHeaderInformation'
 
 export default {
-  components: { InfoBox, ProductList },
+  components: { InfoBox, SocialBar, ProductList },
   async asyncData({ $content }) {
     const pages = await $content('tandemfliegen').sortBy('order').fetch()
     return { pages }
