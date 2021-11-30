@@ -12,8 +12,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN echo "NUXT_ENV_CURRENT_DATE=\"$(date '+%FT%H:%M:%S')\"" >> .env
-
 RUN yarn install \
   --non-interactive \
   --production=false

@@ -9,7 +9,30 @@
           >https://github.com/naschidaniel/fly-tirol</a
         >
       </div>
-      <div>Buildtime des Docker Images: {{ formatDateTime(buildtime) }}</div>
+      <div>buildTime des Docker Images: {{ formatDateTime(buildTime) }}</div>
+      <div>
+        <div>
+          <div class="inline">
+            <h2 class="mt-2">Verwendete Softwarepaket und Lizenzinformation</h2>
+          </div>
+          <div
+            v-for="license in licenses"
+            id="license-list"
+            :key="license.name"
+            class="lg:inline"
+          >
+            <span class="whitespace-normal">
+              <span class="font-bold">{{ license.name }}</span
+              >&nbsp;–&nbsp;<span class="font-mono"
+                >Version {{ license.version }}</span
+              >&nbsp;–&nbsp;{{ license.license }} License<span
+                class="hidden lg:inline license-spacer"
+                >🞄</span
+              >
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -22,8 +45,9 @@ import { useData } from '~/composable/useData'
 
 export default defineComponent({
   setup() {
-    const { buildtime } = useData()
-    return { buildtime }
+    const { buildTime } = useData()
+    const licenses = process.env.licenses
+    return { buildTime, licenses }
   },
   async asyncData({ $content }) {
     const impressum = await $content('impressum').fetch()
@@ -42,3 +66,13 @@ export default defineComponent({
   },
 })
 </script>
+
+<style>
+.license-spacer {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+#license-list:last-child span .license-spacer {
+  display: none;
+}
+</style>

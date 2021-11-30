@@ -1,3 +1,22 @@
+import { readFileSync } from 'fs'
+
+const packages = JSON.parse(
+  readFileSync('./package.json', { encoding: 'utf8' })
+)
+const dependencies = Object.keys(packages.dependencies)
+  .map((dependency) =>
+    JSON.parse(
+      readFileSync(`node_modules/${dependency}/package.json`, {
+        encoding: 'utf8',
+      })
+    )
+  )
+  .map(({ name, version, license }) => ({
+    name,
+    version,
+    license,
+  }))
+
 export default {
   target: 'server',
   head: {
@@ -60,6 +79,10 @@ export default {
     '@nuxtjs/tailwindcss',
     'nuxt-shopify',
   ],
+  env: {
+    buildTime: +new Date(),
+    licenses: dependencies,
+  },
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
     storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,

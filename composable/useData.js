@@ -17,10 +17,7 @@ export function useData() {
   const cookies = useCookies()
   const route = useRoute()
 
-  const buildtime =
-    process.env.NUXT_ENV_CURRENT_DATE === undefined
-      ? undefined
-      : Date.parse(process.env.NUXT_ENV_CURRENT_DATE)
+  const buildTime = process.env.buildTime
 
   const routeName = route.value.name
   const routeSlug = route.value.params.slug
@@ -65,7 +62,7 @@ export function useData() {
     ...media,
     acceptCookieAgreement,
     allCookies,
-    buildtime,
+    buildTime,
     isCookieAgreement,
     isOpen,
     removeAllCookies,

@@ -25,8 +25,8 @@ export default defineComponent({
     isThumbnail: { type: Boolean, default: false, required: false },
   },
   setup() {
-    const { buildtime, isWebpSupported, media } = useData()
-    return { buildtime, isWebpSupported, media }
+    const { buildTime, isWebpSupported, media } = useData()
+    return { buildTime, isWebpSupported, media }
   },
   data() {
     return {
@@ -62,7 +62,7 @@ export default defineComponent({
     responsiveUrl() {
       const extension = this.imageInformation.url?.split('.')?.reverse()[0]
       if (process.env.NODE_ENV === 'development' || extension === undefined) {
-        return `${this.imageInformation.url}?v=${this.buildtime}`
+        return `${this.imageInformation.url}?v=${this.buildTime}`
       }
       if (
         this.fixSize === undefined &&
@@ -86,7 +86,7 @@ export default defineComponent({
       if (this.isWebpSupported) {
         responsiveUrl = responsiveUrl.replace(`.${extension}`, '.webp')
       }
-      return `${responsiveUrl}?v=${this.buildtime}`
+      return `${responsiveUrl}?v=${this.buildTime}`
     },
   },
   mounted() {
