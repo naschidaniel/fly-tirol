@@ -47,7 +47,7 @@
 import { computed, defineComponent, unref } from '@vue/composition-api'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
-import { useData } from '~/composable/useData'
+import { useNavigation } from '~/composable/useNavigation'
 import { useShop } from '~/composable/useShop'
 
 export default defineComponent({
@@ -57,7 +57,7 @@ export default defineComponent({
   },
   props: { page: { type: Object, required: true } },
   setup(props) {
-    const { routeName } = useData()
+    const { routeName } = useNavigation()
     const { products } = useShop()
     const isCourse = !props.page.path.includes('/tandemfliegen')
     const course = computed(

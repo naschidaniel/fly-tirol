@@ -54,14 +54,14 @@
 
 <script>
 import { computed, defineComponent, unref } from '@vue/composition-api'
-import { useFormat } from '~/composable/useFormat.js'
-import { useData } from '~/composable/useData'
+import { useFormat } from '~/composable/useFormat'
+import { useNavigation } from '~/composable/useNavigation'
 import { useShop } from '~/composable/useShop'
 
 export default defineComponent({
   name: 'ProductAppointment',
   setup() {
-    const { routeSlug } = useData()
+    const { routeSlug } = useNavigation()
     const { formatDate } = useFormat()
     const { bookProduct, products } = useShop()
     const productId = computed(

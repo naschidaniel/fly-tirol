@@ -7,7 +7,7 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { useData } from '~/composable/useData'
+import { useNavigation } from '~/composable/useNavigation'
 
 export default defineComponent({
   name: 'NavigationDropdownLink',
@@ -16,7 +16,7 @@ export default defineComponent({
     to: { type: String, required: true },
   },
   setup() {
-    const { isOpen } = useData()
+    const { isOpen } = useNavigation()
     return { isOpen }
   },
 })

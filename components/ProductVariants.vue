@@ -133,7 +133,7 @@
 import { computed, defineComponent, unref } from '@vue/composition-api'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import { useData } from '~/composable/useData'
+import { useNavigation } from '~/composable/useNavigation'
 import { useFormat } from '~/composable/useFormat'
 import { useShop } from '~/composable/useShop'
 
@@ -145,7 +145,7 @@ export default defineComponent({
     page: { type: Object, required: true },
   },
   setup() {
-    const { routeName, routeSlug } = useData()
+    const { routeName, routeSlug } = useNavigation()
     const { formatPrice } = useFormat()
     const { bookProduct, filterCalender, products } = useShop()
     const category = routeName.split('-')[0]

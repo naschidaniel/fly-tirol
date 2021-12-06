@@ -9,7 +9,7 @@
         <th class="border">Cookie-Name</th>
         <th class="border">Cookie-Wert</th>
       </tr>
-      <tr v-for="(value, index) in allCokies" :key="index" class="border">
+      <tr v-for="(value, index) in allCookies" :key="index" class="border">
         <td class="p-1 text-sm lg:text-base align-top border text-center">
           {{ index }}
         </td>
@@ -30,13 +30,14 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { useData } from '~/composable/useData'
+import { useCookieAgreement } from '~/composable/useCookieAgreement'
 
 export default defineComponent({
   name: 'ResetCookieAgreement',
   setup() {
-    const { allCokies, isCookieAgreement, removeAllCookies } = useData()
-    return { allCokies, isCookieAgreement, removeAllCookies }
+    const { allCookies, isCookieAgreement, removeAllCookies } =
+      useCookieAgreement()
+    return { allCookies, isCookieAgreement, removeAllCookies }
   },
 })
 </script>

@@ -72,7 +72,7 @@ import OutlineMenuIcon from '../icons/OutlineMenuIcon.vue'
 import OutlineXIcon from '../icons/OutlineXIcon.vue'
 import NavigationNavbarCart from './NavigationNavbarCart.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
-import { useData } from '~/composable/useData'
+import { useNavigation } from '~/composable/useNavigation'
 
 export default defineComponent({
   name: 'NavigationNavbar',
@@ -83,7 +83,7 @@ export default defineComponent({
     OutlineXIcon,
   },
   setup() {
-    const { isOpen } = useData()
+    const { isOpen } = useNavigation()
     return { isOpen }
   },
   methods: {

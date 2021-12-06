@@ -40,8 +40,8 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { generateMetatags } from '~/util/generateHeaderInformation'
-import { useFormat } from '~/composable/useFormat.js'
 import { useData } from '~/composable/useData'
+import { useFormat } from '~/composable/useFormat'
 
 export default defineComponent({
   setup() {

@@ -26,8 +26,8 @@ export default defineComponent({
     isThumbnail: { type: Boolean, default: false, required: false },
   },
   setup() {
-    const { buildTime, isWebpSupported } = useData()
-    const { media } = useMedia()
+    const { buildTime } = useData()
+    const { isWebpSupported, media } = useMedia()
     return { buildTime, isWebpSupported, media }
   },
   data() {
