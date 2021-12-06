@@ -5,7 +5,6 @@ import {
   wrapProperty,
   useRoute,
 } from '@nuxtjs/composition-api'
-import { useMedia } from './useMedia'
 
 const useCookies = wrapProperty('$cookies', false)
 
@@ -57,9 +56,7 @@ export function useData() {
     }
   }
 
-  const media = useMedia()
   return {
-    ...media,
     acceptCookieAgreement,
     allCookies,
     buildTime,

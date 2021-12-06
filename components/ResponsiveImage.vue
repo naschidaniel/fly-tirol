@@ -16,6 +16,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useData } from '~/composable/useData'
+import { useMedia } from '~/composable/useMedia'
 
 export default defineComponent({
   props: {
@@ -25,7 +26,8 @@ export default defineComponent({
     isThumbnail: { type: Boolean, default: false, required: false },
   },
   setup() {
-    const { buildTime, isWebpSupported, media } = useData()
+    const { buildTime, isWebpSupported } = useData()
+    const { media } = useMedia()
     return { buildTime, isWebpSupported, media }
   },
   data() {
