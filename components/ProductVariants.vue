@@ -134,8 +134,8 @@ import { computed, defineComponent, unref } from '@vue/composition-api'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { useData } from '~/composable/useData'
+import { useFormat } from '~/composable/useFormat'
 import { useShop } from '~/composable/useShop'
-import { formatPrice } from '~/util/formatPrice'
 
 export default defineComponent({
   name: 'ProductVariants',
@@ -146,6 +146,7 @@ export default defineComponent({
   },
   setup() {
     const { routeName, routeSlug } = useData()
+    const { formatPrice } = useFormat()
     const { bookProduct, filterCalender, products } = useShop()
     const category = routeName.split('-')[0]
     const dates = computed(() => [
@@ -175,6 +176,7 @@ export default defineComponent({
     return {
       bookProduct,
       dates,
+      formatPrice,
       productCalender,
       prices,
     }
@@ -196,7 +198,6 @@ export default defineComponent({
     },
   },
   methods: {
-    formatPrice,
     setCheckedCourse() {
       this.pickedCourse = this.selectedCourse[0]
     },

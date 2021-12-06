@@ -54,7 +54,7 @@
 
 <script>
 import { computed, defineComponent, unref } from '@vue/composition-api'
-import { formatDate } from '~/util/formatDate.js'
+import { useFormat } from '~/composable/useFormat.js'
 import { useData } from '~/composable/useData'
 import { useShop } from '~/composable/useShop'
 
@@ -62,11 +62,12 @@ export default defineComponent({
   name: 'ProductAppointment',
   setup() {
     const { routeSlug } = useData()
+    const { formatDate } = useFormat()
     const { bookProduct, products } = useShop()
     const productId = computed(
       () => unref(products).find((p) => p.slug === routeSlug)?.id
     )
-    return { bookProduct, productId }
+    return { bookProduct, formatDate, productId }
   },
   data() {
     return {
@@ -91,7 +92,6 @@ export default defineComponent({
       this.isFormValid = validation
       this.isDateValid = validation
     },
-    formatDate,
   },
 })
 </script>

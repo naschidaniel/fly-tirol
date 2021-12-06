@@ -6,7 +6,7 @@ import {
   wrapProperty,
 } from '@nuxtjs/composition-api'
 import { isCookieAgreement } from './useData'
-import { formatPrice } from '~/util/formatPrice'
+import { useFormat } from './useFormat'
 
 const useCookies = wrapProperty('$cookies', false)
 const useShopify = wrapProperty('$shopify', false)
@@ -20,6 +20,7 @@ const products = ref([])
 
 export function useShop() {
   const cookies = useCookies()
+  const format = useFormat()
   const router = useRouter()
   const shopify = useShopify()
 
@@ -162,7 +163,7 @@ export function useShop() {
           },
         ]
         if (s.productOptions[0].name !== 'Kursdatum') {
-          s.optionTitle = `${s.variantTitle} ${formatPrice(s.price)}`
+          s.optionTitle = `${s.variantTitle} ${format.formatPrice(s.price)}`
           s.isDateItem = false
           return
         }
