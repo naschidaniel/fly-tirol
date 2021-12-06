@@ -5,7 +5,7 @@ import {
   unref,
   wrapProperty,
 } from '@nuxtjs/composition-api'
-import { isCookieAgreement } from './useData'
+import { isCookieAgreement } from './useCookieAgreement'
 import { useFormat } from './useFormat'
 
 const useCookies = wrapProperty('$cookies', false)

@@ -22,7 +22,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import NavigationDropdownLink from './NavigationDropdownLink.vue'
-import { useData } from '~/composable/useData'
+import { useNavigation } from '~/composable/useNavigation'
 
 export default defineComponent({
   name: 'NavigationDropdown',
@@ -30,7 +30,7 @@ export default defineComponent({
     NavigationDropdownLink,
   },
   setup() {
-    const { isOpen } = useData()
+    const { isOpen } = useNavigation()
     return { isOpen }
   },
 })
