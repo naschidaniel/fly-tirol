@@ -23,7 +23,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import ResponsiveImage from './ResponsiveImage.vue'
-import { useData } from '~/composable/useData'
+import { useMedia } from '~/composable/useMedia'
 
 export default defineComponent({
   components: { ResponsiveImage },
@@ -31,7 +31,7 @@ export default defineComponent({
     path: { type: String, default: '/media' },
   },
   setup() {
-    const { media } = useData()
+    const { media } = useMedia()
     return { media }
   },
   computed: {
