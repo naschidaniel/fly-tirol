@@ -28,10 +28,14 @@
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import TeamList from '~/components/TeamList.vue'
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default {
   components: { SocialBar, PageHeader, TeamList },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   data() {
     return {
       title: 'Team',
@@ -61,7 +65,7 @@ export default {
     }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.title,
       this.description,
       this.$route.fullPath

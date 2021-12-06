@@ -39,23 +39,24 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 import { useData } from '~/composable/useData'
 import { useFormat } from '~/composable/useFormat'
 
 export default defineComponent({
   setup() {
+    const { generateMetaTags } = useMetaTags()
     const { buildTime } = useData()
     const { formatDateTime } = useFormat()
     const licenses = process.env.licenses
-    return { buildTime, formatDateTime, licenses }
+    return { buildTime, formatDateTime, generateMetaTags, licenses }
   },
   async asyncData({ $content }) {
     const impressum = await $content('impressum').fetch()
     return { impressum }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.impressum.title,
       this.impressum.description,
       this.$route.fullPath

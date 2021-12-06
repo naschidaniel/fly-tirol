@@ -24,10 +24,14 @@
 import Calender from '~/components/Calender.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default {
   components: { Calender, SocialBar, PageHeader },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   data() {
     return {
       title: 'Termine',
@@ -36,7 +40,7 @@ export default {
     }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.title,
       this.description,
       this.$route.fullPath

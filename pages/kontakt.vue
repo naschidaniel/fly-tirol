@@ -35,11 +35,15 @@
 <script>
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon.vue'
 
 export default {
   components: { SocialBar, PageHeader, OutlineLocationMarkerIcon },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   data() {
     return {
       title: 'Kontakt',
@@ -52,7 +56,7 @@ export default {
     }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.title,
       this.description,
       this.$route.fullPath

@@ -20,10 +20,14 @@
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default {
   components: { SocialBar, ProductList, PageHeader },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   async asyncData({ $content }) {
     const pages = await $content('reisen').sortBy('order').fetch()
     return { pages }
@@ -35,7 +39,7 @@ export default {
     }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.title,
       this.description,
       this.$route.fullPath
