@@ -43,7 +43,7 @@ import OutlineCalendarIcon from './icons/OutlineCalendarIcon.vue'
 import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
 import OutlinePaperPlaneIconVue from './icons/OutlinePaperPlaneIcon.vue'
 import SpinnerIcon from './icons/SpinnerIcon.vue'
-import { formatPrice } from '~/util/formatPrice'
+import { useFormat } from '~/composable/useFormat'
 
 export default defineComponent({
   components: {
@@ -60,14 +60,15 @@ export default defineComponent({
     dates: { type: Number, default: undefined },
     isShowDate: { type: Boolean, default: true },
   },
+  setup() {
+    const { formatPrice } = useFormat()
+    return { formatPrice }
+  },
   computed: {
     price() {
       const preText = this.prices.length >= 2 ? 'ab' : ''
       return { preText, price: this.prices[0] }
     },
-  },
-  methods: {
-    formatPrice,
   },
 })
 </script>

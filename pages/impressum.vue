@@ -40,14 +40,15 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { generateMetatags } from '~/util/generateHeaderInformation'
-import { formatDateTime } from '~/util/formatDate'
+import { useFormat } from '~/composable/useFormat.js'
 import { useData } from '~/composable/useData'
 
 export default defineComponent({
   setup() {
     const { buildTime } = useData()
+    const { formatDateTime } = useFormat()
     const licenses = process.env.licenses
-    return { buildTime, licenses }
+    return { buildTime, formatDateTime, licenses }
   },
   async asyncData({ $content }) {
     const impressum = await $content('impressum').fetch()
@@ -60,9 +61,6 @@ export default defineComponent({
       this.$route.fullPath
     )
     return { title: this.impressum.title, meta: metatags }
-  },
-  methods: {
-    formatDateTime,
   },
 })
 </script>

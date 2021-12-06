@@ -115,7 +115,7 @@ import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
 import { useShop } from '~/composable/useShop'
-import { formatPrice } from '~/util/formatPrice'
+import { useFormat } from '~/composable/useFormat'
 
 export default defineComponent({
   name: 'Cart',
@@ -125,6 +125,7 @@ export default defineComponent({
     OutlineShoppingBagIcon,
   },
   setup() {
+    const { formatPrice } = useFormat()
     const {
       cartItems,
       lineItemsChanged,
@@ -139,13 +140,11 @@ export default defineComponent({
     return {
       cartItems,
       checkout,
+      formatPrice,
       isCartItems,
       refreshCart,
       updateLineItems,
     }
-  },
-  methods: {
-    formatPrice,
   },
 })
 </script>
