@@ -35,10 +35,14 @@
 import InfoBox from '~/components/InfoBox.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductList from '~/components/ProductList.vue'
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default {
   components: { InfoBox, SocialBar, ProductList },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   async asyncData({ $content }) {
     const pages = await $content('tandemfliegen').sortBy('order').fetch()
     return { pages }
@@ -51,7 +55,7 @@ export default {
     }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.title,
       this.description,
       this.$route.fullPath

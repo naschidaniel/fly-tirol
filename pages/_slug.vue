@@ -5,15 +5,19 @@
 </template>
 
 <script>
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default {
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   async asyncData({ $content, params }) {
     const page = await $content(params.slug).fetch()
     return { page }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.page.title,
       this.page.description,
       this.$route.fullPath

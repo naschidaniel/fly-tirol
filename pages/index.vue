@@ -92,13 +92,17 @@
 </template>
 
 <script>
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 import LinkList from '~/components/LinkList.vue'
 import ResponsiveImage from '~/components/ResponsiveImage.vue'
 import SocialBar from '~/components/SocialBar.vue'
 
 export default {
   components: { LinkList, ResponsiveImage, SocialBar },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   data() {
     return {
       advancedTrainings: {
@@ -138,7 +142,7 @@ export default {
     }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.title,
       this.description,
       this.$route.fullPath

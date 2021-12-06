@@ -8,13 +8,17 @@
 <script>
 import Cart from '~/components/Cart.vue'
 
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default {
   name: 'Buchen',
   components: { Cart },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       'Buchen',
       'Buche dienen Traum vom Fliegen bei der Flugschule Fly-Tirol.com',
       this.$route.fullPath

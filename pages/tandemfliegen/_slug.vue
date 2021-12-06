@@ -79,16 +79,20 @@ import Alert from '~/components/Alert.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default {
   components: { Alert, SocialBar, ProductAppointment, ProductVariants },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   async asyncData({ $content, params }) {
     const page = await $content('tandemfliegen', params.slug).fetch()
     return { page }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.page.title,
       this.page.description,
       this.$route.fullPath

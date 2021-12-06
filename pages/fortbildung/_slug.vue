@@ -12,18 +12,22 @@
 </template>
 
 <script>
-import { generateMetatags } from '~/util/generateHeaderInformation'
+import { useMetaTags } from '~/composable/useMetaTags'
 import ProductVariants from '~/components/ProductVariants.vue'
 import SocialBar from '~/components/SocialBar.vue'
 
 export default {
   components: { ProductVariants, SocialBar },
+  setup() {
+    const { generateMetaTags } = useMetaTags()
+    return { generateMetaTags }
+  },
   async asyncData({ $content, params }) {
     const page = await $content('fortbildung', params.slug).fetch()
     return { page }
   },
   head() {
-    const metatags = generateMetatags(
+    const metatags = this.generateMetaTags(
       this.page.title,
       this.page.description,
       this.$route.fullPath
