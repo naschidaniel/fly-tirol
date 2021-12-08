@@ -26,7 +26,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import ProductCard from './ProductCard.vue'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import { useNavigation } from '~/composable/useNavigation'
 
 export default defineComponent({
   components: { ProductCard },
@@ -34,8 +34,8 @@ export default defineComponent({
     pages: { type: Array, required: true },
   },
   setup() {
-    const { routeName, getCourse } = useShopifyCart()
-    return { routeName, getCourse }
+    const { routeName } = useNavigation()
+    return { routeName }
   },
 })
 </script>
