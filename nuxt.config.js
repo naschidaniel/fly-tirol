@@ -86,7 +86,7 @@ export default {
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
     storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-    unoptimized: true,
+    unoptimized: false,
   },
   modules: ['@nuxt/content', 'cookie-universal-nuxt'],
 
