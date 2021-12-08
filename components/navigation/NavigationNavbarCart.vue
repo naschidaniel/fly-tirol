@@ -11,21 +11,15 @@
 </template>
 
 <script>
-import { defineComponent, onMounted } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
-import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 
 export default defineComponent({
   name: 'NavigationNavbarCart',
   components: { OutlineShoppingCartIcon },
   setup() {
-    const { initShop } = useFetchShopify()
-    const { checkout, loadCheckout } = useShopifyCart()
-    onMounted(() => {
-      initShop()
-      loadCheckout()
-    })
+    const { checkout } = useShopifyCart()
     return {
       checkout,
     }
