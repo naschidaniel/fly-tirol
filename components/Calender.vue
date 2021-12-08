@@ -4,22 +4,22 @@
       <div class="md:w-1/3">
         <h2>Kategorien</h2>
         <div
-          v-for="categorie in calenderCategoriesAvailable"
-          :key="categorie"
+          v-for="category in calenderCategoriesAvailable"
+          :key="category"
           class="inline"
         >
           <button
-            :aria-label="`Set Product Filter for ${categorie}`"
+            :aria-label="`Set Product Filter for ${category}`"
             class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full"
-            @click="setCheckedCategories(categorie)"
+            @click="setCheckedCategories(category)"
           >
-            <span v-if="calenderCategoriesChecked.includes(categorie)">
+            <span v-if="calenderCategoriesChecked.includes(category)">
               <OutlineCheckIcon class="text-green-600" />
             </span>
             <span v-else>
               <OutlineXIcon class="text-red-400" />
             </span>
-            {{ categorie }}
+            {{ category }}
           </button>
         </div>
       </div>
