@@ -11,19 +11,7 @@
           <h3>{{ month }}</h3>
           <div v-for="entry in course" :key="entry.id">
             <div
-              class="
-                inline-flex
-                items-center
-                justify-center
-                px-2
-                py-1
-                mr-2
-                mb-2
-                leading-none
-                text-gray-900
-                bg-gray-100
-                rounded-full
-              "
+              class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full"
             >
               {{ entry.optionTitle }}
             </div>
@@ -32,16 +20,7 @@
       </div>
     </div>
     <div
-      class="
-        mt-4
-        w-full
-        lg:mt-0 lg:w-1/2
-        border-2
-        rounded-lg
-        bg-gray-100
-        px-4
-        pb-2
-      "
+      class="mt-4 w-full lg:mt-0 lg:w-1/2 border-2 rounded-lg bg-gray-100 px-4 pb-2"
     >
       <h2 v-if="isCourse">Kurs Buchen</h2>
       <h2 v-else>Wähle deinen Flug</h2>
@@ -74,19 +53,7 @@
         <select
           id="select-course"
           v-model="selectedCourse"
-          class="
-            mt-2
-            w-full
-            text-base
-            block
-            rounded-md
-            border-gray-300
-            shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
-          "
+          class="mt-2 w-full text-base block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
         >
           <option disabled :value="[]">Bitte auswählen</option>
           <option

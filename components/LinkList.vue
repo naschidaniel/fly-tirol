@@ -5,13 +5,7 @@
         <div class="mt-6">
           <h2 class="mb-6">
             <span
-              class="
-                text-lg
-                font-heading font-medium
-                flex flex-row
-                items-center
-                mb-2
-              "
+              class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
               <span class="inline-block">Finde das richtige</span>
@@ -28,16 +22,7 @@
         </div>
       </div>
       <div
-        class="
-          card--grid
-          grid-gap-1
-          max-w-90
-          mx-auto
-          py-4
-          w-full
-          xl:py-12 xl:ml-4
-          2xl:flex
-        "
+        class="card--grid grid-gap-1 max-w-90 mx-auto py-4 w-full xl:py-12 xl:ml-4 2xl:flex"
       >
         <link-card
           :card-image="tandemflights.cardImage"

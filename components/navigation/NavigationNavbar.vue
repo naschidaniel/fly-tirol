@@ -1,18 +1,7 @@
 <template>
   <div class="flex justify-between lg:w-full">
     <div
-      class="
-        navbar--wrapper
-        fixed
-        flex
-        justify-end
-        p-16
-        pt-32
-        z-40
-        w-full
-        h-screen
-        lg:h-auto lg:relative lg:justify-center lg:p-0 lg:z-0
-      "
+      class="navbar--wrapper fixed flex justify-end p-16 pt-32 z-40 w-full h-screen lg:h-auto lg:relative lg:justify-center lg:p-0 lg:z-0"
       :class="{ open: isOpen, closed: !isOpen }"
       @click="isOpen = !isOpen"
     >
@@ -42,20 +31,7 @@
       <div class="lg:mr-0 lg:hidden">
         <button
           aria-label="Toggle Dropdown Menu"
-          class="
-            p-2
-            rounded-md
-            text-brand
-            focus:ring-2
-            focus:ring-blue-400
-            focus:ring-offset-2
-            focus:ring-offset-white
-            focus:ring-opacity-100
-            focus:outline-none
-            transition
-            duration-150
-            ease-in-out
-          "
+          class="p-2 rounded-md text-brand focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-white focus:ring-opacity-100 focus:outline-none transition duration-150 ease-in-out"
           @click="isOpen = !isOpen"
         >
           <OutlineXIcon v-if="isOpen" />

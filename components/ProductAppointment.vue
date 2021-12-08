@@ -9,17 +9,7 @@
           v-model="selectedDate"
           type="date"
           :min="today"
-          class="
-            mt-1
-            block
-            w-full
-            rounded-md
-            shadow-sm
-            focus:border-indigo-300
-            focus:ring
-            focus:ring-indigo-200
-            focus:ring-opacity-50
-          "
+          class="mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           :class="
             (!isDateValid && selectedDate !== '') || !isFormValid
               ? 'border-red-600'

@@ -10,19 +10,7 @@
         >
           <button
             :aria-label="`Set Product Filter for ${categorie}`"
-            class="
-              inline-flex
-              items-center
-              justify-center
-              px-2
-              py-1
-              mr-2
-              mb-2
-              leading-none
-              text-gray-900
-              bg-gray-100
-              rounded-full
-            "
+            class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full"
             @click="setCheckedCategories(categorie)"
           >
             <span v-if="calenderCategoriesChecked.includes(categorie)">
@@ -44,19 +32,7 @@
         >
           <button
             :aria-label="`Set Product Filter for ${product}`"
-            class="
-              inline-flex
-              items-center
-              justify-center
-              px-2
-              py-1
-              mr-2
-              mb-2
-              leading-none
-              text-gray-900
-              bg-gray-100
-              rounded-full
-            "
+            class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full"
             @click="setCheckedProducts(product)"
           >
             <span v-if="calenderProductsChecked.includes(product)">
@@ -80,29 +56,10 @@
         <div
           v-for="entry in course"
           :key="entry.id"
-          class="
-            m-2
-            p-4
-            border-2
-            rounded-lg
-            md:w-2/3
-            lg:w-1/3
-            xl:w-1/4
-            text-left
-          "
+          class="m-2 p-4 border-2 rounded-lg md:w-2/3 lg:w-1/3 xl:w-1/4 text-left"
         >
           <span
-            class="
-              inline-flex
-              items-center
-              justify-center
-              px-2
-              py-1
-              leading-none
-              text-gray-900
-              rounded-full
-              cursor-pointer
-            "
+            class="inline-flex items-center justify-center px-2 py-1 leading-none text-gray-900 rounded-full cursor-pointer"
             :class="
               entry.productType === 'Ausbildung'
                 ? 'bg-green-300'
@@ -128,17 +85,7 @@
             <p>{{ entry.startDay }}, {{ entry.dateString }}</p>
             <div class="flex mt-2">
               <select
-                class="
-                  text-sm
-                  block
-                  rounded-md
-                  border-gray-300
-                  shadow-sm
-                  focus:border-indigo-300
-                  focus:ring
-                  focus:ring-indigo-200
-                  focus:ring-opacity-50
-                "
+                class="text-sm block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                 @change="updateSelectedProduct(entry.id, entry.month, $event)"
               >
                 <option

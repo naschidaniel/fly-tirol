@@ -3,13 +3,7 @@
     <div>
       <h1 class="mb-8 sm:mb-16">
         <span
-          class="
-            text-lg
-            font-heading font-medium
-            flex flex-row
-            items-center
-            mb-2
-          "
+          class="text-lg font-heading font-medium flex flex-row items-center mb-2"
         >
           <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
           <span v-if="error.statusCode === 404" class="inline-block">404</span>

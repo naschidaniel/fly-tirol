@@ -1,49 +1,14 @@
 <template>
   <div class="relative overflow-hidden w-full">
     <div
-      class="
-        relative
-        flex flex-wrap
-        lg:flex-nowrap lg:w-11/12 lg:maxw-90 lg:mr-0 lg:ml-auto lg:pt-8
-        pb-4
-        md:pb-12
-        2lg:pb-24
-        z-10
-      "
+      class="relative flex flex-wrap lg:flex-nowrap lg:w-11/12 lg:maxw-90 lg:mr-0 lg:ml-auto lg:pt-8 pb-4 md:pb-12 2lg:pb-24 z-10"
     >
       <div
         v-if="picture"
-        class="
-          relative
-          w-full
-          aspect-w-1 aspect-h-1
-          overflow-hidden
-          bg-gray-200
-          lg:aspect-w-3 lg:aspect-h-1 lg:order-2 lg:ml-8
-        "
+        class="relative w-full aspect-w-1 aspect-h-1 overflow-hidden bg-gray-200 lg:aspect-w-3 lg:aspect-h-1 lg:order-2 lg:ml-8"
       >
         <span
-          class="
-            block
-            absolute
-            bg-white
-            rounded-t-4xl
-            -bottom-20
-            left-0
-            top-auto
-            h-40
-            w-full
-            -skew-y-6
-            lg:w-48
-            lg:h-full
-            lg:top-0
-            lg:-left-28
-            lg:-skew-x-12
-            lg:skew-y-0
-            lg:rounded-r-4xl
-            z-10
-            transform
-          "
+          class="block absolute bg-white rounded-t-4xl -bottom-20 left-0 top-auto h-40 w-full -skew-y-6 lg:w-48 lg:h-full lg:top-0 lg:-left-28 lg:-skew-x-12 lg:skew-y-0 lg:rounded-r-4xl z-10 transform"
         ></span>
         <ResponsiveImage
           img-class="object-cover object-top w-full h-full"
@@ -51,23 +16,12 @@
         />
       </div>
       <div
-        class="
-          flex flex-col
-          max-w-90
-          mx-auto
-          lg:max-w-screen-sm lg:flex-shrink-0 lg:mx-0
-        "
+        class="flex flex-col max-w-90 mx-auto lg:max-w-screen-sm lg:flex-shrink-0 lg:mx-0"
       >
         <div class="mt-6">
           <h1 class="mb-6">
             <span
-              class="
-                text-lg
-                font-heading font-medium
-                flex flex-row
-                items-center
-                mb-2
-              "
+              class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
               <span class="inline-block">{{ preHeadline }}</span>

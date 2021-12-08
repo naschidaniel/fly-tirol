@@ -5,13 +5,7 @@
         <div class="">
           <h2 class="mb-6">
             <span
-              class="
-                text-lg
-                font-heading font-medium
-                flex flex-row
-                items-center
-                mb-2
-              "
+              class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
               <span class="inline-block">Dein Fly Tirol</span>
