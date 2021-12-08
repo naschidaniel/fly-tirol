@@ -17,16 +17,6 @@ export function useCookieAgreement() {
     getCookieAgreementCookie()
   })
 
-  function getAllCookies() {
-    allCookies.value = cookies.getAll()
-  }
-
-  function removeAllCookies() {
-    cookies.removeAll()
-    isCookieAgreement.value = false
-    getAllCookies()
-  }
-
   function acceptCookieAgreement() {
     cookies.set('FlyTirol-cookieAgreement', 'true', {
       path: '/',
@@ -36,11 +26,21 @@ export function useCookieAgreement() {
     isCookieAgreement.value = true
   }
 
+  function getAllCookies() {
+    allCookies.value = cookies.getAll()
+  }
+
   function getCookieAgreementCookie() {
     const cookieAgreement = cookies.get('FlyTirol-cookieAgreement')
     if (cookieAgreement) {
       isCookieAgreement.value = cookieAgreement
     }
+  }
+
+  function removeAllCookies() {
+    cookies.removeAll()
+    isCookieAgreement.value = false
+    getAllCookies()
   }
 
   return {
