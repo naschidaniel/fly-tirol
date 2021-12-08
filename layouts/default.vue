@@ -10,20 +10,30 @@
 </template>
 
 <script>
+import { defineComponent, onMounted } from '@vue/composition-api'
 import SiteCookieBanner from '~/components/global/SiteCookieBanner.vue'
 import SiteFooter from '~/components/global/SiteFooter.vue'
 import SiteHeader from '~/components/global/SiteHeader.vue'
+import { useFetchShopify } from '~/composable/useFetchShopify'
+import { useShopifyCart } from '~/composable/useShopifyCart'
 
-export default {
+export default defineComponent({
   components: {
     SiteCookieBanner,
     SiteFooter,
     SiteHeader,
   },
-  mounted() {
-    if (process.env.NODE_ENV === 'development') {
-      document.body.classList.add('debug-screens')
-    }
+  setup() {
+    const { initShop } = useFetchShopify()
+    const { loadCheckout } = useShopifyCart()
+    onMounted(() => {
+      initShop()
+      loadCheckout()
+
+      if (process.env.NODE_ENV === 'development') {
+        document.body.classList.add('debug-screens')
+      }
+    })
   },
-}
+})
 </script>
