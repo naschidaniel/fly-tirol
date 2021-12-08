@@ -192,7 +192,8 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { useShop } from '~/composable/useShop'
+import { useShopifyCalender } from '~/composable/useShopifyCalender'
+import { useShopifyCart } from '~/composable/useShopifyCart'
 import OutlineCheckIcon from '~/components/icons/OutlineCheckIcon.vue'
 import OutlineXIcon from '~/components/icons/OutlineXIcon.vue'
 
@@ -200,8 +201,8 @@ export default defineComponent({
   name: 'Calender',
   components: { OutlineCheckIcon, OutlineXIcon },
   setup() {
+    const { bookProduct } = useShopifyCart()
     const {
-      bookProduct,
       calenderFiltered,
       calenderProductsAvailable,
       calenderCategoriesAvailable,
@@ -212,7 +213,7 @@ export default defineComponent({
       setCheckedProducts,
       resetFilter,
       updateSelectedProduct,
-    } = useShop()
+    } = useShopifyCalender()
     return {
       bookProduct,
       calenderFiltered,

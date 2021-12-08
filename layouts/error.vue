@@ -31,7 +31,8 @@
 
 <script>
 import { defineComponent, onMounted } from '@vue/composition-api'
-import { useShop } from '@/composable/useShop'
+import { useFetchShopify } from '~/composable/useFetchShopify'
+import { useShopifyCart } from '~/composable/useShopifyCart'
 
 export default defineComponent({
   layout: 'error',
@@ -49,7 +50,8 @@ export default defineComponent({
     },
   },
   setup() {
-    const { initShop, resetCart } = useShop()
+    const { initShop } = useFetchShopify()
+    const { resetCart } = useShopifyCart()
     onMounted(() => {
       resetCart()
       initShop()

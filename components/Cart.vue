@@ -114,7 +114,7 @@ import { defineComponent, onMounted } from '@vue/composition-api'
 import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
-import { useShop } from '~/composable/useShop'
+import { useShopifyCart } from '~/composable/useShopifyCart'
 import { useFormat } from '~/composable/useFormat'
 
 export default defineComponent({
@@ -133,7 +133,7 @@ export default defineComponent({
       isCartItems,
       refreshCart,
       updateLineItems,
-    } = useShop()
+    } = useShopifyCart()
     onMounted(() => {
       lineItemsChanged.value = []
     })

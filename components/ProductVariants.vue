@@ -135,7 +135,8 @@ import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { useNavigation } from '~/composable/useNavigation'
 import { useFormat } from '~/composable/useFormat'
-import { useShop } from '~/composable/useShop'
+import { useShopifyCart } from '~/composable/useShopifyCart'
+import { useShopifyCalender } from '~/composable/useShopifyCalender'
 
 export default defineComponent({
   name: 'ProductVariants',
@@ -147,7 +148,9 @@ export default defineComponent({
   setup() {
     const { routeName, routeSlug } = useNavigation()
     const { formatPrice } = useFormat()
-    const { bookProduct, filterCalender, products } = useShop()
+    const { bookProduct, products } = useShopifyCart()
+    const { filterCalender } = useShopifyCalender()
+
     const category = routeName.split('-')[0]
     const dates = computed(() => [
       ...new Set(

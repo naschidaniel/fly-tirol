@@ -56,14 +56,14 @@
 import { computed, defineComponent, unref } from '@vue/composition-api'
 import { useFormat } from '~/composable/useFormat'
 import { useNavigation } from '~/composable/useNavigation'
-import { useShop } from '~/composable/useShop'
+import { useShopifyCart } from '~/composable/useShopifyCart'
 
 export default defineComponent({
   name: 'ProductAppointment',
   setup() {
     const { routeSlug } = useNavigation()
     const { formatDate } = useFormat()
-    const { bookProduct, products } = useShop()
+    const { bookProduct, products } = useShopifyCart()
     const productId = computed(
       () => unref(products).find((p) => p.slug === routeSlug)?.id
     )
