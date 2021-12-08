@@ -48,7 +48,7 @@ import { computed, defineComponent, unref } from '@vue/composition-api'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useNavigation } from '~/composable/useNavigation'
-import { useShop } from '~/composable/useShop'
+import { useShopifyCart } from '~/composable/useShopifyCart'
 
 export default defineComponent({
   components: {
@@ -58,7 +58,7 @@ export default defineComponent({
   props: { page: { type: Object, required: true } },
   setup(props) {
     const { routeName } = useNavigation()
-    const { products } = useShop()
+    const { products } = useShopifyCart()
     const isCourse = !props.page.path.includes('/tandemfliegen')
     const course = computed(
       () =>
