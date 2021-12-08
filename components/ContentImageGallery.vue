@@ -3,7 +3,7 @@
     <section class="py-8 w-100">
       <div class="flex flex-wrap">
         <div
-          v-for="img in imageGalery"
+          v-for="img in imageGallery"
           :key="img.url"
           class="w-1/2 md:w-1/4 p-2"
         >
@@ -35,7 +35,7 @@ export default defineComponent({
     return { media }
   },
   computed: {
-    imageGalery() {
+    imageGallery() {
       return Object.values(this.media).filter((img) => {
         return img.path === this.path
       })
