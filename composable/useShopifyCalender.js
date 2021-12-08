@@ -18,6 +18,33 @@ export function useShopifyCalender() {
     return filteredEntries
   })
 
+  const calenderCategoriesAvailable = computed(() =>
+    [
+      ...new Set(
+        Object.values(calender.value).flatMap((c) =>
+          c.map((r) => r.productType)
+        )
+      ),
+    ].sort((a, b) => a.localeCompare(b))
+  )
+
+  const calenderProductsAvailable = computed(() => {
+    const selectedCategories = unref(calenderCategoriesChecked)
+    return [
+      ...new Set(
+        Object.values(calender.value).flatMap((c) =>
+          c
+            .filter((e) => selectedCategories.includes(e.productType))
+            .map((p) => p.productTitle)
+        )
+      ),
+    ].sort((a, b) => a.localeCompare(b))
+  })
+
+  const isCalenderFiltered = computed(
+    () => Object.keys(calenderFiltered.value).length >= 1
+  )
+
   function filterCalender(categories, { products, slug }) {
     const calenderSorted = unref(calender)
     const filteredEntries = {}
@@ -46,45 +73,30 @@ export function useShopifyCalender() {
     return filteredEntries
   }
 
-  const calenderCategoriesAvailable = computed(() =>
-    [
-      ...new Set(
-        Object.values(calender.value).flatMap((c) =>
-          c.map((r) => r.productType)
-        )
-      ),
-    ].sort((a, b) => a.localeCompare(b))
-  )
-
-  const calenderProductsAvailable = computed(() => {
-    const selectedCategories = unref(calenderCategoriesChecked)
-    return [
-      ...new Set(
-        Object.values(calender.value).flatMap((c) =>
-          c
-            .filter((e) => selectedCategories.includes(e.productType))
-            .map((p) => p.productTitle)
-        )
-      ),
-    ].sort((a, b) => a.localeCompare(b))
-  })
+  function initCalender(productsItemsSorted) {
+    const calenderItemsSorted = productsItemsSorted.filter(
+      (f) => f.isDateItem && f.isShowProduct
+    )
+    calenderCategoriesChecked.value = [
+      ...new Set(calenderItemsSorted.map((c) => c.productType)),
+    ]
+    calenderProductsChecked.value = [
+      ...new Set(calenderItemsSorted.map((c) => c.productTitle)),
+    ].filter((p) => p !== 'Tagesbetreuung')
+    const months = [...new Set(calenderItemsSorted.map((c) => c.month))]
+    const calenderMonths = {}
+    months.forEach(
+      (key) =>
+        (calenderMonths[key] = [
+          ...calenderItemsSorted.filter((c) => c.month === key),
+        ])
+    )
+    calender.value = calenderMonths
+  }
 
   function resetFilter() {
     calenderCategoriesChecked.value = unref(calenderCategoriesAvailable)
     calenderProductsChecked.value = unref(calenderProductsAvailable)
-  }
-
-  const isCalenderFiltered = computed(
-    () => Object.keys(calenderFiltered.value).length >= 1
-  )
-
-  function updateSelectedProduct(calenderItemId, month, e) {
-    const updateCalender = unref(calender)
-    const updateIndex = updateCalender[month].findIndex(
-      (o) => o.id === calenderItemId
-    )
-    updateCalender[month][updateIndex].selectedId = e.target.value
-    calender.value = updateCalender
   }
 
   function setCheckedCategories(change) {
@@ -109,32 +121,20 @@ export function useShopifyCalender() {
     calenderProductsChecked.value.push(change)
   }
 
-  function initCalender(productsItemsSorted) {
-    const calenderItemsSorted = productsItemsSorted.filter(
-      (f) => f.isDateItem && f.isShowProduct
+  function updateSelectedProduct(calenderItemId, month, e) {
+    const updateCalender = unref(calender)
+    const updateIndex = updateCalender[month].findIndex(
+      (o) => o.id === calenderItemId
     )
-    calenderCategoriesChecked.value = [
-      ...new Set(calenderItemsSorted.map((c) => c.productType)),
-    ]
-    calenderProductsChecked.value = [
-      ...new Set(calenderItemsSorted.map((c) => c.productTitle)),
-    ].filter((p) => p !== 'Tagesbetreuung')
-    const months = [...new Set(calenderItemsSorted.map((c) => c.month))]
-    const calenderMonths = {}
-    months.forEach(
-      (key) =>
-        (calenderMonths[key] = [
-          ...calenderItemsSorted.filter((c) => c.month === key),
-        ])
-    )
-    calender.value = calenderMonths
+    updateCalender[month][updateIndex].selectedId = e.target.value
+    calender.value = updateCalender
   }
 
   return {
     calender,
+    calenderCategoriesAvailable,
     calenderFiltered,
     calenderProductsAvailable,
-    calenderCategoriesAvailable,
     calenderProductsChecked,
     calenderCategoriesChecked,
     filterCalender,
