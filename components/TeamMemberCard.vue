@@ -32,16 +32,17 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import OutlineClipboardListIcon from './icons/OutlineClipboardListIcon.vue'
 import OutlineEmojiHappyIcon from './icons/OutlineEmojiHappyIcon.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 
-export default {
+export default defineComponent({
   components: {
     ResponsiveImage,
     OutlineClipboardListIcon,
     OutlineEmojiHappyIcon,
   },
   props: { member: { type: Object, required: true } },
-}
+})
 </script>

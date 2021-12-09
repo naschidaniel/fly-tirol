@@ -60,9 +60,10 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import LinkCard from './LinkCard.vue'
 
-export default {
+export default defineComponent({
   components: {
     LinkCard,
   },
@@ -73,5 +74,5 @@ export default {
     tandemflights: { type: Object, required: true },
     travels: { type: Object, required: true },
   },
-}
+})
 </script>

@@ -5,9 +5,10 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default {
+export default defineComponent({
   setup() {
     const { generateMetaTags } = useMetaTags()
     return { generateMetaTags }
@@ -24,5 +25,5 @@ export default {
     )
     return { title: this.page.title, meta: metatags }
   },
-}
+})
 </script>

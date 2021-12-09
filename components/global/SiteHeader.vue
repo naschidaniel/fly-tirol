@@ -12,16 +12,17 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import FlyTirolLogo from '../FlyTirolLogo.vue'
 import NavigationNavbar from '../navigation/NavigationNavbar.vue'
 
-export default {
+export default defineComponent({
   name: 'SiteHeader',
   components: {
     NavigationNavbar,
     FlyTirolLogo,
   },
-}
+})
 </script>
 
 <style>

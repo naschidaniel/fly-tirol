@@ -6,11 +6,11 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import Cart from '~/components/Cart.vue'
-
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default {
+export default defineComponent({
   name: 'Buchen',
   components: { Cart },
   setup() {
@@ -25,5 +25,5 @@ export default {
     )
     return { title: 'Buchen', meta: metatags }
   },
-}
+})
 </script>

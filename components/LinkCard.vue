@@ -36,8 +36,10 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import ResponsiveImage from './ResponsiveImage.vue'
-export default {
+
+export default defineComponent({
   components: { ResponsiveImage },
   props: {
     cardTitle: { type: String, required: true },
@@ -45,5 +47,5 @@ export default {
     description: { type: String, default: '' },
     to: { type: String, required: true },
   },
-}
+})
 </script>

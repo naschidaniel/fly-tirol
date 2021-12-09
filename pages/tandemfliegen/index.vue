@@ -32,12 +32,13 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import InfoBox from '~/components/InfoBox.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductList from '~/components/ProductList.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default {
+export default defineComponent({
   components: { InfoBox, SocialBar, ProductList },
   setup() {
     const { generateMetaTags } = useMetaTags()
@@ -62,5 +63,5 @@ export default {
     )
     return { title: this.title, meta: metatags }
   },
-}
+})
 </script>

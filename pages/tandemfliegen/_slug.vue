@@ -75,13 +75,14 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import Alert from '~/components/Alert.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default {
+export default defineComponent({
   components: { Alert, SocialBar, ProductAppointment, ProductVariants },
   setup() {
     const { generateMetaTags } = useMetaTags()
@@ -104,5 +105,5 @@ export default {
       return this.page.isAppointment || false
     },
   },
-}
+})
 </script>

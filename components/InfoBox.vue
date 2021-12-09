@@ -17,12 +17,13 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
 
-export default {
+export default defineComponent({
   components: { OutlineInformationCircleIcon },
   props: {
     headline: { type: String, required: true },
   },
-}
+})
 </script>

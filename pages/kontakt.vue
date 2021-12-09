@@ -33,12 +33,13 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon.vue'
 
-export default {
+export default defineComponent({
   components: { SocialBar, PageHeader, OutlineLocationMarkerIcon },
   setup() {
     const { generateMetaTags } = useMetaTags()
@@ -63,5 +64,5 @@ export default {
     )
     return { title: this.title, meta: metatags }
   },
-}
+})
 </script>

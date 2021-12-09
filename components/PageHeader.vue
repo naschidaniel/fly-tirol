@@ -61,7 +61,9 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
   props: {
     headline: { type: String, required: true },
     preHeadline: { type: String, required: true },
@@ -69,5 +71,5 @@ export default {
     link1: { type: Object, required: false, default: () => {} },
     link2: { type: Object, required: false, default: () => {} },
   },
-}
+})
 </script>

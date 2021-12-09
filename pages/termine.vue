@@ -21,12 +21,13 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import Calender from '~/components/Calender.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default {
+export default defineComponent({
   components: { Calender, SocialBar, PageHeader },
   setup() {
     const { generateMetaTags } = useMetaTags()
@@ -47,5 +48,5 @@ export default {
     )
     return { title: 'Termine', meta: metatags }
   },
-}
+})
 </script>

@@ -54,12 +54,13 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import LinkList from '~/components/LinkList.vue'
 import ResponsiveImage from '~/components/ResponsiveImage.vue'
 import SocialBar from '~/components/SocialBar.vue'
 
-export default {
+export default defineComponent({
   components: { LinkList, ResponsiveImage, SocialBar },
   setup() {
     const { generateMetaTags } = useMetaTags()
@@ -111,5 +112,5 @@ export default {
     )
     return { title: this.title, meta: metatags }
   },
-}
+})
 </script>

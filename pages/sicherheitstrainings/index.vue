@@ -14,12 +14,13 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default {
+export default defineComponent({
   components: { SocialBar, ProductList, PageHeader },
   setup() {
     const { generateMetaTags } = useMetaTags()
@@ -44,5 +45,5 @@ export default {
     )
     return { title: this.title, meta: metatags }
   },
-}
+})
 </script>

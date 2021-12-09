@@ -76,10 +76,11 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import InstagramIcon from '../icons/InstagramIcon.vue'
 import WhatsAppIcon from '../icons/WhatsAppIcon.vue'
 
-export default {
+export default defineComponent({
   components: { InstagramIcon, WhatsAppIcon },
-}
+})
 </script>

@@ -6,11 +6,13 @@
 </template>
 
 <script>
+import { defineComponent } from '@vue/composition-api'
 import ResponsiveImage from './ResponsiveImage.vue'
-export default {
+
+export default defineComponent({
   components: { ResponsiveImage },
   props: {
     picture: { type: String, default: '', required: true },
   },
-}
+})
 </script>

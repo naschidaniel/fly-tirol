@@ -9,13 +9,15 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
   name: 'NavigationDropdownLink',
   props: {
     name: { type: String, required: true },
     to: { type: String, required: true },
   },
-}
+})
 </script>
 
 <style>
