@@ -1,4 +1,4 @@
-FROM node:14-bullseye as builder
+FROM node:16-bullseye as builder
 
 ENV TZ=Europe/Berlin
 
@@ -37,7 +37,7 @@ RUN NODE_ENV=production yarn install \
   --non-interactive \
   --production=true
 
-FROM node:14-bullseye
+FROM node:16-bullseye
 
 RUN apt-get update -y
 
