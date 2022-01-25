@@ -210,6 +210,19 @@
     "alt": "gleitschirm wolken himmel berge felsen gardasee acro paragliding infinity roll sebastian kahn sicherheitstraining",
     "title": "Sebastian Kahn beim Sicherheitstraining am Gardasee"
   },
+  "/media/fortbildung/tandemkurs.jpg": {
+    "url": "/media/fortbildung/tandemkurs.jpg",
+    "path": "/media/fortbildung/",
+    "file": "tandemkurs.jpg",
+    "dimensions": {
+      "height": 1152,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "Paraglieter Gleitschirm vor Bergen in Westendorf Tirol Kitzbüheler Alpen ",
+    "title": "Tandempilot und Passagier im Flug mit Blick ins Tal und auf die Berge in Westendorf"
+  },
   "/media/reisen/infinity_over_village.jpg": {
     "url": "/media/reisen/infinity_over_village.jpg",
     "path": "/media/reisen/",
