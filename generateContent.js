@@ -14,15 +14,15 @@ const content = glob.sync('./content/**/*.md').sort()
 dataMetaDataJson = {}
 content.forEach((filePath) => {
   const category = filePath.split('/')[filePath.split('/').length - 2]
-  const handle = filePath
+  const slug = filePath
     .split('/')
     [filePath.split('/').length - 1].replace('.md', '')
-  const url = `/${category}/${handle}`
+  const url = `/${category}/${slug}/`
 
   // parse markdown files
   const data = fs.readFileSync(filePath, 'utf8')
   const isContentImageGallery = data.includes('<ContentImageGallery ')
-  let metadata = { url, category, handle }
+  let metadata = { url, category, slug }
   data
     .split('---')[1]
     .split(/\r\n|\n/)
