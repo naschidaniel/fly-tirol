@@ -5,7 +5,7 @@ const sizeOf = require('image-size')
 const mediaJson = './static/media.json'
 
 let dataMediaJson = {}
-if (fs.existsSync('./static/media.json')) {
+if (fs.existsSync(mediaJson)) {
   dataMediaJson = JSON.parse(fs.readFileSync(mediaJson))
 }
 

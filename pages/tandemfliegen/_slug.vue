@@ -77,13 +77,20 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import Alert from '~/components/Alert.vue'
+import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  components: { Alert, SocialBar, ProductAppointment, ProductVariants },
+  components: {
+    Alert,
+    ContentImageGallery,
+    SocialBar,
+    ProductAppointment,
+    ProductVariants,
+  },
   setup() {
     const { generateMetaTags } = useMetaTags()
     return { generateMetaTags }
