@@ -1,0 +1,204 @@
+{
+  "/ausbildung/grundkurs": {
+    "category": "ausbildung",
+    "description": "Du möchtest lernen zu fliegen? Der Grundkurs der Flugschule Fly Tirol ist der erste Schritt in diese Richtung. Unter der Leitung von Sebastian Kahn, der ausgebildeter Fluglehrer und Team-Weltmeister im Acrobatik-Paragleiten ist, erhältst du durch jahrelange Flugerfahrung auf der ganzen Welt, eine kompetente und vielseitige Flugausbildung.",
+    "handle": "grundkurs",
+    "image": "/media/ausbildung/grundkurs.jpg",
+    "location": "Westendorf",
+    "order": "2",
+    "praxis": "15 Grundflüge + 5 Höhenflüge",
+    "theorie": "5 Theorieeinheiten",
+    "title": "Grundkurs",
+    "url": "/ausbildung/grundkurs"
+  },
+  "/ausbildung/hoehenflugkurs": {
+    "category": "ausbildung",
+    "description": "Bei einem Höhenflugkurs der Fly Tirol Flugschule lernst du unter der Begleitung von absoluten Profis Sicherheit beim Starten, Landen und der Kurventechnik. Während dieses Seminars absolvierst du möglichst viele Flüge um den 40 Höhenflügen die für die Prüfung des A-Scheins notwendig sind, näher zu kommen.",
+    "handle": "hoehenflugkurs",
+    "image": "/media/ausbildung/hoehenflugkurs.jpg",
+    "location": "Westendorf",
+    "order": "3",
+    "praxis": "15 Höhenflüge",
+    "theorie": "4 Theorieeinheiten",
+    "title": "Höhenflugkurs",
+    "url": "/ausbildung/hoehenflugkurs"
+  },
+  "/ausbildung/kombikurs": {
+    "category": "ausbildung",
+    "description": "Dieses Rundum Paket enthält alles was du benötigst um ein eigenständiger Pilot zu werden! Dir stehen, wie auch beim Buchen der einzelnen Kurse, natürlich alle oben beschriebenen Vorzüge zur Verfügung. Vom Grundkurs über das Höhenflugseminar bis hin zum A-Schein. Du musst somit nicht jeden Kurs einzeln buchen und sparst auch noch dabei!",
+    "handle": "kombikurs",
+    "image": "/media/ausbildung/kombikurs.jpg",
+    "location": "Westendorf",
+    "order": "5",
+    "praxis": "15 Grundflüge + 40 Höhenflüge",
+    "theorie": "25 Theorieeinheiten",
+    "title": "Kombikurs",
+    "url": "/ausbildung/kombikurs"
+  },
+  "/ausbildung/paragleiterschein-theoriekurs": {
+    "category": "ausbildung",
+    "description": "Der Paragleiterschein erlaubt dir national und international in allen Fluggebieten zu fliegen und baut sich auf dem absolvierten Grundkurs und dem Höhenflugseminar auf. Die Voraussetzungen hierfür sind mindesten 40 Höhenflüge. Der Abschluss dieses Kurses ist die schriftliche Theorieprüfung und eine Praktische Flugprüfung",
+    "handle": "paragleiterschein-theoriekurs",
+    "image": "/media/ausbildung/paragleiterschein.jpg",
+    "location": "Westendorf",
+    "order": "4",
+    "praxis": "–",
+    "theorie": "20 Theorieeinheiten",
+    "title": "Paragleiterschein Theoriekurs",
+    "url": "/ausbildung/paragleiterschein-theoriekurs"
+  },
+  "/ausbildung/schnupperkurs": {
+    "category": "ausbildung",
+    "description": "Sammle ein paar Eindrücke im Paragliding Sport und komm einen Tag lang mit unseren top ausgebildeten und erfahrenen Fluglehrern an unseren Übungshang um den Umgang und mit einem Paragleitschirm zu sammeln.",
+    "handle": "schnupperkurs",
+    "image": "/media/ausbildung/schnupperkurs.jpg",
+    "location": "Westendorf",
+    "order": "1",
+    "praxis": "1 Tag am Übungshang",
+    "theorie": "1 Theorieeinheit",
+    "title": "Schnupperkurs",
+    "url": "/ausbildung/schnupperkurs"
+  },
+  "/ausbildung/tagesbetreuung": {
+    "category": "ausbildung",
+    "description": "Begleite unser Höhenflugseminar für einen Tag und nutze dabei die Erfahrung von 2 Fluglehrern die dich per Funk anleiten und coachen. Das Material für den Tag wird von uns gestellt. Teilnahmevoraussetzung ist, dass du bereits einen Grundkurs absolviert hast.",
+    "handle": "tagesbetreuung",
+    "image": "/media/ausbildung/tagesbetreuung.jpg",
+    "location": "Westendorf",
+    "order": "6",
+    "praxis": "nach Tagesprogramm",
+    "theorie": "nach Tagesprogramm",
+    "title": "Tagesbetreuung",
+    "url": "/ausbildung/tagesbetreuung"
+  },
+  "/content/dsgvo": {
+    "category": "content",
+    "description": "DSGVO der Flugschule Fly-Tirol.com",
+    "handle": "dsgvo",
+    "title": "DSGVO - Datenschutzerklärung",
+    "url": "/content/dsgvo"
+  },
+  "/fortbildung/tandemkurs": {
+    "category": "fortbildung",
+    "description": "In unserer Flugschule bekommst du alles was du brauchst um deinen Tandemkurs machen zu können. Von modernem Theorieunterricht, über Praxis mit von uns bereitgestellten Schirm, Gurtzeug und Funkanleitung durch unsere kompetenten Fluglehrer, bis hin zur Prüfung.",
+    "handle": "tandemkurs",
+    "image": "/media/fortbildung/tandemkurs.jpg",
+    "location": "Westendorf",
+    "order": "1",
+    "praxis": "10 Grundflüge + 15 Höhenflüge",
+    "theorie": "5 Theorieeinheiten",
+    "title": "Tandemkurs",
+    "url": "/fortbildung/tandemkurs"
+  },
+  "/content/impressum": {
+    "category": "content",
+    "description": "Fly Tirol Flugschule - Impressum",
+    "handle": "impressum",
+    "title": "Impressum",
+    "url": "/content/impressum"
+  },
+  "/reisen/dolomiten-italien": {
+    "category": "reisen",
+    "description": "Thermikfliegne in den Dolomiten",
+    "handle": "dolomiten-italien",
+    "image": "/media/comming-soon.jpg",
+    "location": "Dolomiten - Italien",
+    "order": "1",
+    "title": "Dolomiten - Italien",
+    "url": "/reisen/dolomiten-italien"
+  },
+  "/reisen/dune-de-pilat-frankreich": {
+    "category": "reisen",
+    "description": "Dünenfliegen in Dune du Pilat",
+    "handle": "dune-de-pilat-frankreich",
+    "image": "/media/comming-soon.jpg",
+    "location": "Dune de Pilat - Frankreich",
+    "order": "2",
+    "title": "Dune de Pilat",
+    "url": "/reisen/dune-de-pilat-frankreich"
+  },
+  "/reisen/meduno-italien": {
+    "category": "reisen",
+    "description": "Thermikfliegne in den Dolomiten",
+    "handle": "meduno-italien",
+    "image": "/media/comming-soon.jpg",
+    "location": "Meduno - Italien",
+    "order": "3",
+    "title": "Meduno - Italien",
+    "url": "/reisen/meduno-italien"
+  },
+  "/reisen/oeluedeniz-tuerkei": {
+    "category": "reisen",
+    "description": "Entdecke mit Fly Tirol unter Begleitung von absoluten Profis und erfahrenen Fluglehrern die wunderschöne Türkische Küstenregion rund um Ölüdeniz.",
+    "handle": "oeluedeniz-tuerkei",
+    "image": "/media/reisen/oeluedeniz-tuerkei.png",
+    "location": "Ölüdeniz - Türkei",
+    "order": "4",
+    "title": "Ölüdeniz - Türkei",
+    "url": "/reisen/oeluedeniz-tuerkei"
+  },
+  "/sicherheitstrainings/sicherheitstraining-am-gardasee": {
+    "category": "sicherheitstrainings",
+    "description": "Fahr mit der Flugschule Fly Tirol an den wunderschönen Lago Di Garda um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.",
+    "handle": "sicherheitstraining-am-gardasee",
+    "image": "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg",
+    "location": "Gardasee - Italien",
+    "order": "1",
+    "title": "Sicherheitstraining am Gardasee",
+    "url": "/sicherheitstrainings/sicherheitstraining-am-gardasee"
+  },
+  "/sicherheitstrainings/sicherheitstraining-in-oeluedeniz": {
+    "category": "sicherheitstrainings",
+    "description": "Flieg mit der Flugschule Fly Tirol an die wunderschöne lykische Küste der Türkei um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.",
+    "handle": "sicherheitstraining-in-oeluedeniz",
+    "image": "/media/sicherheitstrainings/sicherheitstraining-in-oeluedeniz.jpg",
+    "location": "Ölüdeniz - Türkei",
+    "order": "2",
+    "title": "Sicherheitstraining in Ölüdeniz",
+    "url": "/sicherheitstrainings/sicherheitstraining-in-oeluedeniz"
+  },
+  "/tandemfliegen/hoehenflug": {
+    "category": "tandemfliegen",
+    "description": "Das wunderschöne Flugerlebnis vom besten Flugberg der Kitzbüheler Alpen dauert ca. 15 - 20 Minuten.",
+    "handle": "hoehenflug",
+    "image": "/media/tandemfliegen/hoehenflug.jpg",
+    "isAppointment": "true",
+    "location": "Westendorf",
+    "order": "1",
+    "title": "Höhenflug",
+    "url": "/tandemfliegen/hoehenflug"
+  },
+  "/tandemfliegen/panoramaflug": {
+    "category": "tandemfliegen",
+    "description": "Bei unserem Panoramaflug nutzen wir wie die Vögel die Thermik, um  ca. 30-45 Mnuten über die atemberaubende Kulisse der Kitzubüheler Alpen zu fliegen.",
+    "handle": "panoramaflug",
+    "image": "/media/tandemfliegen/panoramaflug.jpg",
+    "isAppointment": "true",
+    "location": "Westendorf",
+    "order": "2",
+    "title": "Panoramaflug",
+    "url": "/tandemfliegen/panoramaflug"
+  },
+  "/tandemfliegen/tandemflug-geschenkkarte": {
+    "category": "tandemfliegen",
+    "description": "Verschenke eine wunderschönes Flugerlebnis in den Kitzbüheler Alpen als Geschenkkarte.",
+    "handle": "tandemflug-geschenkkarte",
+    "image": "/media/tandemfliegen/tandemflug-geschenkkarte.jpg",
+    "isAppointment": "false",
+    "location": "Kitzbüheler Alpen",
+    "order": "4",
+    "title": "Tandemflug Geschenkkarte",
+    "url": "/tandemfliegen/tandemflug-geschenkkarte"
+  },
+  "/tandemfliegen/tandemsafari": {
+    "category": "tandemfliegen",
+    "description": "Mit der Tandemsafari bringen wir dich an einem unvergeslichen Tag an verschiedene Orte in den Kitzbüheler Alpen und lassen dich die atemberaubende Kulisse aus einer ganz neuen Perspektive kennenlernen.",
+    "handle": "tandemsafari",
+    "image": "/media/tandemfliegen/tandemsafari.jpg",
+    "isAppointment": "true",
+    "location": "Kitzbüheler Alpen",
+    "order": "3",
+    "title": "Tandemsafari",
+    "url": "/tandemfliegen/tandemsafari"
+  }
+}
