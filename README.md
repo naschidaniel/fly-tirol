@@ -1,4 +1,4 @@
-# fly-tirol [![Deployment](https://github.com/naschidaniel/fly-tirol/actions/workflows/deploy-to-server.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/deploy-to-server.yml)
+# fly-tirol [![Build Website](https://github.com/naschidaniel/fly-tirol/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build.yml)
 
 Visit us at [https://fly-tirol.com](https://fly-tirol.com).
 We are a flight school in Westendorf and offer tandem flights, paragliding training and equipment sales in Westendorf / Tirol.
