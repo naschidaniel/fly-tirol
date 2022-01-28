@@ -1,6 +1,8 @@
 <template>
-  <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
-    <nuxt-content :document="page" />
+  <div v-if="page.slug != ''" class="max-w-90 w-full mx-auto pt-8 nuxt-content">
+    <div v-if="page.slug == 'tandemkurs'">
+      <Tandemkurs />
+    </div>
     <ProductVariants :is-course="true" :page="page" />
     <SocialBar
       :description="page.description"
@@ -16,16 +18,13 @@ import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import ProductVariants from '~/components/ProductVariants.vue'
 import SocialBar from '~/components/SocialBar.vue'
+import Tandemkurs from '~/content/fortbildung/tandemkurs.vue'
 
 export default defineComponent({
-  components: { ProductVariants, SocialBar },
+  components: { ProductVariants, SocialBar, Tandemkurs },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
-  },
-  async asyncData({ $content, params }) {
-    const page = await $content('fortbildung', params.slug).fetch()
-    return { page }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(

@@ -11,18 +11,19 @@ if (fs.existsSync(metadataJson)) {
 
 const content = glob.sync('./content/**/*.md').sort()
 
-dataMetaDataJson = {}
+dataMetaDataJson = []
 content.forEach((filePath) => {
-  const category = filePath.split('/')[filePath.split('/').length - 2]
+  const folder = filePath.split('/')[filePath.split('/').length - 2]
   const slug = filePath
     .split('/')
     [filePath.split('/').length - 1].replace('.md', '')
-  const url = `/${category}/${slug}/`
+  const path = folder === 'content' ? `/${slug}/` : `/${folder}/${slug}/`
+  const category = folder === 'content' ? '' : folder
 
   // parse markdown files
   const data = fs.readFileSync(filePath, 'utf8')
   const isContentImageGallery = data.includes('<ContentImageGallery ')
-  let metadata = { url, category, slug }
+  let metadata = { path, category, slug }
   data
     .split('---')[1]
     .split(/\r\n|\n/)
@@ -37,7 +38,7 @@ content.forEach((filePath) => {
     .sort()
     // eslint-disable-next-line no-sequences
     .reduce((r, k) => ((r[k] = metadata[k]), r), {})
-  dataMetaDataJson[url] = metadata
+  dataMetaDataJson.push(metadata)
   const content = ['<template>', '<div>']
   content.push(marked.marked(data.split('---')[2]).split(/\r\n|\n/))
   content.push(['</div>', '</template>'])

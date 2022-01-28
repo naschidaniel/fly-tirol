@@ -1,4 +1,23 @@
+import { computed, useRoute } from '@nuxtjs/composition-api'
+import metadata from '~/static/metadata.json'
+
 export function useMetaTags() {
+  const route = useRoute()
+  const page = computed(() => {
+    const routeFullPath = `${route.value.fullPath.split('?')[0]}/`.replace(
+      '//',
+      '/'
+    )
+    return metadata.find((p) => p.path === routeFullPath)
+  })
+
+  const pages = computed(() => {
+    const routeName = route.value.name
+    return metadata
+      .filter((p) => p.category === routeName)
+      .sort((a, b) => a.order - b.order)
+  })
+
   function generateMetaTags(title, description, url) {
     return [
       {
@@ -35,5 +54,5 @@ export function useMetaTags() {
     ]
   }
 
-  return { generateMetaTags }
+  return { generateMetaTags, page, pages }
 }

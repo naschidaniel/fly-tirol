@@ -3,7 +3,7 @@
     <PageHeader pre-headline="Paragliding" :headline="title">
       {{ description }}
     </PageHeader>
-    <ProductList :pages="pages" />
+    <ProductList />
     <SocialBar
       :description="description"
       :title="title"
@@ -25,10 +25,6 @@ export default defineComponent({
   setup() {
     const { generateMetaTags } = useMetaTags()
     return { generateMetaTags }
-  },
-  async asyncData({ $content }) {
-    const pages = await $content('sicherheitstrainings').sortBy('order').fetch()
-    return { pages }
   },
   data() {
     return {

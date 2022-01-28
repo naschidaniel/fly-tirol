@@ -21,6 +21,10 @@ echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
 # install dependencies
 $ yarn
 
+# convert markdown files to vue files and lint output
+$ yarn generateContent
+$ yarn lintContent
+
 # serve with hot reload at localhost:5000 for linux / mac
 $ yarn serve
 

@@ -3,7 +3,7 @@
     <PageHeader pre-headline="Gehe mit FlyTirol" headline="Tandemfliegen">
       {{ description }}
     </PageHeader>
-    <ProductList :pages="pages" />
+    <ProductList />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
       <h2>Bildergalerie</h2>
       <ContentImageGallery
@@ -33,20 +33,24 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
+import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import InfoBox from '~/components/InfoBox.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductList from '~/components/ProductList.vue'
+import PageHeader from '~/components/PageHeader.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  components: { InfoBox, SocialBar, ProductList },
+  components: {
+    ContentImageGallery,
+    InfoBox,
+    SocialBar,
+    PageHeader,
+    ProductList,
+  },
   setup() {
     const { generateMetaTags } = useMetaTags()
     return { generateMetaTags }
-  },
-  async asyncData({ $content }) {
-    const pages = await $content('tandemfliegen').sortBy('order').fetch()
-    return { pages }
   },
   data() {
     return {

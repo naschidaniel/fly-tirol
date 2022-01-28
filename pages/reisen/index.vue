@@ -6,7 +6,7 @@
       dir unseren Reisekalender an und nutze die einmalige Möglichkeit
       wunderbare neue Landschaften aus der Vogelperspektive zu erkunden.
     </PageHeader>
-    <ProductList :pages="pages" />
+    <ProductList />
     <SocialBar
       :description="description"
       :title="title"
@@ -28,10 +28,6 @@ export default defineComponent({
   setup() {
     const { generateMetaTags } = useMetaTags()
     return { generateMetaTags }
-  },
-  async asyncData({ $content }) {
-    const pages = await $content('reisen').sortBy('order').fetch()
-    return { pages }
   },
   data() {
     return {

@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-90 w-full mx-auto py-6">
-    <nuxt-content :document="impressum" />
-    <div class="nuxt-content">
+  <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
+    <Impressum />
+    <div>
       <h2 class="mt-2">Sourcecode der Webseite</h2>
       <div>
         Github Repository:
@@ -42,26 +42,24 @@ import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import { useData } from '~/composable/useData'
 import { useFormat } from '~/composable/useFormat'
+import Impressum from '~/content/impressum.vue'
 
 export default defineComponent({
+  components: { Impressum },
   setup() {
-    const { generateMetaTags } = useMetaTags()
+    const { generateMetaTags, page } = useMetaTags()
     const { buildTime } = useData()
     const { formatDateTime } = useFormat()
     const licenses = process.env.licenses
-    return { buildTime, formatDateTime, generateMetaTags, licenses }
-  },
-  async asyncData({ $content }) {
-    const impressum = await $content('impressum').fetch()
-    return { impressum }
+    return { buildTime, formatDateTime, generateMetaTags, licenses, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.impressum.title,
-      this.impressum.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.impressum.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>
