@@ -1,7 +1,18 @@
 <template>
   <div>
     <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
-      <nuxt-content :document="page" />
+      <div v-if="page.slug == 'hoehenflug'">
+        <Hoehenflug />
+      </div>
+      <div v-if="page.slug == 'panoramaflug'">
+        <Panoramaflug />
+      </div>
+      <div v-if="page.slug == 'tandemsafari'">
+        <TandemflugGeschenkkarte />
+      </div>
+      <div v-if="page.slug == 'tandemflug-geschenkkarte'">
+        <Tandemsafari />
+      </div>
     </div>
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
       <div
@@ -77,20 +88,31 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import Alert from '~/components/Alert.vue'
+import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
+import Hoehenflug from '~/content/tandemfliegen/hoehenflug.vue'
+import Panoramaflug from '~/content/tandemfliegen/panoramaflug.vue'
+import TandemflugGeschenkkarte from '~/content/tandemfliegen/tandemflug-geschenkkarte.vue'
+import Tandemsafari from '~/content/tandemfliegen/tandemsafari.vue'
 
 export default defineComponent({
-  components: { Alert, SocialBar, ProductAppointment, ProductVariants },
-  setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
+  components: {
+    Alert,
+    ContentImageGallery,
+    SocialBar,
+    ProductAppointment,
+    ProductVariants,
+    Hoehenflug,
+    Panoramaflug,
+    TandemflugGeschenkkarte,
+    Tandemsafari,
   },
-  async asyncData({ $content, params }) {
-    const page = await $content('tandemfliegen', params.slug).fetch()
-    return { page }
+  setup() {
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(

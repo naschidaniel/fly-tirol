@@ -16,6 +16,10 @@ RUN yarn install \
   --non-interactive \
   --production=false
 
+RUN yarn generateContent
+
+RUN yarn lintContent
+
 RUN yarn build
 
 RUN rm -rf .git

@@ -10,8 +10,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate --modern",
-    "lint:js": "eslint --fix  --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js",
+    "lint": "eslint --fix  --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lintContent": "eslint --fix  --ext .vue ./content",
+    "generateContent": "node generateContent.js",
     "generateMediaInformation": "node generateMediaInformation.js",
     "optimize-images:2xs": "./image-optimizer --source ./static/media --destination ./dist/media --suffix 2xs --width 384 --quality 95 --webpimage true --thumbnail true",
     "optimize-images:xs": "./image-optimizer --source ./static/media --destination ./dist/media --suffix xs --width 512 --quality 90 --webpimage true --thumbnail true",
@@ -23,7 +24,6 @@
     "optimize-images": "yarn optimize-images:2xs && yarn optimize-images:xs && yarn optimize-images:sm && yarn optimize-images:md && yarn optimize-images:lg && yarn optimize-images:xl && yarn optimize-images:2xl"
   },
   "dependencies": {
-    "@nuxt/content": "^1.15.1",
     "@nuxtjs/composition-api": "^0.29.3",
     "@tailwindcss/aspect-ratio": "^0.2.1",
     "@tailwindcss/forms": "^0.3.3",
@@ -47,6 +47,7 @@
     "fibers": "^5.0.0",
     "glob": "^7.1.7",
     "image-size": "^1.0.0",
+    "marked": "^4.0.10",
     "postcss": "^8.2.8",
     "prettier": "^2.2.1",
     "sass": "^1.44.0",

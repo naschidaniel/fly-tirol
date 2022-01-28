@@ -88,7 +88,7 @@ export default {
     storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
     unoptimized: false,
   },
-  modules: ['@nuxt/content', 'cookie-universal-nuxt'],
+  modules: ['cookie-universal-nuxt'],
 
   generate: {
     fallback: '404.html',

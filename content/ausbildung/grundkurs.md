@@ -28,4 +28,4 @@ Begleitend zu der praktischen Ausbildung erhältst du einen umfangreichen und mo
 - 5 Theorieeinheiten a 45 Minuten
 - inklusive Leihausrüsung für die Dauer des Grundkurses    
 
-<content-image-gallery path="/media/ausbildung/grundausbildung/"></content-impage-gallery>
+<ContentImageGallery path="/media/ausbildung/grundausbildung/"/>

@@ -13,7 +13,7 @@
     </div>
     <div v-else class="card--grid grid-gap-1 max-w-90 mx-auto py-4 md:py-12">
       <div v-for="page in pages" :key="page.title">
-        <product-card
+        <ProductCard
           class="p-4"
           :slug="`${routeName}/${page.slug}`"
           :page="page"
@@ -27,15 +27,14 @@
 import { defineComponent } from '@vue/composition-api'
 import ProductCard from './ProductCard.vue'
 import { useNavigation } from '~/composable/useNavigation'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
   components: { ProductCard },
-  props: {
-    pages: { type: Array, required: true },
-  },
   setup() {
+    const { pages } = useMetaTags()
     const { routeName } = useNavigation()
-    return { routeName }
+    return { routeName, pages }
   },
 })
 </script>

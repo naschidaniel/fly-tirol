@@ -8,7 +8,7 @@
       kompetente und vielseitige Flugausbildung in einem der besten
       Schulungsgebiete der Welt.
     </PageHeader>
-    <ProductList :pages="pages" />
+    <ProductList />
     <InfoBox headline="Dein Weg zum eigenständigen Fliegen als Paragleitpilot">
       <ul>
         <li>
@@ -62,10 +62,6 @@ export default defineComponent({
   setup() {
     const { generateMetaTags } = useMetaTags()
     return { generateMetaTags }
-  },
-  async asyncData({ $content }) {
-    const pages = await $content('ausbildung').sortBy('order').fetch()
-    return { pages }
   },
   data() {
     return {
