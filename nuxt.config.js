@@ -95,14 +95,6 @@ export default {
     generate: {
       interval: 2000,
     },
-    async routes() {
-      const { $content } = require('@nuxt/content')
-      const files = await $content({ deep: true }).only(['path']).fetch()
-
-      return files.map((file) =>
-        file.path.includes('/index') ? '/' : file.path
-      )
-    },
   },
 
   content: {
