@@ -29,10 +29,6 @@ export default defineComponent({
     onMounted(() => {
       initShop()
       loadCheckout()
-
-      if (process.env.NODE_ENV === 'development') {
-        document.body.classList.add('debug-screens')
-      }
     })
   },
 })

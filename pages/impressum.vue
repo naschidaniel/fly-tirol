@@ -64,7 +64,7 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style scoped>
 .license-spacer {
   margin-left: 0.5em;
   margin-right: 0.5em;
