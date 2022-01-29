@@ -22,16 +22,7 @@
         aria-label="Book the Date"
         class="btn-primary text-sm md:text-base"
         :class="isFormValid && isDateValid ? '' : 'btn--disabled'"
-        @click.prevent="
-          bookProduct(productId, {
-            customAttributes: [
-              {
-                key: 'Wunschtermin nach Absprache',
-                value: formatDate(selectedDateTimestamp),
-              },
-            ],
-          })
-        "
+        @click.prevent="bookFlight()"
       >
         Buche deinen Wunschtermin
         <span v-if="isDateValid"
@@ -71,10 +62,23 @@ export default defineComponent({
       return new Date().toISOString().split('T')[0]
     },
     selectedDateTimestamp() {
-      return new Date(this.selectedDate)
+      return this.selectedDate !== '' ? new Date(this.selectedDate) : ''
     },
   },
   methods: {
+    bookFlight() {
+      this.checkDate()
+      if (this.isDateValid && this.isDateValid) {
+        this.bookProduct(this.productId, {
+          customAttributes: [
+            {
+              key: 'Wunschtermin nach Absprache',
+              value: this.formatDate(this.selectedDateTimestamp),
+            },
+          ],
+        })
+      }
+    },
     checkDate() {
       const entryTimestamp = new Date(this.selectedDate).getTime()
       const todayTimestamp = new Date(this.today).getTime()
