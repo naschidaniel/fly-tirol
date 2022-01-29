@@ -68,7 +68,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['~/assets/styles/main.scss'],
+  css: ['@/assets/css/main.css'],
 
   components: true,
 
@@ -76,7 +76,7 @@ export default {
     'cookie-universal-nuxt',
     '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
     'nuxt-shopify',
   ],
   env: {
@@ -95,14 +95,6 @@ export default {
     generate: {
       interval: 2000,
     },
-    async routes() {
-      const { $content } = require('@nuxt/content')
-      const files = await $content({ deep: true }).only(['path']).fetch()
-
-      return files.map((file) =>
-        file.path.includes('/index') ? '/' : file.path
-      )
-    },
   },
 
   content: {
@@ -110,7 +102,12 @@ export default {
   },
 
   build: {
-    extractCSS: true,
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
 
   router: {

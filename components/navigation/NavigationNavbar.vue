@@ -72,29 +72,32 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
+<style scoped>
 .navbar--wrapper {
   top: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(2px);
   transition-duration: 0.5s;
+}
 
-  @screen lg {
+@screen lg {
+  .navbar--wrapper {
     top: auto;
     background-color: transparent;
     backdrop-filter: none;
   }
+}
+.navbar--wrapper.closed {
+  transform: translateX(100%);
+}
 
-  &.closed {
-    transform: translateX(100%);
-
-    @screen lg {
-      transform: none;
-    }
-  }
-  &.open {
+@screen lg {
+  .navbar--wrapper.closed {
     transform: none;
   }
+}
+.navbar--wrapper.open {
+  transform: none;
 }
 </style>

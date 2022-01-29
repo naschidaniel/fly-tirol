@@ -20,7 +20,7 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style scoped>
 a.nuxt-link-exact-active {
   text-decoration: underline;
 }

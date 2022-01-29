@@ -6,7 +6,7 @@
           <FlyTirolLogo class="w-full" />
         </nuxt-link>
       </div>
-      <navigation-navbar />
+      <NavigationNavbar />
     </div>
   </div>
 </template>
@@ -24,9 +24,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style>
-#logo-sun {
-  fill: #ff4e00;
-}
-</style>

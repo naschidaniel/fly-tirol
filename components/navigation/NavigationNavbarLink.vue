@@ -22,7 +22,7 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss">
+<style lang="css" scoped>
 .navbar--link {
   @apply relative
         inline-block
@@ -37,35 +37,27 @@ export default defineComponent({
         transition
         duration-300
         ease-in-out;
+}
 
-  @screen lg {
+@screen lg {
+  .navbar--link {
     @apply text-base mx-4 my-0;
   }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  &:hover {
-    .decorator {
-      @apply scale-x-100 origin-left;
-    }
-  }
-
-  &:focus {
-    .decorator {
-      @apply scale-x-100 origin-left;
-    }
-  }
-
-  &.active {
-    .decorator {
-      @apply scale-x-100;
-    }
-  }
-
-  .decorator {
-    @apply absolute
+}
+.navbar--link:last-child {
+  margin-bottom: 0;
+}
+.navbar--link:hover .decorator {
+  @apply scale-x-100 origin-left;
+}
+.navbar--link:focus .decorator {
+  @apply scale-x-100 origin-left;
+}
+.navbar--link.active .decorator {
+  @apply scale-x-100;
+}
+.navbar--link .decorator {
+  @apply absolute
         bottom-0
         left-0
         inline-block
@@ -78,6 +70,5 @@ export default defineComponent({
         transform
         origin-right
         scale-x-0;
-  }
 }
 </style>

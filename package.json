@@ -35,23 +35,22 @@
     "simple-icons": "^6.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^8.0.0",
+    "@nuxt/postcss8": "^1.1.3",
+    "@nuxtjs/eslint-config": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.0.1",
+    "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
-    "eslint": "^8.7.0",
+    "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-nuxt": "^3.1.0",
+    "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.4.0",
-    "fibers": "^5.0.0",
+    "eslint-plugin-vue": "^7.7.0",
     "glob": "^7.1.7",
     "image-size": "^1.0.0",
     "marked": "^4.0.10",
-    "postcss": "^8.2.8",
+    "postcss": "^8.4.5",
     "prettier": "^2.2.1",
-    "sass": "^1.44.0",
-    "sass-loader": "^10.1.1",
-    "tailwindcss-debug-screens": "^2.2.1"
+    "tailwindcss": "^3.0.18"
   }
 }
