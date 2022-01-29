@@ -1,12 +1,12 @@
 <template>
   <div>
-    <PageHeader pre-headline="Paragliding" :headline="title">
-      {{ description }}
+    <PageHeader pre-headline="Paragliding" headline="Sicherheitstrainings">
+      <Index />
     </PageHeader>
     <ProductList />
     <SocialBar
-      :description="description"
-      :title="title"
+      :description="page.description"
+      :title="page.title"
       :url="$route.fullPath"
       class="mt-12 lg:mt-36"
     />
@@ -18,28 +18,22 @@ import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
+import Index from '~/content/sicherheitstrainings/index.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  components: { SocialBar, ProductList, PageHeader },
+  components: { SocialBar, ProductList, PageHeader, Index },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
-  },
-  data() {
-    return {
-      title: 'Sicherheitstrainings',
-      description:
-        'Du bist bereits ein Paragleitpilot und besitzt den A-Schein oder den Paragleiterschein und möchtest optimal auf außergewöhnliche Flugsituationen vorbereitet werden? Dann fahr mit der Flugschule Fly Tirol an den wunderschönen Lago Di Garda um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.',
-    }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

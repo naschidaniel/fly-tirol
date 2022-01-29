@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader pre-headline="Gehe mit FlyTirol" headline="Tandemfliegen">
-      {{ description }}
+      <Index />
     </PageHeader>
     <ProductList />
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
@@ -38,34 +38,29 @@ import InfoBox from '~/components/InfoBox.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductList from '~/components/ProductList.vue'
 import PageHeader from '~/components/PageHeader.vue'
+import Index from '~/content/ausbildung/index.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
   components: {
     ContentImageGallery,
     InfoBox,
+    Index,
     SocialBar,
     PageHeader,
     ProductList,
   },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
-  },
-  data() {
-    return {
-      title: 'Tandemfliegen',
-      description:
-        'Einmal das Gefühl der Freiheit hoch über den Gipfeln der Kitzbüheler Alpen mit Blick auf den Alpenhauptkamm und den Wilden Kaiser bei einem Tandemflug mit einem unserer Top-Tandempiloten genießen! Egal ob im Winter oder Sommer, die Fly Tirol Flugschule zeigt dir das Alpenpanorama aus der Vogelperspektive.',
-    }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

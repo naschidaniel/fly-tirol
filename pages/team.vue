@@ -5,13 +5,7 @@
       headline="Flugschule Westendorf"
       picture="/media/team/flytirol_geschichte.jpg"
     >
-      Die Flugschule Westendorf wurde im Jahr 2021 von Sebastian Kahn und seinem
-      Geschäftspartner Jan Kuhnert von seinem Onkel Otto Kahn übernommen und
-      komplett neu gestaltet. So bekam die Flugschule einen neuen Namen und
-      zusätzlich noch weitere Piloten und Fluglehrer ins Team. Otto Kahn hatte
-      im Frühling 2005 die Flugschule Westendorf übernommen, die er seit den
-      90er Jahren mit aufgebaut hat. Durch die Leidenschaft zum Paragleiten vom
-      Onkel angesteckt, absolvierte Sebastian bereits im Alter von 12 Jahren
+      <Index />
       seine ersten eigenen Flüge.
     </PageHeader>
     <TeamList :members="members" />
@@ -29,18 +23,17 @@ import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import TeamList from '~/components/TeamList.vue'
+import Index from '~/content/team.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  components: { SocialBar, PageHeader, TeamList },
+  components: { SocialBar, PageHeader, TeamList, Index },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   data() {
     return {
-      title: 'Team',
-      description: 'Team der Flugschule',
       members: [
         {
           name: 'Sebastian Kahn',
@@ -67,11 +60,11 @@ export default defineComponent({
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

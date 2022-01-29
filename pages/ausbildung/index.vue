@@ -1,12 +1,7 @@
 <template>
   <div>
     <PageHeader pre-headline="Paragliding" headline="Ausbildung">
-      Dich hat die Lust am Paragleiten gepackt und du möchtest lernen
-      eigenständig zu fliegen? Unter der Leitung von Sebastian Kahn, der
-      ausgebildeter Fluglehrer und Team-Weltmeister im Acrobatik-Paragleiten
-      ist, erhältst du durch jahrelange Flugerfahrung auf der ganzen Welt, eine
-      kompetente und vielseitige Flugausbildung in einem der besten
-      Schulungsgebiete der Welt.
+      <Index />
     </PageHeader>
     <ProductList />
     <InfoBox headline="Dein Weg zum eigenständigen Fliegen als Paragleitpilot">
@@ -41,8 +36,8 @@
       </ul>
     </InfoBox>
     <SocialBar
-      :description="description"
-      :title="title"
+      :description="page.description"
+      :title="page.title"
       :url="$route.fullPath"
       class="mt-12 lg:mt-36"
     />
@@ -55,28 +50,22 @@ import PageHeader from '~/components/PageHeader.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductList from '~/components/ProductList.vue'
 import InfoBox from '~/components/InfoBox.vue'
+import Index from '~/content/ausbildung/index.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  components: { InfoBox, SocialBar, PageHeader, ProductList },
+  components: { InfoBox, SocialBar, PageHeader, ProductList, Index },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
-  },
-  data() {
-    return {
-      title: 'Ausbildung',
-      description:
-        'Das vielseitige Ausbildungsprogramm der Flugschule Fly Tirol bietet eine kompetente Flugausbildung in einem der besten Schulungsgebiete der Welt. Unter der Leitung von Sebastian Kahn, der ausgebildeter Fluglehrer und Weltmeister im Acrobatik-Paragleiten ist, erhältst du die best mögliche Paragliding Ausbildung.',
-    }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

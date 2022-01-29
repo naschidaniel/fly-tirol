@@ -2,18 +2,17 @@
   <div>
     <PageHeader
       pre-headline="Kurse, Reisen, Sicherheitstrainings"
-      :headline="title"
+      headline="Termine"
       picture="/media/termine/infinity_am_gardasee.jpg"
     >
-      Finde den passenden Termin, für dein ganz besonderes Erlebniss in der
-      Flugschule Westendorf. Wir freuen uns auf dich!
+      <Index />
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6">
       <Calender />
     </div>
     <SocialBar
-      :description="description"
-      :title="title"
+      :description="page.description"
+      :title="page.title"
       :url="$route.fullPath"
       class="mt-12 lg:mt-36"
     />
@@ -25,28 +24,22 @@ import { defineComponent } from '@vue/composition-api'
 import Calender from '~/components/Calender.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
+import Index from '~/content/termine.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  components: { Calender, SocialBar, PageHeader },
+  components: { Calender, SocialBar, PageHeader, Index },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
-  },
-  data() {
-    return {
-      title: 'Termine',
-      description:
-        'Finde den richtigen Termin bei der Flugschule Fly-Tirol.com',
-    }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: 'Termine', meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

@@ -1,15 +1,12 @@
 <template>
   <div>
-    <PageHeader pre-headline="Paragliding" :headline="title">
-      Flieg mit uns im Urlaub! Kombiniere eine wunderschöne Reise mit deiner
-      Leidenschaft fürs fliegen und lerne dabei von absoluten Profis dazu. Sieh
-      dir unseren Reisekalender an und nutze die einmalige Möglichkeit
-      wunderbare neue Landschaften aus der Vogelperspektive zu erkunden.
+    <PageHeader pre-headline="Paragliding" headline="Reisen">
+      <Index />
     </PageHeader>
     <ProductList />
     <SocialBar
-      :description="description"
-      :title="title"
+      :description="page.description"
+      :title="page.title"
       :url="$route.fullPath"
       class="mt-12 lg:mt-36"
     />
@@ -21,27 +18,22 @@ import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
+import Index from '~/content/reisen/index.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  components: { SocialBar, ProductList, PageHeader },
+  components: { SocialBar, ProductList, PageHeader, Index },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
-  },
-  data() {
-    return {
-      title: 'Reisen',
-      description: 'Reisen mit der Flugschule Fly-Tirol.com',
-    }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

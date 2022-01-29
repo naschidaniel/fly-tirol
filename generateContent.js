@@ -17,7 +17,14 @@ content.forEach((filePath) => {
   const slug = filePath
     .split('/')
     [filePath.split('/').length - 1].replace('.md', '')
-  const path = folder === 'content' ? `/${slug}/` : `/${folder}/${slug}/`
+  const path =
+    folder === 'content' && slug === 'index'
+      ? '/'
+      : folder === 'content'
+      ? `/${slug}/`
+      : slug === 'index'
+      ? `/${folder}/`
+      : `/${folder}/${slug}/`
   const category = folder === 'content' ? '' : folder
 
   // parse markdown files

@@ -14,16 +14,16 @@ export default defineComponent({
   name: 'Buchen',
   components: { Cart },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      'Buchen',
-      'Buche dienen Traum vom Fliegen bei der Flugschule Fly-Tirol.com',
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: 'Buchen', meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

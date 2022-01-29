@@ -45,8 +45,8 @@
       :travels="travels"
     />
     <SocialBar
-      :description="description"
-      :title="title"
+      :description="page.description"
+      :title="page.title"
       :url="$route.fullPath"
       class="mt-12 lg:mt-36"
     />
@@ -63,8 +63,8 @@ import SocialBar from '~/components/SocialBar.vue'
 export default defineComponent({
   components: { LinkList, ResponsiveImage, SocialBar },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   data() {
     return {
@@ -99,18 +99,15 @@ export default defineComponent({
         description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
         to: '/reisen',
       },
-      title: 'Willkommen bei der Fly Tirol Flugschule',
-      description:
-        'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
     }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

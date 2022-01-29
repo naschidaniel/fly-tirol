@@ -1,5 +1,5 @@
 <template>
-  <div v-if="page.slug != ''" class="max-w-90 w-full mx-auto pt-8 nuxt-content">
+  <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
     <div v-if="page.slug == 'grundkurs'">
       <Grundkurs />
     </div>

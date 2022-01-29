@@ -1,12 +1,12 @@
 <template>
   <div>
-    <PageHeader :pre-headline="preHeadline" :headline="title"
-      >{{ description }}
+    <PageHeader pre-headline="Paragliding" headline="Fortbildung">
+      <Index />
     </PageHeader>
     <ProductList />
     <SocialBar
-      :description="description"
-      :title="title"
+      :description="page.description"
+      :title="page.title"
       :url="$route.fullPath"
       class="mt-12 lg:mt-36"
     />
@@ -19,28 +19,21 @@ import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
+import Index from '~/content/fortbildung/index.vue'
 
 export default defineComponent({
-  components: { SocialBar, ProductList, PageHeader },
+  components: { SocialBar, ProductList, PageHeader, Index },
   setup() {
-    const { generateMetaTags } = useMetaTags()
-    return { generateMetaTags }
-  },
-  data() {
-    return {
-      title: 'Fortbildung',
-      description:
-        'Du hast deinen A-Schein bereits und möchtest deine Fähigkeiten ausbauen? Ob Thermikfliegen oder Tandemschein, wir helfen dir dabei ein besserer Pilot zu werden!',
-      preHeadline: 'Paragliding',
-    }
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
   },
   head() {
     const metatags = this.generateMetaTags(
-      this.title,
-      this.description,
+      this.page.title,
+      this.page.description,
       this.$route.fullPath
     )
-    return { title: this.title, meta: metatags }
+    return { title: this.page.title, meta: metatags }
   },
 })
 </script>

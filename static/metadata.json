@@ -25,6 +25,13 @@
   },
   {
     "category": "ausbildung",
+    "description": "Das vielseitige Ausbildungsprogramm der Flugschule Fly Tirol bietet eine kompetente Flugausbildung in einem der besten Schulungsgebiete der Welt. Unter der Leitung von Sebastian Kahn, der ausgebildeter Fluglehrer und Weltmeister im Acrobatik-Paragleiten ist, erhältst du die best mögliche Paragliding Ausbildung.",
+    "path": "/ausbildung/",
+    "slug": "index",
+    "title": "Ausbildung"
+  },
+  {
+    "category": "ausbildung",
     "description": "Dieses Rundum Paket enthält alles was du benötigst um ein eigenständiger Pilot zu werden! Dir stehen, wie auch beim Buchen der einzelnen Kurse, natürlich alle oben beschriebenen Vorzüge zur Verfügung. Vom Grundkurs über das Höhenflugseminar bis hin zum A-Schein. Du musst somit nicht jeden Kurs einzeln buchen und sparst auch noch dabei!",
     "image": "/media/ausbildung/kombikurs.jpg",
     "location": "Westendorf",
@@ -73,10 +80,24 @@
   },
   {
     "category": "",
+    "description": "Buche dienen Traum vom Fliegen bei der Flugschule Fly-Tirol.com",
+    "path": "/buchen/",
+    "slug": "buchen",
+    "title": "Buchen"
+  },
+  {
+    "category": "",
     "description": "DSGVO der Flugschule Fly-Tirol.com",
     "path": "/dsgvo/",
     "slug": "dsgvo",
     "title": "DSGVO - Datenschutzerklärung"
+  },
+  {
+    "category": "fortbildung",
+    "description": "Du hast deinen A-Schein bereits und möchtest deine Fähigkeiten ausbauen? Ob Thermikfliegen oder Tandemschein, wir helfen dir dabei ein besserer Pilot zu werden!",
+    "path": "/fortbildung/",
+    "slug": "index",
+    "title": "Fortbildung"
   },
   {
     "category": "fortbildung",
@@ -96,6 +117,20 @@
     "path": "/impressum/",
     "slug": "impressum",
     "title": "Impressum"
+  },
+  {
+    "category": "",
+    "description": "Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!",
+    "path": "/",
+    "slug": "index",
+    "title": "Willkommen bei der Fly Tirol Flugschule"
+  },
+  {
+    "category": "",
+    "description": "Unsere Kontaktdaten",
+    "path": "/kontakt/",
+    "slug": "kontakt",
+    "title": "Kontakt"
   },
   {
     "category": "reisen",
@@ -119,6 +154,13 @@
   },
   {
     "category": "reisen",
+    "description": "Reisen mit der Flugschule Fly-Tirol.com",
+    "path": "/reisen/",
+    "slug": "index",
+    "title": "Reisen"
+  },
+  {
+    "category": "reisen",
     "description": "Thermikfliegne in den Dolomiten",
     "image": "/media/comming-soon.jpg",
     "location": "Meduno - Italien",
@@ -136,6 +178,13 @@
     "path": "/reisen/oeluedeniz-tuerkei/",
     "slug": "oeluedeniz-tuerkei",
     "title": "Ölüdeniz - Türkei"
+  },
+  {
+    "category": "sicherheitstrainings",
+    "description": "Du bist bereits ein Paragleitpilot und besitzt den A-Schein oder den Paragleiterschein und möchtest optimal auf außergewöhnliche Flugsituationen vorbereitet werden? Dann fahr mit der Flugschule Fly Tirol an den wunderschönen Lago Di Garda um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.",
+    "path": "/sicherheitstrainings/",
+    "slug": "index",
+    "title": "Sicherheitstrainings"
   },
   {
     "category": "sicherheitstrainings",
@@ -170,6 +219,13 @@
   },
   {
     "category": "tandemfliegen",
+    "description": "Einmal das Gefühl der Freiheit hoch über den Gipfeln der Kitzbüheler Alpen mit Blick auf den Alpenhauptkamm und den Wilden Kaiser bei einem Tandemflug mit einem unserer Top-Tandempiloten genießen! Egal ob im Winter oder Sommer, die Fly Tirol Flugschule zeigt dir das Alpenpanorama aus der Vogelperspektive.",
+    "path": "/tandemfliegen/",
+    "slug": "index",
+    "title": "Tandemfliegen"
+  },
+  {
+    "category": "tandemfliegen",
     "description": "Bei unserem Panoramaflug nutzen wir wie die Vögel die Thermik, um  ca. 30-45 Mnuten über die atemberaubende Kulisse der Kitzubüheler Alpen zu fliegen.",
     "image": "/media/tandemfliegen/panoramaflug.jpg",
     "isAppointment": "true",
@@ -200,5 +256,19 @@
     "path": "/tandemfliegen/tandemsafari/",
     "slug": "tandemsafari",
     "title": "Tandemsafari"
+  },
+  {
+    "category": "",
+    "description": "Team der Flugschule",
+    "path": "/team/",
+    "slug": "team",
+    "title": "Team"
+  },
+  {
+    "category": "",
+    "description": "Finde den richtigen Termin bei der Flugschule Fly-Tirol.com",
+    "path": "/termine/",
+    "slug": "termine",
+    "title": "Termine"
   }
 ]

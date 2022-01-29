@@ -1,20 +1,31 @@
-import { computed, useRoute } from '@nuxtjs/composition-api'
+import { computed, useRoute, useContext } from '@nuxtjs/composition-api'
 import metadata from '~/static/metadata.json'
 
 export function useMetaTags() {
   const route = useRoute()
+  const context = useContext()
+
+  const routeFullPath = `${route.value.fullPath.split('?')[0]}/`.replace(
+    '//',
+    '/'
+  )
+  if (metadata.find((p) => p.path === routeFullPath) === undefined) {
+    context.error({ statusCode: 404, message: 'Post not found' })
+  }
   const page = computed(() => {
-    const routeFullPath = `${route.value.fullPath.split('?')[0]}/`.replace(
-      '//',
-      '/'
+    return (
+      metadata.find((p) => p.path === routeFullPath) || {
+        slug: '',
+        title: '',
+        description: '',
+      }
     )
-    return metadata.find((p) => p.path === routeFullPath)
   })
 
   const pages = computed(() => {
     const routeName = route.value.name
     return metadata
-      .filter((p) => p.category === routeName)
+      .filter((p) => p.category === routeName && p.slug !== 'index')
       .sort((a, b) => a.order - b.order)
   })
 
