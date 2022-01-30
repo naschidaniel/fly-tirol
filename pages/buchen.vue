@@ -21,7 +21,7 @@ export default defineComponent({
     const metatags = this.generateMetaTags(
       this.page.title,
       this.page.description,
-      this.$route.fullPath
+      this.page.path
     )
     return { title: this.page.title, meta: metatags }
   },

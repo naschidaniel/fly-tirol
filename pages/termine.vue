@@ -10,12 +10,7 @@
     <div class="max-w-90 w-full mx-auto py-6">
       <Calender />
     </div>
-    <SocialBar
-      :description="page.description"
-      :title="page.title"
-      :url="$route.fullPath"
-      class="mt-12 lg:mt-36"
-    />
+    <SocialBar />
   </div>
 </template>
 

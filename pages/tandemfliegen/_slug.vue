@@ -76,12 +76,7 @@
         <ProductVariants :is-course="false" :page="page" />
       </div>
     </div>
-    <SocialBar
-      :description="page.description"
-      :title="page.title"
-      :url="$route.fullPath"
-      class="mt-12 lg:mt-36"
-    />
+    <SocialBar />
   </div>
 </template>
 
