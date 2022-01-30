@@ -1,4 +1,17 @@
-import { onMounted, ref, watch, wrapProperty } from '@nuxtjs/composition-api'
+import {
+  computed,
+  getCurrentInstance,
+  onMounted,
+  ref,
+  watch,
+} from '@nuxtjs/composition-api'
+
+const wrapProperty =
+  (property, makeComputed = true) =>
+  () => {
+    const vm = getCurrentInstance().proxy
+    return makeComputed ? computed(() => vm[property]) : vm[property]
+  }
 
 const useCookies = wrapProperty('$cookies', false)
 

@@ -1,11 +1,18 @@
 import {
   computed,
+  getCurrentInstance,
   ref,
   useRouter,
   unref,
-  wrapProperty,
 } from '@nuxtjs/composition-api'
 import { isCookieAgreement } from './useCookieAgreement'
+
+const wrapProperty =
+  (property, makeComputed = true) =>
+  () => {
+    const vm = getCurrentInstance().proxy
+    return makeComputed ? computed(() => vm[property]) : vm[property]
+  }
 
 const useCookies = wrapProperty('$cookies', false)
 const useShopify = wrapProperty('$shopify', false)
