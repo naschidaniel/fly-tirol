@@ -102,3 +102,4 @@ flytirol.tar.gz
 
 # content
 /content/**/*.vue
+/static/metadata.json
