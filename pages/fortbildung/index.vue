@@ -1,7 +1,9 @@
 <template>
   <div>
     <PageHeader pre-headline="Paragliding" headline="Fortbildung">
-      <Index />
+      Du hast deinen A-Schein bereits und möchtest deine Fähigkeiten ausbauen?
+      Ob Thermikfliegen oder Tandemschein, wir helfen dir dabei ein besserer
+      Pilot zu werden!
     </PageHeader>
     <ProductList />
     <SocialBar />
@@ -14,10 +16,9 @@ import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import ProductList from '~/components/ProductList.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Index from '~/content/fortbildung/index.vue'
 
 export default defineComponent({
-  components: { SocialBar, ProductList, PageHeader, Index },
+  components: { SocialBar, ProductList, PageHeader },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }

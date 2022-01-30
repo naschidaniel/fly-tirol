@@ -7,7 +7,16 @@
       :link1="telefonNumber"
       :link2="mailAdress"
     >
-      <Index />
+      <div>
+        <p>
+          Wir haben dein Interesse an einem Tandemflug oder an einem Kurs
+          geweckt?
+        </p>
+        <p>
+          Dann Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns
+          auf dich!
+        </p>
+      </div>
     </PageHeader>
     <div class="max-w-90 mx-auto text-lg font-heading font-medium leading-snug">
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
@@ -30,11 +39,10 @@ import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Index from '~/content/kontakt.vue'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon.vue'
 
 export default defineComponent({
-  components: { SocialBar, PageHeader, OutlineLocationMarkerIcon, Index },
+  components: { SocialBar, PageHeader, OutlineLocationMarkerIcon },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }
