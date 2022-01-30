@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center mt-12 lg:mt-36">
     <button class="mx-2" title="Teilen per Facebook" @click="openFacebook()">
       <span
         class="inline-flex items-center justify-center p-2 rounded-full"
@@ -36,6 +36,7 @@ import FacebookIconVue from './icons/FacebookIcon.vue'
 import OutlineMailIconVue from './icons/OutlineMailIcon.vue'
 import TwitterIconVue from './icons/TwitterIcon.vue'
 import WhatsAppIconVue from './icons/WhatsAppIcon.vue'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
   name: 'SocialBar',
@@ -45,30 +46,19 @@ export default defineComponent({
     TwitterIconVue,
     WhatsAppIconVue,
   },
-  props: {
-    description: {
-      type: String,
-      required: true,
-    },
-    title: {
-      type: String,
-      required: true,
-    },
-
-    url: {
-      type: String,
-      required: true,
-    },
+  setup() {
+    const { page } = useMetaTags()
+    return { page }
   },
   computed: {
     encodedUrl() {
-      return encodeURI(`https://fly-tirol.com${this.url}`)
+      return encodeURI(`https://fly-tirol.com${this.page.path}`)
     },
     encodeTitle() {
-      return encodeURI(this.title)
+      return encodeURI(this.page.title)
     },
     encodeDescription() {
-      return encodeURI(this.description)
+      return encodeURI(this.page.description)
     },
   },
   methods: {

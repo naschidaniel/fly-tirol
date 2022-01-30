@@ -4,12 +4,7 @@
       <Tandemkurs />
     </div>
     <ProductVariants :is-course="true" :page="page" />
-    <SocialBar
-      :description="page.description"
-      :title="page.title"
-      :url="$route.fullPath"
-      class="mt-12 lg:mt-36"
-    />
+    <SocialBar />
   </div>
 </template>
 
