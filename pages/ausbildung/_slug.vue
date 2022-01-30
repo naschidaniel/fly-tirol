@@ -18,7 +18,7 @@
     <div v-if="page.slug == 'tagesbetreuung'">
       <Tagesbetreuung />
     </div>
-    <ProductVariants :is-course="true" :page="page" />
+    <ProductVariants :is-course="true" />
     <SocialBar />
   </div>
 </template>

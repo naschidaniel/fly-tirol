@@ -8,10 +8,10 @@
         <Panoramaflug />
       </div>
       <div v-if="page.slug == 'tandemsafari'">
-        <TandemflugGeschenkkarte />
+        <Tandemsafari />
       </div>
       <div v-if="page.slug == 'tandemflug-geschenkkarte'">
-        <Tandemsafari />
+        <TandemflugGeschenkkarte />
       </div>
     </div>
     <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24">
@@ -37,7 +37,7 @@
       />
     </div>
     <div class="max-w-90 mx-auto -m-8 lg:py-8 nuxt-content">
-      <div v-if="page.isAppointment">
+      <div v-if="isAppointment">
         <h2>Dein Wunschtermin</h2>
         <div class="flex flex-wrap">
           <div class="w-full md:w-1/2 md:p-2">
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div v-else>
-        <ProductVariants :is-course="false" :page="page" />
+        <ProductVariants :is-course="false" />
       </div>
     </div>
     <SocialBar />
@@ -119,7 +119,7 @@ export default defineComponent({
   },
   computed: {
     isAppointment() {
-      return this.page.isAppointment || false
+      return this.page.slug !== 'tandemflug-geschenkkarte'
     },
   },
 })

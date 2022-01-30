@@ -104,15 +104,16 @@ import { useNavigation } from '~/composable/useNavigation'
 import { useFormat } from '~/composable/useFormat'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 import { useShopifyCalender } from '~/composable/useShopifyCalender'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
   name: 'ProductVariants',
   components: { Alert, ProductDetails },
   props: {
     isCourse: { type: Boolean, required: true },
-    page: { type: Object, required: true },
   },
   setup() {
+    const { page } = useMetaTags()
     const { routeName, routeSlug } = useNavigation()
     const { formatPrice } = useFormat()
     const { bookProduct, products } = useShopifyCart()
@@ -147,6 +148,7 @@ export default defineComponent({
       bookProduct,
       dates,
       formatPrice,
+      page,
       productCalender,
       prices,
     }

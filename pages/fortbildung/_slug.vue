@@ -3,7 +3,7 @@
     <div v-if="page.slug == 'tandemkurs'">
       <Tandemkurs />
     </div>
-    <ProductVariants :is-course="true" :page="page" />
+    <ProductVariants :is-course="true" />
     <SocialBar />
   </div>
 </template>
