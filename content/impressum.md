@@ -15,6 +15,11 @@ Bergliftstr. 22,
 
 Österreich
 
+## Kontakt
+
+Tel.: <a href="tel:00436766422088">0043 676 6422088</a>
+
+E-Mail: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
 ## Daten
 
 Unternehmensgegenstand: Paragleiter - Flugschule und Tandemflüge
@@ -26,10 +31,6 @@ Firmenbuchnummer: 559621y
 Firmenbuchgericht:  Landgericht Innsbruck
 
 Firmensitz: 6363 Westendorf
-
-Tel.: <a href="tel:00436766422088">0043 676 6422088</a>
-
-E-Mail: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
 
 Berufsrecht: Gewerbeordnung: www.ris.bka.gv.at
 
