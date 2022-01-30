@@ -15,7 +15,8 @@ const screensizes = {
 
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class',
+  mode: 'jit',
   theme: {
     screens: screensizes,
     extend: {
