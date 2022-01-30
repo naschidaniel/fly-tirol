@@ -18,7 +18,7 @@
       <div class="w-full text-right py-1">
         <button
           aria-label="accept cookie agreement"
-          class="btn-primary bg-green-600"
+          class="btn-primary btn--success"
           @click="acceptCookieAgreement()"
         >
           Alle Cookies akzeptieren

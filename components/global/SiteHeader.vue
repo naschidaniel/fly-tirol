@@ -24,9 +24,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style>
-#logo-sun {
-  fill: #ff4e00;
-}
-</style>

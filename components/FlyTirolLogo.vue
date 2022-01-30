@@ -62,3 +62,9 @@
     />
   </svg>
 </template>
+
+<style scoped>
+#logo-sun {
+  fill: #ff4e00;
+}
+</style>
