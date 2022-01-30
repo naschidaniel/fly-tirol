@@ -18,7 +18,7 @@
     <div v-if="page.slug == 'tagesbetreuung'">
       <Tagesbetreuung />
     </div>
-    <ProductVariants :is-course="true" />
+    <ProductBookCourse :is-course="true" />
     <SocialBar />
   </div>
 </template>
@@ -26,7 +26,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
-import ProductVariants from '~/components/ProductVariants.vue'
+import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 import Grundkurs from '~/content/ausbildung/grundkurs.vue'
 import Hoehenflugkurs from '~/content/ausbildung/hoehenflugkurs.vue'
@@ -41,7 +41,7 @@ export default defineComponent({
     Hoehenflugkurs,
     Kombikurs,
     ParagleiterscheinTheoriekurs,
-    ProductVariants,
+    ProductBookCourse,
     SocialBar,
     Schnupperkurs,
     Tagesbetreuung,

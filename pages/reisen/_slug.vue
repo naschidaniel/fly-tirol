@@ -12,7 +12,7 @@
     <div v-if="page.slug == 'oeluedeniz-tuerkei'">
       <OeluedenizTuerkei />
     </div>
-    <ProductVariants :is-course="true" />
+    <ProductBookCourse :is-course="true" />
     <SocialBar />
   </div>
 </template>
@@ -21,7 +21,7 @@
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import SocialBar from '~/components/SocialBar.vue'
-import ProductVariants from '~/components/ProductVariants.vue'
+import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import DolomitenItalien from '~/content/reisen/dolomiten-italien.vue'
 import DuneDePilatFrankreich from '~/content/reisen/dune-de-pilat-frankreich.vue'
 import MedunoItalien from '~/content/reisen/meduno-italien.vue'
@@ -30,7 +30,7 @@ import OeluedenizTuerkei from '~/content/reisen/oeluedeniz-tuerkei.vue'
 export default defineComponent({
   components: {
     SocialBar,
-    ProductVariants,
+    ProductBookCourse,
     DolomitenItalien,
     DuneDePilatFrankreich,
     MedunoItalien,

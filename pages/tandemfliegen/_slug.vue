@@ -73,7 +73,7 @@
         </div>
       </div>
       <div v-else>
-        <ProductVariants :is-course="false" />
+        <ProductBookCourse :is-course="false" />
       </div>
     </div>
     <SocialBar />
@@ -86,7 +86,7 @@ import Alert from '~/components/Alert.vue'
 import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
-import ProductVariants from '~/components/ProductVariants.vue'
+import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 import Hoehenflug from '~/content/tandemfliegen/hoehenflug.vue'
 import Panoramaflug from '~/content/tandemfliegen/panoramaflug.vue'
@@ -99,7 +99,7 @@ export default defineComponent({
     ContentImageGallery,
     SocialBar,
     ProductAppointment,
-    ProductVariants,
+    ProductBookCourse,
     Hoehenflug,
     Panoramaflug,
     TandemflugGeschenkkarte,

@@ -6,7 +6,7 @@
     <div v-if="page.slug == 'sicherheitstraining-in-oeluedeniz'">
       <SicherheitstrainingInOelideniz />
     </div>
-    <ProductVariants :is-course="true" />
+    <ProductBookCourse :is-course="true" />
     <SocialBar />
   </div>
 </template>
@@ -15,14 +15,14 @@
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import SocialBar from '~/components/SocialBar.vue'
-import ProductVariants from '~/components/ProductVariants.vue'
+import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import SicherheitstrainingAmGardasee from '~/content/sicherheitstrainings/sicherheitstraining-am-gardasee.vue'
 import SicherheitstrainingInOelideniz from '~/content/sicherheitstrainings/sicherheitstraining-in-oeluedeniz.vue'
 
 export default defineComponent({
   components: {
     SocialBar,
-    ProductVariants,
+    ProductBookCourse,
     SicherheitstrainingAmGardasee,
     SicherheitstrainingInOelideniz,
   },

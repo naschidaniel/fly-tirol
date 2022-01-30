@@ -3,7 +3,7 @@
     <div v-if="page.slug == 'tandemkurs'">
       <Tandemkurs />
     </div>
-    <ProductVariants :is-course="true" />
+    <ProductBookCourse :is-course="true" />
     <SocialBar />
   </div>
 </template>
@@ -11,12 +11,12 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import ProductVariants from '~/components/ProductVariants.vue'
+import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import Tandemkurs from '~/content/fortbildung/tandemkurs.vue'
 
 export default defineComponent({
-  components: { ProductVariants, SocialBar, Tandemkurs },
+  components: { ProductBookCourse, SocialBar, Tandemkurs },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }

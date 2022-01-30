@@ -107,7 +107,7 @@ import { useShopifyCalender } from '~/composable/useShopifyCalender'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
-  name: 'ProductVariants',
+  name: 'ProductBookCourse',
   components: { Alert, ProductDetails },
   props: {
     isCourse: { type: Boolean, required: true },
