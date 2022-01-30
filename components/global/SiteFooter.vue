@@ -31,34 +31,6 @@
               >
                 Bergliftstraße 22, 6363 Westendorf
               </span>
-              <div class="mt-8 sm:mt-0 sm:ml-4 md:ml-6 w-full sm:w-auto">
-                <a
-                  href="https://www.instagram.com/fly.tirol/"
-                  rel="noopener"
-                  target="_blank"
-                  class="inline-flex items-center leading-none whitespace-nowrap underline"
-                >
-                  <instagram-icon
-                    class="mr-2"
-                    style="width: 1em; height: 1em"
-                  />
-                  Folge uns auf Instagram
-                </a>
-              </div>
-              <div class="mt-8 sm:mt-0 sm:ml-4 md:ml-6 w-full sm:w-auto">
-                <a
-                  href="https://wa.me/436766422088"
-                  target="_blank"
-                  rel="noopener"
-                  class="inline-flex items-center leading-none whitespace-nowrap underline"
-                >
-                  <whats-app-icon
-                    class="mr-2"
-                    style="width: 1em; height: 1em"
-                  />
-                  Schreibe uns auf WhatsApp
-                </a>
-              </div>
             </div>
             <div class="flex w-full sm:w-auto sm:ml-4">
               <nuxt-link to="/dsgvo" class="underline">
@@ -74,13 +46,3 @@
     </div>
   </div>
 </template>
-
-<script>
-import { defineComponent } from '@vue/composition-api'
-import InstagramIcon from '../icons/InstagramIcon.vue'
-import WhatsAppIcon from '../icons/WhatsAppIcon.vue'
-
-export default defineComponent({
-  components: { InstagramIcon, WhatsAppIcon },
-})
-</script>
