@@ -25,7 +25,7 @@ In unserer Flugschule bekommst du alles was du brauchst um deinen Tandemschein m
 ## Leistung
 
 * Theorieausbildung (5 Theorieeinheiten in den Sachgebieten Luftrecht, Technik, Verhalten in besonderen Fällen) 
-* Miniumum ein bis zwei Tage am Übungshang (10 Starts) während eines offiziellen Grundkurses
+* Miniumum 10 Starts am Übungsgelände
 * Eine Woche Praxisausbildung während eines Höhenflugkurs. Beim Kurs müssen 15 Flüge mit Passagier (Passagier ist nicht inklusive) und unter Anleitung von zweier Fluglehrern durchgeführt werden.
 * Die restlichen Höhenflüge können im Flugauftrag erfolgen oder weiter unter Anleitung zweier Lehrer (kein Aufpreis).
 * Abgeschlossen wird die Ausbildung mit einer Theorieprüfung und einer Praxisprüfung. Die Prüf- und Scheingebühren sind im Kurspreis nicht enthalten.
