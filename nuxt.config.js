@@ -109,11 +109,6 @@ export default {
     linkExactActiveClass: 'active',
   },
 
-  server: {
-    host: '0.0.0.0', // default: localhost,
-    port: 5000,
-  },
-
   babel: {
     presets: [
       [
