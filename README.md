@@ -25,8 +25,8 @@ $ yarn
 $ yarn generateContent
 $ yarn lintContent
 
-# serve with hot reload at localhost:5000 for linux / mac
-$ yarn serve
+# develop with hot reload at localhost:3000 for linux / mac
+$ yarn dev
 
 # if new media was added
 $ yarn generateMediaInformation
@@ -39,7 +39,7 @@ $ yarn generateMediaInformation
 $ docker build -t flytirol . 
 
 # generate static project, optimize-images and launch server
-$ docker run -p 127.0.0.1:5000:5000/tcp flytirol
+$ docker run -p 127.0.0.1:3000:3000/tcp flytirol
 ```
 
 ### Optimize Images for Production
