@@ -37,43 +37,53 @@
       />
     </div>
     <div class="max-w-90 mx-auto -m-8 lg:py-8 nuxt-content">
-      <div v-if="isAppointment">
-        <h2>Dein Wunschtermin</h2>
-        <div class="flex flex-wrap">
-          <div class="w-full md:w-1/2 md:p-2">
-            <Alert class="mt-2 mr-3">
-              <div class="mx-1 md:my-2">
-                Buche jetzt dein Wunschdatum und vereinbare dann einen Zeitpunkt
-                telefonisch unter
-                <a href="tel:00436766422088" class="underline whitespace-nowrap"
-                  >+43 6766422088</a
-                >
-                oder schreibe uns eine Email
-                <a
-                  href="mailto:info@fly-tirol.com"
-                  class="underline whitespace-nowrap"
-                  >info@fly-tirol.com</a
-                >
-                oder per
-                <a
-                  href="https://wa.me/436766422088"
-                  target="_blank"
-                  class="underline whitespace-nowrap"
-                >
-                  WhatsApp </a
-                >.
-              </div>
-            </Alert>
-          </div>
-          <div class="w-full mt-2 md:w-1/2 md:mt-0 md:p-2">
-            <div class="mx-1 md:my-3">
+      <h2>Dein Wunschtermin</h2>
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2 md:p-2">
+          <Alert class="mt-2 mr-3">
+            <div class="mx-1 md:my-2">
+              <ol class="list-decimal">
+                <li v-if="isAppointment">Wunschdatum auswählen</li>
+                <li v-if="!isAppointment">Gutschein bestellen</li>
+                <li v-if="!isAppointment">
+                  Wir senden dir die Gutscheinkarte per Post zu.
+                </li>
+                <li>
+                  Vereinbare dann einen Zeitpunkt telefonisch unter
+                  <a
+                    href="tel:00436766422088"
+                    class="underline whitespace-nowrap"
+                    >+43 6766422088</a
+                  >
+                  oder schreibe uns eine Email
+                  <a
+                    href="mailto:info@fly-tirol.com"
+                    class="underline whitespace-nowrap"
+                    >info@fly-tirol.com</a
+                  >
+                  oder per
+                  <a
+                    href="https://wa.me/436766422088"
+                    target="_blank"
+                    class="underline whitespace-nowrap"
+                  >
+                    WhatsApp </a
+                  >.
+                </li>
+              </ol>
+            </div>
+          </Alert>
+        </div>
+        <div class="w-full mt-2 md:w-1/2 md:mt-0 md:p-2">
+          <div class="mx-1 md:my-3">
+            <div v-if="isAppointment">
               <ProductAppointment />
+            </div>
+            <div v-else>
+              <ProductVariants :is-course="false" />
             </div>
           </div>
         </div>
-      </div>
-      <div v-else>
-        <ProductBookCourse :is-course="false" />
       </div>
     </div>
     <SocialBar />
@@ -86,12 +96,12 @@ import Alert from '~/components/Alert.vue'
 import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
-import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 import Hoehenflug from '~/content/tandemfliegen/hoehenflug.vue'
 import Panoramaflug from '~/content/tandemfliegen/panoramaflug.vue'
 import TandemflugGeschenkkarte from '~/content/tandemfliegen/tandemflug-geschenkkarte.vue'
 import Tandemsafari from '~/content/tandemfliegen/tandemsafari.vue'
+import ProductVariants from '~/components/ProductVariants.vue'
 
 export default defineComponent({
   components: {
@@ -99,7 +109,7 @@ export default defineComponent({
     ContentImageGallery,
     SocialBar,
     ProductAppointment,
-    ProductBookCourse,
+    ProductVariants,
     Hoehenflug,
     Panoramaflug,
     TandemflugGeschenkkarte,
