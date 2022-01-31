@@ -34,8 +34,8 @@
           class="p-2 rounded-md text-brand focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-white focus:ring-opacity-100 focus:outline-none transition duration-150 ease-in-out"
           @click="isOpen = !isOpen"
         >
-          <OutlineXIcon v-if="isOpen" />
-          <OutlineMenuIcon v-else />
+          <OutlineXIcon v-if="isOpen" class="h-6 w-6" />
+          <OutlineMenuIcon v-else class="h-6 w-6" />
         </button>
       </div>
     </div>
