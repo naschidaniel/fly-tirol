@@ -14,10 +14,10 @@
             @click="setCheckedCategories(category)"
           >
             <span v-if="calenderCategoriesChecked.includes(category)">
-              <OutlineCheckIcon class="text-green-600" />
+              <OutlineCheckIcon class="text-green-600 h-6 w-6" />
             </span>
             <span v-else>
-              <OutlineXIcon class="text-red-400" />
+              <OutlineXIcon class="text-red-400 h-6 w-6" />
             </span>
             {{ category }}
           </button>
@@ -36,10 +36,10 @@
             @click="setCheckedProducts(product)"
           >
             <span v-if="calenderProductsChecked.includes(product)">
-              <OutlineCheckIcon class="text-green-600" />
+              <OutlineCheckIcon class="text-green-600 h-6 w-6" />
             </span>
             <span v-else>
-              <OutlineXIcon class="text-red-400" />
+              <OutlineXIcon class="text-red-400 h-6 w-6" />
             </span>
             {{ product }}
           </button>
