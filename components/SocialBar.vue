@@ -162,7 +162,7 @@ export default defineComponent({
       window.location.replace(url)
     },
     openPhone() {
-      const url = `tel:00436766422088`
+      const url = 'tel:00436766422088'
       window.open(url)
     },
     openTwitter() {
@@ -172,7 +172,7 @@ export default defineComponent({
         .focus()
     },
     openWhatsAppContact() {
-      const url = `https://api.whatsapp.com/send/?phone=436766422088&text&app_absent=0`
+      const url = 'whatsapp://send?phone=436766422088'
       window.open(url)
     },
     openWhatsAppShare() {
