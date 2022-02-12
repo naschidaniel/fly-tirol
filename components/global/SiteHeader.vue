@@ -6,7 +6,7 @@
           <FlyTirolLogo class="w-full" />
         </nuxt-link>
       </div>
-      <navigation-navbar />
+      <NavigationNavbar />
     </div>
   </div>
 </template>

@@ -38,7 +38,7 @@ export default defineComponent({
         duration-300
         ease-in-out;
 }
-@screen lg {
+@screen xl {
   .navbar--link {
     @apply text-base mx-4 my-0;
   }
