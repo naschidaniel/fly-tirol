@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card py-4">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">

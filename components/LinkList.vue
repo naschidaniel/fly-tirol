@@ -22,7 +22,7 @@
         </div>
       </div>
       <div
-        class="card--grid grid-gap-1 max-w-90 mx-auto py-4 w-full xl:py-12 xl:ml-4 2xl:flex"
+        class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 w-full xl:py-12 xl:ml-4 2xl:flex"
       >
         <link-card
           :card-image="tandemflights.cardImage"
