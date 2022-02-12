@@ -30,6 +30,7 @@ content.forEach((filePath) => {
   // parse markdown files
   const data = fs.readFileSync(filePath, 'utf8')
   const isContentImageGallery = data.includes('<ContentImageGallery ')
+  const isContentPartnerCard = data.includes('<ContentPartnerCard ')
   let metadata = { path, category, slug }
   data
     .split('---')[1]
@@ -50,18 +51,38 @@ content.forEach((filePath) => {
   content.push(marked.marked(data.split('---')[2]).split(/\r\n|\n/))
   content.push(['</div>', '</template>'])
 
-  if (isContentImageGallery) {
+  if (isContentImageGallery || isContentPartnerCard) {
     content.push([
       '',
       '<script>',
       "import { defineComponent } from '@vue/composition-api'",
+    ])
+  }
+  if (isContentImageGallery && !isContentPartnerCard) {
+    content.push([
       "import ContentImageGallery from '~/components/ContentImageGallery.vue'",
       'export default defineComponent({',
       '  components: { ContentImageGallery },',
       '})',
-      '</script>',
-      '',
     ])
+  } else if (!isContentImageGallery && isContentPartnerCard) {
+    content.push([
+      "import ContentPartnerCard from '~/components/ContentPartnerCard.vue'",
+      'export default defineComponent({',
+      '  components: { ContentPartnerCard },',
+      '})',
+    ])
+  } else if (isContentImageGallery && isContentPartnerCard) {
+    content.push([
+      "import ContentImageGallery from '~/components/ContentImageGallery.vue'",
+      "import ContentPartnerCard from '~/components/ContentPartnerCard.vue'",
+      'export default defineComponent({',
+      '  components: { ContentImageGallery, ContentPartnerCard },',
+      '})',
+    ])
+  }
+  if (isContentImageGallery || isContentPartnerCard) {
+    content.push(['</script>', ''])
   }
   const text = content.flat().join('\r\n')
   fs.writeFile(filePath.replace('.md', '.vue'), text, (err) => {
