@@ -102,7 +102,7 @@ text-gray-800; }
   .nuxt-content h2 {
     @apply text-xl lg:text-3xl font-medium my-8; }
   .nuxt-content h3 {
-    @apply text-xl lg:text-2xl font-medium my-2; }
+    @apply text-xl font-medium my-2; }
   .nuxt-content h4 {
     @apply text-lg font-medium my-2; }
   .nuxt-content h5 {
