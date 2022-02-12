@@ -37,13 +37,7 @@
         </div>
       </div>
     </div>
-    <LinkList
-      :advanced-trainings="advancedTrainings"
-      :basic-trainings="basicTrainings"
-      :tandemflights="tandemflights"
-      :safty-trainings="saftyTrainings"
-      :travels="travels"
-    />
+    <LinkList />
     <SocialBar />
   </div>
 </template>
@@ -60,41 +54,6 @@ export default defineComponent({
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }
-  },
-  data() {
-    return {
-      advancedTrainings: {
-        cardTitle: 'Fortbildung',
-        cardImage: '/media/fortbildung/fortbildung.jpg',
-        description: 'Fortbildungen in der Flugschule Fly Tirol',
-        to: '/fortbildung',
-      },
-      basicTrainings: {
-        cardTitle: 'Ausbildung',
-        cardImage: '/media/ausbildung/ausbildung.jpg',
-        description: 'Schulungsbetrieb in der Flugschule Fly Tirol',
-        to: '/ausbildung',
-      },
-      saftyTrainings: {
-        cardTitle: 'Sicherheitstrainings',
-        cardImage:
-          '/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg',
-        description: 'Unsere Sicherheitstrainings mit Sebastian Kahn',
-        to: '/sicherheitstrainings',
-      },
-      tandemflights: {
-        cardTitle: 'Tandemflüge',
-        cardImage: '/media/tandemfliegen/tandemfluege.jpg',
-        description: 'Erlebe das Alpenpanorama aus der Vogelperspektive.',
-        to: '/tandemfliegen',
-      },
-      travels: {
-        cardTitle: 'Reisen',
-        cardImage: '/media/reisen/paragliding_lago_de_garda.jpg',
-        description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
-        to: '/reisen',
-      },
-    }
   },
   head() {
     const metatags = this.generateMetaTags(
