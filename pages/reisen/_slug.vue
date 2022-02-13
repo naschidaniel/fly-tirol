@@ -6,6 +6,9 @@
     <div v-if="page.slug == 'dune-de-pilat-frankreich'">
       <DuneDePilatFrankreich />
     </div>
+    <div v-if="page.slug == 'flugsafari-kitzbueheler-alpen'">
+      <FlugsafariKitzbuehelerAlpen />
+    </div>
     <div v-if="page.slug == 'meduno-italien'">
       <MedunoItalien />
     </div>
@@ -24,6 +27,7 @@ import SocialBar from '~/components/SocialBar.vue'
 import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import DolomitenItalien from '~/content/reisen/dolomiten-italien.vue'
 import DuneDePilatFrankreich from '~/content/reisen/dune-de-pilat-frankreich.vue'
+import FlugsafariKitzbuehelerAlpen from '~/content/reisen/flugsafari-kitzbueheler-alpen.vue'
 import MedunoItalien from '~/content/reisen/meduno-italien.vue'
 import OeluedenizTuerkei from '~/content/reisen/oeluedeniz-tuerkei.vue'
 
@@ -33,6 +37,7 @@ export default defineComponent({
     ProductBookCourse,
     DolomitenItalien,
     DuneDePilatFrankreich,
+    FlugsafariKitzbuehelerAlpen,
     MedunoItalien,
     OeluedenizTuerkei,
   },

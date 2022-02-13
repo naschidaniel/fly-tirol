@@ -1,7 +1,13 @@
 <template>
   <div v-if="page.slug != ''" class="max-w-90 w-full mx-auto pt-8 nuxt-content">
+    <div v-if="page.slug == 'b-schein'">
+      <BSchein />
+    </div>
     <div v-if="page.slug == 'tandemkurs'">
       <Tandemkurs />
+    </div>
+    <div v-if="page.slug == 'thermikfliegen'">
+      <Thermikfliegen />
     </div>
     <ProductBookCourse :is-course="true" />
     <SocialBar />
@@ -13,10 +19,18 @@ import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import SocialBar from '~/components/SocialBar.vue'
+import BSchein from '~/content/fortbildung/b-schein.vue'
 import Tandemkurs from '~/content/fortbildung/tandemkurs.vue'
+import Thermikfliegen from '~/content/fortbildung/thermikfliegen.vue'
 
 export default defineComponent({
-  components: { ProductBookCourse, SocialBar, Tandemkurs },
+  components: {
+    BSchein,
+    ProductBookCourse,
+    SocialBar,
+    Tandemkurs,
+    Thermikfliegen,
+  },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }
