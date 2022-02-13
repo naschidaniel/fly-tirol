@@ -2,7 +2,10 @@
 title: Thermikfliegen
 description: Wie die Vögel können Paragleitpiloten die Thermik nutzen um das Flugerlebnis deutlich zu verlängern. Bei unserem Thermikflug-Angebot bekommst du einen unserer gut ausgebildeten Fluglehrer zur Seite gestellt, der dir während des Flugs über Funk wichtige Informationen und Tipps gibt.
 location: Westendorf
-order: 2
+image: /media/fortbildung/thermikfliegen.jpg
+theorie: Praxisnahe Theorie
+praxis: 15 Höhenflüge
+order: 3
 ---
 
 # Thermikfliegen

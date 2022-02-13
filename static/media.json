@@ -223,6 +223,19 @@
     "alt": "Paraglieter Gleitschirm vor Bergen in Westendorf Tirol Kitzbüheler Alpen ",
     "title": "Tandempilot und Passagier im Flug mit Blick ins Tal und auf die Berge in Westendorf"
   },
+  "/media/fortbildung/thermikfliegen.jpg": {
+    "url": "/media/fortbildung/thermikfliegen.jpg",
+    "path": "/media/fortbildung/",
+    "file": "thermikfliegen.jpg",
+    "dimensions": {
+      "height": 2048,
+      "width": 1152,
+      "type": "jpg",
+      "ratio": 0.563
+    },
+    "alt": "Gleitschirm Fliegen Paragliding Kitzbüheler Alpen Himmel",
+    "title": "Thermikfliegen in Westendorf"
+  },
   "/media/partner/uebungshang_westendorf.jpg": {
     "url": "/media/partner/uebungshang_westendorf.jpg",
     "path": "/media/partner/",
@@ -235,6 +248,19 @@
     },
     "alt": "Gleitschirm Paragliding Wiese fliegen Westendorf",
     "title": "Paragliding Grundkurs in Westendorf"
+  },
+  "/media/reisen/flugsafari.jpg": {
+    "url": "/media/reisen/flugsafari.jpg",
+    "path": "/media/reisen/",
+    "file": "flugsafari.jpg",
+    "dimensions": {
+      "height": 2048,
+      "width": 1152,
+      "type": "jpg",
+      "ratio": 0.563
+    },
+    "alt": "Gleitschirm Fliegen Paragliding Kitzbüheler Alpen Himmel",
+    "title": "Thermikfliegen in den Kitzbüheler Alpen"
   },
   "/media/reisen/infinity_over_village.jpg": {
     "url": "/media/reisen/infinity_over_village.jpg",
