@@ -29,7 +29,7 @@
       >
       <select
         id="select-course"
-        v-model="selectedCourse"
+        v-model="selectedProductOptions"
         class="mt-2 w-full text-base block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       >
         <option disabled :value="[]">Bitte auswählen</option>
@@ -42,12 +42,12 @@
         </option>
       </select>
     </div>
-    <div v-if="selectedCourse.length >= 2" class="block mt-4">
+    <div v-if="selectedProductOptions.length >= 2" class="block mt-4">
       <span class="text-gray-700">Wähle eine gewünschte Option</span>
-      <div v-for="variant in selectedCourse" :key="variant.id">
+      <div v-for="variant in selectedProductOptions" :key="variant.id">
         <input
           :id="variant.id"
-          v-model="pickedCourse"
+          v-model="pickedProduct"
           type="radio"
           :value="variant"
         />
@@ -57,15 +57,18 @@
       </div>
     </div>
     <button
-      :aria-label="`Book ${pickedCourse}`"
+      :aria-label="`Book ${pickedProduct}`"
       class="mt-6 btn-primary w-full"
-      :class="!isCourseSelected ? 'btn--disabled' : ''"
-      :disabled="!isCourseSelected"
-      @click.prevent="bookProduct(pickedCourse.id, { customAttributes: [] })"
+      :class="!isProductSelected ? 'btn--disabled' : ''"
+      :disabled="!isProductSelected"
+      @click.prevent="bookProduct(pickedProduct.id, { customAttributes: [] })"
     >
-      <span v-if="isCourseSelected"
-        >{{ pickedCourse.productTitle }} am
-        {{ pickedCourse.title }} buchen</span
+      <span v-if="isProductSelected && isCourse"
+        >{{ pickedProduct.productTitle }} am
+        {{ pickedProduct.title }} buchen</span
+      >
+      <span v-else-if="isProductSelected && !isCourse"
+        >{{ pickedProduct.productTitle }} {{ pickedProduct.title }} buchen</span
       >
       <span v-else>Triff eine Auswahl im Dropdownmenü</span>
     </button>
@@ -125,23 +128,23 @@ export default defineComponent({
   },
   data() {
     return {
-      selectedCourse: [],
-      pickedCourse: [],
+      selectedProductOptions: [],
+      pickedProduct: [],
     }
   },
   computed: {
-    isCourseSelected() {
-      return this.selectedCourse.length !== 0
+    isProductSelected() {
+      return this.selectedProductOptions.length !== 0
     },
   },
   watch: {
-    selectedCourse() {
-      this.setCheckedCourse()
+    selectedProductOptions() {
+      this.setPickedCourse()
     },
   },
   methods: {
-    setCheckedCourse() {
-      this.pickedCourse = this.selectedCourse[0]
+    setPickedCourse() {
+      this.pickedProduct = this.selectedProductOptions[0]
     },
   },
 })

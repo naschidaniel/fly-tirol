@@ -78,7 +78,7 @@ export function useFetchShopify() {
             s.variants = [
               {
                 productTitle: s.productTitle,
-                title: s.variantTitle,
+                title: s.variantTitle.replace(' / ', ' – '),
                 option: 'ohne Leihausrüstung',
                 price: s.price,
                 id: s.id,

@@ -50,11 +50,5 @@ export default defineComponent({
       productCalender,
     }
   },
-  data() {
-    return {
-      selectedCourse: [],
-      pickedCourse: [],
-    }
-  },
 })
 </script>
