@@ -40,7 +40,7 @@ Berufsbezeichnung: Flugschule
 
 Verleihungsstaat: Österreich
 
-Geschäftsführer: Sebastian Kahn, Jan Kuhnert
+Geschäftsführer: Sebastian Kahn
  
  
 ## EU-Streitschlichtung
