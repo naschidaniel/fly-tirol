@@ -19,6 +19,7 @@ const useShopify = wrapProperty('$shopify', false)
 
 const checkout = ref({})
 const lineItemsChanged = ref([])
+const selectedOptionDateString = ref('')
 export const products = ref([])
 
 export function useShopifyCart() {
@@ -159,6 +160,7 @@ export function useShopifyCart() {
     removeItems,
     resetCart,
     setCheckout,
+    selectedOptionDateString,
     updateItems,
     updateLineItems,
   }

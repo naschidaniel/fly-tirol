@@ -1,5 +1,8 @@
 <template>
-  <div class="mt-4 w-full border-2 rounded-lg bg-gray-100 px-4 pb-2">
+  <div
+    id="book-product"
+    class="mt-4 w-full border-2 rounded-lg bg-gray-100 px-4 pb-2"
+  >
     <h2 v-if="isCourse">Kurs Buchen</h2>
     <h2 v-else>Wähle deinen Flug</h2>
     <h3>Details zum Angebot</h3>
@@ -72,7 +75,6 @@
       >
       <span v-else>Triff eine Auswahl im Dropdownmenü</span>
     </button>
-    {{ selectedProductOptions }}
   </div>
 </template>
 
@@ -95,8 +97,8 @@ export default defineComponent({
     const { page } = useMetaTags()
     const { routeName, routeSlug } = useNavigation()
     const { formatPrice } = useFormat()
-    const { bookProduct, products } = useShopifyCart()
-
+    const { bookProduct, products, selectedOptionDateString } = useShopifyCart()
+    selectedOptionDateString.value = ''
     const category = routeName.split('-')[0]
     const dates = computed(() => [
       ...new Set(
@@ -125,6 +127,7 @@ export default defineComponent({
       formatPrice,
       page,
       prices,
+      selectedOptionDateString,
     }
   },
   data() {
@@ -139,6 +142,12 @@ export default defineComponent({
     },
   },
   watch: {
+    selectedOptionDateString() {
+      this.selectedProductOptions =
+        this.dates.find(
+          (d) => d.optionDateString === this.selectedOptionDateString
+        ).variants || []
+    },
     selectedProductOptions() {
       this.setPickedCourse()
     },

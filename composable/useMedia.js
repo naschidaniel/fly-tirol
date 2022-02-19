@@ -35,6 +35,34 @@ export function useMedia() {
     isWebpSupported.value = false
   }
 
+  function getScreenSize() {
+    const width = window?.innerWidth
+    const tailwindCssScreenSizes = {
+      '2xs': 384,
+      xs: 512,
+      sm: 640,
+      md: 768,
+      lg: 1080,
+      xl: 1280,
+      '2xl': 1536,
+    }
+    const screenSize =
+      width <= tailwindCssScreenSizes['2xs']
+        ? '2xs'
+        : width <= tailwindCssScreenSizes.xs
+        ? 'xs'
+        : width <= tailwindCssScreenSizes.sm
+        ? 'sm'
+        : width <= tailwindCssScreenSizes.md
+        ? 'md'
+        : width <= tailwindCssScreenSizes.lg
+        ? 'lg'
+        : width <= tailwindCssScreenSizes.xl
+        ? 'xl'
+        : '2xl'
+    return screenSize
+  }
+
   onMounted(() => {
     canUseWebP()
   })
@@ -42,6 +70,7 @@ export function useMedia() {
   return {
     isWebpSupported,
     media,
+    getScreenSize,
     setWebPSupport,
   }
 }

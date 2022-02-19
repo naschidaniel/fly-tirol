@@ -10,11 +10,14 @@
         >
           <h3>{{ month }}</h3>
           <div v-for="entry in course" :key="entry.id">
-            <div
+            <button
+              aria-label="select Date"
               class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full"
+              :title="`${entry.optionDateString}buchen`"
+              @click="setOptionDateString(entry.optionDateString)"
             >
               {{ entry.optionDateString }}
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -28,8 +31,10 @@
 <script>
 import { computed, defineComponent } from '@vue/composition-api'
 import ProductVariants from '@/components/ProductVariants.vue'
+import { useMedia } from '~/composable/useMedia'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCalender } from '~/composable/useShopifyCalender'
+import { useShopifyCart } from '~/composable/useShopifyCart'
 
 export default defineComponent({
   name: 'ProductBookCourse',
@@ -38,8 +43,10 @@ export default defineComponent({
     isCourse: { type: Boolean, required: true },
   },
   setup() {
+    const { getScreenSize } = useMedia()
     const { routeName, routeSlug } = useNavigation()
     const { filterCalender } = useShopifyCalender()
+    const { selectedOptionDateString } = useShopifyCart()
 
     const category = routeName.split('-')[0]
     const productCalender = computed(() =>
@@ -48,7 +55,20 @@ export default defineComponent({
 
     return {
       productCalender,
+      selectedOptionDateString,
+      getScreenSize,
     }
+  },
+  methods: {
+    setOptionDateString(optionDateString) {
+      this.selectedOptionDateString = optionDateString
+      const screenSize = this.getScreenSize()
+      if (['2xs', 'xs', 'sm', 'md'].includes(screenSize)) {
+        document
+          .getElementById('book-product')
+          .scrollIntoView({ block: 'start', behavior: 'smooth' })
+      }
+    },
   },
 })
 </script>
