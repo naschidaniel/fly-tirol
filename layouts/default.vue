@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="flex min-h-screen flex-col">
-      <site-cookie-banner />
-      <site-header class="py-6" />
+      <SiteCookieBanner />
+      <SiteHeader class="py-6" />
       <Nuxt class="text-brand pb-6 flex-grow" />
-      <site-footer />
+      <SiteFooter />
     </div>
   </div>
 </template>
