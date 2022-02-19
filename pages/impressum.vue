@@ -9,11 +9,13 @@
           >https://github.com/naschidaniel/fly-tirol</a
         >
       </div>
-      <div>buildTime des Docker Images: {{ formatDateTime(buildTime) }}</div>
+      <div>Version des Docker Images: {{ formatDateTime(buildTime) }}</div>
       <div>
         <div>
           <div class="inline">
-            <h2 class="mt-2">Verwendete Softwarepaket und Lizenzinformation</h2>
+            <h2 class="mt-2">
+              Verwendete Softwarepakete und Lizenzinformation
+            </h2>
           </div>
           <div
             v-for="license in licenses"

@@ -184,18 +184,19 @@
     "alt": "Gleitschirm Alpen Fly Tirol Flugschule Tagesbetreuung",
     "title": "Tagesbetreuung bei der Flugschule Fly Tirol"
   },
-  "/media/comming-soon.jpg": {
-    "url": "/media/comming-soon.jpg",
+  "/media/available-soon.jpg": {
+    "url": "/media/available-soon.jpg",
     "path": "/media/",
-    "file": "comming-soon.jpg",
+    "file": "available-soon.jpg",
     "dimensions": {
       "height": 1080,
+      "orientation": 1,
       "width": 1920,
       "type": "jpg",
       "ratio": 1.778
     },
-    "alt": "comming soon image",
-    "title": "The Image is comming soon"
+    "alt": "soon available",
+    "title": "The Image is soon available"
   },
   "/media/fortbildung/fortbildung.jpg": {
     "url": "/media/fortbildung/fortbildung.jpg",
