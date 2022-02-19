@@ -38,7 +38,7 @@
           :key="option.id"
           :value="option.variants"
         >
-          {{ option.optionTitle }}
+          {{ option.optionDateString }}
         </option>
       </select>
     </div>
@@ -72,6 +72,7 @@
       >
       <span v-else>Triff eine Auswahl im Dropdownmenü</span>
     </button>
+    {{ selectedProductOptions }}
   </div>
 </template>
 

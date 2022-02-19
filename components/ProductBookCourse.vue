@@ -13,7 +13,7 @@
             <div
               class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full"
             >
-              {{ entry.optionTitle }}
+              {{ entry.optionDateString }}
             </div>
           </div>
         </div>

@@ -100,7 +100,7 @@
             </div>
             <div class="flex justify-end mt-2">
               <button
-                :aria-label="`Book ${entry.productTitle} - ${entry.optionTitle}`"
+                :aria-label="`Book ${entry.productTitle} - ${entry.optionDateString}`"
                 class="cursor-pointer btn-primary"
                 @click.prevent="
                   bookProduct(entry.selectedId, { customAttributes: [] })
@@ -111,10 +111,10 @@
             </div>
           </div>
           <div v-else class="mb-2">
-            <p>{{ entry.optionTitle }}</p>
+            <p>{{ entry.optionDateString }}</p>
             <div class="flex justify-end mt-2">
               <button
-                :aria-label="`Book ${entry.productTitle} - ${entry.optionTitle}`"
+                :aria-label="`Book ${entry.productTitle} - ${entry.optionDateString}`"
                 class="cursor-pointer btn-primary"
                 @click.prevent="bookProduct(entry.id, { customAttributes: [] })"
               >

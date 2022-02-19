@@ -38,7 +38,7 @@ export function useFetchShopify() {
           startDay: undefined,
           endDate: undefined,
           month: undefined,
-          optionTitle: '',
+          optionDateString: '',
           price: v.price,
           variants: [],
         }
@@ -46,21 +46,34 @@ export function useFetchShopify() {
     )
     fetchedProducts.forEach((s) => {
       try {
-        s.variants = [
-          {
-            productTitle: s.productTitle,
-            title: s.variantTitle,
-            option: undefined,
-            price: s.price,
-            id: s.id,
-          },
-        ]
         if (s.productOptions[0].name !== 'Kursdatum') {
-          s.optionTitle = `${s.variantTitle} ${format.formatPrice(s.price)}`
+          s.optionDateString = `${s.variantTitle} ${format.formatPrice(
+            s.price
+          )}`
           s.isDateItem = false
           return
         }
         s.isDateItem = true
+        s.dateString = s.variantTitle.split(' / ')[0]
+        const startDateArray = s.dateString.split(' ')[0].split('.')
+        const startDate = new Date(
+          `20${startDateArray[2]}-${startDateArray[1]}-${startDateArray[0]}`
+        )
+        const endDateArray = s.dateString.split(' ').splice(-1)[0].split('.')
+        const endDate =
+          startDateArray.join() !== endDateArray.join()
+            ? new Date(
+                `20${endDateArray[2]}-${endDateArray[1]}-${endDateArray[0]}`
+              )
+            : undefined
+        s.startDate = startDate
+        s.endDate = endDate
+        s.startDay = startDate.toLocaleString('de', { weekday: 'short' })
+        const month = startDate.toLocaleString('de', { month: 'long' })
+        const year = startDate.getFullYear()
+        s.month = `${month} ${year}`
+        s.optionDateString = `${s.startDay}, ${s.dateString}`
+
         if (s.productOptions.length >= 2) {
           if (s.variantTitle.includes('inklusive Leihausrüstung')) {
             s.isShowProduct = false
@@ -80,39 +93,33 @@ export function useFetchShopify() {
                 productTitle: s.productTitle,
                 title: s.variantTitle.replace(' / ', ' – '),
                 option: 'ohne Leihausrüstung',
+                optionDateString: s.optionDateString,
                 price: s.price,
                 id: s.id,
               },
               {
                 productTitle: s.productTitle,
-                title: secondVariant.variantTitle,
+                title: secondVariant.variantTitle.replace(' / ', ' – '),
                 option: 'inklusive Leihausrüstung',
+                optionDateString: s.optionDateString,
                 price: secondVariant.price,
                 id: secondVariant.id,
               },
             ]
             s.selectedId = s.id
           }
+        } else {
+          s.variants = [
+            {
+              productTitle: s.productTitle,
+              title: s.variantTitle,
+              option: undefined,
+              optionDateString: s.optionDateString,
+              price: s.price,
+              id: s.id,
+            },
+          ]
         }
-        s.dateString = s.variantTitle.split(' / ')[0]
-        const startDateArray = s.dateString.split(' ')[0].split('.')
-        const startDate = new Date(
-          `20${startDateArray[2]}-${startDateArray[1]}-${startDateArray[0]}`
-        )
-        const endDateArray = s.dateString.split(' ').splice(-1)[0].split('.')
-        const endDate =
-          startDateArray.join() !== endDateArray.join()
-            ? new Date(
-                `20${endDateArray[2]}-${endDateArray[1]}-${endDateArray[0]}`
-              )
-            : undefined
-        s.startDate = startDate
-        s.endDate = endDate
-        s.startDay = startDate.toLocaleString('de', { weekday: 'short' })
-        const month = startDate.toLocaleString('de', { month: 'long' })
-        const year = startDate.getFullYear()
-        s.month = `${month} ${year}`
-        s.optionTitle = `${s.startDay}, ${s.dateString}`
       } catch (e) {
         throw new Error(
           `The Kursdatum ${s.dateString} of the course ${s.productType} - ${s.productTitle} could not be parsed`
