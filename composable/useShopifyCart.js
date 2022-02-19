@@ -34,6 +34,8 @@ export function useShopifyCart() {
       checkout.value?.lineItems === undefined
   )
 
+  const cartItemsLength = computed(() => checkout.value?.lineItems?.length || 0)
+
   async function bookProduct(variantId, { customAttributes }) {
     const lineItemsToAdd = [
       {
@@ -147,6 +149,7 @@ export function useShopifyCart() {
   return {
     bookProduct,
     cartItems,
+    cartItemsLength,
     checkout,
     isCartItems,
     loadCheckout,

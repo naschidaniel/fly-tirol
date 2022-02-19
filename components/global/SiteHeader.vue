@@ -14,7 +14,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import FlyTirolLogo from '../FlyTirolLogo.vue'
-import NavigationNavbar from '../navigation/NavigationNavbar.vue'
+import NavigationNavbar from './NavigationNavbar.vue'
 
 export default defineComponent({
   name: 'SiteHeader',

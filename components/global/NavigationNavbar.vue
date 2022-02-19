@@ -22,7 +22,13 @@
 
     <div class="flex z-50">
       <div class="mr-2 my-1 xl:my-0" @click="toggleIfDropdownIsOpen()">
-        <NavigationNavbarCart />
+        <nuxt-link class="btn-primary" to="/buchen" exact>
+          <OutlineShoppingCartIcon
+            class="mr-1"
+            style="height: 1em; width: 1em"
+          />
+          ({{ cartItemsLength }})
+        </nuxt-link>
       </div>
       <div class="mr-3 my-1 xl:my-0" @click="toggleIfDropdownIsOpen()">
         <nuxt-link class="btn-primary" to="/kontakt" exact>
@@ -46,22 +52,23 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import OutlineMenuIcon from '../icons/OutlineMenuIcon.vue'
+import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
 import OutlineXIcon from '../icons/OutlineXIcon.vue'
-import NavigationNavbarCart from './NavigationNavbarCart.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
 import { useNavigation } from '~/composable/useNavigation'
-
+import { useShopifyCart } from '~/composable/useShopifyCart'
 export default defineComponent({
   name: 'NavigationNavbar',
   components: {
     NavigationNavbarLink,
-    NavigationNavbarCart,
     OutlineMenuIcon,
+    OutlineShoppingCartIcon,
     OutlineXIcon,
   },
   setup() {
     const { isOpen } = useNavigation()
-    return { isOpen }
+    const { cartItemsLength } = useShopifyCart()
+    return { cartItemsLength, isOpen }
   },
   methods: {
     toggleIfDropdownIsOpen() {
