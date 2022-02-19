@@ -18,6 +18,10 @@ export function useFetchShopify() {
   const shopifyCalender = useShopifyCalender()
 
   async function initShop() {
+    // do not show Courses older then 14 days
+    const maxEndDate = new Date()
+    maxEndDate.setDate(maxEndDate.getDate() - 14)
+
     const shopifyProducts = await shopify.product.fetchAll()
     const fetchedProducts = shopifyProducts.flatMap((p) =>
       p.variants.map((v) => {
@@ -119,6 +123,9 @@ export function useFetchShopify() {
               id: s.id,
             },
           ]
+        }
+        if (s.endDate < maxEndDate) {
+          s.isShowProduct = false
         }
       } catch (e) {
         throw new Error(
