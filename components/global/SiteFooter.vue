@@ -3,7 +3,7 @@
     <div class="w-full py-8 md:py-6 bg-gray-200">
       <div class="max-w-90 w-full mx-auto text-md sm:text-xs">
         <div class="flex flex-wrap md:flex-nowrap items-center justify-between">
-          <div class="relative flex-shrink-0 w-full md:w-auto mb-8 md:mb-0">
+          <div class="relative shrink-0 w-full md:w-auto mb-8 md:mb-0">
             <nuxt-link
               to="/"
               class="block outline-none w-24 whitespace-nowrap"

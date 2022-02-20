@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-90 mx-auto 2xl:mr-6 2xl:ml-auto">
     <div class="flex flex-wrap 2xl:flex-nowrap">
-      <div class="flex flex-col w-full 2xl:w-96 max-w-screen-sm flex-shrink-0">
+      <div class="flex flex-col w-full 2xl:w-96 max-w-screen-sm shrink">
         <div class="mt-6">
           <h2 class="mb-6">
             <span

@@ -1,7 +1,7 @@
 <template>
   <div class="relative overflow-hidden w-full">
     <div
-      class="relative flex flex-wrap lg:flex-nowrap lg:w-11/12 lg:maxw-90 lg:mr-0 lg:ml-auto lg:pt-8 pb-4 md:pb-12 2lg:pb-24 z-10"
+      class="relative flex flex-wrap lg:flex-nowrap lg:w-11/12 lg:max-w-90 lg:mr-0 lg:ml-auto lg:pt-8 pb-4 md:pb-12 2lg:pb-24 z-10"
     >
       <div
         v-if="picture"
@@ -16,7 +16,7 @@
         />
       </div>
       <div
-        class="flex flex-col max-w-90 mx-auto lg:max-w-screen-sm lg:flex-shrink-0 lg:mx-0"
+        class="flex flex-col max-w-90 mx-auto lg:max-w-screen-sm lg:shrink-0 lg:mx-0"
       >
         <div class="mt-6">
           <h1 class="mb-6">
