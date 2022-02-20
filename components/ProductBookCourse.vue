@@ -13,7 +13,7 @@
             <button
               aria-label="select Date"
               class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full"
-              :title="`${entry.optionDateString}buchen`"
+              :title="`${entry.optionDateString} buchen`"
               @click="setOptionDateString(entry.optionDateString)"
             >
               {{ entry.optionDateString }}
