@@ -76,7 +76,7 @@ export default {
     'cookie-universal-nuxt',
     '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss',
+    '@nuxt/postcss8',
     'nuxt-shopify',
   ],
   env: {
@@ -102,7 +102,12 @@ export default {
   },
 
   build: {
-    extractCSS: true,
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
 
   router: {
