@@ -24,7 +24,7 @@ RUN yarn build
 
 RUN rm -rf .git
 
-RUN rm -rf ./dist/media
+RUN rm -rf .nuxt/dist/media
 
 RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
 
@@ -32,7 +32,9 @@ RUN yarn generateMediaInformation
 
 RUN yarn optimize-images
 
-RUN rsync -a ./dist/media/ ./static/media/
+RUN rsync -a .nuxt/dist/media/ ./static/media/
+
+RUN rm -rf .nuxt/dist/media/
 
 RUN rm -rf node_modules
 
