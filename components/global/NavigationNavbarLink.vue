@@ -47,13 +47,13 @@ export default defineComponent({
   margin-bottom: 0;
 }
 .navbar--link:hover .decorator {
-  @apply scale-x-100 origin-left;
+  @apply scale-100 origin-left;
 }
 .navbar--link:focus .decorator {
-  @apply scale-x-100 origin-left;
+  @apply scale-100 origin-left;
 }
 .navbar--link.active .decorator {
-  @apply scale-x-100;
+  @apply scale-100;
 }
 .navbar--link .decorator {
   @apply absolute
@@ -66,8 +66,7 @@ export default defineComponent({
         transition
         duration-300
         ease-in-out
-        transform
         origin-right
-        scale-x-0;
+        scale-0;
 }
 </style>

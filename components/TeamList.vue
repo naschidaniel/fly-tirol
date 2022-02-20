@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-90 mx-auto pb-12">
     <div class="relative flex w-11/12 ml-auto pt-8 pb-4 2xl:pb-12 z-10">
-      <div class="flex flex-col max-w-96 max-w-screen-sm flex-shrink-0">
+      <div class="flex flex-col max-w-96 max-w-screen-sm shrink-0">
         <div class="">
           <h2 class="mb-6">
             <span
