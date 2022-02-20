@@ -50,6 +50,18 @@ export function useFetchShopify() {
     )
     fetchedProducts.forEach((s) => {
       try {
+        s.variants = [
+          {
+            productTitle: s.productTitle,
+            title: s.variantTitle.replace(' / ', ' – '),
+            option: undefined,
+            optionDateString: s.optionDateString,
+            price: s.price,
+            id: s.id,
+          },
+        ]
+
+        // Tandemflights Vouchers
         if (s.productOptions[0].name !== 'Kursdatum') {
           s.optionDateString = `${s.variantTitle} ${format.formatPrice(
             s.price
@@ -57,6 +69,7 @@ export function useFetchShopify() {
           s.isDateItem = false
           return
         }
+
         s.isDateItem = true
         s.dateString = s.variantTitle.split(' / ')[0]
         const startDateArray = s.dateString.split(' ')[0].split('.')
@@ -92,37 +105,17 @@ export function useFetchShopify() {
                 c.variantTitle === secondVariantTitle &&
                 c.productType === s.productType
             )
-            s.variants = [
-              {
-                productTitle: s.productTitle,
-                title: s.variantTitle.replace(' / ', ' – '),
-                option: 'ohne Leihausrüstung',
-                optionDateString: s.optionDateString,
-                price: s.price,
-                id: s.id,
-              },
-              {
-                productTitle: s.productTitle,
-                title: secondVariant.variantTitle.replace(' / ', ' – '),
-                option: 'inklusive Leihausrüstung',
-                optionDateString: s.optionDateString,
-                price: secondVariant.price,
-                id: secondVariant.id,
-              },
-            ]
+            s.variants[0].option = 'ohne Leihausrüstung'
+            s.variants.push({
+              productTitle: s.productTitle,
+              title: secondVariant.variantTitle.replace(' / ', ' – '),
+              option: 'inklusive Leihausrüstung',
+              optionDateString: s.optionDateString,
+              price: secondVariant.price,
+              id: secondVariant.id,
+            })
             s.selectedId = s.id
           }
-        } else {
-          s.variants = [
-            {
-              productTitle: s.productTitle,
-              title: s.variantTitle,
-              option: undefined,
-              optionDateString: s.optionDateString,
-              price: s.price,
-              id: s.id,
-            },
-          ]
         }
         if (s.endDate < maxEndDate) {
           s.isShowProduct = false
