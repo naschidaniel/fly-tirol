@@ -1,3 +1,4 @@
+const colors = require('tailwindcss/colors')
 const em = (px) => `${px / 16}em`
 
 const screensizes = {
@@ -14,9 +15,16 @@ const screensizes = {
 }
 
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class',
-  mode: 'jit',
+  content: [
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.js',
+  ],
+  corePlugins: {
+    preflight: true,
+  },
   theme: {
     screens: screensizes,
     extend: {
@@ -24,6 +32,11 @@ module.exports = {
         brand: {
           DEFAULT: '#160D42',
         },
+        current: 'currentColor',
+        gray: colors.neutral,
+        green: colors.emerald,
+        yellow: colors.amber,
+        purple: colors.violet,
       },
       fontFamily: {
         sans: ['RedHatText', 'sans-serif'],
