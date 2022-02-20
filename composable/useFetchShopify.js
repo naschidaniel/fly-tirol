@@ -90,6 +90,7 @@ export function useFetchShopify() {
         const year = startDate.getFullYear()
         s.month = `${month} ${year}`
         s.optionDateString = `${s.startDay}, ${s.dateString}`
+        s.variants[0].optionDateString = s.optionDateString
 
         if (s.productOptions.length >= 2) {
           if (s.variantTitle.includes('inklusive Leihausrüstung')) {

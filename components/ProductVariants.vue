@@ -143,10 +143,9 @@ export default defineComponent({
   },
   watch: {
     selectedOptionDateString() {
-      this.selectedProductOptions =
-        this.dates.find(
-          (d) => d.optionDateString === this.selectedOptionDateString
-        ).variants || []
+      this.selectedProductOptions = this.dates.find(
+        (d) => d.optionDateString === this.selectedOptionDateString
+      )?.variants
     },
     selectedProductOptions() {
       this.setPickedCourse()
@@ -155,6 +154,8 @@ export default defineComponent({
   methods: {
     setPickedCourse() {
       this.pickedProduct = this.selectedProductOptions[0]
+      this.selectedOptionDateString =
+        this.selectedProductOptions[0]?.optionDateString
     },
   },
 })
