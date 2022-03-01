@@ -5,6 +5,7 @@
     >
       <ResponsiveImage
         img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
+        :is-lazy="false"
         picture="/media/FlyTirolHeader.jpg"
       />
       <div

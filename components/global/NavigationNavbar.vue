@@ -20,8 +20,8 @@
       </nav>
     </div>
 
-    <div class="flex z-50">
-      <div class="mr-2 my-1 xl:my-0" @click="toggleIfDropdownIsOpen()">
+    <div class="flex">
+      <div class="mr-2 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
         <nuxt-link class="btn-primary" to="/buchen" exact>
           <OutlineShoppingCartIcon
             class="mr-1"
@@ -30,12 +30,12 @@
           ({{ cartItemsLength }})
         </nuxt-link>
       </div>
-      <div class="mr-3 my-1 xl:my-0" @click="toggleIfDropdownIsOpen()">
+      <div class="mr-3 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
         <nuxt-link class="btn-primary" to="/kontakt" exact>
           <span>Kontakt</span>
         </nuxt-link>
       </div>
-      <div class="xl:mr-0 xl:hidden">
+      <div class="xl:mr-0 xl:hidden z-50">
         <button
           aria-label="Toggle Dropdown Menu"
           class="p-2 rounded-md text-brand focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-white focus:ring-opacity-100 focus:outline-none transition duration-150 ease-in-out"

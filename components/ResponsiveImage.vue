@@ -2,7 +2,7 @@
   <div ref="imageBox" class="absolute top-0 bottom-0 left-0 right-0">
     <img
       v-if="responsiveUrl != ''"
-      loading="lazy"
+      :loading="isLazy ? 'lazy' : 'auto'"
       :class="imgClass"
       :src="responsiveUrl"
       :width="width"
@@ -23,6 +23,7 @@ export default defineComponent({
     picture: { type: String, default: '', required: true },
     imgClass: { type: String, default: '', required: false },
     fixSize: { type: String, default: undefined, required: false },
+    isLazy: { type: Boolean, default: true, required: false },
     isThumbnail: { type: Boolean, default: false, required: false },
   },
   setup() {
