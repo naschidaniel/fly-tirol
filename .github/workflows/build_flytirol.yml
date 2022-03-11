@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-name: Build
+name: Build fly-tirol.com
 
 jobs:
   build:
@@ -30,20 +30,20 @@ jobs:
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: delete ./dist/media
         run: rm -rf ./dist/media
-      - name: optimize-images:2xs
-        run: yarn optimize-images:2xs
-      - name: optimize-images:xs
-        run: yarn optimize-images:xs
-      - name: optimize-images:sm
-        run: yarn optimize-images:sm
-      - name: optimize-images:md
-        run: yarn optimize-images:md
-      - name: optimize-images:lg
-        run: yarn optimize-images:lg
-      - name: optimize-images:xl
-        run: yarn optimize-images:xl
-      - name: optimize-images:2xl
-        run: yarn optimize-images:2xl
+      - name: optimize-images:ft:2xs
+        run: yarn optimize-images:ft:2xs
+      - name: optimize-images:ft:xs
+        run: yarn optimize-images:ft:xs
+      - name: optimize-images:ft:sm
+        run: yarn optimize-images:ft:sm
+      - name: optimize-images:ft:md
+        run: yarn optimize-images:ft:md
+      - name: optimize-images:ft:lg
+        run: yarn optimize-images:ft:lg
+      - name: optimize-images:ft:xl
+        run: yarn optimize-images:ft:xl
+      - name: optimize-images:ft:2xl
+        run: yarn optimize-images:ft:2xl
       - name: Build Artifacts
         uses: actions/upload-artifact@v2
         with:

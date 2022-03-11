@@ -1,10 +1,13 @@
 <template>
-  <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
-    <div v-if="page.slug == 'sicherheitstraining-am-gardasee'">
-      <SicherheitstrainingAmGardasee />
+  <div v-if="page.slug != ''" class="max-w-90 w-full mx-auto pt-8 nuxt-content">
+    <div v-if="page.slug == 'b-schein'">
+      <BSchein />
     </div>
-    <div v-if="page.slug == 'sicherheitstraining-in-oeluedeniz'">
-      <SicherheitstrainingInOelideniz />
+    <div v-if="page.slug == 'tandemkurs'">
+      <Tandemkurs />
+    </div>
+    <div v-if="page.slug == 'thermikfliegen'">
+      <Thermikfliegen />
     </div>
     <ProductBookCourse :is-course="true" />
     <SocialBar />
@@ -14,17 +17,19 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import SocialBar from '~/components/SocialBar.vue'
 import ProductBookCourse from '~/components/ProductBookCourse.vue'
-import SicherheitstrainingAmGardasee from '~/content/sicherheitstrainings/sicherheitstraining-am-gardasee.vue'
-import SicherheitstrainingInOelideniz from '~/content/sicherheitstrainings/sicherheitstraining-in-oeluedeniz.vue'
+import SocialBar from '~/components/SocialBar.vue'
+import BSchein from '~/content_flytirol/fortbildung/b-schein.vue'
+import Tandemkurs from '~/content_flytirol/fortbildung/tandemkurs.vue'
+import Thermikfliegen from '~/content_flytirol/fortbildung/thermikfliegen.vue'
 
 export default defineComponent({
   components: {
-    SocialBar,
+    BSchein,
     ProductBookCourse,
-    SicherheitstrainingAmGardasee,
-    SicherheitstrainingInOelideniz,
+    SocialBar,
+    Tandemkurs,
+    Thermikfliegen,
   },
   setup() {
     const { generateMetaTags, page } = useMetaTags()

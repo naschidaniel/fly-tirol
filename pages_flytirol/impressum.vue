@@ -44,7 +44,7 @@ import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import { useData } from '~/composable/useData'
 import { useFormat } from '~/composable/useFormat'
-import Impressum from '~/content/impressum.vue'
+import Impressum from '~/content_flytirol/impressum.vue'
 
 export default defineComponent({
   components: { Impressum },

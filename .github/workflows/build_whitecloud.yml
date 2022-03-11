@@ -1,0 +1,49 @@
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+name: Build white-cloud.tirol
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build white-cloud.tirol
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+      - run: yarn install
+      - name: generateMediaInformation
+        run: yarn generateMediaInformation
+      - name: generateContent
+        run: yarn generateContent && yarn lintContent
+      - name: build
+        run: yarn build
+      - name: get image-optimizer
+        run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
+      - name: delete ./dist/media
+        run: rm -rf ./dist/media
+      - name: optimize-images:wc:2xs
+        run: yarn optimize-images:wc:2xs
+      - name: optimize-images:wc:xs
+        run: yarn optimize-images:wc:xs
+      - name: optimize-images:wc:sm
+        run: yarn optimize-images:wc:sm
+      - name: optimize-images:wc:md
+        run: yarn optimize-images:wc:md
+      - name: optimize-images:wc:lg
+        run: yarn optimize-images:wc:lg
+      - name: optimize-images:wc:xl
+        run: yarn optimize-images:wc:xl
+      - name: optimize-images:wc:2xl
+        run: yarn optimize-images:wc:2xl
+      - name: Build Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: whitecloud_build
+          path: dist
+          retention-days: 0.2

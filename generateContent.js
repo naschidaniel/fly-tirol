@@ -2,14 +2,14 @@ const fs = require('fs')
 const glob = require('glob')
 const marked = require('marked')
 
-const metadataJson = './static/metadata.json'
+const metadataJson = `./static_{${process.env.NUXT_PAGE}}/metadata.json`
 
 let dataMetaDataJson = {}
 if (fs.existsSync(metadataJson)) {
   dataMetaDataJson = JSON.parse(fs.readFileSync(metadataJson))
 }
 
-const content = glob.sync('./content/**/*.md').sort()
+const content = glob.sync(`./content_${process.env.NUXT_PAGE}/**/*.md`).sort()
 
 dataMetaDataJson = []
 content.forEach((filePath) => {

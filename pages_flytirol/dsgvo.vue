@@ -7,7 +7,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Dsgvo from '~/content/dsgvo.vue'
+import Dsgvo from '~/content_flytirol/dsgvo.vue'
 
 export default defineComponent({
   components: { Dsgvo },

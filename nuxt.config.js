@@ -17,8 +17,27 @@ const dependencies = Object.keys(packages.dependencies)
     license,
   }))
 
+if (
+  !(
+    process.env.NUXT_PAGE === 'whitecloud' ||
+    process.env.NUXT_PAGE === 'flytirol'
+  )
+) {
+  throw console.error('Page not set!')
+}
+
 export default {
   target: 'server',
+  dir: {
+    pages:
+      process.env.NUXT_PAGE === 'whitecloud'
+        ? 'pages_whitecloud'
+        : 'pages_flytirol',
+    static:
+        process.env.NUXT_PAGE === 'whitecloud'
+          ? 'static_whitecloud'
+          : 'static_flytirol',
+  },
   head: {
     titleTemplate: 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
     htmlAttrs: {
