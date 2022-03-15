@@ -34,9 +34,9 @@ export default {
         ? 'pages_whitecloud'
         : 'pages_flytirol',
     static:
-        process.env.NUXT_PAGE === 'whitecloud'
-          ? 'static_whitecloud'
-          : 'static_flytirol',
+      process.env.NUXT_PAGE === 'whitecloud'
+        ? 'static_whitecloud'
+        : 'static_flytirol',
   },
   head: {
     titleTemplate: 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',

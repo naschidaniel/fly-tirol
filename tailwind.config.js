@@ -26,8 +26,8 @@ process.env.NUXT_PAGE === 'whitecloud'
   ? content.push('./pages_whitecloud/**/*.vue')
   : content.push('./pages_flytirol/**/*.vue')
 
-
-const brandColor = process.env.NUXT_PAGE === 'whitecloud' ? '#1c9dd8' : '#160D42'
+const brandColor =
+  process.env.NUXT_PAGE === 'whitecloud' ? '#1c9dd8' : '#160D42'
 
 module.exports = {
   content,

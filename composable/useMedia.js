@@ -2,7 +2,8 @@ import { onMounted, ref } from '@nuxtjs/composition-api'
 import mediaFlyTirol from '~/static_flytirol/media.json'
 import mediaWhiteCloud from '~/static_whitecloud/media.json'
 
-const media = process.env.NUXT_PAGE === 'whitecloud' ? mediaWhiteCloud : mediaFlyTirol
+const media =
+  process.env.NUXT_PAGE === 'whitecloud' ? mediaWhiteCloud : mediaFlyTirol
 
 const isWebpSupported = ref(undefined)
 
