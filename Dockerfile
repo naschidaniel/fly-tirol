@@ -1,5 +1,9 @@
 FROM node:16-bullseye as builder
 
+ARG NUXT_PAGE
+
+ENV NUXT_PAGE=$NUXT_PAGE
+
 ENV TZ=Europe/Berlin
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
