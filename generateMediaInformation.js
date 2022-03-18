@@ -12,9 +12,10 @@ const images =
     ? glob.sync('./static_whitecloud/media/**/*.{jpg,png}')
     : glob.sync('./static_flytirol/media/**/*.{jpg,png}')
 
-const staticPath = process.env.NUXT_PAGE === 'whitecloud'
-  ? './static_whitecloud'
-  : './static_flytirol'
+const staticPath =
+  process.env.NUXT_PAGE === 'whitecloud'
+    ? './static_whitecloud'
+    : './static_flytirol'
 
 let dataMediaJson = {}
 if (fs.existsSync(mediaJson)) {

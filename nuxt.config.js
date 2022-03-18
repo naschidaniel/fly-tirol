@@ -23,7 +23,10 @@ if (
     process.env.NUXT_PAGE === 'flytirol'
   )
 ) {
-  throw console.error('Page not set!')
+  // eslint-disable-next-line no-console
+  throw console.error(
+    `NUXT_PAGE = ${process.env.NUXT_PAGE} | NUXT_PAGE is not set!`
+  )
 }
 
 export default {
@@ -39,7 +42,10 @@ export default {
         : 'static_flytirol',
   },
   head: {
-    titleTemplate: 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
+    titleTemplate:
+      process.env.NUXT_PAGE === 'whitecloud'
+        ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser - %s'
+        : 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
     htmlAttrs: {
       lang: 'de',
     },
@@ -49,7 +55,10 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
+        content:
+          process.env.NUXT_PAGE === 'whitecloud'
+            ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser'
+            : 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
       },
       {
         hid: 'twitter:card',
@@ -60,18 +69,25 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
+          process.env.NUXT_PAGE === 'whitecloud'
+            ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.'
+            : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
+          process.env.NUXT_PAGE === 'whitecloud'
+            ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.'
+            : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
+        content:
+          process.env.NUXT_PAGE === 'whitecloud'
+            ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
+            : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
       {
         hid: 'og:type',
@@ -81,7 +97,10 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://fly-tirol.com',
+        content:
+          process.env.NUXT_PAGE === 'whitecloud'
+            ? 'https://white-cloud.tirol/'
+            : 'https://fly-tirol.com',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],

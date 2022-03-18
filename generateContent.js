@@ -2,7 +2,7 @@ const fs = require('fs')
 const glob = require('glob')
 const marked = require('marked')
 
-const metadataJson = `./static_{${process.env.NUXT_PAGE}}/metadata.json`
+const metadataJson = `./static_${process.env.NUXT_PAGE}/metadata.json`
 
 let dataMetaDataJson = {}
 if (fs.existsSync(metadataJson)) {
@@ -18,7 +18,7 @@ content.forEach((filePath) => {
     .split('/')
     [filePath.split('/').length - 1].replace('.md', '')
   const path =
-    folder === 'content' && slug === 'index'
+    folder === `content_${process.env.NUXT_PAGE}` && slug === 'index'
       ? '/'
       : folder === 'content'
       ? `/${slug}/`
