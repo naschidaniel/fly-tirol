@@ -1,5 +1,5 @@
 <template>
-  <div>Index</div>
+  <div>Flüge und Preise</div>
 </template>
 
 <script>
