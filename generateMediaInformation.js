@@ -2,21 +2,31 @@ const fs = require('fs')
 const glob = require('glob')
 const sizeOf = require('image-size')
 
-const mediaJson = './static/media.json'
+const mediaJson =
+  process.env.NUXT_PAGE === 'whitecloud'
+    ? './static_whitecloud/media.json'
+    : './static_flytirol/media.json'
+
+const images =
+  process.env.NUXT_PAGE === 'whitecloud'
+    ? glob.sync('./static_whitecloud/media/**/*.{jpg,png}')
+    : glob.sync('./static_flytirol/media/**/*.{jpg,png}')
+
+const staticPath = process.env.NUXT_PAGE === 'whitecloud'
+  ? './static_whitecloud'
+  : './static_flytirol'
 
 let dataMediaJson = {}
 if (fs.existsSync(mediaJson)) {
   dataMediaJson = JSON.parse(fs.readFileSync(mediaJson))
 }
 
-const images = glob.sync('./static/media/**/*.{jpg,png}')
-
 images
   .sort()
   .map((filePath) => {
-    const url = filePath.replace('./static', '')
+    const url = filePath.replace(staticPath, '')
     const file = filePath.split('/').reverse()[0]
-    const path = filePath.replace('./static', '').replace(file, '')
+    const path = filePath.replace(staticPath, '').replace(file, '')
     const dimensions = sizeOf(filePath)
     dimensions.ratio =
       Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
@@ -29,7 +39,7 @@ images
 
 const dataSorted = Object.keys(dataMediaJson)
   .filter((o) => {
-    return images.includes(`./static${o}`)
+    return images.includes(`${staticPath}${o}`)
   })
   .sort()
   .reduce((obj, key) => {
