@@ -4,12 +4,7 @@ Disallow: /impressum
 Disallow: /buchen
 
 Allow: /
-Allow: /tandemfliegen
-Allow: /ausbildung
-Allow: /fortbildung
-Allow: /reisen
-Allow: /sicherheitstrainings
-Allow: /team
+Allow: /fluege-und-preise
 Allow: /kontakt
 
 Allow: /media
