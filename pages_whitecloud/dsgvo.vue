@@ -1,18 +1,16 @@
 <template>
-  <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
-    <Impressum />
-    <Version />
+  <div class="max-w-90 w-full mx-auto py-6">
+    <Dsgvo class="nuxt-content" />
   </div>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Impressum from '~/content_flytirol/impressum.vue'
-import Version from '~/components/Version.vue'
+import Dsgvo from '~/content_flytirol/dsgvo.vue'
 
 export default defineComponent({
-  components: { Impressum, Version },
+  components: { Dsgvo },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }
@@ -27,13 +25,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style scoped>
-.license-spacer {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-#license-list:last-child span .license-spacer {
-  display: none;
-}
-</style>

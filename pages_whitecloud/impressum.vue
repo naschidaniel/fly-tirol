@@ -8,7 +8,7 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Impressum from '~/content_flytirol/impressum.vue'
+import Impressum from '~/content_whitecloud/impressum.vue'
 import Version from '~/components/Version.vue'
 
 export default defineComponent({
