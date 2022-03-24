@@ -34,9 +34,9 @@ RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/ma
 
 RUN yarn generateMediaInformation
 
-RUN yarn optimize-images
+RUN yarn optimize-images:$NUXT_PAGE
 
-RUN rsync -a .nuxt/dist/media/ ./static/media/
+RUN rsync -a .nuxt/dist/media/ ./static_$NUXT_PAGE/media/
 
 RUN rm -rf .nuxt/dist/media/
 
@@ -48,6 +48,10 @@ RUN NODE_ENV=production yarn install \
   --production=true
 
 FROM node:16-bullseye
+
+ARG NUXT_PAGE
+
+ENV NUXT_PAGE=$NUXT_PAGE
 
 RUN apt-get update -y
 

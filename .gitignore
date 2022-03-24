@@ -99,8 +99,8 @@ deploy_whitecloud.sh
 
 # run docker
 run.sh
-flytirol.tar.gz
-whitecloud.tar.gz
+flytirol*.tar.gz
+whitecloud*.tar.gz
 
 # content
 /content_flytirol/**/*.vue
