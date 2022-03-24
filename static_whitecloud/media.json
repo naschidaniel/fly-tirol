@@ -1,12 +1,12 @@
 {
-  "/media/WhiteCloudLogo.png": {
-    "url": "/media/WhiteCloudLogo.png",
+  "/media/WhiteCloudLogo.jpg": {
+    "url": "/media/WhiteCloudLogo.jpg",
     "path": "/media/",
-    "file": "WhiteCloudLogo.png",
+    "file": "WhiteCloudLogo.jpg",
     "dimensions": {
       "height": 2010,
       "width": 2365,
-      "type": "png",
+      "type": "jpg",
       "ratio": 1.177
     },
     "alt": "Logo WHITE-CLOUD Tandemflüge",
