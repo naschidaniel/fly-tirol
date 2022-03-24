@@ -120,6 +120,7 @@ export default {
   env: {
     buildTime: +new Date(),
     licenses: dependencies,
+    NUXT_PAGE: process.env.NUXT_PAGE,
   },
   shopify: {
     domain: process.env.SHOPIFY_DOMAIN,
