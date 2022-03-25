@@ -1,16 +1,12 @@
 <template>
-  <div class="max-w-90 w-full mx-auto py-6">
-    <Dsgvo class="nuxt-content" />
-  </div>
+  <div>Index</div>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Dsgvo from '~/content/dsgvo.vue'
 
 export default defineComponent({
-  components: { Dsgvo },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }

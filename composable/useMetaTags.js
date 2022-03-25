@@ -1,5 +1,9 @@
 import { computed, useRoute, useContext } from '@nuxtjs/composition-api'
-import metadata from '~/static/metadata.json'
+import metadataFlyTirol from '~/static_flytirol/metadata.json'
+import metadataWhiteCloud from '~/static_whitecloud/metadata.json'
+
+const metadata =
+  process.env.NUXT_PAGE === 'whitecloud' ? metadataWhiteCloud : metadataFlyTirol
 
 export function useMetaTags() {
   const route = useRoute()

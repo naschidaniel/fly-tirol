@@ -94,12 +94,16 @@ image-optimizer
 image-optimizer.exe
 
 # deploy
-deploy.sh
+deploy_flytirol.sh
+deploy_whitecloud.sh
 
 # run docker
 run.sh
-flytirol.tar.gz
+flytirol*.tar.gz
+whitecloud*.tar.gz
 
 # content
-/content/**/*.vue
-/static/metadata.json
+/content_flytirol/**/*.vue
+/content_whitecloud/**/*.vue
+/static_flytirol/metadata.json
+/static_whitecloud/metadata.json

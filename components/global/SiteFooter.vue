@@ -9,24 +9,28 @@
               class="block outline-none w-24 whitespace-nowrap"
               exact
             >
-              &#169; fly-tirol.com
+              &#169; <span v-if="isFlyTirol">fly-tirol.com</span
+              ><span v-if="isWhiteCloud">white-cloud.tirol</span>
             </nuxt-link>
           </div>
           <div class="flex flex-wrap sm:flex-nowrap justify-between w-full">
             <div class="flex flex-wrap w-full md:justify-center mb-8 sm:mb-0">
               <a
+                v-if="isFlyTirol"
                 href="mailto:info@fly-tirol.com"
                 class="underline whitespace-nowrap"
               >
                 info@fly-tirol.com
               </a>
               <a
+                v-if="isFlyTirol"
                 href="tel:00436766422088"
                 class="underline ml-8 sm:ml-4 md:ml-6 whitespace-nowrap"
               >
                 +43 676 6422088
               </a>
               <span
+                v-if="isFlyTirol"
                 class="hidden lg:block underline ml-8 sm:ml-4 md:ml-6 whitespace-nowrap"
               >
                 Bergliftstraße 22, 6363 Westendorf
@@ -54,3 +58,15 @@
     </div>
   </div>
 </template>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+import { useData } from '~/composable/useData'
+export default defineComponent({
+  name: 'NavigationNavbar',
+  setup() {
+    const { isFlyTirol, isWhiteCloud } = useData()
+    return { isFlyTirol, isWhiteCloud }
+  },
+})
+</script>

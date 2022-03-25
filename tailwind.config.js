@@ -14,14 +14,23 @@ const screensizes = {
   // => @media (min-width: 1536px) { ... }
 }
 
+const content = [
+  './components/**/*.{js,vue,ts}',
+  './layouts/**/*.vue',
+  './pages/**/*.vue',
+  './plugins/**/*.{js,ts}',
+  './nuxt.config.js',
+]
+
+process.env.NUXT_PAGE === 'whitecloud'
+  ? content.push('./pages_whitecloud/**/*.vue')
+  : content.push('./pages_flytirol/**/*.vue')
+
+const brandColor =
+  process.env.NUXT_PAGE === 'whitecloud' ? '#1c9dd8' : '#160D42'
+
 module.exports = {
-  content: [
-    './components/**/*.{js,vue,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.{js,ts}',
-    './nuxt.config.js',
-  ],
+  content,
   corePlugins: {
     preflight: true,
   },
@@ -30,7 +39,7 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          DEFAULT: '#160D42',
+          DEFAULT: brandColor,
         },
         current: 'currentColor',
         gray: colors.neutral,

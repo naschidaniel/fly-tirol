@@ -27,7 +27,7 @@ import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import PageHeader from '~/components/PageHeader.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Partner from '~/content/partner.vue'
+import Partner from '~/content_flytirol/partner.vue'
 
 export default defineComponent({
   components: { SocialBar, PageHeader, Partner },

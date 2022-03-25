@@ -1,7 +1,6 @@
 User-agent: *
 Disallow: /dsgvo
 Disallow: /impressum
-Disallow: /markdown
 Disallow: /buchen
 
 Allow: /

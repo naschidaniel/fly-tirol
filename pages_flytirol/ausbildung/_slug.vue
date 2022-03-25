@@ -28,12 +28,12 @@ import { defineComponent } from '@vue/composition-api'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductBookCourse from '~/components/ProductBookCourse.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
-import Grundkurs from '~/content/ausbildung/grundkurs.vue'
-import Hoehenflugkurs from '~/content/ausbildung/hoehenflugkurs.vue'
-import Kombikurs from '~/content/ausbildung/kombikurs.vue'
-import ParagleiterscheinTheoriekurs from '~/content/ausbildung/paragleiterschein-theoriekurs.vue'
-import Schnupperkurs from '~/content/ausbildung/schnupperkurs.vue'
-import Tagesbetreuung from '~/content/ausbildung/tagesbetreuung.vue'
+import Grundkurs from '~/content_flytirol/ausbildung/grundkurs.vue'
+import Hoehenflugkurs from '~/content_flytirol/ausbildung/hoehenflugkurs.vue'
+import Kombikurs from '~/content_flytirol/ausbildung/kombikurs.vue'
+import ParagleiterscheinTheoriekurs from '~/content_flytirol/ausbildung/paragleiterschein-theoriekurs.vue'
+import Schnupperkurs from '~/content_flytirol/ausbildung/schnupperkurs.vue'
+import Tagesbetreuung from '~/content_flytirol/ausbildung/tagesbetreuung.vue'
 
 export default defineComponent({
   components: {

@@ -5,7 +5,7 @@
       :class="{ open: isOpen, closed: !isOpen }"
       @click="isOpen = !isOpen"
     >
-      <nav class="flex flex-col items-start xl:flex-row">
+      <nav v-if="isFlyTirol" class="flex flex-col items-start xl:flex-row">
         <NavigationNavbarLink name="Tandemfliegen" to="/tandemfliegen" />
         <NavigationNavbarLink name="Ausbildung" to="/ausbildung" />
         <NavigationNavbarLink name="Fortbildung" to="/fortbildung" />
@@ -18,10 +18,18 @@
         <NavigationNavbarLink name="Team" to="/team" />
         <NavigationNavbarLink name="Partner" to="/partner" />
       </nav>
+      <nav v-else class="flex flex-col items-start xl:flex-row">
+        <NavigationNavbarLink name="Flüge und Preise" to="/fluege-und-preise" />
+        <NavigationNavbarLink name="Kontakt" to="/kontakt" />
+      </nav>
     </div>
 
     <div class="flex">
-      <div class="mr-2 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
+      <div
+        v-if="isFlyTirol"
+        class="mr-2 my-1 xl:my-0 z-10"
+        @click="toggleIfDropdownIsOpen()"
+      >
         <nuxt-link class="btn-primary" to="/buchen" exact>
           <OutlineShoppingCartIcon
             class="mr-1"
@@ -30,7 +38,11 @@
           ({{ cartItemsLength }})
         </nuxt-link>
       </div>
-      <div class="mr-3 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
+      <div
+        v-if="isFlyTirol"
+        class="mr-3 my-1 xl:my-0 z-10"
+        @click="toggleIfDropdownIsOpen()"
+      >
         <nuxt-link class="btn-primary" to="/kontakt" exact>
           <span>Kontakt</span>
         </nuxt-link>
@@ -55,6 +67,7 @@ import OutlineMenuIcon from '../icons/OutlineMenuIcon.vue'
 import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
 import OutlineXIcon from '../icons/OutlineXIcon.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
+import { useData } from '~/composable/useData'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 export default defineComponent({
@@ -66,9 +79,10 @@ export default defineComponent({
     OutlineXIcon,
   },
   setup() {
+    const { isFlyTirol, isWhiteCloud } = useData()
     const { isOpen } = useNavigation()
     const { cartItemsLength } = useShopifyCart()
-    return { cartItemsLength, isOpen }
+    return { cartItemsLength, isOpen, isFlyTirol, isWhiteCloud }
   },
   methods: {
     toggleIfDropdownIsOpen() {
