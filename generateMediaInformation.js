@@ -2,21 +2,19 @@ const fs = require('fs')
 const glob = require('glob')
 const sizeOf = require('image-size')
 
-for (const nuxtPage in ['flytirol', 'whitecloud']) {
+for (const nuxtPage of ['flytirol', 'whitecloud']) {
   const mediaJson =
-    process.env.NUXT_PAGE === 'whitecloud'
+    nuxtPage === 'whitecloud'
       ? './static_whitecloud/media.json'
       : './static_flytirol/media.json'
 
   const images =
-    process.env.NUXT_PAGE === 'whitecloud'
+    nuxtPage === 'whitecloud'
       ? glob.sync('./static_whitecloud/media/**/*.{jpg,png}')
       : glob.sync('./static_flytirol/media/**/*.{jpg,png}')
 
   const staticPath =
-    process.env.NUXT_PAGE === 'whitecloud'
-      ? './static_whitecloud'
-      : './static_flytirol'
+    nuxtPage === 'whitecloud' ? './static_whitecloud' : './static_flytirol'
 
   let dataMediaJson = {}
   if (fs.existsSync(mediaJson)) {

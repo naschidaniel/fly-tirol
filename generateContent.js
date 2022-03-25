@@ -97,6 +97,6 @@ function generate(nuxtPage) {
   })
 }
 
-for (pagePage of ['flytirol', 'whitecloud']) {
+for (const pagePage of ['flytirol', 'whitecloud']) {
   generate(pagePage)
 }
