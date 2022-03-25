@@ -30,20 +30,20 @@ jobs:
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: delete ./dist/media
         run: rm -rf ./dist/media
-      - name: optimize-images:ft:2xs
-        run: yarn optimize-images:ft:2xs
-      - name: optimize-images:ft:xs
-        run: yarn optimize-images:ft:xs
-      - name: optimize-images:ft:sm
-        run: yarn optimize-images:ft:sm
-      - name: optimize-images:ft:md
-        run: yarn optimize-images:ft:md
-      - name: optimize-images:ft:lg
-        run: yarn optimize-images:ft:lg
-      - name: optimize-images:ft:xl
-        run: yarn optimize-images:ft:xl
-      - name: optimize-images:ft:2xl
-        run: yarn optimize-images:ft:2xl
+      - name: optimize-images:flytirol:2xs
+        run: yarn optimize-images:flytirol:2xs
+      - name: optimize-images:flytirol:xs
+        run: yarn optimize-images:flytirol:xs
+      - name: optimize-images:flytirol:sm
+        run: yarn optimize-images:flytirol:sm
+      - name: optimize-images:flytirol:md
+        run: yarn optimize-images:flytirol:md
+      - name: optimize-images:flytirol:lg
+        run: yarn optimize-images:flytirol:lg
+      - name: optimize-images:flytirol:xl
+        run: yarn optimize-images:flytirol:xl
+      - name: optimize-images:flytirol:2xl
+        run: yarn optimize-images:flytirol:2xl
       - name: Build Artifacts
         uses: actions/upload-artifact@v2
         with:

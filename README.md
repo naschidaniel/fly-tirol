@@ -1,4 +1,4 @@
-# flying-in-tirol [![Build Website](https://github.com/naschidaniel/fly-tirol/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build.yml)
+# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml)
 
 The source code of this project shares components for two websites.
 
