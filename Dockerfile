@@ -53,6 +53,8 @@ ARG NUXT_PAGE
 
 ENV NUXT_PAGE=$NUXT_PAGE
 
+ARG PORT
+
 RUN apt-get update -y
 
 WORKDIR /app
@@ -61,6 +63,6 @@ COPY --from=builder /app  .
 
 ENV HOST 0.0.0.0
 
-EXPOSE 3000
+EXPOSE $PORT
 
 CMD [ "yarn", "start" ]
