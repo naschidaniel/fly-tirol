@@ -154,7 +154,7 @@ export default {
   },
 
   server: {
-    port: process.env.NUXT_PAGE === 'whitecloud' ? 3001 : 3000 
+    port: process.env.NUXT_PAGE === 'whitecloud' ? 3001 : 3000,
   },
 
   babel: {
