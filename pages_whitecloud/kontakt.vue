@@ -1,12 +1,17 @@
 <template>
-  <div>kontakt</div>
+  <div>
+    <h1>Kontakt</h1>
+    <SocialBar />
+  </div>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
+import SocialBar from '~/components/SocialBar'
 
 export default defineComponent({
+  components: { SocialBar },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }

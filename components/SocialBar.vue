@@ -10,6 +10,7 @@
         </div>
         <div class="flex justify-center mt-4">
           <button
+            v-if="isFlyTirol"
             class="mx-2"
             title="Teilen per Facebook"
             @click="openFacebook()"
@@ -17,7 +18,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><FacebookIconVue style="width: 2em; height: 2em; color: #ececec"
+              ><FacebookIcon style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
             class="mx-2"
@@ -27,7 +28,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><WhatsAppIconVue
+              ><WhatsAppIcon
                 class="whats-app-icon"
                 style="width: 2em; height: 2em; color: #ececec"
             /></span></button
@@ -39,7 +40,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><TwitterIconVue style="width: 2em; height: 2em; color: #ececec"
+              ><TwitterIcon style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
             class="mx-2"
@@ -70,6 +71,17 @@
               ><InstagramIcon style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
+            v-if="isWhiteCloud"
+            class="mx-2"
+            title="Folge uns auf YouTube"
+            @click="openYouTube()"
+          >
+            <span
+              class="inline-flex items-center justify-center p-2 rounded-full"
+              style="background-color: #e4405f"
+              ><YouTubeIcon style="width: 2em; height: 2em; color: #ececec"
+            /></span></button
+          ><button
             class="mx-2"
             title="Kontaktiere uns per WhatsApp"
             @click="openWhatsAppContact()"
@@ -77,7 +89,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #25d366"
-              ><WhatsAppIconVue
+              ><WhatsAppIcon
                 class="whats-app-icon"
                 style="width: 2em; height: 2em; color: #ececec"
             /></span></button
@@ -107,31 +119,51 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import InstagramIcon from './icons/InstagramIcon.vue'
-import FacebookIconVue from './icons/FacebookIcon.vue'
-import OutlineMailIcon from './icons/OutlineMailIcon.vue'
-import OutlinePhoneIcon from './icons/OutlinePhoneIcon.vue'
-import TwitterIconVue from './icons/TwitterIcon.vue'
-import WhatsAppIconVue from './icons/WhatsAppIcon.vue'
+import InstagramIcon from './icons/InstagramIcon'
+import FacebookIcon from './icons/FacebookIcon'
+import OutlineMailIcon from './icons/OutlineMailIcon'
+import OutlinePhoneIcon from './icons/OutlinePhoneIcon'
+import TwitterIcon from './icons/TwitterIcon'
+import YouTubeIcon from './icons/YouTubeIcon'
+import WhatsAppIcon from './icons/WhatsAppIcon'
+import { useData } from '~/composable/useData'
 import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
   name: 'SocialBar',
   components: {
     InstagramIcon,
-    FacebookIconVue,
+    FacebookIcon,
     OutlineMailIcon,
     OutlinePhoneIcon,
-    TwitterIconVue,
-    WhatsAppIconVue,
+    TwitterIcon,
+    YouTubeIcon,
+    WhatsAppIcon,
   },
   setup() {
+    const { isFlyTirol, isWhiteCloud } = useData()
     const { page } = useMetaTags()
-    return { page }
+    const instagram = isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding'
+    const mail = isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol'
+    const phone = isFlyTirol ? '00436766422088' : '004368181589568'
+    const website = isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol'
+    const websiteUrl = isFlyTirol
+      ? 'https://fly-tirol.com'
+      : 'https://white-cloud.tirol'
+    return {
+      instagram,
+      isFlyTirol,
+      isWhiteCloud,
+      mail,
+      page,
+      phone,
+      website,
+      websiteUrl,
+    }
   },
   computed: {
     encodedUrl() {
-      return encodeURI(`https://fly-tirol.com${this.page.path}`)
+      return encodeURI(`${this.websiteUrl}${this.page.path}`)
     },
     encodeTitle() {
       return encodeURI(this.page.title)
@@ -142,7 +174,7 @@ export default defineComponent({
   },
   methods: {
     openInstagram() {
-      const url = 'https://www.instagram.com/fly.tirol/'
+      const url = `https://www.instagram.com/${this.instagram}/`
       window
         .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
         .focus()
@@ -154,25 +186,28 @@ export default defineComponent({
         .focus()
     },
     openMailContact() {
-      const url = `mailto:info@fly-tirol.com?subject=Kontakt über Fly-Tirol.com`
+      const url = `mailto:${this.mail}?subject=Kontakt über ${this.websiteUrl}`
       window.location.replace(url)
     },
     openMailShare() {
-      const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${this.encodeTitle} – auf Fly-Tirol.com&body=Hallo,%0D%0A%0D%0D%0A%0D${this.encodeDescription}%0D%0A%0D%0D%0A%0Dhttps://${this.encodedUrl}`
+      const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${this.encodeTitle} – auf ${this.website}&body=Hallo,%0D%0A%0D%0D%0A%0D${this.encodeDescription}%0D%0A%0D%0D%0A%0Dhttps://${this.encodedUrl}`
       window.location.replace(url)
     },
     openPhone() {
-      const url = 'tel:00436766422088'
-      window.open(url)
+      window.open(`tel:${this.phone}`)
     },
     openTwitter() {
-      const url = `https://twitter.com/intent/tweet?size=large&url=${this.encodedUrl}&text=${this.encodeDescription}&via=fly-tirol.com`
+      const url = `https://twitter.com/intent/tweet?size=large&url=${this.encodedUrl}&text=${this.encodeDescription}&via=${this.website}`
       window
         .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
         .focus()
     },
+    openYouTube() {
+      const url = `https://www.youtube.com/channel/UCcHbWKpX02FQI94FOHVvfQA`
+      window.open(url)
+    },
     openWhatsAppContact() {
-      const url = 'whatsapp://send?phone=436766422088'
+      const url = `whatsapp://send?phone=${this.phone}`
       window.open(url)
     },
     openWhatsAppShare() {
