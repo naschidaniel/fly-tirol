@@ -24,7 +24,7 @@ E-Mail: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
 
 Unternehmensgegenstand: Paragleiter - Flugschule und Tandemflüge
 
-Steuer-Nummer: 83 226/5748
+UID-Nummer: ATU77067656
 
 Firmenbuchnummer: 559621y
 
