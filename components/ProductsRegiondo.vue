@@ -3,10 +3,10 @@
     <h2>{{ flight }}</h2>
     <iframe
       :src="url"
-      width="400"
-      height="500"
       style="border: 0px solid #eee; background: white"
+      class="w-full"
       frameborder="0"
+      height="800"
       scrolling="no"
     ></iframe>
   </div>
