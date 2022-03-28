@@ -69,9 +69,15 @@ module.exports = {
         full: '100%',
       },
       minHeight: {
+        'screen-10': '10vh',
+        'screen-20': '20vh',
+        'screen-30': '30vh',
+        'screen-40': '40vh',
+        'screen-50': '50vh',
         'screen-60': '60vh',
         'screen-70': '70vh',
         'screen-80': '80vh',
+        'screen-90': '90vh',
       },
       borderRadius: {
         '4xl': '2rem',
