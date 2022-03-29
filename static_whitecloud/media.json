@@ -151,5 +151,19 @@
     },
     "alt": "",
     "title": ""
+  },
+  "/media/kontakt/matti_holrieder.jpg": {
+    "url": "/media/kontakt/matti_holrieder.jpg",
+    "path": "/media/kontakt/",
+    "file": "matti_holrieder.jpg",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
   }
 }
