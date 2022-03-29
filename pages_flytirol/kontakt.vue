@@ -5,7 +5,7 @@
       headline="Kontakt"
       picture="/media/team/team.jpg"
       :link1="telefonNumber"
-      :link2="mailAdress"
+      :link2="mailAddress"
     >
       <div>
         <p>
@@ -50,7 +50,7 @@ export default defineComponent({
   data() {
     return {
       telefonNumber: { href: 'tel:00436766422088', name: '+43 676 6422088' },
-      mailAdress: {
+      mailAddress: {
         href: 'mailto:info@fly-tirol.com ',
         name: 'info@fly-tirol.com',
       },
