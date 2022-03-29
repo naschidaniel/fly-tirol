@@ -8,7 +8,8 @@
         class="relative w-full aspect-w-1 aspect-h-1 overflow-hidden bg-gray-200 lg:aspect-w-3 lg:aspect-h-1 lg:order-2 lg:ml-8"
       >
         <span
-          class="block absolute bg-white rounded-t-4xl -bottom-20 left-0 top-auto h-40 w-full -skew-y-6 lg:w-48 lg:h-full lg:top-0 lg:-left-28 lg:-skew-x-12 lg:skew-y-0 lg:rounded-r-4xl z-10 transform"
+          class="block absolute bg-white -bottom-20 left-0 top-auto h-40 w-full -skew-y-6 lg:w-48 lg:h-full lg:top-0 lg:-left-28 lg:-skew-x-12 lg:skew-y-0 z-10 transform"
+          :class="isFlyTirol ? 'rounded-t-4xl lg:rounded-r-4xl' : ''"
         ></span>
         <ResponsiveImage
           img-class="object-cover object-top w-full h-full"
@@ -62,6 +63,7 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
+import { useData } from '~/composable/useData'
 
 export default defineComponent({
   props: {
@@ -70,6 +72,10 @@ export default defineComponent({
     picture: { type: String, required: false, default: '' },
     link1: { type: Object, required: false, default: () => {} },
     link2: { type: Object, required: false, default: () => {} },
+  },
+  setup() {
+    const { isFlyTirol } = useData
+    return { isFlyTirol }
   },
 })
 </script>

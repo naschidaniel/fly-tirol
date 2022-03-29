@@ -36,10 +36,10 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import SocialBar from '~/components/SocialBar.vue'
-import PageHeader from '~/components/PageHeader.vue'
+import SocialBar from '~/components/SocialBar'
+import PageHeader from '~/components/PageHeader'
 import { useMetaTags } from '~/composable/useMetaTags'
-import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon.vue'
+import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
 
 export default defineComponent({
   components: { SocialBar, PageHeader, OutlineLocationMarkerIcon },
