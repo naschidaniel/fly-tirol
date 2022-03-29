@@ -31,7 +31,7 @@ export function useCookieAgreement() {
   })
 
   function acceptCookieAgreement() {
-    cookies.set('FlyTirol-cookieAgreement', 'true', {
+    cookies.set('cookieAgreement', 'true', {
       path: '/',
       maxAge: 60 * 60 * 24 * 7 * 31,
       sameSite: true,
@@ -44,7 +44,7 @@ export function useCookieAgreement() {
   }
 
   function getCookieAgreementCookie() {
-    const cookieAgreement = cookies.get('FlyTirol-cookieAgreement')
+    const cookieAgreement = cookies.get('cookieAgreement')
     if (cookieAgreement) {
       isCookieAgreement.value = cookieAgreement
     }
