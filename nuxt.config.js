@@ -106,7 +106,10 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
-  css: ['~/assets/css/main.css'],
+  css:
+    process.env.NUXT_PAGE === 'whitecloud'
+      ? ['~/assets/css/main.css', '~/assets/css/whitecloud.css']
+      : ['~/assets/css/main.css', '~/assets/css/flytirol.css'],
 
   components: true,
 
