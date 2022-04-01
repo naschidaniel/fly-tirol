@@ -4,6 +4,7 @@
       class="relative min-h-screen-60 md:min-h-screen-70 overflow-hidden flex flex-row lg:flex-col items-end lg:items-start mb-12"
     >
       <ResponsiveImage
+        box-class="absolute top-0 bottom-0 left-0 right-0"
         img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
         :is-lazy="false"
         picture="/media/FlyTirolHeader.jpg"

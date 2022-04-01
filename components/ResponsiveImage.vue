@@ -1,5 +1,5 @@
 <template>
-  <div ref="imageBox" class="absolute top-0 bottom-0 left-0 right-0">
+  <div ref="imageBox" :class="boxClass">
     <img
       v-if="responsiveUrl != ''"
       :loading="isLazy ? 'lazy' : 'auto'"
@@ -20,6 +20,7 @@ import { useMedia } from '~/composable/useMedia'
 
 export default defineComponent({
   props: {
+    boxClass: { type: String, default: '', required: false },
     picture: { type: String, default: '', required: true },
     imgClass: { type: String, default: '', required: false },
     fixSize: { type: String, default: undefined, required: false },
