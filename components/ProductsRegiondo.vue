@@ -34,7 +34,7 @@ export default {
           : this.flight === 'Thermikflug Söll'
           ? 'thermikflug_soell'
           : ''
-      return `https://naschi.info/regiondo_whitecloud/bookingwidget_de_${flightPostfix}.html`
+      return `/regiondo_whitecloud/bookingwidget_de_${flightPostfix}.html`
     },
   },
 }
