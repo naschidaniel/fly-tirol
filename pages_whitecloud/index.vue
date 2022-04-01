@@ -4,6 +4,7 @@
       class="relative min-h-screen-40 md:min-h-screen-50 overflow-hidden flex flex-row lg:flex-col items-end lg:items-start"
     >
       <ResponsiveImage
+        box-class="absolute top-0 bottom-0 left-0 right-0"
         img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
         :is-lazy="false"
         picture="/media/index/gallerie/1.jpg"
