@@ -74,7 +74,7 @@ export default defineComponent({
     link2: { type: Object, required: false, default: () => {} },
   },
   setup() {
-    const { isFlyTirol } = useData
+    const { isFlyTirol } = useData()
     return { isFlyTirol }
   },
 })
