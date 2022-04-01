@@ -9,8 +9,8 @@
         picture="/media/index/gallerie/1.jpg"
       />
     </div>
-    <div class="flex justify-center bg-[#1c9dd8] pt-5 pb-5 md:pt-10 md:pb-10">
-      <div class="max-w-80 text-center">
+    <div class="bg-[#1c9dd8] pt-5 pb-5 md:pt-10 md:pb-10">
+      <div class="mx-auto max-w-80 text-center">
         <p class="text-white text-lg md:text-xl">
           "Wenn du das Fliegen einmal erlebt hast, wirst du für immer auf Erden
           wandeln, mit deinen Augen himmelwärts gerichtet. Denn dort bist du
@@ -21,13 +21,14 @@
         </p>
       </div>
     </div>
-    <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
+    <div class="max-w-90 mx-auto py-6 nuxt-content">
       <Index />
     </div>
-    <ContentImageGallery
-      path="/media/index/gallerie/"
-      class="w-full lg:w-2/3 lg:pl-8"
-    />
+    <ContentImageGallery path="/media/index/gallerie/" class="w-full lg:pl-8" />
+    <div class="max-w-90 mx-auto nuxt-content">
+      <h2><small>Webcam</small>Gipfel <strong>Hohe Salve</strong></h2>
+      <Webcam />
+    </div>
     <SocialBar />
   </div>
 </template>
@@ -39,9 +40,16 @@ import ContentImageGallery from '~/components/ContentImageGallery'
 import SocialBar from '~/components/SocialBar'
 import Index from '~/content_whitecloud/index.vue'
 import ResponsiveImage from '~/components/ResponsiveImage'
+import Webcam from '~/components/Webcam'
 
 export default defineComponent({
-  components: { ContentImageGallery, Index, ResponsiveImage, SocialBar },
+  components: {
+    ContentImageGallery,
+    Index,
+    ResponsiveImage,
+    SocialBar,
+    Webcam,
+  },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }
