@@ -59,6 +59,7 @@
         </div>
       </div>
     </div>
+    <ContactMap class="mt-10" />
     <SocialBar />
   </div>
 </template>
@@ -66,12 +67,13 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
+import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'
 import PageHeader from '~/components/PageHeader'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
 
 export default defineComponent({
-  components: { SocialBar, OutlineLocationMarkerIcon, PageHeader },
+  components: { ContactMap, SocialBar, OutlineLocationMarkerIcon, PageHeader },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }

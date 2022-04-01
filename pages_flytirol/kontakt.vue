@@ -30,19 +30,21 @@
       </div>
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
     </div>
+    <ContactMap class="mt-10" />
     <SocialBar />
   </div>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
+import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'
 import PageHeader from '~/components/PageHeader'
 import { useMetaTags } from '~/composable/useMetaTags'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
 
 export default defineComponent({
-  components: { SocialBar, PageHeader, OutlineLocationMarkerIcon },
+  components: { ContactMap, SocialBar, PageHeader, OutlineLocationMarkerIcon },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }

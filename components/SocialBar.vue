@@ -145,7 +145,7 @@ export default defineComponent({
     const { page } = useMetaTags()
     const instagram = isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding'
     const mail = isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol'
-    const phone = isFlyTirol ? '00436766422088' : '004368181589568'
+    const phone = isFlyTirol ? '+436766422088' : '+4368181589568'
     const website = isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol'
     const websiteUrl = isFlyTirol
       ? 'https://fly-tirol.com'
