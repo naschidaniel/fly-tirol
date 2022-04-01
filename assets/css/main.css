@@ -28,10 +28,6 @@ text-gray-800; }
   @apply px-6 py-4; }
 
 @layer base {
-  .nuxt-content h1 {
-    @apply text-2xl lg:text-5xl font-medium my-6; }
-  .nuxt-content h2 {
-    @apply text-xl lg:text-3xl font-medium my-8; }
   .nuxt-content h3 {
     @apply text-xl font-medium my-2; }
   .nuxt-content h4 {
