@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /dsgvo
 Disallow: /impressum
 Disallow: /buchen
+Disallow: /regiondo_whitecloud
 
 Allow: /
 Allow: /fluege-und-preise
