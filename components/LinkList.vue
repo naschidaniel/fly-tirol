@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-90 mx-auto 2xl:mr-6 2xl:ml-auto">
-    <div class="flex flex-wrap 2xl:flex-nowrap">
-      <div class="flex flex-col w-full 2xl:w-96 max-w-screen-sm shrink">
+  <div class="max-w-90 mx-auto 3xl:mr-6 2xl:ml-auto">
+    <div class="flex flex-wrap 3xl:flex-nowrap">
+      <div class="flex flex-col w-full 3xl:w-96 max-w-screen-sm shrink">
         <div class="mt-6">
           <h2 class="mb-6">
             <span
@@ -22,33 +22,33 @@
         </div>
       </div>
       <div
-        class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 w-full xl:py-12 xl:ml-4 2xl:flex"
+        class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 w-full xl:py-12 xl:ml-4 3xl:flex"
       >
-        <link-card
+        <LinkCard
           :card-image="tandemflights.cardImage"
           :card-title="tandemflights.cardTitle"
           :description="tandemflights.description"
           :to="tandemflights.to"
         />
-        <link-card
+        <LinkCard
           :card-image="basicTrainings.cardImage"
           :card-title="basicTrainings.cardTitle"
           :description="basicTrainings.description"
           :to="basicTrainings.to"
         />
-        <link-card
+        <LinkCard
           :card-image="advancedTrainings.cardImage"
           :card-title="advancedTrainings.cardTitle"
           :description="advancedTrainings.description"
           :to="advancedTrainings.to"
         />
-        <link-card
+        <LinkCard
           :card-image="saftyTrainings.cardImage"
           :card-title="saftyTrainings.cardTitle"
           :description="saftyTrainings.description"
           :to="saftyTrainings.to"
         />
-        <link-card
+        <LinkCard
           :card-image="travels.cardImage"
           :card-title="travels.cardTitle"
           :description="travels.description"
