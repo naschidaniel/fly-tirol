@@ -25,8 +25,32 @@
       <Index />
     </div>
     <ContentImageGallery path="/media/index/gallerie/" class="w-full lg:pl-8" />
+
     <div class="max-w-90 mx-auto nuxt-content">
-      <h2><small>Webcam</small>Gipfel <strong>Hohe Salve</strong></h2>
+      <h2><small>Ihr Pilot</small>Matthias<strong>Hohlrieder</strong></h2>
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2 pr-2">
+          <p>
+            Der Kindheitstraum vom Fliegen trieb mich vor über 10 Jahren in die
+            Flugschule und die Begeisterung für den Flugsport steigt noch immer.
+          </p>
+          <p class="mt-2">
+            Heute, nach mehr als 5000 unfallfreien Flügen und als staatlich
+            geprüfter Tandempilot, möchte ich meine Eindrücke und Erlebnisse bei
+            einem Gleitschirm-Tandemflug mit Ihnen teilen.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 pl-2">
+          <ResponsiveImage
+            img-class="mb-2 object-contain rounded-lg mx-auto"
+            picture="/media/kontakt/mathias_holrieder.jpg"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-90 mx-auto nuxt-content">
+      <h2><small>Webcam</small>Gipfel<strong>Hohe Salve</strong></h2>
       <Webcam />
     </div>
     <SocialBar />
