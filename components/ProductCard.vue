@@ -49,6 +49,7 @@ import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCart } from '~/composable/useShopifyCart'
+import { useData } from '~/composable/useData'
 
 export default defineComponent({
   components: {
@@ -57,9 +58,12 @@ export default defineComponent({
   },
   props: { page: { type: Object, required: true } },
   setup(props) {
+    const { isWhiteCloud } = useData()
     const { routeName } = useNavigation()
     const { products } = useShopifyCart()
-    const isCourse = !props.page.path.includes('/tandemfliegen')
+    const isCourse = isWhiteCloud
+      ? false
+      : !props.page.path.includes('/tandemfliegen')
     const course = computed(
       () =>
         unref(products).filter(
@@ -70,9 +74,9 @@ export default defineComponent({
         ) ?? []
     )
     const dates = computed(() => unref(course)?.length)
-    const prices = computed(() => {
-      return [...new Set(unref(course)?.flatMap((v) => v.productPrices))]
-    })
+    const prices = isWhiteCloud
+      ? [props.page.price]
+      : [...new Set(unref(course)?.flatMap((v) => v.productPrices))]
     return { dates, isCourse, prices }
   },
 })

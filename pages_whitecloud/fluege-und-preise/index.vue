@@ -1,17 +1,7 @@
 <template>
-  <div>
-    <h1>Füge und Preise</h1>
-    <ProductsRegiondo flight="Akrobatikflug Hopfgarten" />
-    <br />
-    <ProductsRegiondo flight="Akrobatikflug Söll" />
-    <br />
-    <ProductsRegiondo flight="Gleitflug Hopfgarten" />
-    <br />
-    <ProductsRegiondo flight="Gleitflug Söll" />
-    <br />
-    <ProductsRegiondo flight="Thermikflug Hopfgarten" />
-    <br />
-    <ProductsRegiondo flight="Thermikflug Söll" />
+  <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
+    <h1><small>Tandemfliegen</small>Füge und <strong>Preise</strong></h1>
+    <ProductList />
     <SocialBar />
   </div>
 </template>
@@ -19,11 +9,11 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import ProductsRegiondo from '~/components/ProductsRegiondo'
 import SocialBar from '~/components/SocialBar'
+import ProductList from '~/components/ProductList.vue'
 
 export default defineComponent({
-  components: { SocialBar, ProductsRegiondo },
+  components: { SocialBar, ProductList },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }
