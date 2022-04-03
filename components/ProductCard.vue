@@ -14,8 +14,11 @@
       </nuxt-link>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
-          <h2 class="text-2xl font-heading font-semibold mb-1">
-            <nuxt-link :to="page.path">{{ page.title }}</nuxt-link>
+          <h2 class="text-2xl font-heading font-semibold">
+            <nuxt-link :to="page.path"
+              ><span v-if="isFlyTirol">{{ page.title }}</span
+              ><span v-if="isWhiteCloud" v-html="page.title"></span
+            ></nuxt-link>
           </h2>
           <ProductDetails
             :prices="prices"
@@ -23,7 +26,7 @@
             :dates="dates"
             :is-show-date="isCourse"
           />
-          <p v-if="!isCourse" class="text-gray-600">
+          <p v-if="!isCourse" class="text-gray-600 mt-4">
             {{ page.description }}
           </p>
         </div>
@@ -58,7 +61,7 @@ export default defineComponent({
   },
   props: { page: { type: Object, required: true } },
   setup(props) {
-    const { isWhiteCloud } = useData()
+    const { isFlyTirol, isWhiteCloud } = useData()
     const { routeName } = useNavigation()
     const { products } = useShopifyCart()
     const isCourse = isWhiteCloud
@@ -77,7 +80,7 @@ export default defineComponent({
     const prices = isWhiteCloud
       ? [props.page.price]
       : [...new Set(unref(course)?.flatMap((v) => v.productPrices))]
-    return { dates, isCourse, prices }
+    return { dates, isCourse, isFlyTirol, isWhiteCloud, prices }
   },
 })
 </script>
