@@ -57,16 +57,45 @@
       </div>
 
       <h2><small>Treffpunkt</small>für&nbsp; <strong>Tandemflüge</strong></h2>
+      <div class="md:flex justify-center py-8 px-8">
+        <div class="basis-1/2 flex">
+          <outline-location-marker-icon class="w-5 h-5 mr-1 -mt-0.25" /><span
+            class="mr-6"
+            >Treffpunkt Bergbahn Hopfgarten, Talstation</span
+          >
+        </div>
+        <div class="basis-1/2 ml-6 mt-2 md:mt-0">
+          <a
+            title="Navigation öffnen"
+            class="underline decoration-dotted"
+            href="geo:47.446873358880126, 12.16207365626177"
+          >
+            <p>
+              Treffpunkt ist bei der Kassa der Talstation der Bergbahn
+              Hopfgarten
+            </p>
+            <p>Meierhofgasse 29, Hopfgarten-Markt, Österreich</p></a
+          >
+        </div>
+      </div>
+      <div class="h-0.75 bg-brand rounded-full w-full"></div>
       <div class="leading-snug nuxt-content">
         <div class="md:flex justify-center py-8 px-8">
           <div class="basis-1/2 flex">
             <outline-location-marker-icon class="w-5 h-5 mr-1 -mt-0.25" /><span
               class="mr-6"
-              >Treffpunkt Söll</span
+              >Treffpunkt Bergbahn Söll, Talstation</span
             >
           </div>
-          <div class="basis-1/2 ml-6">
-            Parkplatz Bergbahn Talstation, Stampfanger 21, A-6306 Söll
+          <div class="basis-1/2 ml-6 mt-2 md:mt-0">
+            <a
+              title="Navigation öffnen"
+              class="underline decoration-dotted"
+              href="geo:47.49687105347196, 12.198308731122726"
+            >
+              <p>Treffpunkt ist an der Kassa der Taltation der Bergbahn Söll</p>
+              <p>Stampfanger 21, Söll, Österreich</p>
+            </a>
           </div>
         </div>
         <div class="h-0.75 bg-brand rounded-full w-full"></div>
@@ -74,24 +103,17 @@
           <div class="basis-1/2 flex">
             <outline-location-marker-icon class="w-5 h-5 mr-1 -mt-0.25" /><span
               class="mr-6"
-              >Treffpunkt Hopfgarten</span
+              >Startplatz Hohe Salve</span
             >
           </div>
-          <div class="basis-1/2 ml-6">
-            Parkhaus und Parkplatz P1 Bergbahnen Hopfgarten - Hohe Salve,
-            Meierhofgasse 29 A-6361 Hopfgarten im Brixental, Meierhofgasse 29
-          </div>
-        </div>
-        <div class="h-0.75 bg-brand rounded-full w-full"></div>
-        <div class="md:flex justify-center py-8 px-8">
-          <div class="basis-1/2 flex">
-            <outline-location-marker-icon class="w-5 h-5 mr-1 -mt-0.25" /><span
-              class="mr-6"
-              >Treffpunkt Hohe Salve</span
+          <div class="basis-1/2 ml-6 mt-2 md:mt-0">
+            <a
+              title="Navigation öffnen"
+              class="underline decoration-dotted"
+              href="geo:47.46497366206375, 12.203761050710721"
             >
-          </div>
-          <div class="basis-1/2 ml-6">
-            Hohe Salve, Meierhofgasse 29, A-6361 Hopfgarten im Brixental,
+              <p>Gestartet wird am Gipfel der Hohen Salve</p>
+            </a>
           </div>
         </div>
       </div>

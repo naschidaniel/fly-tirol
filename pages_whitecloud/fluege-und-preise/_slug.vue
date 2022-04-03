@@ -23,15 +23,28 @@
           </div>
           <div v-if="page.location === 'Hopfgarten'">
             <h2>Veranstaltungsort</h2>
-            <p>
-              Treffpunkt ist an der Kassa der Taltation der Bergbahn Hopfgarten
-            </p>
-            <p>Meierhofgasse 29, Hopfgarten-Markt, Österreich</p>
+            <a
+              title="Navigation öffnen"
+              class="underline decoration-dotted"
+              href="geo:47.446873358880126, 12.16207365626177"
+            >
+              <p>
+                Treffpunkt ist an der Kassa der Taltation der Bergbahn
+                Hopfgarten
+              </p>
+              <p>Meierhofgasse 29, Hopfgarten-Markt, Österreich</p>
+            </a>
           </div>
           <div v-if="page.location === 'Söll'">
             <h2>Veranstaltungsort</h2>
-            <p>Treffpunkt ist an der Kassa der Taltation der Bergbahn Söll</p>
-            <p>Stampfanger 21, Söll, Österreich</p>
+            <a
+              title="Navigation öffnen"
+              class="underline decoration-dotted"
+              href="geo:47.49687105347196, 12.198308731122726"
+            >
+              <p>Treffpunkt ist an der Kassa der Taltation der Bergbahn Söll</p>
+              <p>Stampfanger 21, Söll, Österreich</p>
+            </a>
           </div>
         </div>
         <div class="w-full order-2 lg:order-3">
@@ -49,7 +62,7 @@
     </div>
     <ContactMap
       :map="
-        page.location === 'hopfgarten'
+        page.location === 'Hopfgarten'
           ? '/leaflet_de_hopfgarten.html'
           : '/leaflet_de_soell.html'
       "

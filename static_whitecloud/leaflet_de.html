@@ -18,15 +18,15 @@
 <body style="margin:0;padding:0">
     <div id="map" style="height: 400px;"></div>
     <script>
-        const map = L.map('map').setView([47.465272242478925, 12.202746464513229], 12);
+        const map = L.map('map').setView([47.473, 12.203], 12);
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: "<a href='https://osm.org/copyright'>OpenStreetMap</a> contributors",
             maxZoom: 18,
         }).addTo(map);
 
-        L.marker([47.465272242478925, 12.202746464513229]).bindTooltip("Start Hohe Salve", {"permanent": true}).addTo(map);
-        L.marker([47.497198217462675, 12.198249422417373]).bindTooltip("Treffpunkt Söll", {"permanent": true}).addTo(map);
-        L.marker([47.44746355107447, 12.161829423223947]).bindTooltip("Treffpunkt Hopfgarten", {"permanent": true}).addTo(map);
-    </script> 
+        L.marker([47.46497366206375, 12.203761050710721]).bindTooltip("Startplatz Gipfel Hohe Salve", {"permanent": true}).addTo(map);
+        L.marker([47.49687105347196, 12.198308731122726]).bindTooltip("Treffpunkt Kassa Talstation Söll", {"permanent": true}).addTo(map);
+        L.marker([47.446873358880126, 12.16207365626177]).bindTooltip("Treffpunkt Kassa Talstation Hopfgarten", {"permanent": true}).addTo(map);
+    </script>
 </body>
 </html>
