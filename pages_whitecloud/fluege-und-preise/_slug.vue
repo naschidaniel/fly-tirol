@@ -9,14 +9,26 @@
           <div v-if="page.slug === 'akrobatikflug-soell'">
             <AkrobatikflugSoell />
           </div>
-          <div v-if="page.location === 'hopfgarten'">
+          <div v-if="page.slug === 'gleitflug-hopfgarten'">
+            <GleitflugHopfgarten />
+          </div>
+          <div v-if="page.slug === 'gleitflug-soell'">
+            <GleitflugSoell />
+          </div>
+          <div v-if="page.slug === 'thermikflug-hopfgarten'">
+            <ThermikflugHopfgarten />
+          </div>
+          <div v-if="page.slug === 'thermikflug-soell'">
+            <ThermikflugSoell />
+          </div>
+          <div v-if="page.location === 'Hopfgarten'">
             <h2>Veranstaltungsort</h2>
             <p>
               Treffpunkt ist an der Kassa der Taltation der Bergbahn Hopfgarten
             </p>
             <p>Meierhofgasse 29, Hopfgarten-Markt, Österreich</p>
           </div>
-          <div v-if="page.location === 'soell'">
+          <div v-if="page.location === 'Söll'">
             <h2>Veranstaltungsort</h2>
             <p>Treffpunkt ist an der Kassa der Taltation der Bergbahn Söll</p>
             <p>Stampfanger 21, Söll, Österreich</p>
@@ -54,11 +66,19 @@ import SocialBar from '~/components/SocialBar'
 import { useMetaTags } from '~/composable/useMetaTags'
 import AkrobatikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/akrobatikflug-hopfgarten'
 import AkrobatikflugSoell from '~/content_whitecloud/fluege-und-preise/akrobatikflug-soell'
+import GleitflugHopfgarten from '~/content_whitecloud/fluege-und-preise/gleitflug-hopfgarten'
+import GleitflugSoell from '~/content_whitecloud/fluege-und-preise/gleitflug-soell'
+import ThermikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/thermikflug-hopfgarten'
+import ThermikflugSoell from '~/content_whitecloud/fluege-und-preise/thermikflug-soell'
 
 export default defineComponent({
   components: {
     AkrobatikflugHopfgarten,
     AkrobatikflugSoell,
+    GleitflugHopfgarten,
+    GleitflugSoell,
+    ThermikflugHopfgarten,
+    ThermikflugSoell,
     SocialBar,
     ProductsRegiondo,
   },

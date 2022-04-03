@@ -1,22 +1,22 @@
 ---
-title: <small>Akrobatikflug</small> Hohe Salve - <strong>Söll</strong>
-description: Sie stehen auf Action? Achterbahnen sind genau Ihr Ding? Dann werden Sie diese spezielle Art des Gleitschirmfliegens lieben! Mit spektakulären, akrobatischen Manövern stellen wir die Welt auf den Kopf.Ein absolutes Muss für jeden Adrenalin-Junkie!
+title: <small>Thermikflug</small> Hohe Salve - <strong>Söll</strong>
+description: Höher! Weiter! Länger! Fliegen wie ein Adler ist hier das Motto. Mit Hilfe der Thermischen Aufwinde verlängern wir das Flugerlebnis. Somit sind Flüge bis zu mehreren hundert Metern über den Gipfel hinauf keine Seltenheit.
 location: Söll
-image: /media/available-soon.jpg
-imageGallery: /media/fluege-und-preise/akrobatikflug/
-price: ab 150,00 € exklusive Liftkarten
+image: /media/fluege-und-preise/thermikflug-soell.jpg
+imageGallery: /media/fluege-und-preise/thermikflug/
+price: ab 180,00 € exklusive Liftkarten
 duration: 90 Minuten
-flightDuration: 15 Minuten Flugdauer
-order: 4
+flightDuration: 30 Minuten Flugdauer
+order: 6
 ---
 
-# <small>Akrobatikflug</small> Hohe Salve - <strong>Söll</strong>
+# <small>Thermikflug</small> Hohe Salve - <strong>Söll</strong>
 
-Sie stehen auf Action? Achterbahnen sind genau Ihr Ding? Dann werden Sie diese spezielle Art des Gleitschirmfliegens lieben! Mit spektakulären, akrobatischen Manövern stellen wir die Welt auf den Kopf.Ein absolutes Muss für jeden Adrenalin-Junkie! Flugdauer: 15 Minuten
+Höher! Weiter! Länger! Fliegen wie ein Adler ist hier das Motto. Mit Hilfe der Thermischen Aufwinde verlängern wir das Flugerlebnis. Somit sind Flüge bis zu mehreren hundert Metern über den Gipfel hinauf keine Seltenheit.
 
 * An der Seite eines erfahrenen Piloten heben Sie nach wenigen Schritten sicher ab!
-* Erleben Sie eine Achterbahnfahrt in mehreren hundert Metern Höhe!
-* Der ultimativer Adrenalinkick für alle Mutigen!
+* Genießen Sie maximalen Flugspaß durch eine länger Flugzeit!
+* Erleben Sie das unbeschreibliche Gefühl frei zu sein wie ein Vogel!
 
 ## Erlebnisbeschreibung
 

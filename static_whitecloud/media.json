@@ -26,44 +26,170 @@
     "alt": "",
     "title": ""
   },
-  "/media/fluege-und-preise/akrobatikflug/available-soon_1.jpg": {
-    "url": "/media/fluege-und-preise/akrobatikflug/available-soon_1.jpg",
+  "/media/fluege-und-preise/akrobatikflug/akrobatikflug-salve-start.jpg": {
+    "url": "/media/fluege-und-preise/akrobatikflug/akrobatikflug-salve-start.jpg",
     "path": "/media/fluege-und-preise/akrobatikflug/",
-    "file": "available-soon_1.jpg",
+    "file": "akrobatikflug-salve-start.jpg",
     "dimensions": {
-      "height": 1080,
+      "height": 3024,
       "orientation": 1,
-      "width": 1920,
+      "width": 4032,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/akrobatikflug/akrobatikflug-salve.jpg": {
+    "url": "/media/fluege-und-preise/akrobatikflug/akrobatikflug-salve.jpg",
+    "path": "/media/fluege-und-preise/akrobatikflug/",
+    "file": "akrobatikflug-salve.jpg",
+    "dimensions": {
+      "height": 2160,
+      "orientation": 1,
+      "width": 3840,
       "type": "jpg",
       "ratio": 1.778
     },
     "alt": "",
     "title": ""
   },
-  "/media/fluege-und-preise/akrobatikflug/available-soon_2.jpg": {
-    "url": "/media/fluege-und-preise/akrobatikflug/available-soon_2.jpg",
-    "path": "/media/fluege-und-preise/akrobatikflug/",
-    "file": "available-soon_2.jpg",
+  "/media/fluege-und-preise/gleitflug-hopfgarten.jpg": {
+    "url": "/media/fluege-und-preise/gleitflug-hopfgarten.jpg",
+    "path": "/media/fluege-und-preise/",
+    "file": "gleitflug-hopfgarten.jpg",
     "dimensions": {
-      "height": 1080,
+      "height": 3000,
       "orientation": 1,
-      "width": 1920,
+      "width": 4000,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1.333
     },
     "alt": "",
     "title": ""
   },
-  "/media/fluege-und-preise/akrobatikflug/available-soon_3.jpg": {
-    "url": "/media/fluege-und-preise/akrobatikflug/available-soon_3.jpg",
-    "path": "/media/fluege-und-preise/akrobatikflug/",
-    "file": "available-soon_3.jpg",
+  "/media/fluege-und-preise/gleitflug-soell.jpg": {
+    "url": "/media/fluege-und-preise/gleitflug-soell.jpg",
+    "path": "/media/fluege-und-preise/",
+    "file": "gleitflug-soell.jpg",
     "dimensions": {
-      "height": 1080,
+      "height": 3000,
       "orientation": 1,
-      "width": 1920,
+      "width": 4000,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/gleitflug/gleitflug-hopfgarten-mittelstation.jpg": {
+    "url": "/media/fluege-und-preise/gleitflug/gleitflug-hopfgarten-mittelstation.jpg",
+    "path": "/media/fluege-und-preise/gleitflug/",
+    "file": "gleitflug-hopfgarten-mittelstation.jpg",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/gleitflug/gleitflug-soell.jpg": {
+    "url": "/media/fluege-und-preise/gleitflug/gleitflug-soell.jpg",
+    "path": "/media/fluege-und-preise/gleitflug/",
+    "file": "gleitflug-soell.jpg",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/gleitflug/startplatz.jpg": {
+    "url": "/media/fluege-und-preise/gleitflug/startplatz.jpg",
+    "path": "/media/fluege-und-preise/gleitflug/",
+    "file": "startplatz.jpg",
+    "dimensions": {
+      "height": 2250,
+      "orientation": 1,
+      "width": 3000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/gleitflug/tandemfliegen-aussenperspektive.jpg": {
+    "url": "/media/fluege-und-preise/gleitflug/tandemfliegen-aussenperspektive.jpg",
+    "path": "/media/fluege-und-preise/gleitflug/",
+    "file": "tandemfliegen-aussenperspektive.jpg",
+    "dimensions": {
+      "height": 3640,
+      "orientation": 1,
+      "width": 5460,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/thermikfliegen/thermikfliegen-brixental.jpg": {
+    "url": "/media/fluege-und-preise/thermikfliegen/thermikfliegen-brixental.jpg",
+    "path": "/media/fluege-und-preise/thermikfliegen/",
+    "file": "thermikfliegen-brixental.jpg",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/thermikfliegen/thermikfliegen-ueber-den-wolken.jpg": {
+    "url": "/media/fluege-und-preise/thermikfliegen/thermikfliegen-ueber-den-wolken.jpg",
+    "path": "/media/fluege-und-preise/thermikfliegen/",
+    "file": "thermikfliegen-ueber-den-wolken.jpg",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/thermikflug-hopfgarten.jpg": {
+    "url": "/media/fluege-und-preise/thermikflug-hopfgarten.jpg",
+    "path": "/media/fluege-und-preise/",
+    "file": "thermikflug-hopfgarten.jpg",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/thermikflug-soell.jpg": {
+    "url": "/media/fluege-und-preise/thermikflug-soell.jpg",
+    "path": "/media/fluege-und-preise/",
+    "file": "thermikflug-soell.jpg",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
     },
     "alt": "",
     "title": ""
@@ -78,48 +204,6 @@
       "width": 3000,
       "type": "jpg",
       "ratio": 1.333
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/10.jpg": {
-    "url": "/media/index/gallerie/10.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "10.jpg",
-    "dimensions": {
-      "height": 3000,
-      "orientation": 1,
-      "width": 4000,
-      "type": "jpg",
-      "ratio": 1.333
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/11.jpg": {
-    "url": "/media/index/gallerie/11.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "11.jpg",
-    "dimensions": {
-      "height": 3000,
-      "orientation": 1,
-      "width": 4000,
-      "type": "jpg",
-      "ratio": 1.333
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/12.jpg": {
-    "url": "/media/index/gallerie/12.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "12.jpg",
-    "dimensions": {
-      "height": 3640,
-      "orientation": 1,
-      "width": 5460,
-      "type": "jpg",
-      "ratio": 1.5
     },
     "alt": "",
     "title": ""
@@ -148,62 +232,6 @@
       "width": 3840,
       "type": "jpg",
       "ratio": 1.778
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/4.jpg": {
-    "url": "/media/index/gallerie/4.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "4.jpg",
-    "dimensions": {
-      "height": 3000,
-      "orientation": 1,
-      "width": 4000,
-      "type": "jpg",
-      "ratio": 1.333
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/6.jpg": {
-    "url": "/media/index/gallerie/6.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "6.jpg",
-    "dimensions": {
-      "height": 3024,
-      "orientation": 1,
-      "width": 4032,
-      "type": "jpg",
-      "ratio": 1.333
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/8.jpg": {
-    "url": "/media/index/gallerie/8.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "8.jpg",
-    "dimensions": {
-      "height": 3000,
-      "orientation": 1,
-      "width": 4000,
-      "type": "jpg",
-      "ratio": 1.333
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/9.jpg": {
-    "url": "/media/index/gallerie/9.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "9.jpg",
-    "dimensions": {
-      "height": 3000,
-      "orientation": 1,
-      "width": 4000,
-      "type": "jpg",
-      "ratio": 1.333
     },
     "alt": "",
     "title": ""

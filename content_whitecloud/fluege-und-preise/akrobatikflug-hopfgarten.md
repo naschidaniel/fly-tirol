@@ -7,7 +7,7 @@ imageGallery: /media/fluege-und-preise/akrobatikflug/
 price: ab 150,00 € exklusive Liftkarten
 duration: 90 Minuten
 flightDuration: 15 Minuten Flugdauer
-order: 1
+order: 3
 ---
 
 # <small>Akrobatikflug</small> Hohe Salve - <strong>Hopfgarten</strong>
