@@ -25,10 +25,102 @@
     <div class="max-w-90 mx-auto py-6 nuxt-content">
       <Index />
     </div>
+    <div class="max-w-90 mx-auto nuxt-content overflow-hidden">
+      <h2><small>Tandemflug</small>Der&nbsp;<strong>Ablauf</strong></h2>
+      <div class="flex flex-wrap">
+        <div class="w-full min-h-full md:w-2/5 md:pr-2">
+          <ResponsiveImage
+            box-class="w-full h-full overflow-hidden"
+            img-class="rounded shadow-md object-cover object-center w-full h-full"
+            picture="/media/kontakt/mathias_holrieder.jpg"
+          />
+        </div>
+        <div class="w-full md:w-3/5 md:pl-2 mt-4 md:mt-0">
+          <div class="flex mt-4">
+            <div class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4">
+              <OutlineLocationMarkerIcon
+                class="h-8 w-8 mx-auto text-gray-100"
+              />
+            </div>
+            <div class="grow">
+              <h3>Fluggebiet</h3>
+              <p>
+                Von Hopfgarten im Brixental oder auch von Söll am Wilden Kaiser
+                geht es mit der Bergbahn hinauf auf den Gipfel der Hohe Salve.
+                Die zuverlässigen Aufwinde im Frühling und Sommer und die
+                atemberaubende Aussicht über das Tiroler Unterland machen diesen
+                Berg zu einem der beliebtesten Fluggebiete im Tiroler Unterland.
+              </p>
+            </div>
+          </div>
+          <div class="flex mt-4">
+            <div class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4">
+              <OutlineCloudUpload class="h-8 w-8 mx-auto text-gray-100" />
+            </div>
+            <div class="grow">
+              <h3>Der Start</h3>
+              <p>
+                Nach einer gründlichen Einweisung des Piloten &amp;
+                Sicherheits-Checks kommt das Kommando zum Start. Schon nach
+                wenigen Schritten Anlauf werden wir den Boden unter den Füßen
+                verlieren und sanft abheben.
+              </p>
+            </div>
+          </div>
+          <div class="flex mt-4">
+            <div class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4">
+              <OutlineCloud class="h-8 w-8 mx-auto text-gray-100" />
+            </div>
+            <div class="grow">
+              <h3>Der Flug</h3>
+              <p>
+                Nach dem Start sitzen wir bequem in unseren Gurtzeugen und der
+                Passagier kann sich voll und ganz den Eindrücken des Fliegens
+                zuwenden. Spüren Sie den Wind und erleben Sie die Welt von oben.
+                Wie ein Adler gleiten wir lautlos durch die Luft. Das ist wahre
+                Freiheit!
+              </p>
+            </div>
+          </div>
+          <div class="flex mt-4">
+            <div class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4">
+              <OutlineCloudDownload class="h-8 w-8 mx-auto text-gray-100" />
+            </div>
+            <div class="grow">
+              <h3>Die Landung</h3>
+              <p>
+                Kurz vor der Landung werden Sie aufgefordert die Beine nach oben
+                zu strecken. Der Pilot bremst den Schirm ab und auf dem
+                gepolstertem Sitz landen wir wieder sicher und weich auf festem
+                Boden.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-wrap mt-8">
+            <div class="w-full md:w-1/2">
+              <h3>SICHERHEIT</h3>
+              <p>
+                ..steht selbstverständlich an erster Stelle. Die Ausrüstung wird
+                regelmäßig überprüft und ist auf dem neuesten technischen Stand
+                und der Pilot ist stets bestens über Wetter und Wind informiert.
+              </p>
+            </div>
+            <div class="w-full md:w-1/2">
+              <h3>ANFORDERUNGEN</h3>
+              <ul>
+                <li>Körpergewicht 25 - 120kg</li>
+                <li>feste Schuhe</li>
+                <li>körperliche Gesundheit</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <ContentImageGallery path="/media/index/gallerie/" class="w-full lg:pl-8" />
 
     <div class="max-w-90 mx-auto nuxt-content">
-      <h2><small>Ihr Pilot</small>Matthias<strong>Hohlrieder</strong></h2>
+      <h2><small>Ihr Pilot</small>Matthias&nbsp;<strong>Hohlrieder</strong></h2>
       <div class="flex flex-wrap">
         <div class="w-full md:w-1/2 pr-2">
           <p>
@@ -51,7 +143,7 @@
     </div>
 
     <div class="max-w-90 mx-auto nuxt-content">
-      <h2><small>Webcam</small>Gipfel<strong>Hohe Salve</strong></h2>
+      <h2><small>Webcam</small>Gipfel&nbsp;<strong>Hohe Salve</strong></h2>
       <Webcam />
     </div>
     <SocialBar />
@@ -63,8 +155,12 @@ import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import ContentImageGallery from '~/components/ContentImageGallery'
 import SocialBar from '~/components/SocialBar'
-import Index from '~/content_whitecloud/index.vue'
+import Index from '~/content_whitecloud/index'
 import ResponsiveImage from '~/components/ResponsiveImage'
+import OutlineCloud from '~/components/icons/OutlineCloud'
+import OutlineCloudDownload from '~/components/icons/OutlineCloudDownload'
+import OutlineCloudUpload from '~/components/icons/OutlineCloudUpload'
+import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
 import Webcam from '~/components/Webcam'
 
 export default defineComponent({
@@ -73,6 +169,10 @@ export default defineComponent({
     Index,
     ResponsiveImage,
     SocialBar,
+    OutlineCloud,
+    OutlineCloudDownload,
+    OutlineCloudUpload,
+    OutlineLocationMarkerIcon,
     Webcam,
   },
   setup() {
