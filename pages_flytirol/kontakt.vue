@@ -30,7 +30,7 @@
       </div>
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
     </div>
-    <ContactMap class="mt-10" />
+    <ContactMap map="/leaflet_de.html" class="mt-10" />
     <SocialBar />
   </div>
 </template>

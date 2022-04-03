@@ -1,7 +1,7 @@
 <template>
   <div>
     <iframe
-      src="/leaflet_de.html"
+      :src="map"
       style="border: 0px solid #eee; background: white"
       class="w-full"
       frameborder="0"
@@ -10,6 +10,16 @@
     ></iframe>
   </div>
 </template>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  props: {
+    map: { type: String, required: true },
+  },
+})
+</script>
 
 <style scoped>
 .mapContainer {
