@@ -55,7 +55,7 @@
           </div>
           <div class="flex mt-4">
             <div class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4">
-              <OutlineCloudUpload class="h-8 w-8 mx-auto text-gray-100" />
+              <OutlineCloudUploadIcon class="h-8 w-8 mx-auto text-gray-100" />
             </div>
             <div class="grow">
               <h3>Der Start</h3>
@@ -69,7 +69,7 @@
           </div>
           <div class="flex mt-4">
             <div class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4">
-              <OutlineCloud class="h-8 w-8 mx-auto text-gray-100" />
+              <OutlineCloudIcon class="h-8 w-8 mx-auto text-gray-100" />
             </div>
             <div class="grow">
               <h3>Der Flug</h3>
@@ -84,7 +84,7 @@
           </div>
           <div class="flex mt-4">
             <div class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4">
-              <OutlineCloudDownload class="h-8 w-8 mx-auto text-gray-100" />
+              <OutlineCloudDownloadIcon class="h-8 w-8 mx-auto text-gray-100" />
             </div>
             <div class="grow">
               <h3>Die Landung</h3>
@@ -157,9 +157,9 @@ import ContentImageGallery from '~/components/ContentImageGallery'
 import SocialBar from '~/components/SocialBar'
 import Index from '~/content_whitecloud/index'
 import ResponsiveImage from '~/components/ResponsiveImage'
-import OutlineCloud from '~/components/icons/OutlineCloud'
-import OutlineCloudDownload from '~/components/icons/OutlineCloudDownload'
-import OutlineCloudUpload from '~/components/icons/OutlineCloudUpload'
+import OutlineCloudIcon from '~/components/icons/OutlineCloudIcon'
+import OutlineCloudDownloadIcon from '~/components/icons/OutlineCloudDownloadIcon'
+import OutlineCloudUploadIcon from '~/components/icons/OutlineCloudUploadIcon'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
 import Webcam from '~/components/Webcam'
 
@@ -169,9 +169,9 @@ export default defineComponent({
     Index,
     ResponsiveImage,
     SocialBar,
-    OutlineCloud,
-    OutlineCloudDownload,
-    OutlineCloudUpload,
+    OutlineCloudIcon,
+    OutlineCloudDownloadIcon,
+    OutlineCloudUploadIcon,
     OutlineLocationMarkerIcon,
     Webcam,
   },
