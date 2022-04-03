@@ -1,16 +1,6 @@
 <template>
   <div>
-    <ProductsRegiondo flight="Akrobatikflug Hopfgarten" />
-    <br />
-    <ProductsRegiondo flight="Akrobatikflug Söll" />
-    <br />
-    <ProductsRegiondo flight="Gleitflug Hopfgarten" />
-    <br />
-    <ProductsRegiondo flight="Gleitflug Söll" />
-    <br />
-    <ProductsRegiondo flight="Thermikflug Hopfgarten" />
-    <br />
-    <ProductsRegiondo flight="Thermikflug Söll" />
+    <ProductsRegiondo :flight="page.slug" />
     <SocialBar />
   </div>
 </template>
@@ -19,9 +9,21 @@
 import { defineComponent } from '@vue/composition-api'
 import ProductsRegiondo from '~/components/ProductsRegiondo'
 import SocialBar from '~/components/SocialBar'
+import { useMetaTags } from '~/composable/useMetaTags'
 
 export default defineComponent({
   components: { SocialBar, ProductsRegiondo },
-  setup() {},
+  setup() {
+    const { generateMetaTags, page } = useMetaTags()
+    return { generateMetaTags, page }
+  },
+  head() {
+    const metatags = this.generateMetaTags(
+      this.page.title,
+      this.page.description,
+      this.$route.fullPath
+    )
+    return { title: this.page.title, meta: metatags }
+  },
 })
 </script>
