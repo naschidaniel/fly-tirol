@@ -12,6 +12,20 @@
     "alt": "Logo WHITE-CLOUD Tandemflüge",
     "title": "Logo WHITE-CLOUD Tandemflüge"
   },
+  "/media/available-soon.jpg": {
+    "url": "/media/available-soon.jpg",
+    "path": "/media/",
+    "file": "available-soon.jpg",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/index/gallerie/1.jpg": {
     "url": "/media/index/gallerie/1.jpg",
     "path": "/media/index/gallerie/",
