@@ -3,13 +3,14 @@ title: <small>Akrobatikflug</small> Hohe Salve - <strong>Söll</strong>
 description: Sie stehen auf Action? Achterbahnen sind genau Ihr Ding? Dann werden Sie diese spezielle Art des Gleitschirmfliegens lieben! Mit spektakulären, akrobatischen Manövern stellen wir die Welt auf den Kopf.Ein absolutes Muss für jeden Adrenalin-Junkie!
 location: Söll
 image: /media/available-soon.jpg
+imageGallery: /media/index/gallerie/
 price: ab 150,00 € exklusive Liftkarten
 duration: 90 Minuten
 flightDuration: 15 Minuten Flugdauer
 order: 2
 ---
 
-# Akrobatikflug Hohe Salve - Söll
+# <small>Akrobatikflug</small> Hohe Salve - <strong>Söll</strong>
 
 Sie stehen auf Action? Achterbahnen sind genau Ihr Ding? Dann werden Sie diese spezielle Art des Gleitschirmfliegens lieben! Mit spektakulären, akrobatischen Manövern stellen wir die Welt auf den Kopf.Ein absolutes Muss für jeden Adrenalin-Junkie! Flugdauer: 15 Minuten
 

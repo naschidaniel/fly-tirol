@@ -1,6 +1,27 @@
 <template>
   <div>
-    <ProductsRegiondo :flight="page.slug" />
+    <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
+      <div class="flex flex-wrap mt-8">
+        <div class="w-full lg:w-1/2 lg:pr-2 order-1">
+          <div v-if="page.slug == 'akrobatikflug-hopfgarten'">
+            <AkrobatikflugHopfgarten />
+          </div>
+          <div v-if="page.slug === 'akrobatikflug-soell'">
+            <AkrobatikflugSoell />
+          </div>
+        </div>
+        <div class="w-full order-2 lg:order-3">
+          <ContentImageGallery
+            :path="page.imageGallery"
+            class="w-full lg:pl-8"
+          />
+        </div>
+        <div class="w-full mt-4 lg:w-1/2 lg:pl-2 lg:mt-0 order-3 lg:order-2">
+          <h2><small>Glücksgefühle</small>Flug <strong>buchen</strong></h2>
+          <ProductsRegiondo :flight="page.slug" />
+        </div>
+      </div>
+    </div>
     <SocialBar />
   </div>
 </template>
@@ -10,9 +31,16 @@ import { defineComponent } from '@vue/composition-api'
 import ProductsRegiondo from '~/components/ProductsRegiondo'
 import SocialBar from '~/components/SocialBar'
 import { useMetaTags } from '~/composable/useMetaTags'
+import AkrobatikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/akrobatikflug-hopfgarten'
+import AkrobatikflugSoell from '~/content_whitecloud/fluege-und-preise/akrobatikflug-soell'
 
 export default defineComponent({
-  components: { SocialBar, ProductsRegiondo },
+  components: {
+    AkrobatikflugHopfgarten,
+    AkrobatikflugSoell,
+    SocialBar,
+    ProductsRegiondo,
+  },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
     return { generateMetaTags, page }

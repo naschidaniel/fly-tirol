@@ -26,6 +26,34 @@
     "alt": "",
     "title": ""
   },
+  "/media/fluege-und-preise/akrobatikflug/available-soon_1.jpg": {
+    "url": "/media/fluege-und-preise/akrobatikflug/available-soon_1.jpg",
+    "path": "/media/fluege-und-preise/akrobatikflug/",
+    "file": "available-soon_1.jpg",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluege-und-preise/akrobatikflug/available-soon_2.jpg": {
+    "url": "/media/fluege-und-preise/akrobatikflug/available-soon_2.jpg",
+    "path": "/media/fluege-und-preise/akrobatikflug/",
+    "file": "available-soon_2.jpg",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/index/gallerie/1.jpg": {
     "url": "/media/index/gallerie/1.jpg",
     "path": "/media/index/gallerie/",

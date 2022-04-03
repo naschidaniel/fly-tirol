@@ -117,7 +117,6 @@
         </div>
       </div>
     </div>
-    <ContentImageGallery path="/media/index/gallerie/" class="w-full lg:pl-8" />
 
     <div class="max-w-90 mx-auto nuxt-content">
       <h2><small>Ihr Pilot</small>Matthias&nbsp;<strong>Hohlrieder</strong></h2>
@@ -153,7 +152,6 @@
 <script>
 import { defineComponent } from '@vue/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
-import ContentImageGallery from '~/components/ContentImageGallery'
 import SocialBar from '~/components/SocialBar'
 import Index from '~/content_whitecloud/index'
 import ResponsiveImage from '~/components/ResponsiveImage'
@@ -165,7 +163,6 @@ import Webcam from '~/components/Webcam'
 
 export default defineComponent({
   components: {
-    ContentImageGallery,
     Index,
     ResponsiveImage,
     SocialBar,

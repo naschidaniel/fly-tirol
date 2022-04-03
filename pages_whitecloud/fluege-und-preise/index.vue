@@ -1,7 +1,9 @@
 <template>
-  <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
-    <h1><small>Tandemfliegen</small>Füge und <strong>Preise</strong></h1>
-    <ProductList />
+  <div>
+    <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
+      <h1><small>Tandemfliegen</small>Füge und <strong>Preise</strong></h1>
+      <ProductList />
+    </div>
     <SocialBar />
   </div>
 </template>
