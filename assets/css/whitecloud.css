@@ -24,11 +24,24 @@
     duration-150
     ease-in-out; }
 
+.card--content:before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  @apply bg-white; }
+
+
 @layer base {
   .nuxt-content h1 {
     @apply text-2xl lg:text-5xl font-medium my-6 uppercase text-[#666666];}
+  .nuxt-content h1 small {
+      @apply text-lg lg:text-2xl mb-2 block text-[#949494]; }
+  .nuxt-content h1 strong {
+      @apply text-[#1c9dd8]; }
   .nuxt-content h2 small {
-      @apply text-lg lg:text-2xl block text-[#949494]; }
+      @apply text-lg lg:text-2xl mb-2 block text-[#949494]; }
   .nuxt-content h2 strong {
       @apply text-[#1c9dd8]; }
   .nuxt-content h2 {

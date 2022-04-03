@@ -2,20 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-  @font-face {
-    font-family: 'RedHatDisplay';
-    src: url("~/assets/fonts/RedHatDisplayVF.woff2") format("woff2-variations");
-    font-weight: 300 900;
-    font-style: normal;
-    font-display: fallback; }
-  @font-face {
-    font-family: 'RedHatText';
-    src: url("~/assets/fonts/RedHatTextVF.woff2") format("woff2-variations");
-    font-weight: 300 700;
-    font-style: normal;
-    font-display: fallback; }
-  body {
-    @apply font-sans text-base leading-normal bg-white; } }
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url("~/assets/fonts/RedHatDisplayVF.woff2") format("woff2-variations");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: fallback; }
+@font-face {
+  font-family: 'RedHatText';
+  src: url("~/assets/fonts/RedHatTextVF.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: fallback; }
+body {
+  @apply font-sans text-base leading-normal bg-white; } }
+
+.card--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  justify-content: space-between; }
+
+.grid-gap-1 {
+  grid-gap: 1rem; }
+
+.grid-gap-2 {
+  grid-gap: 2rem; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+
+.card--slide {
+  @apply w-80;
+  flex-shrink: 0;
+  position: relative;
+  transition-property: transform; }
+
+.card--header {
+  position: relative;
+  overflow: hidden; }
+
+.card--container {
+  flex-grow: 1;
+  overflow: hidden; }
+
+.card--content {
+  position: relative; }
+
+.card--content__inner {
+  position: relative;
+  z-index: 20; }
 
 .btn--success {
   @apply bg-green-600 }

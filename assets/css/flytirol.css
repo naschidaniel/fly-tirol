@@ -24,39 +24,6 @@
     duration-150
     ease-in-out; }
 
-.card--grid {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-justify-content: space-between; }
-
-.grid-gap-1 {
-grid-gap: 1rem; }
-
-.grid-gap-2 {
-grid-gap: 2rem; }
-
-.card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%; }
-.card--slide {
-  @apply w-80;
-  flex-shrink: 0;
-  position: relative;
-  transition-property: transform; }
-.card--header {
-  position: relative;
-  overflow: hidden; }
-.card--container {
-  flex-grow: 1;
-  overflow: hidden; }
-.card--content {
-  position: relative; }
-
-.card--content__inner {
-  position: relative;
-  z-index: 20; }
 .card--content:before {
   content: '';
   z-index: 1;
