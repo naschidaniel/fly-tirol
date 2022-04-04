@@ -35,17 +35,13 @@
 
 @layer base {
   .nuxt-content h1 {
-    @apply text-2xl lg:text-5xl font-medium my-6 uppercase text-[#666666];}
+    @apply text-2xl lg:text-5xl font-medium my-6 uppercase text-[#666666] mt-12;}
   .nuxt-content h1 small {
       @apply text-lg lg:text-2xl mb-2 block text-[#949494]; }
   .nuxt-content h1 strong {
       @apply text-[#1c9dd8]; }
-  .nuxt-content h2 small {
-      @apply text-lg lg:text-2xl mb-2 block text-[#949494]; }
-  .nuxt-content h2 strong {
-      @apply text-[#1c9dd8]; }
   .nuxt-content h2 {
-    @apply text-xl lg:text-3xl font-medium my-8 uppercase text-[#666666]; }
+    @apply text-xl lg:text-3xl font-medium my-8 uppercase text-[#666666] mt-10; }
   .nuxt-content h2 small {
       @apply text-base lg:text-xl block text-[#949494]; }
   .nuxt-content h2 strong {

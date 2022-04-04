@@ -11,7 +11,10 @@
         aufnehmen.</span
       >
     </div>
-    <div v-else class="card--grid grid-gap-1 max-w-90 mx-auto py-4 md:py-12">
+    <div
+      v-else
+      class="card--grid grid-gap-1 max-w-full md:max-w-90 mx-auto md:py-12"
+    >
       <div v-for="page in pages" :key="page.title">
         <ProductCard
           class="p-4"

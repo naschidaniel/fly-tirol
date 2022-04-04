@@ -11,11 +11,11 @@
             <p>Österreich Paragleit- und Ballonunternehmungen</p>
             <p>Augasse 23b</p>
             <p>6300 Wörgl</p>
-            <div class="flex flex-col lg:justify-center m-4">
-              <button>
+            <div class="flex flex-col my-4 mr-6">
+              <button class="w-full">
                 <a
-                  href="whatsapp://send?text=+4368181589568"
-                  class="btn-primary btn--large m-4 w-5/6 lg:w-2/3"
+                  href="whatsapp://send?phone=+4368181589568"
+                  class="btn-primary btn--large m-4 w-full lg:w-2/3"
                   ><WhatsAppIcon
                     class="mr-2"
                     style="width: 2em; height: 2em; color: #ececec"
@@ -23,10 +23,10 @@
                   +43 681 81589568</a
                 >
               </button>
-              <button>
+              <button class="w-full">
                 <a
                   href="tel:004368181589568"
-                  class="btn-primary btn--large m-4 w-5/6 lg:w-2/3"
+                  class="btn-primary btn--large m-4 w-full lg:w-2/3"
                   ><OutlinePhoneIcon
                     class="mr-2"
                     style="width: 2em; height: 2em; color: #ececec"
@@ -34,10 +34,10 @@
                   +43 681 81589568</a
                 >
               </button>
-              <button>
+              <button class="w-full">
                 <a
                   href="mailto:info@white-cloud.tirol"
-                  class="btn-primary btn--large m-4 w-5/6 lg:w-2/3"
+                  class="btn-primary btn--large m-4 w-full lg:w-2/3"
                   ><OutlineMailIcon
                     class="mr-2"
                     style="width: 2em; height: 2em; color: #ececec"
