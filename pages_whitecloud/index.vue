@@ -10,18 +10,6 @@
         :picture="picture"
       />
     </div>
-    <div class="bg-[#1c9dd8] pt-5 pb-5 md:pt-10 md:pb-10">
-      <div class="mx-auto max-w-80 text-center">
-        <p class="text-white text-lg md:text-xl">
-          "Wenn du das Fliegen einmal erlebt hast, wirst du für immer auf Erden
-          wandeln, mit deinen Augen himmelwärts gerichtet. Denn dort bist du
-          gewesen und dort wird es dich immer wieder hinziehen."
-        </p>
-        <p class="text-gray-200 tracking-wider md:text-lg mt-2">
-          Leonardo da Vinci
-        </p>
-      </div>
-    </div>
     <div class="bg-gray-100 nuxt-content pt-20 lg:pt-40">
       <div class="max-w-90 mx-auto py-6">
         <Index />
