@@ -62,7 +62,7 @@
                   Von Hopfgarten im Brixental oder auch von Söll am Wilden
                   Kaiser geht es mit der Bergbahn hinauf auf den Gipfel der Hohe
                   Salve. Die zuverlässigen Aufwinde im Frühling und Sommer und
-                  die atemberaubende Aussicht über das Tiroler Unterland machen
+                  die atemberaubende Aussicht über die Kitzbüheler Alpen machen
                   diesen Berg zu einem der beliebtesten Fluggebiete im Tiroler
                   Unterland.
                 </p>
