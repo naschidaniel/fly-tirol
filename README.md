@@ -1,4 +1,4 @@
-# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml)
+# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build white-cloud.tirol](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_whitecloud.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_whitecloud.yml)
 
 The source code of this project shares components for two websites.
 
@@ -10,15 +10,6 @@ Come and share our passion with us!
 ## White-Cloud.tirol
 Visit mit at [https://white-cloud.tirol](https://white-cloud.tirol).
 I am a passionate pilot and would like to show you the world from above. Come with me and share my passion.
-## Shopify
-
-To display data from Shopify the module [Gomah/nuxt-shopify](https://github.com/Gomah/nuxt-shopify) is used. For local development the `SHOPIFY_DOMAIN` and `SHOPIFY_ACCESS_TOKEN` is needed.
-
-```
-echo 'SHOPIFY_DOMAIN="MyPersonalShopShopifyUrl"' > .env
-echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
-```
-
 
 ## Development Setup
 
@@ -43,6 +34,16 @@ $ yarn dev
 $ yarn generateMediaInformation
 ```
 
+### Shopify
+
+To display data from Shopify the module [Gomah/nuxt-shopify](https://github.com/Gomah/nuxt-shopify) is used. For local development the `SHOPIFY_DOMAIN` and `SHOPIFY_ACCESS_TOKEN` is needed.
+
+```
+echo 'SHOPIFY_DOMAIN="MyPersonalShopShopifyUrl"' > .env
+echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
+```
+
+
 ## Build Setup
 
 ```bash
@@ -55,7 +56,7 @@ $ docker build -t flytirol --build-arg NUXT_PAGE='whitecloud' .
 # generate static project, optimize-images and launch server
 $ docker run -p 127.0.0.1:3000:3000/tcp flytirol
 # OR 
-$ docker run -p 127.0.0.1:3000:3000/tcp whitecloud
+$ docker run -p 127.0.0.1:3001:3001/tcp whitecloud
 ```
 
 ### Optimize Images for Production
