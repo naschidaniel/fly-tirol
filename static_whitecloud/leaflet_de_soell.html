@@ -22,7 +22,7 @@
           window.open(`geo:${e.latlng.lat}, ${e.latlng.lng}`)
         }
         const map = L.map('map').setView([47.48, 12.1992], 12);
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: "<a href='https://osm.org/copyright'>OpenStreetMap</a> contributors",
             maxZoom: 18,
         }).addTo(map);
