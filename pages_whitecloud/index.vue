@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="relative min-h-screen-40 md:min-h-screen-50 overflow-hidden flex flex-row lg:flex-col items-end lg:items-start"
+      class="relative min-h-screen-40 md:min-h-screen-50 overflow-hidden flex flex-row lg:flex-col items-end lg:items-start mt-2"
     >
       <ResponsiveImage
         box-class="absolute top-0 bottom-0 left-0 right-0"
@@ -10,7 +10,7 @@
         :picture="picture"
       />
     </div>
-    <div class="bg-gray-100 nuxt-content pt-20 lg:pt-40">
+    <div class="bg-gray-100 nuxt-content pt-6 lg:pt-20">
       <div class="max-w-90 mx-auto py-6">
         <Index />
       </div>
