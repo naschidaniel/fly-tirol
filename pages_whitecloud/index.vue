@@ -10,7 +10,7 @@
         :picture="picture"
       />
     </div>
-    <div class="bg-gray-100 nuxt-content pt-6 lg:pt-20">
+    <div class="bg-gray-100 nuxt-content lg:pt-10">
       <div class="max-w-90 mx-auto py-6">
         <Index />
       </div>
