@@ -20,7 +20,7 @@ Sie stehen auf Action? Achterbahnen sind genau Ihr Ding? Dann werden Sie diese s
 
 ## Erlebnisbeschreibung
 
-Zum geplanten Termin treffen wir uns an der Kassa der Talstation der Bergbahn Söll (Hexenwasser) . Mit der Gondel geht es dann rauf zum Gipfel der Hohen Salve. Am Startplatz angekommen beginnt die Vorbereitung für den Flug. Nach einer gründlichen Sicherheitseinweisung heben wir nach wenigen Schritten Anlauf sicher ab. Während des gesamten Fluges sitzt man in einem sehr bequemen Sitz und man kann sich problemlos mit dem Piloten unterhalten oder sich einfach nur zurücklehnen und genießen. Etwa 1 Stunde nach dem Treffpunkt landen wir wieder sanft auf einer großen Wiese etwa 5 Gehminuten von der Bergbahn entfernt.
+Zum geplanten Termin treffen wir uns an der Kassa der Talstation der Bergbahn Söll (Hexenwasser). Mit der Gondel geht es dann rauf zum Gipfel der Hohen Salve. Am Startplatz angekommen beginnt die Vorbereitung für den Flug. Nach einer gründlichen Sicherheitseinweisung heben wir nach wenigen Schritten Anlauf sicher ab. Während des gesamten Fluges sitzt man in einem sehr bequemen Sitz und man kann sich problemlos mit dem Piloten unterhalten oder sich einfach nur zurücklehnen und genießen. Etwa 1 Stunde nach dem Treffpunkt landen wir wieder sanft auf einer großen Wiese etwa 5 Gehminuten von der Bergbahn entfernt.
 
 ## Leistung
 
