@@ -37,9 +37,10 @@
         <nuxt-link
           :to="page.path"
           class="btn-primary btn--large"
-          :title="page.title"
+          :title="isFlyTirol ? page.title : 'Info und buchen'"
         >
-          Mehr erfahren
+          <span v-if="isFlyTirol">Mehr erfahren</span>
+          <span v-else>Info und buchen</span>
         </nuxt-link>
       </div>
     </div>
