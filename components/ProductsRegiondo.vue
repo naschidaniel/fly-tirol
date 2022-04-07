@@ -5,7 +5,7 @@
       style="border: 0px solid #eee; background: white"
       class="w-full"
       frameborder="0"
-      height="800"
+      height="1000"
       scrolling="no"
     ></iframe>
   </div>
