@@ -32,7 +32,7 @@
             <ResponsiveImage
               box-class="w-full h-full overflow-hidden"
               img-class="rounded shadow-md object-cover object-center w-full h-full"
-              picture="/media/fluege-und-preise/gleitflug-soell.jpg"
+              picture="/media/tandemfliegen_salve.jpg"
             />
           </div>
           <div class="w-full lg:w-3/5 lg:pl-2 mt-4 lg:mt-0">
@@ -191,9 +191,9 @@ export default defineComponent({
     const { generateMetaTags, page } = useMetaTags()
 
     const pictures = [
-      '/media/index/gallerie/1.jpg',
-      '/media/index/gallerie/2.jpg',
-      '/media/index/gallerie/3.jpg',
+      '/media/index/gallerie/akrobatikflug-hopfgarten.jpg',
+      '/media/index/gallerie/thermikflug-ueber-den-wolken.jpg',
+      '/media/index/gallerie/tandemfliegen_whitecloud_salve.jpg',
     ]
     const selectPicture = Math.floor(Math.random() * 3)
     const picture = ref(pictures[selectPicture])
