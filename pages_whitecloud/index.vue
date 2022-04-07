@@ -136,11 +136,11 @@
       <div class="flex flex-wrap">
         <div class="w-full md:w-1/2 pr-2">
           <p>
-            Der Kindheitstraum vom Fliegen trieb mich vor über 10 Jahren in die
+            Der Kindheitstraum vom Fliegen trieb mich vor über 13 Jahren in die
             Flugschule und die Begeisterung für den Flugsport steigt noch immer.
           </p>
           <p class="mt-2">
-            Heute, nach mehr als 5000 unfallfreien Flügen und als staatlich
+            Heute, nach mehr als 6000 unfallfreien Flügen und als staatlich
             geprüfter Tandempilot, möchte ich meine Eindrücke und Erlebnisse bei
             einem Gleitschirm-Tandemflug mit Ihnen teilen.
           </p>
