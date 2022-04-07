@@ -15,6 +15,9 @@
           <div v-if="page.slug === 'gleitflug-soell'">
             <GleitflugSoell />
           </div>
+          <div v-if="page.slug === 'testflug'">
+            <Testflug />
+          </div>
           <div v-if="page.slug === 'thermikflug-hopfgarten'">
             <ThermikflugHopfgarten />
           </div>
@@ -81,6 +84,7 @@ import AkrobatikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/akro
 import AkrobatikflugSoell from '~/content_whitecloud/fluege-und-preise/akrobatikflug-soell'
 import GleitflugHopfgarten from '~/content_whitecloud/fluege-und-preise/gleitflug-hopfgarten'
 import GleitflugSoell from '~/content_whitecloud/fluege-und-preise/gleitflug-soell'
+import Testflug from '~/content_whitecloud/fluege-und-preise/testflug'
 import ThermikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/thermikflug-hopfgarten'
 import ThermikflugSoell from '~/content_whitecloud/fluege-und-preise/thermikflug-soell'
 
@@ -90,6 +94,7 @@ export default defineComponent({
     AkrobatikflugSoell,
     GleitflugHopfgarten,
     GleitflugSoell,
+    Testflug,
     ThermikflugHopfgarten,
     ThermikflugSoell,
     SocialBar,

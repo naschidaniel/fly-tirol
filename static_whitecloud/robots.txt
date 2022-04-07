@@ -2,9 +2,16 @@ User-agent: *
 Disallow: /dsgvo
 Disallow: /impressum
 Disallow: /buchen
+Disallow: /regiondo_whitecloud/bookingwidget_de_testflug.html
 
 Allow: /
-Allow: /fluege-und-preise
+Allow: /fluege-und-preise/akrobatikflug-hopfgarten/
+Allow: /fluege-und-preise/akrobatikflug-soell/
+Allow: /fluege-und-preise/gleitflug-hopfgarten/
+Allow: /fluege-und-preise/gleitflug-soell/
+Allow: /fluege-und-preise/thermikflug-hopfgarten/
+Allow: /fluege-und-preise/thermikflug-soell/
+Disallow: /fluege-und-preise/testflug/
 Allow: /kontakt
 
 Allow: /media

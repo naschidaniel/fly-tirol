@@ -17,6 +17,7 @@
     >
       <div v-for="page in pages" :key="page.title">
         <ProductCard
+          v-if="!page.draft"
           class="p-4"
           :slug="`${routeName}/${page.slug}`"
           :page="page"
