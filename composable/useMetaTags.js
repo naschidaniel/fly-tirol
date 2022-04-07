@@ -54,7 +54,10 @@ export function useMetaTags() {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://fly-tirol.com/media/FlyTirolLogo.jpg',
+        content:
+          process.env.NUXT_PAGE === 'whitecloud'
+            ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
+            : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
       {
         hid: 'og:type',
@@ -64,7 +67,9 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: `https://fly-tirol.com${url}`,
+        content: process.env.NUXT_PAGE === 'whitecloud'
+            ? `https://white-cloud.tirol${url}`
+            : `https://fly-tirol.com${url}`,
       },
     ]
   }
