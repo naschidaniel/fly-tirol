@@ -34,23 +34,34 @@
             <slot />
           </p>
           <div
-            v-if="link1 || link2"
-            class="flex flex-wrap justify-center mt-6 lg:space-x-4"
+            v-if="link1 || link2 || address"
+            class="flex flex-wrap justify-center mt-6"
           >
-            <div class="p-2">
+            <div class="flex p-2 w-5/6 md:w-1/3">
               <a
                 v-if="link1"
                 :href="link1.href"
-                class="btn-primary btn--large"
+                class="btn-primary btn--large w-full"
                 >{{ link1.name }}</a
               >
             </div>
-            <div class="p-2">
+            <div class="flex p-2 w-5/6 md:w-1/3">
               <a
                 v-if="link2"
                 :href="link2.href"
-                class="btn-primary btn--large"
+                class="btn-primary btn--large w-full"
                 >{{ link2.name }}</a
+              >
+            </div>
+            <div class="flex p-2 w-5/6 md:w-1/3">
+              <a
+                v-if="address"
+                :href="address.href"
+                target="_blank"
+                rel="norefferer"
+                class="btn-primary btn--large w-full"
+              >
+                {{ address.name }}</a
               >
             </div>
           </div>
@@ -65,6 +76,7 @@ import { defineComponent } from '@vue/composition-api'
 
 export default defineComponent({
   props: {
+    address: { type: Object, required: false, default: () => {} },
     headline: { type: String, required: true },
     preHeadline: { type: String, required: true },
     picture: { type: String, required: false, default: '' },

@@ -67,7 +67,8 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: process.env.NUXT_PAGE === 'whitecloud'
+        content:
+          process.env.NUXT_PAGE === 'whitecloud'
             ? `https://white-cloud.tirol${url}`
             : `https://fly-tirol.com${url}`,
       },

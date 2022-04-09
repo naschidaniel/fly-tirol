@@ -18,13 +18,19 @@
 <body style="margin:0;padding:0">
     <div id="map" style="height: 400px;"></div>
     <script>
-        const map = L.map('map').setView([47.42811422723987, 12.213429046024435], 12);
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      function openMapsLink(e) {
+          window.open(`https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen`)
+        }
+        const map = L.map('map').setView([47.42811422723987, 12.213429046024435], 14);
+        L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: "<a href='https://osm.org/copyright'>OpenStreetMap</a> contributors",
             maxZoom: 18,
         }).addTo(map);
 
-        L.marker([47.42811422723987, 12.213429046024435]).bindTooltip("Flugschule Fly-Tirol.com", {"permanent": true}).addTo(map);
-    </script> 
+        L.marker([47.42811422723987, 12.213429046024435]).bindTooltip("Fly Tirol - Flugschule Kitzbüheler Alpen", {"permanent": true}).addTo(map).addTo(map).on('click', (e) => openMapsLink(e));
+        L.marker([47.41887053497028, 12.243820078717167]).bindTooltip("Weststartplatz", {"permanent": false}).addTo(map).addTo(map);
+        L.marker([47.42038000466236, 12.249383691061105]).bindTooltip("Oststartplatz", {"permanent": false}).addTo(map).addTo(map);
+        L.marker([47.421889325963285, 12.25151503139521]).bindTooltip("Nordstartplatz", {"permanent": false}).addTo(map).addTo(map);
+    </script>
 </body>
 </html>

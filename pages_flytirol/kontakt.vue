@@ -6,6 +6,7 @@
       picture="/media/team/team.jpg"
       :link1="telefonNumber"
       :link2="mailAddress"
+      :address="address"
     >
       <div>
         <p>
@@ -51,6 +52,10 @@ export default defineComponent({
   },
   data() {
     return {
+      address: {
+        href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
+        name: 'Route',
+      },
       telefonNumber: { href: 'tel:00436766422088', name: '+43 676 6422088' },
       mailAddress: {
         href: 'mailto:info@fly-tirol.com ',
