@@ -29,33 +29,29 @@ export default defineComponent({
   components: { SocialBar, PageHeader, TeamList },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
-    return { generateMetaTags, page }
-  },
-  data() {
-    return {
-      members: [
-        {
-          name: 'Sebastian Kahn',
-          picture: '/media/team/sebastian.jpg',
-          position:
-            'Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot',
-          information:
-            'Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)',
-        },
-        {
-          name: 'Stefan Bischofer',
-          picture: '/media/team/stefan.jpg',
-          position: 'Tandempilot',
-          information: '',
-        },
-        {
-          name: 'Bernhard Mimmler',
-          picture: '/media/team/bernie.jpg',
-          position: 'Tandempilot',
-          information: '',
-        },
-      ],
-    }
+    const members = [
+      {
+        name: 'Sebastian Kahn',
+        picture: '/media/team/sebastian.jpg',
+        position:
+          'Geschäftsführer, Ausbildungsleiter, staatlich geprüfter Fluglehrer, Tandempilot',
+        information:
+          'Team Weltmeister im Acro-Paragleiten 2014 und ausgezeichnet mit dem Österreichischen Eisernen Verdienstkreuz für sportliche Auszeichnungen, Synchron-Acrobatic-Paragleiten Vizeweltmeister mit seinem Cousin Ricky Kahn 2012, mehrfacher österreichischer Staatsmeister im Acro-Paragleiten, nationale und internationale Buchungen für Acro-Showflüge auf Events (Dolomitenmann, Ski-Weltcups, Natural Games…)',
+      },
+      {
+        name: 'Stefan Bischofer',
+        picture: '/media/team/stefan.jpg',
+        position: 'Tandempilot',
+        information: '',
+      },
+      {
+        name: 'Bernhard Mimmler',
+        picture: '/media/team/bernie.jpg',
+        position: 'Tandempilot',
+        information: '',
+      },
+    ]
+    return { generateMetaTags, members, page }
   },
   head() {
     const metatags = this.generateMetaTags(
