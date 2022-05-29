@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import { computed, defineComponent, unref } from '@vue/composition-api'
+import { computed, defineComponent, unref, ref } from '@vue/composition-api'
 import { useFormat } from '~/composable/useFormat'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCart } from '~/composable/useShopifyCart'
@@ -45,47 +45,53 @@ export default defineComponent({
     const { routeSlug } = useNavigation()
     const { formatDate } = useFormat()
     const { bookProduct, products } = useShopifyCart()
+
+    const selectedDate = ref('')
+    const isFormValid = ref(true)
+    const isDateValid = ref(false)
+
     const productId = computed(
       () => unref(products).find((p) => p.slug === routeSlug)?.id
     )
-    return { bookProduct, formatDate, productId }
-  },
-  data() {
-    return {
-      selectedDate: '',
-      isFormValid: true,
-      isDateValid: false,
-    }
-  },
-  computed: {
-    today() {
-      return new Date().toISOString().split('T')[0]
-    },
-    selectedDateTimestamp() {
-      return this.selectedDate !== '' ? new Date(this.selectedDate) : ''
-    },
-  },
-  methods: {
-    bookFlight() {
-      this.checkDate()
-      if (this.isDateValid && this.isDateValid) {
-        this.bookProduct(this.productId, {
+
+    const today = computed(() => new Date().toISOString().split('T')[0])
+
+    const selectedDateTimestamp = computed(() =>
+      selectedDate.value !== '' ? new Date(selectedDate.value) : ''
+    )
+
+    function bookFlight() {
+      checkDate()
+      if (isDateValid.value) {
+        bookProduct(unref(productId), {
           customAttributes: [
             {
               key: 'Wunschtermin nach Absprache',
-              value: this.formatDate(this.selectedDateTimestamp),
+              value: formatDate(selectedDateTimestamp.value),
             },
           ],
         })
       }
-    },
-    checkDate() {
-      const entryTimestamp = new Date(this.selectedDate).getTime()
-      const todayTimestamp = new Date(this.today).getTime()
-      const validation = entryTimestamp >= todayTimestamp
-      this.isFormValid = validation
-      this.isDateValid = validation
-    },
+    }
+    function checkDate() {
+      const entryTimestamp = new Date(selectedDate.value).getTime()
+      const todayTimestamp = new Date(today.value).getTime()
+      isFormValid.value = entryTimestamp >= todayTimestamp
+      isDateValid.value = entryTimestamp >= todayTimestamp
+    }
+
+    return {
+      bookFlight,
+      bookProduct,
+      checkDate,
+      formatDate,
+      isDateValid,
+      isFormValid,
+      productId,
+      selectedDate,
+      selectedDateTimestamp,
+      today,
+    }
   },
 })
 </script>
