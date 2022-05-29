@@ -17,7 +17,7 @@ Bergliftstr. 22,
 
 ## Kontakt
 
-Tel.: <a href="tel:00436766422088">0043 676 6422088</a>
+Tel.: <a href="tel:+436766422088">+43 676 6422088</a>
 
 E-Mail: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
 ## Daten

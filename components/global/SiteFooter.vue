@@ -12,39 +12,19 @@
               class="block outline-none w-24 whitespace-nowrap"
               exact
             >
-              &#169; <span v-if="isFlyTirol">fly-tirol.com</span
-              ><span v-if="isWhiteCloud">white-cloud.tirol</span>
+              &#169; {{ website }}
             </nuxt-link>
           </div>
           <div class="flex flex-wrap sm:flex-nowrap justify-between w-full">
             <div class="flex flex-wrap w-full md:justify-center mb-8 sm:mb-0">
-              <a
-                v-if="isFlyTirol"
-                href="mailto:info@fly-tirol.com"
-                class="underline whitespace-nowrap"
-              >
-                info@fly-tirol.com
+              <a :href="mailTo" class="underline whitespace-nowrap">
+                {{ mail }}
               </a>
               <a
-                v-if="isWhiteCloud"
-                href="mailto:info@white-cloud.tirol"
-                class="underline whitespace-nowrap"
-              >
-                info@white-cloud.tirol
-              </a>
-              <a
-                v-if="isFlyTirol"
-                href="tel:00436766422088"
+                :href="phoneHref"
                 class="underline ml-8 sm:ml-4 md:ml-6 whitespace-nowrap"
               >
-                +43 676 6422088
-              </a>
-              <a
-                v-if="isWhiteCloud"
-                href="tel:004368181589568"
-                class="underline ml-8 sm:ml-4 md:ml-6 whitespace-nowrap"
-              >
-                +43 681 81589568
+                {{ phoneString }}
               </a>
               <span
                 v-if="isFlyTirol"
@@ -82,8 +62,10 @@ import { useData } from '~/composable/useData'
 export default defineComponent({
   name: 'NavigationNavbar',
   setup() {
-    const { isFlyTirol, isWhiteCloud } = useData()
-    return { isFlyTirol, isWhiteCloud }
+    const { isFlyTirol, mail, phone, phoneString, website } = useData()
+    const mailTo = `mailto:${mail}`
+    const phoneHref = `tel:${phone}`
+    return { isFlyTirol, mail, mailTo, phoneHref, phoneString, website }
   },
 })
 </script>

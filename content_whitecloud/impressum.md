@@ -17,16 +17,17 @@ Augasse 23b,
 
 ## Kontakt
 
-Tel.: <a href="tel:004368181589568">0043 681 8158 9568</a>
+Tel.: <a href="tel:+4368181589568">+43 681 8158 9568</a>
 
 E-Mail: <a href="mailto:info@white-cloud.tirol">info@white-cloud.tirol</a>
+
 ## Daten
 
 Unternehmensgegenstand: Paragleit- und Ballonunternehmungen
 
-Steuer-Nummer: ---
+Steuer-Nummer: –
 
-Firmenbuchnummer: -
+Firmenbuchnummer: –
 
 Firmenbuchgericht: Bezirkshauptmannschaft Kufstein
 

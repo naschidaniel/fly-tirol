@@ -141,15 +141,16 @@ export default defineComponent({
     WhatsAppIcon,
   },
   setup() {
-    const { isFlyTirol, isWhiteCloud } = useData()
+    const {
+      instagram,
+      isFlyTirol,
+      isWhiteCloud,
+      mail,
+      phone,
+      website,
+      websiteUrl,
+    } = useData()
     const { page } = useMetaTags()
-    const instagram = isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding'
-    const mail = isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol'
-    const phone = isFlyTirol ? '+436766422088' : '+4368181589568'
-    const website = isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol'
-    const websiteUrl = isFlyTirol
-      ? 'https://fly-tirol.com'
-      : 'https://white-cloud.tirol'
 
     const encodedUrl = computed(() =>
       encodeURI(`${websiteUrl}${page.value.path}`)
@@ -158,7 +159,7 @@ export default defineComponent({
     const encodeDescription = computed(() => encodeURI(page.value.description))
 
     function openInstagram() {
-      const url = `https://www.instagram.com/${this.instagram}/`
+      const url = `https://www.instagram.com/${instagram}/`
       window
         .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
         .focus()

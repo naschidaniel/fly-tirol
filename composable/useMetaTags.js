@@ -2,8 +2,9 @@ import { computed, useRoute, useContext } from '@nuxtjs/composition-api'
 import metadataFlyTirol from '~/static_flytirol/metadata.json'
 import metadataWhiteCloud from '~/static_whitecloud/metadata.json'
 
-const metadata =
-  process.env.NUXT_PAGE === 'whitecloud' ? metadataWhiteCloud : metadataFlyTirol
+const metadata = process.env.isWhiteCloud
+  ? metadataWhiteCloud
+  : metadataFlyTirol
 
 export function useMetaTags() {
   const route = useRoute()
@@ -54,10 +55,9 @@ export function useMetaTags() {
       {
         hid: 'og:image',
         property: 'og:image',
-        content:
-          process.env.NUXT_PAGE === 'whitecloud'
-            ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
-            : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
+        content: process.env.isWhiteCloud
+          ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
+          : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
       {
         hid: 'og:type',
@@ -67,10 +67,9 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content:
-          process.env.NUXT_PAGE === 'whitecloud'
-            ? `https://white-cloud.tirol${url}`
-            : `https://fly-tirol.com${url}`,
+        content: process.env.isWhiteCloud
+          ? `https://white-cloud.tirol${url}`
+          : `https://fly-tirol.com${url}`,
       },
     ]
   }
