@@ -62,14 +62,8 @@ export default defineComponent({
 
     const responsiveUrl = computed(() => {
       const extension = imageInformation.value.url?.split('.')?.reverse()[0]
-      if (process.env.NODE_ENV === 'development1' || extension === undefined) {
+      if (process.env.NODE_ENV === 'development' || extension === undefined) {
         return `${imageInformation.value.url}?v=${buildTime}`
-      }
-      if (
-        props.fixSize === undefined &&
-        imageSizeTailwindClass.value === undefined
-      ) {
-        return ''
       }
       const filePostFix =
         props.fixSize && props.isThumbnail
