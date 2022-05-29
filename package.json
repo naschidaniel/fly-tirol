@@ -32,13 +32,13 @@
     "optimize-images:whitecloud": "yarn optimize-images:whitecloud:2xs && yarn optimize-images:whitecloud:xs && yarn optimize-images:whitecloud:sm && yarn optimize-images:whitecloud:md && yarn optimize-images:whitecloud:lg && yarn optimize-images:whitecloud:xl && yarn optimize-images:whitecloud:2xl"
   },
   "dependencies": {
-    "@nuxtjs/composition-api": "^0.29.3",
+    "@nuxtjs/composition-api": "^0.32.0",
     "cookie-universal-nuxt": "^2.1.5",
-    "heroicons": "^1.0.1",
-    "leaflet": "^1.7.1",
-    "nuxt": "^2.15.3",
-    "nuxt-shopify": "^1.10.8",
-    "simple-icons": "^6.0.0"
+    "heroicons": "^1.0.6",
+    "leaflet": "^1.8.0",
+    "nuxt": "^2.15.8",
+    "nuxt-shopify": "^1.14.0",
+    "simple-icons": "^7.0.0"
   },
   "devDependencies": {
     "@nuxt/postcss8": "^1.1.3",
