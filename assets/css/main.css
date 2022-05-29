@@ -55,13 +55,6 @@ body {
   position: relative;
   z-index: 20; }
 
-.btn--success {
-  @apply bg-green-600 }
-
-.btn--disabled {
-  @apply bg-gray-200
-text-gray-800; }
-
 .btn--large {
   @apply px-6 py-4; }
 
