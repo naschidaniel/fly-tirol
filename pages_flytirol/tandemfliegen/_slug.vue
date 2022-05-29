@@ -91,7 +91,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@vue/composition-api'
 import Alert from '~/components/Alert.vue'
 import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'
@@ -117,7 +117,10 @@ export default defineComponent({
   },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
-    return { generateMetaTags, page }
+    const isAppointment = computed(
+      () => page.value.slug !== 'tandemflug-geschenkkarte'
+    )
+    return { generateMetaTags, isAppointment, page }
   },
   head() {
     const metatags = this.generateMetaTags(
@@ -126,11 +129,6 @@ export default defineComponent({
       this.$route.fullPath
     )
     return { title: this.page.title, meta: metatags }
-  },
-  computed: {
-    isAppointment() {
-      return this.page.slug !== 'tandemflug-geschenkkarte'
-    },
   },
 })
 </script>
