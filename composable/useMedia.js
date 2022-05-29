@@ -6,6 +6,7 @@ const media =
   process.env.NUXT_PAGE === 'whitecloud' ? mediaWhiteCloud : mediaFlyTirol
 
 const isWebpSupported = ref(undefined)
+const devicePixelRatio = ref(undefined)
 
 export function useMedia() {
   function setWebPSupport(value) {
@@ -17,6 +18,10 @@ export function useMedia() {
       console.warn('WebP is not supported by the browser')
     }
     isWebpSupported.value = value
+  }
+
+  function setDevicePixelRatio() {
+    devicePixelRatio.value = window && window?.devicePixelRatio > 1.5 ? 2 : 1
   }
 
   function canUseWebP() {
@@ -68,10 +73,12 @@ export function useMedia() {
   }
 
   onMounted(() => {
+    setDevicePixelRatio()
     canUseWebP()
   })
 
   return {
+    devicePixelRatio,
     isWebpSupported,
     media,
     getScreenSize,

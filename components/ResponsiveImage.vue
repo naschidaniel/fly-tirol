@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed, ref } from '@vue/composition-api'
 import { useData } from '~/composable/useData'
 import { useMedia } from '~/composable/useMedia'
 
@@ -27,102 +27,106 @@ export default defineComponent({
     isLazy: { type: Boolean, default: true, required: false },
     isThumbnail: { type: Boolean, default: false, required: false },
   },
-  setup() {
+  setup(props) {
     const { buildTime } = useData()
-    const { isWebpSupported, media } = useMedia()
-    return { buildTime, isWebpSupported, media }
-  },
-  data() {
-    return {
-      imageSizeTailwindClass: undefined,
-      width: undefined,
-      height: undefined,
-      boxSizes: {
-        '2xs': 384,
-        xs: 512,
-        sm: 640,
-        md: 768,
-        lg: 1080,
-        xl: 1280,
-        '2xl': 1536,
-      },
+    const { devicePixelRatio, isWebpSupported, media } = useMedia()
+
+    const imageBox = ref(null) // template ref
+    const imageSizeTailwindClass = ref(undefined)
+    const width = ref(undefined)
+    const height = ref(undefined)
+    const boxSizes = {
+      '2xs': 384,
+      xs: 512,
+      sm: 640,
+      md: 768,
+      lg: 1080,
+      xl: 1280,
+      '2xl': 1536,
     }
-  },
-  computed: {
-    imageInformation() {
-      const images = Object.values(this.media).filter((img) => {
-        return img.url === this.picture
+
+    const imageInformation = computed(() => {
+      const images = Object.values(media).filter((img) => {
+        return img.url === props.picture
       })
       if (images.length === 0) {
         // eslint-disable-next-line no-console
         console.warn(
-          `The image '${this.picture}' can not be found in the /media.json file. You have to run ./generateMediaInformation.js.`
+          `The image '${props.picture}' can not be found in the /media.json file. You have to run ./generateMediaInformation.js.`
         )
       }
       return images.length === 1
         ? images[0]
-        : { alt: '', title: '', url: this.picture, dimensions: undefined }
-    },
-    responsiveUrl() {
-      const extension = this.imageInformation.url?.split('.')?.reverse()[0]
-      if (process.env.NODE_ENV === 'development' || extension === undefined) {
-        return `${this.imageInformation.url}?v=${this.buildTime}`
+        : { alt: '', title: '', url: props.picture, dimensions: undefined }
+    })
+
+    const responsiveUrl = computed(() => {
+      const extension = imageInformation.value.url?.split('.')?.reverse()[0]
+      if (process.env.NODE_ENV === 'development1' || extension === undefined) {
+        return `${imageInformation.value.url}?v=${buildTime}`
       }
       if (
-        this.fixSize === undefined &&
-        this.imageSizeTailwindClass === undefined
+        props.fixSize === undefined &&
+        imageSizeTailwindClass.value === undefined
       ) {
         return ''
       }
       const filePostFix =
-        this.fixSize && this.isThumbnail
-          ? `${this.fixSize}_thumbnail.${extension}`
-          : this.fixSize && !this.isThumbnail
-          ? `${this.fixSize}.${extension}`
-          : this.isThumbnail
-          ? `${this.imageSizeTailwindClass}_thumbnail.${extension}`
-          : `${this.imageSizeTailwindClass}.${extension}`
+        props.fixSize && props.isThumbnail
+          ? `${props.fixSize}_thumbnail.${extension}`
+          : props.fixSize && !props.isThumbnail
+          ? `${props.fixSize}.${extension}`
+          : props.isThumbnail
+          ? `${imageSizeTailwindClass.value}_thumbnail.${extension}`
+          : `${imageSizeTailwindClass.value}.${extension}`
 
-      let responsiveUrl = this.imageInformation.url.replace(
+      let responsiveUrl = imageInformation.value.url.replace(
         `.${extension}`,
         `_${filePostFix}`
       )
-      if (this.isWebpSupported) {
+      if (isWebpSupported.value) {
         responsiveUrl = responsiveUrl.replace(`.${extension}`, '.webp')
       }
-      return `${responsiveUrl}?v=${this.buildTime}`
-    },
+      return `${responsiveUrl}?v=${buildTime}`
+    })
+
+    function getImageSizeTailwindClass() {
+      const imageBoxWidth = imageBox.value?.clientWidth
+      const imageSize = imageBoxWidth * devicePixelRatio.value
+      imageSizeTailwindClass.value =
+        imageSize <= boxSizes['2xs']
+          ? '2xs'
+          : imageSize <= boxSizes.xs
+          ? 'xs'
+          : imageSize <= boxSizes.sm
+          ? 'sm'
+          : imageSize <= boxSizes.md
+          ? 'md'
+          : imageSize <= boxSizes.lg
+          ? 'lg'
+          : imageSize <= boxSizes.xl
+          ? 'xl'
+          : '2xl'
+      width.value = boxSizes[imageSizeTailwindClass.value]
+      height.value = props.isThumbnail
+        ? width.width
+        : Math.round(
+            boxSizes[imageSizeTailwindClass.value] /
+              imageInformation.value?.dimensions?.ratio
+          )
+    }
+
+    return {
+      getImageSizeTailwindClass,
+      height,
+      imageBox,
+      imageInformation,
+      responsiveUrl,
+      width,
+    }
   },
   mounted() {
     this.getImageSizeTailwindClass()
-  },
-  methods: {
-    getImageSizeTailwindClass() {
-      const imageBoxWidth = this.$refs.imageBox?.clientWidth
-      const devicePixelRatio = window?.devicePixelRatio > 1.5 ? 2 : 1
-      const imageSize = imageBoxWidth * devicePixelRatio
-      this.imageSizeTailwindClass =
-        imageSize <= this.boxSizes['2xs']
-          ? '2xs'
-          : imageSize <= this.boxSizes.xs
-          ? 'xs'
-          : imageSize <= this.boxSizes.sm
-          ? 'sm'
-          : imageSize <= this.boxSizes.md
-          ? 'md'
-          : imageSize <= this.boxSizes.lg
-          ? 'lg'
-          : imageSize <= this.boxSizes.xl
-          ? 'xl'
-          : '2xl'
-      this.width = this.boxSizes[this.imageSizeTailwindClass]
-      this.height = this.isThumbnail
-        ? this.width
-        : Math.round(
-            this.boxSizes[this.imageSizeTailwindClass] /
-              this.imageInformation?.dimensions?.ratio
-          )
-    },
   },
 })
 </script>
