@@ -58,22 +58,22 @@ export default defineComponent({
       filterCalender([category], { slug: [routeSlug] })
     )
 
-    return {
-      productCalender,
-      selectedOptionDateString,
-      getScreenSize,
-    }
-  },
-  methods: {
-    setOptionDateString(optionDateString) {
-      this.selectedOptionDateString = optionDateString
-      const screenSize = this.getScreenSize()
+    function setOptionDateString(optionDateString) {
+      selectedOptionDateString.value = optionDateString
+      const screenSize = getScreenSize()
       if (['2xs', 'xs', 'sm', 'md'].includes(screenSize)) {
         document
           .getElementById('book-product')
           .scrollIntoView({ block: 'start', behavior: 'smooth' })
       }
-    },
+    }
+
+    return {
+      getScreenSize,
+      productCalender,
+      selectedOptionDateString,
+      setOptionDateString,
+    }
   },
 })
 </script>

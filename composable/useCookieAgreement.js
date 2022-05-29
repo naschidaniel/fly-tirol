@@ -3,7 +3,7 @@ import {
   getCurrentInstance,
   onMounted,
   ref,
-  watch,
+  watchEffect,
 } from '@nuxtjs/composition-api'
 
 const wrapProperty =
@@ -21,8 +21,10 @@ export const isCookieAgreement = ref(false)
 export function useCookieAgreement() {
   const cookies = useCookies()
 
-  watch(isCookieAgreement, (_newValue, _oldValue) => {
-    getAllCookies()
+  watchEffect(() => {
+    if (isCookieAgreement.value) {
+      getAllCookies()
+    }
   })
 
   onMounted(() => {

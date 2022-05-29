@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@vue/composition-api'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useMedia } from '~/composable/useMedia'
 
@@ -30,16 +30,12 @@ export default defineComponent({
   props: {
     path: { type: String, default: '/media' },
   },
-  setup() {
+  setup(props) {
     const { media } = useMedia()
-    return { media }
-  },
-  computed: {
-    imageGallery() {
-      return Object.values(this.media).filter((img) => {
-        return img.path === this.path
-      })
-    },
+    const imageGallery = computed(() =>
+      Object.values(media).filter((img) => img.path === props.path)
+    )
+    return { imageGallery, media }
   },
 })
 </script>

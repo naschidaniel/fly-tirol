@@ -5,7 +5,7 @@
       style="border: 0px solid #eee; background: white"
       class="w-full"
       frameborder="0"
-      height="1000"
+      height="1100"
       scrolling="no"
     ></iframe>
   </div>
@@ -17,10 +17,9 @@ export default {
   props: {
     flight: { type: String, required: true },
   },
-  computed: {
-    url() {
-      return `/regiondo_whitecloud/bookingwidget_de_${this.flight}.html`
-    },
+  setup(props) {
+    const url = `/regiondo_whitecloud/bookingwidget_de_${props.flight}.html`
+    return { url }
   },
 }
 </script>

@@ -48,20 +48,20 @@ export default defineComponent({
   components: { ContactMap, SocialBar, PageHeader, OutlineLocationMarkerIcon },
   setup() {
     const { generateMetaTags, page } = useMetaTags()
-    return { generateMetaTags, page }
-  },
-  data() {
-    return {
-      address: {
-        href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
-        name: 'Route',
-      },
-      telefonNumber: { href: 'tel:00436766422088', name: '+43 676 6422088' },
-      mailAddress: {
-        href: 'mailto:info@fly-tirol.com ',
-        name: 'info@fly-tirol.com',
-      },
+
+    const address = {
+      href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
+      name: 'Route',
     }
+    const telefonNumber = {
+      href: 'tel:00436766422088',
+      name: '+43 676 6422088',
+    }
+    const mailAddress = {
+      href: 'mailto:info@fly-tirol.com ',
+      name: 'info@fly-tirol.com',
+    }
+    return { generateMetaTags, page, mailAddress, telefonNumber, address }
   },
   head() {
     const metatags = this.generateMetaTags(

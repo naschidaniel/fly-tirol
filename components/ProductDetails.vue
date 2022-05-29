@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@vue/composition-api'
 import OutlineAcademicCapIconVue from './icons/OutlineAcademicCapIcon'
 import OutlineClockIcon from './icons/OutlineClockIcon'
 import OutlineCashIcon from './icons/OutlineCashIcon'
@@ -73,19 +73,18 @@ export default defineComponent({
     dates: { type: Number, default: undefined },
     isShowDate: { type: Boolean, default: true },
   },
-  setup() {
+  setup(props) {
     const { isFlyTirol, isWhiteCloud } = useData()
     const { formatPrice } = useFormat()
-    return { formatPrice, isFlyTirol, isWhiteCloud }
-  },
-  computed: {
-    price() {
-      const preText = this.prices.length >= 2 ? 'ab' : ''
+
+    const price = computed(() => {
+      const preText = props.prices.length >= 2 ? 'ab' : ''
       return {
         preText,
-        price: this.isWhiteCloud ? this.prices[0] : this.prices[0],
+        price: props.prices[0],
       }
-    },
+    })
+    return { formatPrice, isFlyTirol, isWhiteCloud, price }
   },
 })
 </script>

@@ -79,7 +79,13 @@
 </template>
 
 <script>
-import { computed, defineComponent, unref } from '@vue/composition-api'
+import {
+  computed,
+  defineComponent,
+  ref,
+  unref,
+  watchEffect,
+} from '@vue/composition-api'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { useNavigation } from '~/composable/useNavigation'
@@ -98,8 +104,13 @@ export default defineComponent({
     const { routeName, routeSlug } = useNavigation()
     const { formatPrice } = useFormat()
     const { bookProduct, products, selectedOptionDateString } = useShopifyCart()
+
+    const selectedProductOptions = ref([])
+    const pickedProduct = ref([])
+
     selectedOptionDateString.value = ''
     const category = routeName.split('-')[0]
+
     const dates = computed(() => [
       ...new Set(
         unref(products).filter(
@@ -110,6 +121,10 @@ export default defineComponent({
         )
       ),
     ])
+    const isProductSelected = computed(
+      () => selectedProductOptions.value.length !== 0
+    )
+
     const prices = computed(() => [
       ...new Set(
         unref(products)
@@ -121,42 +136,39 @@ export default defineComponent({
       ),
     ])
 
+    function setPickedCourse() {
+      pickedProduct.value = selectedProductOptions.value[0]
+      selectedOptionDateString.value =
+        selectedProductOptions.value[0]?.optionDateString
+    }
+
+    function setPickedProductOption() {
+      selectedProductOptions.value = dates.value.find(
+        (d) => d.optionDateString === selectedOptionDateString.value
+      )?.variants
+    }
+
+    watchEffect(() => {
+      if (selectedOptionDateString.value !== '') {
+        setPickedProductOption()
+      }
+      if (selectedProductOptions.value?.length !== 0) {
+        setPickedCourse()
+      }
+    })
+
     return {
       bookProduct,
       dates,
       formatPrice,
       page,
       prices,
+      isProductSelected,
+      selectedProductOptions,
+      pickedProduct,
+      setPickedCourse,
       selectedOptionDateString,
     }
-  },
-  data() {
-    return {
-      selectedProductOptions: [],
-      pickedProduct: [],
-    }
-  },
-  computed: {
-    isProductSelected() {
-      return this.selectedProductOptions.length !== 0
-    },
-  },
-  watch: {
-    selectedOptionDateString() {
-      this.selectedProductOptions = this.dates.find(
-        (d) => d.optionDateString === this.selectedOptionDateString
-      )?.variants
-    },
-    selectedProductOptions() {
-      this.setPickedCourse()
-    },
-  },
-  methods: {
-    setPickedCourse() {
-      this.pickedProduct = this.selectedProductOptions[0]
-      this.selectedOptionDateString =
-        this.selectedProductOptions[0]?.optionDateString
-    },
   },
 })
 </script>

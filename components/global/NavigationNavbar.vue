@@ -83,14 +83,19 @@ export default defineComponent({
     const { isFlyTirol, isWhiteCloud } = useData()
     const { isOpen } = useNavigation()
     const { cartItemsLength } = useShopifyCart()
-    return { cartItemsLength, isOpen, isFlyTirol, isWhiteCloud }
-  },
-  methods: {
-    toggleIfDropdownIsOpen() {
-      if (this.isOpen) {
-        this.isOpen = false
+
+    function toggleIfDropdownIsOpen() {
+      if (isOpen.value) {
+        isOpen.value = !isOpen.value
       }
-    },
+    }
+    return {
+      cartItemsLength,
+      isFlyTirol,
+      isOpen,
+      isWhiteCloud,
+      toggleIfDropdownIsOpen,
+    }
   },
 })
 </script>
