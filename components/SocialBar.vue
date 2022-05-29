@@ -118,7 +118,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 import InstagramIcon from './icons/InstagramIcon'
 import FacebookIcon from './icons/FacebookIcon'
 import OutlineMailIcon from './icons/OutlineMailIcon'
@@ -150,70 +150,85 @@ export default defineComponent({
     const websiteUrl = isFlyTirol
       ? 'https://fly-tirol.com'
       : 'https://white-cloud.tirol'
+
+    const encodedUrl = computed(() =>
+      encodeURI(`${websiteUrl}${page.value.path}`)
+    )
+    const encodeTitle = computed(() => encodeURI(page.value.title))
+    const encodeDescription = computed(() => encodeURI(page.value.description))
+
+    function openInstagram() {
+      const url = `https://www.instagram.com/${this.instagram}/`
+      window
+        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
+        .focus()
+    }
+
+    function openFacebook() {
+      const url = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl.value}&title=${encodeTitle.value}`
+      window
+        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
+        .focus()
+    }
+
+    function openMailContact() {
+      const url = `mailto:${mail}?subject=Kontakt über ${websiteUrl}`
+      window.location.replace(url)
+    }
+
+    function openMailShare() {
+      const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${encodeTitle.value} – auf ${website}&body=Hallo,%0D%0A%0D%0D%0A%0D${encodeDescription.value}%0D%0A%0D%0D%0A%0Dhttps://${encodedUrl.value}`
+      window.location.replace(url)
+    }
+
+    function openPhone() {
+      window.open(`tel:${phone}`)
+    }
+
+    function openTwitter() {
+      const url = `https://twitter.com/intent/tweet?size=large&url=${encodedUrl.value}&text=${encodeDescription.value}&via=${website}`
+      window
+        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
+        .focus()
+    }
+
+    function openYouTube() {
+      const url = `https://www.youtube.com/channel/UCcHbWKpX02FQI94FOHVvfQA`
+      window.open(url)
+    }
+
+    function openWhatsAppContact() {
+      const url = `whatsapp://send?phone=${phone}`
+      window.open(url)
+    }
+
+    function openWhatsAppShare() {
+      const url = `whatsapp://send?text=${encodedUrl.value}`
+      window.open(url)
+    }
+
     return {
+      encodeDescription,
+      encodedUrl,
+      encodeTitle,
       instagram,
       isFlyTirol,
       isWhiteCloud,
       mail,
+      openFacebook,
+      openInstagram,
+      openMailContact,
+      openMailShare,
+      openPhone,
+      openTwitter,
+      openWhatsAppContact,
+      openWhatsAppShare,
+      openYouTube,
       page,
       phone,
       website,
       websiteUrl,
     }
-  },
-  computed: {
-    encodedUrl() {
-      return encodeURI(`${this.websiteUrl}${this.page.path}`)
-    },
-    encodeTitle() {
-      return encodeURI(this.page.title)
-    },
-    encodeDescription() {
-      return encodeURI(this.page.description)
-    },
-  },
-  methods: {
-    openInstagram() {
-      const url = `https://www.instagram.com/${this.instagram}/`
-      window
-        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-        .focus()
-    },
-    openFacebook() {
-      const url = `https://www.facebook.com/sharer/sharer.php?u=${this.encodedUrl}&title=${this.encodeTitle}`
-      window
-        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-        .focus()
-    },
-    openMailContact() {
-      const url = `mailto:${this.mail}?subject=Kontakt über ${this.websiteUrl}`
-      window.location.replace(url)
-    },
-    openMailShare() {
-      const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${this.encodeTitle} – auf ${this.website}&body=Hallo,%0D%0A%0D%0D%0A%0D${this.encodeDescription}%0D%0A%0D%0D%0A%0Dhttps://${this.encodedUrl}`
-      window.location.replace(url)
-    },
-    openPhone() {
-      window.open(`tel:${this.phone}`)
-    },
-    openTwitter() {
-      const url = `https://twitter.com/intent/tweet?size=large&url=${this.encodedUrl}&text=${this.encodeDescription}&via=${this.website}`
-      window
-        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-        .focus()
-    },
-    openYouTube() {
-      const url = `https://www.youtube.com/channel/UCcHbWKpX02FQI94FOHVvfQA`
-      window.open(url)
-    },
-    openWhatsAppContact() {
-      const url = `whatsapp://send?phone=${this.phone}`
-      window.open(url)
-    },
-    openWhatsAppShare() {
-      const url = `whatsapp://send?text=${this.encodedUrl}`
-      window.open(url)
-    },
   },
 })
 </script>
