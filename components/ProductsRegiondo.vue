@@ -12,7 +12,9 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
   name: 'ProductsRegiondo',
   props: {
     flight: { type: String, required: true },
@@ -21,5 +23,5 @@ export default {
     const url = `/regiondo_whitecloud/bookingwidget_de_${props.flight}.html`
     return { url }
   },
-}
+})
 </script>
