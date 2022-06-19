@@ -1,6 +1,6 @@
-const fs = require('fs')
-const glob = require('glob')
-const sizeOf = require('image-size')
+import {existsSync, readFileSync, writeFile} from "fs"
+import glob from "glob"
+import sizeOf from "image-size"
 
 for (const nuxtPage of ['flytirol', 'whitecloud']) {
   const mediaJson =
@@ -17,8 +17,8 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
     nuxtPage === 'whitecloud' ? './static_whitecloud' : './static_flytirol'
 
   let dataMediaJson = {}
-  if (fs.existsSync(mediaJson)) {
-    dataMediaJson = JSON.parse(fs.readFileSync(mediaJson))
+  if (existsSync(mediaJson)) {
+    dataMediaJson = JSON.parse(readFileSync(mediaJson))
   }
 
   images
@@ -48,7 +48,7 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
     }, {})
 
   const json = JSON.stringify(dataSorted, null, 2)
-  fs.writeFile(mediaJson, json, (err) => {
+  writeFile(mediaJson, json, (err) => {
     if (err) throw err
   })
 }

@@ -5,6 +5,7 @@
   "description": "fly-tirol.com paragliding school Westendorf and white-cloud.tirol tandemflights",
   "author": "Daniel Naschberger",
   "precommit": "yarn lint",
+  "type": "module",
   "scripts": {
     "dev": "nuxt --hostname '0.0.0.0'",
     "build": "nuxt build",

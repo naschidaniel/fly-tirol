@@ -1,13 +1,13 @@
-const fs = require('fs')
-const glob = require('glob')
-const marked = require('marked')
+import {existsSync, readFileSync, writeFile} from "fs"
+import glob from "glob"
+import {marked} from "marked"
 
 function generate(nuxtPage) {
   const metadataJson = `./static_${nuxtPage}/metadata.json`
 
   let dataMetaDataJson = {}
-  if (fs.existsSync(metadataJson)) {
-    dataMetaDataJson = JSON.parse(fs.readFileSync(metadataJson))
+  if (existsSync(metadataJson)) {
+    dataMetaDataJson = JSON.parse(readFileSync(metadataJson))
   }
 
   const content = glob.sync(`./content_${nuxtPage}/**/*.md`).sort()
@@ -29,7 +29,7 @@ function generate(nuxtPage) {
     const category = folder === `content_${nuxtPage}` ? '' : folder
 
     // parse markdown files
-    const data = fs.readFileSync(filePath, 'utf8')
+    const data = readFileSync(filePath, 'utf8')
     const isContentImageGallery = data.includes('<ContentImageGallery ')
     const isContentPartnerCard = data.includes('<ContentPartnerCard ')
     let metadata = { path, category, slug }
@@ -49,7 +49,7 @@ function generate(nuxtPage) {
       .reduce((r, k) => ((r[k] = metadata[k]), r), {})
     dataMetaDataJson.push(metadata)
     const content = ['<template>', '<div>']
-    content.push(marked.marked(data.split('---')[2]).split(/\r\n|\n/))
+    content.push(marked(data.split('---')[2]).split(/\r\n|\n/))
     content.push(['</div>', '</template>'])
 
     if (isContentImageGallery || isContentPartnerCard) {
@@ -86,13 +86,13 @@ function generate(nuxtPage) {
       content.push(['</script>', ''])
     }
     const text = content.flat().join('\r\n')
-    fs.writeFile(filePath.replace('.md', '.vue'), text, (err) => {
+    writeFile(filePath.replace('.md', '.vue'), text, (err) => {
       if (err) throw err
     })
   })
 
   const json = JSON.stringify(dataMetaDataJson, null, 2)
-  fs.writeFile(metadataJson, json, (err) => {
+  writeFile(metadataJson, json, (err) => {
     if (err) throw err
   })
 }
