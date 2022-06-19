@@ -13,5 +13,38 @@ module.exports = {
     'plugin:nuxt/recommended',
   ],
   plugins: [],
-  rules: {},
+  rules: {
+    "rules": {
+      'vue/multi-word-component-names': ['error', {
+          'ignores': [
+            "Alert",
+            "Buchen",
+            "Calender",
+            "Cart",
+            "default",
+            "dsgvo",
+            "error",
+            "grundkurs",
+            "hoehenflug",
+            "hoehenflugkurs",
+            "impressum",
+            "index",
+            "kombikurs",
+            "kontakt",
+            "panoramaflug",
+            "partner",
+            "schnupperkurs",
+            "tagesbetreuung",
+            "tandemkurs",
+            "tandemsafari",
+            "team",
+            "termine",
+            "testflug",
+            "thermikfliegen",
+            "Version",
+            "Webcam",
+          ]
+        }]
+  }
+  },
 }
