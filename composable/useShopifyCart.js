@@ -5,8 +5,8 @@ import {
   useRouter,
   unref,
 } from '@nuxtjs/composition-api'
+import Client from 'shopify-buy'
 import { isCookieAgreement } from './useCookieAgreement'
-import Client from 'shopify-buy';
 
 const wrapProperty =
   (property, makeComputed = true) =>
@@ -20,9 +20,8 @@ const useCookies = wrapProperty('$cookies', false)
 const shopify = Client.buildClient({
   domain: process.env.SHOPIFY_DOMAIN,
   storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-  language: 'de-DE'
-});
-
+  language: 'de-DE',
+})
 
 const checkout = ref({})
 const lineItemsChanged = ref([])

@@ -1,13 +1,13 @@
+import Client from 'shopify-buy'
 import { useShopifyCalender } from './useShopifyCalender'
 import { useFormat } from './useFormat'
 import { products } from './useShopifyCart'
-import Client from 'shopify-buy';
 
 const shopify = Client.buildClient({
-    domain: process.env.SHOPIFY_DOMAIN,
-    storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-    language: 'de-DE'
-});
+  domain: process.env.SHOPIFY_DOMAIN,
+  storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+  language: 'de-DE',
+})
 
 export function useFetchShopify() {
   const format = useFormat()
