@@ -32,8 +32,8 @@ const instagram = isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding'
 const mail = isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol'
 const phone = isFlyTirol ? '+436766422088' : '+4368181589568'
 const phoneString = isFlyTirol ? '+43 676 6422088' : '+43 681 81589568'
-const SHOPIFY_DOMAIN = process.env.SHOPIFY_DOMAIN
-const SHOPIFY_ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN
+const shopifyDomain = process.env.SHOPIFY_DOMAIN
+const shopifyAccessToken = process.env.SHOPIFY_ACCESS_TOKEN
 const website = isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol'
 const websiteUrl = isFlyTirol
   ? 'https://fly-tirol.com'
@@ -125,8 +125,8 @@ export default {
     mail,
     phone,
     phoneString,
-    SHOPIFY_DOMAIN,
-    SHOPIFY_ACCESS_TOKEN,
+    shopifyDomain,
+    shopifyAccessToken,
     website,
     websiteUrl,
   },
