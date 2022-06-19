@@ -1,20 +1,16 @@
-import { computed, getCurrentInstance } from '@nuxtjs/composition-api'
 import { useShopifyCalender } from './useShopifyCalender'
 import { useFormat } from './useFormat'
 import { products } from './useShopifyCart'
+import Client from 'shopify-buy';
 
-const wrapProperty =
-  (property, makeComputed = true) =>
-  () => {
-    const vm = getCurrentInstance().proxy
-    return makeComputed ? computed(() => vm[property]) : vm[property]
-  }
-
-const useShopify = wrapProperty('$shopify', false)
+const shopify = Client.buildClient({
+    domain: process.env.SHOPIFY_DOMAIN,
+    storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+    language: 'de-DE'
+});
 
 export function useFetchShopify() {
   const format = useFormat()
-  const shopify = useShopify()
   const shopifyCalender = useShopifyCalender()
 
   async function initShop() {

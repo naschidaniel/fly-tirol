@@ -6,6 +6,7 @@ import {
   unref,
 } from '@nuxtjs/composition-api'
 import { isCookieAgreement } from './useCookieAgreement'
+import Client from 'shopify-buy';
 
 const wrapProperty =
   (property, makeComputed = true) =>
@@ -15,7 +16,13 @@ const wrapProperty =
   }
 
 const useCookies = wrapProperty('$cookies', false)
-const useShopify = wrapProperty('$shopify', false)
+
+const shopify = Client.buildClient({
+  domain: process.env.SHOPIFY_DOMAIN,
+  storefrontAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+  language: 'de-DE'
+});
+
 
 const checkout = ref({})
 const lineItemsChanged = ref([])
@@ -25,7 +32,6 @@ export const products = ref([])
 export function useShopifyCart() {
   const cookies = useCookies()
   const router = useRouter()
-  const shopify = useShopify()
 
   const cartItems = computed(() => checkout.value?.lineItems)
 
