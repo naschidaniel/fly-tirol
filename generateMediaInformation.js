@@ -1,6 +1,6 @@
-import {existsSync, readFileSync, writeFile} from "fs"
-import glob from "glob"
-import sizeOf from "image-size"
+import { existsSync, readFileSync, writeFile } from 'fs'
+import glob from 'glob'
+import sizeOf from 'image-size'
 
 for (const nuxtPage of ['flytirol', 'whitecloud']) {
   const mediaJson =

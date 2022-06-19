@@ -1,6 +1,6 @@
-import {existsSync, readFileSync, writeFile} from "fs"
-import glob from "glob"
-import {marked} from "marked"
+import { existsSync, readFileSync, writeFile } from 'fs'
+import glob from 'glob'
+import { marked } from 'marked'
 
 function generate(nuxtPage) {
   const metadataJson = `./static_${nuxtPage}/metadata.json`
