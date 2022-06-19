@@ -36,7 +36,7 @@ $ yarn generateMediaInformation
 
 ### Shopify
 
-To display data from Shopify the module [Gomah/nuxt-shopify](https://github.com/Gomah/nuxt-shopify) is used. For local development the `SHOPIFY_DOMAIN` and `SHOPIFY_ACCESS_TOKEN` is needed.
+To display data from Shopify the [Shopify JavaScript Buy SDK](https://www.npmjs.com/package/shopify-buy) is used. For local development the `SHOPIFY_DOMAIN` and `SHOPIFY_ACCESS_TOKEN` is needed.
 
 ```
 echo 'SHOPIFY_DOMAIN="MyPersonalShopShopifyUrl"' > .env

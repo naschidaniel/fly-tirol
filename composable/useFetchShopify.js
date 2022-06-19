@@ -1,23 +1,21 @@
-import { computed, getCurrentInstance } from '@nuxtjs/composition-api'
+import Client from 'shopify-buy'
 import { useShopifyCalender } from './useShopifyCalender'
+import { isFlyTirol, shopifyDomain, shopifyAccessToken } from './useData'
 import { useFormat } from './useFormat'
 import { products } from './useShopifyCart'
 
-const wrapProperty =
-  (property, makeComputed = true) =>
-  () => {
-    const vm = getCurrentInstance().proxy
-    return makeComputed ? computed(() => vm[property]) : vm[property]
-  }
-
-const useShopify = wrapProperty('$shopify', false)
+export const shopify = Client.buildClient({
+  domain: shopifyDomain,
+  storefrontAccessToken: shopifyAccessToken,
+  language: 'de-DE',
+})
 
 export function useFetchShopify() {
   const format = useFormat()
-  const shopify = useShopify()
   const shopifyCalender = useShopifyCalender()
 
   async function initShop() {
+    if (!isFlyTirol) return
     // do not show Courses older then 14 days
     const maxEndDate = new Date()
     maxEndDate.setDate(maxEndDate.getDate() - 14)

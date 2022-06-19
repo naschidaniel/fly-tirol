@@ -38,7 +38,7 @@
     "heroicons": "1.0.6",
     "leaflet": "1.8.0",
     "nuxt": "2.15.8",
-    "nuxt-shopify": "1.14.0",
+    "shopify-buy": "^2.15.1",
     "simple-icons": "7.1.0"
   },
   "devDependencies": {

@@ -5,7 +5,9 @@ import {
   useRouter,
   unref,
 } from '@nuxtjs/composition-api'
+import { shopify } from './useFetchShopify'
 import { isCookieAgreement } from './useCookieAgreement'
+import { isFlyTirol } from './useData'
 
 const wrapProperty =
   (property, makeComputed = true) =>
@@ -15,7 +17,6 @@ const wrapProperty =
   }
 
 const useCookies = wrapProperty('$cookies', false)
-const useShopify = wrapProperty('$shopify', false)
 
 const checkout = ref({})
 const lineItemsChanged = ref([])
@@ -25,7 +26,6 @@ export const products = ref([])
 export function useShopifyCart() {
   const cookies = useCookies()
   const router = useRouter()
-  const shopify = useShopify()
 
   const cartItems = computed(() => checkout.value?.lineItems)
 
@@ -66,7 +66,7 @@ export function useShopifyCart() {
   }
 
   async function loadCheckout() {
-    if (isCookieAgreement.value) {
+    if (isFlyTirol && isCookieAgreement.value) {
       const checkoutId = cookies.get('FlyTirol-checkoutId')
       try {
         const fetchedCheckout = await shopify.checkout.fetch(checkoutId)
