@@ -5,6 +5,7 @@ export const shopifyAccessToken = process.env.shopifyAccessToken
 export function useData() {
   const buildTime = process.env.buildTime
   const instagram = process.env.instagram
+  const isDevelopment = process.env.NODE_ENV === 'development'
   const isWhiteCloud = process.env.isWhiteCloud
   const licenses = process.env.licenses
   const mail = process.env.mail
@@ -16,6 +17,7 @@ export function useData() {
   return {
     buildTime,
     instagram,
+    isDevelopment,
     isFlyTirol,
     isWhiteCloud,
     licenses,

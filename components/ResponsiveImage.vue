@@ -1,15 +1,23 @@
 <template>
   <div ref="imageBox" :class="boxClass">
-    <img
-      v-if="responsiveUrl != ''"
-      :loading="isLazy ? 'lazy' : 'auto'"
-      :class="imgClass"
-      :src="responsiveUrl"
-      :width="width"
-      :height="height"
-      :alt="imageInformation['alt']"
-      :title="imageInformation['title']"
-    />
+    <picture>
+      <source
+        v-if="!isDevelopment"
+        :srcset="responsiveUrlWebp"
+        type="image/webp"
+      />
+      <source :srcset="responsiveUrl" type="image/jpeg" />
+      <img
+        v-if="responsiveUrl != ''"
+        :loading="isLazy ? 'lazy' : 'auto'"
+        :class="imgClass"
+        :src="responsiveUrl"
+        :width="width"
+        :height="height"
+        :alt="imageInformation['alt']"
+        :title="imageInformation['title']"
+      />
+    </picture>
   </div>
 </template>
 
@@ -28,8 +36,8 @@ export default defineComponent({
     isThumbnail: { type: Boolean, default: false, required: false },
   },
   setup(props) {
-    const { buildTime } = useData()
-    const { devicePixelRatio, isWebpSupported, media } = useMedia()
+    const { buildTime, isDevelopment } = useData()
+    const { devicePixelRatio, media } = useMedia()
 
     const imageBox = ref(null) // template ref
     const imageSizeTailwindClass = ref(undefined)
@@ -60,9 +68,10 @@ export default defineComponent({
         : { alt: '', title: '', url: props.picture, dimensions: undefined }
     })
 
+    const extension = imageInformation.value.dimensions.type
     const responsiveUrl = computed(() => {
-      const extension = imageInformation.value.url?.split('.')?.reverse()[0]
-      if (process.env.NODE_ENV === 'development' || extension === undefined) {
+      if (!imageSizeTailwindClass.value) return ''
+      if (isDevelopment) {
         return `${imageInformation.value.url}?v=${buildTime}`
       }
       const filePostFix =
@@ -74,14 +83,14 @@ export default defineComponent({
           ? `${imageSizeTailwindClass.value}_thumbnail.${extension}`
           : `${imageSizeTailwindClass.value}.${extension}`
 
-      let responsiveUrl = imageInformation.value.url.replace(
+      return imageInformation.value.url.replace(
         `.${extension}`,
-        `_${filePostFix}`
+        `_${filePostFix}?v=${buildTime}`
       )
-      if (isWebpSupported.value) {
-        responsiveUrl = responsiveUrl.replace(`.${extension}`, '.webp')
-      }
-      return `${responsiveUrl}?v=${buildTime}`
+    })
+
+    const responsiveUrlWebp = computed(() => {
+      return responsiveUrl.value.replace(extension, 'webp')
     })
 
     function getImageSizeTailwindClass() {
@@ -103,11 +112,8 @@ export default defineComponent({
           : '2xl'
       width.value = boxSizes[imageSizeTailwindClass.value]
       height.value = props.isThumbnail
-        ? width.width
-        : Math.round(
-            boxSizes[imageSizeTailwindClass.value] /
-              imageInformation.value?.dimensions?.ratio
-          )
+        ? width.value
+        : Math.round(width.value / imageInformation.value?.dimensions?.ratio)
     }
 
     return {
@@ -115,7 +121,9 @@ export default defineComponent({
       height,
       imageBox,
       imageInformation,
+      isDevelopment,
       responsiveUrl,
+      responsiveUrlWebp,
       width,
     }
   },

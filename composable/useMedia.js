@@ -3,44 +3,11 @@ import mediaFlyTirol from '~/static_flytirol/media.json'
 import mediaWhiteCloud from '~/static_whitecloud/media.json'
 
 const media = process.env.isWhiteCloud ? mediaWhiteCloud : mediaFlyTirol
-
-const isWebpSupported = ref(undefined)
 const devicePixelRatio = ref(undefined)
 
 export function useMedia() {
-  function setWebPSupport(value) {
-    if (value === true) {
-      // eslint-disable-next-line no-console
-      console.info('WebP is supported by the browser')
-    } else {
-      // eslint-disable-next-line no-console
-      console.warn('WebP is not supported by the browser')
-    }
-    isWebpSupported.value = value
-  }
-
   function setDevicePixelRatio() {
     devicePixelRatio.value = window && window?.devicePixelRatio > 1.5 ? 2 : 1
-  }
-
-  function canUseWebP() {
-    if (isWebpSupported.value !== undefined) {
-      return
-    }
-    const isFirefoxVersionSupported =
-      parseInt(navigator.userAgent?.split('Firefox/')[1]) >= 65.0
-    if (isFirefoxVersionSupported) {
-      isWebpSupported.value = true
-      return
-    }
-
-    const elem = document.createElement('canvas')
-    if (elem.getContext && elem.getContext('2d')) {
-      isWebpSupported.value =
-        elem.toDataURL('image/webp').indexOf('data:image/webp') === 0
-      return
-    }
-    isWebpSupported.value = false
   }
 
   function getScreenSize() {
@@ -73,14 +40,11 @@ export function useMedia() {
 
   onMounted(() => {
     setDevicePixelRatio()
-    canUseWebP()
   })
 
   return {
     devicePixelRatio,
-    isWebpSupported,
     media,
     getScreenSize,
-    setWebPSupport,
   }
 }
