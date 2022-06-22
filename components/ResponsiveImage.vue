@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import { defineComponent, computed, ref } from '@vue/composition-api'
+import { defineComponent, computed, ref, onMounted } from '@vue/composition-api'
 import { useData } from '~/composable/useData'
 import { useMedia } from '~/composable/useMedia'
 
@@ -116,8 +116,11 @@ export default defineComponent({
         : Math.round(width.value / imageInformation.value?.dimensions?.ratio)
     }
 
+    onMounted(() => {
+      getImageSizeTailwindClass()
+    })
+
     return {
-      getImageSizeTailwindClass,
       height,
       imageBox,
       imageInformation,
@@ -126,9 +129,6 @@ export default defineComponent({
       responsiveUrlWebp,
       width,
     }
-  },
-  mounted() {
-    this.getImageSizeTailwindClass()
   },
 })
 </script>
