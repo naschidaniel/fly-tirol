@@ -16,9 +16,9 @@ export function useFetchShopify() {
 
   async function initShop() {
     if (!isFlyTirol) return
-    // do not show Courses older then 14 days
-    const maxEndDate = new Date()
-    maxEndDate.setDate(maxEndDate.getDate() - 14)
+    // do not show Courses older then 21 days
+    const maxStartDate = new Date()
+    maxStartDate.setDate(maxStartDate.getDate() - 21)
 
     const shopifyProducts = await shopify.product.fetchAll()
     const fetchedProducts = shopifyProducts.flatMap((p) =>
@@ -116,7 +116,7 @@ export function useFetchShopify() {
             s.selectedId = s.id
           }
         }
-        if (s.endDate < maxEndDate) {
+        if (s.startDate < maxStartDate) {
           s.isShowProduct = false
         }
       } catch (e) {
