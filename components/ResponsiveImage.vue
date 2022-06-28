@@ -100,12 +100,20 @@ export default defineComponent({
       return responsiveUrl.value.replace(extension, 'webp')
     })
 
-    const responsiveTagUrl = computed(() => {
-      return props.isPreload ? responsiveUrl.value : ''
+    const responsiveTagType = computed(() => {
+      return props.isPreload && !isDevelopment
+        ? 'image/webp'
+        : props.isPreload
+        ? extension
+        : ''
     })
 
-    const responsiveTagUrlWebp = computed(() => {
-      return props.isPreload && !isDevelopment ? responsiveUrlWebp.value : ''
+    const responsiveTagUrl = computed(() => {
+      return props.isPreload && !isDevelopment
+        ? responsiveUrlWebp.value
+        : props.isPreload
+        ? responsiveUrl.value
+        : ''
     })
 
     function getImageSizeTailwindClass() {
@@ -140,13 +148,7 @@ export default defineComponent({
         {
           rel: 'preload',
           as: 'image',
-          type: 'image/webp',
-          href: `${responsiveTagUrlWebp.value}`,
-        },
-        {
-          rel: 'preload',
-          as: 'image',
-          type: 'image/jpeg',
+          type: `${responsiveTagType.value}`,
           href: `${responsiveTagUrl.value}`,
         },
       ],
@@ -160,8 +162,8 @@ export default defineComponent({
       isDevelopment,
       responsiveUrl,
       responsiveTagUrl,
+      responsiveTagType,
       responsiveUrlWebp,
-      responsiveTagUrlWebp,
       width,
     }
   },
