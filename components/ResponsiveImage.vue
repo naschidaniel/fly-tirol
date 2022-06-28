@@ -139,12 +139,14 @@ export default defineComponent({
       link: [
         {
           rel: 'preload',
-          as: 'image/webp',
+          as: 'image',
+          type: 'image/webp',
           href: `${responsiveTagUrlWebp.value}`,
         },
         {
           rel: 'preload',
-          as: 'image/jpeg',
+          as: 'image',
+          type: 'image/jpeg',
           href: `${responsiveTagUrl.value}`,
         },
       ],
