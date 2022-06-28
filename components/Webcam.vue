@@ -16,6 +16,8 @@
       >
         <img
           src="https://wtvpict.feratel.com/picture/38/5687.jpeg?&amp;design=v3"
+          width="496px"
+          height="279px"
           alt="Gipfel Hohe Salve"
           rel="”noreferrer”"
           class="w-full mx-auto"
