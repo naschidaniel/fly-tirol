@@ -9,7 +9,7 @@
       <source :srcset="responsiveUrl" type="image/jpeg" />
       <img
         v-if="responsiveUrl != ''"
-        :loading="isLazy ? 'lazy' : 'auto'"
+        :loading="isLazy ? 'lazy' : 'eager'"
         :class="imgClass"
         :src="responsiveUrl"
         :width="width"
@@ -101,11 +101,11 @@ export default defineComponent({
     })
 
     const responsiveTagUrl = computed(() => {
-      return props.isPreload && !isDevelopment ? responsiveUrl.value : ''
+      return props.isPreload ? responsiveUrl.value : ''
     })
 
     const responsiveTagUrlWebp = computed(() => {
-      return props.isPreload ? responsiveUrlWebp.value : ''
+      return props.isPreload && !isDevelopment ? responsiveUrlWebp.value : ''
     })
 
     function getImageSizeTailwindClass() {
