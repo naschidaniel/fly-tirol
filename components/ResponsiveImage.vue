@@ -22,7 +22,13 @@
 </template>
 
 <script>
-import { defineComponent, computed, ref, onMounted } from '@vue/composition-api'
+import {
+  defineComponent,
+  computed,
+  ref,
+  onMounted,
+  useMeta,
+} from '@nuxtjs/composition-api'
 import { useData } from '~/composable/useData'
 import { useMedia } from '~/composable/useMedia'
 
@@ -33,6 +39,7 @@ export default defineComponent({
     imgClass: { type: String, default: '', required: false },
     fixSize: { type: String, default: undefined, required: false },
     isLazy: { type: Boolean, default: true, required: false },
+    isPreload: { type: Boolean, default: false, required: false },
     isThumbnail: { type: Boolean, default: false, required: false },
   },
   setup(props) {
@@ -93,6 +100,14 @@ export default defineComponent({
       return responsiveUrl.value.replace(extension, 'webp')
     })
 
+    const responsiveTagUrl = computed(() => {
+      return props.isPreload && !isDevelopment ? responsiveUrl.value : ''
+    })
+
+    const responsiveTagUrlWebp = computed(() => {
+      return props.isPreload ? responsiveUrlWebp.value : ''
+    })
+
     function getImageSizeTailwindClass() {
       const imageBoxWidth = imageBox.value?.clientWidth
       const imageSize = imageBoxWidth * devicePixelRatio.value
@@ -120,15 +135,34 @@ export default defineComponent({
       getImageSizeTailwindClass()
     })
 
+    useMeta(() => ({
+      link: [
+        {
+          rel: 'preload',
+          as: 'image/webp',
+          href: `${responsiveTagUrlWebp.value}`,
+        },
+        {
+          rel: 'preload',
+          as: 'image/jpeg',
+          href: `${responsiveTagUrl.value}`,
+        },
+      ],
+    }))
+
     return {
       height,
       imageBox,
       imageInformation,
+      extension,
       isDevelopment,
       responsiveUrl,
+      responsiveTagUrl,
       responsiveUrlWebp,
+      responsiveTagUrlWebp,
       width,
     }
   },
+  head: {},
 })
 </script>
