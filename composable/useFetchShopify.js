@@ -4,18 +4,20 @@ import { isFlyTirol, shopifyDomain, shopifyAccessToken } from './useData'
 import { useFormat } from './useFormat'
 import { products } from './useShopifyCart'
 
-export const shopify = Client.buildClient({
-  domain: shopifyDomain,
-  storefrontAccessToken: shopifyAccessToken,
-  language: 'de-DE',
-})
+export const shopify = isFlyTirol
+  ? Client.buildClient({
+      domain: shopifyDomain,
+      storefrontAccessToken: shopifyAccessToken,
+      language: 'de-DE',
+    })
+  : undefined
 
 export function useFetchShopify() {
   const format = useFormat()
   const shopifyCalender = useShopifyCalender()
 
   async function initShop() {
-    if (!isFlyTirol) return
+    if (shopify === undefined) return
     // do not show Courses older then 21 days
     const maxStartDate = new Date()
     maxStartDate.setDate(maxStartDate.getDate() - 21)

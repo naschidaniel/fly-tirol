@@ -46,7 +46,7 @@ export function useShopifyCart() {
       },
     ]
     const checkoutId = unref(checkout).id
-    await shopify.checkout
+    await shopify?.checkout
       .addLineItems(checkoutId, lineItemsToAdd)
       .then((checkout) => {
         setCheckout(checkout)
@@ -55,7 +55,7 @@ export function useShopifyCart() {
   }
 
   function setCheckout(change) {
-    if (isCookieAgreement.value) {
+    if (isCookieAgreement.value && shopify !== undefined) {
       cookies.set('FlyTirol-checkoutId', change.id, {
         path: '/',
         maxAge: 24 * 7 * 1,
@@ -69,7 +69,7 @@ export function useShopifyCart() {
     if (isFlyTirol && isCookieAgreement.value) {
       const checkoutId = cookies.get('FlyTirol-checkoutId')
       try {
-        const fetchedCheckout = await shopify.checkout.fetch(checkoutId)
+        const fetchedCheckout = await shopify?.checkout.fetch(checkoutId)
         const createdAt =
           Date.parse(fetchedCheckout.createdAt) + 24 * 60 * 60 * 1000
         if (
@@ -90,7 +90,7 @@ export function useShopifyCart() {
         )
       }
     }
-    const createdCheckout = await shopify.checkout.create()
+    const createdCheckout = await shopify?.checkout.create()
     setCheckout(createdCheckout)
   }
 
@@ -113,7 +113,7 @@ export function useShopifyCart() {
       .filter((item) => item.quantity === 0)
       .map((item) => item.id)
     if (lineItemsToRemove.length !== 0) {
-      await shopify.checkout
+      await shopify?.checkout
         .removeLineItems(checkoutId, lineItemsToRemove)
         .then((c) => {
           setCheckout(c)
@@ -139,7 +139,7 @@ export function useShopifyCart() {
       (item) => item.quantity !== 0
     )
     if (lineItemsToUpdate.length !== 0) {
-      await shopify.checkout
+      await shopify?.checkout
         .updateLineItems(checkoutId, lineItemsToUpdate)
         .then((c) => {
           setCheckout(c)
