@@ -8,6 +8,7 @@
         img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
         :is-lazy="false"
         :picture="picture"
+        :is-preload="true"
       />
     </div>
     <div class="bg-gray-100 nuxt-content lg:pt-10">
@@ -33,7 +34,6 @@
               box-class="w-full h-full overflow-hidden"
               img-class="rounded shadow-md object-cover object-center w-full h-full"
               picture="/media/tandemfliegen_salve.jpg"
-              :is-preload="true"
             />
           </div>
           <div class="w-full lg:w-3/5 lg:pl-2 mt-4 lg:mt-0">
