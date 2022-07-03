@@ -30,12 +30,12 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { useCookieAgreement } from '~/composable/useCookieAgreement'
+import { useFlyCookies } from '~/composable/useFlyCookies'
 
 export default defineComponent({
   name: 'SiteCookieBanner',
   setup() {
-    const { isCookieAgreement, acceptCookieAgreement } = useCookieAgreement()
+    const { isCookieAgreement, acceptCookieAgreement } = useFlyCookies()
     return { isCookieAgreement, acceptCookieAgreement }
   },
 })

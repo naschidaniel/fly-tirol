@@ -18,7 +18,7 @@ const useCookies = wrapProperty('$cookies', false)
 const allCookies = ref({})
 export const isCookieAgreement = ref(false)
 
-export function useCookieAgreement() {
+export function useFlyCookies() {
   const cookies = useCookies()
 
   watchEffect(() => {

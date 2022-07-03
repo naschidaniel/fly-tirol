@@ -1,6 +1,6 @@
 import { computed, ref, useRouter, unref } from '@nuxtjs/composition-api'
 import { shopify } from './useFetchShopify'
-import { useCookieAgreement } from './useCookieAgreement'
+import { useFlyCookies } from './useFlyCookies'
 import { isFlyTirol } from './useData'
 
 const checkout = ref({})
@@ -9,7 +9,7 @@ const selectedOptionDateString = ref('')
 export const products = ref([])
 
 export function useShopifyCart() {
-  const cookies = useCookieAgreement()
+  const cookies = useFlyCookies()
   const router = useRouter()
 
   const cartItems = computed(() => checkout.value?.lineItems)

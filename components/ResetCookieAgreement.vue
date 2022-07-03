@@ -30,13 +30,12 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { useCookieAgreement } from '~/composable/useCookieAgreement'
+import { useFlyCookies } from '~/composable/useFlyCookies'
 
 export default defineComponent({
   name: 'ResetCookieAgreement',
   setup() {
-    const { allCookies, isCookieAgreement, removeAllCookies } =
-      useCookieAgreement()
+    const { allCookies, isCookieAgreement, removeAllCookies } = useFlyCookies()
     return { allCookies, isCookieAgreement, removeAllCookies }
   },
 })
