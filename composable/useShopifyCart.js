@@ -1,22 +1,7 @@
-import {
-  computed,
-  getCurrentInstance,
-  ref,
-  useRouter,
-  unref,
-} from '@nuxtjs/composition-api'
+import { computed, ref, useRouter, unref } from '@nuxtjs/composition-api'
 import { shopify } from './useFetchShopify'
-import { isCookieAgreement } from './useCookieAgreement'
+import { useCookieAgreement } from './useCookieAgreement'
 import { isFlyTirol } from './useData'
-
-const wrapProperty =
-  (property, makeComputed = true) =>
-  () => {
-    const vm = getCurrentInstance().proxy
-    return makeComputed ? computed(() => vm[property]) : vm[property]
-  }
-
-const useCookies = wrapProperty('$cookies', false)
 
 const checkout = ref({})
 const lineItemsChanged = ref([])
@@ -24,7 +9,7 @@ const selectedOptionDateString = ref('')
 export const products = ref([])
 
 export function useShopifyCart() {
-  const cookies = useCookies()
+  const cookies = useCookieAgreement()
   const router = useRouter()
 
   const cartItems = computed(() => checkout.value?.lineItems)
@@ -55,19 +40,15 @@ export function useShopifyCart() {
   }
 
   function setCheckout(change) {
-    if (isCookieAgreement.value && shopify !== undefined) {
-      cookies.set('FlyTirol-checkoutId', change.id, {
-        path: '/',
-        maxAge: 24 * 7 * 1,
-        sameSite: true,
-      })
+    if (cookies.isCookieAgreement.value && shopify !== undefined) {
+      cookies.setCheckoutIdCookie(change.id)
     }
     checkout.value = change
   }
 
   async function loadCheckout() {
-    if (isFlyTirol && isCookieAgreement.value) {
-      const checkoutId = cookies.get('FlyTirol-checkoutId')
+    if (isFlyTirol && cookies.isCookieAgreement.value) {
+      const checkoutId = cookies.getCheckoutIdCookie()
       try {
         const fetchedCheckout = await shopify?.checkout.fetch(checkoutId)
         const createdAt =
@@ -83,7 +64,7 @@ export function useShopifyCart() {
           return
         }
       } catch (e) {
-        cookies.remove('FlyTirol-checkoutId')
+        cookies.removeCheckoutIdCookie()
         // eslint-disable-next-line no-console
         console.error(
           'The CheckoutId could not be loaded from the local storage.'
@@ -130,7 +111,7 @@ export function useShopifyCart() {
   }
 
   function resetCart() {
-    cookies.remove('FlyTirol-checkoutId')
+    cookies.removeCheckoutIdCookie()
     loadCheckout()
   }
 
