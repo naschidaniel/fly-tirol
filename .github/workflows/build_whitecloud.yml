@@ -24,7 +24,7 @@ jobs:
       - name: build
         run: yarn build
       - name: get image-optimizer
-        run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/main/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
+        run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.3.4/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: delete ./dist/media
         run: rm -rf ./dist/media
       - name: optimize-images:whitecloud:2xs
