@@ -1,25 +1,19 @@
 <template>
-  <nuxt-link :to="to" exact class="navbar--link" @click="isOpen = !isOpen">
+  <NuxtLink :to="to" exact class="navbar--link" @click="isOpen = !isOpen">
     {{ name }}
     <span class="decorator"></span>
-  </nuxt-link>
+  </NuxtLink>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 import { useNavigation } from '~/composable/useNavigation'
 
-export default defineComponent({
-  name: 'NavigationDropdownLink',
-  props: {
-    name: { type: String, required: true },
-    to: { type: String, required: true },
-  },
-  setup() {
-    const { isOpen } = useNavigation()
-    return { isOpen }
-  },
+defineProps({
+  name: { type: String, required: true },
+  to: { type: String, required: true },
 })
+const { isOpen } = useNavigation()
 </script>
 
 <style scoped>

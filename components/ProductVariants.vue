@@ -78,10 +78,10 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import {
   computed,
-  defineComponent,
+  defineProps,
   ref,
   unref,
   watchEffect,
@@ -93,82 +93,62 @@ import { useFormat } from '~/composable/useFormat'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default defineComponent({
-  name: 'ProductBookCourse',
-  components: { Alert, ProductDetails },
-  props: {
-    isCourse: { type: Boolean, required: true },
-  },
-  setup() {
-    const { page } = useMetaTags()
-    const { routeName, routeSlug } = useNavigation()
-    const { formatPrice } = useFormat()
-    const { bookProduct, products, selectedOptionDateString } = useShopifyCart()
+defineProps({
+  isCourse: { type: Boolean, required: true },
+})
+const { page } = useMetaTags()
+const { routeName, routeSlug } = useNavigation()
+const { formatPrice } = useFormat()
+const { bookProduct, products, selectedOptionDateString } = useShopifyCart()
 
-    const selectedProductOptions = ref([])
-    const pickedProduct = ref([])
+const selectedProductOptions = ref([])
+const pickedProduct = ref([])
 
-    selectedOptionDateString.value = ''
-    const category = routeName.split('-')[0]
+selectedOptionDateString.value = ''
+const category = routeName.split('-')[0]
 
-    const dates = computed(() => [
-      ...new Set(
-        unref(products).filter(
-          (s) =>
-            s.isShowProduct &&
-            s.productType.toLowerCase() === category &&
-            s.slug === routeSlug
-        )
-      ),
-    ])
-    const isProductSelected = computed(
-      () => selectedProductOptions.value.length !== 0
+const dates = computed(() => [
+  ...new Set(
+    unref(products).filter(
+      (s) =>
+        s.isShowProduct &&
+        s.productType.toLowerCase() === category &&
+        s.slug === routeSlug
     )
+  ),
+])
+const isProductSelected = computed(
+  () => selectedProductOptions.value.length !== 0
+)
 
-    const prices = computed(() => [
-      ...new Set(
-        unref(products)
-          .filter(
-            (s) =>
-              s.productType.toLowerCase() === category && s.slug === routeSlug
-          )
-          .flatMap((c) => c.productPrices)
-      ),
-    ])
+const prices = computed(() => [
+  ...new Set(
+    unref(products)
+      .filter(
+        (s) => s.productType.toLowerCase() === category && s.slug === routeSlug
+      )
+      .flatMap((c) => c.productPrices)
+  ),
+])
 
-    function setPickedCourse() {
-      pickedProduct.value = selectedProductOptions.value[0]
-      selectedOptionDateString.value =
-        selectedProductOptions.value[0]?.optionDateString
-    }
+function setPickedCourse() {
+  pickedProduct.value = selectedProductOptions.value[0]
+  selectedOptionDateString.value =
+    selectedProductOptions.value[0]?.optionDateString
+}
 
-    function setPickedProductOption() {
-      selectedProductOptions.value = dates.value.find(
-        (d) => d.optionDateString === selectedOptionDateString.value
-      )?.variants
-    }
+function setPickedProductOption() {
+  selectedProductOptions.value = dates.value.find(
+    (d) => d.optionDateString === selectedOptionDateString.value
+  )?.variants
+}
 
-    watchEffect(() => {
-      if (selectedOptionDateString.value !== '') {
-        setPickedProductOption()
-      }
-      if (selectedProductOptions.value?.length !== 0) {
-        setPickedCourse()
-      }
-    })
-
-    return {
-      bookProduct,
-      dates,
-      formatPrice,
-      page,
-      prices,
-      isProductSelected,
-      selectedProductOptions,
-      pickedProduct,
-      setPickedCourse,
-      selectedOptionDateString,
-    }
-  },
+watchEffect(() => {
+  if (selectedOptionDateString.value !== '') {
+    setPickedProductOption()
+  }
+  if (selectedProductOptions.value?.length !== 0) {
+    setPickedCourse()
+  }
 })
 </script>

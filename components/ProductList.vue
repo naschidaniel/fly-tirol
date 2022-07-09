@@ -7,7 +7,7 @@
       <span class="text-lg font-bold"
         >Vielen Dank für dein Interesse. Leider sind die Produkte noch nicht
         online. Gerne kannst du mit uns
-        <nuxt-link class="underline" to="/kontakt">kontakt</nuxt-link>
+        <NuxtLink class="underline" to="/kontakt">kontakt</NuxtLink>
         aufnehmen.</span
       >
     </div>
@@ -27,18 +27,11 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import ProductCard from './ProductCard.vue'
 import { useNavigation } from '~/composable/useNavigation'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default defineComponent({
-  components: { ProductCard },
-  setup() {
-    const { pages } = useMetaTags()
-    const { routeName } = useNavigation()
-    return { routeName, pages }
-  },
-})
+const { pages } = useMetaTags()
+const { routeName } = useNavigation()
 </script>

@@ -71,17 +71,15 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 
-export default defineComponent({
-  props: {
-    address: { type: Object, required: false, default: () => {} },
-    headline: { type: String, required: true },
-    preHeadline: { type: String, required: true },
-    picture: { type: String, required: false, default: '' },
-    link1: { type: Object, required: false, default: () => {} },
-    link2: { type: Object, required: false, default: () => {} },
-  },
+defineProps({
+  address: { type: Object, required: false, default: () => {} },
+  headline: { type: String, required: true },
+  preHeadline: { type: String, required: true },
+  picture: { type: String, required: false, default: '' },
+  link1: { type: Object, required: false, default: () => {} },
+  link2: { type: Object, required: false, default: () => {} },
 })
 </script>

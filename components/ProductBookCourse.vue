@@ -33,47 +33,34 @@
   </div>
 </template>
 
-<script>
-import { computed, defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { computed, defineProps } from '@nuxtjs/composition-api'
 import ProductVariants from '@/components/ProductVariants.vue'
 import { useMedia } from '~/composable/useMedia'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCalender } from '~/composable/useShopifyCalender'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 
-export default defineComponent({
-  name: 'ProductBookCourse',
-  components: { ProductVariants },
-  props: {
-    isCourse: { type: Boolean, required: true },
-  },
-  setup() {
-    const { getScreenSize } = useMedia()
-    const { routeName, routeSlug } = useNavigation()
-    const { filterCalender } = useShopifyCalender()
-    const { selectedOptionDateString } = useShopifyCart()
-
-    const category = routeName.split('-')[0]
-    const productCalender = computed(() =>
-      filterCalender([category], { slug: [routeSlug] })
-    )
-
-    function setOptionDateString(optionDateString) {
-      selectedOptionDateString.value = optionDateString
-      const screenSize = getScreenSize()
-      if (['2xs', 'xs', 'sm', 'md'].includes(screenSize)) {
-        document
-          .getElementById('book-product')
-          .scrollIntoView({ block: 'start', behavior: 'smooth' })
-      }
-    }
-
-    return {
-      getScreenSize,
-      productCalender,
-      selectedOptionDateString,
-      setOptionDateString,
-    }
-  },
+defineProps({
+  isCourse: { type: Boolean, required: true },
 })
+const { getScreenSize } = useMedia()
+const { routeName, routeSlug } = useNavigation()
+const { filterCalender } = useShopifyCalender()
+const { selectedOptionDateString } = useShopifyCart()
+
+const category = routeName.split('-')[0]
+const productCalender = computed(() =>
+  filterCalender([category], { slug: [routeSlug] })
+)
+
+function setOptionDateString(optionDateString) {
+  selectedOptionDateString.value = optionDateString
+  const screenSize = getScreenSize()
+  if (['2xs', 'xs', 'sm', 'md'].includes(screenSize)) {
+    document
+      .getElementById('book-product')
+      .scrollIntoView({ block: 'start', behavior: 'smooth' })
+  }
+}
 </script>

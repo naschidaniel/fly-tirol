@@ -5,14 +5,11 @@
   />
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 import ResponsiveImage from './ResponsiveImage.vue'
 
-export default defineComponent({
-  components: { ResponsiveImage },
-  props: {
-    picture: { type: String, default: '', required: true },
-  },
+defineProps({
+  picture: { type: String, default: '', required: true },
 })
 </script>

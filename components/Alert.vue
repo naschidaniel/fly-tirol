@@ -4,20 +4,12 @@
     role="alert"
   >
     <div class="py-2">
-      <outline-information-circle-icon class="h-6 w-6 text-teal-500 mr-4" />
+      <OutlineInformationCircleIcon class="h-6 w-6 text-teal-500 mr-4" />
     </div>
     <slot></slot>
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
-
-export default defineComponent({
-  name: 'Alert',
-  components: {
-    OutlineInformationCircleIcon,
-  },
-})
 </script>

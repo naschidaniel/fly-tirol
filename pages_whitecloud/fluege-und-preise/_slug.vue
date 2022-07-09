@@ -75,8 +75,7 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import ProductsRegiondo from '~/components/ProductsRegiondo'
 import SocialBar from '~/components/SocialBar'
 import { useMetaTags } from '~/composable/useMetaTags'
@@ -88,29 +87,15 @@ import Testflug from '~/content_whitecloud/fluege-und-preise/testflug'
 import ThermikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/thermikflug-hopfgarten'
 import ThermikflugSoell from '~/content_whitecloud/fluege-und-preise/thermikflug-soell'
 
-export default defineComponent({
-  components: {
-    AkrobatikflugHopfgarten,
-    AkrobatikflugSoell,
-    GleitflugHopfgarten,
-    GleitflugSoell,
-    Testflug,
-    ThermikflugHopfgarten,
-    ThermikflugSoell,
-    SocialBar,
-    ProductsRegiondo,
-  },
-  setup() {
-    const { generateMetaTags, page } = useMetaTags()
-    return { generateMetaTags, page }
-  },
-  head() {
-    const metatags = this.generateMetaTags(
-      this.page.title,
-      this.page.description,
-      this.$route.fullPath
-    )
-    return { title: this.page.title, meta: metatags }
-  },
-})
+const { generateMetaTags, page } = useMetaTags()
+
+// TODO NUXT3
+// head() {
+//   const metatags = this.generateMetaTags(
+//     this.page.title,
+//     this.page.description,
+//     this.$route.fullPath
+//   )
+//   return { title: this.page.title, meta: metatags }
+// },
 </script>

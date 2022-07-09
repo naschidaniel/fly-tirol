@@ -31,18 +31,11 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 import OutlineClipboardListIcon from './icons/OutlineClipboardListIcon.vue'
 import OutlineEmojiHappyIcon from './icons/OutlineEmojiHappyIcon.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 
-export default defineComponent({
-  components: {
-    ResponsiveImage,
-    OutlineClipboardListIcon,
-    OutlineEmojiHappyIcon,
-  },
-  props: { member: { type: Object, required: true } },
-})
+defineProps({ member: { type: Object, required: true } })
 </script>

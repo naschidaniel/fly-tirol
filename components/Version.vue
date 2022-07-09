@@ -34,18 +34,12 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import { useData } from '~/composable/useData'
 import { useFormat } from '~/composable/useFormat'
 
-export default defineComponent({
-  setup() {
-    const { buildTime, licenses } = useData()
-    const { formatDateTime } = useFormat()
-    return { buildTime, formatDateTime, licenses }
-  },
-})
+const { buildTime, licenses } = useData()
+const { formatDateTime } = useFormat()
 </script>
 
 <style scoped>

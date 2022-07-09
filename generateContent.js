@@ -53,33 +53,16 @@ function generate(nuxtPage) {
     content.push(['</div>', '</template>'])
 
     if (isContentImageGallery || isContentPartnerCard) {
+      content.push(['', '<script setup>'])
+    }
+    if (isContentImageGallery) {
       content.push([
-        '',
-        '<script>',
-        "import { defineComponent } from '@nuxtjs/composition-api'",
+        "import ContentImageGallery from '~/components/ContentImageGallery.vue'",
       ])
     }
-    if (isContentImageGallery && !isContentPartnerCard) {
-      content.push([
-        "import ContentImageGallery from '~/components/ContentImageGallery.vue'",
-        'export default defineComponent({',
-        '  components: { ContentImageGallery },',
-        '})',
-      ])
-    } else if (!isContentImageGallery && isContentPartnerCard) {
+    if (isContentPartnerCard) {
       content.push([
         "import ContentPartnerCard from '~/components/ContentPartnerCard.vue'",
-        'export default defineComponent({',
-        '  components: { ContentPartnerCard },',
-        '})',
-      ])
-    } else if (isContentImageGallery && isContentPartnerCard) {
-      content.push([
-        "import ContentImageGallery from '~/components/ContentImageGallery.vue'",
-        "import ContentPartnerCard from '~/components/ContentPartnerCard.vue'",
-        'export default defineComponent({',
-        '  components: { ContentImageGallery, ContentPartnerCard },',
-        '})',
       ])
     }
     if (isContentImageGallery || isContentPartnerCard) {

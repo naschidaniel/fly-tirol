@@ -117,8 +117,8 @@
   </div>
 </template>
 
-<script>
-import { defineComponent, computed } from '@nuxtjs/composition-api'
+<script setup>
+import { computed } from '@nuxtjs/composition-api'
 import InstagramIcon from './icons/InstagramIcon'
 import FacebookIcon from './icons/FacebookIcon'
 import OutlineMailIcon from './icons/OutlineMailIcon'
@@ -129,107 +129,68 @@ import WhatsAppIcon from './icons/WhatsAppIcon'
 import { useData } from '~/composable/useData'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default defineComponent({
-  name: 'SocialBar',
-  components: {
-    InstagramIcon,
-    FacebookIcon,
-    OutlineMailIcon,
-    OutlinePhoneIcon,
-    TwitterIcon,
-    YouTubeIcon,
-    WhatsAppIcon,
-  },
-  setup() {
-    const {
-      instagram,
-      isFlyTirol,
-      isWhiteCloud,
-      mail,
-      phone,
-      website,
-      websiteUrl,
-    } = useData()
-    const { page } = useMetaTags()
+const {
+  instagram,
+  isFlyTirol,
+  isWhiteCloud,
+  mail,
+  phone,
+  website,
+  websiteUrl,
+} = useData()
+const { page } = useMetaTags()
 
-    const encodedUrl = computed(() =>
-      encodeURI(`${websiteUrl}${page.value.path}`)
-    )
-    const encodeTitle = computed(() => encodeURI(page.value.title))
-    const encodeDescription = computed(() => encodeURI(page.value.description))
+const encodedUrl = computed(() => encodeURI(`${websiteUrl}${page.value.path}`))
+const encodeTitle = computed(() => encodeURI(page.value.title))
+const encodeDescription = computed(() => encodeURI(page.value.description))
 
-    function openInstagram() {
-      const url = `https://www.instagram.com/${instagram}/`
-      window
-        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-        .focus()
-    }
+function openInstagram() {
+  const url = `https://www.instagram.com/${instagram}/`
+  window
+    .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
+    .focus()
+}
 
-    function openFacebook() {
-      const url = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl.value}&title=${encodeTitle.value}`
-      window
-        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-        .focus()
-    }
+function openFacebook() {
+  const url = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl.value}&title=${encodeTitle.value}`
+  window
+    .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
+    .focus()
+}
 
-    function openMailContact() {
-      const url = `mailto:${mail}?subject=Kontakt über ${websiteUrl}`
-      window.location.replace(url)
-    }
+function openMailContact() {
+  const url = `mailto:${mail}?subject=Kontakt über ${websiteUrl}`
+  window.location.replace(url)
+}
 
-    function openMailShare() {
-      const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${encodeTitle.value} – auf ${website}&body=Hallo,%0D%0A%0D%0D%0A%0D${encodeDescription.value}%0D%0A%0D%0D%0A%0Dhttps://${encodedUrl.value}`
-      window.location.replace(url)
-    }
+function openMailShare() {
+  const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${encodeTitle.value} – auf ${website}&body=Hallo,%0D%0A%0D%0D%0A%0D${encodeDescription.value}%0D%0A%0D%0D%0A%0Dhttps://${encodedUrl.value}`
+  window.location.replace(url)
+}
 
-    function openPhone() {
-      window.open(`tel:${phone}`)
-    }
+function openPhone() {
+  window.open(`tel:${phone}`)
+}
 
-    function openTwitter() {
-      const url = `https://twitter.com/intent/tweet?size=large&url=${encodedUrl.value}&text=${encodeDescription.value}&via=${website}`
-      window
-        .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-        .focus()
-    }
+function openTwitter() {
+  const url = `https://twitter.com/intent/tweet?size=large&url=${encodedUrl.value}&text=${encodeDescription.value}&via=${website}`
+  window
+    .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
+    .focus()
+}
 
-    function openYouTube() {
-      const url = `https://www.youtube.com/channel/UCcHbWKpX02FQI94FOHVvfQA`
-      window.open(url)
-    }
+function openYouTube() {
+  const url = `https://www.youtube.com/channel/UCcHbWKpX02FQI94FOHVvfQA`
+  window.open(url)
+}
 
-    function openWhatsAppContact() {
-      const url = `whatsapp://send?phone=${phone}`
-      window.open(url)
-    }
+function openWhatsAppContact() {
+  const url = `whatsapp://send?phone=${phone}`
+  window.open(url)
+}
 
-    function openWhatsAppShare() {
-      const url = `whatsapp://send?text=${encodedUrl.value}`
-      window.open(url)
-    }
-
-    return {
-      encodeDescription,
-      encodedUrl,
-      encodeTitle,
-      instagram,
-      isFlyTirol,
-      isWhiteCloud,
-      mail,
-      openFacebook,
-      openInstagram,
-      openMailContact,
-      openMailShare,
-      openPhone,
-      openTwitter,
-      openWhatsAppContact,
-      openWhatsAppShare,
-      openYouTube,
-      page,
-      phone,
-      website,
-      websiteUrl,
-    }
-  },
-})
+function openWhatsAppShare() {
+  const url = `whatsapp://send?text=${encodedUrl.value}`
+  window.open(url)
+}
 </script>

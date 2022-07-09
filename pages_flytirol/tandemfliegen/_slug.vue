@@ -90,8 +90,8 @@
   </div>
 </template>
 
-<script>
-import { computed, defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { computed } from '@nuxtjs/composition-api'
 import Alert from '~/components/Alert.vue'
 import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'
@@ -103,32 +103,18 @@ import TandemflugGeschenkkarte from '~/content_flytirol/tandemfliegen/tandemflug
 import Tandemsafari from '~/content_flytirol/tandemfliegen/tandemsafari.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
 
-export default defineComponent({
-  components: {
-    Alert,
-    ContentImageGallery,
-    SocialBar,
-    ProductAppointment,
-    ProductVariants,
-    Hoehenflug,
-    Panoramaflug,
-    TandemflugGeschenkkarte,
-    Tandemsafari,
-  },
-  setup() {
-    const { generateMetaTags, page } = useMetaTags()
-    const isAppointment = computed(
-      () => page.value.slug !== 'tandemflug-geschenkkarte'
-    )
-    return { generateMetaTags, isAppointment, page }
-  },
-  head() {
-    const metatags = this.generateMetaTags(
-      this.page.title,
-      this.page.description,
-      this.$route.fullPath
-    )
-    return { title: this.page.title, meta: metatags }
-  },
-})
+const { generateMetaTags, page } = useMetaTags()
+const isAppointment = computed(
+  () => page.value.slug !== 'tandemflug-geschenkkarte'
+)
+
+// TODO NUXT3
+// head() {
+//   const metatags = this.generateMetaTags(
+//     this.page.title,
+//     this.page.description,
+//     this.$route.fullPath
+//   )
+//   return { title: this.page.title, meta: metatags }
+// },
 </script>

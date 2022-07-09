@@ -58,29 +58,21 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
 import OutlineLinkIcon from './icons/OutlineLinkIcon.vue'
 import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
 import OutlineMailIcon from './icons/OutlineMailIcon.vue'
 import OutlinePhoneIcon from './icons/OutlinePhoneIcon.vue'
-export default defineComponent({
-  components: {
-    OutlineInformationCircleIcon,
-    OutlineLocationMarkerIcon,
-    OutlineMailIcon,
-    OutlinePhoneIcon,
-    OutlineLinkIcon,
-  },
-  props: {
-    type: { type: String, required: true },
-    title: { type: String, required: true },
-    subTitle: { type: String, required: false, default: '' },
-    address: { type: String, required: true },
-    phone: { type: String, required: false, default: '' },
-    mail: { type: String, required: false, default: '' },
-    website: { type: String, required: false, default: '' },
-  },
+
+defineProps({
+  type: { type: String, required: true },
+  title: { type: String, required: true },
+  subTitle: { type: String, required: false, default: '' },
+  address: { type: String, required: true },
+  phone: { type: String, required: false, default: '' },
+  mail: { type: String, required: false, default: '' },
+  website: { type: String, required: false, default: '' },
 })
 </script>
