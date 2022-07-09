@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 import FlyTirolLogo from '../FlyTirolLogo.vue'
 import WhiteCloutLogo from '../WhiteCloudLogo.vue'
 import NavigationNavbar from './NavigationNavbar.vue'

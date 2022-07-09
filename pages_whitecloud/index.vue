@@ -164,7 +164,7 @@
 </template>
 
 <script>
-import { defineComponent, ref } from '@vue/composition-api'
+import { defineComponent, ref } from '@nuxtjs/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import SocialBar from '~/components/SocialBar'
 import Index from '~/content_whitecloud/index'

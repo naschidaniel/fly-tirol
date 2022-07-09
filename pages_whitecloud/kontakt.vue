@@ -125,7 +125,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'

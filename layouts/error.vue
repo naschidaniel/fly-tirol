@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { defineComponent, onMounted } from '@vue/composition-api'
+import { defineComponent, onMounted } from '@nuxtjs/composition-api'
 import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 

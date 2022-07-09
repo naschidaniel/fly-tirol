@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'
 import PageHeader from '~/components/PageHeader'

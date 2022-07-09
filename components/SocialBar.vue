@@ -118,7 +118,7 @@
 </template>
 
 <script>
-import { defineComponent, computed } from '@vue/composition-api'
+import { defineComponent, computed } from '@nuxtjs/composition-api'
 import InstagramIcon from './icons/InstagramIcon'
 import FacebookIcon from './icons/FacebookIcon'
 import OutlineMailIcon from './icons/OutlineMailIcon'

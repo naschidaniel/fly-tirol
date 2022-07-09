@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import { computed, defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 import ProductVariants from '@/components/ProductVariants.vue'
 import { useMedia } from '~/composable/useMedia'
 import { useNavigation } from '~/composable/useNavigation'

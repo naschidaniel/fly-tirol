@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import InfoBox from '~/components/InfoBox.vue'
 import SocialBar from '~/components/SocialBar.vue'

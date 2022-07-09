@@ -91,7 +91,7 @@
 </template>
 
 <script>
-import { computed, defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 import Alert from '~/components/Alert.vue'
 import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'

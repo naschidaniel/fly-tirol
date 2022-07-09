@@ -56,7 +56,7 @@ function generate(nuxtPage) {
       content.push([
         '',
         '<script>',
-        "import { defineComponent } from '@vue/composition-api'",
+        "import { defineComponent } from '@nuxtjs/composition-api'",
       ])
     }
     if (isContentImageGallery && !isContentPartnerCard) {

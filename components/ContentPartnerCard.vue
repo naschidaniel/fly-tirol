@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
 import OutlineLinkIcon from './icons/OutlineLinkIcon.vue'
 import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'

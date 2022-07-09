@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from '@nuxtjs/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import Impressum from '~/content_whitecloud/impressum.vue'
 import Version from '~/components/Version.vue'

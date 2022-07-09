@@ -85,7 +85,7 @@ import {
   ref,
   unref,
   watchEffect,
-} from '@vue/composition-api'
+} from '@nuxtjs/composition-api'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { useNavigation } from '~/composable/useNavigation'

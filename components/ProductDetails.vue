@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import { computed, defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from '@nuxtjs/composition-api'
 import OutlineAcademicCapIconVue from './icons/OutlineAcademicCapIcon'
 import OutlineClockIcon from './icons/OutlineClockIcon'
 import OutlineCashIcon from './icons/OutlineCashIcon'
