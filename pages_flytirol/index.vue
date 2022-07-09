@@ -45,26 +45,20 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import { useMetaTags } from '~/composable/useMetaTags'
 import LinkList from '~/components/LinkList.vue'
 import ResponsiveImage from '~/components/ResponsiveImage.vue'
 import SocialBar from '~/components/SocialBar.vue'
 
-export default defineComponent({
-  components: { LinkList, ResponsiveImage, SocialBar },
-  setup() {
-    const { generateMetaTags, page } = useMetaTags()
-    return { generateMetaTags, page }
-  },
-  head() {
-    const metatags = this.generateMetaTags(
-      this.page.title,
-      this.page.description,
-      this.$route.fullPath
-    )
-    return { title: this.page.title, meta: metatags }
-  },
-})
+const { generateMetaTags, page } = useMetaTags()
+// TODO NUXT3
+// head() {
+//   const metatags = this.generateMetaTags(
+//     this.page.title,
+//     this.page.description,
+//     this.$route.fullPath
+//   )
+//   return { title: this.page.title, meta: metatags }
+// },
 </script>

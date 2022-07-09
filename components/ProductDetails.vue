@@ -45,8 +45,8 @@
   </div>
 </template>
 
-<script>
-import { computed, defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { computed, defineProps } from '@nuxtjs/composition-api'
 import OutlineAcademicCapIconVue from './icons/OutlineAcademicCapIcon'
 import OutlineClockIcon from './icons/OutlineClockIcon'
 import OutlineCashIcon from './icons/OutlineCashIcon'
@@ -57,34 +57,20 @@ import SpinnerIcon from './icons/SpinnerIcon'
 import { useFormat } from '~/composable/useFormat'
 import { useData } from '~/composable/useData'
 
-export default defineComponent({
-  components: {
-    OutlineAcademicCapIconVue,
-    OutlineCashIcon,
-    OutlineCalendarIcon,
-    OutlineClockIcon,
-    OutlineLocationMarkerIcon,
-    OutlinePaperPlaneIconVue,
-    SpinnerIcon,
-  },
-  props: {
-    page: { type: Object, required: true },
-    prices: { type: Array, default: () => [] },
-    dates: { type: Number, default: undefined },
-    isShowDate: { type: Boolean, default: true },
-  },
-  setup(props) {
-    const { isFlyTirol, isWhiteCloud } = useData()
-    const { formatPrice } = useFormat()
+const props = defineProps({
+  page: { type: Object, required: true },
+  prices: { type: Array, default: () => [] },
+  dates: { type: Number, default: undefined },
+  isShowDate: { type: Boolean, default: true },
+})
+const { isFlyTirol, isWhiteCloud } = useData()
+const { formatPrice } = useFormat()
 
-    const price = computed(() => {
-      const preText = props.prices.length >= 2 ? 'ab' : ''
-      return {
-        preText,
-        price: props.prices[0],
-      }
-    })
-    return { formatPrice, isFlyTirol, isWhiteCloud, price }
-  },
+const price = computed(() => {
+  const preText = props.prices.length >= 2 ? 'ab' : ''
+  return {
+    preText,
+    price: props.prices[0],
+  }
 })
 </script>

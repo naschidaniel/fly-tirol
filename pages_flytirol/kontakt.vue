@@ -36,40 +36,35 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'
 import PageHeader from '~/components/PageHeader'
 import { useMetaTags } from '~/composable/useMetaTags'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
 
-export default defineComponent({
-  components: { ContactMap, SocialBar, PageHeader, OutlineLocationMarkerIcon },
-  setup() {
-    const { generateMetaTags, page } = useMetaTags()
+const { generateMetaTags, page } = useMetaTags()
 
-    const address = {
-      href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
-      name: 'Route',
-    }
-    const telefonNumber = {
-      href: 'tel:00436766422088',
-      name: '+43 676 6422088',
-    }
-    const mailAddress = {
-      href: 'mailto:info@fly-tirol.com ',
-      name: 'info@fly-tirol.com',
-    }
-    return { generateMetaTags, page, mailAddress, telefonNumber, address }
-  },
-  head() {
-    const metatags = this.generateMetaTags(
-      this.page.title,
-      this.page.description,
-      this.$route.fullPath
-    )
-    return { title: this.page.title, meta: metatags }
-  },
-})
+const address = {
+  href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
+  name: 'Route',
+}
+const telefonNumber = {
+  href: 'tel:00436766422088',
+  name: '+43 676 6422088',
+}
+const mailAddress = {
+  href: 'mailto:info@fly-tirol.com ',
+  name: 'info@fly-tirol.com',
+}
+
+// TODO NUXT3
+// head() {
+//   const metatags = this.generateMetaTags(
+//     this.page.title,
+//     this.page.description,
+//     this.$route.fullPath
+//   )
+//   return { title: this.page.title, meta: metatags }
+// },
 </script>

@@ -31,22 +31,22 @@
         class="mr-2 my-1 xl:my-0 z-10"
         @click="toggleIfDropdownIsOpen()"
       >
-        <nuxt-link class="btn-primary" to="/buchen" exact>
+        <NuxtLink class="btn-primary" to="/buchen" exact>
           <OutlineShoppingCartIcon
             class="mr-1"
             style="height: 1em; width: 1em"
           />
           ({{ cartItemsLength }})
-        </nuxt-link>
+        </NuxtLink>
       </div>
       <div
         v-if="isFlyTirol"
         class="mr-3 my-1 xl:my-0 z-10"
         @click="toggleIfDropdownIsOpen()"
       >
-        <nuxt-link class="btn-primary" to="/kontakt" exact>
+        <NuxtLink class="btn-primary" to="/kontakt" exact>
           <span>Kontakt</span>
-        </nuxt-link>
+        </NuxtLink>
       </div>
       <div class="xl:mr-0 xl:hidden z-50">
         <button
@@ -62,8 +62,7 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import OutlineMenuIcon from '../icons/OutlineMenuIcon.vue'
 import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
 import OutlineXIcon from '../icons/OutlineXIcon.vue'
@@ -71,33 +70,16 @@ import NavigationNavbarLink from './NavigationNavbarLink.vue'
 import { useData } from '~/composable/useData'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCart } from '~/composable/useShopifyCart'
-export default defineComponent({
-  name: 'NavigationNavbar',
-  components: {
-    NavigationNavbarLink,
-    OutlineMenuIcon,
-    OutlineShoppingCartIcon,
-    OutlineXIcon,
-  },
-  setup() {
-    const { isFlyTirol, isWhiteCloud } = useData()
-    const { isOpen } = useNavigation()
-    const { cartItemsLength } = useShopifyCart()
 
-    function toggleIfDropdownIsOpen() {
-      if (isOpen.value) {
-        isOpen.value = !isOpen.value
-      }
-    }
-    return {
-      cartItemsLength,
-      isFlyTirol,
-      isOpen,
-      isWhiteCloud,
-      toggleIfDropdownIsOpen,
-    }
-  },
-})
+const { isFlyTirol } = useData()
+const { isOpen } = useNavigation()
+const { cartItemsLength } = useShopifyCart()
+
+function toggleIfDropdownIsOpen() {
+  if (isOpen.value) {
+    isOpen.value = !isOpen.value
+  }
+}
 </script>
 
 <style scoped>

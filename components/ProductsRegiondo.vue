@@ -11,17 +11,11 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 
-export default defineComponent({
-  name: 'ProductsRegiondo',
-  props: {
-    flight: { type: String, required: true },
-  },
-  setup(props) {
-    const url = `/regiondo_whitecloud/bookingwidget_de_${props.flight}.html`
-    return { url }
-  },
+const props = defineProps({
+  flight: { type: String, required: true },
 })
+const url = `/regiondo_whitecloud/bookingwidget_de_${props.flight}.html`
 </script>

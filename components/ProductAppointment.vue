@@ -33,65 +33,47 @@
   </div>
 </template>
 
-<script>
-import { computed, defineComponent, unref, ref } from '@nuxtjs/composition-api'
+<script setup>
+import { computed, unref, ref } from '@nuxtjs/composition-api'
 import { useFormat } from '~/composable/useFormat'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 
-export default defineComponent({
-  name: 'ProductAppointment',
-  setup() {
-    const { routeSlug } = useNavigation()
-    const { formatDate } = useFormat()
-    const { bookProduct, products } = useShopifyCart()
+const { routeSlug } = useNavigation()
+const { formatDate } = useFormat()
+const { bookProduct, products } = useShopifyCart()
 
-    const selectedDate = ref('')
-    const isFormValid = ref(true)
-    const isDateValid = ref(false)
+const selectedDate = ref('')
+const isFormValid = ref(true)
+const isDateValid = ref(false)
 
-    const productId = computed(
-      () => unref(products).find((p) => p.slug === routeSlug)?.id
-    )
+const productId = computed(
+  () => unref(products).find((p) => p.slug === routeSlug)?.id
+)
 
-    const today = computed(() => new Date().toISOString().split('T')[0])
+const today = computed(() => new Date().toISOString().split('T')[0])
 
-    const selectedDateTimestamp = computed(() =>
-      selectedDate.value !== '' ? new Date(selectedDate.value) : ''
-    )
+const selectedDateTimestamp = computed(() =>
+  selectedDate.value !== '' ? new Date(selectedDate.value) : ''
+)
 
-    function bookFlight() {
-      checkDate()
-      if (isDateValid.value) {
-        bookProduct(unref(productId), {
-          customAttributes: [
-            {
-              key: 'Wunschtermin nach Absprache',
-              value: formatDate(selectedDateTimestamp.value),
-            },
-          ],
-        })
-      }
-    }
-    function checkDate() {
-      const entryTimestamp = new Date(selectedDate.value).getTime()
-      const todayTimestamp = new Date(today.value).getTime()
-      isFormValid.value = entryTimestamp >= todayTimestamp
-      isDateValid.value = entryTimestamp >= todayTimestamp
-    }
-
-    return {
-      bookFlight,
-      bookProduct,
-      checkDate,
-      formatDate,
-      isDateValid,
-      isFormValid,
-      productId,
-      selectedDate,
-      selectedDateTimestamp,
-      today,
-    }
-  },
-})
+function bookFlight() {
+  checkDate()
+  if (isDateValid.value) {
+    bookProduct(unref(productId), {
+      customAttributes: [
+        {
+          key: 'Wunschtermin nach Absprache',
+          value: formatDate(selectedDateTimestamp.value),
+        },
+      ],
+    })
+  }
+}
+function checkDate() {
+  const entryTimestamp = new Date(selectedDate.value).getTime()
+  const todayTimestamp = new Date(today.value).getTime()
+  isFormValid.value = entryTimestamp >= todayTimestamp
+  isDateValid.value = entryTimestamp >= todayTimestamp
+}
 </script>

@@ -14,6 +14,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
+    'no-unused-vars': 'off',
     'vue/multi-word-component-names': [
       'error',
       {

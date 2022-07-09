@@ -23,11 +23,10 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 
-export default defineComponent({
-  components: {},
-  props: { members: { type: Array, required: true } },
+defineProps({
+  members: Array,
 })
 </script>

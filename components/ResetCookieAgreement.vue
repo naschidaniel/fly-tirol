@@ -28,15 +28,8 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import { useFlyCookies } from '~/composable/useFlyCookies'
 
-export default defineComponent({
-  name: 'ResetCookieAgreement',
-  setup() {
-    const { allCookies, isCookieAgreement, removeAllCookies } = useFlyCookies()
-    return { allCookies, isCookieAgreement, removeAllCookies }
-  },
-})
+const { allCookies, isCookieAgreement, removeAllCookies } = useFlyCookies()
 </script>

@@ -11,13 +11,11 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 
-export default defineComponent({
-  props: {
-    map: { type: String, required: true },
-  },
+defineProps({
+  map: { type: String, required: true },
 })
 </script>
 

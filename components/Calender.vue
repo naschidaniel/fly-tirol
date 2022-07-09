@@ -75,9 +75,9 @@
             >{{ entry.productType }}</span
           >
           <h4>
-            <nuxt-link
+            <NuxtLink
               :to="`${entry.productType.toLowerCase()}/${entry.slug}`"
-              >{{ entry.productTitle }}</nuxt-link
+              >{{ entry.productTitle }}</NuxtLink
             >
           </h4>
 
@@ -137,43 +137,23 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import { useShopifyCalender } from '~/composable/useShopifyCalender'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 import OutlineCheckIcon from '~/components/icons/OutlineCheckIcon.vue'
 import OutlineXIcon from '~/components/icons/OutlineXIcon.vue'
 
-export default defineComponent({
-  name: 'Calender',
-  components: { OutlineCheckIcon, OutlineXIcon },
-  setup() {
-    const { bookProduct } = useShopifyCart()
-    const {
-      calenderFiltered,
-      calenderProductsAvailable,
-      calenderCategoriesAvailable,
-      calenderProductsChecked,
-      calenderCategoriesChecked,
-      isCalenderFiltered,
-      setCheckedCategories,
-      setCheckedProducts,
-      resetFilter,
-      updateSelectedProduct,
-    } = useShopifyCalender()
-    return {
-      bookProduct,
-      calenderFiltered,
-      calenderProductsAvailable,
-      calenderCategoriesAvailable,
-      calenderProductsChecked,
-      calenderCategoriesChecked,
-      isCalenderFiltered,
-      setCheckedCategories,
-      setCheckedProducts,
-      resetFilter,
-      updateSelectedProduct,
-    }
-  },
-})
+const { bookProduct } = useShopifyCart()
+const {
+  calenderFiltered,
+  calenderProductsAvailable,
+  calenderCategoriesAvailable,
+  calenderProductsChecked,
+  calenderCategoriesChecked,
+  isCalenderFiltered,
+  setCheckedCategories,
+  setCheckedProducts,
+  resetFilter,
+  updateSelectedProduct,
+} = useShopifyCalender()
 </script>

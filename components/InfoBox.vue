@@ -16,14 +16,11 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps } from '@nuxtjs/composition-api'
 import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
 
-export default defineComponent({
-  components: { OutlineInformationCircleIcon },
-  props: {
-    headline: { type: String, required: true },
-  },
+defineProps({
+  headline: { type: String, required: true },
 })
 </script>

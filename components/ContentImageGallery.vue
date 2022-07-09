@@ -20,22 +20,16 @@
   </div>
 </template>
 
-<script>
-import { computed, defineComponent } from '@nuxtjs/composition-api'
+<script setup>
+import { computed, defineProps } from '@nuxtjs/composition-api'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useMedia } from '~/composable/useMedia'
 
-export default defineComponent({
-  components: { ResponsiveImage },
-  props: {
-    path: { type: String, default: '/media' },
-  },
-  setup(props) {
-    const { media } = useMedia()
-    const imageGallery = computed(() =>
-      Object.values(media).filter((img) => img.path === props.path)
-    )
-    return { imageGallery, media }
-  },
+const props = defineProps({
+  path: { type: String, default: '/media' },
 })
+const { media } = useMedia()
+const imageGallery = computed(() =>
+  Object.values(media).filter((img) => img.path === props.path)
+)
 </script>

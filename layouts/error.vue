@@ -16,40 +16,35 @@
         </span>
         <span v-else>Es ist ein Fehler aufgetreten</span>
       </h1>
-      <nuxt-link to="/" class="btn-primary btn--large">
+      <NuxtLink to="/" class="btn-primary btn--large">
         zurück zur Startseite
-      </nuxt-link>
+      </NuxtLink>
     </div>
   </div>
 </template>
 
-<script>
-import { defineComponent, onMounted } from '@nuxtjs/composition-api'
+<script setup>
+import { defineProps, onMounted } from '@nuxtjs/composition-api'
 import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 
-export default defineComponent({
-  layout: 'error',
-  props: {
-    error: {
-      type: Object,
-      default: () => {
-        return {
-          error: {
-            statusCode: 404,
-          },
-        }
-      },
-      required: false,
+defineProps({
+  error: {
+    type: Object,
+    default: () => {
+      return {
+        error: {
+          statusCode: 404,
+        },
+      }
     },
+    required: false,
   },
-  setup() {
-    const { initShop } = useFetchShopify()
-    const { resetCart } = useShopifyCart()
-    onMounted(() => {
-      resetCart()
-      initShop()
-    })
-  },
+})
+const { initShop } = useFetchShopify()
+const { resetCart } = useShopifyCart()
+onMounted(() => {
+  resetCart()
+  initShop()
 })
 </script>

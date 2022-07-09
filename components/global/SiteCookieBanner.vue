@@ -10,9 +10,9 @@
         dieser Website zu gewährleisten sowie die Nutzung der Website zu
         analysieren. Weiters verwenden wir optionale Cookies, um unsere
         Werbeaktivitäten zu unterstützen.
-        <nuxt-link to="/dsgvo" class="underline" exact>
+        <NuxtLink to="/dsgvo" class="underline" exact>
           Nähere Informationen finden Sie in unseren
-          Datenschutzbestimmungen.</nuxt-link
+          Datenschutzbestimmungen.</NuxtLink
         >
       </p>
       <div class="w-full text-right py-1">
@@ -28,15 +28,8 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import { useFlyCookies } from '~/composable/useFlyCookies'
 
-export default defineComponent({
-  name: 'SiteCookieBanner',
-  setup() {
-    const { isCookieAgreement, acceptCookieAgreement } = useFlyCookies()
-    return { isCookieAgreement, acceptCookieAgreement }
-  },
-})
+const { isCookieAgreement, acceptCookieAgreement } = useFlyCookies()
 </script>

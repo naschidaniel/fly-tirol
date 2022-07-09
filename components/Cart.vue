@@ -6,7 +6,7 @@
           Es wurden noch keine Produkte in den Warenkorb hinzugefügt.
         </p>
         <p class="text-sm">
-          <nuxt-link to="/">Hier geht es zur Startseite</nuxt-link>
+          <NuxtLink to="/">Hier geht es zur Startseite</NuxtLink>
         </p>
       </div>
     </Alert>
@@ -97,42 +97,24 @@
   </div>
 </template>
 
-<script>
-import { defineComponent, onMounted } from '@nuxtjs/composition-api'
+<script setup>
+import { onMounted } from '@nuxtjs/composition-api'
 import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 import { useFormat } from '~/composable/useFormat'
 
-export default defineComponent({
-  name: 'Cart',
-  components: {
-    Alert,
-    OutlineRefreshIcon,
-    OutlineShoppingBagIcon,
-  },
-  setup() {
-    const { formatPrice } = useFormat()
-    const {
-      cartItems,
-      lineItemsChanged,
-      checkout,
-      isCartItems,
-      refreshCart,
-      updateLineItems,
-    } = useShopifyCart()
-    onMounted(() => {
-      lineItemsChanged.value = []
-    })
-    return {
-      cartItems,
-      checkout,
-      formatPrice,
-      isCartItems,
-      refreshCart,
-      updateLineItems,
-    }
-  },
+const { formatPrice } = useFormat()
+const {
+  cartItems,
+  lineItemsChanged,
+  checkout,
+  isCartItems,
+  refreshCart,
+  updateLineItems,
+} = useShopifyCart()
+onMounted(() => {
+  lineItemsChanged.value = []
 })
 </script>

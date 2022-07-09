@@ -5,25 +5,19 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from '@nuxtjs/composition-api'
+<script setup>
 import Cart from '~/components/Cart.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-export default defineComponent({
-  name: 'Buchen',
-  components: { Cart },
-  setup() {
-    const { generateMetaTags, page } = useMetaTags()
-    return { generateMetaTags, page }
-  },
-  head() {
-    const metatags = this.generateMetaTags(
-      this.page.title,
-      this.page.description,
-      this.page.path
-    )
-    return { title: this.page.title, meta: metatags }
-  },
-})
+const { generateMetaTags, page } = useMetaTags()
+
+// TODO NUXT3
+// head() {
+//   const metatags = this.generateMetaTags(
+//     this.page.title,
+//     this.page.description,
+//     this.page.path
+//   )
+//   return { title: this.page.title, meta: metatags }
+// },
 </script>

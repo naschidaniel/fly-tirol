@@ -16,14 +16,14 @@
         <Index />
       </div>
       <div class="flex justify-center my-10">
-        <nuxt-link
+        <NuxtLink
           to="/fluege-und-preise"
           class="btn-primary btn--large m-4 w-5/6 md:w-1/2 lg:w-1/3"
           ><SolidPlayIcon
             class="mr-2"
             style="width: 2em; height: 2em; color: #ececec"
           />
-          <span class="text-2xl">Flug buchen</span></nuxt-link
+          <span class="text-2xl">Flug buchen</span></NuxtLink
         >
       </div>
       <div class="max-w-90 mx-auto py-6">
@@ -163,8 +163,8 @@
   </div>
 </template>
 
-<script>
-import { defineComponent, ref } from '@nuxtjs/composition-api'
+<script setup>
+import { ref } from '@nuxtjs/composition-api'
 import { useMetaTags } from '~/composable/useMetaTags'
 import SocialBar from '~/components/SocialBar'
 import Index from '~/content_whitecloud/index'
@@ -176,46 +176,32 @@ import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerI
 import SolidPlayIcon from '~/components/icons/SolidPlayIcon'
 import Webcam from '~/components/Webcam'
 
-export default defineComponent({
-  components: {
-    Index,
-    ResponsiveImage,
-    SocialBar,
-    OutlineCloudIcon,
-    OutlineCloudDownloadIcon,
-    OutlineCloudUploadIcon,
-    OutlineLocationMarkerIcon,
-    SolidPlayIcon,
-    Webcam,
-  },
-  setup() {
-    const { generateMetaTags, page } = useMetaTags()
+const { generateMetaTags, page } = useMetaTags()
 
-    const pictures = [
-      '/media/index/gallerie/akrobatikflug-hopfgarten.jpg',
-      '/media/index/gallerie/thermikflug-ueber-den-wolken.jpg',
-      '/media/index/gallerie/tandemfliegen_whitecloud_salve.jpg',
-    ]
-    const selectPicture = Math.floor(Math.random() * 3)
-    const picture = ref(pictures[selectPicture])
-    // function timer() {
-    //   setTimeout(selectPicture, 3000)
-    // }
-    // function selectPicture() {
-    //   const selectPicture = Math.floor(Math.random() * 3)
-    //   console.log('done' + selectPicture)
-    //   picture.value = pictures[selectPicture]
-    //   timer()
-    // }
-    return { generateMetaTags, page, picture }
-  },
-  head() {
-    const metatags = this.generateMetaTags(
-      this.page.title,
-      this.page.description,
-      this.$route.fullPath
-    )
-    return { title: this.page.title, meta: metatags }
-  },
-})
+const pictures = [
+  '/media/index/gallerie/akrobatikflug-hopfgarten.jpg',
+  '/media/index/gallerie/thermikflug-ueber-den-wolken.jpg',
+  '/media/index/gallerie/tandemfliegen_whitecloud_salve.jpg',
+]
+const selectPicture = Math.floor(Math.random() * 3)
+const picture = ref(pictures[selectPicture])
+// function timer() {
+//   setTimeout(selectPicture, 3000)
+// }
+// function selectPicture() {
+//   const selectPicture = Math.floor(Math.random() * 3)
+//   console.log('done' + selectPicture)
+//   picture.value = pictures[selectPicture]
+//   timer()
+// }
+
+// TODO NUXT3
+// head() {
+//   const metatags = this.generateMetaTags(
+//     this.page.title,
+//     this.page.description,
+//     this.$route.fullPath
+//   )
+//   return { title: this.page.title, meta: metatags }
+// },
 </script>
