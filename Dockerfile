@@ -30,7 +30,7 @@ RUN rm -rf .git
 
 RUN rm -rf .nuxt/dist/media
 
-RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.3.4/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
+RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.3.6/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
 
 RUN yarn generateMediaInformation
 
