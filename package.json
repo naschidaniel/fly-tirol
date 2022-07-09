@@ -33,15 +33,15 @@
     "optimize-images:whitecloud": "yarn optimize-images:whitecloud:2xs && yarn optimize-images:whitecloud:xs && yarn optimize-images:whitecloud:sm && yarn optimize-images:whitecloud:md && yarn optimize-images:whitecloud:lg && yarn optimize-images:whitecloud:xl && yarn optimize-images:whitecloud:2xl"
   },
   "dependencies": {
-    "@nuxtjs/composition-api": "^0.32.0",
+    "@nuxtjs/composition-api": "^0.33.0",
     "cookie-universal-nuxt": "^2.2.1",
     "core-js": "^3.23.3",
     "heroicons": "^1.0.6",
     "leaflet": "^1.8.0",
     "nuxt": "^2.15.8",
-    "shopify-buy": "^2.15.1",
+    "shopify-buy": "^2.16.1",
     "simple-icons": "^7.4.0",
-    "tailwindcss": "^3.1.4"
+    "tailwindcss": "^3.1.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.2",
@@ -54,7 +54,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.1.1",
+    "eslint-plugin-vue": "^9.2.0",
     "glob": "^8.0.3",
     "image-size": "^1.0.1",
     "marked": "^4.0.17",
