@@ -45,9 +45,14 @@ export default {
     static: isWhiteCloud ? 'static_whitecloud' : 'static_flytirol',
   },
   head: {
-    titleTemplate: isWhiteCloud
-      ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser - %s'
-      : 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
+    // TODO NUXT3
+    // migrate to useHead
+    // titleTemplate: isWhiteCloud
+    //   ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser - %s'
+    //   : 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
+    title: isWhiteCloud
+      ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser'
+      : 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
     htmlAttrs: {
       lang: 'de',
     },
