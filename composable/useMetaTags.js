@@ -1,9 +1,4 @@
-import {
-  computed,
-  useMeta,
-  useRoute,
-  useContext,
-} from '@nuxtjs/composition-api'
+import { computed, useRoute, useContext } from '@nuxtjs/composition-api'
 import metadataFlyTirol from '~/static_flytirol/metadata.json'
 import metadataWhiteCloud from '~/static_whitecloud/metadata.json'
 
@@ -41,10 +36,7 @@ export function useMetaTags() {
 
   // TODO NUXT3
   function generateMetaTags() {
-    const { description, meta, title } = useMeta()
-    description.value = page.value.description
-    title.value = page.value.title
-    meta.value = [
+    const meta = [
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -81,6 +73,13 @@ export function useMetaTags() {
           : `https://fly-tirol.com${page.value.path}`,
       },
     ]
+    // TODO NUXT3
+    // migrate to https://v3.nuxtjs.org/guide/features/head-management
+    // useMeta({
+    //   description: page.value.description,
+    //   meta,
+    //   title: page.value.title,
+    // })
   }
 
   return { generateMetaTags, page, pages }
