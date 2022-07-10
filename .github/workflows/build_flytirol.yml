@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build fly-tirol.com
     env:
+      NUXT_PAGE: flytirol
       SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
       SHOPIFY_DOMAIN: ${{ secrets.SHOPIFY_DOMAIN }}
     steps:

@@ -22,8 +22,7 @@ const licenses = Object.keys(packages.dependencies)
   }))
 
 if (!(isWhiteCloud || isFlyTirol)) {
-  // eslint-disable-next-line no-console
-  throw console.error(
+  throw new Error(
     `NUXT_PAGE = ${process.env.NUXT_PAGE} | NUXT_PAGE is not set!`
   )
 }
