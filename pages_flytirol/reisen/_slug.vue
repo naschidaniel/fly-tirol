@@ -21,6 +21,7 @@
 </template>
 
 <script setup>
+import { usePage } from '~/composable/usePage'
 import { useMetaTags } from '~/composable/useMetaTags'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductBookCourse from '~/components/ProductBookCourse.vue'
@@ -30,15 +31,6 @@ import FlugsafariKitzbuehelerAlpen from '~/content_flytirol/reisen/flugsafari-ki
 import MedunoItalien from '~/content_flytirol/reisen/meduno-italien.vue'
 import OeluedenizTuerkei from '~/content_flytirol/reisen/oeluedeniz-tuerkei.vue'
 
-const { generateMetaTags, page } = useMetaTags()
-
-// TODO NUXT3
-// head() {
-//   const metatags = this.generateMetaTags(
-//     this.page.title,
-//     this.page.description,
-//     this.$route.fullPath
-//   )
-//   return { title: this.page.title, meta: metatags }
-// },
+useMetaTags()
+const { page } = usePage()
 </script>

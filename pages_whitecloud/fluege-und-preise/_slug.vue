@@ -78,6 +78,7 @@
 <script setup>
 import ProductsRegiondo from '~/components/ProductsRegiondo'
 import SocialBar from '~/components/SocialBar'
+import { usePage } from '~/composable/usePage'
 import { useMetaTags } from '~/composable/useMetaTags'
 import AkrobatikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/akrobatikflug-hopfgarten'
 import AkrobatikflugSoell from '~/content_whitecloud/fluege-und-preise/akrobatikflug-soell'
@@ -87,15 +88,6 @@ import Testflug from '~/content_whitecloud/fluege-und-preise/testflug'
 import ThermikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/thermikflug-hopfgarten'
 import ThermikflugSoell from '~/content_whitecloud/fluege-und-preise/thermikflug-soell'
 
-const { generateMetaTags, page } = useMetaTags()
-
-// TODO NUXT3
-// head() {
-//   const metatags = this.generateMetaTags(
-//     this.page.title,
-//     this.page.description,
-//     this.$route.fullPath
-//   )
-//   return { title: this.page.title, meta: metatags }
-// },
+useMetaTags()
+const { page } = usePage()
 </script>

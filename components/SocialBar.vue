@@ -127,7 +127,7 @@ import TwitterIcon from './icons/TwitterIcon'
 import YouTubeIcon from './icons/YouTubeIcon'
 import WhatsAppIcon from './icons/WhatsAppIcon'
 import { useData } from '~/composable/useData'
-import { useMetaTags } from '~/composable/useMetaTags'
+import { usePage } from '~/composable/usePage'
 
 const {
   instagram,
@@ -138,7 +138,7 @@ const {
   website,
   websiteUrl,
 } = useData()
-const { page } = useMetaTags()
+const { page } = usePage()
 
 const encodedUrl = computed(() => encodeURI(`${websiteUrl}${page.value.path}`))
 const encodeTitle = computed(() => encodeURI(page.value.title))

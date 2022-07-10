@@ -79,24 +79,18 @@
 </template>
 
 <script setup>
-import {
-  computed,
-  defineProps,
-  ref,
-  unref,
-  watchEffect,
-} from 'vue'
+import { computed, defineProps, ref, unref, watchEffect } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { useNavigation } from '~/composable/useNavigation'
 import { useFormat } from '~/composable/useFormat'
+import { usePage } from '~/composable/usePage'
 import { useShopifyCart } from '~/composable/useShopifyCart'
-import { useMetaTags } from '~/composable/useMetaTags'
 
 defineProps({
   isCourse: { type: Boolean, required: true },
 })
-const { page } = useMetaTags()
+const { page } = usePage()
 const { routeName, routeSlug } = useNavigation()
 const { formatPrice } = useFormat()
 const { bookProduct, products, selectedOptionDateString } = useShopifyCart()

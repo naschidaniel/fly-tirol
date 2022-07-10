@@ -96,6 +96,7 @@ import Alert from '~/components/Alert.vue'
 import ContentImageGallery from '~/components/ContentImageGallery.vue'
 import SocialBar from '~/components/SocialBar.vue'
 import ProductAppointment from '~/components/ProductAppointment.vue'
+import { usePage } from '~/composable/usePage'
 import { useMetaTags } from '~/composable/useMetaTags'
 import Hoehenflug from '~/content_flytirol/tandemfliegen/hoehenflug.vue'
 import Panoramaflug from '~/content_flytirol/tandemfliegen/panoramaflug.vue'
@@ -103,18 +104,10 @@ import TandemflugGeschenkkarte from '~/content_flytirol/tandemfliegen/tandemflug
 import Tandemsafari from '~/content_flytirol/tandemfliegen/tandemsafari.vue'
 import ProductVariants from '~/components/ProductVariants.vue'
 
-const { generateMetaTags, page } = useMetaTags()
+useMetaTags()
+const { page } = usePage()
+
 const isAppointment = computed(
   () => page.value.slug !== 'tandemflug-geschenkkarte'
 )
-
-// TODO NUXT3
-// head() {
-//   const metatags = this.generateMetaTags(
-//     this.page.title,
-//     this.page.description,
-//     this.$route.fullPath
-//   )
-//   return { title: this.page.title, meta: metatags }
-// },
 </script>
