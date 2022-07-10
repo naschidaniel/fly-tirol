@@ -1,4 +1,5 @@
-import { ref, useRoute } from '@nuxtjs/composition-api'
+import { ref } from 'vue'
+import { useRoute } from '@nuxtjs/composition-api'
 
 const isOpen = ref(false)
 

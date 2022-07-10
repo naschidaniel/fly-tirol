@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import { onMounted } from '@nuxtjs/composition-api'
+import { onMounted } from 'vue'
 import SiteCookieBanner from '~/components/global/SiteCookieBanner.vue'
 import SiteFooter from '~/components/global/SiteFooter.vue'
 import SiteHeader from '~/components/global/SiteHeader.vue'

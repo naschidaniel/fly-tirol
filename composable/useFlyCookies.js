@@ -4,7 +4,7 @@ import {
   onMounted,
   ref,
   watchEffect,
-} from '@nuxtjs/composition-api'
+} from 'vue'
 
 const wrapProperty =
   (property, makeComputed = true) =>

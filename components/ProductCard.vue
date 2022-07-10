@@ -48,7 +48,7 @@
 </template>
 
 <script setup>
-import { computed, defineProps, unref } from '@nuxtjs/composition-api'
+import { computed, defineProps, unref } from 'vue'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useNavigation } from '~/composable/useNavigation'

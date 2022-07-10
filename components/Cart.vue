@@ -98,7 +98,7 @@
 </template>
 
 <script setup>
-import { onMounted } from '@nuxtjs/composition-api'
+import { onMounted } from 'vue'
 import Alert from './Alert.vue'
 import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
 import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'

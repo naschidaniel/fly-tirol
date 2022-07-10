@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { computed, defineProps } from '@nuxtjs/composition-api'
+import { computed, defineProps } from 'vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useMedia } from '~/composable/useMedia'
 
