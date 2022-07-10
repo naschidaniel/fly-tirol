@@ -40,10 +40,9 @@
 import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'
 import PageHeader from '~/components/PageHeader'
+import { usePage } from '~/composable/usePage'
 import { useMetaTags } from '~/composable/useMetaTags'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
-
-const { generateMetaTags, page } = useMetaTags()
 
 const address = {
   href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
@@ -58,13 +57,5 @@ const mailAddress = {
   name: 'info@fly-tirol.com',
 }
 
-// TODO NUXT3
-// head() {
-//   const metatags = this.generateMetaTags(
-//     this.page.title,
-//     this.page.description,
-//     this.$route.fullPath
-//   )
-//   return { title: this.page.title, meta: metatags }
-// },
+useMetaTags()
 </script>

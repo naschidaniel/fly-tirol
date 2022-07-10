@@ -27,6 +27,6 @@
 import { defineProps } from 'vue'
 
 defineProps({
-  members: Array,
+  members: { type: Array, required: true },
 })
 </script>

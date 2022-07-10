@@ -31,7 +31,9 @@
 import ProductCard from './ProductCard.vue'
 import { useNavigation } from '~/composable/useNavigation'
 import { useMetaTags } from '~/composable/useMetaTags'
+import { usePage } from '~/composable/usePage'
 
-const { pages } = useMetaTags()
+useMetaTags()
+const { pages } = usePage()
 const { routeName } = useNavigation()
 </script>

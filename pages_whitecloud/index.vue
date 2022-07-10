@@ -176,7 +176,7 @@ import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerI
 import SolidPlayIcon from '~/components/icons/SolidPlayIcon'
 import Webcam from '~/components/Webcam'
 
-const { generateMetaTags, page } = useMetaTags()
+useMetaTags()
 
 const pictures = [
   '/media/index/gallerie/akrobatikflug-hopfgarten.jpg',
@@ -185,23 +185,4 @@ const pictures = [
 ]
 const selectPicture = Math.floor(Math.random() * 3)
 const picture = ref(pictures[selectPicture])
-// function timer() {
-//   setTimeout(selectPicture, 3000)
-// }
-// function selectPicture() {
-//   const selectPicture = Math.floor(Math.random() * 3)
-//   console.log('done' + selectPicture)
-//   picture.value = pictures[selectPicture]
-//   timer()
-// }
-
-// TODO NUXT3
-// head() {
-//   const metatags = this.generateMetaTags(
-//     this.page.title,
-//     this.page.description,
-//     this.$route.fullPath
-//   )
-//   return { title: this.page.title, meta: metatags }
-// },
 </script>

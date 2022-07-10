@@ -24,7 +24,8 @@ import PageHeader from '~/components/PageHeader.vue'
 import TeamList from '~/components/TeamList.vue'
 import { useMetaTags } from '~/composable/useMetaTags'
 
-const { generateMetaTags, page } = useMetaTags()
+useMetaTags()
+
 const members = [
   {
     name: 'Sebastian Kahn',
@@ -47,14 +48,4 @@ const members = [
     information: '',
   },
 ]
-
-// TODO NUXT3
-// head() {
-//   const metatags = this.generateMetaTags(
-//     this.page.title,
-//     this.page.description,
-//     this.$route.fullPath
-//   )
-//   return { title: this.page.title, meta: metatags }
-// },
 </script>

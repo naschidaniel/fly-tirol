@@ -26,6 +26,7 @@
 <script setup>
 import SocialBar from '~/components/SocialBar.vue'
 import ProductBookCourse from '~/components/ProductBookCourse.vue'
+import { usePage } from '~/composable/usePage'
 import { useMetaTags } from '~/composable/useMetaTags'
 import Grundkurs from '~/content_flytirol/ausbildung/grundkurs.vue'
 import Hoehenflugkurs from '~/content_flytirol/ausbildung/hoehenflugkurs.vue'
@@ -34,15 +35,6 @@ import ParagleiterscheinTheoriekurs from '~/content_flytirol/ausbildung/paraglei
 import Schnupperkurs from '~/content_flytirol/ausbildung/schnupperkurs.vue'
 import Tagesbetreuung from '~/content_flytirol/ausbildung/tagesbetreuung.vue'
 
-const { generateMetaTags, page } = useMetaTags()
-
-// TODO NUXT3
-// head() {
-//   const metatags = this.generateMetaTags(
-//     this.page.title,
-//     this.page.description,
-//     this.$route.fullPath
-//   )
-//   return { title: this.page.title, meta: metatags }
-// },
+const { page } = usePage()
+useMetaTags()
 </script>
