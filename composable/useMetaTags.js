@@ -1,4 +1,9 @@
-import { computed, useRoute, useContext } from '@nuxtjs/composition-api'
+import {
+  computed,
+  useMeta,
+  useRoute,
+  useContext,
+} from '@nuxtjs/composition-api'
 import metadataFlyTirol from '~/static_flytirol/metadata.json'
 import metadataWhiteCloud from '~/static_whitecloud/metadata.json'
 
@@ -34,8 +39,12 @@ export function useMetaTags() {
       .sort((a, b) => a.order - b.order)
   })
 
-  function generateMetaTags(title, description, url) {
-    return [
+  // TODO NUXT3
+  function generateMetaTags() {
+    const { description, meta, title } = useMeta()
+    description.value = page.value.description
+    title.value = page.value.title
+    meta.value = [
       {
         hid: 'twitter:card',
         name: 'twitter:card',
@@ -44,13 +53,13 @@ export function useMetaTags() {
       {
         hid: 'description',
         name: 'description',
-        content: description,
+        content: page.value.description,
       },
-      { hid: 'og:title', property: 'og:title', content: title },
+      { hid: 'og:title', property: 'og:title', content: page.value.title },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: description,
+        content: page.value.description,
       },
       {
         hid: 'og:image',
@@ -68,8 +77,8 @@ export function useMetaTags() {
         hid: 'og:url',
         property: 'og:url',
         content: process.env.isWhiteCloud
-          ? `https://white-cloud.tirol${url}`
-          : `https://fly-tirol.com${url}`,
+          ? `https://white-cloud.tirol${page.value.path}`
+          : `https://fly-tirol.com${page.value.path}`,
       },
     ]
   }
