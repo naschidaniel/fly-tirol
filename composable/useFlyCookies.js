@@ -1,10 +1,4 @@
-import {
-  computed,
-  getCurrentInstance,
-  onMounted,
-  ref,
-  watchEffect,
-} from 'vue'
+import { computed, getCurrentInstance, onMounted, ref, watchEffect } from 'vue'
 
 const wrapProperty =
   (property, makeComputed = true) =>
