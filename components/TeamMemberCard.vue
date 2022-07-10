@@ -32,7 +32,7 @@
 </template>
 
 <script setup>
-import { defineProps } from '@nuxtjs/composition-api'
+import { defineProps } from 'vue'
 import OutlineClipboardListIcon from './icons/OutlineClipboardListIcon.vue'
 import OutlineEmojiHappyIcon from './icons/OutlineEmojiHappyIcon.vue'
 import ResponsiveImage from './ResponsiveImage.vue'

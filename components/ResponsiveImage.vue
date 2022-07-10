@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import { defineProps, computed, ref, onMounted } from '@nuxtjs/composition-api'
+import { defineProps, computed, ref, onMounted } from 'vue'
 import { useData } from '~/composable/useData'
 import { useMedia } from '~/composable/useMedia'
 

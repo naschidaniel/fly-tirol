@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import { defineProps } from '@nuxtjs/composition-api'
+import { defineProps } from 'vue'
 
 const props = defineProps({
   flight: { type: String, required: true },

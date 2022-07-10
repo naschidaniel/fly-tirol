@@ -1,4 +1,4 @@
-import { computed, ref, unref } from '@nuxtjs/composition-api'
+import { computed, ref, unref } from 'vue'
 
 const calender = ref({})
 const calenderCategoriesChecked = ref([])

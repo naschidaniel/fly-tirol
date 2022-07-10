@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { defineProps } from '@nuxtjs/composition-api'
+import { defineProps } from 'vue'
 
 defineProps({
   members: Array,

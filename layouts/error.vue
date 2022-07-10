@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-import { defineProps, onMounted } from '@nuxtjs/composition-api'
+import { defineProps, onMounted } from 'vue'
 import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 

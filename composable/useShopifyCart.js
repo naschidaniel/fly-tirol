@@ -1,4 +1,5 @@
-import { computed, ref, useRouter, unref } from '@nuxtjs/composition-api'
+import { computed, ref, unref } from 'vue'
+import { useRouter } from '@nuxtjs/composition-api'
 import { shopify } from './useFetchShopify'
 import { useFlyCookies } from './useFlyCookies'
 import { isFlyTirol } from './useData'

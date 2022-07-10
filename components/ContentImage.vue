@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { defineProps } from '@nuxtjs/composition-api'
+import { defineProps } from 'vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 
 defineProps({
