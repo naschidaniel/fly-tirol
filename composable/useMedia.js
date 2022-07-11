@@ -1,11 +1,12 @@
 import { onMounted, ref } from '@nuxtjs/composition-api'
-import mediaFlyTirol from '~/public_flytirol/media.json'
-import mediaWhiteCloud from '~/public_whitecloud/media.json'
+import { isFlyTirol } from './useData'
+import { mediaFlyTirol, mediaWhiteCloud } from '~/data/index.js'
 
-const media = process.env.isWhiteCloud ? mediaWhiteCloud : mediaFlyTirol
 const devicePixelRatio = ref(undefined)
 
 export function useMedia() {
+  const media = isFlyTirol ? mediaFlyTirol : mediaWhiteCloud
+
   function setDevicePixelRatio() {
     devicePixelRatio.value = window && window?.devicePixelRatio > 1.5 ? 2 : 1
   }

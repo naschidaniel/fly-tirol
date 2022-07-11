@@ -1,25 +1,12 @@
-import { existsSync, readFileSync, writeFile } from 'fs'
+import { writeFile } from 'fs'
 import glob from 'glob'
 import sizeOf from 'image-size'
+import { mediaFlyTirol, mediaWhiteCloud } from './data/index.js'
 
 for (const nuxtPage of ['flytirol', 'whitecloud']) {
-  const mediaJson =
-    nuxtPage === 'whitecloud'
-      ? './public_whitecloud/media.json'
-      : './public_flytirol/media.json'
-
-  const images =
-    nuxtPage === 'whitecloud'
-      ? glob.sync('./public_whitecloud/media/**/*.{jpg,png}')
-      : glob.sync('./public_flytirol/media/**/*.{jpg,png}')
-
-  const staticPath =
-    nuxtPage === 'whitecloud' ? './public_whitecloud' : './public_flytirol'
-
-  let dataMediaJson = {}
-  if (existsSync(mediaJson)) {
-    dataMediaJson = JSON.parse(readFileSync(mediaJson))
-  }
+  const mediaJson = nuxtPage === 'flytirol' ? mediaFlyTirol : mediaWhiteCloud
+  const images = glob.sync(`./public_${nuxtPage}/media/**/*.{jpg,png}`)
+  const staticPath = `./public_${nuxtPage}`
 
   images
     .sort()
@@ -33,22 +20,28 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
       return { url, path, file, dimensions, alt: '', title: '' }
     })
     .forEach((img) => {
-      if (Object.keys(dataMediaJson).includes(img.url)) return
-      dataMediaJson[img.url] = img
+      if (Object.keys(mediaJson).includes(img.url)) return
+      mediaJson[img.url] = img
     })
 
-  const dataSorted = Object.keys(dataMediaJson)
+  const dataSorted = Object.keys(mediaJson)
     .filter((o) => {
       return images.includes(`${staticPath}${o}`)
     })
     .sort()
     .reduce((obj, key) => {
-      obj[key] = dataMediaJson[key]
+      obj[key] = mediaJson[key]
       return obj
     }, {})
 
   const json = JSON.stringify(dataSorted, null, 2)
-  writeFile(mediaJson, json, (err) => {
-    if (err) throw err
-  })
+  const constName =
+    nuxtPage === 'flytirol' ? 'mediaFlyTirol' : 'mediaWhiteCloud'
+  writeFile(
+    `./data/${constName}.js`,
+    `export const ${constName} = ${json}`,
+    (err) => {
+      if (err) throw err
+    }
+  )
 }

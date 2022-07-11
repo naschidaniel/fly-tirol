@@ -1,11 +1,5 @@
 import { onMounted } from 'vue'
 import { usePage } from './usePage'
-import metadataFlyTirol from '~/public_flytirol/metadata.json'
-import metadataWhiteCloud from '~/public_whitecloud/metadata.json'
-
-const metadata = process.env.isWhiteCloud
-  ? metadataWhiteCloud
-  : metadataFlyTirol
 
 export function useMetaTags() {
   const { page } = usePage()

@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs'
+import { existsSync, readFileSync } from 'fs'
 
 const packages = JSON.parse(
   readFileSync('./package.json', { encoding: 'utf8' })
@@ -24,6 +24,17 @@ const licenses = Object.keys(packages.dependencies)
 if (!(isWhiteCloud || isFlyTirol)) {
   throw new Error(
     `NUXT_PAGE = ${process.env.NUXT_PAGE} | NUXT_PAGE is not set!`
+  )
+}
+
+if (
+  !(
+    existsSync('./data/metadataFlyTirol.js') ||
+    existsSync('./data/metadataWhiteCloud.js')
+  )
+) {
+  throw new Error(
+    'No metadata could be found in ./data! RUN yarn generateContent'
   )
 }
 
