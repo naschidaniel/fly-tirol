@@ -5,16 +5,16 @@ import sizeOf from 'image-size'
 for (const nuxtPage of ['flytirol', 'whitecloud']) {
   const mediaJson =
     nuxtPage === 'whitecloud'
-      ? './static_whitecloud/media.json'
-      : './static_flytirol/media.json'
+      ? './public_whitecloud/media.json'
+      : './public_flytirol/media.json'
 
   const images =
     nuxtPage === 'whitecloud'
-      ? glob.sync('./static_whitecloud/media/**/*.{jpg,png}')
-      : glob.sync('./static_flytirol/media/**/*.{jpg,png}')
+      ? glob.sync('./public_whitecloud/media/**/*.{jpg,png}')
+      : glob.sync('./public_flytirol/media/**/*.{jpg,png}')
 
   const staticPath =
-    nuxtPage === 'whitecloud' ? './static_whitecloud' : './static_flytirol'
+    nuxtPage === 'whitecloud' ? './public_whitecloud' : './public_flytirol'
 
   let dataMediaJson = {}
   if (existsSync(mediaJson)) {

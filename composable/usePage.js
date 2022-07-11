@@ -1,7 +1,7 @@
 import { computed } from 'vue'
 import { useRoute, useContext } from '@nuxtjs/composition-api'
-import metadataFlyTirol from '~/static_flytirol/metadata.json'
-import metadataWhiteCloud from '~/static_whitecloud/metadata.json'
+import metadataFlyTirol from '~/public_flytirol/metadata.json'
+import metadataWhiteCloud from '~/public_whitecloud/metadata.json'
 
 const metadata = process.env.isWhiteCloud
   ? metadataWhiteCloud

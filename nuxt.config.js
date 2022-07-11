@@ -42,7 +42,7 @@ export default {
   target: 'server',
   dir: {
     pages: isWhiteCloud ? 'pages_whitecloud' : 'pages_flytirol',
-    static: isWhiteCloud ? 'static_whitecloud' : 'static_flytirol',
+    static: isWhiteCloud ? 'public_whitecloud' : 'public_flytirol',
   },
   head: {
     // TODO NUXT3

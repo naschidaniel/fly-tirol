@@ -1,6 +1,6 @@
 import { onMounted, ref } from '@nuxtjs/composition-api'
-import mediaFlyTirol from '~/static_flytirol/media.json'
-import mediaWhiteCloud from '~/static_whitecloud/media.json'
+import mediaFlyTirol from '~/public_flytirol/media.json'
+import mediaWhiteCloud from '~/public_whitecloud/media.json'
 
 const media = process.env.isWhiteCloud ? mediaWhiteCloud : mediaFlyTirol
 const devicePixelRatio = ref(undefined)

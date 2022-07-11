@@ -106,5 +106,5 @@ whitecloud*.tar.gz
 # content
 /content_flytirol/**/*.vue
 /content_whitecloud/**/*.vue
-/static_flytirol/metadata.json
-/static_whitecloud/metadata.json
+/public_flytirol/metadata.json
+/public_whitecloud/metadata.json

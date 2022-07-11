@@ -75,7 +75,7 @@ $ yarn optimize-images:whitecloud
 
 ### Collect Media Information
 
-The images in the `./static_flytirol/media` or `./static_whitecloud/media` folder are listet in the `./static/media.json` or `./static_whitecloud/media.json` file. The image information `title` and `alt` can be added in this json file for all Views.
+The images in the `./public_flytirol/media` or `./public_whitecloud/media` folder are listet in the `./static/media.json` or `./public_whitecloud/media.json` file. The image information `title` and `alt` can be added in this json file for all Views.
 
 ``` bash
 # Update media.json
