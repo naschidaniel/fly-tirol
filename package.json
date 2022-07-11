@@ -10,7 +10,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate --modern",
+    "generate": "nuxt generate",
     "lint": "eslint --fix --ext \".cjs,.js,.vue\" --ignore-path .gitignore .",
     "lintContent": "eslint --no-error-on-unmatched-pattern --fix --ext \".vue,.js,.ts\" ./content_flytirol ./content_whitecloud ./data",
     "generateContent": "node generateContent.js && yarn lintContent",
@@ -33,18 +33,18 @@
     "optimize-images:whitecloud": "yarn optimize-images:whitecloud:2xs && yarn optimize-images:whitecloud:xs && yarn optimize-images:whitecloud:sm && yarn optimize-images:whitecloud:md && yarn optimize-images:whitecloud:lg && yarn optimize-images:whitecloud:xl && yarn optimize-images:whitecloud:2xl"
   },
   "dependencies": {
-    "@nuxtjs/composition-api": "^0.33.0",
     "cookie-universal-nuxt": "^2.2.1",
     "core-js": "^3.23.3",
     "heroicons": "^1.0.6",
     "leaflet": "^1.8.0",
-    "nuxt-edge": "latest",
+    "nuxt": "npm:nuxt3@latest",
     "shopify-buy": "^2.16.1",
     "simple-icons": "^7.4.0",
-    "tailwindcss": "^3.1.5"
+    "@nuxtjs/tailwindcss": "^5.1.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.18.2",
+    "@nuxt/kit": "^3.0.0-rc.4",
     "@nuxt/postcss8": "^1.1.3",
     "@nuxtjs/eslint-config": "^10.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
@@ -58,6 +58,7 @@
     "glob": "^8.0.3",
     "image-size": "^1.0.1",
     "marked": "^4.0.17",
+    "nitropack": "^0.4.9",
     "postcss": "^8.4.14",
     "prettier": "^2.7.1"
   }

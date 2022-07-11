@@ -3,7 +3,7 @@
     <div class="flex min-h-screen flex-col">
       <SiteCookieBanner />
       <SiteHeader class="py-6" />
-      <Nuxt class="text-brand pb-6 flex-grow" />
+      <NuxtPage class="text-brand pb-6 flex-grow" />
       <SiteFooter />
     </div>
   </div>

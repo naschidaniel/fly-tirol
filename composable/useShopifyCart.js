@@ -1,9 +1,9 @@
 import { computed, ref, unref } from 'vue'
-import { useRouter } from '@nuxtjs/composition-api'
-import { shopify } from './useFetchShopify'
+import { useShopify } from './useFetchShopify'
 import { useFlyCookies } from './useFlyCookies'
-import { isFlyTirol } from './useData'
-import { useFormat } from '~/composable/useFormat'
+import { useData } from './useData'
+import { useRouter } from '#imports'
+import { useFormat } from './useFormat'
 
 const checkout = ref({})
 const lineItemsChanged = ref([])
@@ -11,6 +11,8 @@ const selectedOptionDateString = ref('')
 export const products = ref([])
 
 export function useShopifyCart() {
+  const { shopify } = useShopify()
+  const data = useData()
   const cookies = useFlyCookies()
   const router = useRouter()
   const { formatPrice } = useFormat()
@@ -50,7 +52,7 @@ export function useShopifyCart() {
   }
 
   async function loadCheckout() {
-    if (isFlyTirol && cookies.isCookieAgreement.value) {
+    if (data.isFlyTirol && cookies.isCookieAgreement.value) {
       const checkoutId = cookies.getCheckoutIdCookie()
       try {
         const fetchedCheckout = await shopify?.checkout.fetch(checkoutId)

@@ -69,11 +69,11 @@ const imageInformation = computed(() => {
     : { alt: '', title: '', url: props.picture, dimensions: undefined }
 })
 
-const extension = imageInformation.value.dimensions.type
+const extension = imageInformation.value?.dimensions?.type
 const responsiveUrl = computed(() => {
   if (!imageSizeTailwindClass.value) return ''
   if (isDevelopment) {
-    return `${imageInformation.value.url}?v=${buildTime}`
+    return `${imageInformation.value?.url}?v=${buildTime}`
   }
   const filePostFix =
     props.fixSize && props.isThumbnail
@@ -84,7 +84,7 @@ const responsiveUrl = computed(() => {
       ? `${imageSizeTailwindClass.value}_thumbnail.${extension}`
       : `${imageSizeTailwindClass.value}.${extension}`
 
-  return imageInformation.value.url.replace(
+  return imageInformation.value?.url.replace(
     `.${extension}`,
     `_${filePostFix}?v=${buildTime}`
   )

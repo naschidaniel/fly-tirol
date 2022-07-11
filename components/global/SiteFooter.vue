@@ -12,7 +12,7 @@
               class="block outline-none w-24 whitespace-nowrap"
               exact
             >
-              &#169; {{ website }}
+              &#169; <span>{{ website }}</span>
             </NuxtLink>
           </div>
           <div class="flex flex-wrap sm:flex-nowrap justify-between w-full">

@@ -1,19 +1,19 @@
-export const isFlyTirol = process.env.isFlyTirol
-export const isWhiteCloud = process.env.isWhiteCloud
-export const shopifyDomain = process.env.shopifyDomain
-export const shopifyAccessToken = process.env.shopifyAccessToken
-
 export function useData() {
-  const buildTime = process.env.buildTime
-  const instagram = process.env.instagram
-  const isDevelopment = process.env.NODE_ENV === 'development'
-  const isWhiteCloud = process.env.isWhiteCloud
-  const licenses = process.env.licenses
-  const mail = process.env.mail
-  const phone = process.env.phone
-  const phoneString = process.env.phoneString
-  const website = process.env.website
-  const websiteUrl = process.env.websiteUrl
+  const config = useRuntimeConfig()
+
+  const buildTime = config.buildTime
+  const instagram = config.instagram
+  const isDevelopment = config.NODE_ENV === 'development'
+  const isFlyTirol = config.isFlyTirol
+  const isWhiteCloud = config.isWhiteCloud
+  const licenses = config.licenses
+  const mail = config.mail
+  const phone = config.phone
+  const phoneString = config.phoneString
+  const shopifyAccessToken = config.shopifyAccessToken
+  const shopifyDomain = config.shopifyDomain
+  const website = config.website
+  const websiteUrl = config.websiteUrl
 
   return {
     buildTime,

@@ -5,6 +5,7 @@ export function useMetaTags() {
   const { page } = usePage()
   // TODO NUXT3
   function generateMetaTags() {
+    const data = useData()
     const meta = [
       {
         hid: 'twitter:card',
@@ -25,7 +26,7 @@ export function useMetaTags() {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: process.env.isWhiteCloud
+        content: data.isWhiteCloud
           ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
           : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
@@ -37,7 +38,7 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: process.env.isWhiteCloud
+        content: data.isWhiteCloud
           ? `https://white-cloud.tirol${page.value.path}`
           : `https://fly-tirol.com${page.value.path}`,
       },
