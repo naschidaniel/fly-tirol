@@ -59,18 +59,11 @@
         <div></div>
         <div class="w-full mt-4 lg:w-1/2 lg:pl-2 lg:mt-0 order-3 lg:order-2">
           <h2><small>Glücksgefühle</small>Flug <strong>buchen</strong></h2>
-          <ProductsRegiondo :flight="page.slug" />
+          <ProductsRegiondo />
         </div>
       </div>
     </div>
-    <ContactMap
-      :map="
-        page.location === 'Hopfgarten'
-          ? '/leaflet_de_hopfgarten.html'
-          : '/leaflet_de_soell.html'
-      "
-      class="mt-10"
-    />
+    <ContactMap class="mt-10" />
     <SocialBar />
   </div>
 </template>

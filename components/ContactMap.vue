@@ -12,13 +12,17 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { usePage } from '~/composable/usePage'
 
-defineProps({
-  map: { type: String, required: true },
-})
+const { page } = usePage()
+console.log(page.value)
+const map =
+  page.value?.location === 'Hopfgarten'
+    ? '/leaflet_de_hopfgarten.html'
+    : page.value?.location === 'Söll'
+    ? '/leaflet_de_soell.html'
+    : '/leaflet_de.html'
 </script>
-
 <style scoped>
 .mapContainer {
   width: 100%;
