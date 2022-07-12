@@ -34,16 +34,15 @@
 </template>
 
 <script setup>
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import ProductVariants from '@/components/ProductVariants.vue'
 import { useMedia } from '~/composable/useMedia'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCalender } from '~/composable/useShopifyCalender'
 import { useShopifyCart } from '~/composable/useShopifyCart'
+import { usePage } from '~/composable/usePage'
 
-defineProps({
-  isCourse: { type: Boolean, required: true },
-})
+const { isCourse } = usePage()
 const { getScreenSize } = useMedia()
 const { routeName, routeSlug } = useNavigation()
 const { filterCalender } = useShopifyCalender()
