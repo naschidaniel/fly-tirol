@@ -79,7 +79,7 @@
 </template>
 
 <script setup>
-import { computed, defineProps, ref, unref, watchEffect } from 'vue'
+import { computed, ref, unref, watchEffect } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { useNavigation } from '~/composable/useNavigation'
@@ -87,9 +87,6 @@ import { useFormat } from '~/composable/useFormat'
 import { usePage } from '~/composable/usePage'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 
-defineProps({
-  isCourse: { type: Boolean, required: true },
-})
 const { page } = usePage()
 const { routeName, routeSlug } = useNavigation()
 const { formatPrice } = useFormat()
