@@ -1,4 +1,5 @@
 export const isFlyTirol = process.env.isFlyTirol
+export const isWhiteCloud = process.env.isWhiteCloud
 export const shopifyDomain = process.env.shopifyDomain
 export const shopifyAccessToken = process.env.shopifyAccessToken
 

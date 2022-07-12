@@ -1,11 +1,13 @@
 import { computed } from 'vue'
 import { useRoute, useContext } from '@nuxtjs/composition-api'
-import { isFlyTirol } from './useData'
+import { useData } from './useData'
 import { metadataFlyTirol, metadataWhiteCloud } from '~/data'
 
 export function usePage() {
   const route = useRoute()
   const context = useContext()
+  const { isFlyTirol, isWhiteCloud } = useData()
+
   const metadataPages = isFlyTirol ? metadataFlyTirol : metadataWhiteCloud
 
   const routeFullPath = `${route.value.fullPath.split('?')[0]}/`.replace(
@@ -25,11 +27,15 @@ export function usePage() {
     )
   })
 
+  const isCourse = isWhiteCloud
+    ? false
+    : !page.value.path?.includes('/tandemfliegen')
+
   const pages = computed(() => {
     const routeName = route.value.name
     return metadataPages
       .filter((p) => p.category === routeName && p.slug !== 'index')
       .sort((a, b) => a.order - b.order)
   })
-  return { page, pages }
+  return { isCourse, page, pages }
 }

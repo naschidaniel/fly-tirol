@@ -54,14 +54,14 @@ import ResponsiveImage from './ResponsiveImage.vue'
 import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 import { useData } from '~/composable/useData'
+import { usePage } from '~/composable/usePage'
 
 const props = defineProps({ page: { type: Object, required: true } })
 const { isFlyTirol, isWhiteCloud } = useData()
 const { routeName } = useNavigation()
 const { products } = useShopifyCart()
-const isCourse = isWhiteCloud
-  ? false
-  : !props.page.path.includes('/tandemfliegen')
+const { isCourse } = usePage()
+
 const course = computed(
   () =>
     unref(products).filter(
