@@ -119,7 +119,7 @@
       </div>
     </div>
 
-    <ContactMap map="/leaflet_de.html" class="mt-10" />
+    <ContactMap class="mt-10" />
     <SocialBar />
   </div>
 </template>

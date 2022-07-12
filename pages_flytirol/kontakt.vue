@@ -31,16 +31,14 @@
       </div>
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
     </div>
-    <ContactMap map="/leaflet_de.html" class="mt-10" />
+    <ContactMap class="mt-10" />
     <SocialBar />
   </div>
 </template>
 
 <script setup>
-import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'
 import PageHeader from '~/components/PageHeader'
-import { usePage } from '~/composable/usePage'
 import { useMetaTags } from '~/composable/useMetaTags'
 import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
 
