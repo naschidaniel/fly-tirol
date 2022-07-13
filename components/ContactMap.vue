@@ -15,7 +15,6 @@
 import { usePage } from '~/composable/usePage'
 
 const { page } = usePage()
-console.log(page.value)
 const map =
   page.value?.location === 'Hopfgarten'
     ? '/leaflet_de_hopfgarten.html'
