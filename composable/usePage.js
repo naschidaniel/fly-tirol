@@ -6,7 +6,7 @@ import { metadataFlyTirol, metadataWhiteCloud } from '~/data'
 export function usePage() {
   const route = useRoute()
   const context = useContext()
-  const { isFlyTirol, isWhiteCloud } = useData()
+  const { isFlyTirol } = useData()
 
   const metadataPages = isFlyTirol ? metadataFlyTirol : metadataWhiteCloud
 
@@ -27,9 +27,7 @@ export function usePage() {
     )
   })
 
-  const isCourse = isWhiteCloud
-    ? false
-    : !page.value.path?.includes('/tandemfliegen')
+  const isCourse = computed(() => !page.value.path?.includes('/tandemfliegen'))
 
   const pages = computed(() => {
     const routeName = route.value.name
@@ -37,5 +35,9 @@ export function usePage() {
       .filter((p) => p.category === routeName && p.slug !== 'index')
       .sort((a, b) => a.order - b.order)
   })
-  return { isCourse, page, pages }
+
+  function getMetadata(path) {
+    return metadataPages.find((p) => p.path === path)
+  }
+  return { isCourse, getMetadata, page, pages }
 }

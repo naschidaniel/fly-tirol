@@ -16,12 +16,7 @@
       class="card--grid grid-gap-1 max-w-full md:max-w-90 mx-auto md:py-12"
     >
       <div v-for="page in pages" :key="page.title">
-        <ProductCard
-          v-if="!page.draft"
-          class="p-4"
-          :slug="`${routeName}/${page.slug}`"
-          :page="page"
-        />
+        <ProductCard v-if="!page.draft" class="p-4" :path="page.path" />
       </div>
     </div>
   </div>
@@ -29,11 +24,7 @@
 
 <script setup>
 import ProductCard from './ProductCard.vue'
-import { useNavigation } from '~/composable/useNavigation'
-import { useMetaTags } from '~/composable/useMetaTags'
 import { usePage } from '~/composable/usePage'
 
-useMetaTags()
 const { pages } = usePage()
-const { routeName } = useNavigation()
 </script>

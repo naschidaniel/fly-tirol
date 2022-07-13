@@ -7,9 +7,13 @@
     <h2 v-else>Wähle deinen Flug</h2>
     <h3>Details zum Angebot</h3>
     <ProductDetails
-      :page="page"
-      :prices="prices"
-      :dates="undefined"
+      :location="metadata?.location"
+      :duration="metadata?.duration"
+      :praxis="metadata?.praxis"
+      :flight-duration="metadata?.flightDuration"
+      :theorie="metadata?.theorie"
+      :price="course?.price"
+      :dates="course?.dates"
       :is-show-date="false"
     />
     <div class="mt-4 flex flex-wrap">
@@ -37,7 +41,7 @@
       >
         <option disabled :value="[]">Bitte auswählen</option>
         <option
-          v-for="option in dates"
+          v-for="option in course?.options"
           :key="option.id"
           :value="option.variants"
         >
@@ -79,48 +83,28 @@
 </template>
 
 <script setup>
-import { computed, ref, unref, watchEffect } from 'vue'
+import { computed, ref, watchEffect } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import { useNavigation } from '~/composable/useNavigation'
 import { useFormat } from '~/composable/useFormat'
 import { usePage } from '~/composable/usePage'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 
-const { page } = usePage()
-const { routeName, routeSlug } = useNavigation()
+const { page, isCourse, getMetadata } = usePage()
 const { formatPrice } = useFormat()
-const { bookProduct, products, selectedOptionDateString } = useShopifyCart()
+const { bookProduct, getCourse, products, selectedOptionDateString } =
+  useShopifyCart()
 
+const course = ref({})
 const selectedProductOptions = ref([])
 const pickedProduct = ref([])
-
 selectedOptionDateString.value = ''
-const category = routeName.split('-')[0]
 
-const dates = computed(() => [
-  ...new Set(
-    unref(products).filter(
-      (s) =>
-        s.isShowProduct &&
-        s.productType.toLowerCase() === category &&
-        s.slug === routeSlug
-    )
-  ),
-])
+const metadata = getMetadata(page.value.path)
+
 const isProductSelected = computed(
   () => selectedProductOptions.value.length !== 0
 )
-
-const prices = computed(() => [
-  ...new Set(
-    unref(products)
-      .filter(
-        (s) => s.productType.toLowerCase() === category && s.slug === routeSlug
-      )
-      .flatMap((c) => c.productPrices)
-  ),
-])
 
 function setPickedCourse() {
   pickedProduct.value = selectedProductOptions.value[0]
@@ -129,12 +113,15 @@ function setPickedCourse() {
 }
 
 function setPickedProductOption() {
-  selectedProductOptions.value = dates.value.find(
+  selectedProductOptions.value = course.value?.options.find(
     (d) => d.optionDateString === selectedOptionDateString.value
   )?.variants
 }
 
 watchEffect(() => {
+  if (products.value.length >= 1) {
+    course.value = getCourse(metadata?.category, metadata?.slug)
+  }
   if (selectedOptionDateString.value !== '') {
     setPickedProductOption()
   }

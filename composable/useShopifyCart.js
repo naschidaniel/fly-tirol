@@ -3,6 +3,7 @@ import { useRouter } from '@nuxtjs/composition-api'
 import { shopify } from './useFetchShopify'
 import { useFlyCookies } from './useFlyCookies'
 import { isFlyTirol } from './useData'
+import { useFormat } from '~/composable/useFormat'
 
 const checkout = ref({})
 const lineItemsChanged = ref([])
@@ -12,6 +13,7 @@ export const products = ref([])
 export function useShopifyCart() {
   const cookies = useFlyCookies()
   const router = useRouter()
+  const { formatPrice } = useFormat()
 
   const cartItems = computed(() => checkout.value?.lineItems)
 
@@ -76,6 +78,30 @@ export function useShopifyCart() {
     setCheckout(createdCheckout)
   }
 
+  function getCourse(category, slug) {
+    const courses =
+      products.value.filter(
+        (s) =>
+          s.isShowProduct &&
+          s.productType.toLowerCase() === category &&
+          s.slug === slug
+      ) ?? []
+    const dates = courses.length
+    const price = getPrice(courses)
+    const options = courses
+    return { dates, price, options }
+  }
+
+  function getPrice(courses) {
+    const prices = [...new Set(courses?.flatMap((v) => v.productPrices))]
+    const pricePrefix = prices.length >= 2 ? 'ab' : undefined
+    const price = formatPrice(prices[0])
+    if (pricePrefix !== undefined) {
+      return `${pricePrefix} ${price}`
+    }
+    return price
+  }
+
   function updateLineItems(id, e) {
     const quantity = parseInt(e.target.value)
     const updateIndex = unref(lineItemsChanged)
@@ -134,15 +160,16 @@ export function useShopifyCart() {
     cartItems,
     cartItemsLength,
     checkout,
+    getCourse,
     isCartItems,
+    lineItemsChanged,
     loadCheckout,
     products,
-    lineItemsChanged,
     refreshCart,
     removeItems,
     resetCart,
-    setCheckout,
     selectedOptionDateString,
+    setCheckout,
     updateItems,
     updateLineItems,
   }
