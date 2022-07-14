@@ -1,8 +1,11 @@
 import Client from 'shopify-buy'
 import { useShopifyCalender } from './useShopifyCalender'
-import { isFlyTirol, shopifyDomain, shopifyAccessToken } from './useData'
 import { useFormat } from './useFormat'
 import { products } from './useShopifyCart'
+
+const isFlyTirol = process.env.isFlyTirol
+const shopifyDomain = process.env.shopifyDomain
+const shopifyAccessToken = process.env.shopifyAccessToken
 
 export const shopify = isFlyTirol
   ? Client.buildClient({

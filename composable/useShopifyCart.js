@@ -2,9 +2,9 @@ import { computed, ref, unref } from 'vue'
 import { useRouter } from '@nuxtjs/composition-api'
 import { shopify } from './useFetchShopify'
 import { useFlyCookies } from './useFlyCookies'
-import { isFlyTirol } from './useData'
 import { useFormat } from '~/composable/useFormat'
 
+const isFlyTirol = process.env.isFlyTirol
 const checkout = ref({})
 const lineItemsChanged = ref([])
 const selectedOptionDateString = ref('')
