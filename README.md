@@ -61,8 +61,7 @@ $ docker run -p 127.0.0.1:3001:3001/tcp whitecloud
 
 ### Optimize Images for Production
 
-The `image-optimizer` tool is needed to optimise the images in the folder `./media_flytirol` or `./media_white`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the `./` directory. 
-The original images are used for the local development environment. 
+The `image-optimizer` tool is used to optimize images in the folders `./public_flytirol/media` or `./public_whitecloud/media`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the root directory. For local development, the original images are used. 
 
 The images are optimized on the basis of the screen widths from [https://tailwindcss.com/docs/responsive-design](https://tailwindcss.com/docs/responsive-design) and the two additional sizes `xs: 512 px` and `2xs: 384 px`.
 
@@ -75,7 +74,7 @@ $ yarn optimize-images:whitecloud
 
 ### Collect Media Information
 
-The images in the `./public_flytirol/media` or `./public_whitecloud/media` folder are listet in the `./public_flytirol/media.js` or `./public_whitecloud/media.js` file. The image information `title` and `alt` can be added in this json file for all Views.
+The images in the `./public_flytirol/media` or `./public_whitecloud/media` folder are listet in the `./data/mediaFlyTirol.js` or `./data/mediaWhiteCloud.js` file. The image information `title` and `alt` can be added in this json file for all Views.
 
 ``` bash
 # Update media.js
