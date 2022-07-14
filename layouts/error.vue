@@ -24,6 +24,8 @@
 </template>
 
 <script setup>
+// TODO NUXT3
+// eslint-disable-next-line import/named
 import { defineProps, onMounted } from 'vue'
 import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
