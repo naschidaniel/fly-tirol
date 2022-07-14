@@ -22,7 +22,7 @@
     <div class="max-w-90 mx-auto text-lg font-heading font-medium leading-snug">
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
       <div class="flex justify-center py-8 px-8">
-        <outline-location-marker-icon
+        <IconOutlineLocationMarker
           class="hidden md:block w-5 h-5 mr-1 -mt-0.25"
         />
         <span class="hidden md:block mr-6">Anschrift</span>
@@ -40,7 +40,7 @@
 import SocialBar from '~/components/SocialBar'
 import PageHeader from '~/components/PageHeader'
 import { useMetaTags } from '~/composable/useMetaTags'
-import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
+import IconOutlineLocationMarker from '~/components/icon/IconOutlineLocationMarker'
 
 const address = {
   href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',

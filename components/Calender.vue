@@ -14,10 +14,10 @@
             @click="setCheckedCategories(category)"
           >
             <span v-if="calenderCategoriesChecked.includes(category)">
-              <OutlineCheckIcon class="text-green-600 h-6 w-6" />
+              <IconOutlineCheck class="text-green-600 h-6 w-6" />
             </span>
             <span v-else>
-              <OutlineXIcon class="text-red-400 h-6 w-6" />
+              <IconOutlineX class="text-red-400 h-6 w-6" />
             </span>
             {{ category }}
           </button>
@@ -36,10 +36,10 @@
             @click="setCheckedProducts(product)"
           >
             <span v-if="calenderProductsChecked.includes(product)">
-              <OutlineCheckIcon class="text-green-600 h-6 w-6" />
+              <IconOutlineCheck class="text-green-600 h-6 w-6" />
             </span>
             <span v-else>
-              <OutlineXIcon class="text-red-400 h-6 w-6" />
+              <IconOutlineX class="text-red-400 h-6 w-6" />
             </span>
             {{ product }}
           </button>
@@ -140,8 +140,8 @@
 <script setup>
 import { useShopifyCalender } from '~/composable/useShopifyCalender'
 import { useShopifyCart } from '~/composable/useShopifyCart'
-import OutlineCheckIcon from '~/components/icons/OutlineCheckIcon.vue'
-import OutlineXIcon from '~/components/icons/OutlineXIcon.vue'
+import IconOutlineCheck from '~/components/icon/IconOutlineCheck'
+import IconOutlineX from '~/components/icon/IconOutlineX'
 
 const { bookProduct } = useShopifyCart()
 const {

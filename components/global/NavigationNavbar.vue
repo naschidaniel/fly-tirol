@@ -32,7 +32,7 @@
         @click="toggleIfDropdownIsOpen()"
       >
         <NuxtLink class="btn-primary" to="/buchen" exact>
-          <OutlineShoppingCartIcon
+          <IconOutlineShoppingCart
             class="mr-1"
             style="height: 1em; width: 1em"
           />
@@ -54,8 +54,8 @@
           class="p-2 rounded-md text-brand focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-white focus:ring-opacity-100 focus:outline-none transition duration-150 ease-in-out"
           @click="isOpen = !isOpen"
         >
-          <OutlineXIcon v-if="isOpen" class="h-6 w-6" />
-          <OutlineMenuIcon v-else class="h-6 w-6" />
+          <IconOutlineX v-if="isOpen" class="h-6 w-6" />
+          <IconOutlineMenu v-else class="h-6 w-6" />
         </button>
       </div>
     </div>
@@ -63,9 +63,9 @@
 </template>
 
 <script setup>
-import OutlineMenuIcon from '../icons/OutlineMenuIcon.vue'
-import OutlineShoppingCartIcon from '../icons/OutlineShoppingCartIcon.vue'
-import OutlineXIcon from '../icons/OutlineXIcon.vue'
+import IconOutlineMenu from '../icon/IconOutlineMenu.vue'
+import IconOutlineShoppingCart from '../icon/IconOutlineShoppingCart.vue'
+import IconOutlineX from '../icon/IconOutlineX.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
 import { useData } from '~/composable/useData'
 import { useNavigation } from '~/composable/useNavigation'
