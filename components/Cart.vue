@@ -79,7 +79,7 @@
           class="btn-primary"
           @click.prevent="refreshCart()"
         >
-          <outline-refresh-icon style="hight: 1em; widht: 1em" />&nbsp;<span
+          <IconOutlineRefresh style="hight: 1em; widht: 1em" />&nbsp;<span
             >Warenkorb aktualisieren</span
           >
         </button>
@@ -87,7 +87,7 @@
       <div class="text-center mt-14">
         <a :href="checkout.webUrl">
           <button aria-label="Order Products" class="btn-primary btn--large">
-            <outline-shopping-bag-icon
+            <IconOutlineShoppingBag
               style="hight: 1em; widht: 1em"
             />&nbsp;<span>Bestellung abschließen</span>
           </button>
@@ -100,8 +100,8 @@
 <script setup>
 import { onMounted } from 'vue'
 import Alert from './Alert.vue'
-import OutlineRefreshIcon from './icons/OutlineRefreshIcon.vue'
-import OutlineShoppingBagIcon from './icons/OutlineShoppingBagIcon.vue'
+import IconOutlineRefresh from './icon/IconOutlineRefresh.vue'
+import IconOutlineShoppingBag from './icon/IconOutlineShoppingBag.vue'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 import { useFormat } from '~/composable/useFormat'
 

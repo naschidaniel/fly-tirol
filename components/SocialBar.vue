@@ -18,7 +18,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><FacebookIcon style="width: 2em; height: 2em; color: #ececec"
+              ><IconFacebook style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
             class="mx-2"
@@ -28,7 +28,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><WhatsAppIcon
+              ><IconWhatsApp
                 class="whats-app-icon"
                 style="width: 2em; height: 2em; color: #ececec"
             /></span></button
@@ -40,7 +40,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><TwitterIcon style="width: 2em; height: 2em; color: #ececec"
+              ><IconTwitter style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
             class="mx-2"
@@ -50,7 +50,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><OutlineMailIcon style="width: 2em; height: 2em; color: #ececec"
+              ><IconOutlineMail style="width: 2em; height: 2em; color: #ececec"
             /></span>
           </button>
         </div>
@@ -68,7 +68,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #e4405f"
-              ><InstagramIcon style="width: 2em; height: 2em; color: #ececec"
+              ><IconInstagram style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
             v-if="isWhiteCloud"
@@ -79,7 +79,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #e4405f"
-              ><YouTubeIcon style="width: 2em; height: 2em; color: #ececec"
+              ><IconYouTube style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
             class="mx-2"
@@ -89,7 +89,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #25d366"
-              ><WhatsAppIcon
+              ><IconWhatsApp
                 class="whats-app-icon"
                 style="width: 2em; height: 2em; color: #ececec"
             /></span></button
@@ -97,7 +97,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(90, 78, 255)"
-              ><OutlinePhoneIcon
+              ><IconOutlinePhone
                 style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
@@ -108,7 +108,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(81, 169, 252)"
-              ><OutlineMailIcon style="width: 2em; height: 2em; color: #ececec"
+              ><IconOutlineMail style="width: 2em; height: 2em; color: #ececec"
             /></span>
           </button>
         </div>
@@ -119,13 +119,13 @@
 
 <script setup>
 import { computed } from 'vue'
-import InstagramIcon from './icons/InstagramIcon'
-import FacebookIcon from './icons/FacebookIcon'
-import OutlineMailIcon from './icons/OutlineMailIcon'
-import OutlinePhoneIcon from './icons/OutlinePhoneIcon'
-import TwitterIcon from './icons/TwitterIcon'
-import YouTubeIcon from './icons/YouTubeIcon'
-import WhatsAppIcon from './icons/WhatsAppIcon'
+import IconInstagram from './icon/IconInstagram'
+import IconFacebook from './icon/IconFacebook'
+import IconOutlineMail from './icon/IconOutlineMail'
+import IconOutlinePhone from './icon/IconOutlinePhone'
+import IconTwitter from './icon/IconTwitter'
+import IconYouTube from './icon/IconYouTube'
+import IconWhatsApp from './icon/IconWhatsApp'
 import { useData } from '~/composable/useData'
 import { usePage } from '~/composable/usePage'
 

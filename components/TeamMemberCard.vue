@@ -8,7 +8,7 @@
           :picture="member.picture"
         />
         <div v-else class="flex justify-center items-center">
-          <outline-emoji-happy-icon class="w-36 h-36 text-gray-400" />
+          <IconOutlineEmojiHappy class="w-36 h-36 text-gray-400" />
         </div>
       </div>
       <div class="card--content px-8 pb-8">
@@ -17,7 +17,7 @@
             {{ member.name }}
           </h3>
           <div class="flex items-start text-sm -ml-1 mb-4">
-            <outline-clipboard-list-icon class="w-4 h-4 mt-0.5" />
+            <IconOutlineClipboardList class="w-4 h-4 mt-0.5" />
             <span class="block leading-none pt-1 ml-1">
               {{ member.position }}
             </span>
@@ -35,8 +35,8 @@
 // TODO NUXT3
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
-import OutlineClipboardListIcon from './icons/OutlineClipboardListIcon.vue'
-import OutlineEmojiHappyIcon from './icons/OutlineEmojiHappyIcon.vue'
+import IconOutlineClipboardList from './icon/IconOutlineClipboardList'
+import IconOutlineEmojiHappy from './icon/IconOutlineEmojiHappy'
 import ResponsiveImage from './ResponsiveImage.vue'
 
 defineProps({ member: { type: Object, required: true } })

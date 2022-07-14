@@ -16,7 +16,7 @@
                 <a
                   href="whatsapp://send?phone=+4368181589568"
                   class="btn-primary btn--large m-4 w-full lg:w-2/3"
-                  ><WhatsAppIcon
+                  ><IconWhatsApp
                     class="mr-2"
                     style="width: 2em; height: 2em; color: #ececec"
                   />
@@ -27,7 +27,7 @@
                 <a
                   href="tel:004368181589568"
                   class="btn-primary btn--large m-4 w-full lg:w-2/3"
-                  ><OutlinePhoneIcon
+                  ><IconOutlinePhone
                     class="mr-2"
                     style="width: 2em; height: 2em; color: #ececec"
                   />
@@ -38,7 +38,7 @@
                 <a
                   href="mailto:info@white-cloud.tirol"
                   class="btn-primary btn--large m-4 w-full lg:w-2/3"
-                  ><OutlineMailIcon
+                  ><IconOutlineMail
                     class="mr-2"
                     style="width: 2em; height: 2em; color: #ececec"
                   />
@@ -59,7 +59,7 @@
       <h2><small>Treffpunkt</small>für&nbsp; <strong>Tandemflüge</strong></h2>
       <div class="md:flex justify-center py-8 px-8">
         <div class="basis-1/2 flex">
-          <outline-location-marker-icon class="w-5 h-5 mr-1 -mt-0.25" /><span
+          <IconOutlineLocationMarker class="w-5 h-5 mr-1 -mt-0.25" /><span
             class="mr-6"
             >Treffpunkt Bergbahn Hopfgarten, Talstation</span
           >
@@ -82,7 +82,7 @@
       <div class="leading-snug nuxt-content">
         <div class="md:flex justify-center py-8 px-8">
           <div class="basis-1/2 flex">
-            <outline-location-marker-icon class="w-5 h-5 mr-1 -mt-0.25" /><span
+            <IconOutlineLocationMarker class="w-5 h-5 mr-1 -mt-0.25" /><span
               class="mr-6"
               >Treffpunkt Bergbahn Söll, Talstation</span
             >
@@ -101,7 +101,7 @@
         <div class="h-0.75 bg-brand rounded-full w-full"></div>
         <div class="md:flex justify-center py-8 px-8">
           <div class="basis-1/2 flex">
-            <outline-location-marker-icon class="w-5 h-5 mr-1 -mt-0.25" /><span
+            <IconOutlineLocationMarker class="w-5 h-5 mr-1 -mt-0.25" /><span
               class="mr-6"
               >Startplatz Hohe Salve</span
             >
@@ -128,10 +128,10 @@
 import { useMetaTags } from '~/composable/useMetaTags'
 import ContactMap from '~/components/ContactMap'
 import SocialBar from '~/components/SocialBar'
-import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
-import OutlineMailIcon from '~/components/icons/OutlineMailIcon'
-import OutlinePhoneIcon from '~/components/icons/OutlinePhoneIcon'
-import WhatsAppIcon from '~/components/icons/WhatsAppIcon'
+import IconOutlineLocationMarker from '~/components/icon/IconOutlineLocationMarker'
+import IconOutlineMail from '~/components/icon/IconOutlineMail'
+import IconOutlinePhone from '~/components/icon/IconOutlinePhone'
+import IconWhatsApp from '~/components/icon/IconWhatsApp'
 
 useMetaTags()
 </script>

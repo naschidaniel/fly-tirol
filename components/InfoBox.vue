@@ -4,7 +4,7 @@
   >
     <div class="flex flex-wrap max-w-max mx-auto">
       <div class="flex space-x-2 mb-8 md:w-1/2">
-        <outline-information-circle-icon class="w-6 h-6" />
+        <IconOutlineInformationCircle class="w-6 h-6" />
         <h2 class="text-xl font-heading font-semibold leading-snug">
           {{ headline }}
         </h2>
@@ -20,7 +20,7 @@
 // TODO NUXT3
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
-import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
+import IconOutlineInformationCircle from './icon/IconOutlineInformationCircle.vue'
 
 defineProps({
   headline: { type: String, required: true },

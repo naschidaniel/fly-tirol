@@ -19,7 +19,7 @@
         <NuxtLink
           to="/fluege-und-preise"
           class="btn-primary btn--large m-4 w-5/6 md:w-1/2 lg:w-1/3"
-          ><SolidPlayIcon
+          ><IconSolidPlay
             class="mr-2"
             style="width: 2em; height: 2em; color: #ececec"
           />
@@ -41,7 +41,7 @@
               <div
                 class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4"
               >
-                <OutlineLocationMarkerIcon
+                <IconOutlineLocationMarker
                   class="h-8 w-8 mx-auto text-gray-100"
                 />
               </div>
@@ -61,7 +61,7 @@
               <div
                 class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4"
               >
-                <OutlineCloudUploadIcon class="h-8 w-8 mx-auto text-gray-100" />
+                <IconOutlineCloudUpload class="h-8 w-8 mx-auto text-gray-100" />
               </div>
               <div class="grow">
                 <h3>Der Start</h3>
@@ -77,7 +77,7 @@
               <div
                 class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4"
               >
-                <OutlineCloudIcon class="h-8 w-8 mx-auto text-gray-100" />
+                <IconOutlineCloud class="h-8 w-8 mx-auto text-gray-100" />
               </div>
               <div class="grow">
                 <h3>Der Flug</h3>
@@ -94,7 +94,7 @@
               <div
                 class="flex-none w-12 h-12 bg-[#1c9dd8] p-2 rounded-full mr-4"
               >
-                <OutlineCloudDownloadIcon
+                <IconOutlineCloudDownload
                   class="h-8 w-8 mx-auto text-gray-100"
                 />
               </div>
@@ -169,11 +169,11 @@ import { useMetaTags } from '~/composable/useMetaTags'
 import SocialBar from '~/components/SocialBar'
 import Index from '~/content_whitecloud/index'
 import ResponsiveImage from '~/components/ResponsiveImage'
-import OutlineCloudIcon from '~/components/icons/OutlineCloudIcon'
-import OutlineCloudDownloadIcon from '~/components/icons/OutlineCloudDownloadIcon'
-import OutlineCloudUploadIcon from '~/components/icons/OutlineCloudUploadIcon'
-import OutlineLocationMarkerIcon from '~/components/icons/OutlineLocationMarkerIcon'
-import SolidPlayIcon from '~/components/icons/SolidPlayIcon'
+import IconOutlineCloud from '~/components/icon/IconOutlineCloud'
+import IconOutlineCloudDownload from '~/components/icon/IconOutlineCloudDownload'
+import IconOutlineCloudUpload from '~/components/icon/IconOutlineCloudUpload'
+import IconOutlineLocationMarker from '~/components/icon/IconOutlineLocationMarker'
+import IconSolidPlay from '~/components/icon/IconSolidPlay'
 import Webcam from '~/components/Webcam'
 
 useMetaTags()

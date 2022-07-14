@@ -9,19 +9,19 @@
           <p v-if="subTitle">{{ subTitle }}</p>
           <p v-else>&nbsp;</p>
           <div class="flex items-center text-sm -ml-1 my-2">
-            <OutlineInformationCircleIcon class="w-6 h-6" />
+            <IconOutlineInformationCircle class="w-6 h-6" />
             <span class="block leading-none pt-1 ml-1 font-bold">
               {{ type }}
             </span>
           </div>
           <div class="flex items-center text-sm -ml-1 my-2">
-            <OutlineLocationMarkerIcon class="w-6 h-6" />
+            <IconOutlineLocationMarker class="w-6 h-6" />
             <span class="block leading-none pt-1 ml-1">
               {{ address }}
             </span>
           </div>
           <div v-if="phone" class="flex items-center text-sm -ml-1 my-2">
-            <OutlinePhoneIcon class="w-6 h-6" />
+            <IconOutlinePhone class="w-6 h-6" />
             <a
               :href="`tel:${phone}`"
               :title="phone"
@@ -31,7 +31,7 @@
             </a>
           </div>
           <div v-if="mail" class="flex items-center text-sm -ml-1 my-2">
-            <OutlineMailIcon class="w-6 h-6" />
+            <IconOutlineMail class="w-6 h-6" />
             <a
               :href="`mailto:${mail}`"
               :title="mail"
@@ -41,7 +41,7 @@
             </a>
           </div>
           <div v-if="website" class="flex items-center text-sm -ml-1 my-2">
-            <OutlineLinkIcon class="w-6 h-6" />
+            <IconOutlineLink class="w-6 h-6" />
             <a
               :href="website"
               target="_blank"
@@ -62,11 +62,11 @@
 // TODO NUXT3
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
-import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
-import OutlineLinkIcon from './icons/OutlineLinkIcon.vue'
-import OutlineLocationMarkerIcon from './icons/OutlineLocationMarkerIcon.vue'
-import OutlineMailIcon from './icons/OutlineMailIcon.vue'
-import OutlinePhoneIcon from './icons/OutlinePhoneIcon.vue'
+import IconOutlineInformationCircle from './icon/IconOutlineInformationCircle.vue'
+import IconOutlineLink from './icon/IconOutlineLink.vue'
+import IconOutlineLocationMarker from './icon/IconOutlineLocationMarker.vue'
+import IconOutlineMail from './icon/IconOutlineMail.vue'
+import IconOutlinePhone from './icon/IconOutlinePhone.vue'
 
 defineProps({
   type: { type: String, required: true },
