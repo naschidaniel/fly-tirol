@@ -22,6 +22,8 @@
 </template>
 
 <script setup>
+// TODO NUXT3
+// eslint-disable-next-line import/named
 import { defineProps, computed, ref, onMounted } from 'vue'
 import { useData } from '~/composable/useData'
 import { useMedia } from '~/composable/useMedia'

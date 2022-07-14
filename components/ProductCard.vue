@@ -15,10 +15,11 @@
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h2 class="text-2xl font-heading font-semibold">
-            <NuxtLink :to="metadata.path"
-              ><span v-if="isFlyTirol">{{ metadata.title }}</span
-              ><span v-if="isWhiteCloud" v-html="metadata.title"></span
-            ></NuxtLink>
+            <NuxtLink :to="metadata.path">
+              <span v-if="isFlyTirol">{{ metadata.title }}</span>
+              <!-- eslint-disable-next-line vue/no-v-html -->
+              <span v-if="isWhiteCloud" v-html="metadata.title"></span>
+            </NuxtLink>
           </h2>
           <ProductDetails
             :location="metadata.location"
@@ -52,6 +53,8 @@
 </template>
 
 <script setup>
+// TODO NUXT3
+// eslint-disable-next-line import/named
 import { computed, defineProps, ref, watchEffect } from 'vue'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'

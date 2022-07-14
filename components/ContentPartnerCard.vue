@@ -59,6 +59,8 @@
 </template>
 
 <script setup>
+// TODO NUXT3
+// eslint-disable-next-line import/named
 import { defineProps } from 'vue'
 import OutlineInformationCircleIcon from './icons/OutlineInformationCircleIcon.vue'
 import OutlineLinkIcon from './icons/OutlineLinkIcon.vue'

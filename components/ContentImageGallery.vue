@@ -21,12 +21,14 @@
 </template>
 
 <script setup>
+// TODO NUXT3
+// eslint-disable-next-line import/named
 import { computed, defineProps } from 'vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useMedia } from '~/composable/useMedia'
 
 const props = defineProps({
-  path: { type: String, default: '/media' },
+  path: { type: String, default: undefined },
 })
 const { media } = useMedia()
 const imageGallery = computed(() =>

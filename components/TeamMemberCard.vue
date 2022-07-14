@@ -32,6 +32,8 @@
 </template>
 
 <script setup>
+// TODO NUXT3
+// eslint-disable-next-line import/named
 import { defineProps } from 'vue'
 import OutlineClipboardListIcon from './icons/OutlineClipboardListIcon.vue'
 import OutlineEmojiHappyIcon from './icons/OutlineEmojiHappyIcon.vue'

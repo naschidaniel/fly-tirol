@@ -44,6 +44,8 @@
 </template>
 
 <script setup>
+// TODO NUXT3
+// eslint-disable-next-line import/named
 import { defineProps } from 'vue'
 import OutlineAcademicCapIconVue from './icons/OutlineAcademicCapIcon'
 import OutlineClockIcon from './icons/OutlineClockIcon'
