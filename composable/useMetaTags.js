@@ -1,8 +1,10 @@
 import { onMounted } from 'vue'
 import { usePage } from './usePage'
+import {useRuntimeConfig} from '#imports'
 
 export function useMetaTags() {
   const { page } = usePage()
+  const config = useRuntimeConfig()
   // TODO NUXT3
   function generateMetaTags() {
     const meta = [
@@ -25,7 +27,7 @@ export function useMetaTags() {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: process.env.isWhiteCloud
+        content: config.isWhiteCloud
           ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
           : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
@@ -37,7 +39,7 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: process.env.isWhiteCloud
+        content: config.isWhiteCloud
           ? `https://white-cloud.tirol${page.value.path}`
           : `https://fly-tirol.com${page.value.path}`,
       },

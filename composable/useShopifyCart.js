@@ -1,16 +1,20 @@
 import { computed, ref, unref } from 'vue'
-import { useRouter } from '@nuxtjs/composition-api'
-import { shopify } from './useFetchShopify'
+import { useRouter } from '#imports'
+import { useShopify } from './useFetchShopify'
 import { useFlyCookies } from './useFlyCookies'
 import { useFormat } from '~/composable/useFormat'
+import { useRuntimeConfig } from '#imports'
 
-const isFlyTirol = process.env.isFlyTirol
 const checkout = ref({})
 const lineItemsChanged = ref([])
 const selectedOptionDateString = ref('')
 export const products = ref([])
 
 export function useShopifyCart() {
+  const config = useRuntimeConfig()
+  const isFlyTirol = config.isFlyTirol
+  const { shopify } = useShopify()
+
   const cookies = useFlyCookies()
   const router = useRouter()
   const { formatPrice } = useFormat()

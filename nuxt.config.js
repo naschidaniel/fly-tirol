@@ -1,3 +1,5 @@
+import { defineNuxtConfig } from 'nuxt'
+
 import { existsSync, readFileSync } from 'fs'
 
 const packages = JSON.parse(
@@ -49,7 +51,8 @@ const websiteUrl = isFlyTirol
   ? 'https://fly-tirol.com'
   : 'https://white-cloud.tirol'
 
-export default {
+
+  export default defineNuxtConfig({
   target: 'server',
   dir: {
     pages: isWhiteCloud ? 'pages_whitecloud' : 'pages_flytirol',
@@ -126,12 +129,9 @@ export default {
   components: true,
 
   buildModules: [
-    'cookie-universal-nuxt',
-    '@nuxtjs/composition-api/module',
     '@nuxtjs/eslint-module',
-    '@nuxt/postcss8',
   ],
-  env: {
+  runtimeConfig: {
     buildTime: +new Date(),
     instagram,
     isFlyTirol,
@@ -145,7 +145,7 @@ export default {
     website,
     websiteUrl,
   },
-  modules: ['cookie-universal-nuxt'],
+  modules: ['@nuxtjs/tailwindcss'],
 
   generate: {
     fallback: '404.html',
@@ -158,21 +158,17 @@ export default {
     liveEdit: false,
   },
 
-  build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
-  },
 
   router: {
     linkExactActiveClass: 'active',
   },
 
-  server: {
-    port: isWhiteCloud ? 3001 : 3000,
+  vite: {
+    server: {
+      hmr: {
+        overlay: false
+      }
+    }
   },
 
   babel: {
@@ -185,4 +181,4 @@ export default {
       ],
     ],
   },
-}
+})

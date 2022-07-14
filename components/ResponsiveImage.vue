@@ -69,7 +69,7 @@ const imageInformation = computed(() => {
     : { alt: '', title: '', url: props.picture, dimensions: undefined }
 })
 
-const extension = imageInformation.value.dimensions.type
+const extension = imageInformation.value?.dimensions?.type
 const responsiveUrl = computed(() => {
   if (!imageSizeTailwindClass.value) return ''
   if (isDevelopment) {

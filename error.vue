@@ -29,7 +29,6 @@
 import { defineProps, onMounted } from 'vue'
 import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
-
 defineProps({
   error: {
     type: Object,

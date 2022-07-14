@@ -1,19 +1,22 @@
 import Client from 'shopify-buy'
+import {useRuntimeConfig} from '#imports'
 import { useShopifyCalender } from './useShopifyCalender'
 import { useFormat } from './useFormat'
 import { products } from './useShopifyCart'
 
-const isFlyTirol = process.env.isFlyTirol
-const shopifyDomain = process.env.shopifyDomain
-const shopifyAccessToken = process.env.shopifyAccessToken
 
-export const shopify = isFlyTirol
+export function useShopify() {
+  const config = useRuntimeConfig()
+  const shopify = config.isFlyTirol
   ? Client.buildClient({
-      domain: shopifyDomain,
-      storefrontAccessToken: shopifyAccessToken,
+      domain: config.shopifyDomain,
+      storefrontAccessToken: config.shopifyAccessToken,
       language: 'de-DE',
     })
   : undefined
+
+  return { shopify }
+}
 
 export function useFetchShopify() {
   const format = useFormat()

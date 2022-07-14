@@ -3,7 +3,7 @@
     <div class="flex min-h-screen flex-col">
       <SiteCookieBanner />
       <SiteHeader class="py-6" />
-      <Nuxt class="text-brand pb-6 flex-grow" />
+      <NuxtPage class="text-brand pb-6 flex-grow" />
       <SiteFooter />
     </div>
   </div>
@@ -16,7 +16,6 @@ import SiteFooter from '~/components/global/SiteFooter.vue'
 import SiteHeader from '~/components/global/SiteHeader.vue'
 import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
-
 const { initShop } = useFetchShopify()
 const { loadCheckout } = useShopifyCart()
 onMounted(() => {

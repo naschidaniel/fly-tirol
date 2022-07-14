@@ -24,7 +24,7 @@
               <span
                 class="text-lg font-heading font-medium flex flex-row items-center mb-2"
               >
-                <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
+                <span class="inline-block w-7 h-0.75 mr-2"></span>
                 <span class="inline-block">Fly Tirol Flugschule</span>
               </span>
               <span class="text-4xl lg:text-6xl font-heading font-bold">

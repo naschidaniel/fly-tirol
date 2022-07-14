@@ -1,10 +1,13 @@
-import { onMounted, ref } from '@nuxtjs/composition-api'
+import { onMounted, ref } from 'vue'
 import { mediaFlyTirol, mediaWhiteCloud } from '~/data/index.js'
+import {useRuntimeConfig} from '#imports'
 
-const isFlyTirol = process.env.isFlyTirol
 const devicePixelRatio = ref(undefined)
 
 export function useMedia() {
+  const config = useRuntimeConfig()
+  const isFlyTirol = config.isFlyTirol
+
   const media = isFlyTirol ? mediaFlyTirol : mediaWhiteCloud
 
   function setDevicePixelRatio() {
