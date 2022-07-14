@@ -87,9 +87,9 @@
       <div class="text-center mt-14">
         <a :href="checkout.webUrl">
           <button aria-label="Order Products" class="btn-primary btn--large">
-            <IconOutlineShoppingBag
-              style="hight: 1em; widht: 1em"
-            />&nbsp;<span>Bestellung abschließen</span>
+            <IconOutlineShoppingBag style="hight: 1em; widht: 1em" />&nbsp;<span
+              >Bestellung abschließen</span
+            >
           </button>
         </a>
       </div>
