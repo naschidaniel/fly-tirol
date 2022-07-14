@@ -22,11 +22,11 @@
 </template>
 
 <script setup>
-// TODO NUXT3
 // eslint-disable-next-line import/named
-import { defineProps, computed, ref, onMounted } from 'vue'
+import { defineProps, computed, ref, onMounted, watchEffect } from 'vue'
 import { useData } from '~/composable/useData'
 import { useMedia } from '~/composable/useMedia'
+import { useMeta } from '#imports'
 
 const props = defineProps({
   boxClass: { type: String, default: '', required: false },
@@ -69,7 +69,7 @@ const imageInformation = computed(() => {
     : { alt: '', title: '', url: props.picture, dimensions: undefined }
 })
 
-const extension = imageInformation.value.dimensions.type
+const extension = imageInformation.value?.dimensions?.type
 const responsiveUrl = computed(() => {
   if (!imageSizeTailwindClass.value) return ''
   if (isDevelopment) {
@@ -92,22 +92,6 @@ const responsiveUrl = computed(() => {
 
 const responsiveUrlWebp = computed(() => {
   return responsiveUrl.value.replace(extension, 'webp')
-})
-
-const responsiveTagType = computed(() => {
-  return props.isPreload && !isDevelopment
-    ? 'image/webp'
-    : props.isPreload
-    ? extension
-    : ''
-})
-
-const responsiveTagUrl = computed(() => {
-  return props.isPreload && !isDevelopment
-    ? responsiveUrlWebp.value
-    : props.isPreload
-    ? responsiveUrl.value
-    : ''
 })
 
 function getImageSizeTailwindClass() {
@@ -137,15 +121,18 @@ onMounted(() => {
   getImageSizeTailwindClass()
 })
 
-// TODO NUXT3
-// useMeta(() => ({
-//   link: [
-//     {
-//       rel: 'preload',
-//       as: 'image',
-//       type: `${responsiveTagType.value}`,
-//       href: `${responsiveTagUrl.value}`,
-//     },
-//   ],
-// }))
+watchEffect(() => {
+  if (responsiveUrl.value !== '' && props.isPreload && !isDevelopment) {
+    useMeta({
+      link: [
+        {
+          rel: 'preload',
+          as: 'image',
+          type: `image/webp`,
+          href: `${responsiveUrl.value.replace(extension, 'webp')}`,
+        },
+      ],
+    })
+  }
+})
 </script>

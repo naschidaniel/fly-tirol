@@ -9,11 +9,13 @@
         <th class="border">Cookie-Name</th>
         <th class="border">Cookie-Wert</th>
       </tr>
-      <tr v-for="(value, index) in allCookies" :key="index" class="border">
+      <tr v-for="cookie of allCookies" :key="cookie.name" class="border">
         <td class="p-1 text-sm lg:text-base align-top border text-center">
-          {{ index }}
+          {{ cookie?.name }}
         </td>
-        <td class="p-1 text-sm lg:text-base break-all border">{{ value }}</td>
+        <td class="p-1 text-sm lg:text-base break-all border">
+          {{ cookie?.value }}
+        </td>
       </tr>
     </table>
     <div class="flex justify-center">

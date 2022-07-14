@@ -53,7 +53,6 @@
 </template>
 
 <script setup>
-// TODO NUXT3
 // eslint-disable-next-line import/named
 import { computed, defineProps, ref, watchEffect } from 'vue'
 import ProductDetails from './ProductDetails.vue'
@@ -63,19 +62,14 @@ import { useData } from '~/composable/useData'
 import { usePage } from '~/composable/usePage'
 
 const props = defineProps({ path: { type: String, required: true } })
-const { products, getCourse } = useShopifyCart()
+const { getCourse } = useShopifyCart()
 const { isFlyTirol, isWhiteCloud } = useData()
 const { isCourse, getMetadata } = usePage()
 const metadata = getMetadata(props.path)
 
-const course = ref({})
 const price = computed(() =>
   isFlyTirol ? course.value?.price : metadata.price
 )
 
-watchEffect(() => {
-  if (products.value.length >= 1) {
-    course.value = getCourse(metadata.category, metadata.slug)
-  }
-})
+const course = computed(() => getCourse(metadata.category, metadata.slug))
 </script>

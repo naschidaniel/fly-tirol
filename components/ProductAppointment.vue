@@ -34,21 +34,21 @@
 </template>
 
 <script setup>
-import { computed, unref, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useFormat } from '~/composable/useFormat'
-import { useNavigation } from '~/composable/useNavigation'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import { usePage } from '~/composable/usePage'
+import { products, useShopifyCart } from '~/composable/useShopifyCart'
 
-const { routeSlug } = useNavigation()
 const { formatDate } = useFormat()
-const { bookProduct, products } = useShopifyCart()
+const { bookProduct } = useShopifyCart()
+const { page } = usePage()
 
 const selectedDate = ref('')
 const isFormValid = ref(true)
 const isDateValid = ref(false)
 
 const productId = computed(
-  () => unref(products).find((p) => p.slug === routeSlug)?.id
+  () => products.value.find((p) => p.slug === page.value.slug)?.id
 )
 
 const today = computed(() => new Date().toISOString().split('T')[0])
@@ -60,7 +60,7 @@ const selectedDateTimestamp = computed(() =>
 function bookFlight() {
   checkDate()
   if (isDateValid.value) {
-    bookProduct(unref(productId), {
+    bookProduct(productId.value, {
       customAttributes: [
         {
           key: 'Wunschtermin nach Absprache',

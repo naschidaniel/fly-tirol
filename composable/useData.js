@@ -1,15 +1,19 @@
+import { useRuntimeConfig } from '#app'
+
 export function useData() {
-  const buildTime = process.env.buildTime
-  const instagram = process.env.instagram
-  const isDevelopment = process.env.NODE_ENV === 'development'
-  const isFlyTirol = process.env.isFlyTirol
-  const isWhiteCloud = process.env.isWhiteCloud
-  const licenses = process.env.licenses
-  const mail = process.env.mail
-  const phone = process.env.phone
-  const phoneString = process.env.phoneString
-  const website = process.env.website
-  const websiteUrl = process.env.websiteUrl
+  const config = useRuntimeConfig()
+
+  const buildTime = config.public.buildTime
+  const instagram = config.public.instagram
+  const isDevelopment = config.public.isDevelopment
+  const isFlyTirol = config.public.isFlyTirol
+  const isWhiteCloud = config.public.isWhiteCloud
+  const licenses = config.public.licenses
+  const mail = config.public.mail
+  const phone = config.public.phone
+  const phoneString = config.public.phoneString
+  const website = config.public.website
+  const websiteUrl = config.public.websiteUrl
 
   return {
     buildTime,

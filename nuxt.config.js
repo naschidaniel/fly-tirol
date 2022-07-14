@@ -1,4 +1,5 @@
 import { existsSync, readFileSync } from 'fs'
+import { defineNuxtConfig } from 'nuxt'
 
 const packages = JSON.parse(
   readFileSync('./package.json', { encoding: 'utf8' })
@@ -38,85 +39,67 @@ if (
   )
 }
 
-const instagram = isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding'
-const mail = isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol'
-const phone = isFlyTirol ? '+436766422088' : '+4368181589568'
-const phoneString = isFlyTirol ? '+43 676 6422088' : '+43 681 81589568'
-const shopifyDomain = process.env.SHOPIFY_DOMAIN
-const shopifyAccessToken = process.env.SHOPIFY_ACCESS_TOKEN
-const website = isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol'
-const websiteUrl = isFlyTirol
-  ? 'https://fly-tirol.com'
-  : 'https://white-cloud.tirol'
-
-export default {
+export default defineNuxtConfig({
   target: 'server',
   dir: {
     pages: isWhiteCloud ? 'pages_whitecloud' : 'pages_flytirol',
-    static: isWhiteCloud ? 'public_whitecloud' : 'public_flytirol',
+    public: isWhiteCloud ? 'public_whitecloud' : 'public_flytirol',
   },
-  head: {
-    // TODO NUXT3
-    // migrate to useHead
-    // titleTemplate: isWhiteCloud
-    //   ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser - %s'
-    //   : 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
-    title: isWhiteCloud
-      ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser'
-      : 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
-    htmlAttrs: {
-      lang: 'de',
+  app: {
+    head: {
+      titleTemplate: isWhiteCloud
+        ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser - %s'
+        : 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
+      meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: isWhiteCloud
+            ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser'
+            : 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary',
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: isWhiteCloud
+            ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.'
+            : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: isWhiteCloud
+            ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.'
+            : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: isWhiteCloud
+            ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
+            : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'article',
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: isWhiteCloud
+            ? 'https://white-cloud.tirol/'
+            : 'https://fly-tirol.com',
+        },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'og:title',
-        property: 'og:title',
-        content: isWhiteCloud
-          ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser'
-          : 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
-      },
-      {
-        hid: 'twitter:card',
-        name: 'twitter:card',
-        content: 'summary',
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: isWhiteCloud
-          ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.'
-          : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: isWhiteCloud
-          ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.'
-          : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: isWhiteCloud
-          ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
-          : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
-      },
-      {
-        hid: 'og:type',
-        property: 'og:type',
-        content: 'article',
-      },
-      {
-        hid: 'og:url',
-        property: 'og:url',
-        content: isWhiteCloud
-          ? 'https://white-cloud.tirol/'
-          : 'https://fly-tirol.com',
-      },
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   css: isWhiteCloud
@@ -125,27 +108,27 @@ export default {
 
   components: true,
 
-  buildModules: [
-    'cookie-universal-nuxt',
-    '@nuxtjs/composition-api/module',
-    '@nuxtjs/eslint-module',
-    '@nuxt/postcss8',
-  ],
-  env: {
-    buildTime: +new Date(),
-    instagram,
-    isFlyTirol,
-    isWhiteCloud,
-    licenses,
-    mail,
-    phone,
-    phoneString,
-    shopifyDomain,
-    shopifyAccessToken,
-    website,
-    websiteUrl,
+  buildModules: ['@nuxtjs/eslint-module'],
+  runtimeConfig: {
+    public: {
+      buildTime: +new Date(),
+      instagram: isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding',
+      isDevelopment: process.env.NODE_ENV === 'development',
+      isFlyTirol,
+      isWhiteCloud,
+      licenses,
+      mail: isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol',
+      phone: isFlyTirol ? '+436766422088' : '+4368181589568',
+      phoneString: isFlyTirol ? '+43 676 6422088' : '+43 681 81589568',
+      shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
+      shopifyDomain: process.env.SHOPIFY_DOMAIN,
+      website: isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol',
+      websiteUrl: isFlyTirol
+        ? 'https://fly-tirol.com'
+        : 'https://white-cloud.tirol',
+    },
   },
-  modules: ['cookie-universal-nuxt'],
+  modules: ['@nuxtjs/tailwindcss'],
 
   generate: {
     fallback: '404.html',
@@ -154,25 +137,18 @@ export default {
     },
   },
 
-  content: {
-    liveEdit: false,
-  },
-
-  build: {
-    postcss: {
-      plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-      },
-    },
+  tailwindcss: {
+    configPath: '~/tailwind.config.cjs',
   },
 
   router: {
     linkExactActiveClass: 'active',
   },
 
-  server: {
-    port: isWhiteCloud ? 3001 : 3000,
+  vite: {
+    server: {
+      port: isWhiteCloud ? 3001 : 3000,
+    },
   },
 
   babel: {
@@ -185,4 +161,4 @@ export default {
       ],
     ],
   },
-}
+})

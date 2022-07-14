@@ -19,6 +19,7 @@ module.exports = {
       'error',
       {
         ignores: [
+          '[...slug]',
           'Alert',
           'Buchen',
           'Calender',
