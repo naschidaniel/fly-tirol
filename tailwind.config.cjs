@@ -17,11 +17,16 @@ const screensizes = {
 }
 
 const content = [
-  './components/**/*.{js,vue,ts}',
+  './components/**/*.vue',
   './layouts/**/*.vue',
   './pages/**/*.vue',
+  './content_flytirol/**/*.vue',
+  './content_whitecloud/**/*.vue',
+  './pages_flytirol/**/*.vue',
+  './pages_whitecloud/**/*.vue',
   './plugins/**/*.{js,ts}',
-  './nuxt.config.js',
+  'app.vue',
+  'error.vue',
 ]
 
 isWhiteCloud

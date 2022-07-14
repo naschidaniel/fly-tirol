@@ -1,19 +1,9 @@
-import { computed, getCurrentInstance, onMounted, ref, watchEffect } from 'vue'
-
-const wrapProperty =
-  (property, makeComputed = true) =>
-  () => {
-    const vm = getCurrentInstance().proxy
-    return makeComputed ? computed(() => vm[property]) : vm[property]
-  }
-
-const useCookies = wrapProperty('$cookies', false)
-
-const allCookies = ref({})
-export const isCookieAgreement = ref(false)
+import { onMounted, ref, watchEffect } from 'vue'
+import { useCookie } from '#imports'
 
 export function useFlyCookies() {
-  const cookies = useCookies()
+  const allCookies = ref({ name: undefined, value: undefined })
+  const isCookieAgreement = ref(false)
 
   watchEffect(() => {
     if (isCookieAgreement.value) {
@@ -27,54 +17,71 @@ export function useFlyCookies() {
   })
 
   function acceptCookieAgreement() {
-    cookies.set('cookieAgreement', 'true', {
+    const cookieAgreement = useCookie('cookieAgreement', {
       path: '/',
-      maxAge: 60 * 60 * 24 * 7 * 31,
+      maxAge: 24 * 7 * 60 * 31,
       sameSite: true,
     })
+    cookieAgreement.value = true
     isCookieAgreement.value = true
   }
 
   function setCookieCheckoutId(id) {
-    cookies.set('FlyTirol-checkoutId', id, {
+    const checkoutId = useCookie('checkoutId', {
       path: '/',
-      maxAge: 24 * 7 * 1,
+      maxAge: 24 * 7 * 60,
       sameSite: true,
     })
+    checkoutId.value = id
   }
 
   function getCookieCheckoutId() {
-    return cookies.get('FlyTirol-checkoutId')
+    const checkoutId = useCookie('checkoutId')
+    return checkoutId.value
   }
 
   function removeCookieCheckoutId() {
-    cookies.remove('FlyTirol-checkoutId')
+    const checkoutId = useCookie(`checkoutId`, {
+      path: '/',
+      maxAge: 0,
+      sameSite: true,
+    })
+    checkoutId.value = undefined
   }
 
   function getAllCookies() {
-    allCookies.value = cookies.getAll()
+    allCookies.value = document.cookie.split('; ').map((c) => {
+      return { name: c.split('=')[0], value: c.split('=')[1] }
+    })
   }
 
   function getCookieAgreementCookie() {
-    const cookieAgreement = cookies.get('cookieAgreement')
-    if (cookieAgreement) {
-      isCookieAgreement.value = cookieAgreement
+    const cookieAgreement = useCookie('cookieAgreement')
+    if (cookieAgreement.value) {
+      isCookieAgreement.value = true
     }
   }
 
   function removeAllCookies() {
-    cookies.removeAll()
+    for (const entry of allCookies.value) {
+      const cookie = useCookie(`${entry.name}`, {
+        path: '/',
+        maxAge: 0,
+        sameSite: true,
+      })
+      cookie.value = undefined
+    }
     isCookieAgreement.value = false
-    getAllCookies()
+    allCookies.value = { name: undefined, value: undefined }
   }
 
   return {
     acceptCookieAgreement,
     allCookies,
     isCookieAgreement,
-    setCheckoutIdCookie: setCookieCheckoutId,
-    getCheckoutIdCookie: getCookieCheckoutId,
-    removeCheckoutIdCookie: removeCookieCheckoutId,
+    setCookieCheckoutId,
+    getCookieCheckoutId,
+    removeCookieCheckoutId,
     removeAllCookies,
   }
 }

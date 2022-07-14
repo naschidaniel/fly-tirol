@@ -1,0 +1,29 @@
+on: [push]
+
+name: Build latest
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        page: [flytirol, whitecloud]
+    runs-on: ubuntu-latest
+    name: Build ${{ matrix.page }} latest
+    env:
+      NUXT_PAGE: ${{ matrix.page }}
+      SHOPIFY_ACCESS_TOKEN: ${{ secrets.SHOPIFY_ACCESS_TOKEN }}
+      SHOPIFY_DOMAIN: ${{ secrets.SHOPIFY_DOMAIN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16'
+      - run: yarn install
+      - run: yarn upgrade --latest
+      - name: generateMediaInformation
+        run: yarn generateMediaInformation
+      - name: generateContent
+        run: yarn generateContent && yarn lintContent
+      - name: build
+        run: yarn build

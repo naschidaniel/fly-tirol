@@ -24,7 +24,6 @@
 </template>
 
 <script setup>
-// TODO NUXT3
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
 

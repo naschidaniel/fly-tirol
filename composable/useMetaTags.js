@@ -1,10 +1,12 @@
 import { onMounted } from 'vue'
-import { usePage } from './usePage'
+import { usePage } from './usePage.js'
+import { useRuntimeConfig, useMeta } from '#app'
 
 export function useMetaTags() {
   const { page } = usePage()
-  // TODO NUXT3
+  const config = useRuntimeConfig()
   function generateMetaTags() {
+    const title = page.value.title.replace(/(<([^>]+)>)/gi, '')
     const meta = [
       {
         hid: 'twitter:card',
@@ -16,7 +18,7 @@ export function useMetaTags() {
         name: 'description',
         content: page.value.description,
       },
-      { hid: 'og:title', property: 'og:title', content: page.value.title },
+      { hid: 'og:title', property: 'og:title', content: title },
       {
         hid: 'og:description',
         property: 'og:description',
@@ -25,7 +27,7 @@ export function useMetaTags() {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: process.env.isWhiteCloud
+        content: config.public.isWhiteCloud
           ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
           : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
@@ -37,18 +39,16 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: process.env.isWhiteCloud
+        content: config.public.isWhiteCloud
           ? `https://white-cloud.tirol${page.value.path}`
           : `https://fly-tirol.com${page.value.path}`,
       },
     ]
-    // TODO NUXT3
-    // migrate to https://v3.nuxtjs.org/guide/features/head-management
-    // useMeta({
-    //   description: page.value.description,
-    //   meta,
-    //   title: page.value.title,
-    // })
+    useMeta({
+      description: page.value.description,
+      meta,
+      title,
+    })
   }
   onMounted(() => {
     generateMetaTags()

@@ -92,10 +92,8 @@ import { useShopifyCart } from '~/composable/useShopifyCart'
 
 const { page, isCourse, getMetadata } = usePage()
 const { formatPrice } = useFormat()
-const { bookProduct, getCourse, products, selectedOptionDateString } =
-  useShopifyCart()
+const { bookProduct, getCourse, selectedOptionDateString } = useShopifyCart()
 
-const course = ref({})
 const selectedProductOptions = ref([])
 const pickedProduct = ref([])
 selectedOptionDateString.value = ''
@@ -105,6 +103,8 @@ const metadata = getMetadata(page.value.path)
 const isProductSelected = computed(
   () => selectedProductOptions.value.length !== 0
 )
+
+const course = computed(() => getCourse(metadata?.category, metadata?.slug))
 
 function setPickedCourse() {
   pickedProduct.value = selectedProductOptions.value[0]
@@ -119,9 +119,6 @@ function setPickedProductOption() {
 }
 
 watchEffect(() => {
-  if (products.value.length >= 1) {
-    course.value = getCourse(metadata?.category, metadata?.slug)
-  }
   if (selectedOptionDateString.value !== '') {
     setPickedProductOption()
   }
