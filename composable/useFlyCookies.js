@@ -1,9 +1,9 @@
-import { computed, getCurrentInstance, onMounted, ref, watchEffect } from 'vue'
-
-const allCookies = ref({ name: undefined, value: undefined })
-export const isCookieAgreement = ref(false)
+import { onMounted, ref, watchEffect } from 'vue'
 
 export function useFlyCookies() {
+  const allCookies = ref({ name: undefined, value: undefined })
+  const isCookieAgreement = ref(false)
+
   watchEffect(() => {
     if (isCookieAgreement.value) {
       getAllCookies()

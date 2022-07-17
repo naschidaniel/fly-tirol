@@ -1,9 +1,9 @@
 import { onMounted, ref } from 'vue'
 import { mediaFlyTirol, mediaWhiteCloud } from '~/data/index.js'
 
-const devicePixelRatio = ref(undefined)
-
 export function useMedia() {
+  const devicePixelRatio = ref(undefined)
+
   const config = useRuntimeConfig()
   const isFlyTirol = config.public.isFlyTirol
 

@@ -1,6 +1,6 @@
 import Client from 'shopify-buy'
 import { useFormat } from './useFormat.js'
-import { products } from './useShopifyCart.js'
+import { useShopifyCart } from './useShopifyCart.js'
 import { useShopifyCalender } from './useShopifyCalender.js'
 
 export function useShopify() {
@@ -19,6 +19,7 @@ export function useShopify() {
 export function useFetchShopify() {
   const format = useFormat()
   const shopifyCalender = useShopifyCalender()
+  const shopifyCart = useShopifyCart()
   const { shopify } = useShopify()
   async function initShop() {
     if (shopify === undefined) return
@@ -136,7 +137,7 @@ export function useFetchShopify() {
     )
 
     shopifyCalender.initCalender(productsItemsSorted)
-    products.value = productsItemsSorted
+    shopifyCart.setProducts(productsItemsSorted)
   }
 
   return {

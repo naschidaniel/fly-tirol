@@ -4,12 +4,12 @@ import { useFlyCookies } from './useFlyCookies.js'
 import { useFormat } from './useFormat.js'
 import { useRouter } from '#imports'
 
-const checkout = ref({})
-const lineItemsChanged = ref([])
-const selectedOptionDateString = ref('')
-export const products = ref([])
-
 export function useShopifyCart() {
+  const checkout = ref({})
+  const lineItemsChanged = ref([])
+  const selectedOptionDateString = ref('')
+  const products = ref([])
+
   const config = useRuntimeConfig()
   const isFlyTirol = config.public.isFlyTirol
   const { shopify } = useShopify()
@@ -52,6 +52,10 @@ export function useShopifyCart() {
     checkout.value = change
   }
 
+  function setProducts(change) {
+    products.value = change
+  }
+
   async function loadCheckout() {
     if (isFlyTirol && flyCookies.isCookieAgreement.value) {
       const checkoutId = flyCookies.getCookieCheckoutId()
@@ -82,6 +86,7 @@ export function useShopifyCart() {
   }
 
   function getCourse(category, slug) {
+    console.log(products.value)
     const courses =
       products.value.filter(
         (s) =>
@@ -173,6 +178,7 @@ export function useShopifyCart() {
     resetCart,
     selectedOptionDateString,
     setCheckout,
+    setProducts,
     updateItems,
     updateLineItems,
   }

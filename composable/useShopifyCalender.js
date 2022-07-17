@@ -1,10 +1,10 @@
 import { computed, ref, unref } from 'vue'
 
-const calender = ref({})
-const calenderCategoriesChecked = ref([])
-const calenderProductsChecked = ref([])
-
 export function useShopifyCalender() {
+  const calender = ref({})
+  const calenderCategoriesChecked = ref([])
+  const calenderProductsChecked = ref([])
+
   const calenderFiltered = computed(() => {
     const categoriesSelected = unref(calenderCategoriesChecked).map((s) =>
       s.toLowerCase()
