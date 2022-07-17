@@ -37,7 +37,6 @@
     "core-js": "^3.23.4",
     "heroicons": "^1.0.6",
     "leaflet": "^1.8.0",
-    "nuxi": "^3.0.0-rc.5",
     "nuxt": "npm:nuxt3@latest",
     "shopify-buy": "^2.16.1",
     "simple-icons": "^7.4.0"
@@ -50,7 +49,7 @@
     "@nuxtjs/eslint-module": "^3.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.2",
-    "eslint": "^8.19.0",
+    "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -59,7 +58,6 @@
     "image-size": "^1.0.2",
     "marked": "^4.0.18",
     "nitropack": "^0.4.12",
-    "postcss": "^8.4.14",
     "prettier": "^2.7.1"
   }
 }
