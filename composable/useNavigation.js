@@ -1,9 +1,9 @@
 import { ref } from 'vue'
 import { useRoute } from '#imports'
 
-const isOpen = ref(false)
-
 export function useNavigation() {
+  const isOpen = ref(false)
+
   const route = useRoute()
 
   const routeName = route.name
