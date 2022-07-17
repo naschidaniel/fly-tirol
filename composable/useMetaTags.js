@@ -1,6 +1,5 @@
 import { onMounted } from 'vue'
-import { usePage } from './usePage'
-import {useRuntimeConfig} from '#imports'
+import { usePage } from './usePage.js'
 
 export function useMetaTags() {
   const { page } = usePage()
@@ -27,7 +26,7 @@ export function useMetaTags() {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: config.isWhiteCloud
+        content: config.public.isWhiteCloud
           ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
           : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
@@ -39,7 +38,7 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: config.isWhiteCloud
+        content: config.public.isWhiteCloud
           ? `https://white-cloud.tirol${page.value.path}`
           : `https://fly-tirol.com${page.value.path}`,
       },

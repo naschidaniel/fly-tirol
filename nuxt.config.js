@@ -1,6 +1,5 @@
-import { defineNuxtConfig } from 'nuxt'
-
 import { existsSync, readFileSync } from 'fs'
+import { defineNuxtConfig } from 'nuxt'
 
 const packages = JSON.parse(
   readFileSync('./package.json', { encoding: 'utf8' })
@@ -51,12 +50,11 @@ const websiteUrl = isFlyTirol
   ? 'https://fly-tirol.com'
   : 'https://white-cloud.tirol'
 
-
-  export default defineNuxtConfig({
+export default defineNuxtConfig({
   target: 'server',
   dir: {
     pages: isWhiteCloud ? 'pages_whitecloud' : 'pages_flytirol',
-    static: isWhiteCloud ? 'public_whitecloud' : 'public_flytirol',
+    public: isWhiteCloud ? 'public_whitecloud' : 'public_flytirol',
   },
   head: {
     // TODO NUXT3
@@ -128,22 +126,23 @@ const websiteUrl = isFlyTirol
 
   components: true,
 
-  buildModules: [
-    '@nuxtjs/eslint-module',
-  ],
+  buildModules: ['@nuxtjs/eslint-module'],
   runtimeConfig: {
-    buildTime: +new Date(),
-    instagram,
-    isFlyTirol,
-    isWhiteCloud,
-    licenses,
-    mail,
-    phone,
-    phoneString,
-    shopifyDomain,
-    shopifyAccessToken,
-    website,
-    websiteUrl,
+    public: {
+      buildTime: +new Date(),
+      instagram,
+      isDevelopment: process.env.NODE_ENV === 'development',
+      isFlyTirol,
+      isWhiteCloud,
+      licenses,
+      mail,
+      phone,
+      phoneString,
+      shopifyDomain,
+      shopifyAccessToken,
+      website,
+      websiteUrl,
+    },
   },
   modules: ['@nuxtjs/tailwindcss'],
 
@@ -154,21 +153,12 @@ const websiteUrl = isFlyTirol
     },
   },
 
-  content: {
-    liveEdit: false,
+  tailwindcss: {
+    configPath: '~/tailwind.config.cjs',
   },
-
 
   router: {
     linkExactActiveClass: 'active',
-  },
-
-  vite: {
-    server: {
-      hmr: {
-        overlay: false
-      }
-    }
   },
 
   babel: {

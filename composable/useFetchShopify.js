@@ -1,19 +1,17 @@
 import Client from 'shopify-buy'
-import {useRuntimeConfig} from '#imports'
-import { useShopifyCalender } from './useShopifyCalender'
-import { useFormat } from './useFormat'
-import { products } from './useShopifyCart'
-
+import { useFormat } from './useFormat.js'
+import { products } from './useShopifyCart.js'
+import { useShopifyCalender } from './useShopifyCalender.js'
 
 export function useShopify() {
   const config = useRuntimeConfig()
-  const shopify = config.isFlyTirol
-  ? Client.buildClient({
-      domain: config.shopifyDomain,
-      storefrontAccessToken: config.shopifyAccessToken,
-      language: 'de-DE',
-    })
-  : undefined
+  const shopify = config.public.isFlyTirol
+    ? Client.buildClient({
+        domain: config.public.shopifyDomain,
+        storefrontAccessToken: config.public.shopifyAccessToken,
+        language: 'de-DE',
+      })
+    : undefined
 
   return { shopify }
 }
@@ -21,7 +19,7 @@ export function useShopify() {
 export function useFetchShopify() {
   const format = useFormat()
   const shopifyCalender = useShopifyCalender()
-
+  const { shopify } = useShopify()
   async function initShop() {
     if (shopify === undefined) return
     // do not show Courses older then 21 days

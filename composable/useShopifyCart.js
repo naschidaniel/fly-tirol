@@ -1,9 +1,8 @@
 import { computed, ref, unref } from 'vue'
+import { useShopify } from './useFetchShopify.js'
+import { useFlyCookies } from './useFlyCookies.js'
+import { useFormat } from './useFormat.js'
 import { useRouter } from '#imports'
-import { useShopify } from './useFetchShopify'
-import { useFlyCookies } from './useFlyCookies'
-import { useFormat } from '~/composable/useFormat'
-import { useRuntimeConfig } from '#imports'
 
 const checkout = ref({})
 const lineItemsChanged = ref([])
@@ -12,10 +11,10 @@ export const products = ref([])
 
 export function useShopifyCart() {
   const config = useRuntimeConfig()
-  const isFlyTirol = config.isFlyTirol
+  const isFlyTirol = config.public.isFlyTirol
   const { shopify } = useShopify()
 
-  const cookies = useFlyCookies()
+  const flyCookies = useFlyCookies()
   const router = useRouter()
   const { formatPrice } = useFormat()
 
@@ -47,15 +46,15 @@ export function useShopifyCart() {
   }
 
   function setCheckout(change) {
-    if (cookies.isCookieAgreement.value && shopify !== undefined) {
-      cookies.setCheckoutIdCookie(change.id)
+    if (flyCookies.isCookieAgreement.value && shopify !== undefined) {
+      flyCookies.setCookieCheckoutId(change.id)
     }
     checkout.value = change
   }
 
   async function loadCheckout() {
-    if (isFlyTirol && cookies.isCookieAgreement.value) {
-      const checkoutId = cookies.getCheckoutIdCookie()
+    if (isFlyTirol && flyCookies.isCookieAgreement.value) {
+      const checkoutId = flyCookies.getCookieCheckoutId()
       try {
         const fetchedCheckout = await shopify?.checkout.fetch(checkoutId)
         const createdAt =
@@ -71,7 +70,7 @@ export function useShopifyCart() {
           return
         }
       } catch (e) {
-        cookies.removeCheckoutIdCookie()
+        flyCookies.removeCookieCheckoutId()
         // eslint-disable-next-line no-console
         console.error(
           'The CheckoutId could not be loaded from the local storage.'
@@ -142,7 +141,7 @@ export function useShopifyCart() {
   }
 
   function resetCart() {
-    cookies.removeCheckoutIdCookie()
+    flyCookies.removeCookieCheckoutId()
     loadCheckout()
   }
 

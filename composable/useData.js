@@ -1,19 +1,17 @@
-import {useRuntimeConfig} from '#imports'
-
 export function useData() {
   const config = useRuntimeConfig()
 
-  const buildTime = config.buildTime
-  const instagram = config.instagram
-  const isDevelopment = config.NODE_ENV === 'development'
-  const isFlyTirol = config.isFlyTirol
-  const isWhiteCloud = config.isWhiteCloud
-  const licenses = config.licenses
-  const mail = config.mail
-  const phone = config.phone
-  const phoneString = config.phoneString
-  const website = config.website
-  const websiteUrl = config.websiteUrl
+  const buildTime = config.public.buildTime
+  const instagram = config.public.instagram
+  const isDevelopment = config.public.isDevelopment
+  const isFlyTirol = config.public.isFlyTirol
+  const isWhiteCloud = config.public.isWhiteCloud
+  const licenses = config.public.licenses
+  const mail = config.public.mail
+  const phone = config.public.phone
+  const phoneString = config.public.phoneString
+  const website = config.public.website
+  const websiteUrl = config.public.websiteUrl
 
   return {
     buildTime,

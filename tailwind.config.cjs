@@ -77,7 +77,7 @@ const content = [
   './pages_whitecloud/**/*.vue',
   './plugins/**/*.{js,ts}',
   'app.vue',
-  'error.vue'
+  'error.vue',
 ]
 
 isWhiteCloud
