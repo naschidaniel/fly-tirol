@@ -157,6 +157,10 @@ export default defineNuxtConfig({
     configPath: '~/tailwind.config.cjs',
   },
 
+  experimental: {
+    viteNode: true,
+  },
+
   router: {
     linkExactActiveClass: 'active',
   },

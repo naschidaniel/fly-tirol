@@ -13,7 +13,7 @@ export function usePage() {
   const routeFullPath = `${route.fullPath.split('?')[0]}/`.replace('//', '/')
   if (metadataPages.find((p) => p.path === routeFullPath) === undefined) {
     throwError({ statusCode: 404, message: 'Page not Found' })
-    //context.error({ statusCode: 404, message: 'Post not found' })
+    // context.error({ statusCode: 404, message: 'Post not found' })
   }
   const page = computed(() => {
     return (
