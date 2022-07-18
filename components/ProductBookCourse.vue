@@ -37,20 +37,17 @@
 import { computed } from 'vue'
 import ProductVariants from '@/components/ProductVariants.vue'
 import { useMedia } from '~/composable/useMedia'
-import { useNavigation } from '~/composable/useNavigation'
 import { useShopifyCalender } from '~/composable/useShopifyCalender'
 import { useShopifyCart } from '~/composable/useShopifyCart'
 import { usePage } from '~/composable/usePage'
 
-const { isCourse } = usePage()
+const { isCourse, page } = usePage()
 const { getScreenSize } = useMedia()
-const { routeName, routeSlug } = useNavigation()
 const { filterCalender } = useShopifyCalender()
 const { selectedOptionDateString } = useShopifyCart()
 
-const category = routeName.split('-')[0]
 const productCalender = computed(() =>
-  filterCalender([category], { slug: [routeSlug] })
+  filterCalender(page.value.category, { slug: page.value.slug })
 )
 
 function setOptionDateString(optionDateString) {

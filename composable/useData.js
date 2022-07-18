@@ -1,3 +1,5 @@
+import { useRuntimeConfig } from '#app'
+
 export function useData() {
   const config = useRuntimeConfig()
 

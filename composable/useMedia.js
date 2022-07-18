@@ -1,5 +1,6 @@
 import { onMounted, ref } from 'vue'
 import { mediaFlyTirol, mediaWhiteCloud } from '~/data/index.js'
+import { useRuntimeConfig } from '#app'
 
 export function useMedia() {
   const devicePixelRatio = ref(undefined)

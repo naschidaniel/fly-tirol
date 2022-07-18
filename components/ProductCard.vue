@@ -63,7 +63,7 @@ import { useData } from '~/composable/useData'
 import { usePage } from '~/composable/usePage'
 
 const props = defineProps({ path: { type: String, required: true } })
-const { products, getCourse } = useShopifyCart()
+const { getCourse, products } = useShopifyCart()
 const { isFlyTirol, isWhiteCloud } = useData()
 const { isCourse, getMetadata } = usePage()
 const metadata = getMetadata(props.path)

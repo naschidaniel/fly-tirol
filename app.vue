@@ -14,10 +14,8 @@ import { onMounted } from 'vue'
 import SiteCookieBanner from '~/components/global/SiteCookieBanner.vue'
 import SiteFooter from '~/components/global/SiteFooter.vue'
 import SiteHeader from '~/components/global/SiteHeader.vue'
-import { useFetchShopify } from '~/composable/useFetchShopify'
 import { useShopifyCart } from '~/composable/useShopifyCart'
-const { initShop } = useFetchShopify()
-const { loadCheckout } = useShopifyCart()
+const { initShop, loadCheckout } = useShopifyCart()
 onMounted(() => {
   initShop()
   loadCheckout()

@@ -88,11 +88,11 @@ import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { useFormat } from '~/composable/useFormat'
 import { usePage } from '~/composable/usePage'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import { products, useShopifyCart } from '~/composable/useShopifyCart'
 
 const { page, isCourse, getMetadata } = usePage()
 const { formatPrice } = useFormat()
-const { bookProduct, getCourse, products, selectedOptionDateString } =
+const { bookProduct, getCourse, selectedOptionDateString, checkout } =
   useShopifyCart()
 
 const course = ref({})

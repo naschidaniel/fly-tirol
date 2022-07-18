@@ -1,7 +1,7 @@
 import { computed } from 'vue'
 import { useData } from './useData.js'
 import { metadataFlyTirol, metadataWhiteCloud } from '~/data'
-import { useRoute } from '#imports'
+import { useRoute, throwError } from '#imports'
 
 export function usePage() {
   const route = useRoute()

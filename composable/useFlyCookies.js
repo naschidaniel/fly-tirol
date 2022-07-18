@@ -1,4 +1,5 @@
 import { onMounted, ref, watchEffect } from 'vue'
+import { useCookie } from '#imports'
 
 export function useFlyCookies() {
   const allCookies = ref({ name: undefined, value: undefined })
