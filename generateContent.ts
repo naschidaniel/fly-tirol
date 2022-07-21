@@ -36,30 +36,28 @@ function generate(nuxtPage) {
         }
         metadata[entry[0]] = entry[1]
       })
-    metadata = Object.keys(metadata)
+    let pages = Object.keys(metadata)
       .sort()
       // eslint-disable-next-line no-sequences
       .reduce((r, k) => ((r[k] = metadata[k]), r), {})
-    metadataPages.push(metadata)
+    metadataPages.push(pages)
     const content = ['<template>', '<div>']
     content.push(marked(data.split('---')[2]).split(/\r\n|\n/))
-    content.push(['</div>', '</template>'])
+    content.push('</div>')
+    content.push('</template>')
 
     if (isContentImageGallery || isContentPartnerCard) {
-      content.push(['', '<script setup>'])
+      content.push('')
+      content.push('<script setup lang="ts">')
     }
     if (isContentImageGallery) {
-      content.push([
-        "import ContentImageGallery from '~/components/ContentImageGallery.vue'",
-      ])
+      content.push("import ContentImageGallery from '@/components/ContentImageGallery.vue'")
     }
     if (isContentPartnerCard) {
-      content.push([
-        "import ContentPartnerCard from '~/components/ContentPartnerCard.vue'",
-      ])
+      content.push("import ContentPartnerCard from '@/components/ContentPartnerCard.vue'")
     }
     if (isContentImageGallery || isContentPartnerCard) {
-      content.push(['</script>', ''])
+      content.push('</script>')
     }
     const text = content.flat().join('\r\n')
     writeFile(filePath.replace('.md', '.vue'), text, (err) => {
@@ -71,14 +69,18 @@ function generate(nuxtPage) {
   const constName =
     nuxtPage === 'flytirol' ? 'metadataFlyTirol' : 'metadataWhiteCloud'
   writeFile(
-    `./data/${constName}.js`,
-    `export const ${constName} = ${json}`,
+    `./data/${constName}.ts`,
+    `import { MetaData } from '@/types/metadata'\n\n export const ${constName}: MetaData[] = ${json}`,
     (err) => {
       if (err) throw err
     }
   )
 }
 
-for (const pagePage of ['flytirol', 'whitecloud']) {
-  generate(pagePage)
+export default function main() {
+  for (const pagePage of ['flytirol', 'whitecloud']) {
+    generate(pagePage)
+  }
 }
+
+main()

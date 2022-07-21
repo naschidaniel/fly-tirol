@@ -10,6 +10,6 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import IconOutlineInformationCircle from './icon/IconOutlineInformationCircle.vue'
 </script>

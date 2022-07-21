@@ -43,16 +43,16 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
-import IconOutlineAcademicCap from './icon/IconOutlineAcademicCap'
-import IconOutlineClock from './icon/IconOutlineClock'
-import IconOutlineCash from './icon/IconOutlineCash'
-import IconOutlineCalendar from './icon/IconOutlineCalendar'
-import IconOutlineLocationMarker from './icon/IconOutlineLocationMarker'
-import IconOutlinePaperPlane from './icon/IconOutlinePaperPlane'
-import IconSpinner from './icon/IconSpinner'
+import IconOutlineAcademicCap from './icon/IconOutlineAcademicCap.vue'
+import IconOutlineClock from './icon/IconOutlineClock.vue'
+import IconOutlineCash from './icon/IconOutlineCash.vue'
+import IconOutlineCalendar from './icon/IconOutlineCalendar.vue'
+import IconOutlineLocationMarker from './icon/IconOutlineLocationMarker.vue'
+import IconOutlinePaperPlane from './icon/IconOutlinePaperPlane.vue'
+import IconSpinner from './icon/IconSpinner.vue'
 
 defineProps({
   dates: { type: Number, default: undefined },

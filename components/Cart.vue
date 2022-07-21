@@ -97,13 +97,13 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import Alert from './Alert.vue'
 import IconOutlineRefresh from './icon/IconOutlineRefresh.vue'
 import IconOutlineShoppingBag from './icon/IconOutlineShoppingBag.vue'
-import { useShopifyCart } from '~/composable/useShopifyCart'
-import { useFormat } from '~/composable/useFormat'
+import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useFormat } from '@/composable/useFormat'
 
 const { formatPrice } = useFormat()
 const {

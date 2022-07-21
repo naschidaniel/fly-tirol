@@ -1,10 +1,11 @@
 import { writeFile } from 'fs'
 import glob from 'glob'
 import sizeOf from 'image-size'
-import { mediaFlyTirol, mediaWhiteCloud } from './data/index.js'
+import _mediaFlyTirol from './data/mediaFlyTirol.json' assert {type: "json"}
+import _mediaWhiteCloud from './data/mediaWhiteCloud.json' assert {type: "json"}
 
 for (const nuxtPage of ['flytirol', 'whitecloud']) {
-  const mediaJson = nuxtPage === 'flytirol' ? mediaFlyTirol : mediaWhiteCloud
+  const mediaJson = nuxtPage === 'flytirol' ? _mediaFlyTirol : _mediaWhiteCloud
   const images = glob.sync(`./public_${nuxtPage}/media/**/*.{jpg,png}`)
   const staticPath = `./public_${nuxtPage}`
 
@@ -15,7 +16,7 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
       const file = filePath.split('/').reverse()[0]
       const path = filePath.replace(staticPath, '').replace(file, '')
       const dimensions = sizeOf(filePath)
-      dimensions.ratio =
+      dimensions['ratio'] =
         Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
       return { url, path, file, dimensions, alt: '', title: '' }
     })
@@ -37,11 +38,17 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
   const json = JSON.stringify(dataSorted, null, 2)
   const constName =
     nuxtPage === 'flytirol' ? 'mediaFlyTirol' : 'mediaWhiteCloud'
-  writeFile(
-    `./data/${constName}.js`,
-    `export const ${constName} = ${json}`,
+    writeFile(
+      `./data/${constName}.json`,
+      json,
     (err) => {
       if (err) throw err
     }
   )
+  writeFile(
+    `./data/${constName}.ts`,
+    `import { MediaInformation } from '@/types/mediainformation'\n\n export const ${constName}: { [key: string]: MediaInformation} = ${json}`,
+  (err) => {
+    if (err) throw err
+  })
 }

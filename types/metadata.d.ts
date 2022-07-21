@@ -1,0 +1,18 @@
+export interface MetaData {
+  category: string,
+  description: string,
+  duration?: string,
+  draft?: string,
+  flightDuration?: string,
+  image?: string,
+  imageGallery?: string,
+  isAppointment?: string,
+  location?: string,
+  order?: string,
+  path: string,
+  praxis?: string,
+  price?: string,
+  slug: string,
+  theorie?: string,
+  title: string,
+}

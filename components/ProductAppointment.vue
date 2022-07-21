@@ -33,11 +33,11 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useFormat } from '~/composable/useFormat'
-import { usePage } from '~/composable/usePage'
-import { products, useShopifyCart } from '~/composable/useShopifyCart'
+import { useFormat } from '@/composable/useFormat'
+import { usePage } from '@/composable/usePage'
+import { products, useShopifyCart } from '@/composable/useShopifyCart'
 
 const { formatDate } = useFormat()
 const { bookProduct } = useShopifyCart()

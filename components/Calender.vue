@@ -137,11 +137,11 @@
   </div>
 </template>
 
-<script setup>
-import { useShopifyCalender } from '~/composable/useShopifyCalender'
-import { useShopifyCart } from '~/composable/useShopifyCart'
-import IconOutlineCheck from '~/components/icon/IconOutlineCheck'
-import IconOutlineX from '~/components/icon/IconOutlineX'
+<script setup lang="ts">
+import { useShopifyCalender } from '@/composable/useShopifyCalender'
+import { useShopifyCart } from '@/composable/useShopifyCart'
+import IconOutlineCheck from '@/components/icon/IconOutlineCheck.vue'
+import IconOutlineX from '@/components/icon/IconOutlineX.vue'
 
 const { bookProduct } = useShopifyCart()
 const {

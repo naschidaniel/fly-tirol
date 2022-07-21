@@ -163,18 +163,18 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
-import { useMetaTags } from '~/composable/useMetaTags'
-import SocialBar from '~/components/SocialBar'
-import Index from '~/content_whitecloud/index'
-import ResponsiveImage from '~/components/ResponsiveImage'
-import IconOutlineCloud from '~/components/icon/IconOutlineCloud'
-import IconOutlineCloudDownload from '~/components/icon/IconOutlineCloudDownload'
-import IconOutlineCloudUpload from '~/components/icon/IconOutlineCloudUpload'
-import IconOutlineLocationMarker from '~/components/icon/IconOutlineLocationMarker'
-import IconSolidPlay from '~/components/icon/IconSolidPlay'
-import Webcam from '~/components/Webcam'
+import { useMetaTags } from '@/composable/useMetaTags'
+import SocialBar from '@/components/SocialBar.vue'
+import Index from '@/content_whitecloud/index.vue'
+import ResponsiveImage from '@/components/ResponsiveImage.vue'
+import IconOutlineCloud from '@/components/icon/IconOutlineCloud.vue'
+import IconOutlineCloudDownload from '@/components/icon/IconOutlineCloudDownload.vue'
+import IconOutlineCloudUpload from '@/components/icon/IconOutlineCloudUpload.vue'
+import IconOutlineLocationMarker from '@/components/icon/IconOutlineLocationMarker.vue'
+import IconSolidPlay from '@/components/icon/IconSolidPlay.vue'
+import Webcam from '@/components/Webcam.vue'
 
 useMetaTags()
 

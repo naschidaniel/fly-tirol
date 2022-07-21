@@ -30,8 +30,8 @@ if (!(isWhiteCloud || isFlyTirol)) {
 
 if (
   !(
-    existsSync('./data/metadataFlyTirol.js') ||
-    existsSync('./data/metadataWhiteCloud.js')
+    existsSync('./data/metadataFlyTirol.ts') ||
+    existsSync('./data/metadataWhiteCloud.ts')
   )
 ) {
   throw new Error(
@@ -130,11 +130,8 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxtjs/tailwindcss'],
 
-  generate: {
-    fallback: '404.html',
-    generate: {
-      interval: 2000,
-    },
+  typescript: {
+    typeCheck: true,
   },
 
   tailwindcss: {

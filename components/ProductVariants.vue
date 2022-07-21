@@ -82,13 +82,13 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed, ref, watchEffect } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import { useFormat } from '~/composable/useFormat'
-import { usePage } from '~/composable/usePage'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import { useFormat } from '@/composable/useFormat'
+import { usePage } from '@/composable/usePage'
+import { useShopifyCart } from '@/composable/useShopifyCart'
 
 const { page, isCourse, getMetadata } = usePage()
 const { formatPrice } = useFormat()

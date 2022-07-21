@@ -11,13 +11,13 @@
   </div>
 </template>
 
-<script setup>
-import { usePage } from '~/composable/usePage'
-import { useMetaTags } from '~/composable/useMetaTags'
-import SocialBar from '~/components/SocialBar.vue'
-import ProductBookCourse from '~/components/ProductBookCourse.vue'
-import SicherheitstrainingAmGardasee from '~/content_flytirol/sicherheitstrainings/sicherheitstraining-am-gardasee.vue'
-import SicherheitstrainingInOelideniz from '~/content_flytirol/sicherheitstrainings/sicherheitstraining-in-oeluedeniz.vue'
+<script setup lang="ts">
+import { usePage } from '@/composable/usePage'
+import { useMetaTags } from '@/composable/useMetaTags'
+import SocialBar from '@/components/SocialBar.vue'
+import ProductBookCourse from '@/components/ProductBookCourse.vue'
+import SicherheitstrainingAmGardasee from '@/content_flytirol/sicherheitstrainings/sicherheitstraining-am-gardasee.vue'
+import SicherheitstrainingInOelideniz from '@/content_flytirol/sicherheitstrainings/sicherheitstraining-in-oeluedeniz.vue'
 
 useMetaTags()
 const { page } = usePage()

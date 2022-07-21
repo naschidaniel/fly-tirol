@@ -18,11 +18,11 @@
   </div>
 </template>
 
-<script setup>
-import SocialBar from '~/components/SocialBar.vue'
-import PageHeader from '~/components/PageHeader.vue'
-import TeamList from '~/components/TeamList.vue'
-import { useMetaTags } from '~/composable/useMetaTags'
+<script setup lang="ts">
+import SocialBar from '@/components/SocialBar.vue'
+import PageHeader from '@/components/PageHeader.vue'
+import TeamList from '@/components/TeamList.vue'
+import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()
 

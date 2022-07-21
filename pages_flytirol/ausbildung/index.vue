@@ -44,12 +44,12 @@
   </div>
 </template>
 
-<script setup>
-import PageHeader from '~/components/PageHeader.vue'
-import SocialBar from '~/components/SocialBar.vue'
-import ProductList from '~/components/ProductList.vue'
-import InfoBox from '~/components/InfoBox.vue'
-import { useMetaTags } from '~/composable/useMetaTags'
+<script setup lang="ts">
+import PageHeader from '@/components/PageHeader.vue'
+import SocialBar from '@/components/SocialBar.vue'
+import ProductList from '@/components/ProductList.vue'
+import InfoBox from '@/components/InfoBox.vue'
+import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()
 </script>

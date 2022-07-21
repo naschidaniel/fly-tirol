@@ -31,10 +31,10 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
-import IconOutlineClipboardList from './icon/IconOutlineClipboardList'
+import IconOutlineClipboardList from './icon/IconOutlineClipboardList.vue'
 import IconOutlineEmojiHappy from './icon/IconOutlineEmojiHappy'
 import ResponsiveImage from './ResponsiveImage.vue'
 

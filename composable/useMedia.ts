@@ -1,5 +1,6 @@
 import { onMounted, ref } from 'vue'
-import { mediaFlyTirol, mediaWhiteCloud } from '~/data/index.js'
+import {mediaFlyTirol, mediaWhiteCloud} from '@/data'
+
 import { useRuntimeConfig } from '#app'
 
 export function useMedia() {
