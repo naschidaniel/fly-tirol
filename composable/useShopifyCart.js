@@ -1,6 +1,6 @@
 import Client from 'shopify-buy'
 import { computed, ref, unref, watchEffect } from 'vue'
-import { useFlyCookies } from './useFlyCookies.js'
+import { useFlyCookies } from './useFlyCookies'
 import { useFormat } from './useFormat'
 import { useShopifyCalender } from './useShopifyCalender.js'
 import { useRouter } from '#imports'

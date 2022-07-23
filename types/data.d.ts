@@ -1,3 +1,8 @@
+export interface Cookie {
+  name: string,
+  value: string,
+}
+
 export interface License {
   name: string,
   version: string,
