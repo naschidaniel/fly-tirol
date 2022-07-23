@@ -66,3 +66,7 @@ export interface Product {
     variants: any[],
     selectedId?: string,
   }
+
+export interface Calender {
+  [key: string]: Product[]
+}

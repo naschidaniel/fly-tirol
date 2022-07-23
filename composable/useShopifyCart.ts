@@ -137,8 +137,8 @@ export function useShopifyCart() {
     return price
   }
 
-  function updateLineItems(id: string, e): void {
-    const quantity = parseInt(e.target.value)
+  function updateLineItems(id: string, e: Event): void {
+    const quantity = parseInt((e.target as HTMLSelectElement).value)
     const updateIndex = unref(lineItemsChanged)
       .map((item) => item?.id)
       .indexOf(id)
