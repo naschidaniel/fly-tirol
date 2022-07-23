@@ -34,7 +34,12 @@ function generate(nuxtPage) {
         if (e.length === 0) {
           return
         }
-        metadata[entry[0]] = entry[1]
+        // Parse Values
+        if (entry[0] === 'order') {
+          metadata[entry[0]] = parseInt(entry[1])
+        } else {
+          metadata[entry[0]] = entry[1]
+        }
       })
     let pages = Object.keys(metadata)
       .sort()

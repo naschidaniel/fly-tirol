@@ -29,7 +29,7 @@ export interface MetaData {
   imageGallery?: string,
   isAppointment?: string,
   location?: string,
-  order?: string,
+  order?: number,
   path: string,
   praxis?: string,
   price?: string,
