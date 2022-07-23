@@ -47,7 +47,7 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
   )
   writeFile(
     `./data/${constName}.ts`,
-    `import { MediaInformation } from '@/types/mediainformation'\n\n export const ${constName}: { [key: string]: MediaInformation} = ${json}`,
+    `import { MediaInformation } from '@/types/data'\n\n export const ${constName}: { [key: string]: MediaInformation} = ${json}`,
   (err) => {
     if (err) throw err
   })

@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import { useData } from './useData.js'
+import { useData } from './useData'
 import { metadataFlyTirol, metadataWhiteCloud } from '@/data'
 import { useRoute, throwError } from '#imports'
 

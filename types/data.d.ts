@@ -1,3 +1,24 @@
+export interface License {
+  name: string,
+  version: string,
+  license: string,
+}
+
+export interface MediaInformation {
+  url: string,
+  path: string,
+  file: string,
+  dimensions: {
+    height: number,
+    width: number,
+    orientation?: number,
+    type: string,
+    ratio: number
+  },
+  alt: string,
+  title: string
+}
+
 export interface MetaData {
   category: string,
   description: string,

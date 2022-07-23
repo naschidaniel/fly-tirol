@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from 'fs'
 import { defineNuxtConfig } from 'nuxt'
+import { License } from './types/data'
 
 const packages = JSON.parse(
   readFileSync('./package.json', { encoding: 'utf8' })
@@ -8,7 +9,7 @@ const packages = JSON.parse(
 const isFlyTirol = process.env.NUXT_PAGE === 'flytirol'
 const isWhiteCloud = process.env.NUXT_PAGE === 'whitecloud'
 
-const licenses = Object.keys(packages.dependencies)
+const licenses: License[] = Object.keys(packages.dependencies)
   .map((dependency) =>
     JSON.parse(
       readFileSync(`node_modules/${dependency}/package.json`, {

@@ -14,7 +14,7 @@
     "lint": "eslint --fix --ext \".cjs,.js,.vue\" --ignore-path .gitignore .",
     "lintContent": "eslint --no-error-on-unmatched-pattern --fix --ext \".vue,.js,.ts\" ./content_flytirol ./content_whitecloud ./data",
     "generateContent": "node --loader ts-node/esm generateContent.ts && yarn lintContent",
-    "generateMediaInformation": "yarn generateContent && node --loader ts-node/esm generateMediaInformation.ts && yarn lintContent",
+    "generateMediaInformation": "node --experimental-json-modules --loader ts-node/esm generateMediaInformation.ts && yarn lintContent",
     "optimize-images:flytirol:2xs": "./image-optimizer --source ./public_flytirol/media --destination .nuxt/dist/media --suffix 2xs --width 384 --quality 95 --webpimage true --thumbnail true",
     "optimize-images:flytirol:xs": "./image-optimizer --source ./public_flytirol/media --destination .nuxt/dist/media --suffix xs --width 512 --quality 90 --webpimage true --thumbnail true",
     "optimize-images:flytirol:sm": "./image-optimizer --source ./public_flytirol/media --destination .nuxt/dist/media --suffix sm --width 640 --quality 80 --webpimage true --thumbnail true",
