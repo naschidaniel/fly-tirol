@@ -66,7 +66,7 @@
         <span
           >Gesamtpreis:
           <span class="font-bold">{{
-            formatPrice(checkout.subtotalPrice)
+            formatPrice(parseFloat(checkout.subtotalPrice))
           }}</span></span
         ><br />
         <span class="text-sm"
@@ -108,13 +108,13 @@ import { useFormat } from '@/composable/useFormat'
 const { formatPrice } = useFormat()
 const {
   cartItems,
-  lineItemsChanged,
+  resetLineItemsChanged,
   checkout,
   isCartItems,
   refreshCart,
   updateLineItems,
 } = useShopifyCart()
 onMounted(() => {
-  lineItemsChanged.value = []
+  resetLineItemsChanged()
 })
 </script>

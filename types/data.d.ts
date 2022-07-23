@@ -42,3 +42,27 @@ export interface MetaData {
   theorie?: string,
   title: string,
 }
+
+export interface Product {
+    productTitle: string,
+    productType: string,
+    productPrices: number[],
+    productOptions: {
+      name: string,
+      values: string[]
+    }[],
+    slug: string,
+    variantTitle: v.title,
+    dateString: string,
+    id: string,
+    isShowProduct: boolean,
+    isDateItem: boolean,
+    startDate?: Date,
+    startDay?: string,
+    endDate?: Date,
+    month?: string,
+    optionDateString: string,
+    price: number,
+    variants: any[],
+    selectedId?: string,
+  }
