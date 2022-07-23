@@ -9,7 +9,7 @@ export function useData() {
   const isDevelopment: boolean = config.public.isDevelopment
   const isFlyTirol: boolean = config.public.isFlyTirol
   const isWhiteCloud: boolean = config.public.isWhiteCloud
-  const licenses: License = config.public.licenses
+  const licenses: License[] = config.public.licenses
   const mail: string = config.public.mail
   const phone: string = config.public.phone
   const phoneString: string = config.public.phoneString
