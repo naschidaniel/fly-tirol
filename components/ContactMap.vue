@@ -11,8 +11,8 @@
   </div>
 </template>
 
-<script setup>
-import { usePage } from '~/composable/usePage'
+<script setup lang="ts">
+import { usePage } from '@/composable/usePage'
 
 const { page } = usePage()
 const map =

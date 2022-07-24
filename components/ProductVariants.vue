@@ -82,21 +82,23 @@
   </div>
 </template>
 
-<script setup>
-import { computed, ref, watchEffect } from 'vue'
+<script setup lang="ts">
+import { computed, ref, Ref, watchEffect, onMounted, ComputedRef } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import { useFormat } from '~/composable/useFormat'
-import { usePage } from '~/composable/usePage'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import { Course, ProductVariant } from '@/types/data'
+import { useFormat } from '@/composable/useFormat'
+import { usePage } from '@/composable/usePage'
+import { useShopifyCart } from '@/composable/useShopifyCart'
 
 const { page, isCourse, getMetadata } = usePage()
 const { formatPrice } = useFormat()
 const { bookProduct, getCourse, selectedOptionDateString } = useShopifyCart()
 
-const selectedProductOptions = ref([])
-const pickedProduct = ref([])
-selectedOptionDateString.value = ''
+const selectedProductOptions: Ref<ProductVariant[]> = ref(
+  [] as ProductVariant[]
+)
+const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
 
 const metadata = getMetadata(page.value.path)
 
@@ -104,7 +106,9 @@ const isProductSelected = computed(
   () => selectedProductOptions.value.length !== 0
 )
 
-const course = computed(() => getCourse(metadata?.category, metadata?.slug))
+const course: ComputedRef<Course> = computed(() =>
+  getCourse(metadata?.category, metadata?.slug)
+)
 
 function setPickedCourse() {
   pickedProduct.value = selectedProductOptions.value[0]

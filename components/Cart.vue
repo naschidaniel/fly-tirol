@@ -66,7 +66,7 @@
         <span
           >Gesamtpreis:
           <span class="font-bold">{{
-            formatPrice(checkout.subtotalPrice)
+            formatPrice(parseFloat(checkout.subtotalPrice))
           }}</span></span
         ><br />
         <span class="text-sm"
@@ -97,24 +97,24 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import Alert from './Alert.vue'
 import IconOutlineRefresh from './icon/IconOutlineRefresh.vue'
 import IconOutlineShoppingBag from './icon/IconOutlineShoppingBag.vue'
-import { useShopifyCart } from '~/composable/useShopifyCart'
-import { useFormat } from '~/composable/useFormat'
+import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useFormat } from '@/composable/useFormat'
 
 const { formatPrice } = useFormat()
 const {
   cartItems,
-  lineItemsChanged,
+  resetLineItemsChanged,
   checkout,
   isCartItems,
   refreshCart,
   updateLineItems,
 } = useShopifyCart()
 onMounted(() => {
-  lineItemsChanged.value = []
+  resetLineItemsChanged()
 })
 </script>

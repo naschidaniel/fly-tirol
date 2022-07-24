@@ -59,7 +59,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import LinkCard from './LinkCard.vue'
 
 const advancedTrainings = {

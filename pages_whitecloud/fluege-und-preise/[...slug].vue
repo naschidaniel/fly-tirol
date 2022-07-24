@@ -68,18 +68,18 @@
   </div>
 </template>
 
-<script setup>
-import ProductsRegiondo from '~/components/ProductsRegiondo'
-import SocialBar from '~/components/SocialBar'
-import { usePage } from '~/composable/usePage'
-import { useMetaTags } from '~/composable/useMetaTags'
-import AkrobatikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/akrobatikflug-hopfgarten'
-import AkrobatikflugSoell from '~/content_whitecloud/fluege-und-preise/akrobatikflug-soell'
-import GleitflugHopfgarten from '~/content_whitecloud/fluege-und-preise/gleitflug-hopfgarten'
-import GleitflugSoell from '~/content_whitecloud/fluege-und-preise/gleitflug-soell'
-import Testflug from '~/content_whitecloud/fluege-und-preise/testflug'
-import ThermikflugHopfgarten from '~/content_whitecloud/fluege-und-preise/thermikflug-hopfgarten'
-import ThermikflugSoell from '~/content_whitecloud/fluege-und-preise/thermikflug-soell'
+<script setup lang="ts">
+import ProductsRegiondo from '@/components/ProductsRegiondo.vue'
+import SocialBar from '@/components/SocialBar.vue'
+import { usePage } from '@/composable/usePage'
+import { useMetaTags } from '@/composable/useMetaTags'
+import AkrobatikflugHopfgarten from '@/content_whitecloud/fluege-und-preise/akrobatikflug-hopfgarten.vue'
+import AkrobatikflugSoell from '@/content_whitecloud/fluege-und-preise/akrobatikflug-soell.vue'
+import GleitflugHopfgarten from '@/content_whitecloud/fluege-und-preise/gleitflug-hopfgarten.vue'
+import GleitflugSoell from '@/content_whitecloud/fluege-und-preise/gleitflug-soell.vue'
+import Testflug from '@/content_whitecloud/fluege-und-preise/testflug.vue'
+import ThermikflugHopfgarten from '@/content_whitecloud/fluege-und-preise/thermikflug-hopfgarten.vue'
+import ThermikflugSoell from '@/content_whitecloud/fluege-und-preise/thermikflug-soell.vue'
 
 useMetaTags()
 const { page } = usePage()

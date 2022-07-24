@@ -20,16 +20,16 @@
   </div>
 </template>
 
-<script setup>
-import { usePage } from '~/composable/usePage'
-import { useMetaTags } from '~/composable/useMetaTags'
-import SocialBar from '~/components/SocialBar.vue'
-import ProductBookCourse from '~/components/ProductBookCourse.vue'
-import DolomitenItalien from '~/content_flytirol/reisen/dolomiten-italien.vue'
-import DuneDePilatFrankreich from '~/content_flytirol/reisen/dune-de-pilat-frankreich.vue'
-import FlugsafariKitzbuehelerAlpen from '~/content_flytirol/reisen/flugsafari-kitzbueheler-alpen.vue'
-import MedunoItalien from '~/content_flytirol/reisen/meduno-italien.vue'
-import OeluedenizTuerkei from '~/content_flytirol/reisen/oeluedeniz-tuerkei.vue'
+<script setup lang="ts">
+import { usePage } from '@/composable/usePage'
+import { useMetaTags } from '@/composable/useMetaTags'
+import SocialBar from '@/components/SocialBar.vue'
+import ProductBookCourse from '@/components/ProductBookCourse.vue'
+import DolomitenItalien from '@/content_flytirol/reisen/dolomiten-italien.vue'
+import DuneDePilatFrankreich from '@/content_flytirol/reisen/dune-de-pilat-frankreich.vue'
+import FlugsafariKitzbuehelerAlpen from '@/content_flytirol/reisen/flugsafari-kitzbueheler-alpen.vue'
+import MedunoItalien from '@/content_flytirol/reisen/meduno-italien.vue'
+import OeluedenizTuerkei from '@/content_flytirol/reisen/oeluedeniz-tuerkei.vue'
 
 useMetaTags()
 const { page } = usePage()

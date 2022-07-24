@@ -23,11 +23,12 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
-import { defineProps } from 'vue'
+import { defineProps, PropType } from 'vue'
+import { TeamMember } from '@/types/data'
 
 defineProps({
-  members: { type: Array, required: true },
+  members: { type: Array as PropType<TeamMember[]>, required: true },
 })
 </script>

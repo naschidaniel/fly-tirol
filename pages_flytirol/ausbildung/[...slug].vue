@@ -23,17 +23,17 @@
   </div>
 </template>
 
-<script setup>
-import SocialBar from '~/components/SocialBar.vue'
-import ProductBookCourse from '~/components/ProductBookCourse.vue'
-import { usePage } from '~/composable/usePage'
-import { useMetaTags } from '~/composable/useMetaTags'
-import Grundkurs from '~/content_flytirol/ausbildung/grundkurs.vue'
-import Hoehenflugkurs from '~/content_flytirol/ausbildung/hoehenflugkurs.vue'
-import Kombikurs from '~/content_flytirol/ausbildung/kombikurs.vue'
-import ParagleiterscheinTheoriekurs from '~/content_flytirol/ausbildung/paragleiterschein-theoriekurs.vue'
-import Schnupperkurs from '~/content_flytirol/ausbildung/schnupperkurs.vue'
-import Tagesbetreuung from '~/content_flytirol/ausbildung/tagesbetreuung.vue'
+<script setup lang="ts">
+import SocialBar from '@/components/SocialBar.vue'
+import ProductBookCourse from '@/components/ProductBookCourse.vue'
+import { usePage } from '@/composable/usePage'
+import { useMetaTags } from '@/composable/useMetaTags'
+import Grundkurs from '@/content_flytirol/ausbildung/grundkurs.vue'
+import Hoehenflugkurs from '@/content_flytirol/ausbildung/hoehenflugkurs.vue'
+import Kombikurs from '@/content_flytirol/ausbildung/kombikurs.vue'
+import ParagleiterscheinTheoriekurs from '@/content_flytirol/ausbildung/paragleiterschein-theoriekurs.vue'
+import Schnupperkurs from '@/content_flytirol/ausbildung/schnupperkurs.vue'
+import Tagesbetreuung from '@/content_flytirol/ausbildung/tagesbetreuung.vue'
 
 const { page } = usePage()
 useMetaTags()

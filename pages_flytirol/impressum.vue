@@ -5,10 +5,10 @@
   </div>
 </template>
 
-<script setup>
-import { useMetaTags } from '~/composable/useMetaTags'
-import Impressum from '~/content_flytirol/impressum.vue'
-import Version from '~/components/Version.vue'
+<script setup lang="ts">
+import { useMetaTags } from '@/composable/useMetaTags'
+import Impressum from '@/content_flytirol/impressum.vue'
+import Version from '@/components/Version.vue'
 
 useMetaTags()
 </script>

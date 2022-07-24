@@ -4,17 +4,13 @@ module.exports = {
     browser: true,
     node: true,
   },
-  parserOptions: {
-    parser: '@babel/eslint-parser',
-    requireConfigFile: false,
-  },
   extends: [
-    '@nuxtjs',
+    '@nuxtjs/eslint-config-typescript',
     'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
   ],
   rules: {
-    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
     'vue/multi-word-component-names': [
       'error',
       {

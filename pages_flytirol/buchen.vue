@@ -5,9 +5,9 @@
   </div>
 </template>
 
-<script setup>
-import Cart from '~/components/Cart.vue'
-import { useMetaTags } from '~/composable/useMetaTags'
+<script setup lang="ts">
+import Cart from '@/components/Cart.vue'
+import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()
 </script>

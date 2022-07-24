@@ -26,45 +26,56 @@
       >
         Buche deinen Wunschtermin
         <span v-if="isDateValid"
-          >&nbsp; {{ formatDate(selectedDateTimestamp) }}</span
+          >&nbsp;
+          {{
+            formatDate(
+              selectedDateTimestamp === '' ? undefined : selectedDateTimestamp
+            )
+          }}</span
         >
       </button>
     </div>
   </div>
 </template>
 
-<script setup>
-import { computed, ref } from 'vue'
-import { useFormat } from '~/composable/useFormat'
-import { usePage } from '~/composable/usePage'
-import { products, useShopifyCart } from '~/composable/useShopifyCart'
+<script setup lang="ts">
+import { computed, ComputedRef, ref, Ref } from 'vue'
+import { useFormat } from '@/composable/useFormat'
+import { usePage } from '@/composable/usePage'
+import { products, useShopifyCart } from '@/composable/useShopifyCart'
 
 const { formatDate } = useFormat()
 const { bookProduct } = useShopifyCart()
 const { page } = usePage()
 
-const selectedDate = ref('')
-const isFormValid = ref(true)
-const isDateValid = ref(false)
+const selectedDate: Ref<string> = ref('')
+const isFormValid: Ref<boolean> = ref(true)
+const isDateValid: Ref<boolean> = ref(false)
 
-const productId = computed(
+const productId: ComputedRef<string> = computed(
   () => products.value.find((p) => p.slug === page.value.slug)?.id
 )
 
-const today = computed(() => new Date().toISOString().split('T')[0])
+const today: ComputedRef<string> = computed(
+  () => new Date().toISOString().split('T')[0]
+)
 
-const selectedDateTimestamp = computed(() =>
+const selectedDateTimestamp: ComputedRef<Date | ''> = computed(() =>
   selectedDate.value !== '' ? new Date(selectedDate.value) : ''
 )
 
-function bookFlight() {
+function bookFlight(): void {
   checkDate()
   if (isDateValid.value) {
     bookProduct(productId.value, {
       customAttributes: [
         {
           key: 'Wunschtermin nach Absprache',
-          value: formatDate(selectedDateTimestamp.value),
+          value: formatDate(
+            selectedDateTimestamp.value === ''
+              ? undefined
+              : selectedDateTimestamp.value
+          ),
         },
       ],
     })

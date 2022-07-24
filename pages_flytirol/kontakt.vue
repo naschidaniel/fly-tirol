@@ -36,11 +36,11 @@
   </div>
 </template>
 
-<script setup>
-import SocialBar from '~/components/SocialBar'
-import PageHeader from '~/components/PageHeader'
-import { useMetaTags } from '~/composable/useMetaTags'
-import IconOutlineLocationMarker from '~/components/icon/IconOutlineLocationMarker'
+<script setup lang="ts">
+import SocialBar from '@/components/SocialBar.vue'
+import PageHeader from '@/components/PageHeader.vue'
+import { useMetaTags } from '@/composable/useMetaTags'
+import IconOutlineLocationMarker from '@/components/icon/IconOutlineLocationMarker.vue'
 
 const address = {
   href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',

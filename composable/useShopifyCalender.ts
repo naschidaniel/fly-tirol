@@ -1,24 +1,25 @@
-import { computed, ref, unref } from 'vue'
+import { computed, ComputedRef, ref, Ref, unref } from 'vue'
+import { Calender, Product } from '@/types/data'
 
-const calender = ref({})
-const calenderCategoriesChecked = ref([])
-const calenderProductsChecked = ref([])
+const calender: Ref<Calender> = ref({} as Calender)
+const calenderCategoriesChecked: Ref<string[]> = ref([])
+const calenderProductsChecked: Ref<string[]> = ref([])
 
 export function useShopifyCalender() {
-  const calenderFiltered = computed(() => {
+  const calenderFiltered: ComputedRef<Calender> = computed(() => {
     const categoriesSelected = unref(calenderCategoriesChecked).map((s) =>
       s.toLowerCase()
     )
     const productsSelected = unref(calenderProductsChecked).map((s) =>
       s.toLowerCase()
     )
-    const filteredEntries = filterCalender(categoriesSelected, {
+    return filterCalender(categoriesSelected, {
       products: productsSelected,
+      slug: undefined,
     })
-    return filteredEntries
   })
 
-  const calenderCategoriesAvailable = computed(() =>
+  const calenderCategoriesAvailable: ComputedRef<string[]> = computed(() =>
     [
       ...new Set(
         Object.values(calender.value).flatMap((c) =>
@@ -28,7 +29,7 @@ export function useShopifyCalender() {
     ].sort((a, b) => a.localeCompare(b))
   )
 
-  const calenderProductsAvailable = computed(() => {
+  const calenderProductsAvailable: ComputedRef<string[]> = computed(() => {
     const selectedCategories = unref(calenderCategoriesChecked)
     return [
       ...new Set(
@@ -41,31 +42,37 @@ export function useShopifyCalender() {
     ].sort((a, b) => a.localeCompare(b))
   })
 
-  const isCalenderFiltered = computed(
+  const isCalenderFiltered: ComputedRef<boolean> = computed(
     () => Object.keys(calenderFiltered.value).length >= 1
   )
 
-  function filterCalender(categories, { products, slug }) {
+  function filterCalender(
+    categories: string[],
+    { products, slug }: { products?: string[]; slug?: string }
+  ): Calender {
     const calenderSorted = unref(calender)
     const filteredEntries = {}
 
-    function _selectEntry(c) {
-      if (products !== undefined) {
-        return (
-          categories.includes(c.productType.toLowerCase()) &&
-          products.includes(c.productTitle.toLowerCase())
-        )
-      } else {
-        return (
-          categories.includes(c.productType.toLowerCase()) &&
-          slug.includes(c.slug.toLowerCase())
-        )
-      }
-    }
     Object.keys(calenderSorted).forEach((key) => {
-      const filteredMonthEntries = calenderSorted[key].filter((c) =>
-        _selectEntry(c)
-      )
+      const filteredMonthEntries = calenderSorted[key].filter((c) => {
+        if (products !== undefined) {
+          return (
+            categories.includes(c.productType.toLowerCase()) &&
+            products.includes(c.productTitle.toLowerCase())
+          )
+        } else if (slug !== undefined) {
+          return (
+            categories.includes(c.productType.toLowerCase()) &&
+            slug.includes(c.slug.toLowerCase())
+          )
+        } else {
+          return (
+            categories.includes(c.productType.toLowerCase()) &&
+            slug.includes(c.slug.toLowerCase()) &&
+            slug.includes(c.slug.toLowerCase())
+          )
+        }
+      })
       if (filteredMonthEntries.length >= 1) {
         filteredEntries[key] = filteredMonthEntries
       }
@@ -73,7 +80,7 @@ export function useShopifyCalender() {
     return filteredEntries
   }
 
-  function initCalender(productsItemsSorted) {
+  function initCalender(productsItemsSorted: Product[]): void {
     const calenderItemsSorted = productsItemsSorted.filter(
       (f) => f.isDateItem && f.isShowProduct
     )
@@ -84,9 +91,9 @@ export function useShopifyCalender() {
       ...new Set(calenderItemsSorted.map((c) => c.productTitle)),
     ].filter((p) => p !== 'Tagesbetreuung')
     const months = [...new Set(calenderItemsSorted.map((c) => c.month))]
-    const calenderMonths = {}
+    const calenderMonths = {} as Calender
     months.forEach(
-      (key) =>
+      (key: string) =>
         (calenderMonths[key] = [
           ...calenderItemsSorted.filter((c) => c.month === key),
         ])
@@ -94,12 +101,12 @@ export function useShopifyCalender() {
     calender.value = calenderMonths
   }
 
-  function resetFilter() {
+  function resetFilter(): void {
     calenderCategoriesChecked.value = unref(calenderCategoriesAvailable)
     calenderProductsChecked.value = unref(calenderProductsAvailable)
   }
 
-  function setCheckedCategories(change) {
+  function setCheckedCategories(change: string): void {
     const oldCalenderCategoriesChecked = unref(calenderCategoriesChecked)
     if (oldCalenderCategoriesChecked.includes(change)) {
       calenderCategoriesChecked.value = oldCalenderCategoriesChecked.filter(
@@ -110,7 +117,7 @@ export function useShopifyCalender() {
     calenderCategoriesChecked.value.push(change)
   }
 
-  function setCheckedProducts(change) {
+  function setCheckedProducts(change: string): void {
     const oldCalenderProductsChecked = unref(calenderProductsChecked)
     if (oldCalenderProductsChecked.includes(change)) {
       calenderProductsChecked.value = oldCalenderProductsChecked.filter(
@@ -121,12 +128,18 @@ export function useShopifyCalender() {
     calenderProductsChecked.value.push(change)
   }
 
-  function updateSelectedProduct(calenderItemId, month, e) {
+  function updateSelectedProduct(
+    calenderItemId: string,
+    month: string,
+    e: Event
+  ): void {
     const updateCalender = unref(calender)
     const updateIndex = updateCalender[month].findIndex(
       (o) => o.id === calenderItemId
     )
-    updateCalender[month][updateIndex].selectedId = e.target.value
+    updateCalender[month][updateIndex].selectedId = (
+      e.target as HTMLSelectElement
+    ).value
     calender.value = updateCalender
   }
 

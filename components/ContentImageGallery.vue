@@ -20,11 +20,11 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { computed, defineProps } from 'vue'
 import ResponsiveImage from './ResponsiveImage.vue'
-import { useMedia } from '~/composable/useMedia'
+import { useMedia } from '~~/composable/useMedia'
 
 const props = defineProps({
   path: { type: String, default: undefined },

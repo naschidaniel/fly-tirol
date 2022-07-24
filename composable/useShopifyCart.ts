@@ -1,20 +1,22 @@
 import Client from 'shopify-buy'
-import { computed, ref, unref, watchEffect } from 'vue'
-import { useFlyCookies } from './useFlyCookies.js'
-import { useFormat } from './useFormat.js'
-import { useShopifyCalender } from './useShopifyCalender.js'
-import { useRouter } from '#imports'
+import { computed, ref, unref, Ref, onMounted, ComputedRef } from 'vue'
 import { useRuntimeConfig } from '#app'
+import { useFlyCookies } from './useFlyCookies'
+import { useFormat } from './useFormat'
+import { useShopifyCalender } from './useShopifyCalender.js'
+import { Course, Product, ProductVariant } from '@/types/data'
+import { ShopifyCart, ShopifyLineItems, ShopifyProducts } from '@/types/shopify'
+import { useRouter } from '#imports'
 
-export const products = ref([])
-const checkout = ref({})
-const lineItemsChanged = ref([])
-const selectedOptionDateString = ref('')
+export const products: Ref<Product[]> = ref([] as Product[])
+const checkout: Ref<ShopifyCart> = ref({} as ShopifyCart)
+const lineItemsChanged: Ref<ShopifyLineItems[]> = ref([] as ShopifyLineItems[])
+const selectedOptionDateString: Ref<string> = ref('')
 
 export function useShopifyCart() {
   const config = useRuntimeConfig()
-  const isFlyTirol = config.public.isFlyTirol
-  const shopify = config.public.isFlyTirol
+  const isFlyTirol: boolean = config.public.isFlyTirol
+  const shopify: Client | undefined = config.public.isFlyTirol
     ? Client.buildClient({
         domain: config.public.shopifyDomain,
         storefrontAccessToken: config.public.shopifyAccessToken,
@@ -25,10 +27,11 @@ export function useShopifyCart() {
   const flyCookies = useFlyCookies()
   const router = useRouter()
   const { formatPrice } = useFormat()
-  const format = useFormat()
   const shopifyCalender = useShopifyCalender()
 
-  const cartItems = computed(() => checkout.value?.lineItems)
+  const cartItems: ComputedRef<ShopifyLineItems[]> = computed(
+    () => checkout.value?.lineItems
+  )
 
   const isCartItems = computed(
     () =>
@@ -38,7 +41,7 @@ export function useShopifyCart() {
 
   const cartItemsLength = computed(() => checkout.value?.lineItems?.length || 0)
 
-  async function bookProduct(variantId, { customAttributes }) {
+  async function bookProduct(variantId: string, { customAttributes }) {
     const lineItemsToAdd = [
       {
         variantId,
@@ -55,21 +58,23 @@ export function useShopifyCart() {
     router.push({ path: '/buchen' })
   }
 
-  function setCheckout(change) {
+  function setCheckout(change: Client.Cart): void {
     if (!isFlyTirol) return
     if (flyCookies.isCookieAgreement.value && shopify !== undefined) {
-      flyCookies.setCookieCheckoutId(change.id)
+      flyCookies.setCookieCheckoutId(change.id as string)
     }
     // Parse GraphQL Promise to Object
     const checkoutString = JSON.stringify(change)
     checkout.value = JSON.parse(checkoutString)
   }
 
-  async function loadCheckout() {
+  async function loadCheckout(): Promise<void> {
     if (isFlyTirol && flyCookies.isCookieAgreement.value) {
       const checkoutId = flyCookies.getCookieCheckoutId()
       try {
-        const fetchedCheckout = await shopify?.checkout.fetch(checkoutId)
+        const fetchedCheckout = (await shopify?.checkout.fetch(
+          checkoutId
+        )) as ShopifyCart
         const createdAt =
           Date.parse(fetchedCheckout.createdAt) + 24 * 60 * 60 * 1000
         if (
@@ -94,8 +99,8 @@ export function useShopifyCart() {
     setCheckout(createdCheckout)
   }
 
-  function getCourse(category, slug) {
-    const courses =
+  function getCourse(category: string, slug: string): Course {
+    const courses: Product[] =
       products.value.filter(
         (s) =>
           s.isShowProduct &&
@@ -108,7 +113,7 @@ export function useShopifyCart() {
     return { dates, price, options }
   }
 
-  function getPrice(courses) {
+  function getPrice(courses: Product[]): string {
     const prices = [...new Set(courses?.flatMap((v) => v.productPrices))]
     const pricePrefix = prices.length >= 2 ? 'ab' : undefined
     const price = formatPrice(prices[0])
@@ -118,21 +123,21 @@ export function useShopifyCart() {
     return price
   }
 
-  function updateLineItems(id, e) {
-    const quantity = parseInt(e.target.value)
+  function updateLineItems(id: string, e: Event): void {
+    const quantity = parseInt((e.target as HTMLSelectElement).value)
     const updateIndex = unref(lineItemsChanged)
       .map((item) => item?.id)
       .indexOf(id)
     if (updateIndex === -1) {
-      lineItemsChanged.value.push({ id, quantity })
+      lineItemsChanged.value.push({ id, quantity } as ShopifyLineItems)
     } else {
       const change = unref(lineItemsChanged)
-      change[updateIndex] = { id, quantity }
+      change[updateIndex] = { id, quantity } as ShopifyLineItems
       lineItemsChanged.value = change
     }
   }
 
-  async function removeItems(checkoutId) {
+  async function removeItems(checkoutId: string): Promise<void> {
     const lineItemsToRemove = unref(lineItemsChanged)
       .filter((item) => item.quantity === 0)
       .map((item) => item.id)
@@ -145,7 +150,7 @@ export function useShopifyCart() {
     }
   }
 
-  async function refreshCart() {
+  async function refreshCart(): Promise<void> {
     const checkoutId = checkout.value?.id
     if (checkoutId === undefined) return
     await removeItems(checkoutId)
@@ -153,12 +158,12 @@ export function useShopifyCart() {
     lineItemsChanged.value = []
   }
 
-  function resetCart() {
+  function resetCart(): void {
     flyCookies.removeCookieCheckoutId()
     loadCheckout()
   }
 
-  async function updateItems(checkoutId) {
+  async function updateItems(checkoutId: string): Promise<void> {
     const lineItemsToUpdate = unref(lineItemsChanged).filter(
       (item) => item.quantity !== 0
     )
@@ -171,19 +176,26 @@ export function useShopifyCart() {
     }
   }
 
-  async function initShop() {
+  function resetLineItemsChanged(): void {
+    lineItemsChanged.value = []
+  }
+
+  async function initShop(): Promise<void> {
     if (shopify === undefined) return
     // do not show Courses older then 21 days
     const maxStartDate = new Date()
     maxStartDate.setDate(maxStartDate.getDate() - 21)
 
-    const shopifyProducts = await shopify.product.fetchAll()
-    const fetchedProducts = shopifyProducts.flatMap((p) =>
+    const shopifyProducts =
+      (await shopify.product.fetchAll()) as ShopifyProducts[]
+    const fetchedProducts: Product[] = shopifyProducts.flatMap((p) =>
       p.variants.map((v) => {
         return {
           productTitle: p.title,
           productType: p.productType,
-          productPrices: [...new Set(p.variants.map((v) => v.price))],
+          productPrices: [
+            ...new Set(p.variants.map((v) => parseFloat(v.price))),
+          ],
           productOptions: p.options.map((o) => {
             return { name: o.name, values: o.values }
           }),
@@ -193,13 +205,9 @@ export function useShopifyCart() {
           id: v.id,
           isShowProduct: true,
           isDateItem: false,
-          startDate: undefined,
-          startDay: undefined,
-          endDate: undefined,
-          month: undefined,
           optionDateString: '',
-          price: v.price,
-          variants: [],
+          price: parseFloat(v.price),
+          variants: [] as ProductVariant[],
         }
       })
     )
@@ -218,9 +226,7 @@ export function useShopifyCart() {
 
         // Tandemflights Vouchers
         if (s.productOptions[0].name !== 'Kursdatum') {
-          s.optionDateString = `${s.variantTitle} ${format.formatPrice(
-            s.price
-          )}`
+          s.optionDateString = `${s.variantTitle} ${formatPrice(s.price)}`
           s.isDateItem = false
           return
         }
@@ -282,12 +288,17 @@ export function useShopifyCart() {
         )
       }
     })
-    const productsItemsSorted = fetchedProducts.sort(
-      (a, b) => a.startDate - b.startDate
-    )
+    const productsItemsSorted = fetchedProducts.sort((a, b) => {
+      if (a.startDate === undefined || b.startDate === undefined) return 1
+      return a.startDate.getTime() - b.startDate.getTime()
+    })
     shopifyCalender.initCalender(productsItemsSorted)
     products.value = productsItemsSorted
   }
+
+  onMounted(() => {
+    selectedOptionDateString.value = ''
+  })
 
   return {
     bookProduct,
@@ -303,6 +314,7 @@ export function useShopifyCart() {
     refreshCart,
     removeItems,
     resetCart,
+    resetLineItemsChanged,
     selectedOptionDateString,
     setCheckout,
     updateItems,
