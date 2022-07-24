@@ -1,11 +1,11 @@
-import { writeFile } from 'fs'
+import { readFileSync, writeFile } from 'fs'
 import glob from 'glob'
 import sizeOf from 'image-size'
-import _mediaFlyTirol from './data/mediaFlyTirol.json' assert {type: "json"}
-import _mediaWhiteCloud from './data/mediaWhiteCloud.json' assert {type: "json"}
 
 for (const nuxtPage of ['flytirol', 'whitecloud']) {
-  const mediaJson = nuxtPage === 'flytirol' ? _mediaFlyTirol : _mediaWhiteCloud
+  const constName =
+    nuxtPage === 'flytirol' ? 'mediaFlyTirol' : 'mediaWhiteCloud'
+  const mediaJson = JSON.parse(readFileSync(`./data/${constName}.json`))
   const images = glob.sync(`./public_${nuxtPage}/media/**/*.{jpg,png}`)
   const staticPath = `./public_${nuxtPage}`
 
@@ -36,8 +36,6 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
     }, {})
 
   const json = JSON.stringify(dataSorted, null, 2)
-  const constName =
-    nuxtPage === 'flytirol' ? 'mediaFlyTirol' : 'mediaWhiteCloud'
     writeFile(
       `./data/${constName}.json`,
       json,
