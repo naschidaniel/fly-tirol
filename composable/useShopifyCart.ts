@@ -1,7 +1,7 @@
 import Client from 'shopify-buy'
 import ShopifyBuy from 'shopify-buy'
-import { Product } from '@/types/data'
-import { computed, ref, unref, Ref } from 'vue'
+import { Course, Product, ProductVariant } from '@/types/data'
+import { computed, ref, unref, Ref, onMounted } from 'vue'
 import { useFlyCookies } from './useFlyCookies'
 import { useFormat } from './useFormat'
 import { useShopifyCalender } from './useShopifyCalender.js'
@@ -21,7 +21,7 @@ interface ShopifyCart extends Client.Cart {
 }
 
 interface ShopifyLineItems {
-  id: string,
+  id: string | number,
   quantity: number,
 }
 
@@ -113,7 +113,7 @@ export function useShopifyCart() {
     setCheckout(createdCheckout)
   }
 
-  function getCourse(category: string, slug: string) {
+  function getCourse(category: string, slug: string): Course {
     const courses: Product[] =
       products.value.filter(
         (s) =>
@@ -137,7 +137,7 @@ export function useShopifyCart() {
     return price
   }
 
-  function updateLineItems(id: string, e: Event): void {
+  function updateLineItems(id: string | number, e: Event): void {
     const quantity = parseInt((e.target as HTMLSelectElement).value)
     const updateIndex = unref(lineItemsChanged)
       .map((item) => item?.id)
@@ -218,7 +218,7 @@ export function useShopifyCart() {
           isDateItem: false,
           optionDateString: '',
           price: parseFloat(v.price),
-          variants: [],
+          variants: [] as ProductVariant[],
         }
       })
     )
@@ -310,6 +310,10 @@ export function useShopifyCart() {
     shopifyCalender.initCalender(productsItemsSorted)
     products.value = productsItemsSorted
   }
+
+  onMounted(() => {
+    selectedOptionDateString.value = ''
+  })
 
   return {
     bookProduct,

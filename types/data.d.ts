@@ -3,6 +3,12 @@ export interface Cookie {
   value: string,
 }
 
+export interface Course {
+  dates: number,
+  price: string,
+  options: Product[]
+}
+
 export interface License {
   name: string,
   version: string,
@@ -63,8 +69,17 @@ export interface Product {
     month?: string,
     optionDateString: string,
     price: number,
-    variants: any[],
+    variants: ProductVariant[],
     selectedId?: string,
+  }
+
+export interface ProductVariant {
+    productTitle: string,
+    title: string,
+    optionDateString: string,
+    option?: string,
+    price: number,
+    id: string,
   }
 
 export interface Calender {
