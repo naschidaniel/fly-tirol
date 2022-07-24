@@ -16,7 +16,7 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
       const file = filePath.split('/').reverse()[0]
       const path = filePath.replace(staticPath, '').replace(file, '')
       const dimensions = sizeOf(filePath)
-      dimensions['ratio'] =
+      dimensions.ratio =
         Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
       return { url, path, file, dimensions, alt: '', title: '' }
     })
@@ -36,17 +36,14 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
     }, {})
 
   const json = JSON.stringify(dataSorted, null, 2)
-    writeFile(
-      `./data/${constName}.json`,
-      json,
+  writeFile(`./data/${constName}.json`, json, (err) => {
+    if (err) throw err
+  })
+  writeFile(
+    `./data/${constName}.ts`,
+    `import { MediaInformation } from '@/types/data'\n\n export const ${constName}: { [key: string]: MediaInformation} = ${json}`,
     (err) => {
       if (err) throw err
     }
   )
-  writeFile(
-    `./data/${constName}.ts`,
-    `import { MediaInformation } from '@/types/data'\n\n export const ${constName}: { [key: string]: MediaInformation} = ${json}`,
-  (err) => {
-    if (err) throw err
-  })
 }

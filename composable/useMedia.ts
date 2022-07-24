@@ -1,7 +1,6 @@
 import { onMounted, ref, Ref } from 'vue'
-import {mediaFlyTirol, mediaWhiteCloud} from '@/data'
-
 import { useRuntimeConfig } from '#app'
+import { mediaFlyTirol, mediaWhiteCloud } from '@/data'
 
 export function useMedia() {
   const devicePixelRatio: Ref<number | undefined> = ref(undefined)
@@ -15,7 +14,7 @@ export function useMedia() {
     devicePixelRatio.value = window && window?.devicePixelRatio > 1.5 ? 2 : 1
   }
 
-  function getScreenSize(): "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" {
+  function getScreenSize(): '2xs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' {
     const width = window?.innerWidth
     const tailwindCssScreenSizes = {
       '2xs': 384,

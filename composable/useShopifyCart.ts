@@ -1,12 +1,12 @@
 import Client from 'shopify-buy'
-import { Course, Product, ProductVariant } from '@/types/data'
-import { ShopifyCart, ShopifyLineItems, ShopifyProducts } from '@/types/shopify'
 import { computed, ref, unref, Ref, onMounted, ComputedRef } from 'vue'
+import { useRuntimeConfig } from '#app'
 import { useFlyCookies } from './useFlyCookies'
 import { useFormat } from './useFormat'
 import { useShopifyCalender } from './useShopifyCalender.js'
+import { Course, Product, ProductVariant } from '@/types/data'
+import { ShopifyCart, ShopifyLineItems, ShopifyProducts } from '@/types/shopify'
 import { useRouter } from '#imports'
-import { useRuntimeConfig } from '#app'
 
 export const products: Ref<Product[]> = ref([] as Product[])
 const checkout: Ref<ShopifyCart> = ref({} as ShopifyCart)
@@ -29,7 +29,9 @@ export function useShopifyCart() {
   const { formatPrice } = useFormat()
   const shopifyCalender = useShopifyCalender()
 
-  const cartItems: ComputedRef<ShopifyLineItems[]> = computed(() => checkout.value?.lineItems)
+  const cartItems: ComputedRef<ShopifyLineItems[]> = computed(
+    () => checkout.value?.lineItems
+  )
 
   const isCartItems = computed(
     () =>
@@ -70,7 +72,9 @@ export function useShopifyCart() {
     if (isFlyTirol && flyCookies.isCookieAgreement.value) {
       const checkoutId = flyCookies.getCookieCheckoutId()
       try {
-        const fetchedCheckout = await shopify?.checkout.fetch(checkoutId) as ShopifyCart
+        const fetchedCheckout = (await shopify?.checkout.fetch(
+          checkoutId
+        )) as ShopifyCart
         const createdAt =
           Date.parse(fetchedCheckout.createdAt) + 24 * 60 * 60 * 1000
         if (
@@ -182,13 +186,16 @@ export function useShopifyCart() {
     const maxStartDate = new Date()
     maxStartDate.setDate(maxStartDate.getDate() - 21)
 
-    const shopifyProducts = await shopify.product.fetchAll() as ShopifyProducts[]
+    const shopifyProducts =
+      (await shopify.product.fetchAll()) as ShopifyProducts[]
     const fetchedProducts: Product[] = shopifyProducts.flatMap((p) =>
       p.variants.map((v) => {
         return {
           productTitle: p.title,
           productType: p.productType,
-          productPrices: [...new Set(p.variants.map((v) => parseFloat(v.price)))],
+          productPrices: [
+            ...new Set(p.variants.map((v) => parseFloat(v.price))),
+          ],
           productOptions: p.options.map((o) => {
             return { name: o.name, values: o.values }
           }),
@@ -219,9 +226,7 @@ export function useShopifyCart() {
 
         // Tandemflights Vouchers
         if (s.productOptions[0].name !== 'Kursdatum') {
-          s.optionDateString = `${s.variantTitle} ${formatPrice(
-            s.price
-          )}`
+          s.optionDateString = `${s.variantTitle} ${formatPrice(s.price)}`
           s.isDateItem = false
           return
         }
@@ -283,12 +288,10 @@ export function useShopifyCart() {
         )
       }
     })
-    const productsItemsSorted = fetchedProducts.sort(
-      (a, b) => {
-        if (a.startDate === undefined || b.startDate === undefined) return 1
-        return a.startDate.getTime() - b.startDate.getTime()
-      }
-    )
+    const productsItemsSorted = fetchedProducts.sort((a, b) => {
+      if (a.startDate === undefined || b.startDate === undefined) return 1
+      return a.startDate.getTime() - b.startDate.getTime()
+    })
     shopifyCalender.initCalender(productsItemsSorted)
     products.value = productsItemsSorted
   }

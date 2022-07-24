@@ -29,6 +29,6 @@ import { defineProps, PropType } from 'vue'
 import { TeamMember } from '@/types/data'
 
 defineProps({
-  members: { type: Array as PropType<TeamMember[]>, required: true }
+  members: { type: Array as PropType<TeamMember[]>, required: true },
 })
 </script>

@@ -23,7 +23,7 @@ export function useFlyCookies() {
       maxAge: 24 * 7 * 60 * 31,
       sameSite: true,
     })
-    cookieAgreement.value = "true"
+    cookieAgreement.value = 'true'
     isCookieAgreement.value = true
   }
 

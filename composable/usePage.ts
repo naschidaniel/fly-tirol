@@ -17,11 +17,12 @@ export function usePage() {
   }
   const page: ComputedRef<MetaData> = computed(() => {
     return (
-      metadataPages.find((p) => p.path === routeFullPath) || {
+      metadataPages.find((p) => p.path === routeFullPath) ||
+      ({
         slug: '',
         title: '',
         description: '',
-      } as MetaData
+      } as MetaData)
     )
   })
 

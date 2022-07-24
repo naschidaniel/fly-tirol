@@ -26,7 +26,12 @@
       >
         Buche deinen Wunschtermin
         <span v-if="isDateValid"
-          >&nbsp; {{ formatDate(selectedDateTimestamp === '' ? undefined : selectedDateTimestamp) }}</span
+          >&nbsp;
+          {{
+            formatDate(
+              selectedDateTimestamp === '' ? undefined : selectedDateTimestamp
+            )
+          }}</span
         >
       </button>
     </div>
@@ -51,7 +56,9 @@ const productId: ComputedRef<string> = computed(
   () => products.value.find((p) => p.slug === page.value.slug)?.id
 )
 
-const today: ComputedRef<string> = computed(() => new Date().toISOString().split('T')[0])
+const today: ComputedRef<string> = computed(
+  () => new Date().toISOString().split('T')[0]
+)
 
 const selectedDateTimestamp: ComputedRef<Date | ''> = computed(() =>
   selectedDate.value !== '' ? new Date(selectedDate.value) : ''
@@ -64,7 +71,11 @@ function bookFlight(): void {
       customAttributes: [
         {
           key: 'Wunschtermin nach Absprache',
-          value: formatDate(selectedDateTimestamp.value === '' ? undefined : selectedDateTimestamp.value),
+          value: formatDate(
+            selectedDateTimestamp.value === ''
+              ? undefined
+              : selectedDateTimestamp.value
+          ),
         },
       ],
     })

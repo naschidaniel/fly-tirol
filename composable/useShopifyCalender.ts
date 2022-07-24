@@ -15,7 +15,7 @@ export function useShopifyCalender() {
     )
     return filterCalender(categoriesSelected, {
       products: productsSelected,
-      slug: undefined
+      slug: undefined,
     })
   })
 
@@ -34,7 +34,9 @@ export function useShopifyCalender() {
     return [
       ...new Set(
         Object.values(calender.value).flatMap((c) =>
-          c.filter((e) => selectedCategories.includes(e.productType)).map((p) => p.productTitle)
+          c
+            .filter((e) => selectedCategories.includes(e.productType))
+            .map((p) => p.productTitle)
         )
       ),
     ].sort((a, b) => a.localeCompare(b))
@@ -44,7 +46,10 @@ export function useShopifyCalender() {
     () => Object.keys(calenderFiltered.value).length >= 1
   )
 
-  function filterCalender(categories: string[], { products, slug }: {products?: string[], slug?: string}): Calender {
+  function filterCalender(
+    categories: string[],
+    { products, slug }: { products?: string[]; slug?: string }
+  ): Calender {
     const calenderSorted = unref(calender)
     const filteredEntries = {}
 
@@ -63,11 +68,11 @@ export function useShopifyCalender() {
         } else {
           return (
             categories.includes(c.productType.toLowerCase()) &&
-            slug.includes(c.slug.toLowerCase()) && slug.includes(c.slug.toLowerCase())
+            slug.includes(c.slug.toLowerCase()) &&
+            slug.includes(c.slug.toLowerCase())
           )
         }
-      }
-      )
+      })
       if (filteredMonthEntries.length >= 1) {
         filteredEntries[key] = filteredMonthEntries
       }
@@ -123,12 +128,18 @@ export function useShopifyCalender() {
     calenderProductsChecked.value.push(change)
   }
 
-  function updateSelectedProduct(calenderItemId: string, month: string, e: Event): void {
+  function updateSelectedProduct(
+    calenderItemId: string,
+    month: string,
+    e: Event
+  ): void {
     const updateCalender = unref(calender)
     const updateIndex = updateCalender[month].findIndex(
       (o) => o.id === calenderItemId
     )
-    updateCalender[month][updateIndex].selectedId = (e.target as HTMLSelectElement).value
+    updateCalender[month][updateIndex].selectedId = (
+      e.target as HTMLSelectElement
+    ).value
     calender.value = updateCalender
   }
 

@@ -95,7 +95,9 @@ const { page, isCourse, getMetadata } = usePage()
 const { formatPrice } = useFormat()
 const { bookProduct, getCourse, selectedOptionDateString } = useShopifyCart()
 
-const selectedProductOptions: Ref<ProductVariant[]> = ref([] as ProductVariant[])
+const selectedProductOptions: Ref<ProductVariant[]> = ref(
+  [] as ProductVariant[]
+)
 const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
 
 const metadata = getMetadata(page.value.path)
@@ -104,7 +106,9 @@ const isProductSelected = computed(
   () => selectedProductOptions.value.length !== 0
 )
 
-const course: ComputedRef<Course> = computed(() => getCourse(metadata?.category, metadata?.slug))
+const course: ComputedRef<Course> = computed(() =>
+  getCourse(metadata?.category, metadata?.slug)
+)
 
 function setPickedCourse() {
   pickedProduct.value = selectedProductOptions.value[0]

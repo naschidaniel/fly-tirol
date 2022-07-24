@@ -148,15 +148,4 @@ export default defineNuxtConfig({
       port: isWhiteCloud ? 3001 : 3000,
     },
   },
-
-  babel: {
-    presets: [
-      [
-        '@nuxtjs/babel-preset-app',
-        {
-          targets: '> 5%, not dead',
-        },
-      ],
-    ],
-  },
 })
