@@ -22,11 +22,12 @@
 import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import TeamList from '@/components/TeamList.vue'
+import { TeamMember } from '~~/types/data';
 import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()
 
-const members = [
+const members: TeamMember[] = [
   {
     name: 'Sebastian Kahn',
     picture: '/media/team/sebastian.jpg',

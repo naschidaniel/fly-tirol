@@ -5,20 +5,18 @@ export interface Cookie {
 
 export interface Course {
   dates: number,
-  price: string,
   options: Product[]
+  price: string,
 }
 
 export interface License {
+  license: string,
   name: string,
   version: string,
-  license: string,
 }
 
 export interface MediaInformation {
-  url: string,
-  path: string,
-  file: string,
+  alt: string,
   dimensions: {
     height: number,
     width: number,
@@ -26,15 +24,17 @@ export interface MediaInformation {
     type: string,
     ratio: number
   },
-  alt: string,
+  file: string,
+  path: string,
   title: string
+  url: string,
 }
 
 export interface MetaData {
   category: string,
   description: string,
-  duration?: string,
   draft?: string,
+  duration?: string,
   flightDuration?: string,
   image?: string,
   imageGallery?: string,
@@ -50,38 +50,47 @@ export interface MetaData {
 }
 
 export interface Product {
-    productTitle: string,
-    productType: string,
-    productPrices: number[],
-    productOptions: {
-      name: string,
-      values: string[]
-    }[],
-    slug: string,
-    variantTitle: v.title,
-    dateString: string,
-    id: string,
-    isShowProduct: boolean,
-    isDateItem: boolean,
-    startDate?: Date,
-    startDay?: string,
-    endDate?: Date,
-    month?: string,
-    optionDateString: string,
-    price: number,
-    variants: ProductVariant[],
-    selectedId?: string,
-  }
+  dateString: string,
+  endDate?: Date,
+  id: string,
+  isDateItem: boolean,
+  isShowProduct: boolean,
+  month?: string,
+  optionDateString: string,
+  price: number,
+  productOptions: ProductOptions[],
+  productPrices: number[],
+  productTitle: string,
+  productType: string,
+  selectedId?: string,
+  slug: string,
+  startDate?: Date,
+  startDay?: string,
+  variants: ProductVariant[],
+  variantTitle: v.title,
+}
+
+export interface ProductOptions {
+  name: string,
+  values: string[]
+}
 
 export interface ProductVariant {
-    productTitle: string,
-    title: string,
-    optionDateString: string,
-    option?: string,
-    price: number,
-    id: string,
-  }
+  id: string,
+  option?: string,
+  optionDateString: string,
+  price: number,
+  productTitle: string,
+  title: string,
+}
 
 export interface Calender {
   [key: string]: Product[]
+}
+
+export interface TeamMember {
+  information: string,
+  name: string,
+  picture: string,
+  position: string,
 }

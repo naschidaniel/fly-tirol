@@ -44,7 +44,7 @@ export function useShopifyCalender() {
     () => Object.keys(calenderFiltered.value).length >= 1
   )
 
-  function filterCalender(categories: string[], { products, slug }: {products: string[], slug: string[]}) {
+  function filterCalender(categories: string[], { products, slug }: {products?: string[], slug?: string}): Calender {
     const calenderSorted = unref(calender)
     const filteredEntries = {}
 
@@ -75,7 +75,7 @@ export function useShopifyCalender() {
     return filteredEntries
   }
 
-  function initCalender(productsItemsSorted: Product[]) {
+  function initCalender(productsItemsSorted: Product[]): void {
     const calenderItemsSorted = productsItemsSorted.filter(
       (f) => f.isDateItem && f.isShowProduct
     )

@@ -47,7 +47,7 @@ const { filterCalender } = useShopifyCalender()
 const { selectedOptionDateString } = useShopifyCart()
 
 const productCalender = computed(() =>
-  filterCalender(page.value.category, { slug: page.value.slug })
+  filterCalender([page.value.category], { slug: page.value.slug })
 )
 
 function setOptionDateString(optionDateString) {

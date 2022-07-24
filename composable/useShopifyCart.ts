@@ -1,40 +1,22 @@
 import Client from 'shopify-buy'
-import ShopifyBuy from 'shopify-buy'
 import { Course, Product, ProductVariant } from '@/types/data'
-import { computed, ref, unref, Ref, onMounted } from 'vue'
+import { ShopifyCart, ShopifyLineItems, ShopifyProducts } from '@/types/shopify'
+import { computed, ref, unref, Ref, onMounted, ComputedRef } from 'vue'
 import { useFlyCookies } from './useFlyCookies'
 import { useFormat } from './useFormat'
 import { useShopifyCalender } from './useShopifyCalender.js'
 import { useRouter } from '#imports'
 import { useRuntimeConfig } from '#app'
 
-// fix missing return values
-interface ShopifyProducts extends Client.Product {
-  productType: string,
-  handle: string,
-}
-
-// fix missing return values
-interface ShopifyCart extends Client.Cart {
-  createdAt: string,
-  ready: boolean,
-}
-
-interface ShopifyLineItems {
-  id: string | number,
-  quantity: number,
-}
-
-
 export const products: Ref<Product[]> = ref([] as Product[])
-const checkout: Ref<Client.Cart> = ref({} as Client.Cart)
+const checkout: Ref<ShopifyCart> = ref({} as ShopifyCart)
 const lineItemsChanged: Ref<ShopifyLineItems[]> = ref([] as ShopifyLineItems[])
 const selectedOptionDateString: Ref<string> = ref('')
 
 export function useShopifyCart() {
   const config = useRuntimeConfig()
   const isFlyTirol: boolean = config.public.isFlyTirol
-  const shopify: ShopifyBuy.Client | undefined = config.public.isFlyTirol
+  const shopify: Client | undefined = config.public.isFlyTirol
     ? Client.buildClient({
         domain: config.public.shopifyDomain,
         storefrontAccessToken: config.public.shopifyAccessToken,
@@ -47,7 +29,7 @@ export function useShopifyCart() {
   const { formatPrice } = useFormat()
   const shopifyCalender = useShopifyCalender()
 
-  const cartItems = computed(() => checkout.value?.lineItems)
+  const cartItems: ComputedRef<ShopifyLineItems[]> = computed(() => checkout.value?.lineItems)
 
   const isCartItems = computed(
     () =>
@@ -137,21 +119,21 @@ export function useShopifyCart() {
     return price
   }
 
-  function updateLineItems(id: string | number, e: Event): void {
+  function updateLineItems(id: string, e: Event): void {
     const quantity = parseInt((e.target as HTMLSelectElement).value)
     const updateIndex = unref(lineItemsChanged)
       .map((item) => item?.id)
       .indexOf(id)
     if (updateIndex === -1) {
-      lineItemsChanged.value.push({ id, quantity })
+      lineItemsChanged.value.push({ id, quantity } as ShopifyLineItems)
     } else {
       const change = unref(lineItemsChanged)
-      change[updateIndex] = { id, quantity }
+      change[updateIndex] = { id, quantity } as ShopifyLineItems
       lineItemsChanged.value = change
     }
   }
 
-  async function removeItems(checkoutId: string | number): Promise<void> {
+  async function removeItems(checkoutId: string): Promise<void> {
     const lineItemsToRemove = unref(lineItemsChanged)
       .filter((item) => item.quantity === 0)
       .map((item) => item.id)
@@ -177,7 +159,7 @@ export function useShopifyCart() {
     loadCheckout()
   }
 
-  async function updateItems(checkoutId: string | number): Promise<void> {
+  async function updateItems(checkoutId: string): Promise<void> {
     const lineItemsToUpdate = unref(lineItemsChanged).filter(
       (item) => item.quantity !== 0
     )
@@ -208,12 +190,12 @@ export function useShopifyCart() {
           productType: p.productType,
           productPrices: [...new Set(p.variants.map((v) => parseFloat(v.price)))],
           productOptions: p.options.map((o) => {
-            return { name: o.name, values: o.values as unknown as string[] }
+            return { name: o.name, values: o.values }
           }),
           slug: p.handle,
           variantTitle: v.title,
           dateString: '',
-          id: v.id as string,
+          id: v.id,
           isShowProduct: true,
           isDateItem: false,
           optionDateString: '',

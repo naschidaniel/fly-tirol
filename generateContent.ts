@@ -25,7 +25,7 @@ function generate(nuxtPage) {
     const data = readFileSync(filePath, 'utf8')
     const isContentImageGallery = data.includes('<ContentImageGallery ')
     const isContentPartnerCard = data.includes('<ContentPartnerCard ')
-    let metadata = { path, category, slug }
+    const metadata = { path, category, slug }
     data
       .split('---')[1]
       .split(/\r\n|\n/)
@@ -41,7 +41,7 @@ function generate(nuxtPage) {
           metadata[entry[0]] = entry[1]
         }
       })
-    let pages = Object.keys(metadata)
+    const pages = Object.keys(metadata)
       .sort()
       // eslint-disable-next-line no-sequences
       .reduce((r, k) => ((r[k] = metadata[k]), r), {})
@@ -56,10 +56,14 @@ function generate(nuxtPage) {
       content.push('<script setup lang="ts">')
     }
     if (isContentImageGallery) {
-      content.push("import ContentImageGallery from '@/components/ContentImageGallery.vue'")
+      content.push(
+        "import ContentImageGallery from '@/components/ContentImageGallery.vue'"
+      )
     }
     if (isContentPartnerCard) {
-      content.push("import ContentPartnerCard from '@/components/ContentPartnerCard.vue'")
+      content.push(
+        "import ContentPartnerCard from '@/components/ContentPartnerCard.vue'"
+      )
     }
     if (isContentImageGallery || isContentPartnerCard) {
       content.push('</script>')
