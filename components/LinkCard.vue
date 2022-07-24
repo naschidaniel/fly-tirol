@@ -35,7 +35,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
 import ResponsiveImage from './ResponsiveImage.vue'

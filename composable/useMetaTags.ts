@@ -1,11 +1,11 @@
 import { onMounted } from 'vue'
-import { usePage } from './usePage.js'
-import { useRuntimeConfig, useMeta } from '#app'
+import { useRuntimeConfig, useHead } from '#app'
+import { usePage } from './usePage'
 
 export function useMetaTags() {
   const { page } = usePage()
   const config = useRuntimeConfig()
-  function generateMetaTags() {
+  function generateMetaTags(): void {
     const title = page.value.title.replace(/(<([^>]+)>)/gi, '')
     const meta = [
       {
@@ -44,7 +44,7 @@ export function useMetaTags() {
           : `https://fly-tirol.com${page.value.path}`,
       },
     ]
-    useMeta({
+    useHead({
       description: page.value.description,
       meta,
       title,

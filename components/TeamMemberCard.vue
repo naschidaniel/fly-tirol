@@ -22,20 +22,17 @@
               {{ member.position }}
             </span>
           </div>
-          <p class="text-gray-600">
-            {{ member.description }}
-          </p>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { defineProps } from 'vue'
-import IconOutlineClipboardList from './icon/IconOutlineClipboardList'
-import IconOutlineEmojiHappy from './icon/IconOutlineEmojiHappy'
+import IconOutlineClipboardList from './icon/IconOutlineClipboardList.vue'
+import IconOutlineEmojiHappy from './icon/IconOutlineEmojiHappy.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 
 defineProps({ member: { type: Object, required: true } })

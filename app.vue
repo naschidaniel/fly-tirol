@@ -9,12 +9,12 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
-import SiteCookieBanner from '~/components/global/SiteCookieBanner.vue'
-import SiteFooter from '~/components/global/SiteFooter.vue'
-import SiteHeader from '~/components/global/SiteHeader.vue'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import SiteCookieBanner from '@/components/global/SiteCookieBanner.vue'
+import SiteFooter from '@/components/global/SiteFooter.vue'
+import SiteHeader from '@/components/global/SiteHeader.vue'
+import { useShopifyCart } from '@/composable/useShopifyCart'
 const { initShop, loadCheckout } = useShopifyCart()
 onMounted(() => {
   initShop()

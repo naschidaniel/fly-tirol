@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from 'fs'
 import { defineNuxtConfig } from 'nuxt'
+import { License } from './types/data'
 
 const packages = JSON.parse(
   readFileSync('./package.json', { encoding: 'utf8' })
@@ -8,7 +9,7 @@ const packages = JSON.parse(
 const isFlyTirol = process.env.NUXT_PAGE === 'flytirol'
 const isWhiteCloud = process.env.NUXT_PAGE === 'whitecloud'
 
-const licenses = Object.keys(packages.dependencies)
+const licenses: License[] = Object.keys(packages.dependencies)
   .map((dependency) =>
     JSON.parse(
       readFileSync(`node_modules/${dependency}/package.json`, {
@@ -30,8 +31,8 @@ if (!(isWhiteCloud || isFlyTirol)) {
 
 if (
   !(
-    existsSync('./data/metadataFlyTirol.js') ||
-    existsSync('./data/metadataWhiteCloud.js')
+    existsSync('./data/metadataFlyTirol.ts') ||
+    existsSync('./data/metadataWhiteCloud.ts')
   )
 ) {
   throw new Error(
@@ -130,11 +131,8 @@ export default defineNuxtConfig({
   },
   modules: ['@nuxtjs/tailwindcss'],
 
-  generate: {
-    fallback: '404.html',
-    generate: {
-      interval: 2000,
-    },
+  typescript: {
+    typeCheck: true,
   },
 
   tailwindcss: {
@@ -149,16 +147,5 @@ export default defineNuxtConfig({
     server: {
       port: isWhiteCloud ? 3001 : 3000,
     },
-  },
-
-  babel: {
-    presets: [
-      [
-        '@nuxtjs/babel-preset-app',
-        {
-          targets: '> 5%, not dead',
-        },
-      ],
-    ],
   },
 })

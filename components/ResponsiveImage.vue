@@ -21,11 +21,11 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { defineProps, computed, ref, onMounted, watchEffect } from 'vue'
-import { useData } from '~/composable/useData'
-import { useMedia } from '~/composable/useMedia'
+import { useData } from '@/composable/useData'
+import { useMedia } from '~~/composable/useMedia'
 import { useMeta } from '#imports'
 
 const props = defineProps({

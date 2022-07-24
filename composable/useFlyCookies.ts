@@ -1,9 +1,10 @@
-import { onMounted, ref, watchEffect } from 'vue'
+import { onMounted, ref, Ref, watchEffect } from 'vue'
+import { Cookie } from '~~/types/data'
 import { useCookie } from '#imports'
 
 export function useFlyCookies() {
-  const allCookies = ref({ name: undefined, value: undefined })
-  const isCookieAgreement = ref(false)
+  const allCookies: Ref<Cookie[]> = ref([] as Cookie[])
+  const isCookieAgreement: Ref<boolean> = ref(false)
 
   watchEffect(() => {
     if (isCookieAgreement.value) {
@@ -16,17 +17,17 @@ export function useFlyCookies() {
     getCookieAgreementCookie()
   })
 
-  function acceptCookieAgreement() {
+  function acceptCookieAgreement(): void {
     const cookieAgreement = useCookie('cookieAgreement', {
       path: '/',
       maxAge: 24 * 7 * 60 * 31,
       sameSite: true,
     })
-    cookieAgreement.value = true
+    cookieAgreement.value = 'true'
     isCookieAgreement.value = true
   }
 
-  function setCookieCheckoutId(id) {
+  function setCookieCheckoutId(id: string): void {
     const checkoutId = useCookie('checkoutId', {
       path: '/',
       maxAge: 24 * 7 * 60,
@@ -35,12 +36,12 @@ export function useFlyCookies() {
     checkoutId.value = id
   }
 
-  function getCookieCheckoutId() {
+  function getCookieCheckoutId(): string {
     const checkoutId = useCookie('checkoutId')
     return checkoutId.value
   }
 
-  function removeCookieCheckoutId() {
+  function removeCookieCheckoutId(): void {
     const checkoutId = useCookie(`checkoutId`, {
       path: '/',
       maxAge: 0,
@@ -49,7 +50,7 @@ export function useFlyCookies() {
     checkoutId.value = undefined
   }
 
-  function getAllCookies() {
+  function getAllCookies(): void {
     allCookies.value = document.cookie.split('; ').map((c) => {
       return { name: c.split('=')[0], value: c.split('=')[1] }
     })
@@ -62,7 +63,7 @@ export function useFlyCookies() {
     }
   }
 
-  function removeAllCookies() {
+  function removeAllCookies(): void {
     for (const entry of allCookies.value) {
       const cookie = useCookie(`${entry.name}`, {
         path: '/',
@@ -72,7 +73,7 @@ export function useFlyCookies() {
       cookie.value = undefined
     }
     isCookieAgreement.value = false
-    allCookies.value = { name: undefined, value: undefined }
+    allCookies.value = [] as Cookie[]
   }
 
   return {

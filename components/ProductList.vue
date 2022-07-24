@@ -22,9 +22,9 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import ProductCard from './ProductCard.vue'
-import { usePage } from '~/composable/usePage'
+import { usePage } from '@/composable/usePage'
 
 const { pages } = usePage()
 </script>

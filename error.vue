@@ -24,10 +24,11 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { defineProps, onMounted } from 'vue'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import { clearError } from '#app'
+import { useShopifyCart } from '@/composable/useShopifyCart'
 defineProps({
   error: Object,
 })

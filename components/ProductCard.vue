@@ -52,14 +52,14 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // eslint-disable-next-line import/named
 import { computed, defineProps, ref, watchEffect } from 'vue'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
-import { useShopifyCart } from '~/composable/useShopifyCart'
-import { useData } from '~/composable/useData'
-import { usePage } from '~/composable/usePage'
+import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useData } from '@/composable/useData'
+import { usePage } from '@/composable/usePage'
 
 const props = defineProps({ path: { type: String, required: true } })
 const { getCourse } = useShopifyCart()

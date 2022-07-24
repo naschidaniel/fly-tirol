@@ -107,5 +107,7 @@ whitecloud*.tar.gz
 /assets/media.js
 /content_flytirol/**/*.vue
 /content_whitecloud/**/*.vue
-/data/metadataFlyTirol.js
-/data/metadataWhiteCloud.js
+/data/metadataFlyTirol.ts
+/data/metadataWhiteCloud.ts
+/data/mediaFlyTirol.ts
+/data/mediaWhiteCloud.ts

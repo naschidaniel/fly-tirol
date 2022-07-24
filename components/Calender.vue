@@ -59,7 +59,7 @@
           class="m-2 p-4 border-2 rounded-lg md:w-2/3 lg:w-1/3 xl:w-1/4 text-left"
         >
           <span
-            class="inline-flex items-center justify-center px-2 py-1 leading-none text-gray-900 rounded-full cursor-pointer"
+            class="inline-flex items-center justify-center px-2 py-1 leading-none text-gray-900 rounded-full"
             :class="
               entry.productType === 'Ausbildung'
                 ? 'bg-green-300'
@@ -71,7 +71,6 @@
                 ? 'bg-red-200'
                 : 'bg-gray-100'
             "
-            @click="setCheckedProducts(product)"
             >{{ entry.productType }}</span
           >
           <h4>
@@ -137,11 +136,11 @@
   </div>
 </template>
 
-<script setup>
-import { useShopifyCalender } from '~/composable/useShopifyCalender'
-import { useShopifyCart } from '~/composable/useShopifyCart'
-import IconOutlineCheck from '~/components/icon/IconOutlineCheck'
-import IconOutlineX from '~/components/icon/IconOutlineX'
+<script setup lang="ts">
+import { useShopifyCalender } from '@/composable/useShopifyCalender'
+import { useShopifyCart } from '@/composable/useShopifyCart'
+import IconOutlineCheck from '@/components/icon/IconOutlineCheck.vue'
+import IconOutlineX from '@/components/icon/IconOutlineX.vue'
 
 const { bookProduct } = useShopifyCart()
 const {
