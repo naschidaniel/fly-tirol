@@ -36,13 +36,13 @@
     "optimize-images": "yarn optimize-images:flytirol && yarn optimize-images:whitecloud"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^5.3.0",
-    "core-js": "^3.23.5",
+    "@nuxtjs/tailwindcss": "^5.3.1",
+    "core-js": "^3.24.0",
     "heroicons": "^1.0.6",
     "leaflet": "^1.8.0",
     "nuxt": "npm:nuxt3@latest",
     "shopify-buy": "^2.16.1",
-    "simple-icons": "^7.4.0"
+    "simple-icons": "^7.5.0"
   },
   "devDependencies": {
     "@nuxt/kit": "^3.0.0-rc.6",
@@ -56,7 +56,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.2.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.2.0",
+    "eslint-plugin-vue": "^9.3.0",
     "glob": "^8.0.3",
     "image-size": "^1.0.2",
     "marked": "^4.0.18",
@@ -64,6 +64,6 @@
     "prettier": "^2.7.1",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4",
-    "vue-tsc": "^0.38.9"
+    "vue-tsc": "^0.39.0"
   }
 }
