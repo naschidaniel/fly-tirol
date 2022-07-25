@@ -30,9 +30,9 @@ export interface ShopifyLineItems {
   }
   customAttribute?: CustomAttribute[]
   customAttributes: {
-    key: string,
-    value: string,
-    price: number,
+    key: string
+    value: string
+    price: number
   }[]
 }
 

@@ -24,9 +24,10 @@
 <script setup lang="ts">
 // eslint-disable-next-line import/named
 import { defineProps, computed, ref, onMounted, watchEffect } from 'vue'
+import { MediaInformation } from '@/types/data'
 import { useData } from '@/composable/useData'
 import { useMedia } from '~~/composable/useMedia'
-import { useMeta } from '#imports'
+import { useHead } from '#imports'
 
 const props = defineProps({
   boxClass: { type: String, default: '', required: false },
@@ -55,18 +56,20 @@ const boxSizes = {
 }
 
 const imageInformation = computed(() => {
-  const images = Object.values(media).filter((img) => {
-    return img.url === props.picture
-  })
-  if (images.length === 0) {
+  const image = Object.values(media).find((img) => img.url === props.picture)
+  if (image === undefined) {
     // eslint-disable-next-line no-console
     console.warn(
       `The image '${props.picture}' can not be found in the /media.json file. You have to run ./generateMediaInformation.js.`
     )
+    return {
+      alt: '',
+      title: '',
+      url: props.picture,
+      dimensions: undefined,
+    } as MediaInformation
   }
-  return images.length === 1
-    ? images[0]
-    : { alt: '', title: '', url: props.picture, dimensions: undefined }
+  return image
 })
 
 const extension = imageInformation.value?.dimensions?.type
@@ -123,7 +126,7 @@ onMounted(() => {
 
 watchEffect(() => {
   if (responsiveUrl.value !== '' && props.isPreload && !isDevelopment) {
-    useMeta({
+    useHead({
       link: [
         {
           rel: 'preload',
