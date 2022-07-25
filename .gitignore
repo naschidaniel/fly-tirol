@@ -104,10 +104,11 @@ flytirol*.tar.gz
 whitecloud*.tar.gz
 
 # content
-/assets/media.js
 /content_flytirol/**/*.vue
 /content_whitecloud/**/*.vue
 /data/metadataFlyTirol.ts
 /data/metadataWhiteCloud.ts
 /data/mediaFlyTirol.ts
 /data/mediaWhiteCloud.ts
+/.public_flytirol
+/.public_whitecloud

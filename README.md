@@ -11,6 +11,17 @@ Come and share our passion with us!
 Visit mit at [https://white-cloud.tirol](https://white-cloud.tirol).
 I am a passionate pilot and would like to show you the world from above. Come with me and share my passion.
 
+### Optimize Images
+
+The `image-optimizer` tool is used to optimize images in the folders `./public_flytirol/media` or `./public_whitecloud/media`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the root directory. The files from `./public_flytirol` and `./public_whitecloud` are copied to `./.public_flytirol` and `./.public_whitecloud`. The images for the development and the build setup are used from the folders `./.public_flytirol` or `./.public_whitecloud`. 
+
+The images are optimized on the basis of the screen widths from [https://tailwindcss.com/docs/responsive-design](https://tailwindcss.com/docs/responsive-design) and the two additional sizes `xs: 512 px` and `2xs: 384 px`.
+
+``` bash
+# optimize images for development and build setup
+$ yarn optimize-images
+```
+
 ## Development Setup
 
 ```bash
@@ -57,19 +68,6 @@ $ docker build -t flytirol --build-arg NUXT_PAGE='whitecloud' .
 $ docker run -p 127.0.0.1:3000:3000/tcp flytirol
 # OR 
 $ docker run -p 127.0.0.1:3001:3001/tcp whitecloud
-```
-
-### Optimize Images for Production
-
-The `image-optimizer` tool is used to optimize images in the folders `./public_flytirol/media` or `./public_whitecloud/media`. Place the latest release of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the root directory. For local development, the original images are used. 
-
-The images are optimized on the basis of the screen widths from [https://tailwindcss.com/docs/responsive-design](https://tailwindcss.com/docs/responsive-design) and the two additional sizes `xs: 512 px` and `2xs: 384 px`.
-
-``` bash
-# optimize images for Production
-$ yarn optimize-images:flytirol
-# OR
-$ yarn optimize-images:whitecloud
 ```
 
 ### Collect Media Information

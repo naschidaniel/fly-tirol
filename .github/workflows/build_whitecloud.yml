@@ -27,25 +27,11 @@ jobs:
         run: yarn build
       - name: get image-optimizer
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.3.6/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
-      - name: delete ./dist/media
-        run: rm -rf ./dist/media
-      - name: optimize-images:whitecloud:2xs
-        run: yarn optimize-images:whitecloud:2xs
-      - name: optimize-images:whitecloud:xs
-        run: yarn optimize-images:whitecloud:xs
-      - name: optimize-images:whitecloud:sm
-        run: yarn optimize-images:whitecloud:sm
-      - name: optimize-images:whitecloud:md
-        run: yarn optimize-images:whitecloud:md
-      - name: optimize-images:whitecloud:lg
-        run: yarn optimize-images:whitecloud:lg
-      - name: optimize-images:whitecloud:xl
-        run: yarn optimize-images:whitecloud:xl
-      - name: optimize-images:whitecloud:2xl
-        run: yarn optimize-images:whitecloud:2xl
+      - name: optimize-images:whitecloud
+        run: yarn optimize-images:whitecloud
       - name: Build Artifacts
         uses: actions/upload-artifact@v2
         with:
           name: whitecloud_build
-          path: dist
-          retention-days: 0.2
+          path: .output
+          retention-days: 0.1

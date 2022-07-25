@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   target: 'server',
   dir: {
     pages: isWhiteCloud ? 'pages_whitecloud' : 'pages_flytirol',
-    public: isWhiteCloud ? 'public_whitecloud' : 'public_flytirol',
+    public: isWhiteCloud ? '.public_whitecloud' : '.public_flytirol',
   },
   app: {
     head: {
@@ -141,11 +141,5 @@ export default defineNuxtConfig({
 
   router: {
     linkExactActiveClass: 'active',
-  },
-
-  vite: {
-    server: {
-      port: isWhiteCloud ? 3001 : 3000,
-    },
   },
 })
