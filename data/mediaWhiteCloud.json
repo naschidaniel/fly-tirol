@@ -3,6 +3,7 @@
     "url": "/media/WhiteCloudLogo.jpg",
     "path": "/media/",
     "file": "WhiteCloudLogo.jpg",
+    "stem": "WhiteCloudLogo",
     "dimensions": {
       "height": 2010,
       "orientation": 1,
@@ -17,6 +18,7 @@
     "url": "/media/archiv/1.jpg",
     "path": "/media/archiv/",
     "file": "1.jpg",
+    "stem": "1",
     "dimensions": {
       "height": 2250,
       "orientation": 1,
@@ -31,6 +33,7 @@
     "url": "/media/archiv/2.jpg",
     "path": "/media/archiv/",
     "file": "2.jpg",
+    "stem": "2",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -45,6 +48,7 @@
     "url": "/media/archiv/3.jpg",
     "path": "/media/archiv/",
     "file": "3.jpg",
+    "stem": "3",
     "dimensions": {
       "height": 2160,
       "orientation": 1,
@@ -59,6 +63,7 @@
     "url": "/media/archiv/akrobatikflug-salve-start.jpg",
     "path": "/media/archiv/",
     "file": "akrobatikflug-salve-start.jpg",
+    "stem": "akrobatikflug-salve-start",
     "dimensions": {
       "height": 3024,
       "orientation": 1,
@@ -73,6 +78,7 @@
     "url": "/media/archiv/akrobatikflug-soell.jpg",
     "path": "/media/archiv/",
     "file": "akrobatikflug-soell.jpg",
+    "stem": "akrobatikflug-soell",
     "dimensions": {
       "height": 1080,
       "width": 1920,
@@ -86,6 +92,7 @@
     "url": "/media/archiv/gleitflug-hopfgarten.jpg",
     "path": "/media/archiv/",
     "file": "gleitflug-hopfgarten.jpg",
+    "stem": "gleitflug-hopfgarten",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -100,6 +107,7 @@
     "url": "/media/archiv/gleitflug-hopfgarten2.jpg",
     "path": "/media/archiv/",
     "file": "gleitflug-hopfgarten2.jpg",
+    "stem": "gleitflug-hopfgarten2",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -114,6 +122,7 @@
     "url": "/media/archiv/startplatz.jpg",
     "path": "/media/archiv/",
     "file": "startplatz.jpg",
+    "stem": "startplatz",
     "dimensions": {
       "height": 2250,
       "orientation": 1,
@@ -128,6 +137,7 @@
     "url": "/media/available-soon.jpg",
     "path": "/media/",
     "file": "available-soon.jpg",
+    "stem": "available-soon",
     "dimensions": {
       "height": 1080,
       "orientation": 1,
@@ -142,6 +152,7 @@
     "url": "/media/fluege-und-preise/akrobatikflug-hopfgarten.jpg",
     "path": "/media/fluege-und-preise/",
     "file": "akrobatikflug-hopfgarten.jpg",
+    "stem": "akrobatikflug-hopfgarten",
     "dimensions": {
       "height": 1080,
       "width": 1920,
@@ -155,6 +166,7 @@
     "url": "/media/fluege-und-preise/akrobatikflug-soell.jpg",
     "path": "/media/fluege-und-preise/",
     "file": "akrobatikflug-soell.jpg",
+    "stem": "akrobatikflug-soell",
     "dimensions": {
       "height": 1080,
       "width": 1920,
@@ -168,6 +180,7 @@
     "url": "/media/fluege-und-preise/akrobatikflug/akrobatikflug-hopfgarten.jpg",
     "path": "/media/fluege-und-preise/akrobatikflug/",
     "file": "akrobatikflug-hopfgarten.jpg",
+    "stem": "akrobatikflug-hopfgarten",
     "dimensions": {
       "height": 1080,
       "width": 1920,
@@ -181,6 +194,7 @@
     "url": "/media/fluege-und-preise/akrobatikflug/akrobatikflug-salve.jpg",
     "path": "/media/fluege-und-preise/akrobatikflug/",
     "file": "akrobatikflug-salve.jpg",
+    "stem": "akrobatikflug-salve",
     "dimensions": {
       "height": 2160,
       "orientation": 1,
@@ -195,6 +209,7 @@
     "url": "/media/fluege-und-preise/akrobatikflug/akrobatikflug-soell.jpg",
     "path": "/media/fluege-und-preise/akrobatikflug/",
     "file": "akrobatikflug-soell.jpg",
+    "stem": "akrobatikflug-soell",
     "dimensions": {
       "height": 1080,
       "width": 1920,
@@ -208,6 +223,7 @@
     "url": "/media/fluege-und-preise/akrobatikflug/start_tandemfliegen.jpg",
     "path": "/media/fluege-und-preise/akrobatikflug/",
     "file": "start_tandemfliegen.jpg",
+    "stem": "start_tandemfliegen",
     "dimensions": {
       "height": 1080,
       "orientation": 1,
@@ -222,6 +238,7 @@
     "url": "/media/fluege-und-preise/gleitflug-hopfgarten.jpg",
     "path": "/media/fluege-und-preise/",
     "file": "gleitflug-hopfgarten.jpg",
+    "stem": "gleitflug-hopfgarten",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -236,6 +253,7 @@
     "url": "/media/fluege-und-preise/gleitflug-soell.jpg",
     "path": "/media/fluege-und-preise/",
     "file": "gleitflug-soell.jpg",
+    "stem": "gleitflug-soell",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -250,6 +268,7 @@
     "url": "/media/fluege-und-preise/gleitflug/gleitflug-hopfgarten-mittelstation.jpg",
     "path": "/media/fluege-und-preise/gleitflug/",
     "file": "gleitflug-hopfgarten-mittelstation.jpg",
+    "stem": "gleitflug-hopfgarten-mittelstation",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -264,6 +283,7 @@
     "url": "/media/fluege-und-preise/gleitflug/gleitflug-soell.jpg",
     "path": "/media/fluege-und-preise/gleitflug/",
     "file": "gleitflug-soell.jpg",
+    "stem": "gleitflug-soell",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -278,6 +298,7 @@
     "url": "/media/fluege-und-preise/gleitflug/gleitflug-soell2.jpg",
     "path": "/media/fluege-und-preise/gleitflug/",
     "file": "gleitflug-soell2.jpg",
+    "stem": "gleitflug-soell2",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -292,6 +313,7 @@
     "url": "/media/fluege-und-preise/gleitflug/tandemfliegen-aussenperspektive.jpg",
     "path": "/media/fluege-und-preise/gleitflug/",
     "file": "tandemfliegen-aussenperspektive.jpg",
+    "stem": "tandemfliegen-aussenperspektive",
     "dimensions": {
       "height": 3640,
       "orientation": 1,
@@ -306,6 +328,7 @@
     "url": "/media/fluege-und-preise/thermikflug-hopfgarten.jpg",
     "path": "/media/fluege-und-preise/",
     "file": "thermikflug-hopfgarten.jpg",
+    "stem": "thermikflug-hopfgarten",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -320,6 +343,7 @@
     "url": "/media/fluege-und-preise/thermikflug-soell.jpg",
     "path": "/media/fluege-und-preise/",
     "file": "thermikflug-soell.jpg",
+    "stem": "thermikflug-soell",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -334,6 +358,7 @@
     "url": "/media/fluege-und-preise/thermikflug/thermikflug-brixental.jpg",
     "path": "/media/fluege-und-preise/thermikflug/",
     "file": "thermikflug-brixental.jpg",
+    "stem": "thermikflug-brixental",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -348,6 +373,7 @@
     "url": "/media/fluege-und-preise/thermikflug/thermikflug-soell.jpg",
     "path": "/media/fluege-und-preise/thermikflug/",
     "file": "thermikflug-soell.jpg",
+    "stem": "thermikflug-soell",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -362,6 +388,7 @@
     "url": "/media/fluege-und-preise/thermikflug/thermikflug-ueber-den-wolken.jpg",
     "path": "/media/fluege-und-preise/thermikflug/",
     "file": "thermikflug-ueber-den-wolken.jpg",
+    "stem": "thermikflug-ueber-den-wolken",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -376,6 +403,7 @@
     "url": "/media/index/gallerie/akrobatikflug-hopfgarten.jpg",
     "path": "/media/index/gallerie/",
     "file": "akrobatikflug-hopfgarten.jpg",
+    "stem": "akrobatikflug-hopfgarten",
     "dimensions": {
       "height": 1080,
       "width": 1920,
@@ -389,6 +417,7 @@
     "url": "/media/index/gallerie/tandemfliegen_whitecloud_salve.jpg",
     "path": "/media/index/gallerie/",
     "file": "tandemfliegen_whitecloud_salve.jpg",
+    "stem": "tandemfliegen_whitecloud_salve",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -403,6 +432,7 @@
     "url": "/media/index/gallerie/thermikflug-ueber-den-wolken.jpg",
     "path": "/media/index/gallerie/",
     "file": "thermikflug-ueber-den-wolken.jpg",
+    "stem": "thermikflug-ueber-den-wolken",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -417,6 +447,7 @@
     "url": "/media/kontakt/mathias_holrieder.jpg",
     "path": "/media/kontakt/",
     "file": "mathias_holrieder.jpg",
+    "stem": "mathias_holrieder",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
@@ -431,6 +462,7 @@
     "url": "/media/tandemfliegen_salve.jpg",
     "path": "/media/",
     "file": "tandemfliegen_salve.jpg",
+    "stem": "tandemfliegen_salve",
     "dimensions": {
       "height": 3000,
       "orientation": 1,
