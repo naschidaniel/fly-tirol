@@ -61,6 +61,7 @@ export interface MediaInformation {
   }
   file: string
   path: string
+  stem: string,
   title: string
   url: string
 }

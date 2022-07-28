@@ -3,6 +3,7 @@
     "url": "/media/FlyTirolHeader.jpg",
     "path": "/media/",
     "file": "FlyTirolHeader.jpg",
+    "stem": "FlyTirolHeader",
     "dimensions": {
       "height": 1329,
       "width": 2362,
@@ -16,6 +17,7 @@
     "url": "/media/FlyTirolLogo.jpg",
     "path": "/media/",
     "file": "FlyTirolLogo.jpg",
+    "stem": "FlyTirolLogo",
     "dimensions": {
       "height": 332,
       "width": 528,
@@ -29,6 +31,7 @@
     "url": "/media/ausbildung/ausbildung.jpg",
     "path": "/media/ausbildung/",
     "file": "ausbildung.jpg",
+    "stem": "ausbildung",
     "dimensions": {
       "height": 1365,
       "width": 2048,
@@ -42,6 +45,7 @@
     "url": "/media/ausbildung/grundausbildung/1_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "1_grundausbildung.jpg",
+    "stem": "1_grundausbildung",
     "dimensions": {
       "height": 2048,
       "width": 1365,
@@ -55,6 +59,7 @@
     "url": "/media/ausbildung/grundausbildung/2_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "2_grundausbildung.jpg",
+    "stem": "2_grundausbildung",
     "dimensions": {
       "height": 1365,
       "width": 2048,
@@ -68,6 +73,7 @@
     "url": "/media/ausbildung/grundausbildung/3_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "3_grundausbildung.jpg",
+    "stem": "3_grundausbildung",
     "dimensions": {
       "height": 1365,
       "width": 2048,
@@ -81,6 +87,7 @@
     "url": "/media/ausbildung/grundausbildung/4_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "4_grundausbildung.jpg",
+    "stem": "4_grundausbildung",
     "dimensions": {
       "height": 1365,
       "width": 2048,
@@ -94,6 +101,7 @@
     "url": "/media/ausbildung/grundausbildung/5_grundausbildung.jpg",
     "path": "/media/ausbildung/grundausbildung/",
     "file": "5_grundausbildung.jpg",
+    "stem": "5_grundausbildung",
     "dimensions": {
       "height": 1365,
       "width": 2048,
@@ -107,6 +115,7 @@
     "url": "/media/ausbildung/grundkurs.jpg",
     "path": "/media/ausbildung/",
     "file": "grundkurs.jpg",
+    "stem": "grundkurs",
     "dimensions": {
       "height": 770,
       "orientation": 1,
@@ -121,6 +130,7 @@
     "url": "/media/ausbildung/hoehenflugkurs.jpg",
     "path": "/media/ausbildung/",
     "file": "hoehenflugkurs.jpg",
+    "stem": "hoehenflugkurs",
     "dimensions": {
       "height": 899,
       "width": 1599,
@@ -134,6 +144,7 @@
     "url": "/media/ausbildung/kombikurs.jpg",
     "path": "/media/ausbildung/",
     "file": "kombikurs.jpg",
+    "stem": "kombikurs",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -147,6 +158,7 @@
     "url": "/media/ausbildung/paragleiterschein.jpg",
     "path": "/media/ausbildung/",
     "file": "paragleiterschein.jpg",
+    "stem": "paragleiterschein",
     "dimensions": {
       "height": 735,
       "orientation": 1,
@@ -161,6 +173,7 @@
     "url": "/media/ausbildung/schnupperkurs.jpg",
     "path": "/media/ausbildung/",
     "file": "schnupperkurs.jpg",
+    "stem": "schnupperkurs",
     "dimensions": {
       "height": 1365,
       "width": 2048,
@@ -174,6 +187,7 @@
     "url": "/media/ausbildung/tagesbetreuung.jpg",
     "path": "/media/ausbildung/",
     "file": "tagesbetreuung.jpg",
+    "stem": "tagesbetreuung",
     "dimensions": {
       "height": 2048,
       "width": 1152,
@@ -187,6 +201,7 @@
     "url": "/media/available-soon.jpg",
     "path": "/media/",
     "file": "available-soon.jpg",
+    "stem": "available-soon",
     "dimensions": {
       "height": 1080,
       "orientation": 1,
@@ -201,6 +216,7 @@
     "url": "/media/fortbildung/fortbildung.jpg",
     "path": "/media/fortbildung/",
     "file": "fortbildung.jpg",
+    "stem": "fortbildung",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -214,6 +230,7 @@
     "url": "/media/fortbildung/tandemkurs.jpg",
     "path": "/media/fortbildung/",
     "file": "tandemkurs.jpg",
+    "stem": "tandemkurs",
     "dimensions": {
       "height": 1152,
       "width": 2048,
@@ -227,6 +244,7 @@
     "url": "/media/fortbildung/thermikfliegen.jpg",
     "path": "/media/fortbildung/",
     "file": "thermikfliegen.jpg",
+    "stem": "thermikfliegen",
     "dimensions": {
       "height": 2048,
       "width": 1152,
@@ -240,6 +258,7 @@
     "url": "/media/partner/uebungshang_westendorf.jpg",
     "path": "/media/partner/",
     "file": "uebungshang_westendorf.jpg",
+    "stem": "uebungshang_westendorf",
     "dimensions": {
       "height": 1365,
       "width": 2048,
@@ -253,6 +272,7 @@
     "url": "/media/reisen/flugsafari.jpg",
     "path": "/media/reisen/",
     "file": "flugsafari.jpg",
+    "stem": "flugsafari",
     "dimensions": {
       "height": 2048,
       "width": 1152,
@@ -266,6 +286,7 @@
     "url": "/media/reisen/infinity_over_village.jpg",
     "path": "/media/reisen/",
     "file": "infinity_over_village.jpg",
+    "stem": "infinity_over_village",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -279,6 +300,7 @@
     "url": "/media/reisen/oeluedeniz-tuerkei.png",
     "path": "/media/reisen/",
     "file": "oeluedeniz-tuerkei.png",
+    "stem": "oeluedeniz-tuerkei",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -292,6 +314,7 @@
     "url": "/media/reisen/paragliding_lago_de_garda.jpg",
     "path": "/media/reisen/",
     "file": "paragliding_lago_de_garda.jpg",
+    "stem": "paragliding_lago_de_garda",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -305,6 +328,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg",
     "path": "/media/sicherheitstrainings/",
     "file": "sicherheitstraining-am-gardasee.jpg",
+    "stem": "sicherheitstraining-am-gardasee",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -318,6 +342,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/1_sicherheitstraining_gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
     "file": "1_sicherheitstraining_gardasee.jpg",
+    "stem": "1_sicherheitstraining_gardasee",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -331,6 +356,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/2_sicherheitstraining_gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
     "file": "2_sicherheitstraining_gardasee.jpg",
+    "stem": "2_sicherheitstraining_gardasee",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -344,6 +370,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/3_sicherheitstraining_gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
     "file": "3_sicherheitstraining_gardasee.jpg",
+    "stem": "3_sicherheitstraining_gardasee",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -357,6 +384,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/4_sicherheitstraining_gardasee.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-gardasee/galerie/",
     "file": "4_sicherheitstraining_gardasee.jpg",
+    "stem": "4_sicherheitstraining_gardasee",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -370,6 +398,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-in-oeluedeniz.jpg",
     "path": "/media/sicherheitstrainings/",
     "file": "sicherheitstraining-in-oeluedeniz.jpg",
+    "stem": "sicherheitstraining-in-oeluedeniz",
     "dimensions": {
       "height": 1024,
       "width": 1536,
@@ -383,6 +412,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/1_sicherheitstraining_oeluedeniz.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/",
     "file": "1_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "1_sicherheitstraining_oeluedeniz",
     "dimensions": {
       "height": 1024,
       "width": 1536,
@@ -396,6 +426,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/2_sicherheitstraining_oeluedeniz.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/",
     "file": "2_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "2_sicherheitstraining_oeluedeniz",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -409,6 +440,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/3_sicherheitstraining_oeluedeniz.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/",
     "file": "3_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "3_sicherheitstraining_oeluedeniz",
     "dimensions": {
       "height": 1024,
       "width": 1536,
@@ -422,6 +454,7 @@
     "url": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/4_sicherheitstraining_oeluedeniz.jpg",
     "path": "/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/",
     "file": "4_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "4_sicherheitstraining_oeluedeniz",
     "dimensions": {
       "height": 1667,
       "width": 2500,
@@ -435,6 +468,7 @@
     "url": "/media/tandemfliegen/galerie/0_tandemfliegen_getting_ready.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "0_tandemfliegen_getting_ready.jpg",
+    "stem": "0_tandemfliegen_getting_ready",
     "dimensions": {
       "height": 2362,
       "width": 1575,
@@ -448,6 +482,7 @@
     "url": "/media/tandemfliegen/galerie/1_takeoff-preperation-sebastian.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "1_takeoff-preperation-sebastian.jpg",
+    "stem": "1_takeoff-preperation-sebastian",
     "dimensions": {
       "height": 2362,
       "width": 1575,
@@ -461,6 +496,7 @@
     "url": "/media/tandemfliegen/galerie/2_takeoff-preperation-stefan.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "2_takeoff-preperation-stefan.jpg",
+    "stem": "2_takeoff-preperation-stefan",
     "dimensions": {
       "height": 2362,
       "width": 1575,
@@ -474,6 +510,7 @@
     "url": "/media/tandemfliegen/galerie/3_tandemfliegen_happy_passenger.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "3_tandemfliegen_happy_passenger.jpg",
+    "stem": "3_tandemfliegen_happy_passenger",
     "dimensions": {
       "height": 1575,
       "width": 2362,
@@ -487,6 +524,7 @@
     "url": "/media/tandemfliegen/galerie/4_tandem-paragliding-takeoff.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "4_tandem-paragliding-takeoff.jpg",
+    "stem": "4_tandem-paragliding-takeoff",
     "dimensions": {
       "height": 2362,
       "width": 1575,
@@ -500,6 +538,7 @@
     "url": "/media/tandemfliegen/galerie/5_tandemfliegen_start.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "5_tandemfliegen_start.jpg",
+    "stem": "5_tandemfliegen_start",
     "dimensions": {
       "height": 1575,
       "width": 2362,
@@ -513,6 +552,7 @@
     "url": "/media/tandemfliegen/galerie/6_panoramaflug.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "6_panoramaflug.jpg",
+    "stem": "6_panoramaflug",
     "dimensions": {
       "height": 1152,
       "width": 2048,
@@ -526,6 +566,7 @@
     "url": "/media/tandemfliegen/galerie/7_hohe-salve-westendorf.jpg",
     "path": "/media/tandemfliegen/galerie/",
     "file": "7_hohe-salve-westendorf.jpg",
+    "stem": "7_hohe-salve-westendorf",
     "dimensions": {
       "height": 1575,
       "width": 2362,
@@ -539,6 +580,7 @@
     "url": "/media/tandemfliegen/hoehenflug.jpg",
     "path": "/media/tandemfliegen/",
     "file": "hoehenflug.jpg",
+    "stem": "hoehenflug",
     "dimensions": {
       "height": 894,
       "orientation": 1,
@@ -553,6 +595,7 @@
     "url": "/media/tandemfliegen/panoramaflug.jpg",
     "path": "/media/tandemfliegen/",
     "file": "panoramaflug.jpg",
+    "stem": "panoramaflug",
     "dimensions": {
       "height": 1946,
       "orientation": 1,
@@ -567,6 +610,7 @@
     "url": "/media/tandemfliegen/tandemfluege.jpg",
     "path": "/media/tandemfliegen/",
     "file": "tandemfluege.jpg",
+    "stem": "tandemfluege",
     "dimensions": {
       "height": 1575,
       "width": 2362,
@@ -580,6 +624,7 @@
     "url": "/media/tandemfliegen/tandemflug-geschenkkarte.jpg",
     "path": "/media/tandemfliegen/",
     "file": "tandemflug-geschenkkarte.jpg",
+    "stem": "tandemflug-geschenkkarte",
     "dimensions": {
       "height": 1231,
       "orientation": 1,
@@ -594,6 +639,7 @@
     "url": "/media/tandemfliegen/tandemsafari.jpg",
     "path": "/media/tandemfliegen/",
     "file": "tandemsafari.jpg",
+    "stem": "tandemsafari",
     "dimensions": {
       "height": 876,
       "orientation": 1,
@@ -608,6 +654,7 @@
     "url": "/media/team/bernie.jpg",
     "path": "/media/team/",
     "file": "bernie.jpg",
+    "stem": "bernie",
     "dimensions": {
       "height": 1890,
       "width": 1260,
@@ -621,6 +668,7 @@
     "url": "/media/team/flytirol_geschichte.jpg",
     "path": "/media/team/",
     "file": "flytirol_geschichte.jpg",
+    "stem": "flytirol_geschichte",
     "dimensions": {
       "height": 1667,
       "orientation": 1,
@@ -635,6 +683,7 @@
     "url": "/media/team/sebastian.jpg",
     "path": "/media/team/",
     "file": "sebastian.jpg",
+    "stem": "sebastian",
     "dimensions": {
       "height": 1890,
       "width": 1260,
@@ -648,6 +697,7 @@
     "url": "/media/team/stefan.jpg",
     "path": "/media/team/",
     "file": "stefan.jpg",
+    "stem": "stefan",
     "dimensions": {
       "height": 1890,
       "width": 1260,
@@ -661,6 +711,7 @@
     "url": "/media/team/team.jpg",
     "path": "/media/team/",
     "file": "team.jpg",
+    "stem": "team",
     "dimensions": {
       "height": 1575,
       "width": 2362,
@@ -674,6 +725,7 @@
     "url": "/media/termine/infinity_am_gardasee.jpg",
     "path": "/media/termine/",
     "file": "infinity_am_gardasee.jpg",
+    "stem": "infinity_am_gardasee",
     "dimensions": {
       "height": 1667,
       "width": 2500,
