@@ -84,7 +84,8 @@ const props = defineProps({
 const { buildTime } = useData()
 const { media } = useMedia()
 
-const imageBox = ref(undefined) // template ref
+// see https://vuejs.org/guide/essentials/template-refs.html#accessing-the-refs
+const imageBox = ref(null) // template ref
 
 const image = Object.values(media).find((img) => img.url === props.picture)
 
