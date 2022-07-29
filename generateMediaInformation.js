@@ -18,7 +18,15 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
       const dimensions = sizeOf(filePath)
       dimensions.ratio =
         Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
-      return { url, path, file, stem: file.replace(`.${dimensions.type}`, ''), dimensions, alt: '', title: '' }
+      return {
+        url,
+        path,
+        file,
+        stem: file.replace(`.${dimensions.type}`, ''),
+        dimensions,
+        alt: '',
+        title: '',
+      }
     })
     .forEach((img) => {
       if (Object.keys(mediaJson).includes(img.url)) return
