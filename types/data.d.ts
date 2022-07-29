@@ -1,3 +1,5 @@
+import { ResponsiveImage } from '~~/.nuxt/components'
+
 export interface Cookie {
   name: string
   value: string
@@ -61,7 +63,7 @@ export interface MediaInformation {
   }
   file: string
   path: string
-  stem: string,
+  stem: string
   title: string
   url: string
 }
