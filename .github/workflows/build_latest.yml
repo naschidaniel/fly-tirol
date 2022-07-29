@@ -21,8 +21,8 @@ jobs:
           node-version: '16'
       - run: yarn install
       - run: yarn upgrade --latest
-      - name: generateMediaInformation
-        run: yarn generateMediaInformation
+      - name: create-public
+        run: yarn create-public
       - name: generateContent
         run: yarn generateContent && yarn lintContent
       - name: build
