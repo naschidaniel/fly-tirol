@@ -36,13 +36,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import ProductVariants from '@/components/ProductVariants.vue'
-import { useMedia } from '~~/composable/useMedia'
 import { useShopifyCalender } from '@/composable/useShopifyCalender'
 import { useShopifyCart } from '@/composable/useShopifyCart'
 import { usePage } from '@/composable/usePage'
 
 const { isCourse, page } = usePage()
-const { getScreenSize } = useMedia()
 const { filterCalender } = useShopifyCalender()
 const { selectedOptionDateString } = useShopifyCart()
 
@@ -52,8 +50,7 @@ const productCalender = computed(() =>
 
 function setOptionDateString(optionDateString) {
   selectedOptionDateString.value = optionDateString
-  const screenSize = getScreenSize()
-  if (['2xs', 'xs', 'sm', 'md'].includes(screenSize)) {
+  if (window?.innerWidth <= 768) {
     document
       .getElementById('book-product')
       .scrollIntoView({ block: 'start', behavior: 'smooth' })
