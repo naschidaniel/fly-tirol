@@ -4,9 +4,9 @@
   </div>
 </template>
 
-<script setup>
-import { useMetaTags } from '~/composable/useMetaTags'
-import Dsgvo from '~/content_whitecloud/dsgvo.vue'
+<script setup lang="ts">
+import { useMetaTags } from '@/composable/useMetaTags'
+import Dsgvo from '@/content_whitecloud/dsgvo.vue'
 
 useMetaTags()
 </script>

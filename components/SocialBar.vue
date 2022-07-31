@@ -117,17 +117,17 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue'
-import IconInstagram from './icon/IconInstagram'
-import IconFacebook from './icon/IconFacebook'
-import IconOutlineMail from './icon/IconOutlineMail'
-import IconOutlinePhone from './icon/IconOutlinePhone'
-import IconTwitter from './icon/IconTwitter'
-import IconYouTube from './icon/IconYouTube'
-import IconWhatsApp from './icon/IconWhatsApp'
-import { useData } from '~/composable/useData'
-import { usePage } from '~/composable/usePage'
+import IconInstagram from './icon/IconInstagram.vue'
+import IconFacebook from './icon/IconFacebook.vue'
+import IconOutlineMail from './icon/IconOutlineMail.vue'
+import IconOutlinePhone from './icon/IconOutlinePhone.vue'
+import IconTwitter from './icon/IconTwitter.vue'
+import IconYouTube from './icon/IconYouTube.vue'
+import IconWhatsApp from './icon/IconWhatsApp.vue'
+import { useData } from '@/composable/useData'
+import { usePage } from '@/composable/usePage'
 
 const {
   instagram,
@@ -146,16 +146,12 @@ const encodeDescription = computed(() => encodeURI(page.value.description))
 
 function openInstagram() {
   const url = `https://www.instagram.com/${instagram}/`
-  window
-    .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-    .focus()
+  window.open(url, '_blank', 'width=600, height=800').focus()
 }
 
 function openFacebook() {
   const url = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl.value}&title=${encodeTitle.value}`
-  window
-    .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-    .focus()
+  window.open(url, '_blank', 'width=600, height=800').focus()
 }
 
 function openMailContact() {
@@ -174,9 +170,7 @@ function openPhone() {
 
 function openTwitter() {
   const url = `https://twitter.com/intent/tweet?size=large&url=${encodedUrl.value}&text=${encodeDescription.value}&via=${website}`
-  window
-    .open(url, 'newWindow', 'width=600, height=800', { target: '_blank' })
-    .focus()
+  window.open(url, '_blank', 'width=600, height=800').focus()
 }
 
 function openYouTube() {

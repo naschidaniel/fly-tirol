@@ -34,9 +34,9 @@
   </div>
 </template>
 
-<script setup>
-import { useData } from '~/composable/useData'
-import { useFormat } from '~/composable/useFormat'
+<script setup lang="ts">
+import { useData } from '@/composable/useData'
+import { useFormat } from '@/composable/useFormat'
 
 const { buildTime, licenses } = useData()
 const { formatDateTime } = useFormat()

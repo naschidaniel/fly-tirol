@@ -62,14 +62,14 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import IconOutlineMenu from '../icon/IconOutlineMenu.vue'
 import IconOutlineShoppingCart from '../icon/IconOutlineShoppingCart.vue'
 import IconOutlineX from '../icon/IconOutlineX.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
-import { useData } from '~/composable/useData'
-import { useNavigation } from '~/composable/useNavigation'
-import { useShopifyCart } from '~/composable/useShopifyCart'
+import { useData } from '@/composable/useData'
+import { useNavigation } from '@/composable/useNavigation'
+import { useShopifyCart } from '@/composable/useShopifyCart'
 
 const { isFlyTirol } = useData()
 const { isOpen } = useNavigation()

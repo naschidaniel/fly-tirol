@@ -28,8 +28,8 @@
   </div>
 </template>
 
-<script setup>
-import { useFlyCookies } from '~/composable/useFlyCookies'
+<script setup lang="ts">
+import { useFlyCookies } from '@/composable/useFlyCookies'
 
 const { isCookieAgreement, acceptCookieAgreement } = useFlyCookies()
 </script>

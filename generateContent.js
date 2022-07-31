@@ -25,7 +25,7 @@ function generate(nuxtPage) {
     const data = readFileSync(filePath, 'utf8')
     const isContentImageGallery = data.includes('<ContentImageGallery ')
     const isContentPartnerCard = data.includes('<ContentPartnerCard ')
-    let metadata = { path, category, slug }
+    const metadata = { path, category, slug }
     data
       .split('---')[1]
       .split(/\r\n|\n/)
@@ -34,32 +34,39 @@ function generate(nuxtPage) {
         if (e.length === 0) {
           return
         }
-        metadata[entry[0]] = entry[1]
+        // Parse Values
+        if (entry[0] === 'order') {
+          metadata[entry[0]] = parseInt(entry[1])
+        } else {
+          metadata[entry[0]] = entry[1]
+        }
       })
-    metadata = Object.keys(metadata)
+    const pages = Object.keys(metadata)
       .sort()
       // eslint-disable-next-line no-sequences
       .reduce((r, k) => ((r[k] = metadata[k]), r), {})
-    metadataPages.push(metadata)
+    metadataPages.push(pages)
     const content = ['<template>', '<div>']
     content.push(marked(data.split('---')[2]).split(/\r\n|\n/))
-    content.push(['</div>', '</template>'])
+    content.push('</div>')
+    content.push('</template>')
 
     if (isContentImageGallery || isContentPartnerCard) {
-      content.push(['', '<script setup>'])
+      content.push('')
+      content.push('<script setup lang="ts">')
     }
     if (isContentImageGallery) {
-      content.push([
-        "import ContentImageGallery from '~/components/ContentImageGallery.vue'",
-      ])
+      content.push(
+        "import ContentImageGallery from '@/components/ContentImageGallery.vue'"
+      )
     }
     if (isContentPartnerCard) {
-      content.push([
-        "import ContentPartnerCard from '~/components/ContentPartnerCard.vue'",
-      ])
+      content.push(
+        "import ContentPartnerCard from '@/components/ContentPartnerCard.vue'"
+      )
     }
     if (isContentImageGallery || isContentPartnerCard) {
-      content.push(['</script>', ''])
+      content.push('</script>')
     }
     const text = content.flat().join('\r\n')
     writeFile(filePath.replace('.md', '.vue'), text, (err) => {
@@ -71,14 +78,18 @@ function generate(nuxtPage) {
   const constName =
     nuxtPage === 'flytirol' ? 'metadataFlyTirol' : 'metadataWhiteCloud'
   writeFile(
-    `./data/${constName}.js`,
-    `export const ${constName} = ${json}`,
+    `./data/${constName}.ts`,
+    `import { MetaData } from '@/types/data'\n\n export const ${constName}: MetaData[] = ${json}`,
     (err) => {
       if (err) throw err
     }
   )
 }
 
-for (const pagePage of ['flytirol', 'whitecloud']) {
-  generate(pagePage)
+export default function main() {
+  for (const pagePage of ['flytirol', 'whitecloud']) {
+    generate(pagePage)
+  }
 }
+
+main()

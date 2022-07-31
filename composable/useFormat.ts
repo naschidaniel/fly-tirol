@@ -1,5 +1,5 @@
 export function useFormat() {
-  function formatDate(date) {
+  function formatDate(date: undefined | number | Date): string {
     const dateFormat = new Intl.DateTimeFormat('de-AT', {
       year: 'numeric',
       month: '2-digit',
@@ -8,7 +8,7 @@ export function useFormat() {
     return date === undefined ? '–' : dateFormat.format(date)
   }
 
-  function formatDateTime(date) {
+  function formatDateTime(date: undefined | number | Date) {
     const dateTimeFormat = new Intl.DateTimeFormat('de-AT', {
       year: 'numeric',
       month: '2-digit',
@@ -19,7 +19,7 @@ export function useFormat() {
     return date === undefined ? '–' : dateTimeFormat.format(date)
   }
 
-  function formatPrice(price) {
+  function formatPrice(price: undefined | number) {
     const priceFormat = new Intl.NumberFormat('de-DE', {
       style: 'currency',
       currency: 'EUR',

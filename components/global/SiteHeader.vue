@@ -12,11 +12,11 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import FlyTirolLogo from '../FlyTirolLogo.vue'
 import WhiteCloutLogo from '../WhiteCloudLogo.vue'
 import NavigationNavbar from './NavigationNavbar.vue'
-import { useData } from '~/composable/useData'
+import { useData } from '@/composable/useData'
 
 const { isFlyTirol, isWhiteCloud } = useData()
 </script>

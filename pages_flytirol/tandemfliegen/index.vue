@@ -30,13 +30,13 @@
   </div>
 </template>
 
-<script setup>
-import ContentImageGallery from '~/components/ContentImageGallery.vue'
-import InfoBox from '~/components/InfoBox.vue'
-import SocialBar from '~/components/SocialBar.vue'
-import ProductList from '~/components/ProductList.vue'
-import PageHeader from '~/components/PageHeader.vue'
-import { useMetaTags } from '~/composable/useMetaTags'
+<script setup lang="ts">
+import ContentImageGallery from '@/components/ContentImageGallery.vue'
+import InfoBox from '@/components/InfoBox.vue'
+import SocialBar from '@/components/SocialBar.vue'
+import ProductList from '@/components/ProductList.vue'
+import PageHeader from '@/components/PageHeader.vue'
+import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()
 </script>

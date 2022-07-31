@@ -56,8 +56,8 @@
   </div>
 </template>
 
-<script setup>
-import { useData } from '~/composable/useData'
+<script setup lang="ts">
+import { useData } from '@/composable/useData'
 
 const { isFlyTirol, mail, phone, phoneString, website } = useData()
 const mailTo = `mailto:${mail}`

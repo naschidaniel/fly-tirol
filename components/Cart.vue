@@ -66,7 +66,7 @@
         <span
           >Gesamtpreis:
           <span class="font-bold">{{
-            formatPrice(checkout.subtotalPrice)
+            formatPrice(parseFloat(checkout.subtotalPrice))
           }}</span></span
         ><br />
         <span class="text-sm"
@@ -79,7 +79,7 @@
           class="btn-primary"
           @click.prevent="refreshCart()"
         >
-          <IconOutlineRefresh style="hight: 1em; widht: 1em" />&nbsp;<span
+          <IconOutlineRefresh style="height: 1em; widht: 1em" />&nbsp;<span
             >Warenkorb aktualisieren</span
           >
         </button>
@@ -87,9 +87,9 @@
       <div class="text-center mt-14">
         <a :href="checkout.webUrl">
           <button aria-label="Order Products" class="btn-primary btn--large">
-            <IconOutlineShoppingBag style="hight: 1em; widht: 1em" />&nbsp;<span
-              >Bestellung abschließen</span
-            >
+            <IconOutlineShoppingBag
+              style="height: 1em; widht: 1em"
+            />&nbsp;<span>Bestellung abschließen</span>
           </button>
         </a>
       </div>
@@ -97,24 +97,24 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted } from 'vue'
 import Alert from './Alert.vue'
 import IconOutlineRefresh from './icon/IconOutlineRefresh.vue'
 import IconOutlineShoppingBag from './icon/IconOutlineShoppingBag.vue'
-import { useShopifyCart } from '~/composable/useShopifyCart'
-import { useFormat } from '~/composable/useFormat'
+import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useFormat } from '@/composable/useFormat'
 
 const { formatPrice } = useFormat()
 const {
   cartItems,
-  lineItemsChanged,
+  resetLineItemsChanged,
   checkout,
   isCartItems,
   refreshCart,
   updateLineItems,
 } = useShopifyCart()
 onMounted(() => {
-  lineItemsChanged.value = []
+  resetLineItemsChanged()
 })
 </script>

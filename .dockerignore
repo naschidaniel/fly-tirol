@@ -1,8 +1,11 @@
 image-optimizer.exe
 image-optimizer
-flytirol.tar.gz
-whitecloud.tar.gz
+flytirol*.tar.gz
+whitecloud*.tar.gz
 node_modules
 .git
 .github
 .nuxt
+.output
+.output_flytirol
+.output_whitecloud

@@ -10,11 +10,11 @@
   </div>
 </template>
 
-<script setup>
-import SocialBar from '~/components/SocialBar.vue'
-import PageHeader from '~/components/PageHeader.vue'
-import ProductList from '~/components/ProductList.vue'
-import { useMetaTags } from '~/composable/useMetaTags'
+<script setup lang="ts">
+import SocialBar from '@/components/SocialBar.vue'
+import PageHeader from '@/components/PageHeader.vue'
+import ProductList from '@/components/ProductList.vue'
+import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()
 </script>

@@ -45,11 +45,11 @@
   </div>
 </template>
 
-<script setup>
-import { useMetaTags } from '~/composable/useMetaTags'
-import LinkList from '~/components/LinkList.vue'
-import ResponsiveImage from '~/components/ResponsiveImage.vue'
-import SocialBar from '~/components/SocialBar.vue'
+<script setup lang="ts">
+import { useMetaTags } from '@/composable/useMetaTags'
+import LinkList from '@/components/LinkList.vue'
+import ResponsiveImage from '@/components/ResponsiveImage.vue'
+import SocialBar from '@/components/SocialBar.vue'
 
 useMetaTags()
 </script>

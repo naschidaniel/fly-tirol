@@ -22,11 +22,11 @@
   </div>
 </template>
 
-<script setup>
-import SocialBar from '~/components/SocialBar.vue'
-import PageHeader from '~/components/PageHeader.vue'
-import { useMetaTags } from '~/composable/useMetaTags'
-import Partner from '~/content_flytirol/partner.vue'
+<script setup lang="ts">
+import SocialBar from '@/components/SocialBar.vue'
+import PageHeader from '@/components/PageHeader.vue'
+import { useMetaTags } from '@/composable/useMetaTags'
+import Partner from '@/content_flytirol/partner.vue'
 
 useMetaTags()
 </script>

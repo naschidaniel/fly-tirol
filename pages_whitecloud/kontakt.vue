@@ -124,14 +124,14 @@
   </div>
 </template>
 
-<script setup>
-import { useMetaTags } from '~/composable/useMetaTags'
-import ContactMap from '~/components/ContactMap'
-import SocialBar from '~/components/SocialBar'
-import IconOutlineLocationMarker from '~/components/icon/IconOutlineLocationMarker'
-import IconOutlineMail from '~/components/icon/IconOutlineMail'
-import IconOutlinePhone from '~/components/icon/IconOutlinePhone'
-import IconWhatsApp from '~/components/icon/IconWhatsApp'
+<script setup lang="ts">
+import { useMetaTags } from '@/composable/useMetaTags'
+import ContactMap from '@/components/ContactMap.vue'
+import SocialBar from '@/components/SocialBar.vue'
+import IconOutlineLocationMarker from '@/components/icon/IconOutlineLocationMarker.vue'
+import IconOutlineMail from '@/components/icon/IconOutlineMail.vue'
+import IconOutlinePhone from '@/components/icon/IconOutlinePhone.vue'
+import IconWhatsApp from '@/components/icon/IconWhatsApp.vue'
 
 useMetaTags()
 </script>

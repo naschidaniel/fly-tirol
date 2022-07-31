@@ -8,10 +8,10 @@
   </div>
 </template>
 
-<script setup>
-import { useMetaTags } from '~/composable/useMetaTags'
-import SocialBar from '~/components/SocialBar'
-import ProductList from '~/components/ProductList.vue'
+<script setup lang="ts">
+import { useMetaTags } from '@/composable/useMetaTags'
+import SocialBar from '@/components/SocialBar.vue'
+import ProductList from '@/components/ProductList.vue'
 
 useMetaTags()
 </script>
