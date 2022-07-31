@@ -21,14 +21,14 @@ jobs:
       - run: yarn install
       - name: create-public
         run: yarn create-public
-      - name: generateContent
-        run: yarn generateContent && yarn lintContent
-      - name: build
-        run: yarn build
       - name: get image-optimizer
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.3.6/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
-      - name: optimize-images:whitecloud
-        run: yarn optimize-images:whitecloud
+      - name: optimize-images
+        run: yarn optimize-images
+      - name: generateContent
+        run: yarn generateContent
+      - name: build
+        run: yarn build
       - name: Build Artifacts
         uses: actions/upload-artifact@v2
         with:
