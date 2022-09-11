@@ -35,7 +35,7 @@ if (
     existsSync('./data/metadataWhiteCloud.ts')
   )
 ) {
-  throw new Error(
+  console.error(
     'No metadata could be found in ./data! RUN yarn generateContent'
   )
 }

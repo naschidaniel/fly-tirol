@@ -21,6 +21,8 @@ jobs:
         with:
           node-version: '16'
       - run: yarn install
+      - name: create .nuxt tsconfig
+        run: mkdir .nuxt && echo "{}" > .nuxt/tsconfig.json
       - name: create-public
         run: yarn create-public
       - name: get image-optimizer
