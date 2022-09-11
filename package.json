@@ -41,9 +41,9 @@
     "core-js": "^3.25.1",
     "heroicons": "^2.0.10",
     "leaflet": "^1.8.0",
-    "nuxt": "npm:nuxt3@latest",
+    "nuxt": "^3.0.0-rc.9",
     "shopify-buy": "^2.16.1",
-    "simple-icons": "^7.10.0"
+    "simple-icons": "^7.11.0"
   },
   "devDependencies": {
     "@nuxt/kit": "^3.0.0-rc.9",
