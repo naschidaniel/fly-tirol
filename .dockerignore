@@ -6,6 +6,5 @@ node_modules
 .git
 .github
 .nuxt
-.output
-.output_flytirol
-.output_whitecloud
+.public_flytirol
+.public_whitecloud

@@ -95,8 +95,7 @@ image-optimizer
 image-optimizer.exe
 
 # deploy
-deploy_flytirol.sh
-deploy_whitecloud.sh
+deploy.sh
 
 # run docker
 run.sh
