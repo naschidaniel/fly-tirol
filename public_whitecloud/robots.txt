@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /admin
+Disallow: /admin-ui
+Disallow: /api
 Disallow: /dsgvo
 Disallow: /impressum
 Disallow: /buchen
