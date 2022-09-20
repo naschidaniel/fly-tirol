@@ -18,7 +18,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.3.6/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
+RUN curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.5.0/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
 
 RUN yarn optimize-images:$NUXT_PAGE
 

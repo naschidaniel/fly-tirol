@@ -1,5 +1,4 @@
 import { existsSync, readFileSync } from 'fs'
-import { defineNuxtConfig } from 'nuxt'
 import { License } from './types/data'
 
 const packages = JSON.parse(
