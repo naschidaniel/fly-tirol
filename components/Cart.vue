@@ -42,7 +42,7 @@
               </div>
             </td>
             <td class="text-sm md:text-base p-1 md:p-3 text-center border">
-              {{ formatPrice(item.variant.price) }}
+              {{ formatPrice(item.variant.price.amount) }}
             </td>
             <td class="p-1 sm:p-3 align-middle border">
               <div class="flex justify-center">
@@ -66,7 +66,7 @@
         <span
           >Gesamtpreis:
           <span class="font-bold">{{
-            formatPrice(parseFloat(checkout.subtotalPrice))
+            formatPrice(checkout.lineItemsSubtotalPrice.amount)
           }}</span></span
         ><br />
         <span class="text-sm"

@@ -194,7 +194,7 @@ export function useShopifyCart() {
           productTitle: p.title,
           productType: p.productType,
           productPrices: [
-            ...new Set(p.variants.map((v) => parseFloat(v.price))),
+            ...new Set(p.variants.map((v) => v.price.amount)),
           ],
           productOptions: p.options.map((o) => {
             return { name: o.name, values: o.values }
@@ -206,7 +206,7 @@ export function useShopifyCart() {
           isShowProduct: true,
           isDateItem: false,
           optionDateString: '',
-          price: parseFloat(v.price),
+          price: v.price.amount,
           variants: [] as ProductVariant[],
         }
       })

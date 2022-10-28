@@ -9,7 +9,9 @@ export interface ShopifyProducts {
   variants: {
     id: string
     title: string
-    price: string
+    price: {
+      amount: number
+    }
   }[]
 }
 
@@ -26,7 +28,9 @@ export interface ShopifyLineItems {
   quantity: number
   variant: {
     title: string
-    price: number
+    price: {
+      amount: string
+    }
   }
   customAttribute?: CustomAttribute[]
   customAttributes: {
@@ -43,5 +47,7 @@ export interface ShopifyCart {
   lineItems: ShopifyLineItems[]
   webUrl: string
   completedAt: string
-  subtotalPrice: string
+  lineItemsSubtotalPrice: {
+    amount: number
+  }
 }

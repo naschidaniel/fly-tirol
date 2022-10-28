@@ -45,7 +45,6 @@ export function useMetaTags() {
       },
     ]
     useHead({
-      description: page.value.description,
       meta,
       title,
     })

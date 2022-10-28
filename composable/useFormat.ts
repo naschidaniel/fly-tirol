@@ -19,12 +19,12 @@ export function useFormat() {
     return date === undefined ? '–' : dateTimeFormat.format(date)
   }
 
-  function formatPrice(price: undefined | number) {
+  function formatPrice(price: undefined | number | string) {
     const priceFormat = new Intl.NumberFormat('de-DE', {
       style: 'currency',
       currency: 'EUR',
     })
-    return price === undefined ? '–' : priceFormat.format(price)
+    return price === undefined ? '–' : priceFormat.format(price as number)
   }
 
   return { formatDate, formatDateTime, formatPrice }
