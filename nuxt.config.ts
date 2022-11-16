@@ -108,7 +108,6 @@ export default defineNuxtConfig({
 
   components: true,
 
-  buildModules: ['@nuxtjs/eslint-module'],
   runtimeConfig: {
     public: {
       buildTime: +new Date(),
