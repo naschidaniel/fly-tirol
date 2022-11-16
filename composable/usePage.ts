@@ -1,8 +1,8 @@
 import { computed, ComputedRef } from 'vue'
 import { useData } from './useData'
 import { metadataFlyTirol, metadataWhiteCloud } from '@/data'
-import { useRoute, throwError } from '#imports'
-import { MetaData } from '~~/types/data'
+import { useRoute, showError } from '#imports'
+import { MetaData } from '~/types/data'
 
 export function usePage() {
   const route = useRoute()
@@ -12,8 +12,7 @@ export function usePage() {
 
   const routeFullPath = `${route.fullPath.split('?')[0]}/`.replace('//', '/')
   if (metadataPages.find((p) => p.path === routeFullPath) === undefined) {
-    throwError('Page not Found')
-    // context.error({ statusCode: 404, message: 'Post not found' })
+    showError('Page not Found')
   }
   const page: ComputedRef<MetaData> = computed(() => {
     return (
@@ -31,11 +30,11 @@ export function usePage() {
   const pages: ComputedRef<MetaData[]> = computed(() => {
     return metadataPages
       .filter((p) => p.category === route.name && p.slug !== 'index')
-      .sort((a, b) => a.order - b.order)
+      .sort((a, b) => a.order as number - b.order as number)
   })
 
   function getMetadata(path: string): MetaData {
-    return metadataPages.find((p) => p.path === path)
+    return metadataPages.find((p) => p.path === path) as MetaData
   }
   return { isCourse, getMetadata, page, pages }
 }
