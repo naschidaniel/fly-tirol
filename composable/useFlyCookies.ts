@@ -36,7 +36,7 @@ export function useFlyCookies() {
     checkoutId.value = id
   }
 
-  function getCookieCheckoutId(): string {
+  function getCookieCheckoutId(): string | null {
     const checkoutId = useCookie('checkoutId')
     return checkoutId.value
   }
@@ -47,7 +47,7 @@ export function useFlyCookies() {
       maxAge: 0,
       sameSite: true,
     })
-    checkoutId.value = undefined
+    checkoutId.value = null
   }
 
   function getAllCookies(): void {
@@ -70,7 +70,7 @@ export function useFlyCookies() {
         maxAge: 0,
         sameSite: true,
       })
-      cookie.value = undefined
+      cookie.value = null
     }
     isCookieAgreement.value = false
     allCookies.value = [] as Cookie[]

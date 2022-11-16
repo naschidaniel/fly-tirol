@@ -1,3 +1,4 @@
+// @ts-ignore
 import Client from 'shopify-buy'
 import { computed, ref, unref, Ref, onMounted, ComputedRef } from 'vue'
 import { useRuntimeConfig } from '#app'
@@ -41,6 +42,7 @@ export function useShopifyCart() {
 
   const cartItemsLength = computed(() => checkout.value?.lineItems?.length || 0)
 
+  // @ts-ignore
   async function bookProduct(variantId: string, { customAttributes }) {
     const lineItemsToAdd = [
       {
@@ -52,7 +54,7 @@ export function useShopifyCart() {
     const checkoutId = unref(checkout).id
     await shopify?.checkout
       .addLineItems(checkoutId, lineItemsToAdd)
-      .then((checkout) => {
+      .then((checkout: Client.Cart) => {
         setCheckout(checkout)
       })
     router.push({ path: '/buchen' })
@@ -144,7 +146,7 @@ export function useShopifyCart() {
     if (lineItemsToRemove.length !== 0) {
       await shopify?.checkout
         .removeLineItems(checkoutId, lineItemsToRemove)
-        .then((c) => {
+        .then((c: Client.Cart) => {
           setCheckout(c)
         })
     }
@@ -170,7 +172,7 @@ export function useShopifyCart() {
     if (lineItemsToUpdate.length !== 0) {
       await shopify?.checkout
         .updateLineItems(checkoutId, lineItemsToUpdate)
-        .then((c) => {
+        .then((c: Client.Cart) => {
           setCheckout(c)
         })
     }
@@ -193,9 +195,7 @@ export function useShopifyCart() {
         return {
           productTitle: p.title,
           productType: p.productType,
-          productPrices: [
-            ...new Set(p.variants.map((v) => v.price.amount)),
-          ],
+          productPrices: [...new Set(p.variants.map((v) => v.price.amount))],
           productOptions: p.options.map((o) => {
             return { name: o.name, values: o.values }
           }),
@@ -266,7 +266,7 @@ export function useShopifyCart() {
               (c) =>
                 c.variantTitle === secondVariantTitle &&
                 c.productType === s.productType
-            )
+            ) as Product
             s.variants[0].option = 'ohne Leihausrüstung'
             s.variants.push({
               productTitle: s.productTitle,

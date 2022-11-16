@@ -40,7 +40,7 @@ if (
 }
 
 export default defineNuxtConfig({
-  target: 'server',
+  ssr: true,
   dir: {
     pages: isWhiteCloud ? 'pages_whitecloud' : 'pages_flytirol',
     public: isWhiteCloud ? '.public_whitecloud' : '.public_flytirol',
@@ -139,6 +139,8 @@ export default defineNuxtConfig({
   },
 
   router: {
-    linkExactActiveClass: 'active',
+    options: {
+      linkExactActiveClass: 'active',
+    },
   },
 })

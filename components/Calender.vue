@@ -85,7 +85,9 @@
             <div class="flex mt-2">
               <select
                 class="text-sm block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                @change="updateSelectedProduct(entry.id, entry.month, $event)"
+                @change="
+                  updateSelectedProduct(entry.id, entry.month as string, $event)
+                "
               >
                 <option
                   v-for="option in entry.variants"
@@ -102,7 +104,9 @@
                 :aria-label="`Book ${entry.productTitle} - ${entry.optionDateString}`"
                 class="cursor-pointer btn-primary"
                 @click.prevent="
-                  bookProduct(entry.selectedId, { customAttributes: [] })
+                  bookProduct(entry.selectedId as string, {
+                    customAttributes: [],
+                  })
                 "
               >
                 Buchen

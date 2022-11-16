@@ -30,7 +30,13 @@ export function usePage() {
   const pages: ComputedRef<MetaData[]> = computed(() => {
     return metadataPages
       .filter((p) => p.category === route.name && p.slug !== 'index')
-      .sort((a, b) => a.order as number - b.order as number)
+      .sort((a, b) => {
+        if (a.order !== undefined && b.order !== undefined) {
+          return a?.order - b?.order
+        } else {
+          return 9999
+        }
+      })
   })
 
   function getMetadata(path: string): MetaData {

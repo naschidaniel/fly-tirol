@@ -68,12 +68,15 @@ export function useShopifyCalender() {
         } else {
           return (
             categories.includes(c.productType.toLowerCase()) &&
+            // @ts-ignore
             slug.includes(c.slug.toLowerCase()) &&
+            // @ts-ignore
             slug.includes(c.slug.toLowerCase())
           )
         }
       })
       if (filteredMonthEntries.length >= 1) {
+        // @ts-ignore
         filteredEntries[key] = filteredMonthEntries
       }
     })
@@ -93,6 +96,7 @@ export function useShopifyCalender() {
     const months = [...new Set(calenderItemsSorted.map((c) => c.month))]
     const calenderMonths = {} as Calender
     months.forEach(
+      // @ts-ignore
       (key: string) =>
         (calenderMonths[key] = [
           ...calenderItemsSorted.filter((c) => c.month === key),

@@ -48,9 +48,10 @@ const productCalender = computed(() =>
   filterCalender([page.value.category], { slug: page.value.slug })
 )
 
-function setOptionDateString(optionDateString) {
+function setOptionDateString(optionDateString: string) {
   selectedOptionDateString.value = optionDateString
   if (window?.innerWidth <= 768) {
+    // @ts-ignore
     document
       .getElementById('book-product')
       .scrollIntoView({ block: 'start', behavior: 'smooth' })

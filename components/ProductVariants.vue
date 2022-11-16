@@ -117,9 +117,10 @@ function setPickedCourse() {
 }
 
 function setPickedProductOption() {
-  selectedProductOptions.value = course.value?.options.find(
-    (d) => d.optionDateString === selectedOptionDateString.value
-  )?.variants
+  selectedProductOptions.value =
+    course.value?.options.find(
+      (d) => d.optionDateString === selectedOptionDateString.value
+    )?.variants || []
 }
 
 watchEffect(() => {

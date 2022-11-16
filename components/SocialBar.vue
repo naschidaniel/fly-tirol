@@ -146,12 +146,12 @@ const encodeDescription = computed(() => encodeURI(page.value.description))
 
 function openInstagram() {
   const url = `https://www.instagram.com/${instagram}/`
-  window.open(url, '_blank', 'width=600, height=800').focus()
+  window.open(url, '_blank', 'width=600, height=800')?.focus()
 }
 
 function openFacebook() {
   const url = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl.value}&title=${encodeTitle.value}`
-  window.open(url, '_blank', 'width=600, height=800').focus()
+  window.open(url, '_blank', 'width=600, height=800')?.focus()
 }
 
 function openMailContact() {
@@ -170,7 +170,7 @@ function openPhone() {
 
 function openTwitter() {
   const url = `https://twitter.com/intent/tweet?size=large&url=${encodedUrl.value}&text=${encodeDescription.value}&via=${website}`
-  window.open(url, '_blank', 'width=600, height=800').focus()
+  window.open(url, '_blank', 'width=600, height=800')?.focus()
 }
 
 function openYouTube() {

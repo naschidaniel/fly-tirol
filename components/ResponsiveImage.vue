@@ -87,7 +87,9 @@ const { media } = useMedia()
 // see https://vuejs.org/guide/essentials/template-refs.html#accessing-the-refs
 const imageBox = ref(null) // template ref
 
-const image = Object.values(media).find((img) => img.url === props.picture)
+const image = Object.values(media).find(
+  (img) => img.url === props.picture
+) as MediaInformation
 
 const pic: ResponsiveImage = reactive({
   srcsets: '',
@@ -112,8 +114,10 @@ const setImage = function () {
     const sourcesets: ResponsiveSource[] = []
     // TODO viewport is not rendered after reload
     const viewport =
+      // @ts-ignore
       imageBox.value?.clientWidth !== 0
-        ? Math.ceil((imageBox.value?.clientWidth / window?.innerWidth) * 100)
+        ? // @ts-ignore
+          Math.ceil((imageBox.value?.clientWidth / window?.innerWidth) * 100)
         : 100
     for (const width of [384, 512, 640, 768, 1024, 1280, 1536]) {
       sourcesets.push(

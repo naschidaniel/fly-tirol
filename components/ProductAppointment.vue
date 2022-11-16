@@ -53,7 +53,7 @@ const isFormValid: Ref<boolean> = ref(true)
 const isDateValid: Ref<boolean> = ref(false)
 
 const productId: ComputedRef<string> = computed(
-  () => products.value.find((p) => p.slug === page.value.slug)?.id
+  () => products.value.find((p) => p.slug === page.value.slug)?.id as string
 )
 
 const today: ComputedRef<string> = computed(
