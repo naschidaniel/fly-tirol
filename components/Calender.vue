@@ -47,11 +47,11 @@
       </div>
     </div>
     <div
-      v-for="(course, month) in calenderFiltered"
-      :key="month"
+      v-for="(course, monthLong) in calenderFiltered"
+      :key="monthLong"
       class="mb-6 min-w-full text-center"
     >
-      <h3>{{ month }}</h3>
+      <h3>{{ monthLong }}</h3>
       <div class="mt-4 md:flex md:flex-wrap md:justify-center">
         <div
           v-for="entry in course"
@@ -61,65 +61,29 @@
           <span
             class="inline-flex items-center justify-center px-2 py-1 leading-none text-gray-900 rounded-full"
             :class="
-              entry.productType === 'Ausbildung'
+              entry.category === 'Ausbildung'
                 ? 'bg-green-300'
-                : entry.productType === 'Fortbildung'
+                : entry.category === 'Fortbildung'
                 ? 'bg-blue-100'
-                : entry.productType === 'Sicherheitstrainings'
+                : entry.category === 'Sicherheitstrainings'
                 ? 'bg-blue-300'
-                : entry.productType === 'Reisen'
+                : entry.category === 'Reisen'
                 ? 'bg-red-200'
                 : 'bg-gray-100'
             "
-            >{{ entry.productType }}</span
+            >{{ entry.category }}</span
           >
           <h4>
-            <NuxtLink
-              :to="`${entry.productType.toLowerCase()}/${entry.slug}`"
-              >{{ entry.productTitle }}</NuxtLink
-            >
+            <NuxtLink :to="`${entry.category.toLowerCase()}/${entry.slug}`">{{
+              entry.name
+            }}</NuxtLink>
           </h4>
-
-          <div v-if="entry.variants.length >= 2" class="mb-2">
-            <p>{{ entry.startDay }}, {{ entry.dateString }}</p>
-            <div class="flex mt-2">
-              <select
-                class="text-sm block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                @change="
-                  updateSelectedProduct(entry.id, entry.month as string, $event)
-                "
-              >
-                <option
-                  v-for="option in entry.variants"
-                  :key="option.id"
-                  :value="option.id"
-                  :selected="entry.selectedId === option.id"
-                >
-                  {{ option.option }}
-                </option>
-              </select>
-            </div>
+          <div class="mb-2">
+            <p>{{ entry.value }}</p>
             <div class="flex justify-end mt-2">
               <button
-                :aria-label="`Book ${entry.productTitle} - ${entry.optionDateString}`"
+                :aria-label="`Book ${entry.name} - ${entry.value}`"
                 class="cursor-pointer btn-primary"
-                @click.prevent="
-                  bookProduct(entry.selectedId as string, {
-                    customAttributes: [],
-                  })
-                "
-              >
-                Buchen
-              </button>
-            </div>
-          </div>
-          <div v-else class="mb-2">
-            <p>{{ entry.optionDateString }}</p>
-            <div class="flex justify-end mt-2">
-              <button
-                :aria-label="`Book ${entry.productTitle} - ${entry.optionDateString}`"
-                class="cursor-pointer btn-primary"
-                @click.prevent="bookProduct(entry.id, { customAttributes: [] })"
               >
                 Buchen
               </button>
@@ -141,22 +105,21 @@
 </template>
 
 <script setup lang="ts">
-import { useShopifyCalender } from '@/composable/useShopifyCalender'
-import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useCalender } from '@/composable/useCalender'
 import IconOutlineCheck from '@/components/icon/IconOutlineCheck.vue'
 import IconOutlineX from '@/components/icon/IconOutlineX.vue'
 
-const { bookProduct } = useShopifyCart()
 const {
-  calenderFiltered,
-  calenderProductsAvailable,
   calenderCategoriesAvailable,
+  calenderProductsAvailable,
   calenderProductsChecked,
   calenderCategoriesChecked,
-  isCalenderFiltered,
   setCheckedCategories,
   setCheckedProducts,
+  calenderFiltered,
+  initCalender,
   resetFilter,
-  updateSelectedProduct,
-} = useShopifyCalender()
+  isCalenderFiltered,
+} = useCalender()
+initCalender()
 </script>
