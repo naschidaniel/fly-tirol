@@ -47,15 +47,15 @@
       </div>
     </div>
     <div
-      v-for="(course, monthLong) in calenderFiltered"
-      :key="monthLong"
+      v-for="month in calenderFiltered"
+      :key="month.monthLong"
       class="mb-6 min-w-full text-center"
     >
-      <h3>{{ monthLong }}</h3>
+      <h3>{{ month.monthLong }}</h3>
       <div class="mt-4 md:flex md:flex-wrap md:justify-center">
         <div
-          v-for="entry in course"
-          :key="entry.id"
+          v-for="entry in month.courses"
+          :key="entry.value"
           class="m-2 p-4 border-2 rounded-lg md:w-2/3 lg:w-1/3 xl:w-1/4 text-left"
         >
           <span
@@ -74,19 +74,35 @@
             >{{ entry.category }}</span
           >
           <h4>
-            <NuxtLink :to="`${entry.category.toLowerCase()}/${entry.slug}`">{{
-              entry.name
-            }}</NuxtLink>
+            <NuxtLink :to="`${entry.href}`">{{ entry.name }}</NuxtLink>
           </h4>
           <div class="mb-2">
             <p>{{ entry.value }}</p>
+            <div
+              v-for="select in entry.options"
+              :key="select.id"
+              class="flex mt-2"
+            >
+              <select
+                class="text-sm block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+              >
+                <option
+                  v-for="option in select.options"
+                  :key="option.id"
+                  :value="option.id"
+                >
+                  {{ option.value }}
+                </option>
+              </select>
+            </div>
             <div class="flex justify-end mt-2">
-              <button
-                :aria-label="`Book ${entry.name} - ${entry.value}`"
+              <NuxtLink
+                :to="entry.href"
+                :title="`${entry.name} - ${entry.value}`"
                 class="cursor-pointer btn-primary"
               >
                 Buchen
-              </button>
+              </NuxtLink>
             </div>
           </div>
         </div>

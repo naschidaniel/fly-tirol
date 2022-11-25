@@ -1,58 +1,38 @@
 import { ref } from 'vue'
 import type { ComputedRef, Ref } from 'vue'
+import type { CalenderEntry, CalenderMonth } from '@/types/Calender'
 import type { Product } from '@/types/Product'
 import type { ProductVariant } from '@/types/ProductVariant'
 import { ProductVariantOption } from '@/types/ProductVariantOption'
 
-const calender = ref([])
+const calender: Ref<CalenderEntry[]> = ref([])
 const calenderCategoriesChecked: Ref<string[]> = ref([])
 const calenderProductsChecked: Ref<string[]> = ref([])
+const months = Array.from({ length: 36 }, (_, i) =>
+  new Date(
+    Date.UTC(i <= 12 ? 2022 : i <= 24 ? 2023 : 2024, i, 1, 0, 0, 0)
+  ).toLocaleString('de-de', {
+    month: 'long',
+    year: 'numeric',
+  })
+)
 
 export function useCalender() {
-  function groupBy(array: any, key: string) {
-    return array.reduce((result, currentValue) => {
-      ;(result[currentValue[key]] = result[currentValue[key]] || []).push(
-        currentValue
-      )
-      return result
-    }, {})
-  }
-
-  const calenderFiltered: ComputedRef<any> = computed(() => {
-    const categoriesSelected = unref(calenderCategoriesChecked).map((s) =>
-      s.toLowerCase()
-    )
-    const productsSelected = unref(calenderProductsChecked).map((s) =>
-      s.toLowerCase()
-    )
-    return filterCalender(categoriesSelected, {
-      products: productsSelected,
-    })
-  })
-
-  function filterCalender(
-    categories: string[],
-    { products }: { products?: string[] }
-  ): any {
-    const calenderSorted = unref(calender)
-    const filteredEntries = {}
-
-    Object.keys(calenderSorted).forEach((key) => {
-      const filteredMonthEntries = calenderSorted[key].filter((c) => {
-        if (products !== undefined) {
-          return (
-            categories.includes(c.category.toLowerCase()) &&
-            products.includes(c.name.toLowerCase())
-          )
+  const calenderFiltered: ComputedRef<CalenderMonth[]> = computed(() => {
+    return months
+      .map((month: string) => {
+        return {
+          monthLong: month,
+          courses: calender.value.filter(
+            (c) =>
+              calenderCategoriesChecked.value.includes(c.category) &&
+              calenderProductsChecked.value.includes(c.name) &&
+              c.monthLong === month
+          ),
         }
       })
-      if (filteredMonthEntries.length >= 1) {
-        // @ts-ignore
-        filteredEntries[key] = filteredMonthEntries
-      }
-    })
-    return filteredEntries
-  }
+      .filter((m) => m.courses.length >= 1)
+  })
 
   async function initCalender() {
     const request: RequestInit = {
@@ -69,62 +49,55 @@ export function useCalender() {
       const data = response.json()
       return data
     })
-    const _dates = response.data
+    calender.value = response.data
       .flatMap((p: Product) => {
         return p.variants.flatMap((v: ProductVariant) => {
           return v.options.flatMap((o: ProductVariantOption) => {
             return {
               category: p.category,
               name: p.name,
-              href: `${p.slug}`,
-              price: p.price,
-              year: o.start_year,
-              startTime: o.start_iso_date
-                ? new Date(o.start_iso_date as string).getTime()
-                : undefined,
+              href: `/${p.category}/${p.slug}`.toLowerCase(),
+              date_variant: v.date_variant,
+              start_iso_date: o.start_iso_date,
+              end_iso_date: o.end_iso_date,
               month: o.start_month,
               monthLong: o.start_iso_date
                 ? new Date(o.start_iso_date as string).toLocaleString('de-de', {
                     month: 'long',
+                    year: 'numeric',
                   })
                 : undefined,
               value: o.value,
-              options: v.options.filter(
-                (option: ProductVariantOption) =>
-                  option.start_iso_date !== undefined
-              ),
+              options: p.variants.filter((e) => !e.date_variant),
             }
           })
         })
       })
-      .filter((v) => v.monthLong !== undefined)
-      .sort((a, b) => parseInt(a.startTime) - parseInt(b.startTime))
+      .filter((c: CalenderEntry) => c.date_variant)
+      .sort((a: CalenderEntry, b: CalenderEntry) =>
+        a.start_iso_date.localeCompare(b.start_iso_date)
+      )
     calenderCategoriesChecked.value = [
-      ...new Set(_dates.map((p) => p.category)),
+      ...new Set(calender.value.map((p) => p.category)),
     ] as string[]
     calenderProductsChecked.value = [
-      ...new Set(_dates.map((p) => p.name)),
+      ...new Set(calender.value.map((p) => p.name)),
     ].filter((p) => p !== 'Tagesbetreuung') as string[]
-
-    calender.value = groupBy(_dates, 'monthLong')
   }
+
   const calenderCategoriesAvailable: ComputedRef<string[]> = computed(() =>
-    [
-      ...new Set(
-        Object.values(calender.value).flatMap((c) => c.map((r) => r.category))
-      ),
-    ].sort((a, b) => a.localeCompare(b))
+    [...new Set(calender.value.map((c) => c.category))].sort((a, b) =>
+      a.localeCompare(b)
+    )
   )
 
   const calenderProductsAvailable: ComputedRef<string[]> = computed(() => {
     const selectedCategories = unref(calenderCategoriesChecked)
     return [
       ...new Set(
-        Object.values(calender.value).flatMap((c) =>
-          c
-            .filter((e) => selectedCategories.includes(e.category))
-            .map((p) => p.name)
-        )
+        calender.value
+          .filter((e) => selectedCategories.includes(e.category))
+          .map((p) => p.name)
       ),
     ].sort((a, b) => a.localeCompare(b))
   })
@@ -170,5 +143,6 @@ export function useCalender() {
     isCalenderFiltered,
     initCalender,
     resetFilter,
+    months,
   }
 }
