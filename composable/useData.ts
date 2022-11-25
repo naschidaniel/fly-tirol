@@ -4,6 +4,7 @@ import { License } from '~~/types/data'
 export function useData() {
   const config = useRuntimeConfig()
 
+  const backend: string = config.public.backend
   const buildTime: number = config.public.buildTime
   const instagram: string = config.public.instagram
   const isDevelopment: boolean = config.public.isDevelopment
@@ -17,6 +18,7 @@ export function useData() {
   const websiteUrl: string = config.public.websiteUrl
 
   return {
+    backend,
     buildTime,
     instagram,
     isDevelopment,

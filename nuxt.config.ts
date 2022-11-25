@@ -110,6 +110,10 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
+      backend:
+        process.env.NODE_ENV === 'development'
+          ? 'http://127.0.0.1:8000'
+          : 'https://fly-tirol.com',
       buildTime: +new Date(),
       instagram: isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding',
       isDevelopment: process.env.NODE_ENV === 'development',

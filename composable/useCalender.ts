@@ -1,5 +1,6 @@
 import { ref } from 'vue'
 import type { ComputedRef, Ref } from 'vue'
+import { useData } from './useData'
 import type { CalenderEntry, CalenderMonth } from '@/types/Calender'
 import type { Product } from '@/types/Product'
 import type { ProductVariant } from '@/types/ProductVariant'
@@ -18,6 +19,7 @@ const months = Array.from({ length: 36 }, (_, i) =>
 )
 
 export function useCalender() {
+  const { backend } = useData()
   const calenderFiltered: ComputedRef<CalenderMonth[]> = computed(() => {
     return months
       .map((month: string) => {
@@ -42,13 +44,12 @@ export function useCalender() {
         'Content-Type': 'application/json',
       },
     }
-    const response = await fetch(
-      'http://127.0.0.1:8000/api/shop/products',
-      request
-    ).then((response) => {
-      const data = response.json()
-      return data
-    })
+    const response = await fetch(`${backend}/api/shop/products`, request).then(
+      (response) => {
+        const data = response.json()
+        return data
+      }
+    )
     calender.value = response.data
       .flatMap((p: Product) => {
         return p.variants.flatMap((v: ProductVariant) => {
