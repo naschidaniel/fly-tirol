@@ -53,8 +53,7 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { computed, defineProps, ref, watchEffect } from 'vue'
+import { computed } from 'vue'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 import { useShopifyCart } from '@/composable/useShopifyCart'

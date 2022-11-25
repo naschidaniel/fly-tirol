@@ -24,8 +24,7 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { defineProps, PropType } from 'vue'
+import { PropType } from 'vue'
 import { TeamMember } from '@/types/data'
 
 defineProps({

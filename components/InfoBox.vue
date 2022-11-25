@@ -17,8 +17,6 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { defineProps } from 'vue'
 import IconOutlineInformationCircle from './icon/IconOutlineInformationCircle.vue'
 
 defineProps({

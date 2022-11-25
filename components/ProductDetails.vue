@@ -44,8 +44,6 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { defineProps } from 'vue'
 import IconOutlineAcademicCap from './icon/IconOutlineAcademicCap.vue'
 import IconOutlineClock from './icon/IconOutlineClock.vue'
 import IconOutlineCash from './icon/IconOutlineCash.vue'

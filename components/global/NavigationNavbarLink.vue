@@ -6,8 +6,6 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { defineProps } from 'vue'
 import { useNavigation } from '@/composable/useNavigation'
 
 defineProps({

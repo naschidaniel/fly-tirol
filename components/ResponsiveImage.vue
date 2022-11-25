@@ -17,8 +17,7 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { defineProps, ref, watchEffect } from 'vue'
+import { ref, watchEffect } from 'vue'
 import { MediaInformation } from '@/types/data'
 import { useData } from '@/composable/useData'
 import { useMedia } from '~~/composable/useMedia'

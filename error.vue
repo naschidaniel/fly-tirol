@@ -25,8 +25,7 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { defineProps, onMounted } from 'vue'
+import { onMounted } from 'vue'
 import { clearError } from '#app'
 import { useShopifyCart } from '@/composable/useShopifyCart'
 defineProps({

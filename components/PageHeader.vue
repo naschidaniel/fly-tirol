@@ -72,9 +72,6 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line import/named
-import { defineProps } from 'vue'
-
 defineProps({
   address: { type: Object, required: false, default: () => {} },
   headline: { type: String, required: true },
