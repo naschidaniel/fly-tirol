@@ -111,7 +111,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       backend:
-        process.env.NODE_ENV === 'development'
+        process.env.NODE_ENV === 'development' &&
+        process.env.NUXT_BACKEND === 'local'
           ? 'http://127.0.0.1:8000'
           : 'https://fly-tirol.com',
       buildTime: +new Date(),

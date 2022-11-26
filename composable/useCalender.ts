@@ -10,9 +10,7 @@ const calender: Ref<CalenderEntry[]> = ref([])
 const calenderCategoriesChecked: Ref<string[]> = ref([])
 const calenderProductsChecked: Ref<string[]> = ref([])
 const months = Array.from({ length: 36 }, (_, i) =>
-  new Date(
-    Date.UTC(i <= 12 ? 2022 : i <= 24 ? 2023 : 2024, i, 1, 0, 0, 0)
-  ).toLocaleString('de-de', {
+  new Date(Date.UTC(2022, i, 1, 0, 0, 0)).toLocaleString('de-de', {
     month: 'long',
     year: 'numeric',
   })
