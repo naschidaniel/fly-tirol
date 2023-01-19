@@ -69,12 +69,11 @@
       <span v-if="isProductSelected">Buchen</span>
       <span v-else>Triff eine Auswahl im Dropdownmenü</span>
     </button>
-    {{ selectedVariants }}
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, Ref, watchEffect, onMounted, ComputedRef } from 'vue'
+import { computed, ref, Ref, watchEffect, ComputedRef } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
 import { Product } from '@/types/Product'
@@ -83,9 +82,11 @@ import { ProductVariantOption } from '@/types/ProductVariantOption'
 import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
 import { useBackend } from '@/composable/useBackend'
+import { useCalender } from '~~/composable/useCalender'
 
 const { page, isCourse, getMetadata } = usePage()
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()
+const { selectedDateString } = useCalender()
 const { getProduct, updateCart } = useBackend()
 
 const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
@@ -106,21 +107,27 @@ watchEffect(() => {
   if (product.value) {
     initSelectedVariants()
   }
+  if (selectedDateString.value) {
+    for (const variant of product.value.variants) {
+      if (!variant.date_variant) continue
+      const value = variant.options.find(
+        (o) => o.value === selectedDateString.value
+      )
+      if (value !== undefined) updateSelectedVariants(variant, value.value)
+    }
+  }
 })
 
 function initSelectedVariants(): void {
   if (product.value?.variants === undefined) return
   for (const variant of product.value.variants) {
-    if (variant.date_variant) continue
-    const value = formatProductVariantOptionTitle(variant.options[0])
-    updateSelectedVariants(variant, value)
+    if (selectedDateString.value !== undefined || variant.date_variant) continue
+    updateSelectedVariants(variant, selectedDateString.value ?? variant.options[0].value)
   }
 }
 
 function updateSelectedVariants(variant: ProductVariant, value: string): void {
-  const newValue = variant.options.find(
-    (o) => formatProductVariantOptionTitle(o) === value
-  )
+  const newValue = variant.options.find((o) => o.value === value)
   if (newValue === undefined) return
   const selectedVariantsIndex = selectedVariants.value.findIndex(
     (o) => o.product_variant === newValue?.product_variant

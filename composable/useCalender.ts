@@ -15,6 +15,7 @@ const months = Array.from({ length: 36 }, (_, i) =>
     year: 'numeric',
   })
 )
+const selectedDateString: Ref<string | undefined> = ref(undefined)
 
 export function useCalender() {
   const { backend } = useData()
@@ -34,7 +35,10 @@ export function useCalender() {
       .filter((m) => m.courses.length >= 1)
   })
 
-  async function initCalender() {
+  async function initCalender(
+    categories: string[] | undefined = undefined,
+    products: string[] | undefined = undefined
+  ) {
     const request: RequestInit = {
       method: 'GET',
       headers: {
@@ -76,12 +80,18 @@ export function useCalender() {
       .sort((a: CalenderEntry, b: CalenderEntry) =>
         a.start_iso_date.localeCompare(b.start_iso_date)
       )
-    calenderCategoriesChecked.value = [
-      ...new Set(calender.value.map((p) => p.category)),
-    ] as string[]
-    calenderProductsChecked.value = [
-      ...new Set(calender.value.map((p) => p.name)),
-    ].filter((p) => p !== 'Tagesbetreuung') as string[]
+    calenderCategoriesChecked.value =
+      categories === undefined
+        ? (calenderCategoriesChecked.value = [
+            ...new Set(calender.value.map((p) => p.category)),
+          ] as string[])
+        : categories
+    calenderProductsChecked.value =
+      products === undefined
+        ? ([...new Set(calender.value.map((p) => p.name))].filter(
+            (p) => p !== 'Tagesbetreuung'
+          ) as string[])
+        : products
   }
 
   const calenderCategoriesAvailable: ComputedRef<string[]> = computed(() =>
@@ -142,6 +152,7 @@ export function useCalender() {
     isCalenderFiltered,
     initCalender,
     resetFilter,
+    selectedDateString,
     months,
   }
 }
