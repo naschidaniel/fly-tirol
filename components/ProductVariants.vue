@@ -122,7 +122,10 @@ function initSelectedVariants(): void {
   if (product.value?.variants === undefined) return
   for (const variant of product.value.variants) {
     if (selectedDateString.value !== undefined || variant.date_variant) continue
-    updateSelectedVariants(variant, selectedDateString.value ?? variant.options[0].value)
+    updateSelectedVariants(
+      variant,
+      selectedDateString.value ?? variant.options[0].value
+    )
   }
 }
 

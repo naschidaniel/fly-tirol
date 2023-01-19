@@ -1,5 +1,5 @@
 ---
-title: B-Schein
+title: B-Schein Theoriekurs
 description: Der B-Schein Theorieunterricht bereitet Dich auf die praktische Ausbildung zum B-Schein Piloten vor. Es werden die Fächer Verhalten in besonderen Fällen, Luftrecht, Meteorologie beim Streckenfliegen und Navigation besprochen.
 location: Westendorf
 image: /media/available-soon.jpg
@@ -8,9 +8,9 @@ praxis: –
 order: 1
 ---
 
-# B-Schein
+# B-Schein Theoriekurs
 
-Der B-Schein Theorieunterricht bereitet Dich auf die praktische Ausbildung zum B-Schein Piloten vor.
+Der B-Schein Theoriekurs bereitet Dich auf die praktische Ausbildung zum B-Schein Piloten vor.
 
 ## Voraussetzungen
 
