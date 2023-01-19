@@ -91,8 +91,6 @@ const { getProduct, updateCart } = useBackend()
 
 const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
 const metadata = getMetadata(page.value.path)
-const quantity = ref(1)
-const comment = ref('')
 const selectedVariants: Ref<ProductVariantOption[]> = ref([])
 
 const isProductSelected = computed(
@@ -146,8 +144,8 @@ function addProduct() {
     JSON.stringify({
       product: product.value,
       selected_variants: selectedVariants.value,
-      quantity: quantity.value,
-      comment: comment.value,
+      quantity: 1,
+      comment: '',
     })
   )
 }

@@ -1,13 +1,11 @@
 import { ref } from 'vue'
-import type { ComputedRef, Ref } from 'vue'
+import type { Ref } from 'vue'
 import { useData } from './useData'
-import { useFormat } from './useFormat'
 import type { Product } from '@/types/Product'
 
 export const products: Ref<Product[]> = ref([] as Product[])
 export function useBackend() {
   const { backend } = useData()
-  const { formatPrice } = useFormat()
 
   async function initShopBackend() {
     const request: RequestInit = {
@@ -27,6 +25,7 @@ export function useBackend() {
   }
 
   function updateCart(body: String) {
+    console.log(body)
     return undefined
   }
 

@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 gap-6">
       <label class="block">
         <span :class="isFormValid ? 'text-gray-700' : 'text-red-600'"
-          >Wähle das gewünschtes Datum</span
+          >Wähle deinen Wunschtermin</span
         >
         <input
           v-model="selectedDate"
@@ -17,6 +17,19 @@
           "
           @change="checkDate()"
         />
+      </label>
+      <label class="block"
+        >Anzahl
+        <select
+          v-model="quantity"
+          name="quantity"
+          class="mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+        >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
       </label>
       <button
         aria-label="Book the Date"
@@ -42,18 +55,22 @@
 import { computed, ComputedRef, ref, Ref } from 'vue'
 import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
-import { products, useShopifyCart } from '@/composable/useShopifyCart'
+import { useBackend } from '@/composable/useBackend'
+import type { Product } from '@/types/Product'
+
+const { updateCart, getProduct } = useBackend()
 
 const { formatDate } = useFormat()
-const { bookProduct } = useShopifyCart()
-const { page } = usePage()
+const { page, getMetadata } = usePage()
 
+const metadata = getMetadata(page.value.path)
 const selectedDate: Ref<string> = ref('')
+const quantity: Ref<Number> = ref(1)
 const isFormValid: Ref<boolean> = ref(true)
 const isDateValid: Ref<boolean> = ref(false)
 
-const productId: ComputedRef<string> = computed(
-  () => products.value.find((p) => p.slug === page.value.slug)?.id as string
+const product: ComputedRef<Product> = computed(() =>
+  getProduct(metadata?.category, metadata?.slug)
 )
 
 const today: ComputedRef<string> = computed(
@@ -67,18 +84,14 @@ const selectedDateTimestamp: ComputedRef<Date | ''> = computed(() =>
 function bookFlight(): void {
   checkDate()
   if (isDateValid.value) {
-    bookProduct(productId.value, {
-      customAttributes: [
-        {
-          key: 'Wunschtermin nach Absprache',
-          value: formatDate(
-            selectedDateTimestamp.value === ''
-              ? undefined
-              : selectedDateTimestamp.value
-          ),
-        },
-      ],
-    })
+    updateCart(
+      JSON.stringify({
+        product: product.value,
+        selected_variants: undefined,
+        quantity: quantity.value,
+        comment: `Wunschdatum: ${selectedDateTimestamp.value}`,
+      })
+    )
   }
 }
 function checkDate() {
