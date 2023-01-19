@@ -5,8 +5,10 @@
 import type { ProductVariantOption } from './ProductVariantOption';
 
 export type ProductVariant = {
-    readonly id?: number;
+    readonly id?: string;
     name: string;
+    dates: number;
+    readonly product?: string;
     date_variant?: boolean;
     options: Array<ProductVariantOption>;
 };
