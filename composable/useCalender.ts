@@ -10,7 +10,7 @@ const calender: Ref<CalenderEntry[]> = ref([])
 const calenderCategoriesChecked: Ref<string[]> = ref([])
 const calenderProductsChecked: Ref<string[]> = ref([])
 const months = Array.from({ length: 36 }, (_, i) =>
-  new Date(Date.UTC(2022, i, 1, 0, 0, 0)).toLocaleString('de-de', {
+  new Date(Date.UTC(2023, i, 1, 0, 0, 0)).toLocaleString('de-de', {
     month: 'long',
     year: 'numeric',
   })
@@ -55,7 +55,7 @@ export function useCalender() {
             return {
               category: p.category,
               name: p.name,
-              href: `/${p.category}/${p.slug}`.toLowerCase(),
+              href: `/${p.category}/${p.slug}`,
               date_variant: v.date_variant,
               start_iso_date: o.start_iso_date,
               end_iso_date: o.end_iso_date,

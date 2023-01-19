@@ -27,16 +27,15 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { clearError } from '#app'
-import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useBackend } from '@/composable/useBackend'
 defineProps({
   error: Object,
 })
 
 const handleError = () => clearError({ redirect: '/' })
-const { initShop, resetCart } = useShopifyCart()
+const { initShopBackend } = useBackend()
 
 onMounted(() => {
-  resetCart()
-  initShop()
+  initShopBackend()
 })
 </script>

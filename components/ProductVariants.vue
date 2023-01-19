@@ -12,8 +12,8 @@
       :praxis="metadata?.praxis"
       :flight-duration="metadata?.flightDuration"
       :theorie="metadata?.theorie"
-      :price="course?.price"
-      :dates="course?.dates"
+      :price="formatPrice(product?.price)"
+      :dates="product?.total_dates"
       :is-show-date="false"
     />
     <div class="mt-4 flex flex-wrap">
@@ -35,50 +35,41 @@
         ></label
       >
       <select
+        v-for="variant in product?.variants"
         id="select-course"
-        v-model="selectedProductOptions"
+        :key="variant.id"
         class="mt-2 w-full text-base block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       >
-        <option disabled :value="[]">Bitte auswählen</option>
+        <option disabled :value="[]" selected>Bitte auswählen</option>
         <option
-          v-for="option in course?.options"
-          :key="option.id"
-          :value="option.variants"
+          v-for="option in variant.options"
+          :key="option.value"
+          :value="option"
+          :selected="
+            selectedVariants.filter((v) => v.value === option.value).length > 0
+          "
+          @click="
+            updateSelectedVariants(
+              variant,
+              formatProductVariantOptionTitle(option)
+            )
+          "
         >
-          {{ option.optionDateString }}
+          {{ formatProductVariantOptionTitle(option) }}
         </option>
       </select>
-    </div>
-    <div v-if="selectedProductOptions.length >= 2" class="block mt-4">
-      <span class="text-gray-700">Wähle eine gewünschte Option</span>
-      <div v-for="variant in selectedProductOptions" :key="variant.id">
-        <input
-          :id="variant.id"
-          v-model="pickedProduct"
-          type="radio"
-          :value="variant"
-        />
-        <label :for="variant.id"
-          >{{ formatPrice(variant.price) }} – {{ variant.option }}</label
-        >
-      </div>
     </div>
     <button
       :aria-label="`Book ${pickedProduct}`"
       class="mt-6 btn-primary w-full"
       :class="!isProductSelected ? 'btn--disabled' : ''"
       :disabled="!isProductSelected"
-      @click.prevent="bookProduct(pickedProduct.id, { customAttributes: [] })"
+      @click.prevent=""
     >
-      <span v-if="isProductSelected && isCourse"
-        >{{ pickedProduct.productTitle }} am
-        {{ pickedProduct.title }} buchen</span
-      >
-      <span v-else-if="isProductSelected && !isCourse"
-        >{{ pickedProduct.productTitle }} {{ pickedProduct.title }} buchen</span
-      >
+      <span v-if="isProductSelected">Buchen</span>
       <span v-else>Triff eine Auswahl im Dropdownmenü</span>
     </button>
+    {{ selectedVariants }}
   </div>
 </template>
 
@@ -86,49 +77,68 @@
 import { computed, ref, Ref, watchEffect, onMounted, ComputedRef } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import { Course, ProductVariant } from '@/types/data'
+import { Product } from '@/types/Product'
+import { ProductVariant } from '@/types/ProductVariant'
+import { ProductVariantOption } from '@/types/ProductVariantOption'
 import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
-import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useBackend } from '@/composable/useBackend'
 
 const { page, isCourse, getMetadata } = usePage()
-const { formatPrice } = useFormat()
-const { bookProduct, getCourse, selectedOptionDateString } = useShopifyCart()
+const { formatPrice, formatProductVariantOptionTitle } = useFormat()
+const { getProduct, updateCart } = useBackend()
 
-const selectedProductOptions: Ref<ProductVariant[]> = ref(
-  [] as ProductVariant[]
-)
 const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
-
 const metadata = getMetadata(page.value.path)
+const quantity = ref(1)
+const comment = ref('')
+const selectedVariants: Ref<ProductVariantOption[]> = ref([])
 
 const isProductSelected = computed(
-  () => selectedProductOptions.value.length !== 0
+  () => selectedVariants.value.length >= product.value?.variants?.length
 )
 
-const course: ComputedRef<Course> = computed(() =>
-  getCourse(metadata?.category, metadata?.slug)
+const product: ComputedRef<Product> = computed(() =>
+  getProduct(metadata?.category, metadata?.slug)
 )
-
-function setPickedCourse() {
-  pickedProduct.value = selectedProductOptions.value[0]
-  selectedOptionDateString.value =
-    selectedProductOptions.value[0]?.optionDateString
-}
-
-function setPickedProductOption() {
-  selectedProductOptions.value =
-    course.value?.options.find(
-      (d) => d.optionDateString === selectedOptionDateString.value
-    )?.variants || []
-}
 
 watchEffect(() => {
-  if (selectedOptionDateString.value !== '') {
-    setPickedProductOption()
-  }
-  if (selectedProductOptions.value?.length !== 0) {
-    setPickedCourse()
+  if (product.value) {
+    initSelectedVariants()
   }
 })
+
+function initSelectedVariants(): void {
+  if (product.value?.variants === undefined) return
+  for (const variant of product.value.variants) {
+    if (variant.date_variant) continue
+    const value = formatProductVariantOptionTitle(variant.options[0])
+    updateSelectedVariants(variant, value)
+  }
+}
+
+function updateSelectedVariants(variant: ProductVariant, value: string): void {
+  const newValue = variant.options.find(
+    (o) => formatProductVariantOptionTitle(o) === value
+  )
+  if (newValue === undefined) return
+  const selectedVariantsIndex = selectedVariants.value.findIndex(
+    (o) => o.product_variant === newValue?.product_variant
+  )
+  if (selectedVariantsIndex !== -1) {
+    selectedVariants.value.splice(selectedVariantsIndex, 1)
+  }
+  selectedVariants.value.push(newValue)
+}
+
+function addProduct() {
+  updateCart(
+    JSON.stringify({
+      product: product.value,
+      selected_variants: selectedVariants.value,
+      quantity: quantity.value,
+      comment: comment.value,
+    })
+  )
+}
 </script>
