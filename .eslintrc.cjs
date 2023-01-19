@@ -28,7 +28,7 @@ module.exports = {
           'hoehenflugkurs',
           'impressum',
           'index',
-          'kombikurs',
+          'kompaktkurs',
           'kontakt',
           'panoramaflug',
           'partner',
