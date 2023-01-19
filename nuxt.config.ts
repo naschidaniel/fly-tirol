@@ -16,11 +16,14 @@ const licenses: License[] = Object.keys(packages.dependencies)
       })
     )
   )
-  .map(({ name, version, license }) => ({
-    name,
-    version,
-    license,
-  }))
+  .map(
+    ({ name, version, license }) =>
+      ({
+        name,
+        version,
+        license,
+      } as License)
+  )
 
 if (!(isWhiteCloud || isFlyTirol)) {
   throw new Error(

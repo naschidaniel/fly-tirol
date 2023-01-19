@@ -1,5 +1,5 @@
 import { useRuntimeConfig } from '#app'
-import { License } from '~~/types/data'
+import { License } from '@/types/data'
 
 export function useData() {
   const config = useRuntimeConfig()
@@ -10,7 +10,7 @@ export function useData() {
   const isDevelopment: boolean = config.public.isDevelopment
   const isFlyTirol: boolean = config.public.isFlyTirol
   const isWhiteCloud: boolean = config.public.isWhiteCloud
-  const licenses: License[] = config.public.licenses
+  const licenses: License[] = config.public.licenses as License[]
   const mail: string = config.public.mail
   const phone: string = config.public.phone
   const phoneString: string = config.public.phoneString
