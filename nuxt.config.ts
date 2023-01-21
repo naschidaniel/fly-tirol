@@ -127,8 +127,6 @@ export default defineNuxtConfig({
       mail: isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol',
       phone: isFlyTirol ? '+436766422088' : '+4368181589568',
       phoneString: isFlyTirol ? '+43 676 6422088' : '+43 681 81589568',
-      shopifyAccessToken: process.env.SHOPIFY_ACCESS_TOKEN,
-      shopifyDomain: process.env.SHOPIFY_DOMAIN,
       website: isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol',
       websiteUrl: isFlyTirol
         ? 'https://fly-tirol.com'
