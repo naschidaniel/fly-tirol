@@ -27,7 +27,7 @@ $ yarn optimize-images
 To display products from production set the Environment variable.
 
 ```
-echo 'NUXT_BACKEND="production"' > .env
+echo 'NUXT_BACKEND="flytirol"' > .env
 ```
 
 ## Development Setup
