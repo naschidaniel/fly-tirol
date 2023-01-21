@@ -34,39 +34,33 @@ export function useBackend() {
     products.value = response.data
   }
 
-  async function initCart(
-    _cartId: string | null = null
-  ): Promise<Cart | undefined> {
-    if (process.client) {
-      const _cartId = localStorage.getItem('cartId')
-      const url =
-        _cartId !== null
-          ? `${backend}/api/shop/cart/${_cartId}`
-          : `${backend}/api/shop/cart`
-      const request: RequestInit = {
-        method: 'GET',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json',
-        },
-      }
-      try {
-        const response = await fetch(url, request).then((response) => {
-          const data = response.json()
-          return data
-        })
-        updateCartId(response.data.id as string)
-        cart.value = response.data
-        return response.data as Cart
-      } catch {
-        {
-          console.log(
-            `Failed to init the Cart. The ${cartId.value} has been removed from localStorage`
-          )
-          localStorage.removeItem('cartId')
-          cartId.value = null
-        }
-      }
+  async function initCart(): Promise<Cart | undefined> {
+    if (!process.client) return
+    const _cartId = localStorage.getItem('cartId')
+    const url =
+      _cartId !== null
+        ? `${backend}/api/shop/cart/${_cartId}`
+        : `${backend}/api/shop/cart`
+    const request: RequestInit = {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    }
+    try {
+      const response = await fetch(url, request).then((response) =>
+        response.json()
+      )
+      updateCartId(response.data.id as string)
+      cart.value = response.data
+      return response.data as Cart
+    } catch {
+      console.error(
+        `Failed to init the Cart. The ${cartId.value} has been removed from localStorage`
+      )
+      localStorage.removeItem('cartId')
+      cartId.value = null
     }
   }
 
@@ -84,7 +78,6 @@ export function useBackend() {
       },
       body,
     }
-    console.log(cartId.value)
     const response = await fetch(
       `${backend}/api/shop/cart/${cartId.value}`,
       request

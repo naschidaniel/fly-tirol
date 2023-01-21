@@ -96,9 +96,9 @@ const product: ComputedRef<Product> = computed(() =>
   getProduct(metadata?.category, metadata?.slug)
 )
 
-watchEffect(async () => {
+watchEffect(() => {
   if (product.value) {
-    await resetSelectedDateString()
+    resetSelectedDateString()
     initSelectedVariants()
   }
   if (selectedDateString.value) {
@@ -110,7 +110,7 @@ watchEffect(async () => {
   }
 })
 
-async function resetSelectedDateString(): Promise<void> {
+function resetSelectedDateString(): void {
   if (
     !product.value?.variants
       ?.flatMap((o) => o.options)
