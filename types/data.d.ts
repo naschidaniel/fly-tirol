@@ -5,46 +5,6 @@ export interface Cookie {
   value: string
 }
 
-export interface ProductOptions {
-  name: string
-  values: string[]
-}
-
-export interface ProductVariant {
-  id: string
-  option?: string
-  optionDateString: string
-  price: number
-  productTitle: string
-  title: string
-}
-
-export interface Product {
-  dateString: string
-  endDate?: Date
-  id: string
-  isDateItem: boolean
-  isShowProduct: boolean
-  month?: string
-  optionDateString: string
-  price: number
-  productOptions: ProductOptions[]
-  productPrices: number[]
-  productTitle: string
-  productType: string
-  selectedId?: string
-  slug: string
-  startDate?: Date
-  startDay?: string
-  variants: ProductVariant[]
-  variantTitle: v.title
-}
-
-export interface Course {
-  dates: number
-  options: Product[]
-  price: string
-}
 
 export interface License {
   license: string
@@ -85,10 +45,6 @@ export interface MetaData {
   slug: string
   theorie?: string
   title: string
-}
-
-export interface Calender {
-  [key: string]: Product[]
 }
 
 export interface TeamMember {

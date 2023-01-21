@@ -87,9 +87,13 @@ function bookFlight(): void {
     updateCart(
       JSON.stringify({
         product: product.value,
-        selected_variants: undefined,
+        selected_variants: [],
         quantity: quantity.value,
-        comment: `Wunschdatum: ${selectedDateTimestamp.value}`,
+        comment: `Wunschdatum: ${formatDate(
+          selectedDateTimestamp.value === ''
+            ? undefined
+            : selectedDateTimestamp.value
+        )}`,
       })
     )
   }

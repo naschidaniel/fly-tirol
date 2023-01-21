@@ -38,22 +38,15 @@
         v-for="variant in product?.variants"
         id="select-course"
         :key="variant.id"
+        :value="selectedOptions[variant.name]"
         class="mt-2 w-full text-base block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       >
-        <option disabled :value="[]" selected>Bitte auswählen</option>
+        <option disabled value="">Bitte auswählen</option>
         <option
           v-for="option in variant.options"
           :key="option.value"
-          :value="option"
-          :selected="
-            selectedVariants.filter((v) => v.value === option.value).length > 0
-          "
-          @click="
-            updateSelectedVariants(
-              variant,
-              formatProductVariantOptionTitle(option)
-            )
-          "
+          :value="option.value"
+          @click="updateSelectedVariants(variant, option.value)"
         >
           {{ formatProductVariantOptionTitle(option) }}
         </option>
@@ -64,7 +57,7 @@
       class="mt-6 btn-primary w-full"
       :class="!isProductSelected ? 'btn--disabled' : ''"
       :disabled="!isProductSelected"
-      @click.prevent=""
+      @click.prevent="addProduct()"
     >
       <span v-if="isProductSelected">Buchen</span>
       <span v-else>Triff eine Auswahl im Dropdownmenü</span>
@@ -97,37 +90,56 @@ const isProductSelected = computed(
   () => selectedVariants.value.length >= product.value?.variants?.length
 )
 
+const selectedOptions: Ref<{ [key: string]: string | undefined }> = ref({})
+
 const product: ComputedRef<Product> = computed(() =>
   getProduct(metadata?.category, metadata?.slug)
 )
 
-watchEffect(() => {
+watchEffect(async () => {
   if (product.value) {
+    await resetSelectedDateString()
     initSelectedVariants()
   }
   if (selectedDateString.value) {
     for (const variant of product.value.variants) {
       if (!variant.date_variant) continue
-      const value = variant.options.find(
-        (o) => o.value === selectedDateString.value
-      )
-      if (value !== undefined) updateSelectedVariants(variant, value.value)
+      selectedOptions.value[variant.name] = selectedDateString.value
+      updateSelectedVariants(variant, selectedDateString.value)
     }
   }
 })
 
+async function resetSelectedDateString(): Promise<void> {
+  if (
+    !product.value?.variants
+      ?.flatMap((o) => o.options)
+      .map((a) => a.value)
+      .includes(selectedDateString.value as string)
+  ) {
+    selectedDateString.value = undefined
+  }
+}
+
 function initSelectedVariants(): void {
-  if (product.value?.variants === undefined) return
+  if (
+    product.value?.variants === undefined ||
+    product.value?.variants?.length ===
+      Object.keys(selectedOptions.value).length
+  )
+    return
   for (const variant of product.value.variants) {
+    selectedOptions.value[variant.name] = '' // set Default value
     if (selectedDateString.value !== undefined || variant.date_variant) continue
     updateSelectedVariants(
       variant,
-      selectedDateString.value ?? variant.options[0].value
+      selectedDateString.value || variant.options[0].value
     )
   }
 }
 
 function updateSelectedVariants(variant: ProductVariant, value: string): void {
+  selectedOptions.value[variant.name] = value
   const newValue = variant.options.find((o) => o.value === value)
   if (newValue === undefined) return
   const selectedVariantsIndex = selectedVariants.value.findIndex(
@@ -139,8 +151,8 @@ function updateSelectedVariants(variant: ProductVariant, value: string): void {
   selectedVariants.value.push(newValue)
 }
 
-function addProduct() {
-  updateCart(
+async function addProduct() {
+  await updateCart(
     JSON.stringify({
       product: product.value,
       selected_variants: selectedVariants.value,

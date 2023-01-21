@@ -69,11 +69,11 @@ import IconOutlineX from '../icon/IconOutlineX.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
 import { useData } from '@/composable/useData'
 import { useNavigation } from '@/composable/useNavigation'
-import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useBackend } from '@/composable/useBackend'
 
 const { isFlyTirol } = useData()
 const { isOpen } = useNavigation()
-const { cartItemsLength } = useShopifyCart()
+const { cartItemsLength } = useBackend()
 
 function toggleIfDropdownIsOpen() {
   if (isOpen.value) {

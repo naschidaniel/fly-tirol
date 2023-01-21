@@ -16,8 +16,9 @@ import SiteFooter from '@/components/global/SiteFooter.vue'
 import SiteHeader from '@/components/global/SiteHeader.vue'
 import { useBackend } from '@/composable/useBackend'
 
-const { initShopBackend } = useBackend()
+const { initShopBackend, initCart } = useBackend()
 onMounted(() => {
   initShopBackend()
+  initCart()
 })
 </script>
