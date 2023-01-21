@@ -1,3 +1,5 @@
+import { ProductVariantOption } from '@/types/ProductVariantOption'
+
 export function useFormat() {
   function formatDate(date: undefined | number | Date): string {
     const dateFormat = new Intl.DateTimeFormat('de-AT', {
@@ -27,5 +29,18 @@ export function useFormat() {
     return price === undefined ? '–' : priceFormat.format(price as number)
   }
 
-  return { formatDate, formatDateTime, formatPrice }
+  function formatProductVariantOptionTitle(
+    option: ProductVariantOption | undefined
+  ): string {
+    return option === undefined
+      ? ''
+      : `${option.value} + ${formatPrice(option.price)}`
+  }
+
+  return {
+    formatDate,
+    formatDateTime,
+    formatPrice,
+    formatProductVariantOptionTitle,
+  }
 }

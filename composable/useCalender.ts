@@ -10,11 +10,12 @@ const calender: Ref<CalenderEntry[]> = ref([])
 const calenderCategoriesChecked: Ref<string[]> = ref([])
 const calenderProductsChecked: Ref<string[]> = ref([])
 const months = Array.from({ length: 36 }, (_, i) =>
-  new Date(Date.UTC(2022, i, 1, 0, 0, 0)).toLocaleString('de-de', {
+  new Date(Date.UTC(2023, i, 1, 0, 0, 0)).toLocaleString('de-de', {
     month: 'long',
     year: 'numeric',
   })
 )
+const selectedDateString: Ref<string | undefined> = ref(undefined)
 
 export function useCalender() {
   const { backend } = useData()
@@ -34,7 +35,10 @@ export function useCalender() {
       .filter((m) => m.courses.length >= 1)
   })
 
-  async function initCalender() {
+  async function initCalender(
+    categories: string[] | undefined = undefined,
+    products: string[] | undefined = undefined
+  ) {
     const request: RequestInit = {
       method: 'GET',
       headers: {
@@ -55,7 +59,7 @@ export function useCalender() {
             return {
               category: p.category,
               name: p.name,
-              href: `/${p.category}/${p.slug}`.toLowerCase(),
+              href: `/${p.category}/${p.slug}`,
               date_variant: v.date_variant,
               start_iso_date: o.start_iso_date,
               end_iso_date: o.end_iso_date,
@@ -76,12 +80,18 @@ export function useCalender() {
       .sort((a: CalenderEntry, b: CalenderEntry) =>
         a.start_iso_date.localeCompare(b.start_iso_date)
       )
-    calenderCategoriesChecked.value = [
-      ...new Set(calender.value.map((p) => p.category)),
-    ] as string[]
-    calenderProductsChecked.value = [
-      ...new Set(calender.value.map((p) => p.name)),
-    ].filter((p) => p !== 'Tagesbetreuung') as string[]
+    calenderCategoriesChecked.value =
+      categories === undefined
+        ? (calenderCategoriesChecked.value = [
+            ...new Set(calender.value.map((p) => p.category)),
+          ] as string[])
+        : categories
+    calenderProductsChecked.value =
+      products === undefined
+        ? ([...new Set(calender.value.map((p) => p.name))].filter(
+            (p) => p !== 'Tagesbetreuung'
+          ) as string[])
+        : products
   }
 
   const calenderCategoriesAvailable: ComputedRef<string[]> = computed(() =>
@@ -142,6 +152,7 @@ export function useCalender() {
     isCalenderFiltered,
     initCalender,
     resetFilter,
+    selectedDateString,
     months,
   }
 }

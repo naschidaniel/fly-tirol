@@ -35,10 +35,10 @@
     </div>
     <div v-if="isShowDate" class="flex items-center text-sm -ml-1 mb-4">
       <IconOutlineCalendar class="w-4 h-4 mr-1" />
-      <span v-if="dates" class="block leading-none pt-1"
-        >{{ dates }} Termine</span
-      >
-      <IconSpinner v-else class="animate-spin h-4 w-4 text-brand" />
+      <span class="block leading-none pt-1">
+        <span v-if="dates && dates >= 1">{{ dates }} Termine</span>
+        <span v-else>–</span>
+      </span>
     </div>
   </div>
 </template>

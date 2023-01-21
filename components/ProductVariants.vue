@@ -12,8 +12,8 @@
       :praxis="metadata?.praxis"
       :flight-duration="metadata?.flightDuration"
       :theorie="metadata?.theorie"
-      :price="course?.price"
-      :dates="course?.dates"
+      :price="formatPrice(product?.price)"
+      :dates="product?.total_dates"
       :is-show-date="false"
     />
     <div class="mt-4 flex flex-wrap">
@@ -35,100 +35,130 @@
         ></label
       >
       <select
+        v-for="variant in product?.variants"
         id="select-course"
-        v-model="selectedProductOptions"
+        :key="variant.id"
+        :value="selectedOptions[variant.name]"
         class="mt-2 w-full text-base block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       >
-        <option disabled :value="[]">Bitte auswählen</option>
+        <option disabled value="">Bitte auswählen</option>
         <option
-          v-for="option in course?.options"
-          :key="option.id"
-          :value="option.variants"
+          v-for="option in variant.options"
+          :key="option.value"
+          :value="option.value"
+          @click="updateSelectedVariants(variant, option.value)"
         >
-          {{ option.optionDateString }}
+          {{ formatProductVariantOptionTitle(option) }}
         </option>
       </select>
-    </div>
-    <div v-if="selectedProductOptions.length >= 2" class="block mt-4">
-      <span class="text-gray-700">Wähle eine gewünschte Option</span>
-      <div v-for="variant in selectedProductOptions" :key="variant.id">
-        <input
-          :id="variant.id"
-          v-model="pickedProduct"
-          type="radio"
-          :value="variant"
-        />
-        <label :for="variant.id"
-          >{{ formatPrice(variant.price) }} – {{ variant.option }}</label
-        >
-      </div>
     </div>
     <button
       :aria-label="`Book ${pickedProduct}`"
       class="mt-6 btn-primary w-full"
       :class="!isProductSelected ? 'btn--disabled' : ''"
       :disabled="!isProductSelected"
-      @click.prevent="bookProduct(pickedProduct.id, { customAttributes: [] })"
+      @click.prevent="addProduct()"
     >
-      <span v-if="isProductSelected && isCourse"
-        >{{ pickedProduct.productTitle }} am
-        {{ pickedProduct.title }} buchen</span
-      >
-      <span v-else-if="isProductSelected && !isCourse"
-        >{{ pickedProduct.productTitle }} {{ pickedProduct.title }} buchen</span
-      >
+      <span v-if="isProductSelected">Buchen</span>
       <span v-else>Triff eine Auswahl im Dropdownmenü</span>
     </button>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, Ref, watchEffect, onMounted, ComputedRef } from 'vue'
+import { computed, ref, Ref, watchEffect, ComputedRef } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import { Course, ProductVariant } from '@/types/data'
+import { Product } from '@/types/Product'
+import { ProductVariant } from '@/types/ProductVariant'
+import { ProductVariantOption } from '@/types/ProductVariantOption'
 import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
-import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useBackend } from '@/composable/useBackend'
+import { useCalender } from '~~/composable/useCalender'
 
 const { page, isCourse, getMetadata } = usePage()
-const { formatPrice } = useFormat()
-const { bookProduct, getCourse, selectedOptionDateString } = useShopifyCart()
+const { formatPrice, formatProductVariantOptionTitle } = useFormat()
+const { selectedDateString } = useCalender()
+const { getProduct, updateCart } = useBackend()
 
-const selectedProductOptions: Ref<ProductVariant[]> = ref(
-  [] as ProductVariant[]
-)
 const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
-
 const metadata = getMetadata(page.value.path)
+const selectedVariants: Ref<ProductVariantOption[]> = ref([])
 
 const isProductSelected = computed(
-  () => selectedProductOptions.value.length !== 0
+  () => selectedVariants.value.length >= product.value?.variants?.length
 )
 
-const course: ComputedRef<Course> = computed(() =>
-  getCourse(metadata?.category, metadata?.slug)
+const selectedOptions: Ref<{ [key: string]: string | undefined }> = ref({})
+
+const product: ComputedRef<Product> = computed(() =>
+  getProduct(metadata?.category, metadata?.slug)
 )
-
-function setPickedCourse() {
-  pickedProduct.value = selectedProductOptions.value[0]
-  selectedOptionDateString.value =
-    selectedProductOptions.value[0]?.optionDateString
-}
-
-function setPickedProductOption() {
-  selectedProductOptions.value =
-    course.value?.options.find(
-      (d) => d.optionDateString === selectedOptionDateString.value
-    )?.variants || []
-}
 
 watchEffect(() => {
-  if (selectedOptionDateString.value !== '') {
-    setPickedProductOption()
+  if (product.value) {
+    resetSelectedDateString()
+    initSelectedVariants()
   }
-  if (selectedProductOptions.value?.length !== 0) {
-    setPickedCourse()
+  if (selectedDateString.value) {
+    for (const variant of product.value.variants) {
+      if (!variant.date_variant) continue
+      selectedOptions.value[variant.name] = selectedDateString.value
+      updateSelectedVariants(variant, selectedDateString.value)
+    }
   }
 })
+
+function resetSelectedDateString(): void {
+  if (
+    !product.value?.variants
+      ?.flatMap((o) => o.options)
+      .map((a) => a.value)
+      .includes(selectedDateString.value as string)
+  ) {
+    selectedDateString.value = undefined
+  }
+}
+
+function initSelectedVariants(): void {
+  if (
+    product.value?.variants === undefined ||
+    product.value?.variants?.length ===
+      Object.keys(selectedOptions.value).length
+  )
+    return
+  for (const variant of product.value.variants) {
+    selectedOptions.value[variant.name] = '' // set Default value
+    if (selectedDateString.value !== undefined || variant.date_variant) continue
+    updateSelectedVariants(
+      variant,
+      selectedDateString.value || variant.options[0].value
+    )
+  }
+}
+
+function updateSelectedVariants(variant: ProductVariant, value: string): void {
+  selectedOptions.value[variant.name] = value
+  const newValue = variant.options.find((o) => o.value === value)
+  if (newValue === undefined) return
+  const selectedVariantsIndex = selectedVariants.value.findIndex(
+    (o) => o.product_variant === newValue?.product_variant
+  )
+  if (selectedVariantsIndex !== -1) {
+    selectedVariants.value.splice(selectedVariantsIndex, 1)
+  }
+  selectedVariants.value.push(newValue)
+}
+
+async function addProduct() {
+  await updateCart(
+    JSON.stringify({
+      product: product.value,
+      selected_variants: selectedVariants.value,
+      quantity: 1,
+      comment: '',
+    })
+  )
+}
 </script>

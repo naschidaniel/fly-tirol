@@ -28,7 +28,7 @@
             :flight-duration="metadata.flightDuration"
             :theorie="metadata.theorie"
             :price="price"
-            :dates="course?.dates"
+            :dates="product?.total_dates"
             :is-show-date="isFlyTirol ? isCourse : false"
           />
           <p v-if="!isCourse" class="text-gray-600 mt-4">
@@ -56,19 +56,21 @@
 import { computed } from 'vue'
 import ProductDetails from './ProductDetails.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
-import { useShopifyCart } from '@/composable/useShopifyCart'
+import { useBackend } from '@/composable/useBackend'
+import { useFormat } from '@/composable/useFormat'
 import { useData } from '@/composable/useData'
 import { usePage } from '@/composable/usePage'
 
 const props = defineProps({ path: { type: String, required: true } })
-const { getCourse } = useShopifyCart()
+const { getProduct } = useBackend()
+const { formatPrice } = useFormat()
 const { isFlyTirol, isWhiteCloud } = useData()
 const { isCourse, getMetadata } = usePage()
 const metadata = getMetadata(props.path)
 
 const price = computed(() =>
-  isFlyTirol ? course.value?.price : metadata.price
+  isFlyTirol ? formatPrice(product.value?.price) : metadata.price
 )
 
-const course = computed(() => getCourse(metadata.category, metadata.slug))
+const product = computed(() => getProduct(metadata.category, metadata.slug))
 </script>

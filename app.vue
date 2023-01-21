@@ -14,10 +14,11 @@ import { onMounted } from 'vue'
 import SiteCookieBanner from '@/components/global/SiteCookieBanner.vue'
 import SiteFooter from '@/components/global/SiteFooter.vue'
 import SiteHeader from '@/components/global/SiteHeader.vue'
-import { useShopifyCart } from '@/composable/useShopifyCart'
-const { initShop, loadCheckout } = useShopifyCart()
+import { useBackend } from '@/composable/useBackend'
+
+const { initShopBackend, initCart } = useBackend()
 onMounted(() => {
-  initShop()
-  loadCheckout()
+  initShopBackend()
+  initCart()
 })
 </script>

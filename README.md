@@ -22,6 +22,14 @@ The images are optimized on the basis of common images sizes.
 $ yarn optimize-images
 ```
 
+### Backend
+
+To display products from production set the Environment variable.
+
+```
+echo 'NUXT_BACKEND="production"' > .env
+```
+
 ## Development Setup
 
 ```bash
@@ -44,16 +52,6 @@ $ yarn dev
 # if new media was added
 $ yarn generateMediaInformation
 ```
-
-### Shopify
-
-To display data from Shopify the [Shopify JavaScript Buy SDK](https://www.npmjs.com/package/shopify-buy) is used. For local development the `SHOPIFY_DOMAIN` and `SHOPIFY_ACCESS_TOKEN` is needed.
-
-```
-echo 'SHOPIFY_DOMAIN="MyPersonalShopShopifyUrl"' > .env
-echo 'SHOPIFY_ACCESS_TOKEN="ShopifyAccessToken"' >> .env
-```
-
 
 ## Build Setup
 
