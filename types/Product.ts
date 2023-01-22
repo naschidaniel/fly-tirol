@@ -9,6 +9,7 @@ export type Product = {
     name: string;
     allow_comment?: boolean;
     slug: string;
+    href: string;
     total_dates: number;
     digital?: boolean;
     orderable: boolean;

@@ -49,7 +49,11 @@ export function useCalender() {
         return data
       }
     )
-    calender.value = response.data
+    const _products =
+      productPath !== undefined
+        ? response.data.filter((p: Product) => p.href === productPath)
+        : response.data
+    calender.value = _products
       .flatMap((p: Product) => {
         return p.variants.flatMap((v: ProductVariant) => {
           return v.options.flatMap((o: ProductVariantOption) => {
@@ -57,7 +61,7 @@ export function useCalender() {
               productId: p.id,
               category: p.category,
               name: p.name,
-              href: `/${p.category}/${p.slug}/`.toLowerCase(),
+              href: p.href,
               date_variant: v.date_variant,
               start_iso_date: o.start_iso_date,
               end_iso_date: o.end_iso_date,
