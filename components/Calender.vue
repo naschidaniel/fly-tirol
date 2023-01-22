@@ -55,7 +55,7 @@
       <div class="mt-4 md:flex md:flex-wrap md:justify-center">
         <div
           v-for="entry in month.courses"
-          :key="entry.value"
+          :key="`${entry.productId} ${entry.value}`"
           class="m-2 p-4 border-2 rounded-lg md:w-2/3 lg:w-1/3 xl:w-1/4 text-left"
         >
           <span
@@ -78,30 +78,13 @@
           </h4>
           <div class="mb-2">
             <p>{{ entry.value }}</p>
-            <div
-              v-for="select in entry.options"
-              :key="select.id"
-              class="flex mt-2"
-            >
-              <select
-                class="text-sm block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-              >
-                <option
-                  v-for="option in select.options"
-                  :key="option.id"
-                  :value="option.id"
-                >
-                  {{ option.value }}
-                </option>
-              </select>
-            </div>
             <div class="flex justify-end mt-2">
               <NuxtLink
                 :to="entry.href"
                 :title="`${entry.name} - ${entry.value}`"
                 class="cursor-pointer btn-primary"
               >
-                Buchen
+                Mehr erfahren
               </NuxtLink>
             </div>
           </div>

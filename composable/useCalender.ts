@@ -35,10 +35,7 @@ export function useCalender() {
       .filter((m) => m.courses.length >= 1)
   })
 
-  async function initCalender(
-    categories: string[] | undefined = undefined,
-    products: string[] | undefined = undefined
-  ) {
+  async function initCalender(productPath: string | undefined = undefined) {
     const request: RequestInit = {
       method: 'GET',
       headers: {
@@ -57,9 +54,10 @@ export function useCalender() {
         return p.variants.flatMap((v: ProductVariant) => {
           return v.options.flatMap((o: ProductVariantOption) => {
             return {
+              productId: p.id,
               category: p.category,
               name: p.name,
-              href: `/${p.category}/${p.slug}`,
+              href: `/${p.category}/${p.slug}/`.toLowerCase(),
               date_variant: v.date_variant,
               start_iso_date: o.start_iso_date,
               end_iso_date: o.end_iso_date,
@@ -80,18 +78,21 @@ export function useCalender() {
       .sort((a: CalenderEntry, b: CalenderEntry) =>
         a.start_iso_date.localeCompare(b.start_iso_date)
       )
-    calenderCategoriesChecked.value =
-      categories === undefined
-        ? (calenderCategoriesChecked.value = [
-            ...new Set(calender.value.map((p) => p.category)),
-          ] as string[])
-        : categories
+    calenderCategoriesChecked.value = calenderCategoriesChecked.value = [
+      ...new Set(calender.value.map((p) => p.category)),
+    ] as string[]
     calenderProductsChecked.value =
-      products === undefined
-        ? ([...new Set(calender.value.map((p) => p.name))].filter(
+      productPath !== undefined
+        ? ([
+            ...new Set(
+              calender.value
+                .filter((c) => c.href === productPath)
+                .map((p) => p.name)
+            ),
+          ] as string[])
+        : ([...new Set(calender.value.map((p) => p.name))].filter(
             (p) => p !== 'Tagesbetreuung'
           ) as string[])
-        : products
   }
 
   const calenderCategoriesAvailable: ComputedRef<string[]> = computed(() =>

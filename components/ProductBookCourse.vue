@@ -39,7 +39,7 @@ const { isCourse, page } = usePage()
 const { calenderFiltered, initCalender, selectedDateString } = useCalender()
 
 onMounted(() => {
-  initCalender(undefined, [page.value.title])
+  initCalender(page.value.path)
 })
 
 function setOptionDateString(optionDateString: string) {
