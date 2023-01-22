@@ -99,8 +99,38 @@ export function useBackend() {
     return product
   }
 
+  async function updateProduct(
+    pk: string | undefined,
+    quantity: string
+  ): Promise<void> {
+    const request: RequestInit = {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ quantity }),
+    }
+    await fetch(`${backend}/api/shop/cartitem/${pk}`, request)
+    await initCart()
+  }
+
+  async function deleteProduct(pk: string | undefined): Promise<void> {
+    const request: RequestInit = {
+      method: 'DELETE',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    }
+    await fetch(`${backend}/api/shop/cartitem/${pk}`, request)
+    await initCart()
+  }
+
   return {
     cart,
+    deleteProduct,
+    updateProduct,
     cartItemsLength,
     isCartItems,
     getProduct,

@@ -28,6 +28,31 @@
     @apply bg-gray-200
     text-gray-800;
 }
+
+.btn-warning {
+  @apply relative
+  inline-flex
+  justify-center
+  items-center
+  px-1
+  py-1
+  rounded-md
+  text-sm
+  leading-none
+  tracking-wide
+  text-red-500
+  bg-gray-100
+  focus:ring-2
+  focus:ring-red-400
+  focus:ring-offset-2
+  focus:ring-offset-white
+  focus:ring-opacity-100
+  focus:outline-none
+  transition
+  duration-150
+  ease-in-out;
+}
+
 .card--content:before {
   content: '';
   z-index: 1;

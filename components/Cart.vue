@@ -38,6 +38,16 @@
                   {{ formatProductVariantOptionTitle(variant) }}
                 </p>
               </div>
+              <div class="flex justify-end">
+                <div>
+                  <button
+                    class="btn-warning"
+                    @click.prevent="deleteProduct(item?.id)"
+                  >
+                    Produkt entfernen
+                  </button>
+                </div>
+              </div>
             </td>
             <td class="text-sm md:text-base p-1 md:p-3 text-center border">
               {{ formatPrice(item.item_price) }}
@@ -46,9 +56,8 @@
               <div class="flex justify-center">
                 <select
                   class="text-sm md:text-base block text-center rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  @change.stop=""
+                  @change.stop="(e: Event) => updateProduct(item?.id, (e.target as HTMLSelectElement).value)"
                 >
-                  <option :selected="item.quantity === 0" value="0">0</option>
                   <option :selected="item.quantity === 1" value="1">1</option>
                   <option :selected="item.quantity === 2" value="2">2</option>
                   <option :selected="item.quantity === 3" value="3">3</option>
@@ -72,13 +81,6 @@
           {{ formatPrice(cart?.get_total_tax) }} enthalten.</span
         >
       </div>
-      <div class="w-full text-right mt-3">
-        <button aria-label="refresh Cart" class="btn-primary" @click.prevent="">
-          <IconOutlineRefresh style="height: 1em; widht: 1em" />&nbsp;<span
-            >Warenkorb aktualisieren</span
-          >
-        </button>
-      </div>
       <div class="text-center mt-14">
         <a
           :href="cart?.order_url"
@@ -95,7 +97,6 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import Alert from './Alert.vue'
 import IconOutlineRefresh from './icon/IconOutlineRefresh.vue'
 import IconOutlineShoppingBag from './icon/IconOutlineShoppingBag.vue'
@@ -103,5 +104,5 @@ import { useBackend } from '@/composable/useBackend'
 import { useFormat } from '@/composable/useFormat'
 
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()
-const { cart, isCartItems } = useBackend()
+const { cart, isCartItems, deleteProduct, updateProduct } = useBackend()
 </script>
