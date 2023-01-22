@@ -127,9 +127,23 @@ export function useBackend() {
     await initCart()
   }
 
+  async function deleteCart(pk: string | undefined): Promise<void> {
+    const request: RequestInit = {
+      method: 'DELETE',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+    }
+    await fetch(`${backend}/api/shop/cart/${pk}`, request)
+    localStorage.removeItem('cartId')
+    await initCart()
+  }
+
   return {
     cart,
     deleteProduct,
+    deleteCart,
     updateProduct,
     cartItemsLength,
     isCartItems,

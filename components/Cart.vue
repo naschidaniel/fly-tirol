@@ -81,7 +81,17 @@
           {{ formatPrice(cart?.get_total_tax) }} enthalten.</span
         >
       </div>
-      <div class="text-center mt-14">
+      <div class="flex justify-between mt-14">
+        <button
+          :href="cart?.order_url"
+          aria-label="Delete Order"
+          class="btn-warning btn--large"
+          @click.prevent="deleteCart(cart?.id)"
+        >
+          <IconOutlineShoppingBag style="height: 1em; widht: 1em" />&nbsp;<span
+            >Warenkorb löschen</span
+          >
+        </button>
         <a
           :href="cart?.order_url"
           aria-label="Order Products"
@@ -98,11 +108,11 @@
 
 <script setup lang="ts">
 import Alert from './Alert.vue'
-import IconOutlineRefresh from './icon/IconOutlineRefresh.vue'
 import IconOutlineShoppingBag from './icon/IconOutlineShoppingBag.vue'
 import { useBackend } from '@/composable/useBackend'
 import { useFormat } from '@/composable/useFormat'
 
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()
-const { cart, isCartItems, deleteProduct, updateProduct } = useBackend()
+const { cart, isCartItems, deleteCart, deleteProduct, updateProduct } =
+  useBackend()
 </script>
