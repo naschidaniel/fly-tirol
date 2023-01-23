@@ -79,19 +79,19 @@
         <span class="text-sm"
           >Im Preis ist die Mehrwertsteuer von
           {{ formatPrice(cart?.get_total_tax) }} enthalten.</span
-        >
-      </div>
-      <div class="flex justify-between mt-14">
+        ><br />
         <button
           :href="cart?.order_url"
           aria-label="Delete Order"
-          class="btn-warning btn--large"
+          class="mt-2 btn-warning btn--large"
           @click.prevent="deleteCart(cart?.id)"
         >
           <IconOutlineShoppingBag style="height: 1em; widht: 1em" />&nbsp;<span
             >Warenkorb löschen</span
           >
         </button>
+      </div>
+      <div class="flex justify-center mt-5">
         <a
           :href="cart?.order_url"
           aria-label="Order Products"
