@@ -41,7 +41,6 @@
         :value="selectedOptions[variant.name]"
         class="mt-2 w-full text-base block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       >
-        <option disabled value="">Bitte auswählen</option>
         <option
           v-for="option in variant.options"
           :key="option.value"
@@ -55,12 +54,9 @@
     <button
       :aria-label="`Book ${pickedProduct}`"
       class="mt-6 btn-primary w-full"
-      :class="!isProductSelected ? 'btn--disabled' : ''"
-      :disabled="!isProductSelected"
       @click.prevent="addProduct()"
     >
-      <span v-if="isProductSelected">Buchen</span>
-      <span v-else>Triff eine Auswahl im Dropdownmenü</span>
+      <span>Buchen</span>
     </button>
   </div>
 </template>
@@ -86,8 +82,6 @@ const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
 const metadata = getMetadata(page.value.path)
 const selectedVariants: Ref<ProductVariantOption[]> = ref([])
 
-const isProductSelected = ref(false)
-
 const selectedOptions: Ref<{ [key: string]: string | undefined }> = ref({})
 
 const product: ComputedRef<Product> = computed(() =>
@@ -105,10 +99,6 @@ watchEffect(() => {
       selectedOptions.value[variant.name] = selectedDateString.value
       updateSelectedVariants(variant, selectedDateString.value)
     }
-  }
-  if (selectedVariants.value) {
-    isProductSelected.value =
-      selectedVariants.value.length >= product.value?.variants?.length
   }
 })
 
@@ -131,12 +121,7 @@ function initSelectedVariants(): void {
   )
     return
   for (const variant of product.value.variants) {
-    selectedOptions.value[variant.name] = '' // set Default value
-    if (selectedDateString.value !== undefined || variant.date_variant) continue
-    updateSelectedVariants(
-      variant,
-      selectedDateString.value || variant.options[0].value
-    )
+    updateSelectedVariants(variant, variant.options[0].value)
   }
 }
 
