@@ -86,9 +86,7 @@ const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
 const metadata = getMetadata(page.value.path)
 const selectedVariants: Ref<ProductVariantOption[]> = ref([])
 
-const isProductSelected = computed(
-  () => selectedVariants.value.length >= product.value?.variants?.length
-)
+const isProductSelected = ref(false)
 
 const selectedOptions: Ref<{ [key: string]: string | undefined }> = ref({})
 
@@ -107,6 +105,10 @@ watchEffect(() => {
       selectedOptions.value[variant.name] = selectedDateString.value
       updateSelectedVariants(variant, selectedDateString.value)
     }
+  }
+  if (selectedVariants.value) {
+    isProductSelected.value =
+      selectedVariants.value.length >= product.value?.variants?.length
   }
 })
 
@@ -149,6 +151,7 @@ function updateSelectedVariants(variant: ProductVariant, value: string): void {
     selectedVariants.value.splice(selectedVariantsIndex, 1)
   }
   selectedVariants.value.push(newValue)
+  if (variant.date_variant) selectedDateString.value = value
 }
 
 async function addProduct() {
