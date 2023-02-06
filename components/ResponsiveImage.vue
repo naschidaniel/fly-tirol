@@ -1,18 +1,24 @@
 <template>
   <div ref="imageBox" :class="boxClass">
-    <picture>
-      <source :sizes="pic.sizes" :srcset="pic.srcsetsWebp" type="image/webp" />
-      <source :srcset="pic.srcsets" type="image/jpeg" />
-      <img
-        :loading="isLazy ? 'lazy' : 'eager'"
-        :class="imgClass"
-        :src="pic.fallback.src"
-        :alt="pic.fallback.alt"
-        :height="pic.fallback.height"
-        :width="pic.fallback.width"
-        :title="pic.fallback.title"
-      />
-    </picture>
+    <ClientOnly fallback-tag="span" fallback="Loading comments...">
+      <picture>
+        <source
+          :sizes="pic.sizes"
+          :srcset="pic.srcsetsWebp"
+          type="image/webp"
+        />
+        <source :srcset="pic.srcsets" type="image/jpeg" />
+        <img
+          :loading="isLazy ? 'lazy' : 'eager'"
+          :class="imgClass"
+          :src="pic.fallback.src"
+          :alt="pic.fallback.alt"
+          :height="pic.fallback.height"
+          :width="pic.fallback.width"
+          :title="pic.fallback.title"
+        />
+      </picture>
+    </ClientOnly>
   </div>
 </template>
 
