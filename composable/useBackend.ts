@@ -9,7 +9,7 @@ const cartId: Ref<string | null> = ref(null)
 const cart: Ref<Cart | undefined> = ref(undefined)
 
 export function useBackend() {
-  const { backend } = useData()
+  const { backend, isFlyTirol } = useData()
 
   const cartItemsLength = computed(() => cart.value?.cart_items?.length || 0)
   const isCartItems = computed(
@@ -18,6 +18,7 @@ export function useBackend() {
       cart.value?.cart_items?.length >= 1
   )
   async function initShopBackend() {
+    if (!isFlyTirol) return
     const request: RequestInit = {
       method: 'GET',
       headers: {
@@ -35,7 +36,7 @@ export function useBackend() {
   }
 
   async function initCart(): Promise<Cart | undefined> {
-    if (!process.client) return
+    if (!process.client || !isFlyTirol) return
     const _cartId = localStorage.getItem('cartId')
     const url =
       _cartId !== null
