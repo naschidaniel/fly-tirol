@@ -26,7 +26,6 @@ const { isOpen } = useNavigation()
         py-1
         leading-5
         text-brand
-        focus:outline-none
         transition
         duration-300
         ease-in-out;
