@@ -8,6 +8,19 @@
       >
     </div>
     <div>Version des Docker Images: {{ formatDateTime(buildTime) }}</div>
+    <h2 class="mt-2">Shop Admin Userinterface</h2>
+    <div>
+      Testprodukte:
+      <NuxtLink to="/testprodukte">
+        https://fly-tirol.com/testprodukte
+      </NuxtLink>
+    </div>
+    <div>
+      Admin Interface:
+      <a href="https://fly-tirol.com/shop/admin-ui/"
+        >https://fly-tirol.com/shop/admin-ui/</a
+      >
+    </div>
     <div>
       <div>
         <div class="inline">

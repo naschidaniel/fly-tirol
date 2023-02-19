@@ -38,6 +38,7 @@ module.exports = {
           'tandemsafari',
           'team',
           'termine',
+          'Test',
           'testflug',
           'thermikfliegen',
           'Version',
