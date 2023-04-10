@@ -1,13 +1,13 @@
 import { readFileSync, writeFile } from 'fs'
-import glob from 'glob'
+import { glob } from 'glob'
 import sizeOf from 'image-size'
 
 for (const nuxtPage of ['flytirol', 'whitecloud']) {
   const constName =
     nuxtPage === 'flytirol' ? 'mediaFlyTirol' : 'mediaWhiteCloud'
-  const mediaJson = JSON.parse(readFileSync(`./data/${constName}.json`))
-  const images = glob.sync(`./public_${nuxtPage}/media/**/*.{jpg,png}`)
-  const staticPath = `./public_${nuxtPage}`
+  const mediaJson = JSON.parse(readFileSync(`data/${constName}.json`))
+  const images = glob.sync(`public_${nuxtPage}/media/**/*.{jpg,png}`)
+  const staticPath = `public_${nuxtPage}`
 
   images
     .sort()
@@ -44,11 +44,11 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
     }, {})
 
   const json = JSON.stringify(dataSorted, null, 2)
-  writeFile(`./data/${constName}.json`, json, (err) => {
+  writeFile(`data/${constName}.json`, json, (err) => {
     if (err) throw err
   })
   writeFile(
-    `./data/${constName}.ts`,
+    `data/${constName}.ts`,
     `import { MediaInformation } from '@/types/data'\n\n export const ${constName}: { [key: string]: MediaInformation} = ${json}`,
     (err) => {
       if (err) throw err

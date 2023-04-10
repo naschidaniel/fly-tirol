@@ -1,9 +1,7 @@
 import { existsSync, readFileSync } from 'fs'
-import { License } from './types/data'
+import { License } from 'types/data'
 
-const packages = JSON.parse(
-  readFileSync('./package.json', { encoding: 'utf8' })
-)
+const packages = JSON.parse(readFileSync('package.json', { encoding: 'utf8' }))
 
 const isFlyTirol = process.env.NUXT_PAGE === 'flytirol'
 const isWhiteCloud = process.env.NUXT_PAGE === 'whitecloud'
@@ -33,8 +31,8 @@ if (!(isWhiteCloud || isFlyTirol)) {
 
 if (
   !(
-    existsSync('./data/metadataFlyTirol.ts') ||
-    existsSync('./data/metadataWhiteCloud.ts')
+    existsSync('data/metadataFlyTirol.ts') ||
+    existsSync('data/metadataWhiteCloud.ts')
   )
 ) {
   console.error(

@@ -1,9 +1,9 @@
 import { readFileSync, writeFile } from 'fs'
-import glob from 'glob'
+import { glob } from 'glob'
 import { marked } from 'marked'
 
 function generate(nuxtPage) {
-  const content = glob.sync(`./content_${nuxtPage}/**/*.md`).sort()
+  const content = glob.sync(`content_${nuxtPage}/**/*.md`).sort()
 
   const metadataPages = []
   content.forEach((filePath) => {
@@ -78,7 +78,7 @@ function generate(nuxtPage) {
   const constName =
     nuxtPage === 'flytirol' ? 'metadataFlyTirol' : 'metadataWhiteCloud'
   writeFile(
-    `./data/${constName}.ts`,
+    `data/${constName}.ts`,
     `import { MetaData } from '@/types/data'\n\n export const ${constName}: MetaData[] = ${json}`,
     (err) => {
       if (err) throw err

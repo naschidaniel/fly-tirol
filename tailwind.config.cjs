@@ -17,21 +17,21 @@ const screensizes = {
 }
 
 const content = [
-  './components/**/*.vue',
-  './layouts/**/*.vue',
-  './pages/**/*.vue',
-  './content_flytirol/**/*.vue',
-  './content_whitecloud/**/*.vue',
-  './pages_flytirol/**/*.vue',
-  './pages_whitecloud/**/*.vue',
-  './plugins/**/*.{js,ts}',
+  'components/**/*.vue',
+  'layouts/**/*.vue',
+  'pages/**/*.vue',
+  'content_flytirol/**/*.vue',
+  'content_whitecloud/**/*.vue',
+  'pages_flytirol/**/*.vue',
+  'pages_whitecloud/**/*.vue',
+  'plugins/**/*.{js,ts}',
   'app.vue',
   'error.vue',
 ]
 
 isWhiteCloud
-  ? content.push('./pages_whitecloud/**/*.vue')
-  : content.push('./pages_flytirol/**/*.vue')
+  ? content.push('pages_whitecloud/**/*.vue')
+  : content.push('pages_flytirol/**/*.vue')
 
 const brandColor = isWhiteCloud ? '#666' : '#160D42'
 

@@ -1,4 +1,3 @@
-import { onMounted, ref, Ref } from 'vue'
 import { useRuntimeConfig } from '#app'
 import { mediaFlyTirol, mediaWhiteCloud } from '@/data'
 
