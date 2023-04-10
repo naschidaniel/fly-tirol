@@ -13,7 +13,7 @@ I am a passionate pilot and would like to show you the world from above. Come wi
 
 ### Optimize Images
 
-The `image-optimizer` tool is used to optimize images in the folders `./public_flytirol/media` or `./public_whitecloud/media`. Place the release v0.5.0 of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the root directory. The files from `./public_flytirol` and `./public_whitecloud` are copied to `./.public_flytirol` and `./.public_whitecloud`. The images for the development and the build setup are used from the folders `./.public_flytirol` or `./.public_whitecloud`. 
+The `image-optimizer` tool is used to optimize images in the folders `public_flytirol/media` or `public_whitecloud/media`. Place the release v0.5.0 of [image-optimizer](https://github.com/naschidaniel/image-optimizer) for your system in the root directory. The files from `public_flytirol` and `public_whitecloud` are copied to `.public_flytirol` and `.public_whitecloud`. The images for the development and the build setup are used from the folders `.public_flytirol` or `.public_whitecloud`. 
 
 The images are optimized on the basis of common images sizes.
 
@@ -43,8 +43,10 @@ export NUXT_PAGE=whiteclout
 # install dependencies
 $ yarn
 
-# convert markdown files to vue files and lint output
-$ yarn generateContent
+# create the needed .nuxt folder
+$ mkdir .nuxt && echo '{}' > .nuxt/tsconfig.json
+# create the .public_flytirol and .public_whitecloud folder
+$ yarn create-public
 
 # develop with hot reload at localhost:3000 for linux / mac
 $ yarn dev
@@ -70,7 +72,7 @@ $ docker run -p 127.0.0.1:3001:3001/tcp whitecloud
 
 ### Collect Media Information
 
-The images in the `./public_flytirol/media` or `./public_whitecloud/media` folder are listet in the `./data/mediaFlyTirol.js` or `./data/mediaWhiteCloud.js` file. The image information `title` and `alt` can be added in this json file for all Views.
+The images in the `public_flytirol/media` or `public_whitecloud/media` folder are listed in the `data/mediaFlyTirol.js` or `data/mediaWhiteCloud.js` file. The image information `title` and `alt` can be added in this json file for all Views.
 
 ``` bash
 # Update media.js
@@ -81,7 +83,7 @@ $ yarn generateMediaInformation
 
 - Adding content is easy and can be done via the Github website.
 - The folder structure should be identical in the content and media folder.
-### The ./content_flytirol and ./content_whitecloud folder
+### The content_flytirol and content_whitecloud folder
 
 The markdown markup language is used for formatting the content. Read the [www.markdownguide.org/cheat-sheet](https://www.markdownguide.org/cheat-sheet/) for most relevant commands.
 
