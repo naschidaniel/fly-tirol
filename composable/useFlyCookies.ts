@@ -36,7 +36,7 @@ export function useFlyCookies() {
     checkoutId.value = id
   }
 
-  function getCookieCheckoutId(): string | null {
+  function getCookieCheckoutId(): string | null | undefined {
     const checkoutId = useCookie('checkoutId')
     return checkoutId.value
   }
