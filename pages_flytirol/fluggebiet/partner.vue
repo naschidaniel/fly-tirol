@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Flugschule Westendorf"
       headline="Partner"
-      picture="/media/partner/uebungshang_westendorf.jpg"
+      picture="/media/fluggebiet/uebungshang_westendorf.jpg"
     >
       <p>Eine starke Flugschule braucht starke Partner!</p>
       <p>
@@ -26,7 +26,7 @@
 import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
-import Partner from '@/content_flytirol/partner.vue'
+import Partner from '@/content_flytirol/fluggebiet/partner.vue'
 
 useMetaTags()
 </script>

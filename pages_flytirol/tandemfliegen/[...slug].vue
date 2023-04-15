@@ -7,9 +7,6 @@
       <div v-if="page.slug == 'panoramaflug'">
         <Panoramaflug />
       </div>
-      <div v-if="page.slug == 'tandemsafari'">
-        <Tandemsafari />
-      </div>
       <div v-if="page.slug == 'tandemflug-geschenkkarte'">
         <TandemflugGeschenkkarte />
       </div>
@@ -50,7 +47,6 @@ import { useMetaTags } from '@/composable/useMetaTags'
 import Hoehenflug from '@/content_flytirol/tandemfliegen/hoehenflug.vue'
 import Panoramaflug from '@/content_flytirol/tandemfliegen/panoramaflug.vue'
 import TandemflugGeschenkkarte from '@/content_flytirol/tandemfliegen/tandemflug-geschenkkarte.vue'
-import Tandemsafari from '@/content_flytirol/tandemfliegen/tandemsafari.vue'
 
 useMetaTags()
 const { page } = usePage()

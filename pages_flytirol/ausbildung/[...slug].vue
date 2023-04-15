@@ -7,7 +7,7 @@
       <Hoehenflugkurs />
     </div>
     <div v-if="page.slug == 'kompaktkurs'">
-      <Kompaktkurs />
+      <Kombikurs />
     </div>
     <div v-if="page.slug == 'paragleiterschein-theoriekurs'">
       <ParagleiterscheinTheoriekurs />
@@ -30,7 +30,7 @@ import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
 import Grundkurs from '@/content_flytirol/ausbildung/grundkurs.vue'
 import Hoehenflugkurs from '@/content_flytirol/ausbildung/hoehenflugkurs.vue'
-import Kompaktkurs from '@/content_flytirol/ausbildung/kompaktkurs.vue'
+import Kombikurs from '@/content_flytirol/ausbildung/kombikurs.vue'
 import ParagleiterscheinTheoriekurs from '@/content_flytirol/ausbildung/paragleiterschein-theoriekurs.vue'
 import Schnupperkurs from '@/content_flytirol/ausbildung/schnupperkurs.vue'
 import Tagesbetreuung from '@/content_flytirol/ausbildung/tagesbetreuung.vue'

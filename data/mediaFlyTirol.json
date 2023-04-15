@@ -212,6 +212,20 @@
     "alt": "soon available",
     "title": "The Image is soon available"
   },
+  "/media/fluggebiet/uebungshang_westendorf.jpg": {
+    "url": "/media/fluggebiet/uebungshang_westendorf.jpg",
+    "path": "/media/fluggebiet/",
+    "file": "uebungshang_westendorf.jpg",
+    "stem": "uebungshang_westendorf",
+    "dimensions": {
+      "height": 1365,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "Gleitschirm Paragliding Wiese fliegen Westendorf",
+    "title": "Paragliding Grundkurs in Westendorf"
+  },
   "/media/fortbildung/fortbildung.jpg": {
     "url": "/media/fortbildung/fortbildung.jpg",
     "path": "/media/fortbildung/",
@@ -253,20 +267,6 @@
     },
     "alt": "Gleitschirm Fliegen Paragliding Kitzbüheler Alpen Himmel",
     "title": "Thermikfliegen in Westendorf"
-  },
-  "/media/partner/uebungshang_westendorf.jpg": {
-    "url": "/media/partner/uebungshang_westendorf.jpg",
-    "path": "/media/partner/",
-    "file": "uebungshang_westendorf.jpg",
-    "stem": "uebungshang_westendorf",
-    "dimensions": {
-      "height": 1365,
-      "width": 2048,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "Gleitschirm Paragliding Wiese fliegen Westendorf",
-    "title": "Paragliding Grundkurs in Westendorf"
   },
   "/media/reisen/flugsafari.jpg": {
     "url": "/media/reisen/flugsafari.jpg",

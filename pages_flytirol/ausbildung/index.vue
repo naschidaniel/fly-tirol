@@ -29,7 +29,7 @@
           Gerätekunde, Luftrecht und Meteorologie behandelt.
         </li>
         <li>
-          Der <span>Kompaktkurs</span> behinhaltet alle relevanten Kurselemente
+          Der <span>Kombikurs</span> behinhaltet alle relevanten Kurselemente
           von Grundkurs, Höhenflugkurs und Paragleitschein Theoriekus zu einem
           vergünstigtem Komplettpreis.
         </li>

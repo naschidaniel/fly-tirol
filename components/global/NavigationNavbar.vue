@@ -16,7 +16,7 @@
         <NavigationNavbarLink name="Reisen" to="/reisen" />
         <NavigationNavbarLink name="Termine" to="/termine" />
         <NavigationNavbarLink name="Team" to="/team" />
-        <NavigationNavbarLink name="Partner" to="/partner" />
+        <NavigationNavbarLink name="Fluggebiet" to="/fluggebiet" />
       </nav>
       <nav v-else class="flex flex-col items-start xl:flex-row">
         <NavigationNavbarLink name="Home" to="/" />
