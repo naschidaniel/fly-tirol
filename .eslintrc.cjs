@@ -16,6 +16,7 @@ module.exports = {
       {
         ignores: [
           '[...slug]',
+          'Agb',
           'Alert',
           'Buchen',
           'Calender',

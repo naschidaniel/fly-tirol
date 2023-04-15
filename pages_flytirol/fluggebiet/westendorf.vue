@@ -13,6 +13,9 @@
         Radwegen, vielfältige Veranstaltungen und tolle Ausflugsziele.
       </p>
     </PageHeader>
+    <div class="max-w-90 w-full mx-auto py-6 pt-8 nuxt-content">
+      <Westendorf />
+    </div>
     <SocialBar />
   </div>
 </template>
@@ -21,6 +24,7 @@
 import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
+import Westendorf from '@/content_flytirol/fluggebiet/westendorf.vue'
 
 useMetaTags()
 </script>

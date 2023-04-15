@@ -212,6 +212,66 @@
     "alt": "soon available",
     "title": "The Image is soon available"
   },
+  "/media/fluggebiet/brixental/available-soon_1.jpg": {
+    "url": "/media/fluggebiet/brixental/available-soon_1.jpg",
+    "path": "/media/fluggebiet/brixental/",
+    "file": "available-soon_1.jpg",
+    "stem": "available-soon_1",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluggebiet/brixental/available-soon_2.jpg": {
+    "url": "/media/fluggebiet/brixental/available-soon_2.jpg",
+    "path": "/media/fluggebiet/brixental/",
+    "file": "available-soon_2.jpg",
+    "stem": "available-soon_2",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluggebiet/brixental/available-soon_3.jpg": {
+    "url": "/media/fluggebiet/brixental/available-soon_3.jpg",
+    "path": "/media/fluggebiet/brixental/",
+    "file": "available-soon_3.jpg",
+    "stem": "available-soon_3",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluggebiet/brixental/available-soon_4.jpg": {
+    "url": "/media/fluggebiet/brixental/available-soon_4.jpg",
+    "path": "/media/fluggebiet/brixental/",
+    "file": "available-soon_4.jpg",
+    "stem": "available-soon_4",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/fluggebiet/uebungshang_westendorf.jpg": {
     "url": "/media/fluggebiet/uebungshang_westendorf.jpg",
     "path": "/media/fluggebiet/",

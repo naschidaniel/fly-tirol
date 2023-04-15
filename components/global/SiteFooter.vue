@@ -40,14 +40,13 @@
               <NuxtLink to="/impressum" class="underline ml-8 sm:ml-4 md:ml-6">
                 <span>Impressum</span>
               </NuxtLink>
-              <a
-                href="https://www.kitzbueheler-alpen.com/de/kam/corona.html"
-                target="_blank"
+              <NuxtLink
+                v-if="isFlyTirol"
+                to="/agb"
                 class="underline ml-8 sm:ml-4 md:ml-6"
-                rel="noopener noreferrer"
               >
-                COVID-19
-              </a>
+                <span>AGB</span>
+              </NuxtLink>
             </div>
           </div>
         </div>
