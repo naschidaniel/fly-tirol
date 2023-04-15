@@ -6,7 +6,7 @@
     <div v-if="page.slug == 'hoehenflugkurs'">
       <Hoehenflugkurs />
     </div>
-    <div v-if="page.slug == 'kompaktkurs'">
+    <div v-if="page.slug == 'kombikurs'">
       <Kombikurs />
     </div>
     <div v-if="page.slug == 'paragleiterschein-theoriekurs'">
