@@ -40,12 +40,17 @@
         :key="variant.id"
         :value="selectedOptions[variant.name]"
         class="mt-2 w-full text-base block rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+        @change="
+          updateSelectedVariants(
+            variant,
+            ($event.target as HTMLSelectElement).value
+          )
+        "
       >
         <option
           v-for="option in variant.options"
           :key="option.value"
           :value="option.value"
-          @click="updateSelectedVariants(variant, option.value)"
         >
           {{ formatProductVariantOptionTitle(option) }}
         </option>
