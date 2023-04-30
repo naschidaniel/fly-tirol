@@ -19,10 +19,11 @@
     "file": "FlyTirolLogo.jpg",
     "stem": "FlyTirolLogo",
     "dimensions": {
-      "height": 332,
-      "width": 528,
+      "height": 500,
+      "orientation": 1,
+      "width": 1000,
       "type": "jpg",
-      "ratio": 1.59
+      "ratio": 2
     },
     "alt": "Logo Fly Tirol Flugschule Westendorf",
     "title": "Logo Fly Tirol"
