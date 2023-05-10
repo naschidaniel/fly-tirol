@@ -108,5 +108,5 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ```
 
 ## License
-The source code is licensed under the MIT licence. Please read the [LICENSE](LICENSE.md) File for more information.
+The source code is licensed under the MIT licence. Please read the [LICENSE](LICENSE) File for more information.
 Text, informational content, graphics and images are under the licence of [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) unless stated otherwise.
