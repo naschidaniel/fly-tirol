@@ -2,6 +2,11 @@ import { readFileSync, writeFile } from 'fs'
 import { glob } from 'glob'
 import { marked } from 'marked'
 
+marked.use({
+  headerIds: false,
+  mangle: false
+})
+
 function generate(nuxtPage) {
   const content = glob.sync(`content_${nuxtPage}/**/*.md`).sort()
 
