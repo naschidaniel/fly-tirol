@@ -10,12 +10,11 @@ order: 1
 
 # B-Schein Theoriekurs
 
-Der B-Schein Theoriekurs bereitet Dich auf die praktische Ausbildung zum B-Schein Piloten vor.
+Der B-Schein Theoriekurs bereitet dich auf die praktische Ausbildung zum B-Schein Piloten vor.
 
 ## Voraussetzungen
 
-Beschränkter Luftfahrerschein oder bestandene theoretische und praktische Prüfung, des Weiteren müssen mindestens 20 von einer Flugschule bestätigte Höhenflüge als Alleinflüge mit beliebiger Startart auf 2 verschiedenen Geländen nachgewiesen werden, davon mindestens 10 mit mehr als 30 Minuten Flugdauer.
-
+Ein beschränkter Luftfahrerschein oder das erfolgreiche Absolvieren sowohl der theoretischen als auch der praktischen Prüfung sind erforderlich. Zusätzlich dazu müssen mindestens 20 Alleinflüge mit beliebigem Startverfahren auf zwei verschiedenen Flugplätzen nachgewiesen werden, wovon mindestens 10 Flüge eine Flugdauer von mehr als 30 Minuten aufweisen müssen und von einer anerkannten Flugschule bestätigt sein müssen.
 ## Leistung
 
 * Verhalten in besonderen Fällen
