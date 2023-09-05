@@ -27,6 +27,6 @@ Während der ganzen Grundausbildung werdet ihr durch unser kompetent ausgebildet
 - 15 Grundflüge vom Übungshang
 - minimum 5 Höhenflüge vom Höhenfluggelände
 - 12 Theorieeinheiten a 45 Minuten
-- inklusive Leihausrüsung für die Dauer des Grundkurses    
+- inklusive Leihausrüstung für die Dauer des Grundkurses    
 
 <ContentImageGallery path="/media/ausbildung/grundausbildung/"/>
