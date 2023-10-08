@@ -602,6 +602,7 @@
     "stem": "5_tandemfliegen_start",
     "dimensions": {
       "height": 1575,
+      "orientation": 1,
       "width": 2362,
       "type": "jpg",
       "ratio": 1.5
@@ -673,6 +674,7 @@
     "stem": "tandemfluege",
     "dimensions": {
       "height": 1575,
+      "orientation": 1,
       "width": 2362,
       "type": "jpg",
       "ratio": 1.5
