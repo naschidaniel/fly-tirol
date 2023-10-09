@@ -13,7 +13,7 @@ const months = Array.from({ length: 36 }, (_, i) =>
   new Date(Date.UTC(2023, i, 1, 0, 0, 0)).toLocaleString('de-de', {
     month: 'long',
     year: 'numeric',
-  })
+  }),
 )
 const selectedDateString: Ref<string | undefined> = ref(undefined)
 
@@ -28,7 +28,7 @@ export function useCalender() {
             (c) =>
               calenderCategoriesChecked.value.includes(c.category) &&
               calenderProductsChecked.value.includes(c.name) &&
-              c.monthLong === month
+              c.monthLong === month,
           ),
         }
       })
@@ -47,7 +47,7 @@ export function useCalender() {
       (response) => {
         const data = response.json()
         return data
-      }
+      },
     )
     const _products =
       productPath !== undefined
@@ -80,7 +80,7 @@ export function useCalender() {
       })
       .filter((c: CalenderEntry) => c.date_variant)
       .sort((a: CalenderEntry, b: CalenderEntry) =>
-        a.start_iso_date.localeCompare(b.start_iso_date)
+        a.start_iso_date.localeCompare(b.start_iso_date),
       )
     calenderCategoriesChecked.value = calenderCategoriesChecked.value = [
       ...new Set(calender.value.map((p) => p.category)),
@@ -91,18 +91,18 @@ export function useCalender() {
             ...new Set(
               calender.value
                 .filter((c) => c.href === productPath)
-                .map((p) => p.name)
+                .map((p) => p.name),
             ),
           ] as string[])
         : ([...new Set(calender.value.map((p) => p.name))].filter(
-            (p) => p !== 'Tagesbetreuung'
+            (p) => p !== 'Tagesbetreuung',
           ) as string[])
   }
 
   const calenderCategoriesAvailable: ComputedRef<string[]> = computed(() =>
     [...new Set(calender.value.map((c) => c.category))].sort((a, b) =>
-      a.localeCompare(b)
-    )
+      a.localeCompare(b),
+    ),
   )
 
   const calenderProductsAvailable: ComputedRef<string[]> = computed(() => {
@@ -111,7 +111,7 @@ export function useCalender() {
       ...new Set(
         calender.value
           .filter((e) => selectedCategories.includes(e.category))
-          .map((p) => p.name)
+          .map((p) => p.name),
       ),
     ].sort((a, b) => a.localeCompare(b))
   })
@@ -120,7 +120,7 @@ export function useCalender() {
     const oldCalenderCategoriesChecked = unref(calenderCategoriesChecked)
     if (oldCalenderCategoriesChecked.includes(change)) {
       calenderCategoriesChecked.value = oldCalenderCategoriesChecked.filter(
-        (c) => c !== change
+        (c) => c !== change,
       )
       return
     }
@@ -131,7 +131,7 @@ export function useCalender() {
     const oldCalenderProductsChecked = unref(calenderProductsChecked)
     if (oldCalenderProductsChecked.includes(change)) {
       calenderProductsChecked.value = oldCalenderProductsChecked.filter(
-        (c) => c !== change
+        (c) => c !== change,
       )
       return
     }
@@ -143,7 +143,7 @@ export function useCalender() {
     calenderProductsChecked.value = unref(calenderProductsAvailable)
   }
   const isCalenderFiltered: ComputedRef<boolean> = computed(
-    () => Object.keys(calenderFiltered.value).length >= 1
+    () => Object.keys(calenderFiltered.value).length >= 1,
   )
   return {
     calender,

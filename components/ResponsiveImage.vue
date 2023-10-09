@@ -48,7 +48,7 @@ class ResponsiveSource implements ResponsiveSourceInterface {
     image: MediaInformation,
     width: number,
     viewport: number,
-    isThumbnail: boolean
+    isThumbnail: boolean,
   ) {
     const prefix = `${image.path}${image.stem}`
     const postfix = isThumbnail
@@ -93,7 +93,7 @@ const { media } = useMedia()
 const imageBox = ref(null) // template ref
 
 const image = Object.values(media).find(
-  (img) => img.url === props.picture
+  (img) => img.url === props.picture,
 ) as MediaInformation
 
 const pic: ResponsiveImage = reactive({
@@ -113,7 +113,7 @@ const setImage = function () {
   if (image === undefined) {
     // eslint-disable-next-line no-console
     console.warn(
-      `The image '${props.picture}' can not be found in the /media.json file. You have to run ./generateMediaInformation.js.`
+      `The image '${props.picture}' can not be found in the /media.json file. You have to run ./generateMediaInformation.js.`,
     )
   } else {
     const sourcesets: ResponsiveSource[] = []
@@ -131,8 +131,8 @@ const setImage = function () {
           image,
           width,
           viewport,
-          props.isThumbnail
-        )
+          props.isThumbnail,
+        ),
       )
     }
     pic.srcsets = sourcesets.map((s) => s.srcset).join(', ')

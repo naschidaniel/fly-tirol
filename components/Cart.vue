@@ -56,7 +56,13 @@
               <div class="flex justify-center">
                 <select
                   class="text-sm md:text-base block text-center rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  @change.stop="(e: Event) => updateProduct(item?.id, (e.target as HTMLSelectElement).value)"
+                  @change.stop="
+                    (e: Event) =>
+                      updateProduct(
+                        item?.id,
+                        (e.target as HTMLSelectElement).value,
+                      )
+                  "
                 >
                   <option :selected="item.quantity === 1" value="1">1</option>
                   <option :selected="item.quantity === 2" value="2">2</option>

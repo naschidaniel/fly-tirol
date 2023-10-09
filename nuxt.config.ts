@@ -11,8 +11,8 @@ const licenses: License[] = Object.keys(packages.dependencies)
     JSON.parse(
       readFileSync(`node_modules/${dependency}/package.json`, {
         encoding: 'utf8',
-      })
-    )
+      }),
+    ),
   )
   .map(
     ({ name, version, license }) =>
@@ -20,12 +20,12 @@ const licenses: License[] = Object.keys(packages.dependencies)
         name,
         version,
         license,
-      } as License)
+      }) as License,
   )
 
 if (!(isWhiteCloud || isFlyTirol)) {
   throw new Error(
-    `NUXT_PAGE = ${process.env.NUXT_PAGE} | NUXT_PAGE is not set!`
+    `NUXT_PAGE = ${process.env.NUXT_PAGE} | NUXT_PAGE is not set!`,
   )
 }
 
@@ -36,7 +36,7 @@ if (
   )
 ) {
   console.error(
-    'No metadata could be found in ./data! RUN yarn generateContent'
+    'No metadata could be found in ./data! RUN yarn generateContent',
   )
 }
 

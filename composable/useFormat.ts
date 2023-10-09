@@ -30,7 +30,7 @@ export function useFormat() {
   }
 
   function formatProductVariantOptionTitle(
-    option: ProductVariantOption | undefined
+    option: ProductVariantOption | undefined,
   ): string {
     return option === undefined
       ? ''

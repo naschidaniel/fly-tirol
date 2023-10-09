@@ -15,7 +15,7 @@ export function useBackend() {
   const isCartItems = computed(
     () =>
       cart.value?.cart_items?.length !== undefined &&
-      cart.value?.cart_items?.length >= 1
+      cart.value?.cart_items?.length >= 1,
   )
   async function initShopBackend() {
     if (!isFlyTirol) return
@@ -30,7 +30,7 @@ export function useBackend() {
       (response) => {
         const data = response.json()
         return data
-      }
+      },
     )
     products.value = response.data
   }
@@ -51,14 +51,14 @@ export function useBackend() {
     }
     try {
       const response = await fetch(url, request).then((response) =>
-        response.json()
+        response.json(),
       )
       updateCartId(response.data.id as string)
       cart.value = response.data
       return response.data as Cart
     } catch {
       console.error(
-        `Failed to init the Cart. The ${cartId.value} has been removed from localStorage`
+        `Failed to init the Cart. The ${cartId.value} has been removed from localStorage`,
       )
       localStorage.removeItem('cartId')
       cartId.value = null
@@ -81,7 +81,7 @@ export function useBackend() {
     }
     const response = await fetch(
       `${backend}/api/shop/cart/${cartId.value}`,
-      request
+      request,
     ).then((response) => {
       const data = response.json()
       return data
@@ -95,14 +95,14 @@ export function useBackend() {
   function getProduct(category: string, slug: string): Product {
     const product: Product =
       products.value.find(
-        (s) => s.category?.toLowerCase() === category && s.slug === slug
+        (s) => s.category?.toLowerCase() === category && s.slug === slug,
       ) ?? ({} as Product)
     return product
   }
 
   async function updateProduct(
     pk: string | undefined,
-    quantity: string
+    quantity: string,
   ): Promise<void> {
     const request: RequestInit = {
       method: 'POST',

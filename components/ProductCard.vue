@@ -69,7 +69,7 @@ const { isCourse, getMetadata } = usePage()
 const metadata = getMetadata(props.path)
 
 const price = computed(() =>
-  isFlyTirol ? formatPrice(product.value?.price) : metadata.price
+  isFlyTirol ? formatPrice(product.value?.price) : metadata.price,
 )
 
 const product = computed(() => getProduct(metadata.category, metadata.slug))

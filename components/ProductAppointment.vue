@@ -42,7 +42,7 @@
           >&nbsp;
           {{
             formatDate(
-              selectedDateTimestamp === '' ? undefined : selectedDateTimestamp
+              selectedDateTimestamp === '' ? undefined : selectedDateTimestamp,
             )
           }}</span
         >
@@ -70,15 +70,15 @@ const isFormValid: Ref<boolean> = ref(true)
 const isDateValid: Ref<boolean> = ref(false)
 
 const product: ComputedRef<Product> = computed(() =>
-  getProduct(metadata?.category, metadata?.slug)
+  getProduct(metadata?.category, metadata?.slug),
 )
 
 const today: ComputedRef<string> = computed(
-  () => new Date().toISOString().split('T')[0]
+  () => new Date().toISOString().split('T')[0],
 )
 
 const selectedDateTimestamp: ComputedRef<Date | ''> = computed(() =>
-  selectedDate.value !== '' ? new Date(selectedDate.value) : ''
+  selectedDate.value !== '' ? new Date(selectedDate.value) : '',
 )
 
 function bookFlight(): void {
@@ -92,9 +92,9 @@ function bookFlight(): void {
         comment: `Wunschdatum: ${formatDate(
           selectedDateTimestamp.value === ''
             ? undefined
-            : selectedDateTimestamp.value
+            : selectedDateTimestamp.value,
         )}`,
-      })
+      }),
     )
   }
 }

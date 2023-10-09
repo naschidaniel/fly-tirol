@@ -30,6 +30,6 @@ const props = defineProps({
 })
 const { media } = useMedia()
 const imageGallery = computed(() =>
-  Object.values(media).filter((img) => img.path === props.path)
+  Object.values(media).filter((img) => img.path === props.path),
 )
 </script>

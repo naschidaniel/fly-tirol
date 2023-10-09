@@ -43,7 +43,7 @@
         @change="
           updateSelectedVariants(
             variant,
-            ($event.target as HTMLSelectElement).value
+            ($event.target as HTMLSelectElement).value,
           )
         "
       >
@@ -90,7 +90,7 @@ const selectedVariants: Ref<ProductVariantOption[]> = ref([])
 const selectedOptions: Ref<{ [key: string]: string | undefined }> = ref({})
 
 const product: ComputedRef<Product> = computed(() =>
-  getProduct(metadata?.category, metadata?.slug)
+  getProduct(metadata?.category, metadata?.slug),
 )
 
 watchEffect(() => {
@@ -135,7 +135,7 @@ function updateSelectedVariants(variant: ProductVariant, value: string): void {
   const newValue = variant.options.find((o) => o.value === value)
   if (newValue === undefined) return
   const selectedVariantsIndex = selectedVariants.value.findIndex(
-    (o) => o.product_variant === newValue?.product_variant
+    (o) => o.product_variant === newValue?.product_variant,
   )
   if (selectedVariantsIndex !== -1) {
     selectedVariants.value.splice(selectedVariantsIndex, 1)
@@ -151,7 +151,7 @@ async function addProduct() {
       selected_variants: selectedVariants.value,
       quantity: 1,
       comment: '',
-    })
+    }),
   )
 }
 </script>

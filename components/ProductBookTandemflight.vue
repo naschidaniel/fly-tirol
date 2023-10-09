@@ -61,6 +61,6 @@ useMetaTags()
 const { page } = usePage()
 
 const isAppointment = computed(
-  () => page.value.slug !== 'tandemflug-geschenkkarte'
+  () => page.value.slug !== 'tandemflug-geschenkkarte',
 )
 </script>

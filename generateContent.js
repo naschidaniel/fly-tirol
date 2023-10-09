@@ -4,7 +4,7 @@ import { marked } from 'marked'
 
 marked.use({
   headerIds: false,
-  mangle: false
+  mangle: false,
 })
 
 function generate(nuxtPage) {
@@ -62,12 +62,12 @@ function generate(nuxtPage) {
     }
     if (isContentImageGallery) {
       content.push(
-        "import ContentImageGallery from '@/components/ContentImageGallery.vue'"
+        "import ContentImageGallery from '@/components/ContentImageGallery.vue'",
       )
     }
     if (isContentPartnerCard) {
       content.push(
-        "import ContentPartnerCard from '@/components/ContentPartnerCard.vue'"
+        "import ContentPartnerCard from '@/components/ContentPartnerCard.vue'",
       )
     }
     if (isContentImageGallery || isContentPartnerCard) {
@@ -87,7 +87,7 @@ function generate(nuxtPage) {
     `import { MetaData } from '@/types/data'\n\n export const ${constName}: MetaData[] = ${json}`,
     (err) => {
       if (err) throw err
-    }
+    },
   )
 }
 
