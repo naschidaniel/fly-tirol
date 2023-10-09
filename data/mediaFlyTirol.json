@@ -34,10 +34,10 @@
     "file": "ausbildung.jpg",
     "stem": "ausbildung",
     "dimensions": {
-      "height": 1365,
-      "width": 2048,
+      "height": 2499,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "Gleitschirm Kurs Flugschule Übungshang",
     "title": "Gleitschirmkursgruppe am Übungshang in Westendorf mit Sebastian Kahn"
@@ -118,11 +118,10 @@
     "file": "grundkurs.jpg",
     "stem": "grundkurs",
     "dimensions": {
-      "height": 770,
-      "orientation": 1,
-      "width": 1365,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.773
+      "ratio": 1
     },
     "alt": "Flugschüler Paragleiten Gleitschirm Wiese Berg",
     "title": "Flugschüler kurz vor der Startvorbereitung"
@@ -133,10 +132,10 @@
     "file": "hoehenflugkurs.jpg",
     "stem": "hoehenflugkurs",
     "dimensions": {
-      "height": 899,
-      "width": 1599,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.779
+      "ratio": 1
     },
     "alt": "Gleitschirm Alpen Fly Tirol Flugschule Hoehenflugkurs",
     "title": "Hoehenflugkurs bei der Flugschule Fly Tirol"
@@ -147,10 +146,10 @@
     "file": "kombikurs.jpg",
     "stem": "kombikurs",
     "dimensions": {
-      "height": 1667,
+      "height": 2500,
       "width": 2500,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "flugschüler schirm wiese wald berg tal kirchbichberg kitzbüheler alpen westendorf tirol",
     "title": "Flugschüler im Grundkurs am Übungshang in Kirchbichl Kitzbüheler Alpen"
@@ -293,10 +292,10 @@
     "file": "fortbildung.jpg",
     "stem": "fortbildung",
     "dimensions": {
-      "height": 1667,
+      "height": 2500,
       "width": 2500,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "gleitschirm wolken himmel berge felsen gardasee acro paragliding infinity roll sebastian kahn sicherheitstraining",
     "title": "Sebastian Kahn beim Sicherheitstraining am Gardasee"
@@ -391,10 +390,10 @@
     "file": "sicherheitstraining-am-gardasee.jpg",
     "stem": "sicherheitstraining-am-gardasee",
     "dimensions": {
-      "height": 1667,
+      "height": 2500,
       "width": 2500,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "wiese berge pilot gardasee wasser himmel steine",
     "title": "Acro Pilot und Fluglehrer Sebastian Kahn am Gardasee"
@@ -644,11 +643,10 @@
     "file": "hoehenflug.jpg",
     "stem": "hoehenflug",
     "dimensions": {
-      "height": 894,
-      "orientation": 1,
-      "width": 1589,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.777
+      "ratio": 1
     },
     "alt": "Tandemflug Tandem Paragliding Doppelflieger Happy",
     "title": "Sebastian und ein Passagier bei einem schönen Tandemflug über den Kitzbühler Alpen"
@@ -659,8 +657,8 @@
     "file": "panoramaflug.jpg",
     "stem": "panoramaflug",
     "dimensions": {
-      "height": 4236,
-      "width": 4236,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
       "ratio": 1
     },
@@ -688,11 +686,10 @@
     "file": "tandemflug-geschenkkarte.jpg",
     "stem": "tandemflug-geschenkkarte",
     "dimensions": {
-      "height": 1231,
-      "orientation": 1,
-      "width": 2189,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1
     },
     "alt": "Tandemfliegen Paragliding Doppelflieger",
     "title": "Stefan mit bei einem Tandemflug über den Kitzbühler Alpen"

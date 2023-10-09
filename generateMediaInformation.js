@@ -29,8 +29,11 @@ for (const nuxtPage of ['flytirol', 'whitecloud']) {
       }
     })
     .forEach((img) => {
-      if (Object.keys(mediaJson).includes(img.url)) return
-      mediaJson[img.url] = img
+      if (Object.keys(mediaJson).includes(img.url)) {
+        mediaJson[img.url].dimensions = img.dimensions
+      } else {
+        mediaJson[img.url] = img
+      }
     })
 
   const dataSorted = Object.keys(mediaJson)
