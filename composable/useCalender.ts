@@ -9,8 +9,10 @@ import { ProductVariantOption } from '@/types/ProductVariantOption'
 const calender: Ref<CalenderEntry[]> = ref([])
 const calenderCategoriesChecked: Ref<string[]> = ref([])
 const calenderProductsChecked: Ref<string[]> = ref([])
-const months = Array.from({ length: 36 }, (_, i) =>
-  new Date(Date.UTC(2023, i, 1, 0, 0, 0)).toLocaleString('de-de', {
+const lastMonth =
+  parseInt(new Date().toLocaleString('de-de', { month: 'numeric' })) - 1
+const months = Array.from({ length: 36 - lastMonth }, (_, i) =>
+  new Date(Date.UTC(2023, i + lastMonth, 1, 0, 0, 0)).toLocaleString('de-de', {
     month: 'long',
     year: 'numeric',
   }),
