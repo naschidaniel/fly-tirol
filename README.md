@@ -43,10 +43,19 @@ export NUXT_PAGE=whiteclout
 # install dependencies
 $ yarn
 
+# RUN buildDev for or steps bellow
+$ yarn buildDev
+
 # create the needed .nuxt folder
 $ mkdir .nuxt && echo '{}' > .nuxt/tsconfig.json
 # create the .public_flytirol and .public_whitecloud folder
 $ yarn create-public
+
+# optimize-images
+$ yarn optimize-images
+
+# if updated generateContent
+$ yarn generateContent
 
 # develop with hot reload at localhost:3000 for linux / mac
 $ yarn dev
