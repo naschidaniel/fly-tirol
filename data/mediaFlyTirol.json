@@ -160,11 +160,10 @@
     "file": "paragleiterschein.jpg",
     "stem": "paragleiterschein",
     "dimensions": {
-      "height": 735,
-      "orientation": 1,
-      "width": 1306,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.777
+      "ratio": 1
     },
     "alt": "Gleitschirm Start Berg Hohe Salve Westendorf",
     "title": "Gleitschirmflieger startet von der Chorealpe in Westendorf während unserer Ausbildung"
@@ -189,10 +188,10 @@
     "file": "tagesbetreuung.jpg",
     "stem": "tagesbetreuung",
     "dimensions": {
-      "height": 2048,
-      "width": 1152,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 0.563
+      "ratio": 1
     },
     "alt": "Gleitschirm Alpen Fly Tirol Flugschule Tagesbetreuung",
     "title": "Tagesbetreuung bei der Flugschule Fly Tirol"
@@ -285,6 +284,20 @@
     },
     "alt": "Gleitschirm Paragliding Wiese fliegen Westendorf",
     "title": "Paragliding Grundkurs in Westendorf"
+  },
+  "/media/fortbildung/b-scheintheoriekurs.jpg": {
+    "url": "/media/fortbildung/b-scheintheoriekurs.jpg",
+    "path": "/media/fortbildung/",
+    "file": "b-scheintheoriekurs.jpg",
+    "stem": "b-scheintheoriekurs",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "B-Scheintheoriekurs",
+    "title": "B-Scheintheoriekurs"
   },
   "/media/fortbildung/fortbildung.jpg": {
     "url": "/media/fortbildung/fortbildung.jpg",
