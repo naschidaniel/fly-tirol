@@ -76,7 +76,7 @@ const basicTrainings = {
 }
 const saftyTrainings = {
   cardTitle: 'Sicherheitstrainings',
-  cardImage: '/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg',
+  cardImage: '/media/sicherheitstrainings/sicherheitstrainings.jpg',
   description: 'Unsere Sicherheitstrainings mit Sebastian Kahn',
   to: '/sicherheitstrainings',
 }

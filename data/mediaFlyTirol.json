@@ -537,6 +537,20 @@
     "alt": "Gleitschirm Wasser Flug Meer",
     "title": "Geh mit uns auf Reise in eines der schönste Fluggebiete in der Türkei"
   },
+  "/media/sicherheitstrainings/sicherheitstrainings.jpg": {
+    "url": "/media/sicherheitstrainings/sicherheitstrainings.jpg",
+    "path": "/media/sicherheitstrainings/",
+    "file": "sicherheitstrainings.jpg",
+    "stem": "sicherheitstrainings",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "Sicherheitstrainings",
+    "title": "Sicherheitstrainings"
+  },
   "/media/tandemfliegen/galerie/0_tandemfliegen_getting_ready.jpg": {
     "url": "/media/tandemfliegen/galerie/0_tandemfliegen_getting_ready.jpg",
     "path": "/media/tandemfliegen/galerie/",
