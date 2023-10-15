@@ -18,9 +18,6 @@
     <div v-if="page.slug == 'tagesbetreuung'">
       <Tagesbetreuung />
     </div>
-    <div v-if="page.slug == 'hike-and-fly-grundkurs'">
-      <HikeAndFlyGrundkurs />
-    </div>
     <ProductBookCourse :is-course="true" />
     <SocialBar />
   </div>
@@ -33,7 +30,6 @@ import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
 import Grundkurs from '@/content_flytirol/ausbildung/grundkurs.vue'
 import Hoehenflugkurs from '@/content_flytirol/ausbildung/hoehenflugkurs.vue'
-import HikeAndFlyGrundkurs from '@/content_flytirol/ausbildung/hike-and-fly-grundkurs.vue'
 import Kombikurs from '@/content_flytirol/ausbildung/kombikurs.vue'
 import ParagleiterscheinTheoriekurs from '@/content_flytirol/ausbildung/paragleiterschein-theoriekurs.vue'
 import Schnupperkurs from '@/content_flytirol/ausbildung/schnupperkurs.vue'
