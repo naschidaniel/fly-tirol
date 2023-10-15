@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader
-      pre-headline="Tandem- und Ausbidlungshotline"
+      pre-headline="Tandem- und Ausbildungshotline"
       headline="Kontakt"
       picture="/media/team/team.jpg"
       :link1="telefonNumber"
