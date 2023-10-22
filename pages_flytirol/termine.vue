@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Kurse, Reisen, Sicherheitstrainings"
       headline="Termine"
-      picture="/media/termine/infinity_am_gardasee.jpg"
+      picture="/media/termine.jpg"
     >
       Finde den passenden Termin, für dein ganz besonderes Erlebniss in der
       Flugschule Westendorf. Wir freuen uns auf dich!
