@@ -1,5 +1,5 @@
 ---
 title: Buchen
-description: Buche dienen Traum vom Fliegen bei der Flugschule Fly-Tirol.com
+description: Buche deinen Traum vom Fliegen bei der Flugschule Fly-Tirol.com
 ---
 
