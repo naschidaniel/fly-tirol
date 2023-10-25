@@ -1,5 +1,6 @@
-import { onMounted, ref, Ref, watchEffect } from 'vue'
-import { Cookie } from '~~/types/data'
+import { onMounted, ref, watchEffect } from 'vue'
+import type { Ref } from 'vue'
+import type { Cookie } from '~~/types/data'
 import { useCookie } from '#imports'
 
 export function useFlyCookies() {

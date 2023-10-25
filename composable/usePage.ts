@@ -1,8 +1,9 @@
-import { computed, ComputedRef } from 'vue'
+import { computed } from 'vue'
+import type { ComputedRef } from 'vue'
 import { useData } from './useData'
 import { metadataFlyTirol, metadataWhiteCloud } from '@/data'
 import { useRoute, showError } from '#imports'
-import { MetaData } from '~/types/data'
+import type { MetaData } from '~/types/data'
 
 export function usePage() {
   const route = useRoute()

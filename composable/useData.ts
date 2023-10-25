@@ -1,5 +1,5 @@
 import { useRuntimeConfig } from '#app'
-import { License } from '@/types/data'
+import type { License } from '@/types/data'
 
 export function useData() {
   const config = useRuntimeConfig()

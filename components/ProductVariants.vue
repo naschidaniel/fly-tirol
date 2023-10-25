@@ -67,12 +67,13 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, Ref, watchEffect, ComputedRef } from 'vue'
+import { computed, ref, watchEffect } from 'vue'
+import type { ComputedRef, Ref } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import { Product } from '@/types/Product'
-import { ProductVariant } from '@/types/ProductVariant'
-import { ProductVariantOption } from '@/types/ProductVariantOption'
+import type { Product } from '@/types/Product'
+import type { ProductVariant } from '@/types/ProductVariant'
+import type { ProductVariantOption } from '@/types/ProductVariantOption'
 import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
 import { useBackend } from '@/composable/useBackend'

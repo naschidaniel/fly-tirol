@@ -1,4 +1,4 @@
-import { ProductVariantOption } from '@/types/ProductVariantOption'
+import type { ProductVariantOption } from '@/types/ProductVariantOption'
 
 export function useFormat() {
   function formatDate(date: undefined | number | Date): string {

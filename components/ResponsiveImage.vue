@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
-import { MediaInformation } from '@/types/data'
+import type { MediaInformation } from '@/types/data'
 import { useData } from '@/composable/useData'
 import { useMedia } from '~~/composable/useMedia'
 

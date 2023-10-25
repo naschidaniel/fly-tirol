@@ -4,7 +4,7 @@ import { useData } from './useData'
 import type { CalenderEntry, CalenderMonth } from '@/types/Calender'
 import type { Product } from '@/types/Product'
 import type { ProductVariant } from '@/types/ProductVariant'
-import { ProductVariantOption } from '@/types/ProductVariantOption'
+import type { ProductVariantOption } from '@/types/ProductVariantOption'
 
 const calender: Ref<CalenderEntry[]> = ref([])
 const calenderCategoriesChecked: Ref<string[]> = ref([])

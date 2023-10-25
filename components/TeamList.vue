@@ -24,8 +24,8 @@
 </template>
 
 <script setup lang="ts">
-import { PropType } from 'vue'
-import { TeamMember } from '@/types/data'
+import type { PropType } from 'vue'
+import type { TeamMember } from '@/types/data'
 
 defineProps({
   members: { type: Array as PropType<TeamMember[]>, required: true },

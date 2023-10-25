@@ -84,7 +84,7 @@ function generate(nuxtPage) {
     nuxtPage === 'flytirol' ? 'metadataFlyTirol' : 'metadataWhiteCloud'
   writeFile(
     `data/${constName}.ts`,
-    `import { MetaData } from '@/types/data'\n\n export const ${constName}: MetaData[] = ${json}`,
+    `import type { MetaData } from '@/types/data'\n\n export const ${constName}: MetaData[] = ${json}`,
     (err) => {
       if (err) throw err
     },

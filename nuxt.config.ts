@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from 'fs'
-import { License } from '@/types/data'
+import type { License } from '@/types/data'
 
 const packages = JSON.parse(readFileSync('package.json', { encoding: 'utf8' }))
 
