@@ -17,9 +17,14 @@ Bergliftstr. 22,
 
 ## Kontakt
 
-Tel.: <a href="tel:+436766422088">+43 676 6422088</a>
+Telefon Büro: <a href="tel:+436766422088"> +43 676 3931494</a>
 
-E-Mail: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
+E-Mail Büro: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
+
+Tandemhotlein: <a href="tel:+436766422088">+43 676 6422088</a>
+
+E-Mail Tandem <a href="mailto:tandem@fly-tirol.com">tandem@fly-tirol.com</a>
+
 ## Daten
 
 Unternehmensgegenstand: Paragleiter - Flugschule und Tandemflüge

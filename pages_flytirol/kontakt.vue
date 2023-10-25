@@ -6,17 +6,61 @@
       picture="/media/team/team.jpg"
       :link1="telefonNumber"
       :link2="mailAddress"
+      :link3="tandemTelefonNumber"
+      :link4="tandemmailAddress"
       :address="address"
     >
       <div>
         <p>
-          Wir haben dein Interesse an einem Tandemflug oder an einem Kurs
+          Wir haben dein Interesse an einem Kurs oder an einem Tandemflug
           geweckt?
         </p>
         <p>
           Dann Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns
           auf dich!
         </p>
+        <div class="flex flex-wrap justify-center mt-6">
+          <div class="flex p-2 w-5/6 md:w-1/3">
+            <a
+              :href="telefonNumber.href"
+              class="btn-primary btn--large w-full"
+              >{{ telefonNumber.name }}</a
+            >
+          </div>
+          <div class="flex p-2 w-5/6 md:w-1/3">
+            <a :href="mailAddress.href" class="btn-primary btn--large w-full">{{
+              mailAddress.name
+            }}</a>
+          </div>
+          <div class="flex p-2 w-5/6 md:w-1/3">
+            <a :href="address.href" class="btn-primary btn--large w-full">{{
+              address.name
+            }}</a>
+          </div>
+        </div>
+        <p class="mt-10 text-lg leading-relaxed max-w-prose">
+          Du willst einen Termin für einen Tandemflug vereinbaren oder hast eine
+          generelle Frage bezüglich eines Tandemflugs? Dann zögere nicht und
+          kontaktiere unsere Tandemhotline via Telefon oder Mail!
+        </p>
+        <div class="flex flex-wrap justify-center mt-6">
+          <div class="flex p-2 w-5/6 md:w-1/2">
+            <a
+              v-if="tandemTelefonNumber"
+              :href="tandemTelefonNumber.href"
+              class="btn-primary btn--large w-full"
+              >{{ tandemTelefonNumber.name }}</a
+            >
+          </div>
+          <div class="flex p-2 w-5/6 md:w-1/2">
+            <a
+              v-if="tandemmailAddress"
+              :href="tandemmailAddress.href"
+              class="btn-primary btn--large w-full"
+              >{{ tandemmailAddress.name }}</a
+            >
+          </div>
+        </div>
       </div>
     </PageHeader>
     <div class="max-w-90 mx-auto text-lg font-heading font-medium leading-snug">
@@ -47,12 +91,20 @@ const address = {
   name: 'Route',
 }
 const telefonNumber = {
-  href: 'tel:00436766422088',
-  name: '+43 676 6422088',
+  href: 'tel:00436763931494',
+  name: '+43 676 3931494',
 }
 const mailAddress = {
   href: 'mailto:info@fly-tirol.com ',
   name: 'info@fly-tirol.com',
+}
+const tandemTelefonNumber = {
+  href: 'tel:00436766422088',
+  name: '+43 676 6422088',
+}
+const tandemmailAddress = {
+  href: 'mailto:tandem@fly-tirol.com ',
+  name: 'tandem@fly-tirol.com',
 }
 
 useMetaTags()

@@ -123,8 +123,8 @@ export default defineNuxtConfig({
       // @ts-ignore
       licenses,
       mail: isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol',
-      phone: isFlyTirol ? '+436766422088' : '+4368181589568',
-      phoneString: isFlyTirol ? '+43 676 6422088' : '+43 681 81589568',
+      phone: isFlyTirol ? '+436763931494' : '+4368181589568',
+      phoneString: isFlyTirol ? '+43 676 3931494' : '+43 681 81589568',
       website: isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol',
       websiteUrl: isFlyTirol
         ? 'https://fly-tirol.com'

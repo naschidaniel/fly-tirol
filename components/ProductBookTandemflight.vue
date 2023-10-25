@@ -18,9 +18,9 @@
                 >
                 oder schreibe uns eine Email
                 <a
-                  href="mailto:info@fly-tirol.com"
+                  href="mailto:tandem@fly-tirol.com"
                   class="underline whitespace-nowrap"
-                  >info@fly-tirol.com</a
+                  >tandem@fly-tirol.com</a
                 >
                 oder per
                 <a
