@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
-      <div v-if="page.slug == 'hoehenflug'">
-        <Hoehenflug />
-      </div>
       <div v-if="page.slug == 'panoramaflug'">
         <Panoramaflug />
+      </div>
+      <div v-if="page.slug == 'thermikflug'">
+        <Thermikflug />
       </div>
       <div v-if="page.slug == 'tandemflug-geschenkkarte'">
         <TandemflugGeschenkkarte />
@@ -44,8 +44,8 @@ import SocialBar from '@/components/SocialBar.vue'
 import ProductBookTandemflight from '@/components/ProductBookTandemflight.vue'
 import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
-import Hoehenflug from '@/content_flytirol/tandemfliegen/hoehenflug.vue'
 import Panoramaflug from '@/content_flytirol/tandemfliegen/panoramaflug.vue'
+import Thermikflug from '@/content_flytirol/tandemfliegen/thermikflug.vue'
 import TandemflugGeschenkkarte from '@/content_flytirol/tandemfliegen/tandemflug-geschenkkarte.vue'
 
 useMetaTags()
