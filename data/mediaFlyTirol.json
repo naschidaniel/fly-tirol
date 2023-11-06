@@ -5,10 +5,10 @@
     "file": "FlyTirolHeader.jpg",
     "stem": "FlyTirolHeader",
     "dimensions": {
-      "height": 1329,
-      "width": 2362,
+      "height": 1667,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.777
+      "ratio": 1.5
     },
     "alt": "Paraglider in den Wolken mit Sicht auf Berge Tandempilot gleitschirm",
     "title": "Tandempilot Paraglider in den Wolken"
@@ -34,7 +34,7 @@
     "file": "ausbildung.jpg",
     "stem": "ausbildung",
     "dimensions": {
-      "height": 2499,
+      "height": 2500,
       "width": 2500,
       "type": "jpg",
       "ratio": 1
@@ -341,20 +341,6 @@
     "alt": "Gleitschirm Fliegen Paragliding Kitzbüheler Alpen Himmel",
     "title": "Thermikfliegen in Westendorf"
   },
-  "/media/reisen/flugsafari.jpg": {
-    "url": "/media/reisen/flugsafari.jpg",
-    "path": "/media/reisen/",
-    "file": "flugsafari.jpg",
-    "stem": "flugsafari",
-    "dimensions": {
-      "height": 2048,
-      "width": 1152,
-      "type": "jpg",
-      "ratio": 0.563
-    },
-    "alt": "Gleitschirm Fliegen Paragliding Kitzbüheler Alpen Himmel",
-    "title": "Thermikfliegen in den Kitzbüheler Alpen"
-  },
   "/media/reisen/infinity_over_village.jpg": {
     "url": "/media/reisen/infinity_over_village.jpg",
     "path": "/media/reisen/",
@@ -473,10 +459,10 @@
     "file": "sicherheitstraining-in-oeluedeniz.jpg",
     "stem": "sicherheitstraining-in-oeluedeniz",
     "dimensions": {
-      "height": 1024,
-      "width": 1536,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "Gleitschirm Wasser Flug Gardassee",
     "title": "Sebastian beim Infinity Thubmling"
@@ -820,20 +806,6 @@
     "alt": "Tandemfliegen Paragliding Doppelflieger",
     "title": "Stefan mit bei einem Tandemflug über den Kitzbühler Alpen"
   },
-  "/media/team/bernie.jpg": {
-    "url": "/media/team/bernie.jpg",
-    "path": "/media/team/",
-    "file": "bernie.jpg",
-    "stem": "bernie",
-    "dimensions": {
-      "height": 1890,
-      "width": 1260,
-      "type": "jpg",
-      "ratio": 0.667
-    },
-    "alt": "Teampic Tandempilot Berni",
-    "title": "Teampic Tandempilot Berni"
-  },
   "/media/team/flytirol_geschichte.jpg": {
     "url": "/media/team/flytirol_geschichte.jpg",
     "path": "/media/team/",
@@ -841,7 +813,6 @@
     "stem": "flytirol_geschichte",
     "dimensions": {
       "height": 1667,
-      "orientation": 1,
       "width": 2500,
       "type": "jpg",
       "ratio": 1.5
@@ -849,33 +820,61 @@
     "alt": "Paragleiter beim Flug in den Wolken über den Bergen mit Blick auf See",
     "title": "Paragleiter beim Flug in den Wolken über den Bergen mit Blick auf See"
   },
+  "/media/team/marc.jpg": {
+    "url": "/media/team/marc.jpg",
+    "path": "/media/team/",
+    "file": "marc.jpg",
+    "stem": "marc",
+    "dimensions": {
+      "height": 2500,
+      "width": 1786,
+      "type": "jpg",
+      "ratio": 0.714
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/martin.jpg": {
+    "url": "/media/team/martin.jpg",
+    "path": "/media/team/",
+    "file": "martin.jpg",
+    "stem": "martin",
+    "dimensions": {
+      "height": 2500,
+      "width": 1786,
+      "type": "jpg",
+      "ratio": 0.714
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/roman.jpg": {
+    "url": "/media/team/roman.jpg",
+    "path": "/media/team/",
+    "file": "roman.jpg",
+    "stem": "roman",
+    "dimensions": {
+      "height": 2500,
+      "width": 1786,
+      "type": "jpg",
+      "ratio": 0.714
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/team/sebastian.jpg": {
     "url": "/media/team/sebastian.jpg",
     "path": "/media/team/",
     "file": "sebastian.jpg",
     "stem": "sebastian",
     "dimensions": {
-      "height": 1890,
-      "width": 1260,
+      "height": 2500,
+      "width": 1786,
       "type": "jpg",
-      "ratio": 0.667
+      "ratio": 0.714
     },
     "alt": "Teampic Sebastian Kahn vor Flugschule Fly Tirol",
     "title": "Teampic Sebastian"
-  },
-  "/media/team/stefan.jpg": {
-    "url": "/media/team/stefan.jpg",
-    "path": "/media/team/",
-    "file": "stefan.jpg",
-    "stem": "stefan",
-    "dimensions": {
-      "height": 1890,
-      "width": 1260,
-      "type": "jpg",
-      "ratio": 0.667
-    },
-    "alt": "Teampic Stefan Tandempilot vor Flugschule Fly Tirol",
-    "title": "Teampic Stefan Tandempilot"
   },
   "/media/team/team.jpg": {
     "url": "/media/team/team.jpg",
@@ -883,8 +882,8 @@
     "file": "team.jpg",
     "stem": "team",
     "dimensions": {
-      "height": 1575,
-      "width": 2362,
+      "height": 1667,
+      "width": 2500,
       "type": "jpg",
       "ratio": 1.5
     },
