@@ -341,6 +341,20 @@
     "alt": "Gleitschirm Fliegen Paragliding Kitzbüheler Alpen Himmel",
     "title": "Thermikfliegen in Westendorf"
   },
+  "/media/reisen/flugsafari.jpg": {
+    "url": "/media/reisen/flugsafari.jpg",
+    "path": "/media/reisen/",
+    "file": "flugsafari.jpg",
+    "stem": "flugsafari",
+    "dimensions": {
+      "height": 2048,
+      "width": 1152,
+      "type": "jpg",
+      "ratio": 0.563
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/reisen/infinity_over_village.jpg": {
     "url": "/media/reisen/infinity_over_village.jpg",
     "path": "/media/reisen/",
