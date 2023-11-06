@@ -12,7 +12,7 @@
     >
       <div>
         <p>
-          Wir haben dein Interesse an einem Kurs oder an einem Tandemflug
+          Wir haben dein Interesse an einem Kurs, einer Flugreise oder an einem Sicherheitstraining
           geweckt?
         </p>
         <p>
