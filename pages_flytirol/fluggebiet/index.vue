@@ -5,7 +5,8 @@
       headline="Westendorf"
       picture="/media/fluggebiet/uebungshang_westendorf.jpg"
     >
-      Coming soon.
+      Westendorf liegt auf einem sonnigen Plateau im Herzen des Brixentals, weit entfernt vom Verkehrslärm. Der charmante Ortskern mit seiner exzellenten Infrastruktur ist von einer imposanten Berglandschaft umgeben und fungiert als Verbindung zwischen dem Skigebiet SkiWelt Wilder Kaiser Brixental und dem Skigebiet Kitzbühel/Kirchberg. 
+      Nicht nur im Winter kommen Gäste auf ihre Kosten, sondern auch im Sommer bietet Westendorf eine Vielzahl an Aktivitäten. Das Naturschutzgebiet Windautal und die atemberaubende Bergwelt mit Gipfeln bis zu 2400 m Höhe schaffen ein schier unerschöpfliches Gebiet für Wanderungen, Paragliding, Mountainbiken und Erholung.
     </PageHeader>
 
     <div class="max-w-90 w-full mx-auto py-6 pt-8 nuxt-content">
