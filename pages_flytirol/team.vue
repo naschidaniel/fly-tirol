@@ -39,7 +39,8 @@ const members: TeamMember[] = [
   {
     name: 'Marc Lutz',
     picture: '/media/team/marc.jpg',
-    position: 'Staatlich geprüfter Fluglehrer, DHV Prüfer, Performancetrainer, Tandempilot',
+    position:
+      'Staatlich geprüfter Fluglehrer, DHV Prüfer, Performancetrainer, Tandempilot',
     information: '',
   },
   {

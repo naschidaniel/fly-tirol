@@ -12,8 +12,9 @@
     >
       <div>
         <p>
-          Wir haben dein Interesse an einem Kurs, einer Flugreise oder an einem Sicherheitstraining
-          geweckt? Du benötigst du nach dem Wiedereinstieg ins Fliegen ein Tagescoaching?
+          Wir haben dein Interesse an einem Kurs, einer Flugreise oder an einem
+          Sicherheitstraining geweckt? Du benötigst du nach dem Wiedereinstieg
+          ins Fliegen ein Tagescoaching?
         </p>
         <p>
           Dann Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns
