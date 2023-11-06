@@ -39,13 +39,13 @@ const members: TeamMember[] = [
   {
     name: 'Marc Lutz',
     picture: '/media/team/marc.jpg',
-    position: 'Staatlich geprüfter Fluglehrer, Tandempilot',
+    position: 'Staatlich geprüfter Fluglehrer, DHV Prüfer, Performancetrainer, Tandempilot',
     information: '',
   },
   {
     name: 'Martin Perdacher',
     picture: '/media/team/martin.jpg',
-    position: 'Tandempilot',
+    position: 'Tandemkoordinator/-pilot, Social Media Manager,',
     information: '',
   },
   {
