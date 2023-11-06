@@ -21,7 +21,7 @@
     "optimize-images:whitecloud": "yarn create-public:whitecloud && ./image-optimizer --source public_whitecloud/media --destination .public_whitecloud/media --widths 384 512 640 768 1024 1280 1536 --qualities 95 90 80 75 75 75 75",
     "optimize-images": "yarn optimize-images:flytirol && yarn optimize-images:whitecloud",
     "create-public": "yarn generateMediaInformation && yarn create-public:flytirol && yarn create-public:whitecloud",
-    "buildDev": "yarn create-public && yarn optimize-images && yarn generateContent"
+    "buildDev": "yarn create-public && yarn optimize-images:flytirol && yarn generateContent"
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.9.4",
