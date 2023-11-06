@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader
-      pre-headline="Flugebiet"
+      pre-headline="Fluggebiet"
       headline="Westendorf"
       picture="/media/fluggebiet/uebungshang_westendorf.jpg"
     >
