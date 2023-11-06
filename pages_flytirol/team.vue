@@ -46,7 +46,7 @@ const members: TeamMember[] = [
   {
     name: 'Martin Perdacher',
     picture: '/media/team/martin.jpg',
-    position: 'Tandemkoordinator/-pilot, Social Media Manager,',
+    position: 'Tandemkoordinator/-pilot, Social Media Manager',
     information: '',
   },
   {
