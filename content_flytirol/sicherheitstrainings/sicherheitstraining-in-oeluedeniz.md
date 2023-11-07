@@ -3,7 +3,7 @@ title: Sicherheitstraining in Ölüdeniz
 description: Flieg mit der Flugschule Fly Tirol an die wunderschöne lykische Küste der Türkei um unter professioneller Anleitung von Sebastian Kahn Extremsituationen zu simulieren und diverse Abstiegshilfen wie z.B. die Steilspirale und den B-Stall zu lernen oder zu perfektionieren, um in Zukunft kritische Flugsituationen zu meistern oder vermeiden zu können.
 location: Ölüdeniz - Türkei
 image: /media/sicherheitstrainings/sicherheitstraining-in-oeluedeniz.jpg
-order: 2
+order: 3
 ---
 
 # Sicherheitstraining Ölüdeniz - Türkei
