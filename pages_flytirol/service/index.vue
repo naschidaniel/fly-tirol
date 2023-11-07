@@ -16,14 +16,14 @@
           kontaktiert uns und wir werden uns gerne um euer Anliegen kümmern.
         </p>
         <div class="flex flex-wrap justify-center mt-6">
-          <div class="flex p-2 w-5/6 md:w-1/3">
+          <div class="flex p-2 w-5/6 md:w-1/2">
             <a
               :href="serviceNumber.href"
               class="btn-primary btn--large w-full"
               >{{ serviceNumber.name }}</a
             >
           </div>
-          <div class="flex p-2 w-5/6 md:w-1/3">
+          <div class="flex p-2 w-5/6 md:w-1/2">
             <a
               :href="serviceMailAddress.href"
               class="btn-primary btn--large w-full"
