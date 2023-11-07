@@ -6,9 +6,6 @@
     <div v-if="page.slug == 'dune-de-pilat-frankreich'">
       <DuneDePilatFrankreich />
     </div>
-    <div v-if="page.slug == 'flugsafari-kitzbueheler-alpen'">
-      <FlugsafariKitzbuehelerAlpen />
-    </div>
     <div v-if="page.slug == 'meduno-italien'">
       <MedunoItalien />
     </div>
@@ -27,7 +24,6 @@ import SocialBar from '@/components/SocialBar.vue'
 import ProductBookCourse from '@/components/ProductBookCourse.vue'
 import BassanoItalien from '@/content_flytirol/reisen/bassano-italien.vue'
 import DuneDePilatFrankreich from '@/content_flytirol/reisen/dune-de-pilat-frankreich.vue'
-import FlugsafariKitzbuehelerAlpen from '@/content_flytirol/reisen/flugsafari-kitzbueheler-alpen.vue'
 import MedunoItalien from '@/content_flytirol/reisen/meduno-italien.vue'
 
 useMetaTags()

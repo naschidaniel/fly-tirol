@@ -5,10 +5,10 @@
     "file": "FlyTirolHeader.jpg",
     "stem": "FlyTirolHeader",
     "dimensions": {
-      "height": 1732,
+      "height": 1746,
       "width": 2500,
       "type": "jpg",
-      "ratio": 1.443
+      "ratio": 1.432
     },
     "alt": "Paraglider in den Wolken mit Sicht auf Berge Tandempilot gleitschirm",
     "title": "Tandempilot Paraglider in den Wolken"
@@ -365,21 +365,6 @@
       "width": 2500,
       "type": "jpg",
       "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/reisen/flugsafari.jpg": {
-    "url": "/media/reisen/flugsafari.jpg",
-    "path": "/media/reisen/",
-    "file": "flugsafari.jpg",
-    "stem": "flugsafari",
-    "dimensions": {
-      "height": 1080,
-      "orientation": 1,
-      "width": 1920,
-      "type": "jpg",
-      "ratio": 1.778
     },
     "alt": "",
     "title": ""
