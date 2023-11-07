@@ -2,7 +2,7 @@
 title: Meduno - Italien
 description: Thermikfliegne in den Dolomiten
 location: Meduno - Italien
-image: /media/available-soon.jpg
+image: /media/reisen/meduno.jpg
 order: 4
 ---
 
