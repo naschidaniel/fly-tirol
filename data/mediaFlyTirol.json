@@ -5,10 +5,10 @@
     "file": "FlyTirolHeader.jpg",
     "stem": "FlyTirolHeader",
     "dimensions": {
-      "height": 2044,
+      "height": 1732,
       "width": 2500,
       "type": "jpg",
-      "ratio": 1.223
+      "ratio": 1.443
     },
     "alt": "Paraglider in den Wolken mit Sicht auf Berge Tandempilot gleitschirm",
     "title": "Tandempilot Paraglider in den Wolken"
@@ -211,6 +211,20 @@
     "alt": "soon available",
     "title": "The Image is soon available"
   },
+  "/media/fluggebiet/brixen.jpg": {
+    "url": "/media/fluggebiet/brixen.jpg",
+    "path": "/media/fluggebiet/",
+    "file": "brixen.jpg",
+    "stem": "brixen",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/fluggebiet/brixental/available-soon_1.jpg": {
     "url": "/media/fluggebiet/brixental/available-soon_1.jpg",
     "path": "/media/fluggebiet/brixental/",
@@ -333,13 +347,27 @@
     "file": "thermikfliegen.jpg",
     "stem": "thermikfliegen",
     "dimensions": {
-      "height": 2048,
-      "width": 1152,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 0.563
+      "ratio": 1
     },
     "alt": "Gleitschirm Fliegen Paragliding Kitzbüheler Alpen Himmel",
     "title": "Thermikfliegen in Westendorf"
+  },
+  "/media/reisen/bassano.jpg": {
+    "url": "/media/reisen/bassano.jpg",
+    "path": "/media/reisen/",
+    "file": "bassano.jpg",
+    "stem": "bassano",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/reisen/flugsafari.jpg": {
     "url": "/media/reisen/flugsafari.jpg",
@@ -370,6 +398,20 @@
     "alt": "paragleiter schirm see berge stadt felsen sebastian kahn gardasee italien dorf küste himmel wolken strand",
     "title": "Sebastian Kahn beim acro paragleiten am gardasee in Italien"
   },
+  "/media/reisen/meduno.jpg": {
+    "url": "/media/reisen/meduno.jpg",
+    "path": "/media/reisen/",
+    "file": "meduno.jpg",
+    "stem": "meduno",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/reisen/oeluedeniz-tuerkei.png": {
     "url": "/media/reisen/oeluedeniz-tuerkei.png",
     "path": "/media/reisen/",
@@ -397,6 +439,20 @@
     },
     "alt": "wiese berge pilot gardasee wasser himmel steine",
     "title": "Acro Pilot und Fluglehrer Sebastian Kahn am Gardasee"
+  },
+  "/media/reisen/pilat.jpg": {
+    "url": "/media/reisen/pilat.jpg",
+    "path": "/media/reisen/",
+    "file": "pilat.jpg",
+    "stem": "pilat",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg": {
     "url": "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg",
@@ -622,6 +678,34 @@
     "alt": "",
     "title": ""
   },
+  "/media/tandemfliegen/galerie/14_Duo.jpg": {
+    "url": "/media/tandemfliegen/galerie/14_Duo.jpg",
+    "path": "/media/tandemfliegen/galerie/",
+    "file": "14_Duo.jpg",
+    "stem": "14_Duo",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen/galerie/15_20230918-DSCF0022.jpg": {
+    "url": "/media/tandemfliegen/galerie/15_20230918-DSCF0022.jpg",
+    "path": "/media/tandemfliegen/galerie/",
+    "file": "15_20230918-DSCF0022.jpg",
+    "stem": "15_20230918-DSCF0022",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/tandemfliegen/galerie/1_takeoff-preperation-sebastian.jpg": {
     "url": "/media/tandemfliegen/galerie/1_takeoff-preperation-sebastian.jpg",
     "path": "/media/tandemfliegen/galerie/",
@@ -664,19 +748,19 @@
     "alt": "happy tandem passagier vor start takeoff in westendorf kitzbüheler alpen tirol",
     "title": "Tandempassagier bei vorbereitung auf Tandemflug in Westendorf Tirol"
   },
-  "/media/tandemfliegen/galerie/4_tandem-paragliding-takeoff.jpg": {
-    "url": "/media/tandemfliegen/galerie/4_tandem-paragliding-takeoff.jpg",
+  "/media/tandemfliegen/galerie/4_20230917-A6402511.jpg": {
+    "url": "/media/tandemfliegen/galerie/4_20230917-A6402511.jpg",
     "path": "/media/tandemfliegen/galerie/",
-    "file": "4_tandem-paragliding-takeoff.jpg",
-    "stem": "4_tandem-paragliding-takeoff",
+    "file": "4_20230917-A6402511.jpg",
+    "stem": "4_20230917-A6402511",
     "dimensions": {
-      "height": 2362,
-      "width": 1575,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 0.667
+      "ratio": 1
     },
-    "alt": "tandempilot und passagier bei start takeoff gleitschirm paragleiter anlauf startplatz schnee westendorf kitzbüheler alpen tirol",
-    "title": "Tandempilot und Passagier bei Start in Westendorf Tirol"
+    "alt": "",
+    "title": ""
   },
   "/media/tandemfliegen/galerie/5_tandemfliegen_start.jpg": {
     "url": "/media/tandemfliegen/galerie/5_tandemfliegen_start.jpg",
@@ -707,19 +791,19 @@
     "alt": "",
     "title": ""
   },
-  "/media/tandemfliegen/galerie/7_hohe-salve-westendorf.jpg": {
-    "url": "/media/tandemfliegen/galerie/7_hohe-salve-westendorf.jpg",
+  "/media/tandemfliegen/galerie/7_20230529-A6400298-2.jpg": {
+    "url": "/media/tandemfliegen/galerie/7_20230529-A6400298-2.jpg",
     "path": "/media/tandemfliegen/galerie/",
-    "file": "7_hohe-salve-westendorf.jpg",
-    "stem": "7_hohe-salve-westendorf",
+    "file": "7_20230529-A6400298-2.jpg",
+    "stem": "7_20230529-A6400298-2",
     "dimensions": {
-      "height": 1575,
-      "width": 2362,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
-    "alt": "Paragleiter Tandem gleitschirm mit Blick auf die Hohe Salve in Westendorf Tirol Kitzbüheler Alpen",
-    "title": "Tandempilot und Passagier im Flug von Westendorf mit Blick auf die Hohe Salve Tirol"
+    "alt": "",
+    "title": ""
   },
   "/media/tandemfliegen/galerie/8_20230504-DSCF2678.jpg": {
     "url": "/media/tandemfliegen/galerie/8_20230504-DSCF2678.jpg",
