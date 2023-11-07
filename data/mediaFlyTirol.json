@@ -535,11 +535,10 @@
     "file": "rettungspackservice.jpg",
     "stem": "rettungspackservice",
     "dimensions": {
-      "height": 1080,
-      "orientation": 1,
-      "width": 1920,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -664,10 +663,10 @@
     "file": "sicherheitstraining-in-oeluedeniz.jpg",
     "stem": "sicherheitstraining-in-oeluedeniz",
     "dimensions": {
-      "height": 2500,
+      "height": 2473,
       "width": 2500,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.011
     },
     "alt": "Gleitschirm Wasser Flug Gardassee",
     "title": "Sebastian beim Infinity Thubmling"
