@@ -30,7 +30,7 @@
           to="/fluggebiet/partner"
         />
         <LinkCard
-          card-image="/media/available-soon.jpg"
+          card-image="/media/fluggebiet/brixen.jpg"
           card-title="Brixental - Westendorf"
           description="Die Orte Brixen im Thale, Kirchberg in Tirol und Westendorf liegen eingebettet mitten in den Kitzbüheler Alpen auf dem Sonnenplateau des Brixentals auf rund 800 m. Sie bieten ein großes Netz an Wander- und Radwegen, vielfältige Veranstaltungen und tolle Ausflugsziele."
           to="/fluggebiet/westendorf"
