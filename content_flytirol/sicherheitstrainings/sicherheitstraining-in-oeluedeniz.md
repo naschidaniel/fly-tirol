@@ -17,7 +17,7 @@ Um diese Perspektive aus der Luft bewundern zu können, starten wir vom Berg Bad
 
 Am Tag nach der Anreise beginnt das Sicherheitstraining mit einer Gebietseinweisung, Manöverbesprechung am Flugsimulator und anhand von Lehrmaterial. Hier wird auf die individuellen Wünsche, dem Können und Bedenken der einzelnen Teilnehmer eingegangen. Auch die individuellen Lernziele der einzelnen Kursteilnehmer werden bei diesem Gespräch berücksichtigt.
 
-Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu unterstützen, werden die Piloten über Funk von unserem Fluglehrer angeleitet. So können die einzelnen Manöver mehrfach während eines Fluges wiederholt und gegebenenfalls korrigiert werden. Die Flüge werden außerdem mit einer Kamera aufgezeichnet. Das Videomaterial wird am Abend mit den Teilnehmern analysiert und besprochen. Außerdem steht für unsere Kursteilnehmer ein Rettungsboot im Gardasee bereit.
+Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu unterstützen, werden die Piloten über Funk von unserem Fluglehrer angeleitet. So können die einzelnen Manöver mehrfach während eines Fluges wiederholt und gegebenenfalls korrigiert werden. Die Flüge werden außerdem mit einer Kamera aufgezeichnet. Das Videomaterial wird am Abend mit den Teilnehmern analysiert und besprochen. Außerdem steht für unsere Kursteilnehmer ein Rettungsboot jederzeit bereit.
 
 Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht die Gruppe zum gemeinsamen Abendessen an die wunderschöne Strandpromenade von Ölüdeniz.
 
