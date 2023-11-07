@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader
-      pre-headline="service"
+      pre-headline="Paragliding"
       headline="Service"
       picture="/media/service/service.jpg"
       :link1="serviceNumber"
@@ -48,7 +48,7 @@ const serviceNumber = {
   name: '+43 676 6422088',
 }
 const serviceMailAddress = {
-  href: 'mailto:service@fly-tirol.com ',
+  href: 'mailto:service@fly-tirol.com',
   name: 'service@fly-tirol.com',
 }
 
