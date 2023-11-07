@@ -13,9 +13,9 @@ Dann flieg mit der Flugschule Fly Tirol an die wunderschöne lykische Küste der
 
 Gemeinsam mit anderen Piloten verbringst du dein Sicherheitstraining mit Gleichgesinnten in die Nähe des Küstenstädchens Fethiye in die türkischen Region Ölüdeniz, die mit ihrem klaren Meerwasser der Lagune in leuchtenden Blau- und Grünschattierungen lockt.
 
-Um diese Perspektive aus der Luft bewundern zu können, starten wir vom Berg Badadğ aus unsere Flüge. Gelandet wird nach einem atemberaubenden Flug über die lykische Küste auf dem feinen Sandstrand der Badebucht, die natürlich auch zum baden einlädt. 
+Um diese Perspektive aus der Luft bewundern zu können, starten wir vom Berg Badadağ aus unsere Flüge. Gelandet wird nach einem atemberaubenden Flug über die lykische Küste auf dem feinen Sandstrand der Badebucht, die natürlich auch zum baden einlädt. 
 
-Am Tag der Anreise beginnen das Sicherheitstraining mit einer Gebietseinweisung, Manöverbesprechung am Flugsimulator und anhand von Lehrmaterial. Hier wird auf die individuellen Wünsche, dem Können und Bedenken der einzelnen Teilnehmer eingegangen. Auch die individuellen Lernziele der einzelnen Kursteilnehmer werden bei diesem Gespräch berücksichtigt.
+Am Tag nach der Anreise beginnt das Sicherheitstraining mit einer Gebietseinweisung, Manöverbesprechung am Flugsimulator und anhand von Lehrmaterial. Hier wird auf die individuellen Wünsche, dem Können und Bedenken der einzelnen Teilnehmer eingegangen. Auch die individuellen Lernziele der einzelnen Kursteilnehmer werden bei diesem Gespräch berücksichtigt.
 
 Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu unterstützen, werden die Piloten über Funk von unserem Fluglehrer angeleitet. So können die einzelnen Manöver mehrfach während eines Fluges wiederholt und gegebenenfalls korrigiert werden. Die Flüge werden außerdem mit einer Kamera aufgezeichnet. Das Videomaterial wird am Abend mit den Teilnehmern analysiert und besprochen. Außerdem steht für unsere Kursteilnehmer ein Rettungsboot im Gardasee bereit.
 
