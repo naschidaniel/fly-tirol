@@ -454,6 +454,155 @@
     "alt": "",
     "title": ""
   },
+  "/media/service/gleitschirm-check.jpg": {
+    "url": "/media/service/gleitschirm-check.jpg",
+    "path": "/media/service/",
+    "file": "gleitschirm-check.jpg",
+    "stem": "gleitschirm-check",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/gleitschirm-check/1_.jpg": {
+    "url": "/media/service/gleitschirm-check/1_.jpg",
+    "path": "/media/service/gleitschirm-check/",
+    "file": "1_.jpg",
+    "stem": "1_",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/gleitschirm-check/2_.jpg": {
+    "url": "/media/service/gleitschirm-check/2_.jpg",
+    "path": "/media/service/gleitschirm-check/",
+    "file": "2_.jpg",
+    "stem": "2_",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/k-probe.jpg": {
+    "url": "/media/service/k-probe.jpg",
+    "path": "/media/service/",
+    "file": "k-probe.jpg",
+    "stem": "k-probe",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/k-probe/1_.jpg": {
+    "url": "/media/service/k-probe/1_.jpg",
+    "path": "/media/service/k-probe/",
+    "file": "1_.jpg",
+    "stem": "1_",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/k-probe/2_.jpg": {
+    "url": "/media/service/k-probe/2_.jpg",
+    "path": "/media/service/k-probe/",
+    "file": "2_.jpg",
+    "stem": "2_",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/rettungspackservice.jpg": {
+    "url": "/media/service/rettungspackservice.jpg",
+    "path": "/media/service/",
+    "file": "rettungspackservice.jpg",
+    "stem": "rettungspackservice",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/rettungspackservice/1_.jpg": {
+    "url": "/media/service/rettungspackservice/1_.jpg",
+    "path": "/media/service/rettungspackservice/",
+    "file": "1_.jpg",
+    "stem": "1_",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/rettungspackservice/2_.jpg": {
+    "url": "/media/service/rettungspackservice/2_.jpg",
+    "path": "/media/service/rettungspackservice/",
+    "file": "2_.jpg",
+    "stem": "2_",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/service/service.jpg": {
+    "url": "/media/service/service.jpg",
+    "path": "/media/service/",
+    "file": "service.jpg",
+    "stem": "service",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg": {
     "url": "/media/sicherheitstrainings/sicherheitstraining-am-gardasee.jpg",
     "path": "/media/sicherheitstrainings/",
