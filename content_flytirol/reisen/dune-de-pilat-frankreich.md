@@ -2,7 +2,7 @@
 title: Dune de Pilat
 description: Dünenfliegen in Dune du Pilat
 location: Dune de Pilat - Frankreich
-image: /media/available-soon.jpg
+image: /media/reisen/pilat.jpg
 order: 2
 ---
 
