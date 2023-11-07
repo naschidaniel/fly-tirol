@@ -3,7 +3,8 @@
     id="book-product"
     class="mt-4 w-full border-2 rounded-lg bg-gray-100 px-4 pb-2"
   >
-    <h2 v-if="isCourse">Kurs Buchen</h2>
+    <h2 v-if="isService">Service Buchen</h2>
+    <h2 v-else-if="isCourse">Kurs Buchen</h2>
     <h2 v-else>Wähle deinen Flug</h2>
     <h3>Details zum Angebot</h3>
     <ProductDetails
@@ -20,8 +21,11 @@
       <div class="w-full p-2">
         <Alert class="mb-4 bg-white">
           <div class="my-2">
-            Wähle im Auswahlfeld den für dich passenden<span v-if="isCourse"
-              >&nbsp; Kurs und falls vorhanden die nötigen Zusatzoptionen.</span
+            Wähle im Auswahlfeld den für dich passenden
+            <span v-if="isService || isCourse"
+              >&nbsp; <span v-if="isService">Service</span>
+              <span v-else>Kurs</span> und falls vorhanden die nötigen
+              Zusatzoptionen.</span
             ><span v-else>&nbsp; Tandemflug.</span>
           </div>
         </Alert>
@@ -30,7 +34,8 @@
     <div class="block">
       <label for="select-course"
         ><span class="text-gray-700"
-          >Wähle deinen gewünschten <span v-if="isCourse"> Kurs</span
+          >Wähle deinen gewünschten <span v-if="isService"> Service</span
+          ><span v-else-if="isCourse"> Kurs</span
           ><span v-else> Tandemflug</span></span
         ></label
       >
@@ -79,7 +84,7 @@ import { usePage } from '@/composable/usePage'
 import { useBackend } from '@/composable/useBackend'
 import { useCalender } from '~~/composable/useCalender'
 
-const { page, isCourse, getMetadata } = usePage()
+const { page, isCourse, isService, getMetadata } = usePage()
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()
 const { selectedDateString } = useCalender()
 const { getProduct, updateCart } = useBackend()

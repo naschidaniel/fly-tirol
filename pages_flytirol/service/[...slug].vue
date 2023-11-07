@@ -9,6 +9,7 @@
     <div v-if="page.slug == 'k-probe'">
       <Kprobe />
     </div>
+    <ProductBookService />
     <SocialBar />
   </div>
 </template>

@@ -26,7 +26,12 @@ export function usePage() {
     )
   })
 
-  const isCourse = computed(() => !page.value.path?.includes('/tandemfliegen'))
+  const isService = computed(() => page.value.path?.includes('/service'))
+  const isCourse = computed(
+    () =>
+      !page.value.path?.includes('/tandemfliegen') &&
+      !page.value.path?.includes('/service'),
+  )
 
   const pages: ComputedRef<MetaData[]> = computed(() => {
     return metadataPages
@@ -43,5 +48,5 @@ export function usePage() {
   function getMetadata(path: string): MetaData {
     return metadataPages.find((p) => p.path === path) as MetaData
   }
-  return { isCourse, getMetadata, page, pages }
+  return { isCourse, isService, getMetadata, page, pages }
 }
