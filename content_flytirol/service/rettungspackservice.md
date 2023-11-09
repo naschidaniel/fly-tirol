@@ -1,23 +1,30 @@
 ---
-title: Rettungspackservice
-description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+title: Retterservice
+description: Retterservice umfasst:
+-	Auslöseprobe
+-	Sichtkontrolle sämtlicher Verbindungsteile
+-	Kontrolle auf mechanische Beschädigungen
+-	Auslüftung und Neupackung 
 location: Westendorf
 image: /media/service/rettungspackservice.jpg
 order: 2
 ---
 
-# Rettungspackservice
+# Retterservice
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Die Intervalle für das Packen von Rettungsfallschirmen schreiben die Hersteller in den Betriebshandbüchern der jeweiligen Schirmtypen vor. Diese Termine sollten eingehalten werden, um ein zuverlässiges und schnelles Öffnen des Gerätes im Notfall zu garantieren. Das übliche Packintervall ist 1x pro Jahr.
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Ist ein Rettungsgerät nass oder feucht geworden oder wurde es großer Hitze ausgesetzt, muss dieses sofort gelüftet und neu gepackt werden!
+
+Nach jeder Öffnung im Notfall – insbesondere nach Überbelastung wie z.B. bei einer Baumlandung – ist das Rettungsgerät einer gründlichen Nachprüfung zu unterziehen. Wenn ein Serviceheft oder ein Packnachweis vorhanden ist, bitte legt dies bei, damit wir einen Eintrag zum Packen machen können.
 
 
 ## Service
 
-- Lorem ipsum dolor sit
-- Lorem ipsum dolor sit
-- Lorem ipsum dolor sit
-- Lorem ipsum dolor sit
+-	Auslöseprobe
+-	Sichtkontrolle sämtlicher Verbindungsteile
+-	Kontrolle auf mechanische Beschädigungen
+-	Das Rettungsgerät wird vor dem Packen mindestens einen Tag bei Raumklima lose zur Lüftung aufgehängt, damit es richtig 'durchatmen' kann und die statische Ladung verliert.
+
 
 <ContentImageGallery path="/media/service/rettungspackservicek/"/>
