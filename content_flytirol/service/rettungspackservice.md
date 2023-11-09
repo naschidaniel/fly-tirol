@@ -1,6 +1,6 @@
 ---
 title: Retterservice
-description: Auslöseprobe, Sichtkontrolle sämtlicher Verbindungsteile, Kontrolle auf mechanische Beschädigungen, Auslüftung und Neupackung 
+description: Wir übernehmen die Wartung eures Rettungsschirms für euch. 
 location: Westendorf
 image: /media/service/rettungspackservice.jpg
 order: 2
