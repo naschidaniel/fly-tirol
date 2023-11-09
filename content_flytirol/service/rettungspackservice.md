@@ -21,10 +21,10 @@ Nach jeder Öffnung im Notfall – insbesondere nach Überbelastung wie z.B. bei
 
 ## Service
 
-Auslöseprobe
-Sichtkontrolle sämtlicher Verbindungsteile
-Kontrolle auf mechanische Beschädigungen
-Das Rettungsgerät wird vor dem Packen mindestens einen Tag bei Raumklima lose zur Lüftung aufgehängt, damit es richtig 'durchatmen' kann und die statische Ladung verliert.
+- Auslöseprobe
+- Sichtkontrolle sämtlicher Verbindungsteile
+- Kontrolle auf mechanische Beschädigungen
+- Das Rettungsgerät wird vor dem Packen mindestens einen Tag bei Raumklima lose zur Lüftung aufgehängt, damit es richtig 'durchatmen' kann und die statische Ladung verliert.
 
 
 <ContentImageGallery path="/media/service/rettungspackservicek/"/>
