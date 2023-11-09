@@ -1,7 +1,10 @@
 <template>
   <div>
     <PageHeader pre-headline="Paragliding" headline="Sicherheitstrainings">
-      Fahre mit Fly Tirol und Sebastian Kahn, dem Team-Weltmeister im Acro-Paragleiten 2014 und Vizeweltmeister im Synchron-Acro-Paragleiten, zu den zwei schönsten Fluggebieten Europas, um dort zu trainieren und dein Verhalten in Extremsituationen zu verbessern.
+      Fahre mit Fly Tirol und Sebastian Kahn, dem Team-Weltmeister im
+      Acro-Paragleiten 2014 und Vizeweltmeister im Synchron-Acro-Paragleiten, zu
+      den zwei schönsten Fluggebieten Europas, um dort zu trainieren und dein
+      Verhalten in Extremsituationen zu verbessern.
     </PageHeader>
     <ProductList />
     <SocialBar />
