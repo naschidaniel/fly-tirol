@@ -16,13 +16,13 @@
           <h3 class="text-2xl font-heading font-semibold mb-1">
             {{ member.name }}
           </h3>
-          <div class="flex items-start text-sm -ml-1 mb-3">
+          <div class="flex items-start -ml-1">
             <IconOutlineClipboardList class="w-4 h-4 mt-0.5" />
             <span class="block leading-none pt-1 ml-1">
               {{ member.position }}
             </span>
           </div>
-          <div class="text-sm mb-4 text-justify">
+          <div class="text-gray-600 mt-4 mb-4">
             {{ member.information }}
           </div>
         </div>
