@@ -1,11 +1,7 @@
 <template>
   <div>
     <PageHeader pre-headline="Paragliding" headline="Sicherheitstrainings">
-      Bist du ein bereits zertifizierter Paragleitpilot mit einem A-Schein und suchst nach einer optimalen Vorbereitung auf außergewöhnliche Flugsituationen? 
-      
-      Unter der fachkundigen Anleitung von Sebastian Kahn, dem Weltmeister im Acro-Paragleiten von 2014 und dem Vizeweltmeister im Synchron-Acrobatic-Paragleiten, bieten wir dir die einzigartige Gelegenheit, an zwei der schönsten Fluggebiete Europas zu trainieren: am malerischen Lago Di Garda in Italien und in der faszinierenden Umgebung von Ölüdeniz in der Türkei. 
-      
-      Diese exklusive Erfahrung ermöglicht es dir, unter realistischen Bedingungen Extremsituationen zu simulieren und wichtige Techniken wie die Steilspirale und den B-Stall zu erlernen oder zu perfektionieren. Unser Ziel ist es, dir das nötige Rüstzeug zu vermitteln, um kritische Flugsituationen in der Zukunft souverän zu meistern oder sogar zu vermeiden.
+      Fahre mit Fly Tirol und Sebastian Kahn, dem Team-Weltmeister im Acro-Paragleiten 2014 und Vizeweltmeister im Synchron-Acro-Paragleiten, zu den zwei schönsten Fluggebieten Europas, um dort zu trainieren und dein Verhalten in Extremsituationen zu verbessern.
     </PageHeader>
     <ProductList />
     <SocialBar />
