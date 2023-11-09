@@ -1,10 +1,6 @@
 ---
 title: Retterservice
-description:
-- Auslöseprobe
-- Sichtkontrolle sämtlicher Verbindungsteile
-- Kontrolle auf mechanische Beschädigungen
-- Auslüftung und Neupackung 
+description: Auslöseprobe, Sichtkontrolle sämtlicher Verbindungsteile, Kontrolle auf mechanische Beschädigungen, Auslüftung und Neupackung 
 location: Westendorf
 image: /media/service/rettungspackservice.jpg
 order: 2
