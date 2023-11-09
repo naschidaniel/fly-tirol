@@ -1,6 +1,7 @@
 ---
 title: Retterservice
-description: Auslöseprobe
+description:
+Auslöseprobe
 Sichtkontrolle sämtlicher Verbindungsteile
 Kontrolle auf mechanische Beschädigungen
 Auslüftung und Neupackung 
