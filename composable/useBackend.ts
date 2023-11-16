@@ -18,78 +18,62 @@ export function useBackend() {
       cart.value?.cart_items?.length >= 1,
   )
   async function initShopBackend() {
-    if (!isFlyTirol) return
-    const request: RequestInit = {
-      method: 'GET',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+    if (!process.client || !isFlyTirol) return
+    await useFetch<Product[]>(`${backend}/api/shop/products`, {
+      onResponse({ response }) {
+        products.value = response._data?.data
       },
-    }
-    const response = await fetch(`${backend}/api/shop/products`, request).then(
-      (response) => {
-        const data = response.json()
-        return data
-      },
-    )
-    products.value = response.data
+    })
   }
 
-  async function initCart(): Promise<Cart | undefined> {
+  async function initCart() {
     if (!process.client || !isFlyTirol) return
     const _cartId = localStorage.getItem('cartId')
+    if (_cartId === null) {
+      console.log('Cart ID is null')
+    }
     const url =
       _cartId !== null
         ? `${backend}/api/shop/cart/${_cartId}`
         : `${backend}/api/shop/cart`
-    const request: RequestInit = {
-      method: 'GET',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
+    await useFetch(url, {
+      onResponse({ response, options }) {
+        if (!response.ok) {
+          console.error(
+            `Response was not okay. The ${_cartId} has been removed from localStorage`,
+          )
+          localStorage.removeItem('cartId')
+          cartId.value = null
+        }
+        try {
+          cart.value = response._data.data
+          cartId.value = response._data.data.id
+          localStorage.setItem('cartId', response._data.data.id)
+          console.info(`The Cart ${_cartId} was loaded from local storrage`)
+        } catch {
+          console.error(
+            `Failed to init the Cart. The ${_cartId} has been removed from localStorage`,
+          )
+          localStorage.removeItem('cartId')
+          cartId.value = null
+        }
+        options.query = options.query || {}
+        options.query.t = new Date()
       },
-    }
-    try {
-      const response = await fetch(url, request).then((response) =>
-        response.json(),
-      )
-      updateCartId(response.data.id as string)
-      cart.value = response.data
-      return response.data as Cart
-    } catch {
-      console.error(
-        `Failed to init the Cart. The ${cartId.value} has been removed from localStorage`,
-      )
-      localStorage.removeItem('cartId')
-      cartId.value = null
-    }
-  }
-
-  function updateCartId(newCartId: string): void {
-    cartId.value = newCartId
-    localStorage.setItem('cartId', newCartId)
-  }
-
-  async function updateCart(body: string): Promise<Cart> {
-    const request: RequestInit = {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body,
-    }
-    const response = await fetch(
-      `${backend}/api/shop/cart/${cartId.value}`,
-      request,
-    ).then((response) => {
-      const data = response.json()
-      return data
     })
-    cart.value = response.data
-    updateCartId(response.data.id as string)
-    navigateTo('/buchen')
-    return response
+  }
+
+  async function updateCart(body: string): Promise<void> {
+    await useFetch(`${backend}/api/shop/cart/${cartId.value}`, {
+      method: 'POST',
+      body,
+      onResponse({ response }) {
+        cart.value = response._data.data
+        cartId.value = response._data.data.id
+        localStorage.setItem('cartId', response._data.data.id)
+        navigateTo('/buchen')
+      },
+    })
   }
 
   function getProduct(category: string, slug: string): Product {
@@ -117,26 +101,14 @@ export function useBackend() {
   }
 
   async function deleteProduct(pk: string | undefined): Promise<void> {
-    const request: RequestInit = {
+    await useFetch(`${backend}/api/shop/cartitem/${pk}`, {
       method: 'DELETE',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    }
-    await fetch(`${backend}/api/shop/cartitem/${pk}`, request)
+    })
     await initCart()
   }
 
   async function deleteCart(pk: string | undefined): Promise<void> {
-    const request: RequestInit = {
-      method: 'DELETE',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    }
-    await fetch(`${backend}/api/shop/cart/${pk}`, request)
+    await useFetch(`${backend}/api/shop/cart/${pk}`, { method: 'DELETE' })
     localStorage.removeItem('cartId')
     await initCart()
   }
