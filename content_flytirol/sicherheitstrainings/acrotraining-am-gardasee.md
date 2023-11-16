@@ -14,7 +14,7 @@ Das Training umfasst je nach Können die typischen Acro-Basics wie z.B. Flyback,
 
 Gemeinsam mit anderen Piloten verbringst du dein Acro-Training mit Gleichgesinnten im italienischen Charme des Gardasees. Am Tag der Anreise beginnt das Acro-Training mit einer Gebietseinweisung, Manöverbesprechung am Flugsimulator und anhand von Lehrmaterial. Hier wird auf die individuellen Wünsche, das Können und die Bedenken der einzelnen Teilnehmer eingegangen. Auch die individuellen Lernziele der einzelnen Kursteilnehmer werden bei diesem Gespräch berücksichtigt. Um unsere Teilnehmer bei den Übungen des Acro-Trainings bestmöglich zu unterstützen, werden die Piloten über Funk von unserem Fluglehrer angeleitet. So können die einzelnen Manöver mehrfach während eines Fluges wiederholt und gegebenenfalls korrigiert werden. Die Flüge werden außerdem mit einer Kamera aufgezeichnet. Das Videomaterial wird am Abend mit den Teilnehmern analysiert und besprochen. Außerdem steht für unsere Kursteilnehmer ein Rettungsboot im Gardasee bereit. Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag geht die Gruppe zum gemeinsamen Abendessen über, um den Tag gemütlich ausklingen zu lassen.
  
-<ContentImageGallery path="/media/sicherheitstrainings/acrotraining-gardasee/galerie/"/>
+<ContentImageGallery path="/media/sicherheitstrainings/acrotraining-gardasee/"/>
 
 ## Ziel des Acrotrainings im Überblick
 * Das Beherrschen der Acro-Basics wie z.B. Flyback, Dynamic Full-Stall, SAT, Misty Flip etc.
