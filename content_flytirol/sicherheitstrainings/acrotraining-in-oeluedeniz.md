@@ -19,10 +19,9 @@ Gemeinsam mit anderen Piloten verbringst du dein Acro-Training mit Gleichgesinnt
 
 ## Ziel des Acrotraining im Überblick
 
-* Das sichere Beherrschen von Abstiegshilfen (Big Ears, B-Stall, Spirale)
-* Gegensteuern und Kurs halten bei seitlichen Einklappern 
-* Sackflug und das erkennen einer Trudelbewegung
-* Weiters möglich: Fullstall, Trudeln 90° - bis über 360° und Ausleitung über Fullstall, Rettung werfen
+* Das Beherrschen der Acro-Basics wie z.B. Flyback, Dynamic Full-Stall, SAT, Misty Flip etc.
+* Arbeiten an den Verbindungen der einzelnen Manöver wie Misty to Heli, SAT to Heli etc.
+* Das Erlernen neuer Tricks, ob twisted oder untwisted.
 
 
 ## Voraussetzungen für das Acrotraining
