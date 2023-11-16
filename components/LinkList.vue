@@ -54,6 +54,12 @@
           :description="travels.description"
           :to="travels.to"
         />
+        <LinkCard
+          :card-image="service.cardImage"
+          :card-title="service.cardTitle"
+          :description="service.description"
+          :to="service.to"
+        />
       </div>
     </div>
   </div>
@@ -91,5 +97,11 @@ const travels = {
   cardImage: '/media/reisen/paragliding_lago_de_garda.jpg',
   description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
   to: '/reisen',
+}
+const service = {
+  cardTitle: 'Service',
+  cardImage: '/media/service/service.jpg',
+  description: 'Dein Gleitschirm in besten Händen',
+  to: '/service',
 }
 </script>
