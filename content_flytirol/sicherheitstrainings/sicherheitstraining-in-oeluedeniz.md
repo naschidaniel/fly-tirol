@@ -21,7 +21,7 @@ Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu
 
 Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht die Gruppe zum gemeinsamen Abendessen an die wunderschöne Strandpromenade von Ölüdeniz.
 
-<ContentImageGallery path="/media/sicherheitstrainings/sicherheitstraining-oelideniz/galerie/"/>
+<ContentImageGallery path="/media/sicherheitstrainings/sicherheitstraining-oeluedeniz/"/>
 
 ## Ziel des Sicherheitstrainings im Überblick
 
