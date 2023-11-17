@@ -1,6 +1,6 @@
 ---
 title: Retterservice
-description: Wir übernehmen die Wartung eures Rettungsschirms für euch. 
+description: Wir übernehmen die Wartung deines Rettungsschirms für dich. 
 location: Westendorf
 image: /media/service/rettungspackservice.jpg
 order: 2
