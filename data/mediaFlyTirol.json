@@ -445,11 +445,10 @@
     "file": "gleitschirm-check.jpg",
     "stem": "gleitschirm-check",
     "dimensions": {
-      "height": 1080,
-      "orientation": 1,
-      "width": 1920,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -474,11 +473,10 @@
     "file": "2_.jpg",
     "stem": "2_",
     "dimensions": {
-      "height": 1080,
-      "orientation": 1,
-      "width": 1920,
+      "height": 2500,
+      "width": 2500,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1
     },
     "alt": "",
     "title": ""
