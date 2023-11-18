@@ -5,7 +5,7 @@ location: Meduno - Italien
 image: /media/reisen/meduno.jpg
 order: 4
 ---
-# Meduno
+# Meduno - Italien
 
 In Norditalien liegt an der Südseite der italienischen Alpen das malerische Dorf Meduno. Der Monte Valinis besticht mit einem großzügigen Startplatz mit weitläufigen Almwiesen und einem grasbewachsenen Gipfelgrat. Dieser lädt vormittags zum Windspielen, Groundhandeln und Top-Landen ein. Mit der einsetzender Thermik starten wir unsere Flüge.
 
