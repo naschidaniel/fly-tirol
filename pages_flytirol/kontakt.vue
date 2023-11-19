@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader
-      pre-headline="Tandem- und Ausbildungshotline"
+      pre-headline="Ausbildungs- und Tandemhotline"
       headline="Kontakt"
       picture="/media/team/team.jpg"
       :link1="telefonNumber"
@@ -10,7 +10,8 @@
       :link4="tandemmailAddress"
       :address="address"
     >
-      <div>
+      <div class="nuxt-content">
+        <h2>Ausbildungshotline</h2>
         <p>
           Wir haben dein Interesse an einem Kurs, einer Flugreise oder an einem
           Sicherheitstraining geweckt? Du benötigst du nach dem Wiedereinstieg
@@ -39,6 +40,7 @@
             }}</a>
           </div>
         </div>
+        <h2>Tandemhotline</h2>
         <p class="mt-10 text-lg leading-relaxed max-w-prose">
           Du willst einen Termin für einen Tandemflug vereinbaren oder hast eine
           generelle Frage bezüglich eines Tandemflugs? Dann zögere nicht und
