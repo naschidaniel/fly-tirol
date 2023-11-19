@@ -40,11 +40,18 @@
         <span v-else>–</span>
       </span>
     </div>
+    <div v-if="isShowAgb" class="flex items-center text-sm -ml-1 mb-2">
+      <IconOutlineBook class="w-4 h-4 mr-1" />
+      <NuxtLink to="/agb" class="underline"
+        >Du hast die Allgemeinen Geschäftsbedingungen gelesen</NuxtLink
+      >
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import IconOutlineAcademicCap from './icon/IconOutlineAcademicCap.vue'
+import IconOutlineBook from './icon/IconOutlineBook.vue'
 import IconOutlineClock from './icon/IconOutlineClock.vue'
 import IconOutlineCash from './icon/IconOutlineCash.vue'
 import IconOutlineCalendar from './icon/IconOutlineCalendar.vue'
@@ -61,5 +68,6 @@ defineProps({
   praxis: { type: String, default: undefined },
   price: { type: String, default: undefined },
   theorie: { type: String, default: undefined },
+  isShowAgb: { type: Boolean, default: false },
 })
 </script>

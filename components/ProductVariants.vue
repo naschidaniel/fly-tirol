@@ -16,6 +16,7 @@
       :price="formatPrice(product?.price)"
       :dates="product?.total_dates"
       :is-show-date="false"
+      :is-show-agb="true"
     />
     <div class="mt-4 flex flex-wrap">
       <div class="w-full p-2">

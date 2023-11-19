@@ -29,3 +29,4 @@ Gemeinsam mit anderen Piloten verbringst du dein Acro-Training mit Gleichgesinnt
 * Gültiger 2-Jahres Check des Paragleitschirms
 * Entsprechende Haftpflichtversicherung
 * Der Rettungsschirm sollte vor nicht mehr als einem Jahr gepackt worden sein 
+* Du hast <a href="/agb" class="underline">die Allgemeinen Geschäftsbedingungen</a> gelesen 
