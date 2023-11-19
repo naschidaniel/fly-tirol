@@ -49,6 +49,12 @@
           :to="saftyTrainings.to"
         />
         <LinkCard
+          :card-image="acroTrainings.cardImage"
+          :card-title="acroTrainings.cardTitle"
+          :description="acroTrainings.description"
+          :to="acroTrainings.to"
+        />
+        <LinkCard
           :card-image="travels.cardImage"
           :card-title="travels.cardTitle"
           :description="travels.description"
@@ -85,6 +91,12 @@ const saftyTrainings = {
   cardImage: '/media/sicherheitstrainings/sicherheitstrainings.jpg',
   description: 'Unsere Sicherheitstrainings mit Sebastian Kahn',
   to: '/sicherheitstrainings',
+}
+const acroTrainings = {
+  cardTitle: 'Acrotrainings',
+  cardImage: '/media/acrotrainings/acrotrainings.jpg',
+  description: 'Unsere Acrotrainings mit Sebastian Kahn',
+  to: '/acrotrainings',
 }
 const tandemflights = {
   cardTitle: 'Tandemflüge',

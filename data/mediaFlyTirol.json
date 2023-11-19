@@ -28,6 +28,160 @@
     "alt": "Logo Fly Tirol Flugschule Westendorf",
     "title": "Logo Fly Tirol"
   },
+  "/media/acrotrainings/acrotraining-am-gardasee.jpg": {
+    "url": "/media/acrotrainings/acrotraining-am-gardasee.jpg",
+    "path": "/media/acrotrainings/",
+    "file": "acrotraining-am-gardasee.jpg",
+    "stem": "acrotraining-am-gardasee",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-gardasee/1_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/acrotrainings/acrotraining-gardasee/1_sicherheitstraining_gardasee.jpg",
+    "path": "/media/acrotrainings/acrotraining-gardasee/",
+    "file": "1_sicherheitstraining_gardasee.jpg",
+    "stem": "1_sicherheitstraining_gardasee",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-gardasee/2_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/acrotrainings/acrotraining-gardasee/2_sicherheitstraining_gardasee.jpg",
+    "path": "/media/acrotrainings/acrotraining-gardasee/",
+    "file": "2_sicherheitstraining_gardasee.jpg",
+    "stem": "2_sicherheitstraining_gardasee",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-gardasee/3_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/acrotrainings/acrotraining-gardasee/3_sicherheitstraining_gardasee.jpg",
+    "path": "/media/acrotrainings/acrotraining-gardasee/",
+    "file": "3_sicherheitstraining_gardasee.jpg",
+    "stem": "3_sicherheitstraining_gardasee",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-gardasee/4_sicherheitstraining_gardasee.jpg": {
+    "url": "/media/acrotrainings/acrotraining-gardasee/4_sicherheitstraining_gardasee.jpg",
+    "path": "/media/acrotrainings/acrotraining-gardasee/",
+    "file": "4_sicherheitstraining_gardasee.jpg",
+    "stem": "4_sicherheitstraining_gardasee",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-in-oeluedeniz.jpg": {
+    "url": "/media/acrotrainings/acrotraining-in-oeluedeniz.jpg",
+    "path": "/media/acrotrainings/",
+    "file": "acrotraining-in-oeluedeniz.jpg",
+    "stem": "acrotraining-in-oeluedeniz",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-oeluedeniz/1_sicherheitstraining_oeluedeniz.jpg": {
+    "url": "/media/acrotrainings/acrotraining-oeluedeniz/1_sicherheitstraining_oeluedeniz.jpg",
+    "path": "/media/acrotrainings/acrotraining-oeluedeniz/",
+    "file": "1_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "1_sicherheitstraining_oeluedeniz",
+    "dimensions": {
+      "height": 1024,
+      "width": 1536,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-oeluedeniz/2_sicherheitstraining_oeluedeniz.jpg": {
+    "url": "/media/acrotrainings/acrotraining-oeluedeniz/2_sicherheitstraining_oeluedeniz.jpg",
+    "path": "/media/acrotrainings/acrotraining-oeluedeniz/",
+    "file": "2_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "2_sicherheitstraining_oeluedeniz",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-oeluedeniz/3_sicherheitstraining_oeluedeniz.jpg": {
+    "url": "/media/acrotrainings/acrotraining-oeluedeniz/3_sicherheitstraining_oeluedeniz.jpg",
+    "path": "/media/acrotrainings/acrotraining-oeluedeniz/",
+    "file": "3_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "3_sicherheitstraining_oeluedeniz",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotraining-oeluedeniz/4_sicherheitstraining_oeluedeniz.jpg": {
+    "url": "/media/acrotrainings/acrotraining-oeluedeniz/4_sicherheitstraining_oeluedeniz.jpg",
+    "path": "/media/acrotrainings/acrotraining-oeluedeniz/",
+    "file": "4_sicherheitstraining_oeluedeniz.jpg",
+    "stem": "4_sicherheitstraining_oeluedeniz",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/acrotrainings/acrotrainings.jpg": {
+    "url": "/media/acrotrainings/acrotrainings.jpg",
+    "path": "/media/acrotrainings/",
+    "file": "acrotrainings.jpg",
+    "stem": "acrotrainings",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/ausbildung/ausbildung.jpg": {
     "url": "/media/ausbildung/ausbildung.jpg",
     "path": "/media/ausbildung/",
@@ -580,146 +734,6 @@
       "width": 2500,
       "type": "jpg",
       "ratio": 1.5
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-am-gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-am-gardasee.jpg",
-    "path": "/media/sicherheitstrainings/",
-    "file": "acrotraining-am-gardasee.jpg",
-    "stem": "acrotraining-am-gardasee",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-gardasee/1_sicherheitstraining_gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-gardasee/1_sicherheitstraining_gardasee.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-gardasee/",
-    "file": "1_sicherheitstraining_gardasee.jpg",
-    "stem": "1_sicherheitstraining_gardasee",
-    "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-gardasee/2_sicherheitstraining_gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-gardasee/2_sicherheitstraining_gardasee.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-gardasee/",
-    "file": "2_sicherheitstraining_gardasee.jpg",
-    "stem": "2_sicherheitstraining_gardasee",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-gardasee/3_sicherheitstraining_gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-gardasee/3_sicherheitstraining_gardasee.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-gardasee/",
-    "file": "3_sicherheitstraining_gardasee.jpg",
-    "stem": "3_sicherheitstraining_gardasee",
-    "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-gardasee/4_sicherheitstraining_gardasee.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-gardasee/4_sicherheitstraining_gardasee.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-gardasee/",
-    "file": "4_sicherheitstraining_gardasee.jpg",
-    "stem": "4_sicherheitstraining_gardasee",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-in-oeluedeniz.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-in-oeluedeniz.jpg",
-    "path": "/media/sicherheitstrainings/",
-    "file": "acrotraining-in-oeluedeniz.jpg",
-    "stem": "acrotraining-in-oeluedeniz",
-    "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-oeluedeniz/1_sicherheitstraining_oeluedeniz.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-oeluedeniz/1_sicherheitstraining_oeluedeniz.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-oeluedeniz/",
-    "file": "1_sicherheitstraining_oeluedeniz.jpg",
-    "stem": "1_sicherheitstraining_oeluedeniz",
-    "dimensions": {
-      "height": 1024,
-      "width": 1536,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-oeluedeniz/2_sicherheitstraining_oeluedeniz.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-oeluedeniz/2_sicherheitstraining_oeluedeniz.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-oeluedeniz/",
-    "file": "2_sicherheitstraining_oeluedeniz.jpg",
-    "stem": "2_sicherheitstraining_oeluedeniz",
-    "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-oeluedeniz/3_sicherheitstraining_oeluedeniz.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-oeluedeniz/3_sicherheitstraining_oeluedeniz.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-oeluedeniz/",
-    "file": "3_sicherheitstraining_oeluedeniz.jpg",
-    "stem": "3_sicherheitstraining_oeluedeniz",
-    "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/sicherheitstrainings/acrotraining-oeluedeniz/4_sicherheitstraining_oeluedeniz.jpg": {
-    "url": "/media/sicherheitstrainings/acrotraining-oeluedeniz/4_sicherheitstraining_oeluedeniz.jpg",
-    "path": "/media/sicherheitstrainings/acrotraining-oeluedeniz/",
-    "file": "4_sicherheitstraining_oeluedeniz.jpg",
-    "stem": "4_sicherheitstraining_oeluedeniz",
-    "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
     },
     "alt": "",
     "title": ""

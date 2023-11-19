@@ -13,6 +13,7 @@
           name="Sicherheitstrainings"
           to="/sicherheitstrainings"
         />
+        <NavigationNavbarLink name="Acrotrainings" to="/acrotrainings" />
         <NavigationNavbarLink name="Reisen" to="/reisen" />
         <NavigationNavbarLink name="Termine" to="/termine" />
         <NavigationNavbarLink name="Team" to="/team" />
