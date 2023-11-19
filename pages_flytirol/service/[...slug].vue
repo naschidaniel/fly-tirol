@@ -6,9 +6,6 @@
     <div v-if="page.slug == 'rettungspackservice'">
       <Rettungspackservice />
     </div>
-    <div v-if="page.slug == 'k-probe'">
-      <Kprobe />
-    </div>
     <ProductBookService />
     <SocialBar />
   </div>
@@ -20,7 +17,6 @@ import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
 import GleitschirmCheck from '@/content_flytirol/service/gleitschirm-check.vue'
 import Rettungspackservice from '@/content_flytirol/service/rettungspackservice.vue'
-import Kprobe from '@/content_flytirol/service/k-probe.vue'
 
 const { page } = usePage()
 useMetaTags()
