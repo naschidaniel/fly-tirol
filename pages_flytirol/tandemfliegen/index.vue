@@ -17,15 +17,23 @@
     </div>
     <InfoBox headline="Voraussetzungen für einen Tandemflug">
       <ul>
-       <li>Festes Schuhwerk</li
-       <li>Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung</li>
-      <li>Optische Brille oder Sonnenbrille erwünscht, da sie vor dem Fahrtwind beim Fliegen schützt.</li>
+        <li>Festes Schuhwerk</li>
         <li>
-          Ein Mindestgewicht von 25 kg und keine Einschränkung beim Gehen. 
-          Sollte es eine Einschränkung geben, teile uns dies bitte im Voraus mit, 
-          damit wir gemeinsam eine Lösung finden können.
+          Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung
         </li>
-        <li>Informiere uns außerdem im Voraus, wenn du über 100 kg wiegst, damit wir uns entsprechend vorbereiten können.</li>
+        <li>
+          Optische Brille oder Sonnenbrille erwünscht, da sie vor dem Fahrtwind
+          beim Fliegen schützt.
+        </li>
+        <li>
+          Ein Mindestgewicht von 25 kg und keine Einschränkung beim Gehen.
+          Sollte es eine Einschränkung geben, teile uns dies bitte im Voraus
+          mit, damit wir gemeinsam eine Lösung finden können.
+        </li>
+        <li>
+          Informiere uns außerdem im Voraus, wenn du über 100 kg wiegst, damit
+          wir uns entsprechend vorbereiten können.
+        </li>
       </ul>
     </InfoBox>
     <SocialBar />

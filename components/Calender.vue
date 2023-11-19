@@ -64,12 +64,12 @@
               entry.category === 'Ausbildung'
                 ? 'bg-green-300'
                 : entry.category === 'Fortbildung'
-                ? 'bg-blue-100'
-                : entry.category === 'Sicherheitstrainings'
-                ? 'bg-blue-300'
-                : entry.category === 'Reisen'
-                ? 'bg-red-200'
-                : 'bg-gray-100'
+                  ? 'bg-blue-100'
+                  : entry.category === 'Sicherheitstrainings'
+                    ? 'bg-blue-300'
+                    : entry.category === 'Reisen'
+                      ? 'bg-red-200'
+                      : 'bg-gray-100'
             "
             >{{ entry.category }}</span
           >

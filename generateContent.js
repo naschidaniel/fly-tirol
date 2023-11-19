@@ -20,10 +20,10 @@ function generate(nuxtPage) {
       folder === `content_${nuxtPage}` && slug === 'index'
         ? '/'
         : folder === `content_${nuxtPage}`
-        ? `/${slug}/`
-        : slug === 'index'
-        ? `/${folder}/`
-        : `/${folder}/${slug}/`
+          ? `/${slug}/`
+          : slug === 'index'
+            ? `/${folder}/`
+            : `/${folder}/${slug}/`
     const category = folder === `content_${nuxtPage}` ? '' : folder
 
     // parse markdown files
