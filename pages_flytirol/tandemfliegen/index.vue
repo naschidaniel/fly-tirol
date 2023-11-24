@@ -8,13 +8,6 @@
       Vogelperspektive.
     </PageHeader>
     <ProductList />
-    <div class="flex flex-wrap max-w-90 mx-auto py-12 lg:py-24 nuxt-content">
-      <h2>Bildergalerie</h2>
-      <ContentImageGallery
-        path="/media/tandemfliegen/galerie/"
-        class="w-full md:pl-8"
-      />
-    </div>
     <InfoBox headline="Voraussetzungen für einen Tandemflug">
       <ul>
         <li>Festes Schuhwerk</li>
@@ -34,6 +27,9 @@
           Informiere uns außerdem im Voraus, wenn du über 100 kg wiegst, damit
           wir uns entsprechend vorbereiten können.
         </li>
+        <li>
+          Die Preise vestehen sind exklusive von Liftkarten und Fotos vom Flug.
+        </li>
       </ul>
     </InfoBox>
     <SocialBar />
@@ -41,7 +37,6 @@
 </template>
 
 <script setup lang="ts">
-import ContentImageGallery from '@/components/ContentImageGallery.vue'
 import InfoBox from '@/components/InfoBox.vue'
 import SocialBar from '@/components/SocialBar.vue'
 import ProductList from '@/components/ProductList.vue'
