@@ -13,6 +13,6 @@ Schwebe wie ein Vogel frei durch die Luft und genieße dabei die atemberaubende 
 
 Wir freuen uns auf dich!
 
-## Info
+## Info:
 
 Panoramaflüge sind das ganze Jahr über möglich und unterscheiden sich dadurch von unseren Thermikflügen, die nur in den Frühjahrs- bzw. Sommermonaten angeboten werden können. Buche online oder kontaktiere einfach unsere Tandemhotline, um dir gleich deinen Termin zu sichern!
