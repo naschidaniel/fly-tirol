@@ -439,6 +439,34 @@
     "alt": "",
     "title": ""
   },
+  "/media/fluggebiet/luftraum.jpg": {
+    "url": "/media/fluggebiet/luftraum.jpg",
+    "path": "/media/fluggebiet/",
+    "file": "luftraum.jpg",
+    "stem": "luftraum",
+    "dimensions": {
+      "height": 1554,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.609
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/fluggebiet/regeln.jpg": {
+    "url": "/media/fluggebiet/regeln.jpg",
+    "path": "/media/fluggebiet/",
+    "file": "regeln.jpg",
+    "stem": "regeln",
+    "dimensions": {
+      "height": 1819,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.374
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/fluggebiet/uebungshang_westendorf.jpg": {
     "url": "/media/fluggebiet/uebungshang_westendorf.jpg",
     "path": "/media/fluggebiet/",
