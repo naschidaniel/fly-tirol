@@ -8,6 +8,10 @@
       Vogelperspektive.
     </PageHeader>
     <ProductList />
+    <div>
+      <h4>Info:</h4>
+      <li>Alle angeführten Preise sind exclusive Lift und Fotos.</li>
+    </div>
     <InfoBox headline="Voraussetzungen für einen Tandemflug">
       <ul>
         <li>Festes Schuhwerk</li>
@@ -26,9 +30,6 @@
         <li>
           Informiere uns außerdem im Voraus, wenn du über 100 kg wiegst, damit
           wir uns entsprechend vorbereiten können.
-        </li>
-        <li>
-          Die Preise vestehen sind exklusive von Liftkarten und Fotos vom Flug.
         </li>
       </ul>
     </InfoBox>
