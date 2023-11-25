@@ -65,7 +65,12 @@ Die Unwirksamkeit einzelner Bestimmungen dieser AGB oder des Ausbildungs- und Ku
 
 Es gilt österreichisches Recht. Als Erfüllungsort gilt der Sitz der Flugschule; für sämtliche Streitigkeiten aus unseren Vertragsabschlüssen wird das Bezirksgericht Kitzbühel als zuständiges Gericht vereinbart.
 
+<br>
 **Mai 2023**
+<br>
+<br>
 
 **Die Geschäftsführung**
+<br>
+<br>
 **Feel Free GmbH Westendorf Tirol**
