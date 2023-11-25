@@ -28,11 +28,11 @@ Die besondere Lage der Choralpe in Westendorf bietet im Frühjahr hervorragende 
 
 ## Luftraumgliederung:
 
-Coming soon.
+![](public_flytirol/media/fluggebiet/luftraum.jpg)
 
 ## Örtliche Auflagen:
 
-Coming soon.
+![](public_flytirol/media/fluggebiet/regeln.jpg)
 
 ## Meteorologische Besonderheiten:
 
