@@ -33,6 +33,7 @@ export interface MetaData {
   description: string
   draft?: string
   duration?: string
+  excluded?: string
   flightDuration?: string
   image?: string
   imageGallery?: string

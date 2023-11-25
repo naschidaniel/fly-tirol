@@ -2,6 +2,7 @@
 title: Panoramaflug
 description: Das wunderschöne Flugerlebnis vom besten Flugberg der Kitzbüheler Alpen dauert ca. 15 - 20 Minuten.
 location: Westendorf
+excluded: Der angeführte Preis versteht sich ohne Lift und Fotos.
 isAppointment: true
 image: /media/tandemfliegen/hoehenflug.jpg
 order: 1

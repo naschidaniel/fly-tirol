@@ -40,6 +40,12 @@
         <span v-else>–</span>
       </span>
     </div>
+    <div v-if="excluded" class="flex items-center text-sm -ml-1 mb-4">
+      <IconOutlineMinusCircle class="w-4 h-4 mr-1" />
+      <span class="block leading-none pt-1 ml-1">
+        {{ excluded }}
+      </span>
+    </div>
     <div v-if="isShowAgb" class="flex items-center text-sm -ml-1 mb-2">
       <IconOutlineBook class="w-4 h-4 mr-1" />
       <NuxtLink to="/agb" class="underline"
@@ -56,12 +62,14 @@ import IconOutlineClock from './icon/IconOutlineClock.vue'
 import IconOutlineCash from './icon/IconOutlineCash.vue'
 import IconOutlineCalendar from './icon/IconOutlineCalendar.vue'
 import IconOutlineLocationMarker from './icon/IconOutlineLocationMarker.vue'
+import IconOutlineMinusCircle from './icon/IconOutlineMinusCircle.vue'
 import IconOutlinePaperPlane from './icon/IconOutlinePaperPlane.vue'
 import IconSpinner from './icon/IconSpinner.vue'
 
 defineProps({
   dates: { type: Number, default: undefined },
   duration: { type: String, default: undefined },
+  excluded: { type: String, default: undefined },
   flightDuration: { type: String, default: undefined },
   isShowDate: { type: Boolean, default: true },
   location: { type: String, default: undefined },

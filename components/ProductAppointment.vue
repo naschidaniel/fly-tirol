@@ -1,6 +1,13 @@
 <template>
-  <div class="my-auto w-full lg:w-5/6">
-    <div class="grid grid-cols-1 gap-6">
+  <div class="w-full lg:w-5/6 border-2 rounded-lg bg-gray-100 px-4 pb-2">
+    <h3>Details zum {{ metadata.title }}</h3>
+    <ProductDetails
+      :location="metadata.location"
+      :price="formatPrice(product.price)"
+      :excluded="metadata.excluded"
+      :is-show-date="false"
+    />
+    <div class="grid grid-cols-1 gap-6 mt-3">
       <label class="block">
         <span :class="isFormValid ? 'text-gray-700' : 'text-red-600'"
           >Wähle deinen Wunschtermin</span
@@ -58,10 +65,11 @@ import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
 import { useBackend } from '@/composable/useBackend'
 import type { Product } from '@/types/Product'
+import ProductDetails from '@/components/ProductDetails.vue'
 
 const { updateCart, getProduct } = useBackend()
 
-const { formatDate } = useFormat()
+const { formatDate, formatPrice } = useFormat()
 const { page, getMetadata } = usePage()
 
 const metadata = getMetadata(page.value.path)

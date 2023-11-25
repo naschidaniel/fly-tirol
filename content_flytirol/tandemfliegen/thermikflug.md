@@ -2,6 +2,7 @@
 title: Thermikflug
 description: Bei unserem Thermikflug nutzen wir wie die Vögel die thermischen Aufwinde, um  ca. 30-45 Mnuten über die atemberaubende Kulisse der Kitzbüheler Alpen zu fliegen.
 location: Westendorf
+excluded: Der angeführte Preis versteht sich ohne Lift und Fotos.
 isAppointment: true
 image: /media/tandemfliegen/panoramaflug.jpg
 order: 2

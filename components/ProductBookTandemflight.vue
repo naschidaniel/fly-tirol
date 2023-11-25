@@ -3,7 +3,7 @@
     <h2>Dein Wunschtermin</h2>
     <div class="flex flex-wrap">
       <div class="w-full md:w-1/2 md:p-2">
-        <Alert class="mt-2 mr-3">
+        <Alert class="mt-2 md:mr-3">
           <div class="mx-1 md:my-2">
             <ol class="list-decimal">
               <li v-if="isAppointment">Wunschdatum auswählen</li>
@@ -35,8 +35,8 @@
           </div>
         </Alert>
       </div>
-      <div class="w-full mt-2 md:w-1/2 md:mt-0 md:p-2">
-        <div class="mx-1 md:my-3">
+      <div class="w-full md:w-1/2 mt-4 md:mt-0 md:p-2">
+        <div class="md:my-3">
           <div v-if="isAppointment">
             <ProductAppointment />
           </div>

@@ -8,10 +8,6 @@
       Vogelperspektive.
     </PageHeader>
     <ProductList />
-    <div>
-      <h4>Info:</h4>
-      <li>Alle angeführten Preise sind exclusive Lift und Fotos.</li>
-    </div>
     <InfoBox headline="Voraussetzungen für einen Tandemflug">
       <ul>
         <li>Festes Schuhwerk</li>
