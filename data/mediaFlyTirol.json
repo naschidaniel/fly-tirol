@@ -445,10 +445,10 @@
     "file": "luftraum.jpg",
     "stem": "luftraum",
     "dimensions": {
-      "height": 1554,
-      "width": 2500,
+      "height": 1258,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.609
+      "ratio": 1.59
     },
     "alt": "",
     "title": ""
@@ -459,10 +459,10 @@
     "file": "regeln.jpg",
     "stem": "regeln",
     "dimensions": {
-      "height": 1819,
-      "width": 2500,
+      "height": 1455,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.374
+      "ratio": 1.375
     },
     "alt": "",
     "title": ""
