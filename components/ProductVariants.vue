@@ -10,13 +10,13 @@
     <ProductDetails
       :location="metadata?.location"
       :duration="metadata?.duration"
+      :excluded="metadata?.excluded"
       :praxis="metadata?.praxis"
       :flight-duration="metadata?.flightDuration"
       :theorie="metadata?.theorie"
       :price="formatPrice(product?.price)"
       :dates="product?.total_dates"
       :is-show-date="false"
-      :is-show-agb="true"
     />
     <div class="mt-4 flex flex-wrap">
       <div class="w-full p-2">

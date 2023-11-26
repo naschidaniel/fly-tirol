@@ -33,14 +33,14 @@
       </span>
       <IconSpinner v-else class="animate-spin h-4 w-4 text-brand" />
     </div>
-    <div v-if="isShowDate" class="flex items-center text-sm -ml-1 mb-4">
+    <div v-if="isShowDate" class="flex items-center text-sm -ml-1 mb-2">
       <IconOutlineCalendar class="w-4 h-4 mr-1" />
       <span class="block leading-none pt-1">
         <span v-if="dates && dates >= 1">{{ dates }} Termine</span>
         <span v-else>–</span>
       </span>
     </div>
-    <div v-if="excluded" class="flex items-center text-sm -ml-1 mb-4">
+    <div v-if="excluded" class="flex items-center text-sm -ml-1 mb-2">
       <IconOutlineMinusCircle class="w-4 h-4 mr-1" />
       <span class="block leading-none pt-1 ml-1">
         {{ excluded }}
@@ -76,6 +76,6 @@ defineProps({
   praxis: { type: String, default: undefined },
   price: { type: String, default: undefined },
   theorie: { type: String, default: undefined },
-  isShowAgb: { type: Boolean, default: false },
+  isShowAgb: { type: Boolean, default: true },
 })
 </script>

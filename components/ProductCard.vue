@@ -30,6 +30,7 @@
             :price="price"
             :dates="product?.total_dates"
             :is-show-date="isFlyTirol ? isCourse : false"
+            :is-show-agb="false"
           />
           <p v-if="!isCourse" class="text-gray-600 mt-4">
             {{ metadata.description }}
