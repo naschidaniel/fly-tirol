@@ -2,6 +2,7 @@
 title: Retterservice
 description: Wir übernehmen die Wartung deines Rettungsschirms für dich. 
 location: Westendorf
+excluded: exklusive Versandkosten
 image: /media/service/rettungspackservice.jpg
 order: 2
 ---

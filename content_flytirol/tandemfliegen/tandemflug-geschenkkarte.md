@@ -3,6 +3,7 @@ title: Tandemflug Geschenkkarte
 description: Verschenke ein wunderschönes Flugerlebnis in den Kitzbüheler Alpen als Geschenkkarte.
 location: Kitzbüheler Alpen
 isAppointment: false
+excluded: Der angeführte Preis versteht sich ohne Lift und Fotos.
 image: /media/tandemfliegen/tandemflug-geschenkkarte.jpg
 order: 4
 ---

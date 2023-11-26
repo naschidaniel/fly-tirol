@@ -36,7 +36,7 @@
       </div>
       <div class="w-full mt-2 md:w-1/2 md:mt-0 md:p-2">
         <div class="mx-1 md:my-3">
-          <ProductVariants :is-course="false" />
+          <ProductVariants :is-course="false" :excluded="metadata" />
         </div>
       </div>
     </div>
@@ -48,7 +48,8 @@ import Alert from '@/components/Alert.vue'
 import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
 import ProductVariants from '@/components/ProductVariants.vue'
+const { page, getMetadata } = usePage()
 
+const metadata = getMetadata(page.value.path)
 useMetaTags()
-const { page } = usePage()
 </script>

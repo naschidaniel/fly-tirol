@@ -2,6 +2,7 @@
 title: Gleitschirm-Check
 description: Umfassender 2 Jahres-Check deines Gleitschirmes.
 location: Westendorf
+excluded: exklusive Versandkosten
 image: /media/service/gleitschirm-check.jpg
 order: 1
 ---
