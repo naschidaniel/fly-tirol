@@ -29,7 +29,7 @@
     "heroicons": "^2.0.18",
     "leaflet": "^1.9.4",
     "nuxt": "^3.8.2",
-    "simple-icons": "^9.21.0"
+    "simple-icons": "^10.0.0"
   },
   "devDependencies": {
     "@nuxt/kit": "^3.8.2",
@@ -46,11 +46,11 @@
     "eslint-plugin-vue": "^9.18.1",
     "glob": "^10.3.10",
     "image-size": "^1.0.2",
-    "marked": "^10.0.0",
+    "marked": "^11.0.0",
     "nitropack": "^2.8.0",
     "prettier": "^3.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.3.2",
-    "vue-tsc": "^1.8.22"
+    "vue-tsc": "^1.8.24"
   }
 }
