@@ -67,7 +67,6 @@ export function useBackend() {
     await useFetch(`${backend}/api/shop/cart/${cartId.value}`, {
       method: 'POST',
       body,
-      headers: new Headers(),
       onResponse({ response }) {
         cart.value = response._data.data
         cartId.value = response._data.data.id
