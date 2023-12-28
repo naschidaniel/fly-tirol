@@ -19,7 +19,7 @@ export function useBackend() {
   )
   async function initShopBackend() {
     if (!process.client || !isFlyTirol) return
-    await useFetch<Product[]>(`${backend}/api/shop/products`, {
+    await useFetch<Product[]>(`${backend}/shop/api/products`, {
       onResponse({ response }) {
         products.value = response._data?.data
       },
@@ -34,8 +34,8 @@ export function useBackend() {
     }
     const url =
       _cartId !== null
-        ? `${backend}/api/shop/cart/${_cartId}`
-        : `${backend}/api/shop/cart`
+        ? `${backend}/shop/api/cart/${_cartId}`
+        : `${backend}/shop/api/cart`
     await useFetch(url, {
       onResponse({ response, options }) {
         if (!response.ok) {
@@ -64,7 +64,7 @@ export function useBackend() {
   }
 
   async function updateCart(body: string): Promise<void> {
-    await useFetch(`${backend}/api/shop/cart/${cartId.value}`, {
+    await useFetch(`${backend}/shop/api/cart/${cartId.value}`, {
       method: 'POST',
       body,
       onResponse({ response }) {
@@ -96,19 +96,19 @@ export function useBackend() {
       },
       body: JSON.stringify({ quantity }),
     }
-    await fetch(`${backend}/api/shop/cartitem/${pk}`, request)
+    await fetch(`${backend}/shop/api/cartitem/${pk}`, request)
     await initCart()
   }
 
   async function deleteProduct(pk: string | undefined): Promise<void> {
-    await useFetch(`${backend}/api/shop/cartitem/${pk}`, {
+    await useFetch(`${backend}/shop/api/cartitem/${pk}`, {
       method: 'DELETE',
     })
     await initCart()
   }
 
   async function deleteCart(pk: string | undefined): Promise<void> {
-    await useFetch(`${backend}/api/shop/cart/${pk}`, { method: 'DELETE' })
+    await useFetch(`${backend}/shop/api/cart/${pk}`, { method: 'DELETE' })
     localStorage.removeItem('cartId')
     await initCart()
   }
