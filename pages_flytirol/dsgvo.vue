@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-90 w-full mx-auto py-6">
-    <Dsgvo class="nuxt-content" />
+  <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
+    <Dsgvo />
   </div>
 </template>
 
