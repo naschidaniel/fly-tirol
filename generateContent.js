@@ -16,6 +16,7 @@ function generate(nuxtPage) {
     const slug = filePath
       .split('/')
       [filePath.split('/').length - 1].replace('.md', '')
+    const lang = slug.includes('__en') ? 'en' : 'de'
     const path =
       folder === `content_${nuxtPage}` && slug === 'index'
         ? '/'
@@ -30,7 +31,7 @@ function generate(nuxtPage) {
     const data = readFileSync(filePath, 'utf8')
     const isContentImageGallery = data.includes('<ContentImageGallery ')
     const isContentPartnerCard = data.includes('<ContentPartnerCard ')
-    const metadata = { path, category, slug }
+    const metadata = { lang, path, category, slug }
     data
       .split('---')[1]
       .split(/\r\n|\n/)

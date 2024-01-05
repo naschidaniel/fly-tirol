@@ -29,6 +29,7 @@ export interface MediaInformation {
 }
 
 export interface MetaData {
+  lang: string
   category: string
   description: string
   draft?: string
