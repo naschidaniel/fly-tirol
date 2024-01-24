@@ -14,7 +14,7 @@ Der Paragleiterschein erlaubt dir national und international in allen Fluggebiet
 
 Um euch optimal auf die Prüfung vorzubereiten, liegt der Schwerpunkt dieses Kurses auf einem zweitägigen Theorieunterricht der einzelnen Prüfungsfächer. Im Anschluss daran findet die Theorieprüfung in unseren Schulungsräumen statt und der Prüfungsflug in unserem Schulungsgebiet in Westendorf.
 
-# Programm
+# Leistungen
 
 - 4 Unterrichtseinheiten Luftrecht
 - 6 Unterrichtseinheiten Meteorologie
