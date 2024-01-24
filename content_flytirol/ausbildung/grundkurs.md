@@ -22,7 +22,7 @@ Bereits am dritten oder vierten Tag geht es dann auf unseren Startplatz auf ca. 
 Wenn das sichere Starten, Fliegen und Landen auf 300 m über Grund erlernt wurde, fahren wir mit dir auf unseren Schulungsstartplatz auf über 1800 m Seehöhe um hoch hinaus zu fliegen. 
 Während der ganzen Grundausbildung werdet ihr durch unser kompetent ausgebildetes Personal über Funk angeleitet und unterstützt. Außerdem bekommst du natürlich den Schirm und das passende Gurtzeug von unserer Flugschule gestellt, begleitend zu der praktischen Ausbildung erhältst du einen umfangreichen und modern gestalteten Theorieunterricht sowie Videoanalysen und entsprechende Lernmaterialien.
 
-## Programm
+## Leistungen
 
 - 15 Grundflüge vom Übungshang
 - minimum 5 Höhenflüge vom Höhenfluggelände
