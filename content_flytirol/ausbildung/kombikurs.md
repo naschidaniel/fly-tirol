@@ -16,8 +16,10 @@ Dieses Rundum Paket enthält alles was du benötigst um ein eigenständiger Pilo
 
 Worauf wartest du noch?
 
-## Programm
+## Leistungen
 
 - 15 Grundflüge am Übungshang
 - 40 Höhenflüge an unseren Höhenflugeländen
 - 25 Unterrichtseinheiten zum Paragleitschein / A-Lizenz
+- Leihausrüstung bis zum 25. Höhenflug
+- Lehrbuch inklusive
