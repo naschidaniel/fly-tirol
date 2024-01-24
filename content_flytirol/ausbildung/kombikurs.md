@@ -21,5 +21,5 @@ Worauf wartest du noch?
 - 15 Grundflüge am Übungshang
 - 40 Höhenflüge an unseren Höhenflugeländen
 - 25 Unterrichtseinheiten zum Paragleitschein / A-Lizenz
-- Leihausrüstung bis zum 25. Höhenflug
+- Leihausrüstung bis zum 25. Höhenflug (optional)
 - Lehrbuch inklusive
