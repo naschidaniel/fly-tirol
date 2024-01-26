@@ -3,10 +3,13 @@ import type { Ref } from 'vue'
 import { useData } from './useData'
 import type { Product } from '@/types/Product'
 import type { Cart } from '@/types/Cart'
+import type { Alert } from '@/types/shop/models/Alert'
 
 export const products: Ref<Product[]> = ref([] as Product[])
 const cartId: Ref<string | null> = ref(null)
 const cart: Ref<Cart | undefined> = ref(undefined)
+const alert: Ref<Alert | undefined> = ref(undefined)
+const isShowAlert: Ref<Boolean> = ref(false)
 
 export function useBackend() {
   const { backend, isFlyTirol } = useData()
@@ -22,8 +25,25 @@ export function useBackend() {
     await useFetch<Product[]>(`${backend}/shop/api/products`, {
       onResponse({ response }) {
         products.value = response._data?.data
+        updateAlert(response._data?.alert)
       },
     })
+  }
+
+  function updateAlert(value: Alert | undefined) {
+    if (value === undefined) {
+      console.log('The alert is undefined')
+      return
+    }
+    alert.value = value
+    isShowAlert.value = value.type === 'error'
+    if (value.type === 'error') {
+      console.error(value.message)
+    } else if (value.type === 'error') {
+      console.warn(value.message)
+    } else {
+      console.log(value.message)
+    }
   }
 
   async function initCart() {
@@ -47,13 +67,15 @@ export function useBackend() {
         }
         try {
           cart.value = response._data.data
+          updateAlert(response._data.alert)
           cartId.value = response._data.data.id
           localStorage.setItem('cartId', response._data.data.id)
           console.info(`The Cart ${_cartId} was loaded from local storrage`)
         } catch {
-          console.error(
-            `Failed to init the Cart. The ${_cartId} has been removed from localStorage`,
-          )
+          updateAlert({
+            message: `Failed to init the Cart. The ${_cartId} has been removed from localStorage`,
+            type: 'error',
+          })
           localStorage.removeItem('cartId')
           cartId.value = null
         }
@@ -70,6 +92,7 @@ export function useBackend() {
       onResponse({ response }) {
         cart.value = response._data.data
         cartId.value = response._data.data.id
+        updateAlert(response._data.alert)
         localStorage.setItem('cartId', response._data.data.id)
         navigateTo('/buchen')
       },
@@ -88,32 +111,40 @@ export function useBackend() {
     pk: string | undefined,
     quantity: string,
   ): Promise<void> {
-    const request: RequestInit = {
+    await useFetch(`${backend}/shop/api/cartitem/${pk}`, {
       method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify({ quantity }),
-    }
-    await fetch(`${backend}/shop/api/cartitem/${pk}`, request)
+      onResponse({ response }) {
+        updateAlert(response._data.alert)
+      },
+    })
     await initCart()
   }
 
   async function deleteProduct(pk: string | undefined): Promise<void> {
     await useFetch(`${backend}/shop/api/cartitem/${pk}`, {
       method: 'DELETE',
+      onResponse({ response }) {
+        updateAlert(response._data.alert)
+      },
     })
     await initCart()
   }
 
   async function deleteCart(pk: string | undefined): Promise<void> {
-    await useFetch(`${backend}/shop/api/cart/${pk}`, { method: 'DELETE' })
+    await useFetch(`${backend}/shop/api/cart/${pk}`, {
+      method: 'DELETE',
+      onResponse({ response }) {
+        updateAlert(response._data.alert)
+      },
+    })
     localStorage.removeItem('cartId')
     await initCart()
   }
 
   return {
+    alert,
+    isShowAlert,
     cart,
     deleteProduct,
     deleteCart,
