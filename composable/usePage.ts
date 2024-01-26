@@ -21,6 +21,7 @@ export function usePage() {
       ({
         slug: '',
         title: '',
+        lang: '',
         description: '',
       } as MetaData)
     )
@@ -35,7 +36,10 @@ export function usePage() {
 
   const pages: ComputedRef<MetaData[]> = computed(() => {
     return metadataPages
-      .filter((p) => p.category === route.name && p.slug !== 'index')
+      .filter(
+        (p) =>
+          p.category === route.name && p.slug !== 'index' && p.lang === 'de',
+      )
       .sort((a, b) => {
         if (a.order !== undefined && b.order !== undefined) {
           return a?.order - b?.order
