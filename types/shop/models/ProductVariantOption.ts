@@ -2,7 +2,6 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type ProductVariantOption = {
     readonly id?: string;
     readonly product_variant?: string;

@@ -2,7 +2,6 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 export type SumUpAPIAppData = {
     type?: SumUpAPIAppData.type;
     code: string;
@@ -11,14 +10,10 @@ export type SumUpAPIAppData = {
     merchant_code: string;
     username: string;
 };
-
 export namespace SumUpAPIAppData {
-
     export enum type {
         BACKEND = 'BACKEND',
         FRONTEND = 'FRONTEND',
     }
-
-
 }
 

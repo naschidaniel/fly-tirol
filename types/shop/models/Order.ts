@@ -2,15 +2,14 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Cart } from './Cart';
 import type { OrderCheckout } from './OrderCheckout';
-
 export type Order = {
     readonly id?: string;
     cart?: Cart;
     checkout?: OrderCheckout;
     paid: boolean;
+    order_status_url: string;
     address: string;
     city: string;
     readonly date_added?: string;
@@ -28,16 +27,12 @@ export type Order = {
     zipcode: string;
     customer?: number | null;
 };
-
 export namespace Order {
-
     export enum payment {
         BANK_TRANSFER = 'BANK TRANSFER',
         CREDIT_CARD = 'CREDIT CARD',
         ON_SITE = 'ON SITE',
         PAYPAL = 'PAYPAL',
     }
-
-
 }
 

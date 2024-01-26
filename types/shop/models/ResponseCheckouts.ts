@@ -2,9 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Alert } from './Alert';
-
 export type ResponseCheckouts = {
     alert: Alert;
 };

@@ -2,9 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Order } from './Order';
-
 export type Checkout = {
     readonly checkout_reference?: string;
     order?: Order;
@@ -16,9 +14,7 @@ export type Checkout = {
     sumup_return_value?: any;
     paypal_order_id?: string;
 };
-
 export namespace Checkout {
-
     export enum status {
         CREATED = 'CREATED',
         PENDING = 'PENDING',
@@ -26,7 +22,5 @@ export namespace Checkout {
         PAID = 'PAID',
         EXPIRED = 'EXPIRED',
     }
-
-
 }
 

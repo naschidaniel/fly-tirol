@@ -2,9 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { ProductVariantOption } from './ProductVariantOption';
-
 export type CartItem = {
     readonly id?: string;
     readonly product?: string;

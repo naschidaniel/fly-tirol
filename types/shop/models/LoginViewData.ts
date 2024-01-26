@@ -2,10 +2,9 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
-import type { Alert } from './Alert';
-
-export type ResponseObjectNotFound = {
-    alert: Alert;
+import type { User } from './User';
+export type LoginViewData = {
+    user: User;
+    next: string;
 };
 

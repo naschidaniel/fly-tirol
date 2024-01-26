@@ -2,9 +2,7 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-
 import type { Product } from './Product';
-
 export type Category = {
     readonly id?: string;
     name: string;

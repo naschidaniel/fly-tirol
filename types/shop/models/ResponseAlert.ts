@@ -3,7 +3,7 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { Alert } from './Alert';
-export type ResponseOrders = {
+export type ResponseAlert = {
     alert: Alert;
 };
 
