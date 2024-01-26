@@ -27,6 +27,9 @@ export function useBackend() {
         products.value = response._data?.data
         updateAlert(response._data?.alert)
       },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
     })
   }
 
@@ -82,6 +85,9 @@ export function useBackend() {
         options.query = options.query || {}
         options.query.t = new Date()
       },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
     })
   }
 
@@ -95,6 +101,9 @@ export function useBackend() {
         updateAlert(response._data.alert)
         localStorage.setItem('cartId', response._data.data.id)
         navigateTo('/buchen')
+      },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
       },
     })
   }
@@ -117,6 +126,9 @@ export function useBackend() {
       onResponse({ response }) {
         updateAlert(response._data.alert)
       },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
     })
     await initCart()
   }
@@ -127,6 +139,9 @@ export function useBackend() {
       onResponse({ response }) {
         updateAlert(response._data.alert)
       },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
     })
     await initCart()
   }
@@ -136,6 +151,9 @@ export function useBackend() {
       method: 'DELETE',
       onResponse({ response }) {
         updateAlert(response._data.alert)
+      },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
       },
     })
     localStorage.removeItem('cartId')
