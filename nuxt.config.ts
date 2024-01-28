@@ -48,6 +48,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'de',
+      },
       titleTemplate: isWhiteCloud
         ? 'WHITE-CLOUD TANDEMFLÜGE - Paragleiten am Wilden Kaiser - %s'
         : 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
