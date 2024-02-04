@@ -481,6 +481,20 @@
     "alt": "Gleitschirm Paragliding Wiese fliegen Westendorf",
     "title": "Paragliding Grundkurs in Westendorf"
   },
+  "/media/fortbildung/b-praxiskurs.jpg": {
+    "url": "/media/fortbildung/b-praxiskurs.jpg",
+    "path": "/media/fortbildung/",
+    "file": "b-praxiskurs.jpg",
+    "stem": "b-praxiskurs",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "B-Scheinpraxiskurs",
+    "title": "B-Scheinpraxiskurs"
+  },
   "/media/fortbildung/b-scheintheoriekurs.jpg": {
     "url": "/media/fortbildung/b-scheintheoriekurs.jpg",
     "path": "/media/fortbildung/",

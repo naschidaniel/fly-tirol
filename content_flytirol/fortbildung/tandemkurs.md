@@ -5,7 +5,7 @@ location: Westendorf
 image: /media/fortbildung/tandemkurs.jpg
 theorie: 5 Theorieeinheiten
 praxis: 10 Grundflüge + 15 Höhenflüge
-order: 2
+order: 3
 ---
 
 # Tandemkurs

@@ -5,7 +5,7 @@ location: Westendorf
 image: /media/fortbildung/thermikfliegen.jpg
 theorie: Praxisnahe Theorie
 praxis: 15 Höhenflüge
-order: 3
+order: 4
 ---
 
 # Thermikfliegen

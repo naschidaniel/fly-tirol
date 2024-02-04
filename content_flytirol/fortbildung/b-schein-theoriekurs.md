@@ -5,7 +5,7 @@ location: Westendorf
 image: /media/fortbildung/b-scheintheoriekurs.jpg
 theorie: 15 Theorieeinheiten
 praxis: –
-order: 1
+order: 2
 ---
 
 # B-Schein Theoriekurs
