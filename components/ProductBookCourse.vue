@@ -2,7 +2,8 @@
   <div class="flex flex-wrap">
     <div v-if="isCourse" class="w-full lg:w-1/2">
       <h2>Termine</h2>
-      <div class="flex flex-wrap">
+      <div v-if="calenderFiltered.length == 0">Auf Anfrage</div>
+      <div v-else class="flex flex-wrap">
         <div
           v-for="month in calenderFiltered"
           :key="month.monthLong"
