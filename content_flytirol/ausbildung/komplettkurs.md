@@ -5,7 +5,7 @@ location: Westendorf
 image: /media/ausbildung/kombikurs.jpg
 theorie: 25 Theorieeinheiten
 praxis: 15 Grundflüge + 40 Höhenflüge
-order: 5
+order: 1
 ---
 
 # A-Schein Komplettkurs

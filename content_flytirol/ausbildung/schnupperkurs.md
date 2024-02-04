@@ -5,7 +5,7 @@ location: Westendorf
 image: /media/ausbildung/schnupperkurs.jpg
 theorie: 1 Theorieeinheit
 praxis: 1 Tag am Übungshang
-order: 1
+order: 5
 ---
 
 # Schnupperkurs
