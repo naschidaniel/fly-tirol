@@ -9,8 +9,8 @@
     <div v-if="page.slug == 'tandemkurs'">
       <Tandemkurs />
     </div>
-    <div v-if="page.slug == 'thermikfliegen'">
-      <Thermikfliegen />
+    <div v-if="page.slug == 'thermikkurs'">
+      <Thermikkurs />
     </div>
     <ProductBookCourse :is-course="true" />
     <SocialBar />
@@ -25,7 +25,7 @@ import SocialBar from '@/components/SocialBar.vue'
 import BScheinPraxiskurs from '@/content_flytirol/fortbildung/b-schein-praxiskurs.vue'
 import BScheinTheoriekurs from '@/content_flytirol/fortbildung/b-schein-theoriekurs.vue'
 import Tandemkurs from '@/content_flytirol/fortbildung/tandemkurs.vue'
-import Thermikfliegen from '@/content_flytirol/fortbildung/thermikfliegen.vue'
+import Thermikkurs from '@/content_flytirol/fortbildung/thermikkurs.vue'
 
 useMetaTags()
 const { page } = usePage()

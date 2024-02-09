@@ -44,7 +44,7 @@ module.exports = {
           'thermikflug',
           'Test',
           'testflug',
-          'thermikfliegen',
+          'Thermikkurs',
           'Version',
           'Webcam',
           'Westendorf',
