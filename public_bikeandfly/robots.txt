@@ -5,7 +5,7 @@ Disallow: /api
 Disallow: /dsgvo
 Disallow: /impressum
 Disallow: /buchen
-Disallow: /regiondo_whitecloud/bookingwidget_de_testflug.html
+Disallow: /regiondo_bikeandfly/bookingwidget_de_testflug.html
 
 Allow: /
 Allow: /fluege-und-preise/akrobatikflug-hopfgarten/

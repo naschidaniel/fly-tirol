@@ -167,7 +167,7 @@
 import { ref } from 'vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import SocialBar from '@/components/SocialBar.vue'
-import Index from '@/content_whitecloud/index.vue'
+import Index from '@/content_bikeandfly/index.vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
 import IconOutlineCloud from '@/components/icon/IconOutlineCloud.vue'
 import IconOutlineCloudDownload from '@/components/icon/IconOutlineCloudDownload.vue'
@@ -181,7 +181,7 @@ useMetaTags()
 const pictures = [
   '/media/index/gallerie/akrobatikflug-hopfgarten.jpg',
   '/media/index/gallerie/thermikflug-ueber-den-wolken.jpg',
-  '/media/index/gallerie/tandemfliegen_whitecloud_salve.jpg',
+  '/media/index/gallerie/tandemfliegen_bikeandfly_salve.jpg',
 ]
 const selectPicture = Math.floor(Math.random() * 3)
 const picture = ref(pictures[selectPicture])

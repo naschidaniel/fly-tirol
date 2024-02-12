@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
-import Impressum from '@/content_whitecloud/impressum.vue'
+import Impressum from '@/content_bikeandfly/impressum.vue'
 import Version from '@/components/Version.vue'
 
 useMetaTags()

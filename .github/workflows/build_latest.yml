@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        page: [flytirol, whitecloud]
+        page: [flytirol, bikeandfly]
     runs-on: ubuntu-latest
     name: Build ${{ matrix.page }} latest
     env:

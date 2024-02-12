@@ -93,7 +93,7 @@ function generate(nuxtPage) {
 }
 
 export default function main() {
-  for (const pagePage of ['flytirol', 'whitecloud']) {
+  for (const pagePage of ['flytirol', 'bikeandfly']) {
     generate(pagePage)
   }
 }

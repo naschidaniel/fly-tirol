@@ -1,10 +1,10 @@
 image-optimizer.exe
 image-optimizer
 flytirol*.tar.gz
-whitecloud*.tar.gz
+bikeandfly*.tar.gz
 node_modules
 .git
 .github
 .nuxt
 .public_flytirol
-.public_whitecloud
+.public_bikeandfly

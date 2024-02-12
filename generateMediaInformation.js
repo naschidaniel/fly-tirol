@@ -2,7 +2,7 @@ import { readFileSync, writeFile } from 'fs'
 import { glob } from 'glob'
 import sizeOf from 'image-size'
 
-for (const nuxtPage of ['flytirol', 'whitecloud']) {
+for (const nuxtPage of ['flytirol', 'bikeandfly']) {
   const constName =
     nuxtPage === 'flytirol' ? 'mediaFlyTirol' : 'mediaWhiteCloud'
   const mediaJson = JSON.parse(readFileSync(`data/${constName}.json`))

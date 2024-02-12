@@ -4,7 +4,7 @@ import type { License } from '@/types/data'
 const packages = JSON.parse(readFileSync('package.json', { encoding: 'utf8' }))
 
 const isFlyTirol = process.env.NUXT_PAGE === 'flytirol'
-const isWhiteCloud = process.env.NUXT_PAGE === 'whitecloud'
+const isWhiteCloud = process.env.NUXT_PAGE === 'bikeandfly'
 
 const licenses: License[] = Object.keys(packages.dependencies)
   .map((dependency) =>
@@ -43,8 +43,8 @@ if (
 export default defineNuxtConfig({
   ssr: true,
   dir: {
-    pages: isWhiteCloud ? 'pages_whitecloud' : 'pages_flytirol',
-    public: isWhiteCloud ? '.public_whitecloud' : '.public_flytirol',
+    pages: isWhiteCloud ? 'pages_bikeandfly' : 'pages_flytirol',
+    public: isWhiteCloud ? '.public_bikeandfly' : '.public_flytirol',
   },
   app: {
     head: {
@@ -107,7 +107,7 @@ export default defineNuxtConfig({
   },
 
   css: isWhiteCloud
-    ? ['~/assets/css/main.css', '~/assets/css/whitecloud.css']
+    ? ['~/assets/css/main.css', '~/assets/css/bikeandfly.css']
     : ['~/assets/css/main.css', '~/assets/css/flytirol.css'],
 
   components: true,
