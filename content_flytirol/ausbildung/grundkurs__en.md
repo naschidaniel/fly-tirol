@@ -13,7 +13,7 @@ order: 2
 ## The First Step Towards an Independent Pilot
 
 The thrill of **paragliding** has caught your interest, and you want to learn to **fly independently**? The **basic course** at **Fly Tyrol flight school** is the first step in that direction. Under the guidance of Sebastian Kahn, a certified flight instructor and Team World Champion in Acrobatic Paragliding, you'll receive competent and versatile flight training through years of flying experience worldwide.
-<br> </br>
+
 In the first two days, you'll practice the practical fundamentals of paragliding with our instructors at our **training slope**. This includes activities such as **handling the parachute, launch, run, and landing exercises, launch aborts, and initial steering exercises.**
 
 By the **third or fourth day**, you'll move on to our **launch site at about 300 m** above ground for the first actual flights. Here, you'll learn the focal points of turning techniques and the proper and safe landing on our **large training landing area.**

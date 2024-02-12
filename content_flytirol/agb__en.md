@@ -1,3 +1,7 @@
+---
+title: AGB Feel Free GmbH
+description: AGB Feel Free GmbH
+---
 # General Terms and Conditions (GTC) of Feel Free GmbH
 
 As of: May 30, 2023

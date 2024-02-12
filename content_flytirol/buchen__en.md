@@ -1,3 +1,8 @@
+---
+title: Buchen
+description: Buche deinen Traum vom Fliegen bei der Flugschule Fly-Tirol.com
+---
+
 # Booking
 
 **Book your dream of flying with Fly-Tirol.com Flight School**

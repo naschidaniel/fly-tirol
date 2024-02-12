@@ -1,3 +1,7 @@
+---
+title: DSGVO - Datenschutzerklärung
+description: DSGVO der Flugschule Fly-Tirol.com
+---
 # GDPR - Data Protection Declaration
 
 ## Basic Information

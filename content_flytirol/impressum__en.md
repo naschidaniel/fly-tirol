@@ -1,3 +1,7 @@
+---
+title: Impressum
+description: Fly Tirol Flugschule - Impressum
+---
 # Imprint
 
 Information obligation according to §5 E-Commerce Act, §14 Commercial Code, §63 Trade Regulation, and disclosure obligation according to §25 Media Act.
