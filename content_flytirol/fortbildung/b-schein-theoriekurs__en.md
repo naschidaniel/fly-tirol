@@ -3,8 +3,8 @@ title: B-License Theory Course
 description: The B-License theory course prepares you for practical training as a B-License pilot. The subjects covered include Behavior in Special Cases, Air Law, Meteorology in Cross-Country Flying, and Navigation.
 location: Westendorf
 image: /media/advanced-training/b-license-theory-course.jpg
-theory: 15 theory units
-practice: –
+theorie: 15 theory units
+praxis: –
 order: 2
 ---
 

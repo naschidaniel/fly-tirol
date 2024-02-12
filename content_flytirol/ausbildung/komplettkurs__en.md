@@ -3,8 +3,8 @@ title: A-License Complete Course
 description: This all-in-one package includes everything you need to become an independent pilot! You have access to all the advantages described when booking individual courses. From the basic course to the high-altitude seminar to obtaining the A-license. You don't have to book each course separately, and you even save money!
 location: Westendorf
 image: /media/training/complete-course.jpg
-theory: 25 theory units
-practice: 15 ground flights + 40 high-altitude flights
+theorie: 25 theory units
+praxis: 15 ground flights + 40 high-altitude flights
 order: 1
 ---
 

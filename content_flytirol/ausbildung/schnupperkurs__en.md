@@ -3,8 +3,8 @@ title: Taster Course
 description: Gain some insights into the paragliding sport and spend a day with our top-trained and experienced flight instructors at our training slope to familiarize yourself with handling a paragliding parachute.
 location: Westendorf
 image: /media/training/taster-course.jpg
-theory: 1 theory unit
-practice: 1 day at the training slope
+theorie: 1 theory unit
+praxis: 1 day at the training slope
 order: 5
 ---
 

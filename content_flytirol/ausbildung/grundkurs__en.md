@@ -3,8 +3,8 @@ title: Basic Course
 description: Interested in learning to fly? The basic course at Fly Tyrol flight school is the first step in that direction. Under the guidance of Sebastian Kahn, a certified flight instructor and Team World Champion in Acrobatic Paragliding, you'll receive competent and versatile flight training through years of flying experience worldwide.
 location: Westendorf
 image: /media/training/basic-course.jpg
-theory: 12 theory units of 45 minutes each
-practice: 15 ground flights + 5 altitude flights
+theorie: 12 theory units of 45 minutes each
+praxis: 15 ground flights + 5 altitude flights
 order: 2
 ---
 

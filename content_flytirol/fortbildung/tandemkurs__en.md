@@ -3,8 +3,8 @@ title: Tandem Course
 description: In our flight school, you get everything you need to take your tandem course. From modern theoretical lessons to practical training with a parachute, harness, and radio guidance provided by our competent instructors, all the way to the examination.
 location: Westendorf
 image: /media/advanced-training/tandem-course.jpg
-theory: 5 theory units
-practice: 10 ground flights + 15 high-altitude flights
+theorie: 5 theory units
+praxis: 10 ground flights + 15 high-altitude flights
 order: 3
 ---
 

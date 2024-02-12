@@ -3,8 +3,8 @@ title: Paraglider License Theory Course
 description: The paraglider license allows you to fly nationally and internationally in all flight areas and is based on the completed basic course and high-altitude seminar. The prerequisites for this are a minimum of 40 high-altitude flights. The completion of this course includes a written theory exam and a practical flight exam.
 location: Westendorf
 image: /media/training/paraglider-license.jpg
-theory: 20 theory units
-practice: –
+theorie: 20 theory units
+praxis: –
 order: 4
 ---
 

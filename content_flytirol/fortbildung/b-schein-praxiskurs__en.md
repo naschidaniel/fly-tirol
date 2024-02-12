@@ -3,8 +3,8 @@ title: B-License Practical Course
 description: The B-License Practical Course ....... 
 location: Westendorf
 image: /media/education/b-practical-course.jpg
-theory: -
-practice: –
+theorie: -
+praxis: –
 order: 1
 ---
 

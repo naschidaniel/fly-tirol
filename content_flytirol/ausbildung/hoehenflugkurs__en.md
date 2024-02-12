@@ -3,8 +3,8 @@ title: High-Altitude Flight Course
 description: In a high-altitude flight course at Fly Tyrol flight school, you'll learn under the guidance of absolute professionals, gaining confidence in takeoff, landing, and turning techniques. During this seminar, you'll complete as many flights as possible to approach the 40 high-altitude flights required for the A-license examination.
 location: Westendorf
 image: /media/training/high-altitude-flight-course.jpg
-theory: 4 theory units
-practice: 15 high-altitude flights
+theorie: 4 theory units
+praxis: 15 high-altitude flights
 order: 3
 ---
 
