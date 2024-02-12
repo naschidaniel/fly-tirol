@@ -32,9 +32,3 @@ jobs:
         run: yarn generateContent
       - name: build
         run: yarn build
-      - name: Build Artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: fly-tirol_build
-          path: dist
-          retention-days: 0.1
