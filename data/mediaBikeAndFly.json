@@ -1,4 +1,18 @@
 {
+  "/media/FlyTirolHeader.jpg": {
+    "url": "/media/FlyTirolHeader.jpg",
+    "path": "/media/",
+    "file": "FlyTirolHeader.jpg",
+    "stem": "FlyTirolHeader",
+    "dimensions": {
+      "height": 1591,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.571
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/WhiteCloudLogo.jpg": {
     "url": "/media/WhiteCloudLogo.jpg",
     "path": "/media/",

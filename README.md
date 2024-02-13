@@ -81,7 +81,7 @@ $ docker run -p 127.0.0.1:3001:3001/tcp bikeandfly
 
 ### Collect Media Information
 
-The images in the `public_flytirol/media` or `public_bikeandfly/media` folder are listed in the `data/mediaFlyTirol.js` or `data/mediaWhiteCloud.js` file. The image information `title` and `alt` can be added in this json file for all Views.
+The images in the `public_flytirol/media` or `public_bikeandfly/media` folder are listed in the `data/mediaFlyTirol.js` or `data/mediaBikeAndFly.js` file. The image information `title` and `alt` can be added in this json file for all Views.
 
 ``` bash
 # Update media.js

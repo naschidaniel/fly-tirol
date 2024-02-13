@@ -71,7 +71,7 @@
               ><IconInstagram style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
-            v-if="isWhiteCloud"
+            v-if="isBikeAndFly"
             class="mx-2"
             title="Folge uns auf YouTube"
             @click="openYouTube()"
@@ -132,7 +132,7 @@ import { usePage } from '@/composable/usePage'
 const {
   instagram,
   isFlyTirol,
-  isWhiteCloud,
+  isBikeAndFly,
   mail,
   phone,
   website,

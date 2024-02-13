@@ -7,8 +7,8 @@
         box-class="absolute top-0 bottom-0 left-0 right-0"
         img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
         :is-lazy="false"
-        :picture="picture"
         :is-preload="true"
+        picture="/media/FlyTirolHeader.jpg"
       />
     </div>
     <div class="bg-gray-100 nuxt-content lg:pt-10">

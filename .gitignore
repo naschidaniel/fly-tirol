@@ -106,8 +106,8 @@ bikeandfly*.tar.gz
 /content_flytirol/**/*.vue
 /content_bikeandfly/**/*.vue
 /data/metadataFlyTirol.ts
-/data/metadataWhiteCloud.ts
+/data/metadataBikeAndFly.ts
 /data/mediaFlyTirol.ts
-/data/mediaWhiteCloud.ts
+/data/mediaBikeAndFly.ts
 /.public_flytirol
 /.public_bikeandfly

@@ -2,18 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-@font-face {
-  font-family: 'RedHatDisplay';
-  src: url("~/assets/fonts/RedHatDisplayVF.woff2") format("woff2-variations");
-  font-weight: 300 900;
-  font-style: normal;
-  font-display: fallback; }
-@font-face {
-  font-family: 'RedHatText';
-  src: url("~/assets/fonts/RedHatTextVF.woff2") format("woff2-variations");
-  font-weight: 300 700;
-  font-style: normal;
-  font-display: fallback; }
+
 body {
   @apply font-sans text-base leading-normal bg-white; } }
 

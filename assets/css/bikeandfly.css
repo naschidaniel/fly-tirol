@@ -1,5 +1,16 @@
 @tailwind base;
-
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url("~/assets/fonts/Gilmer-Medium.otf") format("opentype");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: fallback; }
+@font-face {
+  font-family: 'RedHatText';
+  src: url("~/assets/fonts/Gilmer-Medium.otf") format("opentype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: fallback; }
 .btn-primary {
     @apply relative
     inline-flex
@@ -41,7 +52,7 @@
   .nuxt-content h1 strong {
       @apply text-[#1c9dd8]; }
   .nuxt-content h2 {
-    @apply text-xl lg:text-3xl font-medium my-8 uppercase text-[#666666] mt-10; }
+    @apply text-xl lg:text-3xl font-medium my-8 uppercase text-[#123454] mt-10; }
   .nuxt-content h2 small {
       @apply text-base lg:text-xl block text-[#949494]; }
   .nuxt-content h2 strong {

@@ -82,7 +82,7 @@ function generate(nuxtPage) {
 
   const json = JSON.stringify(metadataPages, null, 2)
   const constName =
-    nuxtPage === 'flytirol' ? 'metadataFlyTirol' : 'metadataWhiteCloud'
+    nuxtPage === 'flytirol' ? 'metadataFlyTirol' : 'metadataBikeAndFly'
   writeFile(
     `data/${constName}.ts`,
     `import type { MetaData } from '@/types/data'\n\n export const ${constName}: MetaData[] = ${json}`,
