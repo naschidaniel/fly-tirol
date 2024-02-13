@@ -33,7 +33,7 @@ isBikeAndFly
   ? content.push('pages_bikeandfly/**/*.vue')
   : content.push('pages_flytirol/**/*.vue')
 
-const brandColor = isBikeAndFly ? '#666' : '#160D42'
+const brandColor = isBikeAndFly ? '#22211f' : '#160D42'
 
 module.exports = {
   content,

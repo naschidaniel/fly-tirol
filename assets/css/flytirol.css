@@ -64,20 +64,6 @@
   ease-in-out;
 }
 
-.card--content:before {
-  content: '';
-  z-index: 1;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: -1rem;
-  top: -1.5rem;
-  transform: rotate(-5deg) translateY(-1rem);
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
-  @apply bg-white; }
-
-
 @layer base {
   .nuxt-content h1 {
     @apply text-2xl lg:text-5xl font-medium my-6; }

@@ -86,7 +86,7 @@ export default defineNuxtConfig({
           hid: 'og:image',
           property: 'og:image',
           content: isBikeAndFly
-            ? 'https://white-cloud.tirol/media/BikeAndFlyLogo_sm.jpg'
+            ? 'https://bikeandfly.at/media/BikeAndFlyLogo_sm.jpg'
             : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
         },
         {
@@ -98,7 +98,7 @@ export default defineNuxtConfig({
           hid: 'og:url',
           property: 'og:url',
           content: isBikeAndFly
-            ? 'https://white-cloud.tirol/'
+            ? 'https://bikeandfly.at/'
             : 'https://fly-tirol.com',
         },
       ],
@@ -125,13 +125,13 @@ export default defineNuxtConfig({
       isBikeAndFly,
       // @ts-ignore
       licenses,
-      mail: isFlyTirol ? 'info@fly-tirol.com' : 'info@white-cloud.tirol',
+      mail: isFlyTirol ? 'info@fly-tirol.com' : 'info@bikeandfly.at',
       phone: isFlyTirol ? '+436763931494' : '+4368181589568',
       phoneString: isFlyTirol ? '+43 676 3931494' : '+43 681 81589568',
-      website: isFlyTirol ? 'fly-tirol.com' : 'white-cloud.tirol',
+      website: isFlyTirol ? 'fly-tirol.com' : 'bikeandfly.at',
       websiteUrl: isFlyTirol
         ? 'https://fly-tirol.com'
-        : 'https://white-cloud.tirol',
+        : 'https://bikeandfly.at',
     },
   },
   modules: ['@nuxtjs/tailwindcss'],

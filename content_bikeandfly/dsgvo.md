@@ -1,6 +1,6 @@
 ---
 title: DSGVO - Datenschutzerklärung
-description: DSGVO von White-Cloud.tirol
+description: DSGVO der Flugschule Fly-Tirol.com
 ---
 # DSGVO
 
@@ -121,4 +121,4 @@ Nutzer dieser Webseite können von ihrem Widerspruchsrecht Gebrauch machen und d
 
 Wenn Sie eine Berichtigung, Sperrung, Löschung oder Auskunft über die zu Ihrer Person gespeicherten personenbezogenen Daten wünschen oder Fragen bzgl. der Erhebung, Verarbeitung oder Verwendung Ihrer personenbezogenen Daten haben oder erteilte Einwilligungen widerrufen möchten, wenden Sie sich bitte an folgende E-Mail-Adresse: 
 
-<a href="mailto:info@white-cloud.tirol">info@white-cloud.tirol</a>
+<a href="mailto:info@bikeandfly.at">info@bikeandfly.at</a>

@@ -47,6 +47,19 @@ body {
 .btn--large {
   @apply px-6 py-4; }
 
+  .card--content:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: -1rem;
+    top: -1.5rem;
+    transform: rotate(-5deg) translateY(-1rem);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    @apply bg-white; }
+
 @layer base {
   .nuxt-content h3 {
     @apply text-xl font-medium my-2; }

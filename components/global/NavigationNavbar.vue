@@ -22,7 +22,9 @@
       </nav>
       <nav v-else class="flex flex-col items-start xl:flex-row">
         <NavigationNavbarLink name="Home" to="/" />
-        <NavigationNavbarLink name="Flüge und Preise" to="/fluege-und-preise" />
+        <NavigationNavbarLink name="Programm" to="/programm" />
+        <NavigationNavbarLink name="Packages" to="/packages" />
+        <NavigationNavbarLink name="Partner" to="/partner" />
         <NavigationNavbarLink name="Kontakt" to="/kontakt" />
       </nav>
     </div>

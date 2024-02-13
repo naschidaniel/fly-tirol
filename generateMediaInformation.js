@@ -5,6 +5,7 @@ import sizeOf from 'image-size'
 for (const nuxtPage of ['flytirol', 'bikeandfly']) {
   const constName =
     nuxtPage === 'flytirol' ? 'mediaFlyTirol' : 'mediaBikeAndFly'
+  console.log(constName)
   const mediaJson = JSON.parse(readFileSync(`data/${constName}.json`))
   const images = glob.sync(`public_${nuxtPage}/media/**/*.{jpg,png}`)
   const staticPath = `public_${nuxtPage}`

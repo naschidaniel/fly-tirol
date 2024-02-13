@@ -1,6 +1,6 @@
 <template>
   <div ref="imageBox" :class="boxClass">
-    <ClientOnly fallback-tag="span" fallback="Loading comments...">
+    <ClientOnly fallback-tag="span" fallback="Loading image...">
       <picture>
         <source
           :sizes="pic.sizes"

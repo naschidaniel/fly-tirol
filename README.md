@@ -1,4 +1,4 @@
-# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build white-cloud.tirol](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml)
+# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build bikeandfly.at](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml)
 
 The source code of this project shares components for two websites.
 
@@ -7,8 +7,8 @@ Visit us at [https://fly-tirol.com](https://fly-tirol.com).
 We are a flight school in Westendorf and offer tandem flights, paragliding training and equipment sales in Westendorf / Tirol.
 Come and share our passion with us!
 
-## White-Cloud.tirol
-Visit mit at [https://white-cloud.tirol](https://white-cloud.tirol).
+## bikeandfly.at
+Visit mit at [https://bikeandfly.at](https://bikeandfly.at).
 I am a passionate pilot and would like to show you the world from above. Come with me and share my passion.
 
 ### Optimize Images

@@ -1,6 +1,11 @@
 <template>
   <div class="card py-4">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
+      <div class="card--header bg-white mb-7">
+        <NuxtLink :to="website">
+          <ResponsiveImage img-class="object-scale-down" :picture="image" />
+        </NuxtLink>
+      </div>
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-2xl font-heading font-semibold mb-1">
@@ -66,6 +71,7 @@ import IconOutlineMail from './icon/IconOutlineMail.vue'
 import IconOutlinePhone from './icon/IconOutlinePhone.vue'
 
 defineProps({
+  image: { type: String, required: false },
   type: { type: String, required: true },
   title: { type: String, required: true },
   subTitle: { type: String, required: false, default: '' },

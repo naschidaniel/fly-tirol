@@ -1,6 +1,6 @@
 ---
-title: Willkommen bei White-Cloud Tandemflüge
-description: WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.
+title: Willkommen bei der Fly Tirol Flugschule
+description: Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema 'Paragleiten' in den Kitzbüheler Alpen und darüber hinaus!
 ---
 
 # <small>Hohe Salve, Hopfgarten im Brixental und Söll am Wilden Kaiser</small> WHITE-CLOUD <strong>Tandemflüge</strong>

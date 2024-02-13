@@ -5,12 +5,12 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-name: Build white-cloud.tirol
+name: Build bikeandfly.at
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build white-cloud.tirol
+    name: Build bikeandfly.at
     env:
       NUXT_PAGE: flytirol
     steps:

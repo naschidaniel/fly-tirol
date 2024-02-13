@@ -1,45 +1,51 @@
 ---
 title: Impressum
-description: White-Cloud.tirol - Impressum
+description: Fly Tirol Flugschule - Impressum
 ---
 # Impressum
 
 Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.
 
 ## Anschrift
-<strong>Matthias Hohlrieder</strong>
+<strong>Feel Free Sport GmbH</strong>
 
-Augasse 23b,
+Bergliftstr. 22, 
 
-6300 Wörgl,
+6363 Westendorf,
 
 Österreich
 
 ## Kontakt
 
-Tel.: <a href="tel:+4368181589568">+43 681 8158 9568</a>
+Telefon Büro: <a href="tel:+436766422088"> +43 676 3931494</a>
 
-E-Mail: <a href="mailto:info@white-cloud.tirol">info@white-cloud.tirol</a>
+E-Mail Büro: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
+
+Tandemhotlein: <a href="tel:+436766422088">+43 676 6422088</a>
+
+E-Mail Tandem <a href="mailto:tandem@fly-tirol.com">tandem@fly-tirol.com</a>
 
 ## Daten
 
-Unternehmensgegenstand: Paragleit- und Ballonunternehmungen
+Unternehmensgegenstand: Paragleiter - Flugschule und Tandemflüge
 
-Steuer-Nummer: –
+UID-Nummer: ATU77067656
 
-Firmenbuchnummer: –
+Firmenbuchnummer: 559621y
 
-Firmenbuchgericht: Bezirkshauptmannschaft Kufstein
+Firmenbuchgericht:  Landgericht Innsbruck
 
-Firmensitz: 6300 Wörgl
+Firmensitz: 6363 Westendorf
 
 Berufsrecht: Gewerbeordnung: www.ris.bka.gv.at
 
 Aufsichtsbehörde/Gewerbebehörde: AERO-Club Wien GmbH
 
+Berufsbezeichnung: Flugschule 
+
 Verleihungsstaat: Österreich
 
-Geschäftsführer: Matthias Hohlrieder
+Geschäftsführer: Sebastian Kahn
  
  
 ## EU-Streitschlichtung

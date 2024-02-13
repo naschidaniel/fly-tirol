@@ -2,7 +2,7 @@
   "name": "flying-in-tirol",
   "version": "2.0.0",
   "private": true,
-  "description": "fly-tirol.com paragliding school Westendorf and white-cloud.tirol tandemflights",
+  "description": "fly-tirol.com paragliding school Westendorf and bikeandfly.at tandemflights",
   "author": "Daniel Naschberger",
   "precommit": "yarn lint",
   "type": "module",
@@ -22,6 +22,7 @@
     "optimize-images": "yarn optimize-images:flytirol && yarn optimize-images:bikeandfly",
     "create-public": "yarn generateMediaInformation && yarn create-public:flytirol && yarn create-public:bikeandfly",
     "buildDev": "yarn create-public && yarn optimize-images:flytirol && yarn generateContent",
+    "buildDev:bikeandfly": "yarn create-public:bikeandfly && yarn optimize-images:bikeandfly && yarn generateContent",
     "openapi": "openapi --input https://fly-tirol.com/shop/swagger.json --output ./types/shop --client fetch --exportModels true --exportCore false --exportSchemas false --exportServices false"
   },
   "dependencies": {
