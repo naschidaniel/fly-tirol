@@ -2,7 +2,7 @@
   <div class="card py-4">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header bg-white mb-7">
-        <NuxtLink :to="website">
+        <NuxtLink target="_blank" :to="website">
           <ResponsiveImage img-class="object-scale-down" :picture="image" />
         </NuxtLink>
       </div>

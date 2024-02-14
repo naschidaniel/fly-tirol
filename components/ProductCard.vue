@@ -22,6 +22,7 @@
             </NuxtLink>
           </h2>
           <ProductDetails
+            :bikeandfly="metadata.bikeandfly"
             :location="metadata.location"
             :duration="metadata.duration"
             :praxis="metadata.praxis"
@@ -42,7 +43,14 @@
       <div class="transform -translate-y-2/4">
         <NuxtLink
           :to="metadata.path"
-          class="btn-primary btn--large"
+          class="btn--large"
+          :class="
+            metadata.bikeandfly === 'bike'
+              ? 'btn-bike'
+              : metadata.bikeandfly === 'fly'
+                ? 'btn-fly'
+                : 'btn-primary'
+          "
           :title="isFlyTirol ? metadata.title : 'Info und buchen'"
         >
           <span v-if="isFlyTirol">Mehr erfahren</span>

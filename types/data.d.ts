@@ -29,6 +29,7 @@ export interface MediaInformation {
 }
 
 export interface MetaData {
+  bikeandfly?: "bike" | "bike&fly" | "fly"
   lang: string
   category: string
   description: string

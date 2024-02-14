@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>BikeAndFly - Akrobatikflug Hohe Salve - Hopfgarten</title>
-    <meta name="description" content="WHITE-CLOUD TANDEMFLÜGE - Paragleiten in Söll am Wilden Kaiser, oder von Hopfgarten in Brixental. Mit der Bergbahn hinauf auf der Hohe Salve.">
-    <meta name="author" content="WHITE-CLOUD TANDEMFLÜGE">
+    <title>Willkommen bei der Fly Tirol Flugschule</title>
+    <meta name="description" content="Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!">
+    <meta name="author" content="Flugschule Fly-Tirol.com">
 
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
@@ -18,18 +18,19 @@
 <body style="margin:0;padding:0">
     <div id="map" style="height: 400px;"></div>
     <script>
-        function openGeoLink(e) {
-          window.open(`geo:${e.latlng.lat}, ${e.latlng.lng}`)
+      function openMapsLink(e) {
+          window.open(`https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen`)
         }
-        const map = L.map('map').setView([47.473, 12.203], 12);
+        const map = L.map('map').setView([47.42811422723987, 12.213429046024435], 14);
         L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: "<a href='https://osm.org/copyright'>OpenStreetMap</a> contributors",
             maxZoom: 18,
         }).addTo(map);
 
-        L.marker([47.46497366206375, 12.203761050710721]).bindTooltip("Startplatz Gipfel Hohe Salve", {"permanent": true}).addTo(map).on('click', (e) => openGeoLink(e));
-        L.marker([47.49687105347196, 12.198308731122726]).bindTooltip("Treffpunkt Kassa Talstation Söll", {"permanent": true}).addTo(map).on('click', (e) => openGeoLink(e));
-        L.marker([47.446873358880126, 12.16207365626177]).bindTooltip("Treffpunkt Kassa Talstation Hopfgarten", {"permanent": true}).addTo(map).on('click', (e) => openGeoLink(e));
+        L.marker([47.42811422723987, 12.213429046024435]).bindTooltip("Fly Tirol - Flugschule Kitzbüheler Alpen", {"permanent": true}).addTo(map).on('click', (e) => openMapsLink(e));
+        L.marker([47.41887053497028, 12.243820078717167]).bindTooltip("Weststartplatz", {"permanent": false}).addTo(map);
+        L.marker([47.42038000466236, 12.249383691061105]).bindTooltip("Oststartplatz", {"permanent": false}).addTo(map);
+        L.marker([47.421889325963285, 12.25151503139521]).bindTooltip("Nordstartplatz", {"permanent": false}).addTo(map);
     </script>
 </body>
 </html>

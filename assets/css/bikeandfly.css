@@ -1,52 +1,123 @@
 @tailwind base;
+
 @font-face {
   font-family: 'RedHatDisplay';
   src: url("~/assets/fonts/Gilmer-Medium.otf") format("opentype");
   font-weight: 300 900;
   font-style: normal;
-  font-display: fallback; }
+  font-display: fallback;
+}
+
 @font-face {
   font-family: 'RedHatText';
   src: url("~/assets/fonts/Gilmer-Medium.otf") format("opentype");
   font-weight: 300 700;
   font-style: normal;
-  font-display: fallback; }
-.btn-primary {
-    @apply relative
-    inline-flex
-    justify-center
-    items-center
-    px-4
-    py-2
-    rounded-md
-    text-base
-    font-medium
-    leading-none
-    tracking-wide
-    text-white
-    bg-[#1c9dd8]
-    focus:ring-2
-    focus:ring-blue-400
-    focus:ring-offset-2
-    focus:ring-offset-white
-    focus:ring-opacity-100
-    focus:outline-none
-    transition
-    duration-150
-    ease-in-out; }
+  font-display: fallback;
+}
 
+.btn-primary {
+  @apply
+  relative
+  inline-flex
+  justify-center
+  items-center
+  px-4
+  py-2
+  rounded-md
+  text-base
+  font-medium
+  leading-none
+  tracking-wide
+  text-brand
+  bg-gradient-to-r
+  from-[#c2deba]
+  to-[#b0def1]
+  focus:ring-2
+  focus:ring-blue-400
+  focus:ring-offset-2
+  focus:ring-offset-white
+  focus:ring-opacity-100
+  focus:outline-none
+  transition
+  duration-150
+  ease-in-out;
+}
+
+.btn-bike {
+  @apply
+  relative
+  inline-flex
+  justify-center
+  items-center
+  px-4
+  py-2
+  rounded-md
+  text-base
+  font-medium
+  leading-none
+  tracking-wide
+  text-brand
+  bg-[#c2deba]
+  focus:ring-2
+  focus:ring-blue-400
+  focus:ring-offset-2
+  focus:ring-offset-white
+  focus:ring-opacity-100
+  focus:outline-none
+  transition
+  duration-150
+  ease-in-out;
+}
+
+.btn-fly {
+  @apply
+  relative
+  inline-flex
+  justify-center
+  items-center
+  px-4
+  py-2
+  rounded-md
+  text-base
+  font-medium
+  leading-none
+  tracking-wide
+  text-brand
+  bg-[#b0def1]
+  focus:ring-2
+  focus:ring-blue-400
+  focus:ring-offset-2
+  focus:ring-offset-white
+  focus:ring-opacity-100
+  focus:outline-none
+  transition
+  duration-150
+  ease-in-out;
+}
 
 @layer base {
   .nuxt-content h1 {
-    @apply text-2xl lg:text-5xl font-medium my-6 uppercase text-[#22211f] mt-12;}
-  .nuxt-content h1 small {
-      @apply text-lg lg:text-2xl mb-2 block text-[#949494]; }
-  .nuxt-content h1 strong {
-      @apply text-[#1c9dd8]; }
-  .nuxt-content h2 {
-    @apply text-xl lg:text-3xl font-medium my-8 uppercase text-[#123454] mt-10; }
-  .nuxt-content h2 small {
-      @apply text-base lg:text-xl block text-[#949494]; }
-  .nuxt-content h2 strong {
-        @apply text-[#1c9dd8]; }
+    @apply text-2xl lg:text-5xl font-medium my-6 uppercase text-[#22211f] mt-12;
   }
+
+  .nuxt-content h1 small {
+    @apply text-lg lg:text-2xl mb-2 block text-[#22211f];
+  }
+
+  .nuxt-content h1 strong {
+    @apply text-[#22211f];
+  }
+
+  .nuxt-content h2 {
+    @apply text-xl lg:text-3xl font-medium my-8 uppercase text-[#22211f] mt-10;
+  }
+
+  .nuxt-content h2 small {
+    @apply text-base lg:text-xl block text-[#22211f];
+  }
+
+  .nuxt-content h2 strong {
+    @apply text-[#22211f];
+  }
+}

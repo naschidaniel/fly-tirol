@@ -6,8 +6,6 @@
       picture="/media/kontakt.jpg"
       :link1="telefonNumber"
       :link2="mailAddress"
-      :link3="tandemTelefonNumber"
-      :link4="tandemmailAddress"
       :address="address"
     >
       <div class="nuxt-content">
@@ -40,30 +38,6 @@
             }}</a>
           </div>
         </div>
-        <h2>Tandemhotline</h2>
-        <p class="mt-10 text-lg leading-relaxed max-w-prose">
-          Du willst einen Termin für einen Tandemflug vereinbaren oder hast eine
-          generelle Frage bezüglich eines Tandemflugs? Dann zögere nicht und
-          kontaktiere unsere Tandemhotline via Telefon oder Mail!
-        </p>
-        <div class="flex flex-wrap justify-center mt-6">
-          <div class="flex p-2 w-5/6 md:w-1/2">
-            <a
-              v-if="tandemTelefonNumber"
-              :href="tandemTelefonNumber.href"
-              class="btn-primary btn--large w-full"
-              >{{ tandemTelefonNumber.name }}</a
-            >
-          </div>
-          <div class="flex p-2 w-5/6 md:w-1/2">
-            <a
-              v-if="tandemmailAddress"
-              :href="tandemmailAddress.href"
-              class="btn-primary btn--large w-full"
-              >{{ tandemmailAddress.name }}</a
-            >
-          </div>
-        </div>
       </div>
     </PageHeader>
     <div class="max-w-90 mx-auto text-lg font-heading font-medium leading-snug">
@@ -73,8 +47,8 @@
           class="hidden md:block w-5 h-5 mr-1 -mt-0.25"
         />
         <span class="hidden md:block mr-6">Anschrift</span>
-        Fly Tirol - Flugschule Kitzbühler Alpen | Bergliftstraße 22 | A-6363
-        Westendorf | Tirol | Österreich
+        Bike&Fly. Festival Westendorf | Bergliftstraße 22 | A-6363 Westendorf |
+        Tirol | Österreich
       </div>
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
     </div>
@@ -98,16 +72,8 @@ const telefonNumber = {
   name: '+43 676 3931494',
 }
 const mailAddress = {
-  href: 'mailto:info@fly-tirol.com ',
-  name: 'info@fly-tirol.com',
-}
-const tandemTelefonNumber = {
-  href: 'tel:00436766422088',
-  name: '+43 676 6422088',
-}
-const tandemmailAddress = {
-  href: 'mailto:tandem@fly-tirol.com ',
-  name: 'tandem@fly-tirol.com',
+  href: 'mailto:info@bikeandfly.at',
+  name: 'info@bikeandfly.at',
 }
 
 useMetaTags()

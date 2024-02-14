@@ -7,7 +7,7 @@ description: Fly Tirol Flugschule - Impressum
 Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.
 
 ## Anschrift
-<strong>Feel Free Sport GmbH</strong>
+<strong>Bike&Fly. Festival Westendorf</strong>
 
 Bergliftstr. 22, 
 
@@ -17,13 +17,9 @@ Bergliftstr. 22,
 
 ## Kontakt
 
-Telefon Büro: <a href="tel:+436766422088"> +43 676 3931494</a>
+Telefon Büro: <a href="tel:+436763931494"> +43 676 3931494</a>
 
-E-Mail Büro: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
-
-Tandemhotlein: <a href="tel:+436766422088">+43 676 6422088</a>
-
-E-Mail Tandem <a href="mailto:tandem@fly-tirol.com">tandem@fly-tirol.com</a>
+E-Mail Büro: <a href="mailto:info@bikeandfly.at">info@bikeandfly.at</a>
 
 ## Daten
 

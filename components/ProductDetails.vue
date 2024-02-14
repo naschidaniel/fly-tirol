@@ -11,13 +11,32 @@
       <span class="block leading-none pt-1">{{ duration }}</span>
     </div>
     <div
-      v-if="praxis || flightDuration"
+      v-if="praxis || flightDuration || bikeandfly === 'fly'"
       class="flex items-center text-sm -ml-1 mb-2"
     >
       <IconOutlinePaperPlane class="w-4 h-4" />
       <span class="block leading-none pt-1 ml-1">
         <span v-if="praxis">{{ praxis }}</span>
-        <span v-else>{{ flightDuration }}</span>
+        <span v-if="flightDuration">{{ flightDuration }}</span>
+        <span v-else>{{ bikeandfly }}</span>
+      </span>
+    </div>
+    <div
+      v-if="bikeandfly === 'bike'"
+      class="flex items-center text-sm -ml-1 mb-2"
+    >
+      <IconOutlineBattery100 class="w-4 h-4" />
+      <span class="block leading-none pt-1 ml-1">
+        {{ bikeandfly }}
+      </span>
+    </div>
+    <div
+      v-if="bikeandfly === 'bike&fly'"
+      class="flex items-center text-sm -ml-1 mb-2"
+    >
+      <IconOutlineCake class="w-4 h-4" />
+      <span class="block leading-none pt-1 ml-1">
+        {{ bikeandfly }}
       </span>
     </div>
     <div v-if="theorie" class="flex items-center text-sm -ml-1 mb-2">
@@ -59,14 +78,17 @@
 import IconOutlineAcademicCap from './icon/IconOutlineAcademicCap.vue'
 import IconOutlineBook from './icon/IconOutlineBook.vue'
 import IconOutlineClock from './icon/IconOutlineClock.vue'
+import IconOutlineCake from './icon/IconOutlineCake.vue'
 import IconOutlineCash from './icon/IconOutlineCash.vue'
 import IconOutlineCalendar from './icon/IconOutlineCalendar.vue'
 import IconOutlineLocationMarker from './icon/IconOutlineLocationMarker.vue'
 import IconOutlineMinusCircle from './icon/IconOutlineMinusCircle.vue'
 import IconOutlinePaperPlane from './icon/IconOutlinePaperPlane.vue'
+import IconOutlineBattery100 from './icon/IconOutlineBattery100.vue'
 import IconSpinner from './icon/IconSpinner.vue'
 
 defineProps({
+  bikeandfly: { type: String, default: undefined },
   dates: { type: Number, default: undefined },
   duration: { type: String, default: undefined },
   excluded: { type: String, default: undefined },

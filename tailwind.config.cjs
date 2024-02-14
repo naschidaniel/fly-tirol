@@ -52,6 +52,8 @@ module.exports = {
         green: colors.emerald,
         yellow: colors.amber,
         purple: colors.violet,
+        bike: '#c2deba',
+        fly: '#b0def1',
       },
       fontFamily: {
         sans: ['RedHatText', 'sans-serif'],

@@ -25,16 +25,11 @@
         <NavigationNavbarLink name="Programm" to="/programm" />
         <NavigationNavbarLink name="Packages" to="/packages" />
         <NavigationNavbarLink name="Partner" to="/partner" />
-        <NavigationNavbarLink name="Kontakt" to="/kontakt" />
       </nav>
     </div>
 
     <div class="flex">
-      <div
-        v-if="isFlyTirol"
-        class="mr-2 my-1 xl:my-0 z-10"
-        @click="toggleIfDropdownIsOpen()"
-      >
+      <div class="mr-2 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
         <NuxtLink class="btn-primary" to="/buchen" exact>
           <IconOutlineShoppingCart
             class="mr-1"
@@ -43,11 +38,7 @@
           ({{ cartItemsLength }})
         </NuxtLink>
       </div>
-      <div
-        v-if="isFlyTirol"
-        class="mr-3 my-1 xl:my-0 z-10"
-        @click="toggleIfDropdownIsOpen()"
-      >
+      <div class="mr-3 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
         <NuxtLink class="btn-primary" to="/kontakt" exact>
           <span>Kontakt</span>
         </NuxtLink>

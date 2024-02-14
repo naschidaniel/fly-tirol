@@ -1,11 +1,4 @@
 ---
-title: Willkommen bei der Fly Tirol Flugschule
-description: Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema 'Paragleiten' in den Kitzbüheler Alpen und darüber hinaus!
+title: Festival Westendorf
+description: In Westendorf erwartet alle Bike- und Flugbegeisterten ein neues Highlight, das Bike and Fly Festival. Von 9. bis 11. August wird die Talstation der Alpenrosenbahn zum Treffpunkt für Abenteuerlustige und Freizeitsportler. 
 ---
-
-# <small>Hohe Salve, Hopfgarten im Brixental und Söll am Wilden Kaiser</small> WHITE-CLOUD <strong>Tandemflüge</strong>
-
-## WER HAT NICHT SCHON EINMAL VOM FLIEGEN GETRÄUMT?
-Lassen Sie jetzt Ihre Träume zur Realität werden! Genießen Sie einen gemütlichen Gleitflug ins Tal oder erleben Sie die Thermik während wir wie ein Adler hoch über den Gipfeln kreisen! Mit Startplätzen für jede Windrichtung und mehreren Landeplätzen zeichnet sich die Hohe Salve als idealer Startberg für Gleitschirmflüge aus. Mit dem Wilden Kaiser als Kulisse fliegen wir über die Heimat des „Bergdoktors“ hinunter ins Tal nach Söll oder nach Hopfgarten.
-
-Buchen Sie jetzt Ihr persönliches Flugerlebnis oder überraschen Sie jemand Anderen mit einem Geschenkgutschein!

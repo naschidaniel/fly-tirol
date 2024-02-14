@@ -17,7 +17,7 @@ Bergliftstr. 22,
 
 ## Kontakt
 
-Telefon Büro: <a href="tel:+436766422088"> +43 676 3931494</a>
+Telefon Büro: <a href="tel:+436763931494"> +43 676 3931494</a>
 
 E-Mail Büro: <a href="mailto:info@fly-tirol.com">info@fly-tirol.com</a>
 

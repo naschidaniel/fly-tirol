@@ -129,11 +129,56 @@
     "alt": "",
     "title": ""
   },
-  "/media/packages/early-bird.jpg": {
-    "url": "/media/packages/early-bird.jpg",
+  "/media/packages/afterparty.jpg": {
+    "url": "/media/packages/afterparty.jpg",
     "path": "/media/packages/",
-    "file": "early-bird.jpg",
-    "stem": "early-bird",
+    "file": "afterparty.jpg",
+    "stem": "afterparty",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/bike-and-fly-touren.jpg": {
+    "url": "/media/packages/bike-and-fly-touren.jpg",
+    "path": "/media/packages/",
+    "file": "bike-and-fly-touren.jpg",
+    "stem": "bike-and-fly-touren",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/bike-touren.jpg": {
+    "url": "/media/packages/bike-touren.jpg",
+    "path": "/media/packages/",
+    "file": "bike-touren.jpg",
+    "stem": "bike-touren",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/e-bike-verleih.jpg": {
+    "url": "/media/packages/e-bike-verleih.jpg",
+    "path": "/media/packages/",
+    "file": "e-bike-verleih.jpg",
+    "stem": "e-bike-verleih",
     "dimensions": {
       "height": 1074,
       "orientation": 1,
@@ -220,6 +265,51 @@
     "path": "/media/packages/",
     "file": "tagesticket.jpg",
     "stem": "tagesticket",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/tandemfluege.jpg": {
+    "url": "/media/packages/tandemfluege.jpg",
+    "path": "/media/packages/",
+    "file": "tandemfluege.jpg",
+    "stem": "tandemfluege",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/vortrag.jpg": {
+    "url": "/media/packages/vortrag.jpg",
+    "path": "/media/packages/",
+    "file": "vortrag.jpg",
+    "stem": "vortrag",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/weekendticket.jpg": {
+    "url": "/media/packages/weekendticket.jpg",
+    "path": "/media/packages/",
+    "file": "weekendticket.jpg",
+    "stem": "weekendticket",
     "dimensions": {
       "height": 1074,
       "orientation": 1,

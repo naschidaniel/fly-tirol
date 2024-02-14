@@ -1,6 +1,6 @@
 ---
-title: AGB Feel Free GmbH
-description: AGB Feel Free GmbH
+title: AGB Bike&Fly. Festival Westendorf
+description: AGB Bike&Fly. Festival Westendorf
 ---
 
 # Allgemeine Geschäftsbedingungen (AGB) der Feel Free GmbH

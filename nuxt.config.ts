@@ -117,17 +117,19 @@ export default defineNuxtConfig({
       backend:
         process.env.NUXT_BACKEND === 'flytirol'
           ? 'https://fly-tirol.com'
-          : 'http://127.0.0.1:8000',
+          : process.env.NUXT_BACKEND === 'bikeandfly'
+            ? 'https://bikeandfly.at'
+            : 'http://127.0.0.1:8000',
       buildTime: +new Date(),
-      instagram: isFlyTirol ? 'fly.tirol' : 'white_cloud_paragliding',
+      instagram: isFlyTirol ? 'fly.tirol' : 'bike_fly_festival_brixental',
       isDevelopment: process.env.NODE_ENV === 'development',
       isFlyTirol,
       isBikeAndFly,
       // @ts-ignore
       licenses,
       mail: isFlyTirol ? 'info@fly-tirol.com' : 'info@bikeandfly.at',
-      phone: isFlyTirol ? '+436763931494' : '+4368181589568',
-      phoneString: isFlyTirol ? '+43 676 3931494' : '+43 681 81589568',
+      phone: isFlyTirol ? '+436763931494' : '+436763931494',
+      phoneString: isFlyTirol ? '+43 676 3931494' : '+43 676 3931494',
       website: isFlyTirol ? 'fly-tirol.com' : 'bikeandfly.at',
       websiteUrl: isFlyTirol
         ? 'https://fly-tirol.com'
