@@ -1,0 +1,438 @@
+{
+  "/media/BikeAndFlyFestival.jpg": {
+    "url": "/media/BikeAndFlyFestival.jpg",
+    "path": "/media/",
+    "file": "BikeAndFlyFestival.jpg",
+    "stem": "BikeAndFlyFestival",
+    "dimensions": {
+      "height": 1370,
+      "width": 1350,
+      "type": "jpg",
+      "ratio": 0.985
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/BikeAndFlyHeader.jpg": {
+    "url": "/media/BikeAndFlyHeader.jpg",
+    "path": "/media/",
+    "file": "BikeAndFlyHeader.jpg",
+    "stem": "BikeAndFlyHeader",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/Flying.jpg": {
+    "url": "/media/Flying.jpg",
+    "path": "/media/",
+    "file": "Flying.jpg",
+    "stem": "Flying",
+    "dimensions": {
+      "height": 1591,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.571
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/available-soon.jpg": {
+    "url": "/media/available-soon.jpg",
+    "path": "/media/",
+    "file": "available-soon.jpg",
+    "stem": "available-soon",
+    "dimensions": {
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/gallerie/fff.jpg": {
+    "url": "/media/index/gallerie/fff.jpg",
+    "path": "/media/index/gallerie/",
+    "file": "fff.jpg",
+    "stem": "fff",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/gallerie/xxx.jpg": {
+    "url": "/media/index/gallerie/xxx.jpg",
+    "path": "/media/index/gallerie/",
+    "file": "xxx.jpg",
+    "stem": "xxx",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/gallerie/yyy.jpg": {
+    "url": "/media/index/gallerie/yyy.jpg",
+    "path": "/media/index/gallerie/",
+    "file": "yyy.jpg",
+    "stem": "yyy",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/gallerie/zzz.jpg": {
+    "url": "/media/index/gallerie/zzz.jpg",
+    "path": "/media/index/gallerie/",
+    "file": "zzz.jpg",
+    "stem": "zzz",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/kontakt.jpg": {
+    "url": "/media/kontakt.jpg",
+    "path": "/media/",
+    "file": "kontakt.jpg",
+    "stem": "kontakt",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/afterparty.jpg": {
+    "url": "/media/packages/afterparty.jpg",
+    "path": "/media/packages/",
+    "file": "afterparty.jpg",
+    "stem": "afterparty",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/bike-and-fly-touren.jpg": {
+    "url": "/media/packages/bike-and-fly-touren.jpg",
+    "path": "/media/packages/",
+    "file": "bike-and-fly-touren.jpg",
+    "stem": "bike-and-fly-touren",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/bike-touren.jpg": {
+    "url": "/media/packages/bike-touren.jpg",
+    "path": "/media/packages/",
+    "file": "bike-touren.jpg",
+    "stem": "bike-touren",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/e-bike-verleih.jpg": {
+    "url": "/media/packages/e-bike-verleih.jpg",
+    "path": "/media/packages/",
+    "file": "e-bike-verleih.jpg",
+    "stem": "e-bike-verleih",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/gallerie/fff.jpg": {
+    "url": "/media/packages/gallerie/fff.jpg",
+    "path": "/media/packages/gallerie/",
+    "file": "fff.jpg",
+    "stem": "fff",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/gallerie/xxx.jpg": {
+    "url": "/media/packages/gallerie/xxx.jpg",
+    "path": "/media/packages/gallerie/",
+    "file": "xxx.jpg",
+    "stem": "xxx",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/gallerie/yyy.jpg": {
+    "url": "/media/packages/gallerie/yyy.jpg",
+    "path": "/media/packages/gallerie/",
+    "file": "yyy.jpg",
+    "stem": "yyy",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/gallerie/zzz.jpg": {
+    "url": "/media/packages/gallerie/zzz.jpg",
+    "path": "/media/packages/gallerie/",
+    "file": "zzz.jpg",
+    "stem": "zzz",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/packages.jpg": {
+    "url": "/media/packages/packages.jpg",
+    "path": "/media/packages/",
+    "file": "packages.jpg",
+    "stem": "packages",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/tagesticket.jpg": {
+    "url": "/media/packages/tagesticket.jpg",
+    "path": "/media/packages/",
+    "file": "tagesticket.jpg",
+    "stem": "tagesticket",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/tandemfluege.jpg": {
+    "url": "/media/packages/tandemfluege.jpg",
+    "path": "/media/packages/",
+    "file": "tandemfluege.jpg",
+    "stem": "tandemfluege",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/vortrag.jpg": {
+    "url": "/media/packages/vortrag.jpg",
+    "path": "/media/packages/",
+    "file": "vortrag.jpg",
+    "stem": "vortrag",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/packages/weekendticket.jpg": {
+    "url": "/media/packages/weekendticket.jpg",
+    "path": "/media/packages/",
+    "file": "weekendticket.jpg",
+    "stem": "weekendticket",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/FlyTirolLogo.jpg": {
+    "url": "/media/partner/FlyTirolLogo.jpg",
+    "path": "/media/partner/",
+    "file": "FlyTirolLogo.jpg",
+    "stem": "FlyTirolLogo",
+    "dimensions": {
+      "height": 500,
+      "orientation": 1,
+      "width": 1000,
+      "type": "jpg",
+      "ratio": 2
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/partner.jpg": {
+    "url": "/media/partner/partner.jpg",
+    "path": "/media/partner/",
+    "file": "partner.jpg",
+    "stem": "partner",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/programm/gallerie/fff.jpg": {
+    "url": "/media/programm/gallerie/fff.jpg",
+    "path": "/media/programm/gallerie/",
+    "file": "fff.jpg",
+    "stem": "fff",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/programm/gallerie/xxx.jpg": {
+    "url": "/media/programm/gallerie/xxx.jpg",
+    "path": "/media/programm/gallerie/",
+    "file": "xxx.jpg",
+    "stem": "xxx",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/programm/gallerie/yyy.jpg": {
+    "url": "/media/programm/gallerie/yyy.jpg",
+    "path": "/media/programm/gallerie/",
+    "file": "yyy.jpg",
+    "stem": "yyy",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/programm/gallerie/zzz.jpg": {
+    "url": "/media/programm/gallerie/zzz.jpg",
+    "path": "/media/programm/gallerie/",
+    "file": "zzz.jpg",
+    "stem": "zzz",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/programm/programm.jpg": {
+    "url": "/media/programm/programm.jpg",
+    "path": "/media/programm/",
+    "file": "programm.jpg",
+    "stem": "programm",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/tandemfliegen_salve.jpg": {
+    "url": "/media/tandemfliegen_salve.jpg",
+    "path": "/media/",
+    "file": "tandemfliegen_salve.jpg",
+    "stem": "tandemfliegen_salve",
+    "dimensions": {
+      "height": 3000,
+      "orientation": 1,
+      "width": 4000,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  }
+}

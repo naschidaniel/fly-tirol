@@ -1,4 +1,4 @@
-const isWhiteCloud = process.env.NUXT_PAGE === 'whitecloud'
+const isBikeAndFly = process.env.NUXT_PAGE === 'bikeandfly'
 
 const colors = require('tailwindcss/colors')
 const em = (px) => `${px / 16}em`
@@ -21,19 +21,19 @@ const content = [
   'layouts/**/*.vue',
   'pages/**/*.vue',
   'content_flytirol/**/*.vue',
-  'content_whitecloud/**/*.vue',
+  'content_bikeandfly/**/*.vue',
   'pages_flytirol/**/*.vue',
-  'pages_whitecloud/**/*.vue',
+  'pages_bikeandfly/**/*.vue',
   'plugins/**/*.{js,ts}',
   'app.vue',
   'error.vue',
 ]
 
-isWhiteCloud
-  ? content.push('pages_whitecloud/**/*.vue')
+isBikeAndFly
+  ? content.push('pages_bikeandfly/**/*.vue')
   : content.push('pages_flytirol/**/*.vue')
 
-const brandColor = isWhiteCloud ? '#666' : '#160D42'
+const brandColor = isBikeAndFly ? '#22211f' : '#160D42'
 
 module.exports = {
   content,
@@ -52,6 +52,8 @@ module.exports = {
         green: colors.emerald,
         yellow: colors.amber,
         purple: colors.violet,
+        bike: '#c2deba',
+        fly: '#b0def1',
       },
       fontFamily: {
         sans: ['RedHatText', 'sans-serif'],

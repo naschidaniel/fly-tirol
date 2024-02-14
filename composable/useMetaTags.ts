@@ -27,8 +27,8 @@ export function useMetaTags() {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: config.public.isWhiteCloud
-          ? 'https://white-cloud.tirol/media/WhiteCloudLogo_sm.jpg'
+        content: config.public.isBikeAndFly
+          ? 'https://bikeandfly.at/media/BikeAndFlyLogo_sm.jpg'
           : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
       },
       {
@@ -39,8 +39,8 @@ export function useMetaTags() {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: config.public.isWhiteCloud
-          ? `https://white-cloud.tirol${page.value.path}`
+        content: config.public.isBikeAndFly
+          ? `https://bikeandfly.at${page.value.path}`
           : `https://fly-tirol.com${page.value.path}`,
       },
     ]

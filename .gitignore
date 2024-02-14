@@ -100,14 +100,14 @@ deploy.sh
 # run docker
 run.sh
 flytirol*.tar.gz
-whitecloud*.tar.gz
+bikeandfly*.tar.gz
 
 # content
 /content_flytirol/**/*.vue
-/content_whitecloud/**/*.vue
+/content_bikeandfly/**/*.vue
 /data/metadataFlyTirol.ts
-/data/metadataWhiteCloud.ts
+/data/metadataBikeAndFly.ts
 /data/mediaFlyTirol.ts
-/data/mediaWhiteCloud.ts
+/data/mediaBikeAndFly.ts
 /.public_flytirol
-/.public_whitecloud
+/.public_bikeandfly

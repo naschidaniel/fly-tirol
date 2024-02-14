@@ -18,10 +18,11 @@
             <NuxtLink :to="metadata.path">
               <span v-if="isFlyTirol">{{ metadata.title }}</span>
               <!-- eslint-disable-next-line vue/no-v-html -->
-              <span v-if="isWhiteCloud" v-html="metadata.title"></span>
+              <span v-if="isBikeAndFly" v-html="metadata.title"></span>
             </NuxtLink>
           </h2>
           <ProductDetails
+            :bikeandfly="metadata.bikeandfly"
             :location="metadata.location"
             :duration="metadata.duration"
             :praxis="metadata.praxis"
@@ -42,7 +43,14 @@
       <div class="transform -translate-y-2/4">
         <NuxtLink
           :to="metadata.path"
-          class="btn-primary btn--large"
+          class="btn--large"
+          :class="
+            metadata.bikeandfly === 'bike'
+              ? 'btn-bike'
+              : metadata.bikeandfly === 'fly'
+                ? 'btn-fly'
+                : 'btn-primary'
+          "
           :title="isFlyTirol ? metadata.title : 'Info und buchen'"
         >
           <span v-if="isFlyTirol">Mehr erfahren</span>
@@ -65,7 +73,7 @@ import { usePage } from '@/composable/usePage'
 const props = defineProps({ path: { type: String, required: true } })
 const { getProduct } = useBackend()
 const { formatPrice } = useFormat()
-const { isFlyTirol, isWhiteCloud } = useData()
+const { isFlyTirol, isBikeAndFly } = useData()
 const { isCourse, getMetadata } = usePage()
 const metadata = getMetadata(props.path)
 

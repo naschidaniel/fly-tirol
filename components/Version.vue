@@ -12,12 +12,16 @@
     <div>
       Testprodukte:
       <NuxtLink to="/testprodukte">
-        https://fly-tirol.com/testprodukte
+        <span v-if="isBikeAndFly">https://bikeandfly.at/testprodukte</span>
+        <span v-else>https://fly-tirol.com/testprodukte</span>
       </NuxtLink>
     </div>
     <div>
       Admin Interface:
-      <a href="https://fly-tirol.com/shop/admin-ui/"
+      <a v-if="isBikeAndFly" href="https://bikeandfly.at/shop/admin-ui/"
+        >https://bikeandfly.at/shop/admin-ui/</a
+      >
+      <a v-else href="https://fly-tirol.com/shop/admin-ui/"
         >https://fly-tirol.com/shop/admin-ui/</a
       >
     </div>
@@ -51,7 +55,7 @@
 import { useData } from '@/composable/useData'
 import { useFormat } from '@/composable/useFormat'
 
-const { buildTime, licenses } = useData()
+const { buildTime, licenses, isBikeAndFly } = useData()
 const { formatDateTime } = useFormat()
 </script>
 

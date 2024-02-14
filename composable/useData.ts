@@ -9,7 +9,7 @@ export function useData() {
   const instagram: string = config.public.instagram
   const isDevelopment: boolean = config.public.isDevelopment
   const isFlyTirol: boolean = config.public.isFlyTirol
-  const isWhiteCloud: boolean = config.public.isWhiteCloud
+  const isBikeAndFly: boolean = config.public.isBikeAndFly
   const licenses: License[] = config.public.licenses as License[]
   const mail: string = config.public.mail
   const phone: string = config.public.phone
@@ -23,7 +23,7 @@ export function useData() {
     instagram,
     isDevelopment,
     isFlyTirol,
-    isWhiteCloud,
+    isBikeAndFly,
     licenses,
     mail,
     phone,

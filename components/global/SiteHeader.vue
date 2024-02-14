@@ -4,7 +4,7 @@
       <div class="relative shrink-0 z-10">
         <NuxtLink to="/" class="block outline-none w-24" exact>
           <FlyTirolLogo v-if="isFlyTirol" class="w-full" />
-          <WhiteCloutLogo v-if="isWhiteCloud" class="w-full" />
+          <BikeAndFlyLogoBlack v-if="isBikeAndFly" class="w-full" />
         </NuxtLink>
       </div>
       <NavigationNavbar />
@@ -14,9 +14,9 @@
 
 <script setup lang="ts">
 import FlyTirolLogo from '../FlyTirolLogo.vue'
-import WhiteCloutLogo from '../WhiteCloudLogo.vue'
+import BikeAndFlyLogoBlack from '../BikeAndFlyLogoBlack.vue'
 import NavigationNavbar from './NavigationNavbar.vue'
 import { useData } from '@/composable/useData'
 
-const { isFlyTirol, isWhiteCloud } = useData()
+const { isFlyTirol, isBikeAndFly } = useData()
 </script>

@@ -1,0 +1,35 @@
+User-agent: *
+Disallow: /admin
+Disallow: /admin-ui
+Disallow: /api
+Disallow: /dsgvo
+Disallow: /impressum
+Disallow: /buchen
+Disallow: /regiondo_bikeandfly/bookingwidget_de_testflug.html
+
+Allow: /
+Allow: /fluege-und-preise/akrobatikflug-hopfgarten/
+Allow: /fluege-und-preise/akrobatikflug-soell/
+Allow: /fluege-und-preise/gleitflug-hopfgarten/
+Allow: /fluege-und-preise/gleitflug-soell/
+Allow: /fluege-und-preise/thermikflug-hopfgarten/
+Allow: /fluege-und-preise/thermikflug-soell/
+Disallow: /fluege-und-preise/testflug/
+Allow: /kontakt
+
+Allow: /media
+
+User-agent: MSNBot
+Crawl-delay: 16
+
+User-agent: bingbot
+Crawl-delay: 17
+
+User-agent: Slurp
+Crawl-delay: 18
+
+User-agent: Yahoo! Slurp
+Crawl-delay: 19
+
+User-agent: Twitterbot
+Crawl-delay: 18

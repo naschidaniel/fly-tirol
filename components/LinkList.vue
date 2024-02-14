@@ -8,16 +8,30 @@
               class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
-              <span class="inline-block">Finde das richtige</span>
+              <span class="inline-block"
+                ><span v-if="isBikeAndFly">Bike&Fly.</span
+                ><span v-else>Finde das richtige</span></span
+              >
             </span>
-            <span class="text-5xl font-heading font-bold">Angebot</span>
+            <span class="text-5xl font-heading font-bold"
+              ><span v-if="isBikeAndFly">Festival Brixental</span
+              ><span v-else>Angebot</span></span
+            >
           </h2>
           <p class="text-lg leading-relaxed max-w-prose">
-            Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
-            den wunderschönen Kitzbüheler Alpen genießen möchtest, du selbst ein
-            Paragleitpilot werden möchtest, deine vorhandenen Flugfähigkeiten
-            ausbauen willst oder mit uns auf Flugreise gehen möchtest - wir
-            haben genau das richtige für dich!
+            <span v-if="isBikeAndFly">
+              In Westendorf erwartet alle Bike- und Flugbegeisterten ein neues
+              Highlight: das Bike and Fly Festival. Von 9. bis 11. August wird
+              die Talstation der Alpenrosenbahn zum Treffpunkt für
+              Abenteuerlustige und Freizeitsportler.</span
+            >
+            <span v-else
+              >Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
+              den wunderschönen Kitzbüheler Alpen genießen möchtest, du selbst
+              ein Paragleitpilot werden möchtest, deine vorhandenen
+              Flugfähigkeiten ausbauen willst oder mit uns auf Flugreise gehen
+              möchtest - wir haben genau das richtige für dich!
+            </span>
           </p>
         </div>
       </div>
@@ -25,46 +39,12 @@
         class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 w-full xl:py-12 xl:ml-4 3xl:flex"
       >
         <LinkCard
-          :card-image="tandemflights.cardImage"
-          :card-title="tandemflights.cardTitle"
-          :description="tandemflights.description"
-          :to="tandemflights.to"
-        />
-        <LinkCard
-          :card-image="basicTrainings.cardImage"
-          :card-title="basicTrainings.cardTitle"
-          :description="basicTrainings.description"
-          :to="basicTrainings.to"
-        />
-        <LinkCard
-          :card-image="advancedTrainings.cardImage"
-          :card-title="advancedTrainings.cardTitle"
-          :description="advancedTrainings.description"
-          :to="advancedTrainings.to"
-        />
-        <LinkCard
-          :card-image="saftyTrainings.cardImage"
-          :card-title="saftyTrainings.cardTitle"
-          :description="saftyTrainings.description"
-          :to="saftyTrainings.to"
-        />
-        <LinkCard
-          :card-image="acroTrainings.cardImage"
-          :card-title="acroTrainings.cardTitle"
-          :description="acroTrainings.description"
-          :to="acroTrainings.to"
-        />
-        <LinkCard
-          :card-image="travels.cardImage"
-          :card-title="travels.cardTitle"
-          :description="travels.description"
-          :to="travels.to"
-        />
-        <LinkCard
-          :card-image="service.cardImage"
-          :card-title="service.cardTitle"
-          :description="service.description"
-          :to="service.to"
+          v-for="item in linkCardData"
+          :key="item.to"
+          :card-image="item.cardImage"
+          :card-title="item.cardTitle"
+          :description="item.description"
+          :to="item.to"
         />
       </div>
     </div>
@@ -73,47 +53,84 @@
 
 <script setup lang="ts">
 import LinkCard from './LinkCard.vue'
+import { useData } from '@/composable/useData'
+const { isFlyTirol, isBikeAndFly } = useData()
 
-const advancedTrainings = {
-  cardTitle: 'Fortbildung',
-  cardImage: '/media/fortbildung/fortbildung.jpg',
-  description: 'Fortbildungen in der Flugschule Fly Tirol',
-  to: '/fortbildung',
-}
-const basicTrainings = {
-  cardTitle: 'Ausbildung',
-  cardImage: '/media/ausbildung/ausbildung.jpg',
-  description: 'Schulungsbetrieb in der Flugschule Fly Tirol',
-  to: '/ausbildung',
-}
-const saftyTrainings = {
-  cardTitle: 'Sicherheitstrainings',
-  cardImage: '/media/sicherheitstrainings/sicherheitstrainings.jpg',
-  description: 'Unsere Sicherheitstrainings mit Sebastian Kahn',
-  to: '/sicherheitstrainings',
-}
-const acroTrainings = {
-  cardTitle: 'Acrotrainings',
-  cardImage: '/media/acrotrainings/acrotrainings.jpg',
-  description: 'Unsere Acrotrainings mit Sebastian Kahn',
-  to: '/acrotrainings',
-}
-const tandemflights = {
-  cardTitle: 'Tandemflüge',
-  cardImage: '/media/tandemfliegen/tandemfluege.jpg',
-  description: 'Erlebe das Alpenpanorama aus der Vogelperspektive.',
-  to: '/tandemfliegen',
-}
-const travels = {
-  cardTitle: 'Reisen',
-  cardImage: '/media/reisen/paragliding_lago_de_garda.jpg',
-  description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
-  to: '/reisen',
-}
-const service = {
-  cardTitle: 'Service',
-  cardImage: '/media/service/service.jpg',
-  description: 'Dein Gleitschirm in besten Händen',
-  to: '/service',
-}
+const flyTirolData = [
+  {
+    cardTitle: 'Tandemflüge',
+    cardImage: '/media/tandemfliegen/tandemfluege.jpg',
+    description: 'Erlebe das Alpenpanorama aus der Vogelperspektive.',
+    to: '/tandemfliegen',
+  },
+  {
+    cardTitle: 'Ausbildung',
+    cardImage: '/media/ausbildung/ausbildung.jpg',
+    description: 'Schulungsbetrieb in der Flugschule Fly Tirol',
+    to: '/ausbildung',
+  },
+  {
+    cardTitle: 'Fortbildung',
+    cardImage: '/media/fortbildung/fortbildung.jpg',
+    description: 'Fortbildungen in der Flugschule Fly Tirol',
+    to: '/fortbildung',
+  },
+  {
+    cardTitle: 'Sicherheitstrainings',
+    cardImage: '/media/sicherheitstrainings/sicherheitstrainings.jpg',
+    description: 'Unsere Sicherheitstrainings mit Sebastian Kahn',
+    to: '/sicherheitstrainings',
+  },
+  {
+    cardTitle: 'Acrotrainings',
+    cardImage: '/media/acrotrainings/acrotrainings.jpg',
+    description: 'Unsere Acrotrainings mit Sebastian Kahn',
+    to: '/acrotrainings',
+  },
+  {
+    cardTitle: 'Reisen',
+    cardImage: '/media/reisen/paragliding_lago_de_garda.jpg',
+    description: 'Geh mit uns auf Reise und besuche neue Fluggebiete',
+    to: '/reisen',
+  },
+  {
+    cardTitle: 'Service',
+    cardImage: '/media/service/service.jpg',
+    description: 'Dein Gleitschirm in besten Händen',
+    to: '/service',
+  },
+]
+
+const bikeAndFlyData = [
+  {
+    cardTitle: 'Programm',
+    cardImage: '/media/programm/programm.jpg',
+    description:
+      'Das Festival bietet spannende Vorträge, Workshops und Konzerte zu aktuellen Themen. Informieren Sie sich über das Programm auf unserer Website.',
+    to: '/programm',
+  },
+  {
+    cardTitle: 'Packages',
+    cardImage: '/media/packages/packages.jpg',
+    description:
+      'Das Festival bietet spannende Vorträge, Workshops und Konzerte zu aktuellen Themen. Informieren Sie sich über das Programm auf unserer Website.',
+    to: '/packages',
+  },
+  {
+    cardTitle: 'Partner',
+    cardImage: '/media/partner/partner.jpg',
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut',
+    to: '/partner',
+  },
+  {
+    cardTitle: 'Kontakt',
+    cardImage: '/media/kontakt.jpg',
+    description:
+      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut',
+    to: '/kontakt',
+  },
+]
+
+const linkCardData = isBikeAndFly ? bikeAndFlyData : flyTirolData
 </script>

@@ -1,4 +1,4 @@
 export * from './metadataFlyTirol'
-export * from './metadataWhiteCloud'
+export * from './metadataBikeAndFly'
 export * from './mediaFlyTirol'
-export * from './mediaWhiteCloud'
+export * from './mediaBikeAndFly'
