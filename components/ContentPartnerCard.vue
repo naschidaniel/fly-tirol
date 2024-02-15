@@ -71,7 +71,7 @@ import IconOutlineMail from './icon/IconOutlineMail.vue'
 import IconOutlinePhone from './icon/IconOutlinePhone.vue'
 
 defineProps({
-  image: { type: String, required: false },
+  image: { type: String, required: false, default: '' },
   type: { type: String, required: true },
   title: { type: String, required: true },
   subTitle: { type: String, required: false, default: '' },

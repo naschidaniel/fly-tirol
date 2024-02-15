@@ -9,7 +9,7 @@
     <div v-if="page.slug == 'bike-touren'">
       <BikeTouren />
     </div>
-    <div v-if="page.slug == 'bike-touren'">
+    <div v-if="page.slug == 'e-bike-verleih'">
       <EBikeVerleih />
     </div>
     <div v-if="page.slug == 'bike-touren'">
