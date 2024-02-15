@@ -12,11 +12,11 @@ Du bist bereits ein Paragleitpilot und **besitzt den A-Schein** und möchtest **
 
 Du verbringst dein Sicherheitstraining mit Gleichgesinnten im **italienischen Charme des Gardasees**.
 
-Am Tag der Anreise beginnen das Sicherheitstraining mit einer Gebietseinweisung, Manöverbesprechung am Flugsimulator und anhand von Lehrmaterial. Hier wird auf die individuellen Wünsche, dem Können und Bedenken der einzelnen Teilnehmer eingegangen. Auch die individuellen Lernziele der einzelnen Kursteilnehmer werden bei diesem Gespräch berücksichtigt.
+Am Tag nach der Anreise **beginnt** das Sicherheitstraining **mit einer Gebietseinweisung**, **Manöverbesprechung am Flugsimulator** und anhand von **Lehrmaterial**. Hier wird auf die **individuellen Wünsche**, das Können und die Bedenken der einzelnen Teilnehmer eingegangen. Auch die **individuellen Lernziele** der einzelnen **Kursteilnehmer** werden bei diesem Gespräch berücksichtigt.
 
-Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglichst zu unterstützen, werden die Piloten über Funk von unserem Fluglehrer angeleitet. So können die einzelnen Manöver mehrfach während eines Fluges wiederholt und gegebenenfalls korrigiert werden. Die Flüge werden außerdem mit einer Kamera aufgezeichnet. Das Videomaterial wird am Abend mit den Teilnehmern analysiert und besprochen. Außerdem steht für unsere Kursteilnehmer ein Rettungsboot im Gardasee bereit.
+Um unsere Teilnehmer bei den Übungen des Sicherheitstrainings bestmöglich zu unterstützen, werden die **Piloten über Funk von unserem Fluglehrer angeleitet**. So können die einzelnen Manöver mehrfach während eines Fluges wiederholt und gegebenenfalls korrigiert werden. Die **Flüge werden** außerdem **mit einer Kamera aufgezeichnet**. Das **Videomaterial wird** am Abend mit den Teilnehmern **analysiert und besprochen**. Außerdem steht für unsere Kursteilnehmer ein **Rettungsboot jederzeit bereit**.
 
-Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag, geht die Gruppe zum gemeinsamen Abendessen und zusammensitzen um den Tag gemütlich ausklingen zu lassen. 
+Nach den Flügen, der Theorie und den Besprechungen für den kommenden Tag geht die Gruppe zum gemeinsamen Abendessen und zusammensitzen um den Tag gemütlich ausklingen zu lassen. 
 
 <ContentImageGallery path="/media/sicherheitstrainings/sicherheitstraining-gardasee/"/>
 
