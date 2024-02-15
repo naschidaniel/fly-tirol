@@ -71,7 +71,7 @@
               ><IconInstagram style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
-            v-if="isBikeAndFly"
+            v-if="isBikeAndFly && isFlyTirol"
             class="mx-2"
             title="Folge uns auf YouTube"
             @click="openYouTube()"
