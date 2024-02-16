@@ -116,7 +116,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
 
-## 
+## Adding a image gallery
 
 Create a new folder in the path `public_bikeandfly/media/` or `public_flytirol/media/` and store the images for the gallery in this folder. The components `<ContentImageGallery ...>` automatically recognize the stored images and display them on the website.
 
