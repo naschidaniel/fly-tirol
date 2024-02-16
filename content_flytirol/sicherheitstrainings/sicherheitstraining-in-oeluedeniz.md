@@ -12,7 +12,7 @@ Du bist bereits ein Paragleitpilot und **besitzt den A-Schein**. Du möchtest di
 
 Du verbringst dein **Sicherheitstraining mit Gleichgesinnten** in der Nähe des Küstenstädtchens Fethiye in der **türkischen Region Ölüdeniz**, die mit ihrem klaren Meerwasser der Lagune in leuchtenden Blau- und Grünschattierungen lockt.
 
-Um diese Aussicht aus der Luft zu genießen, starten wir unsere Flüge vom **Berg Badadağ** aus. Nach einem atemberaubenden Flug über die lykische Küste landen wir auf dem feinen Sandstrand der Badebucht, der natürlich auch zum Baden einlädt.
+Um diese Aussicht aus der Luft zu genießen, starten wir unsere Flüge vom **Berg Babadağ** aus. Nach einem atemberaubenden Flug über die lykische Küste landen wir auf dem feinen Sandstrand der Badebucht, der natürlich auch zum Baden einlädt.
 
 Am Tag nach der Anreise **beginnt** das Sicherheitstraining **mit einer Gebietseinweisung**, **Manöverbesprechung am Flugsimulator** und anhand von **Lehrmaterial**. Hier wird auf die **individuellen Wünsche**, das Können und die Bedenken der einzelnen Teilnehmer eingegangen. Auch die **individuellen Lernziele** der einzelnen **Kursteilnehmer** werden bei diesem Gespräch berücksichtigt.
 
