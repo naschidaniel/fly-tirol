@@ -21,8 +21,9 @@
     "optimize-images:bikeandfly": "yarn create-public:bikeandfly && ./image-optimizer --source public_bikeandfly/media --destination .public_bikeandfly/media --widths 384 512 640 768 1024 1280 1536 --qualities 95 90 80 75 75 75 75",
     "optimize-images": "yarn optimize-images:flytirol && yarn optimize-images:bikeandfly",
     "create-public": "yarn generateMediaInformation && yarn create-public:flytirol && yarn create-public:bikeandfly",
-    "buildDev": "yarn create-public && yarn optimize-images:flytirol && yarn generateContent",
+    "buildDev": "yarn create-public && yarn optimize-images && yarn generateContent",
     "buildDev:bikeandfly": "yarn create-public:bikeandfly && yarn optimize-images:bikeandfly && yarn generateContent",
+    "buildDev:flytirol": "yarn create-public:flytirol && yarn optimize-images:flytirol && yarn generateContent",
     "openapi": "openapi --input https://fly-tirol.com/shop/swagger.json --output ./types/shop --client fetch --exportModels true --exportCore false --exportSchemas false --exportServices false"
   },
   "dependencies": {
