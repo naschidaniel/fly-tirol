@@ -92,6 +92,7 @@ $ yarn generateMediaInformation
 
 - Adding content is easy and can be done via the Github website.
 - The folder structure should be identical in the content and media folder.
+
 ### The content_flytirol and content_bikeandfly folder
 
 The markdown markup language is used for formatting the content. Read the [www.markdownguide.org/cheat-sheet](https://www.markdownguide.org/cheat-sheet/) for most relevant commands.
@@ -114,6 +115,15 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ## Heading 2
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+
+## 
+
+Create a new folder in the path `public_bikeandfly/media/` or `public_flytirol/media/` and store the images for the gallery in this folder. The components `<ContentImageGallery ...>` automatically recognize the stored images and display them on the website.
+
+For example, the images for the view `https://fly-tirol.com/acrotrainings/acrotraining-am-gardasee/` are stored in the `public_flytirol/media/acrotrainings/acrotraining-gardasee` folder and integrated with the next line.
+
+<ContentImageGallery path="/media/acrotrainings/acrotraining-gardasee/"/>
+
 ```
 
 ## License
