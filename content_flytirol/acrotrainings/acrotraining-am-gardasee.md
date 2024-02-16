@@ -9,7 +9,7 @@ order: 1
 # Acrotraining am Gardasee
 
 Verleihe deinem Flug mehr Spannung mit dieser **spektakulären Art des Fliegens**! Dieses Training ist sowohl **für Neueinsteiger** im Acrobatic-Bereich geeignet **als auch für versierte Acro-Piloten**, die **neue Tricks** lernen möchten oder bereits **erlernte Tricks perfektionieren** wollen. Dein Trainer ist kein Geringerer als der ehemalige **Team-Weltmeister und Vizeweltmeister** im Acrobatic Paragliding, **Sebastian Kahn**.
-<br> </br>
+
 Das Training umfasst je nach Können die typischen **Acro-Basics** wie z.B. **Flyback, Dynamic Full-Stall, SAT, Misty Flip** etc., aber auch die Connections zwischen den einzelnen Manövern wie zum Beispiel Misty to Heli, SAT to Heli… **Für** die bereits **Fortgeschrittenen oder Profis** unter euch haben wir natürlich auch das große Repertoire der **aktuellen Tricks**, sowohl untwisted als auch twisted. Hier stehen hoch im Kurs: **Twisted Infinity und Twisted Joker (reverse)**.
 
 Du verbringst dein Acro-Training mit Gleichgesinnten im **italienischen Charme des Gardasees**. Am **Tag der Anreise** beginnt das Acro-Training mit einer **Gebietseinweisung**, **Manöverbesprechung am Flugsimulator** und anhand von **Lehrmaterial**. 
