@@ -30,6 +30,8 @@ Worauf wartest du noch?
 
 Wir freuen uns auf dich!
 
+<ContentImageGallery path="/media/ausbildung/komplettkurs/"/>
+
 ## Leistungen
 
 - 15 Grundflüge am Übungshang
