@@ -252,20 +252,6 @@
     "alt": "fluglehrer erklärt schüler gleitschirm wiese wald kirchbichberg kitzbüheler alpen westendorf tirol ",
     "title": "Fluglehrer Sebastian Kahn erklärt Aufziehphase Grundkurs Übungshang"
   },
-  "/media/ausbildung/grundausbildung/5_grundausbildung.jpg": {
-    "url": "/media/ausbildung/grundausbildung/5_grundausbildung.jpg",
-    "path": "/media/ausbildung/grundausbildung/",
-    "file": "5_grundausbildung.jpg",
-    "stem": "5_grundausbildung",
-    "dimensions": {
-      "height": 1365,
-      "width": 2048,
-      "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "Paragleiter Wiese Wald Berg Schirm kirchbichberg kitzbüheler alpen westendorf tirol",
-    "title": "erste Starts von Grundkurs am Übungshang"
-  },
   "/media/ausbildung/grundkurs.jpg": {
     "url": "/media/ausbildung/grundkurs.jpg",
     "path": "/media/ausbildung/",
@@ -307,6 +293,62 @@
     },
     "alt": "flugschüler schirm wiese wald berg tal kirchbichberg kitzbüheler alpen westendorf tirol",
     "title": "Flugschüler im Grundkurs am Übungshang in Kirchbichl Kitzbüheler Alpen"
+  },
+  "/media/ausbildung/komplettkurs/1_komplettkurs.jpg": {
+    "url": "/media/ausbildung/komplettkurs/1_komplettkurs.jpg",
+    "path": "/media/ausbildung/komplettkurs/",
+    "file": "1_komplettkurs.jpg",
+    "stem": "1_komplettkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/komplettkurs/2_komplettkurs.jpg": {
+    "url": "/media/ausbildung/komplettkurs/2_komplettkurs.jpg",
+    "path": "/media/ausbildung/komplettkurs/",
+    "file": "2_komplettkurs.jpg",
+    "stem": "2_komplettkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/komplettkurs/3_komplettkurs.jpg": {
+    "url": "/media/ausbildung/komplettkurs/3_komplettkurs.jpg",
+    "path": "/media/ausbildung/komplettkurs/",
+    "file": "3_komplettkurs.jpg",
+    "stem": "3_komplettkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/komplettkurs/4_komplettkurs.jpg": {
+    "url": "/media/ausbildung/komplettkurs/4_komplettkurs.jpg",
+    "path": "/media/ausbildung/komplettkurs/",
+    "file": "4_komplettkurs.jpg",
+    "stem": "4_komplettkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
   },
   "/media/ausbildung/paragleiterschein.jpg": {
     "url": "/media/ausbildung/paragleiterschein.jpg",
