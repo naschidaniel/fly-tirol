@@ -18,6 +18,8 @@ Für ein selbstständiges Fliegen ist es wichtig, auch **Erfahrungen bei untersc
 
 Während dieses Seminars **absolvierst du möglichst viele Flüge** um den 40 Höhenflügen die für die Prüfung des Paragleiterscheins / A-Scheins notwendig sind, näher zu kommen.
 
+<ContentImageGallery path="/media/ausbildung/hoehenflugkurs/"/>
+
 ## Leistungen
 
 - minumium 15 Höhenflüge
