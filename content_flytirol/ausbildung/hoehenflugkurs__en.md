@@ -18,6 +18,8 @@ For independent flying, it's crucial to gain experience in **different wind cond
 
 During this seminar, you'll aim to complete as many flights as possible to approach the 40 high-altitude flights required for the paraglider license / A-license examination.
 
+<ContentImageGallery path="/media/ausbildung/hoehenflugkurs/"/>
+
 ## Services
 
 - Minimum of 15 high-altitude flights
