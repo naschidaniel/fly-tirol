@@ -280,6 +280,62 @@
     "alt": "Gleitschirm Alpen Fly Tirol Flugschule Hoehenflugkurs",
     "title": "Hoehenflugkurs bei der Flugschule Fly Tirol"
   },
+  "/media/ausbildung/hoehenflugkurs/1_hoehenflugkurs.jpg": {
+    "url": "/media/ausbildung/hoehenflugkurs/1_hoehenflugkurs.jpg",
+    "path": "/media/ausbildung/hoehenflugkurs/",
+    "file": "1_hoehenflugkurs.jpg",
+    "stem": "1_hoehenflugkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/hoehenflugkurs/2_hoehenflugkurs.jpg": {
+    "url": "/media/ausbildung/hoehenflugkurs/2_hoehenflugkurs.jpg",
+    "path": "/media/ausbildung/hoehenflugkurs/",
+    "file": "2_hoehenflugkurs.jpg",
+    "stem": "2_hoehenflugkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/hoehenflugkurs/3_hoehenflugkurs.jpg": {
+    "url": "/media/ausbildung/hoehenflugkurs/3_hoehenflugkurs.jpg",
+    "path": "/media/ausbildung/hoehenflugkurs/",
+    "file": "3_hoehenflugkurs.jpg",
+    "stem": "3_hoehenflugkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/ausbildung/hoehenflugkurs/4_hoehenflugkurs.jpg": {
+    "url": "/media/ausbildung/hoehenflugkurs/4_hoehenflugkurs.jpg",
+    "path": "/media/ausbildung/hoehenflugkurs/",
+    "file": "4_hoehenflugkurs.jpg",
+    "stem": "4_hoehenflugkurs",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/ausbildung/kombikurs.jpg": {
     "url": "/media/ausbildung/kombikurs.jpg",
     "path": "/media/ausbildung/",
