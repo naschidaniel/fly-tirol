@@ -22,6 +22,6 @@ Während dieses Seminars **absolvierst du möglichst viele Flüge** um den 40 H�
 
 ## Leistungen
 
-- minumium 15 Höhenflüge
+- minimum 15 Höhenflüge
 - Praxisnahe Theorieeinheiten zu Flugmanövern
 - exklusive Leihausrüstung
