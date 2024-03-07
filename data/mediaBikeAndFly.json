@@ -57,6 +57,148 @@
     "alt": "",
     "title": ""
   },
+  "/media/bike-testival/bike-testival.jpg": {
+    "url": "/media/bike-testival/bike-testival.jpg",
+    "path": "/media/bike-testival/",
+    "file": "bike-testival.jpg",
+    "stem": "bike-testival",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/bike-testival/gallerie/fff.jpg": {
+    "url": "/media/bike-testival/gallerie/fff.jpg",
+    "path": "/media/bike-testival/gallerie/",
+    "file": "fff.jpg",
+    "stem": "fff",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/bike-testival/gallerie/xxx.jpg": {
+    "url": "/media/bike-testival/gallerie/xxx.jpg",
+    "path": "/media/bike-testival/gallerie/",
+    "file": "xxx.jpg",
+    "stem": "xxx",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/bike-testival/gallerie/yyy.jpg": {
+    "url": "/media/bike-testival/gallerie/yyy.jpg",
+    "path": "/media/bike-testival/gallerie/",
+    "file": "yyy.jpg",
+    "stem": "yyy",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/bike-testival/gallerie/zzz.jpg": {
+    "url": "/media/bike-testival/gallerie/zzz.jpg",
+    "path": "/media/bike-testival/gallerie/",
+    "file": "zzz.jpg",
+    "stem": "zzz",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/gleitschirm-testival/gallerie/fff.jpg": {
+    "url": "/media/gleitschirm-testival/gallerie/fff.jpg",
+    "path": "/media/gleitschirm-testival/gallerie/",
+    "file": "fff.jpg",
+    "stem": "fff",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/gleitschirm-testival/gallerie/xxx.jpg": {
+    "url": "/media/gleitschirm-testival/gallerie/xxx.jpg",
+    "path": "/media/gleitschirm-testival/gallerie/",
+    "file": "xxx.jpg",
+    "stem": "xxx",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/gleitschirm-testival/gallerie/yyy.jpg": {
+    "url": "/media/gleitschirm-testival/gallerie/yyy.jpg",
+    "path": "/media/gleitschirm-testival/gallerie/",
+    "file": "yyy.jpg",
+    "stem": "yyy",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/gleitschirm-testival/gallerie/zzz.jpg": {
+    "url": "/media/gleitschirm-testival/gallerie/zzz.jpg",
+    "path": "/media/gleitschirm-testival/gallerie/",
+    "file": "zzz.jpg",
+    "stem": "zzz",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/gleitschirm-testival/gleitschirm-testival.jpg": {
+    "url": "/media/gleitschirm-testival/gleitschirm-testival.jpg",
+    "path": "/media/gleitschirm-testival/",
+    "file": "gleitschirm-testival.jpg",
+    "stem": "gleitschirm-testival",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/index/gallerie/fff.jpg": {
     "url": "/media/index/gallerie/fff.jpg",
     "path": "/media/index/gallerie/",
@@ -334,6 +476,51 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg": {
+    "url": "/media/partner/SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg",
+    "path": "/media/partner/",
+    "file": "SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg",
+    "stem": "SkiWelt-Logo-Westendorf-Claim-schwarz-4c",
+    "dimensions": {
+      "height": 500,
+      "orientation": 1,
+      "width": 1000,
+      "type": "jpg",
+      "ratio": 2
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/appartementmorgensonne.jpg": {
+    "url": "/media/partner/appartementmorgensonne.jpg",
+    "path": "/media/partner/",
+    "file": "appartementmorgensonne.jpg",
+    "stem": "appartementmorgensonne",
+    "dimensions": {
+      "height": 500,
+      "orientation": 1,
+      "width": 1000,
+      "type": "jpg",
+      "ratio": 2
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/brixental-logo-region-rgb-red.jpg": {
+    "url": "/media/partner/brixental-logo-region-rgb-red.jpg",
+    "path": "/media/partner/",
+    "file": "brixental-logo-region-rgb-red.jpg",
+    "stem": "brixental-logo-region-rgb-red",
+    "dimensions": {
+      "height": 500,
+      "orientation": 1,
+      "width": 1000,
+      "type": "jpg",
+      "ratio": 2
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/partner.jpg": {
     "url": "/media/partner/partner.jpg",
     "path": "/media/partner/",
@@ -431,6 +618,77 @@
       "width": 4000,
       "type": "jpg",
       "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wanderbird/gallerie/fff.jpg": {
+    "url": "/media/wanderbird/gallerie/fff.jpg",
+    "path": "/media/wanderbird/gallerie/",
+    "file": "fff.jpg",
+    "stem": "fff",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wanderbird/gallerie/xxx.jpg": {
+    "url": "/media/wanderbird/gallerie/xxx.jpg",
+    "path": "/media/wanderbird/gallerie/",
+    "file": "xxx.jpg",
+    "stem": "xxx",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wanderbird/gallerie/yyy.jpg": {
+    "url": "/media/wanderbird/gallerie/yyy.jpg",
+    "path": "/media/wanderbird/gallerie/",
+    "file": "yyy.jpg",
+    "stem": "yyy",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wanderbird/gallerie/zzz.jpg": {
+    "url": "/media/wanderbird/gallerie/zzz.jpg",
+    "path": "/media/wanderbird/gallerie/",
+    "file": "zzz.jpg",
+    "stem": "zzz",
+    "dimensions": {
+      "height": 1667,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wanderbird/wanderbird.jpg": {
+    "url": "/media/wanderbird/wanderbird.jpg",
+    "path": "/media/wanderbird/",
+    "file": "wanderbird.jpg",
+    "stem": "wanderbird",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
     },
     "alt": "",
     "title": ""

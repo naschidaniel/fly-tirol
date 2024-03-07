@@ -7,12 +7,10 @@
     >
       <p>Eine tolles Festival braucht starke Partner!</p>
       <p>
-        Mit den angeführten <strong>Gaststätten</strong>,
-        <strong>Restaurants</strong>, <strong>Hotels</strong>,
-        <strong>Unterkünften</strong> und <strong>Betrieben</strong>
-        pflegen wir einen sehr guten Kontakt. Sie kennen die Bedürfnisse von
-        Piloten und stellen sicher, dass dein Aufenthalt in der Region ein
-        besonderes Erlebniss wird.
+        Wir sind stolz darauf, unsere großartigen Partner beim Bike and Fly
+        Festival zu präsentieren! Ein herzliches Dankeschön geht an unsere
+        Partner, die uns dabei unterstützen, dieses Festival zu einem
+        unvergesslichen Erlebnis zu machen.
       </p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6">

@@ -2,23 +2,23 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="Programm"
-      picture="/media/partner/partner.jpg"
+      headline="Bike Testival"
+      picture="/media/bike-testival/bike-testival.jpg"
     >
       <p>
-        Vom <strong>09.08. – 11.08.2024</strong> erwartet euch erstmalig ein
-        absolutes Highlight in Westendorf!
+        Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Festivals
+        im Brixental!
       </p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
-      <Programm />
+      <BikeTestival />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
-import Programm from '@/content_bikeandfly/programm.vue'
+import BikeTestival from '~/content_bikeandfly/bike-testival.vue'
 
 useMetaTags()
 </script>

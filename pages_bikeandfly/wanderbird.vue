@@ -2,23 +2,23 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="Programm"
-      picture="/media/partner/partner.jpg"
+      headline="Gleitschirm Testival"
+      picture="/media/wanderbird/wanderbird.jpg"
     >
       <p>
-        Vom <strong>09.08. – 11.08.2024</strong> erwartet euch erstmalig ein
-        absolutes Highlight in Westendorf!
+        Der Hike an Fly Wettbewerb für jedermann! Präsentiert wird dieser
+        aufregende Wettbewerb von Paul Guschelbauer, Red Bull und Partner.
       </p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
-      <Programm />
+      <Wanderbird />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
-import Programm from '@/content_bikeandfly/programm.vue'
+import Wanderbird from '~/content_bikeandfly/wanderbird.vue'
 
 useMetaTags()
 </script>

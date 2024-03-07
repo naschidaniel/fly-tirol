@@ -20,10 +20,25 @@
           </h2>
           <p class="text-lg leading-relaxed max-w-prose">
             <span v-if="isBikeAndFly">
-              In Westendorf erwartet alle Bike- und Flugbegeisterten ein neues
-              Highlight: das Bike and Fly Festival. Von 9. bis 11. August wird
-              die Talstation der Alpenrosenbahn zum Treffpunkt für
-              Abenteuerlustige und Freizeitsportler.</span
+              <p class="pb-2">
+                Tauche ein in ein Wochenende voller Action, Abenteuer und guter
+                Musik beim Bike and Fly Festival im malerischen Westendorf im
+                Brixental. Dieses Event vereint die aufregende Welt des
+                Mountainbikens mit der Freiheit des Gleitschirmfliegens und der
+                Energie mitreißender Live-Musik.
+              </p>
+              <p class="pb-2">
+                Genieße die entspannte Atmosphäre, köstliche lokale
+                Spezialitäten, großartige Live-Musik, ein Bike und
+                Gleitschirm-Testival und ein umfangreiches Programm für Klein
+                und Groß.
+              </p>
+              <p class="pb-2">
+                Verpasse nicht dieses unvergessliche Wochenende voller
+                Adrenalin, Spaß und Musik! Sichere dir jetzt dein Ticket für das
+                Bike and Fly Sport &amp; Musik Festival im Brixental vom 09.08.
+                – 11.08.2024!
+              </p></span
             >
             <span v-else
               >Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
@@ -106,21 +121,42 @@ const bikeAndFlyData = [
     cardTitle: 'Programm',
     cardImage: '/media/programm/programm.jpg',
     description:
-      'Das Festival bietet spannende Vorträge, Workshops und Konzerte zu aktuellen Themen. Informieren Sie sich über das Programm auf unserer Website.',
+      'Das Festival bietet spannende Vorträge, Workshops und Konzerte zu aktuellen Themen.',
     to: '/programm',
+  },
+  {
+    cardTitle: 'Bike Testival',
+    cardImage: '/media/bike-testival/bike-testival.jpg',
+    description:
+      'Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Festivals im Brixental!',
+    to: '/bike-testival',
+  },
+  {
+    cardTitle: 'Gleitschirm Testival',
+    cardImage: '/media/gleitschirm-testival/gleitschirm-testival.jpg',
+    description:
+      'Erlebe das ultimative Gleitschirm-Testival im Rahmen des Bike and Fly Festivals im Brixental!',
+    to: '/gleitschirm-testival',
+  },
+  {
+    cardTitle: 'Wanderbird',
+    cardImage: '/media/wanderbird/wanderbird.jpg',
+    description:
+      'Der Hike an Fly Wettbewerb für jedermann! Präsentiert wird dieser aufregende Wettbewerb von Paul Guschelbauer, Red Bull und Partner.',
+    to: '/wanderbird',
   },
   {
     cardTitle: 'Packages',
     cardImage: '/media/packages/packages.jpg',
     description:
-      'Das Festival bietet spannende Vorträge, Workshops und Konzerte zu aktuellen Themen. Informieren Sie sich über das Programm auf unserer Website.',
+      'An diesem Wochenende gibt es von Fly Tirol und Morgensonne auf alle Bike & Fly Angebot spezielle Vergünstigungen für alle Festival-Besucher. Reserviere dir schon jetzt deinen Platz für ein einzigartiges Erlebnis!',
     to: '/packages',
   },
   {
     cardTitle: 'Partner',
     cardImage: '/media/partner/partner.jpg',
     description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut',
+      'Wir sind stolz darauf, unsere großartigen Partner beim Bike and Fly Festival zu präsentieren! Ein herzliches Dankeschön geht an unsere Partner, die uns dabei unterstützen, dieses Festival zu einem unvergesslichen Erlebnis zu machen.',
     to: '/partner',
   },
   {

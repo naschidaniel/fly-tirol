@@ -8,14 +8,6 @@
   font-display: fallback;
 }
 
-@font-face {
-  font-family: 'RedHatText';
-  src: url("~/assets/fonts/Gilmer-Medium.otf") format("opentype");
-  font-weight: 300 700;
-  font-style: normal;
-  font-display: fallback;
-}
-
 .btn-primary {
   @apply
   relative
