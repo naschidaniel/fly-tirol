@@ -7,6 +7,9 @@ Die Rennstrecke ist so gestaltet, dass jeder, vom Hike & Fly Anfänger bis zum P
 
 Sei Teil dieser aufregenden und unvergesslichen Veranstaltung und erlebe den Wanderbirdcup – eine unvergessliche Reise durch die Brixentaler Berglandschaft.
 
-Für mehr Infos und Anmeldung klicke auf den Link:
+Auf der Webseite von <a href="https://www.wanderbird.io/" target="_blank">WANDERBIRD - HIKE & FLY</a> kannst du dich Informieren und für das Event anmelden
+
+
+<a href="https://www.wanderbird.io/" class="btn-primary" target="_blank">WANDERBIRD - HIKE & FLY Webseite</a>
 
 <ContentImageGallery path="/media/wanderbird/gallerie/"/>
