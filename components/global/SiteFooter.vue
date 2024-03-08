@@ -40,11 +40,7 @@
               <NuxtLink to="/impressum" class="underline ml-8 sm:ml-4 md:ml-6">
                 <span>Impressum</span>
               </NuxtLink>
-              <NuxtLink
-                v-if="isFlyTirol"
-                to="/agb"
-                class="underline ml-8 sm:ml-4 md:ml-6"
-              >
+              <NuxtLink to="/agb" class="underline ml-8 sm:ml-4 md:ml-6">
                 <span>AGB</span>
               </NuxtLink>
             </div>
