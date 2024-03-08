@@ -19,7 +19,7 @@ Mit ihrem unverwechselbaren Stil und ihrer Leidenschaft für elektronische Klän
 
 ## Leistung
 
-- Eintritt Afterparty
+- Eintritt: Afterparty
 
 ![image](https://github.com/naschidaniel/fly-tirol/assets/143787316/c3f1f01f-d80c-48f8-9118-ac47bc20433f)
 
