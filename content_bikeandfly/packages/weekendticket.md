@@ -9,18 +9,16 @@ order: 2
 
 # Weekendticket
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Sichere dir jetzt den Eintritt auf das Festival Gelände für alle drei Tage und genieße das volle Programm des Bike & Fly Festivals.
 
+![image](https://github.com/naschidaniel/fly-tirol/assets/143787316/76664e4c-55b9-49b5-87af-9ca93b061813)
 
-# Info
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## Leistung
 
-- Lorem ipsum
-- Lorem ipsum
-- Lorem ipsum
-- Lorem ipsum
+- Eintritt auf das Festival Gelände für alle drei Tage
+
+![image](https://github.com/naschidaniel/fly-tirol/assets/143787316/a976728e-bdf6-4173-9069-84599dbc9f65)
+
 
 <ContentImageGallery path="/media/packages/gallerie/"/>
