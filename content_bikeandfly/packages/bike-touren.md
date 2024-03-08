@@ -7,20 +7,19 @@ image: /media/packages/bike-touren.jpg
 order: 5
 ---
 
-# Bike Touren Paul Guschelbauer
+# E-Bike Touren 
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Erlebe das Brixental auf eine ganz neue Art und Weise mit unseren geführten Bike-Touren.
+Bereite dich darauf vor, in die atemberaubende Natur einzutauchen, während du auf zwei Rädern durch malerische Berglandschaften fährst. Unsere Guides sind wahre Experten und kennen die besten Routen und versteckten Schätze, die diese Gebiete zu bieten haben. Egal ob du ein erfahrener Mountainbiker oder ein Anfänger bist, unsere Touren sind für alle Levels geeignet und bieten eine sichere und einmalige Möglichkeit, die Berge zu erkunden. Wir haben für jeden Geschmack und jedes Können die passende Tour.
+Reserviere dir schon jetzt dein einzigartiges Erlebnis!
 
+![image](https://github.com/naschidaniel/fly-tirol/assets/143787316/21de51de-63af-4889-8ebc-8bc71da65555)
 
-# Info
-
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 
 ## Leistung
 
-- Lorem ipsum
-- Lorem ipsum
-- Lorem ipsum
-- Lorem ipsum
+-	Biketour mit Guide und Leih-E-Bike
+
+![image](https://github.com/naschidaniel/fly-tirol/assets/143787316/f0ee602b-fc12-4929-98d1-1d02ec24833a)
 
 <ContentImageGallery path="/media/packages/gallerie/"/>
