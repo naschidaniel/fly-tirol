@@ -18,7 +18,7 @@ Reserviere dir schon jetzt dein einzigartiges Erlebnis!
 
 -	Bike-Tour mit Guide und Leih-E-Bike
 -	Tandemflug , Fotos und Videos
--	
+
 ![image](https://github.com/naschidaniel/fly-tirol/assets/143787316/bd2a12f3-37ec-4bc6-ac36-c5d1d1b37fcb)
 
 
