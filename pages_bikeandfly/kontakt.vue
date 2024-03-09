@@ -10,12 +10,13 @@
     >
       <div class="nuxt-content">
         <p>
-          Hast du Fragen zum Festival? Du möchtest uns Feedback geben oder möchtest du einfach nur Hallo sagen? 
-          Melde dich bei uns und wir werden uns um dein Anliegen kümmern!
+          Hast du Fragen zum Festival? Du möchtest uns Feedback geben oder
+          möchtest du einfach nur Hallo sagen? Melde dich bei uns und wir werden
+          uns um dein Anliegen kümmern!
         </p>
         <p>
-          Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns
-          auf dich!
+          Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns auf
+          dich!
         </p>
         <div class="flex flex-wrap justify-center mt-6">
           <div class="flex p-2 w-5/6 md:w-1/3">
