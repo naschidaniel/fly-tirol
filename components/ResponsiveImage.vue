@@ -101,11 +101,11 @@ const pic: ResponsiveImage = reactive({
   srcsetsWebp: '',
   sizes: '',
   fallback: {
-    alt: image.alt,
-    title: image.title,
-    src: image.url,
-    width: image.dimensions.width,
-    height: image.dimensions.height,
+    alt: image?.alt,
+    title: image?.title,
+    src: image?.url,
+    width: image?.dimensions?.width,
+    height: image?.dimensions?.height,
   },
 })
 
