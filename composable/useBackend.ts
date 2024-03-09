@@ -12,7 +12,7 @@ const alert: Ref<Alert | undefined> = ref(undefined)
 const isShowAlert: Ref<Boolean> = ref(false)
 
 export function useBackend() {
-  const { backend, isFlyTirol, isBikeAndFly } = useData()
+  const { backend, isFlyTirol } = useData()
 
   const cartItemsLength = computed(() => cart.value?.cart_items?.length || 0)
   const isCartItems = computed(
@@ -21,7 +21,7 @@ export function useBackend() {
       cart.value?.cart_items?.length >= 1,
   )
   async function initShopBackend() {
-    if (!process.client || !isFlyTirol || !isBikeAndFly) return
+    if (!process.client) return
     await useFetch<Product[]>(`${backend}/shop/api/products`, {
       onResponse({ response }) {
         products.value = response._data?.data
@@ -50,7 +50,7 @@ export function useBackend() {
   }
 
   async function initCart() {
-    if (!process.client || !isFlyTirol) return
+    if (!process.client) return
     const _cartId = localStorage.getItem('cartId')
     if (_cartId === null) {
       console.log('Cart ID is null')
