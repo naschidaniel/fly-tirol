@@ -19,11 +19,10 @@
     "file": "BikeAndFlyHeader.jpg",
     "stem": "BikeAndFlyHeader",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 1297,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1.542
     },
     "alt": "",
     "title": ""
@@ -63,11 +62,10 @@
     "file": "bike-testival.jpg",
     "stem": "bike-testival",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -78,8 +76,8 @@
     "file": "fff.jpg",
     "stem": "fff",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -92,8 +90,8 @@
     "file": "xxx.jpg",
     "stem": "xxx",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -106,10 +104,10 @@
     "file": "yyy.jpg",
     "stem": "yyy",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -120,10 +118,10 @@
     "file": "zzz.jpg",
     "stem": "zzz",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -134,8 +132,8 @@
     "file": "fff.jpg",
     "stem": "fff",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -148,10 +146,10 @@
     "file": "xxx.jpg",
     "stem": "xxx",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 1821,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 0.911
     },
     "alt": "",
     "title": ""
@@ -162,10 +160,10 @@
     "file": "yyy.jpg",
     "stem": "yyy",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -176,10 +174,10 @@
     "file": "zzz.jpg",
     "stem": "zzz",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -190,11 +188,10 @@
     "file": "gleitschirm-testival.jpg",
     "stem": "gleitschirm-testival",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -276,11 +273,10 @@
     "file": "afterparty.jpg",
     "stem": "afterparty",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -291,11 +287,10 @@
     "file": "bike-and-fly-touren.jpg",
     "stem": "bike-and-fly-touren",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -306,11 +301,10 @@
     "file": "bike-touren.jpg",
     "stem": "bike-touren",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -321,11 +315,10 @@
     "file": "e-bike-verleih.jpg",
     "stem": "e-bike-verleih",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 1901,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 0.951
     },
     "alt": "",
     "title": ""
@@ -336,8 +329,8 @@
     "file": "fff.jpg",
     "stem": "fff",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -350,8 +343,8 @@
     "file": "xxx.jpg",
     "stem": "xxx",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -364,10 +357,10 @@
     "file": "yyy.jpg",
     "stem": "yyy",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -378,10 +371,10 @@
     "file": "zzz.jpg",
     "stem": "zzz",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -392,11 +385,10 @@
     "file": "packages.jpg",
     "stem": "packages",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -407,11 +399,10 @@
     "file": "tagesticket.jpg",
     "stem": "tagesticket",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -422,11 +413,10 @@
     "file": "tandemfluege.jpg",
     "stem": "tandemfluege",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -452,11 +442,10 @@
     "file": "weekendticket.jpg",
     "stem": "weekendticket",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -542,8 +531,8 @@
     "file": "fff.jpg",
     "stem": "fff",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -556,10 +545,10 @@
     "file": "xxx.jpg",
     "stem": "xxx",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 1825,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.096
     },
     "alt": "",
     "title": ""
@@ -570,10 +559,10 @@
     "file": "yyy.jpg",
     "stem": "yyy",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -584,10 +573,10 @@
     "file": "zzz.jpg",
     "stem": "zzz",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 1697,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 0.849
     },
     "alt": "",
     "title": ""
@@ -598,11 +587,10 @@
     "file": "programm.jpg",
     "stem": "programm",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 7008,
+      "width": 4672,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 0.667
     },
     "alt": "",
     "title": ""
