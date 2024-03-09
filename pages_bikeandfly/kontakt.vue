@@ -1,7 +1,7 @@
 <template>
   <div>
     <PageHeader
-      pre-headline="Ausbildungs- und Tandemhotline"
+      pre-headline="Infohotline"
       headline="Kontakt"
       picture="/media/kontakt.jpg"
       :link1="telefonNumber"
@@ -9,14 +9,12 @@
       :address="address"
     >
       <div class="nuxt-content">
-        <h2>Ausbildungshotline</h2>
         <p>
-          Wir haben dein Interesse an einem Kurs, einer Flugreise oder an einem
-          Sicherheitstraining geweckt? Du benötigst du nach dem Wiedereinstieg
-          ins Fliegen ein Tagescoaching?
+          Hast du Fragen zum Festival? Du möchtest uns Feedback geben oder möchtest du einfach nur Hallo sagen? 
+          Melde dich bei uns und wir werden uns um dein Anliegen kümmern!
         </p>
         <p>
-          Dann Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns
+          Ruf uns einfach an oder schreibe uns eine Mail. Wir freuen uns
           auf dich!
         </p>
         <div class="flex flex-wrap justify-center mt-6">
