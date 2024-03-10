@@ -6,7 +6,7 @@
     <div v-if="page.slug == 'rettungspackservice'">
       <Rettungspackservice />
     </div>
-    <ProductBookService />
+    <ProductBookProduct />
     <SocialBar />
   </div>
 </template>

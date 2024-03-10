@@ -1,6 +1,6 @@
 ---
 title: Test
-description: Testprodukt ohne Produkt Ausprägung.
+description: Test ohne Ausprägung.
 location: Westendorf
 isAppointment: false
 image: /media/bike-testival/bike-testival.jpg
@@ -9,4 +9,4 @@ order: 1
 
 # Test
 
-Testprodukt ohne Produkt Ausprägung.
+Test ohne Ausprägung.

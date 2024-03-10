@@ -24,14 +24,14 @@
     <div v-if="page.slug == 'weekendticket'">
       <Weekendticket />
     </div>
-    <ProductBookService />
+    <ProductBookProduct />
     <SocialBar />
   </div>
 </template>
 
 <script setup lang="ts">
 import SocialBar from '@/components/SocialBar.vue'
-import ProductBookService from '@/components/ProductBookService.vue'
+import ProductBookProduct from '@/components/ProductBookProduct.vue'
 import Afterparty from '@/content_bikeandfly/packages/afterparty.vue'
 import BikeAndFlyTouren from '@/content_bikeandfly/packages/bike-and-fly-touren.vue'
 import EBikeTouren from '@/content_bikeandfly/packages/e-bike-touren.vue'

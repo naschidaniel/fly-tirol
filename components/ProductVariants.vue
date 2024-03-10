@@ -3,10 +3,6 @@
     id="book-product"
     class="mt-4 w-full border-2 rounded-lg bg-gray-100 px-4 pb-2"
   >
-    <h2 v-if="isService">Service Buchen</h2>
-    <h2 v-else-if="isBikeAndFly">Package Buchen</h2>
-    <h2 v-else-if="isCourse">Kurs Buchen</h2>
-    <h2 v-else>Wähle deinen Flug</h2>
     <h3>Details zum Angebot</h3>
     <ProductDetails
       :location="metadata?.location"
@@ -23,19 +19,12 @@
       <div class="w-full p-2">
         <Alert class="mb-4 bg-white">
           <div class="my-2">
-            <span v-if="isBikeAndFly"
-              >Wähle im Auswahlfeld das für dich passenden Angebot.</span
-            >
-            <span v-else-if="isService"
-              >Wähle im Auswahlfeld den für dich passenden Service und falls
-              vorhanden die nötigen Zusatzoptionen.</span
-            >
-            <span v-else-if="isCourse"
+            <span v-if="isCourse"
               >Wähle im Auswahlfeld den für dich passenden Kurs und falls
               vorhanden die nötigen Zusatzoptionen.</span
             >
             <span v-else
-              >Wähle im Auswahlfeld den für dich passenden Tandemflug und falls
+              >Wähle im Auswahlfeld den für dich passenden Angebot und falls
               vorhanden die nötigen Zusatzoptionen.</span
             >
           </div>
@@ -94,8 +83,7 @@ import { useBackend } from '@/composable/useBackend'
 import { useCalender } from '~~/composable/useCalender'
 import { useData } from '~~/composable/useData'
 
-const { isBikeAndFly } = useData()
-const { page, isCourse, isService, getMetadata } = usePage()
+const { page, isCourse, getMetadata } = usePage()
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()
 const { selectedDateString } = useCalender()
 const { getProduct, updateCart } = useBackend()

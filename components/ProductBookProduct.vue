@@ -6,7 +6,7 @@
       <div class="w-full md:w-1/2 md:p-2">
         <Alert class="mt-2 mr-3">
           <div class="mx-1 md:my-2">
-            <ol class="list-decimal">
+            <ol v-if="isFlyTirol" class="list-decimal">
               <li>
                 Vereinbare einen Zeitpunkt telefonisch unter
                 <a href="tel:00436766422088" class="underline whitespace-nowrap"
@@ -32,6 +32,20 @@
                 Rettung zu uns in den Shop.
               </li>
             </ol>
+            <ol v-if="isBikeAndFly" class="list-decimal">
+              <li>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut
+              </li>
+            </ol>
           </div>
         </Alert>
       </div>
@@ -51,7 +65,7 @@ import { useMetaTags } from '@/composable/useMetaTags'
 import { useData } from '@/composable/useData'
 import ProductVariants from '@/components/ProductVariants.vue'
 const { page, getMetadata } = usePage()
-const { isFlyTirol } = useData()
+const { isFlyTirol, isBikeAndFly } = useData()
 
 const metadata = getMetadata(page.value.path)
 useMetaTags()
