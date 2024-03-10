@@ -9,6 +9,7 @@ export function useData() {
   const instagram: string = config.public.instagram
   const isDevelopment: boolean = config.public.isDevelopment
   const isFlyTirol: boolean = config.public.isFlyTirol
+  const isHydrogen: boolean = config.public.isHydrogen
   const isBikeAndFly: boolean = config.public.isBikeAndFly
   const licenses: License[] = config.public.licenses as License[]
   const mail: string = config.public.mail
@@ -24,6 +25,7 @@ export function useData() {
     isDevelopment,
     isFlyTirol,
     isBikeAndFly,
+    isHydrogen,
     licenses,
     mail,
     phone,

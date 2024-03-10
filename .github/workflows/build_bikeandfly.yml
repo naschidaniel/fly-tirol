@@ -23,11 +23,11 @@ jobs:
       - name: create .nuxt tsconfig
         run: mkdir .nuxt && echo "{}" > .nuxt/tsconfig.json
       - name: create-public
-        run: yarn create-public
+        run: yarn create-public:bikeandfly
       - name: get image-optimizer
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.5.0/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: optimize-images
-        run: yarn optimize-images
+        run: yarn optimize-images:bikeandfly
       - name: generateContent
         run: yarn generateContent
       - name: build

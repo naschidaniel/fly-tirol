@@ -20,7 +20,10 @@
         <NavigationNavbarLink name="Fluggebiet" to="/fluggebiet" />
         <NavigationNavbarLink name="Service" to="/service" />
       </nav>
-      <nav v-else class="flex flex-col items-start xl:flex-row">
+      <nav
+        v-else-if="isBikeAndFly"
+        class="flex flex-col items-start xl:flex-row"
+      >
         <NavigationNavbarLink name="Home" to="/" />
         <NavigationNavbarLink name="Programm" to="/programm" />
         <NavigationNavbarLink name="Bike Testival" to="/bike-testival" />
@@ -32,11 +35,19 @@
         <NavigationNavbarLink name="Packages" to="/packages" />
         <NavigationNavbarLink name="Partner" to="/partner" />
       </nav>
+      <nav v-else class="flex flex-col items-start xl:flex-row">
+        <NavigationNavbarLink name="HOME" to="/" />
+        <NavigationNavbarLink name="ABOUT US" to="/about-us" />
+        <NavigationNavbarLink name="BASICS" to="/basics" />
+        <NavigationNavbarLink name="NEWS" to="/news" />
+        <NavigationNavbarLink name="FAQ" to="/faq" />
+        <NavigationNavbarLink name="PARTNER" to="/partner" />
+      </nav>
     </div>
 
     <div class="flex">
       <div class="mr-2 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
-        <NuxtLink class="btn-primary" to="/buchen" exact>
+        <NuxtLink v-if="!isHydrogen" class="btn-primary" to="/buchen" exact>
           <IconOutlineShoppingCart
             class="mr-1"
             style="height: 1em; width: 1em"
@@ -45,8 +56,11 @@
         </NuxtLink>
       </div>
       <div class="mr-3 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
-        <NuxtLink class="btn-primary" to="/kontakt" exact>
+        <NuxtLink v-if="!isHydrogen" class="btn-primary" to="/kontakt" exact>
           <span>Kontakt</span>
+        </NuxtLink>
+        <NuxtLink v-else class="btn-primary" to="/contact" exact>
+          <span>CONTACT</span>
         </NuxtLink>
       </div>
       <div class="xl:mr-0 xl:hidden z-50">
@@ -72,7 +86,7 @@ import { useData } from '@/composable/useData'
 import { useNavigation } from '@/composable/useNavigation'
 import { useBackend } from '@/composable/useBackend'
 
-const { isFlyTirol } = useData()
+const { isFlyTirol, isBikeAndFly, isHydrogen } = useData()
 const { isOpen } = useNavigation()
 const { cartItemsLength } = useBackend()
 

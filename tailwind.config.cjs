@@ -54,6 +54,8 @@ module.exports = {
         purple: colors.violet,
         bike: '#c2deba',
         fly: '#b0def1',
+        hydrogreen: '#7dc42b',
+        hydroblue: '#3984bc',
       },
       fontFamily: {
         sans: ['RedHatText', 'sans-serif'],

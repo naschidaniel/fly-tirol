@@ -19,7 +19,7 @@
               {{ type }}
             </span>
           </div>
-          <div class="flex items-center text-sm -ml-1 my-2">
+          <div v-if="address" class="flex items-center text-sm -ml-1 my-2">
             <IconOutlineLocationMarker class="w-6 h-6" />
             <span class="block leading-none pt-1 ml-1">
               {{ address }}
@@ -57,6 +57,17 @@
               {{ website }}
             </a>
           </div>
+          <div v-if="readMore" class="flex items-center text-sm">
+            <button
+              :href="website"
+              target="_blank"
+              :title="website"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              Read More
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -75,9 +86,10 @@ defineProps({
   type: { type: String, required: true },
   title: { type: String, required: true },
   subTitle: { type: String, required: false, default: '' },
-  address: { type: String, required: true },
+  address: { type: String, required: false, default: '' },
   phone: { type: String, required: false, default: '' },
   mail: { type: String, required: false, default: '' },
   website: { type: String, required: false, default: '' },
+  readMore: { type: String, required: false, default: '' },
 })
 </script>

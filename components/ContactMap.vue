@@ -16,13 +16,9 @@ import { usePage } from '@/composable/usePage'
 
 const { page } = usePage()
 const map =
-  page.value?.location === 'Hopfgarten'
-    ? '/leaflet_de_hopfgarten.html'
-    : page.value?.location === 'Söll'
-      ? '/leaflet_de_soell.html'
-      : page.value?.location === 'Westendorf'
-        ? '/leaflet_de_westendorf.html'
-        : '/leaflet_de.html'
+  page.value?.location === 'Westendorf'
+    ? '/leaflet_de_westendorf.html'
+    : '/leaflet_de.html'
 </script>
 <style scoped>
 .mapContainer {

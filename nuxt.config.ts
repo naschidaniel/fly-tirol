@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         ? 'pages_bikeandfly'
         : 'pages_flytirol',
     public: isHydrogen
-      ? '.public_hydrogen´'
+      ? '.public_hydrogen'
       : isBikeAndFly
         ? '.public_bikeandfly'
         : '.public_flytirol',
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         lang: 'de',
       },
       titleTemplate: isHydrogen
-        ? 'hydrogen-advisers.ev - %s'
+        ? 'hydrogen-advisers.eu - %s'
         : isBikeAndFly
           ? 'Bike&Fly. Festival Brixental - %s'
           : 'Fly-Tirol.com - Flugschule Kitzbühleralpen - %s',
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
           hid: 'og:title',
           property: 'og:title',
           content: isHydrogen
-            ? 'hydrogen-advisers.ev Strategic Advice for your Green Hydrogen Projects'
+            ? 'hydrogen-advisers.eu Strategic Advice for your Green Hydrogen Projects'
             : isBikeAndFly
               ? 'Bike&Fly. Festival Brixental'
               : 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
