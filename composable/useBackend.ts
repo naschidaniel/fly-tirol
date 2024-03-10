@@ -12,7 +12,7 @@ const alert: Ref<Alert | undefined> = ref(undefined)
 const isShowAlert: Ref<Boolean> = ref(false)
 
 export function useBackend() {
-  const { backend, isFlyTirol } = useData()
+  const { backend } = useData()
 
   const cartItemsLength = computed(() => cart.value?.cart_items?.length || 0)
   const isCartItems = computed(

@@ -1,6 +1,7 @@
 <template>
   <div class="max-w-90 mx-auto -m-8 lg:py-8 nuxt-content">
-    <h2>Dein Service Wunsch</h2>
+    <h2 v-if="isFlyTirol">Dein Service Wunsch</h2>
+    <h2 v-else>Dein Package für das Bike & Fly Festival</h2>
     <div class="flex flex-wrap">
       <div class="w-full md:w-1/2 md:p-2">
         <Alert class="mt-2 mr-3">
@@ -47,8 +48,10 @@
 import Alert from '@/components/Alert.vue'
 import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
+import { useData } from '@/composable/useData'
 import ProductVariants from '@/components/ProductVariants.vue'
 const { page, getMetadata } = usePage()
+const { isFlyTirol } = useData()
 
 const metadata = getMetadata(page.value.path)
 useMetaTags()
