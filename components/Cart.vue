@@ -92,7 +92,7 @@
           class="mt-2 btn-warning btn--large"
           @click.prevent="deleteCart(cart?.id)"
         >
-          <IconOutlineShoppingBag style="height: 1em; widht: 1em" />&nbsp;<span
+          <IconOutlineShoppingBag style="height: 1em; width: 1em" />&nbsp;<span
             >Warenkorb löschen</span
           >
         </button>
@@ -103,7 +103,7 @@
           aria-label="Order Products"
           class="btn-primary btn--large"
         >
-          <IconOutlineShoppingBag style="height: 1em; widht: 1em" />&nbsp;<span
+          <IconOutlineShoppingBag style="height: 1em; width: 1em" />&nbsp;<span
             >Bestellung abschließen</span
           >
         </a>

@@ -47,18 +47,42 @@ body {
 .btn--large {
   @apply px-6 py-4; }
 
-  .card--content:before {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: -1rem;
-    top: -1.5rem;
-    transform: rotate(-5deg) translateY(-1rem);
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
-    @apply bg-white; }
+.card--content:before {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: -1rem;
+  top: -1.5rem;
+  transform: rotate(-5deg) translateY(-1rem);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  @apply bg-white; }
+
+.btn-warning {
+  @apply relative
+  inline-flex
+  justify-center
+  items-center
+  px-1
+  py-1
+  rounded-md
+  text-sm
+  leading-none
+  tracking-wide
+  text-red-500
+  bg-gray-100
+  focus:ring-2
+  focus:ring-red-400
+  focus:ring-offset-2
+  focus:ring-offset-white
+  focus:ring-opacity-100
+  focus:outline-none
+  transition
+  duration-150
+  ease-in-out;
+}
 
 @layer base {
   .nuxt-content p {
