@@ -6,14 +6,11 @@
     <div v-if="page.slug == 'bike-and-fly-touren'">
       <BikeAndFlyTouren />
     </div>
-    <div v-if="page.slug == 'bike-touren'">
-      <BikeTouren />
+    <div v-if="page.slug == 'e-bike-touren'">
+      <EBikeTouren />
     </div>
     <div v-if="page.slug == 'e-bike-verleih'">
       <EBikeVerleih />
-    </div>
-    <div v-if="page.slug == 'bike-touren'">
-      <BikeTouren />
     </div>
     <div v-if="page.slug == 'tagesticket'">
       <Tagesticket />
@@ -37,7 +34,7 @@ import SocialBar from '@/components/SocialBar.vue'
 import ProductBookService from '@/components/ProductBookService.vue'
 import Afterparty from '@/content_bikeandfly/packages/afterparty.vue'
 import BikeAndFlyTouren from '@/content_bikeandfly/packages/bike-and-fly-touren.vue'
-import BikeTouren from '@/content_bikeandfly/packages/bike-touren.vue'
+import EBikeTouren from '@/content_bikeandfly/packages/e-bike-touren.vue'
 import Tagesticket from '@/content_bikeandfly/packages/tagesticket.vue'
 import EBikeVerleih from '@/content_bikeandfly/packages/e-bike-verleih.vue'
 import Tandemfluege from '@/content_bikeandfly/packages/tandemfluege.vue'

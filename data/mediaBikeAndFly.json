@@ -295,11 +295,11 @@
     "alt": "",
     "title": ""
   },
-  "/media/packages/bike-touren.jpg": {
-    "url": "/media/packages/bike-touren.jpg",
+  "/media/packages/e-bike-touren.jpg": {
+    "url": "/media/packages/e-bike-touren.jpg",
     "path": "/media/packages/",
-    "file": "bike-touren.jpg",
-    "stem": "bike-touren",
+    "file": "e-bike-touren.jpg",
+    "stem": "e-bike-touren",
     "dimensions": {
       "height": 2000,
       "width": 2000,

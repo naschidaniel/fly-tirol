@@ -1,9 +1,9 @@
 ---
-title: Bike Touren
-description: Bike Touren
+title: E-Bike Touren
+description: E-Bike Touren
 location: Westendorf
 bikeandfly: bike
-image: /media/packages/bike-touren.jpg
+image: /media/packages/e-bike-touren.jpg
 order: 5
 ---
 
