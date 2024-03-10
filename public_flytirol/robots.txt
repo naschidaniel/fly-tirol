@@ -5,18 +5,9 @@ Disallow: /api
 Disallow: /dsgvo
 Disallow: /impressum
 Disallow: /buchen
-Disallow: /leaflet_flytirol
-
+Disallow: /leaflet_de_westendorf.html
+Disallow: /leaflet_de.html
 Allow: /
-Allow: /tandemfliegen
-Allow: /ausbildung
-Allow: /fortbildung
-Allow: /reisen
-Allow: /sicherheitstrainings
-Allow: /team
-Allow: /kontakt
-
-Allow: /media
 
 User-agent: MSNBot
 Crawl-delay: 16
