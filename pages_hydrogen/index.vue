@@ -10,9 +10,7 @@
         :is-preload="true"
         picture="/media/wavline.png"
       />
-      <div
-        class="absolute h-40 bottom-0 left-0 right-0"
-      ></div>
+      <div class="absolute h-40 bottom-0 left-0 right-0"></div>
       <div
         class="relative max-w-90 mx-auto w-full lg:w-11/12 lg:mr-0 lg:ml-auto lg:py-24 z-10"
       >
@@ -27,7 +25,9 @@
                 <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
                 <span class="inline-block text-white">Hydrogen Advisers</span>
               </span>
-              <span class="text-4xl lg:text-6xl font-heading font-bold text-white">
+              <span
+                class="text-4xl lg:text-6xl font-heading font-bold text-white"
+              >
                 Strategic Advice for your Green Hydrogen Projects
               </span>
             </h1>
@@ -40,6 +40,9 @@
         </div>
       </div>
     </div>
+    <div class="max-w-90 w-full mx-auto py-6">
+      <div class="nuxt-content"><IndexPage /></div>
+    </div>
     <LinkList />
     <SocialBar />
   </div>
@@ -48,6 +51,7 @@
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
 import LinkList from '@/components/LinkList.vue'
+import IndexPage from '@/content_hydrogen/index.vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
 import SocialBar from '@/components/SocialBar.vue'
 

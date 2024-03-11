@@ -158,6 +158,7 @@ export default defineNuxtConfig({
       isHydrogen,
       // @ts-ignore
       licenses,
+      xing: isHydrogen ? 'christian-weinberger-62aaa8114' : '',
       mail: isHydrogen
         ? 'office@hydrogen-advisers.eu'
         : isFlyTirol

@@ -3,13 +3,9 @@
     <PageHeader
       pre-headline="hydrogen-advisers.eu"
       headline="Partner"
-      picture="/media/partner/partner.jpg"
+      picture="/media/martin-adams-a_PDPUPuNZ8-unsplash-scaled.jpg"
     >
-      <p>Lorem ipsum dolor sit amet,</p>
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam
-      </p>
+      <p>A list of partners with whom we realize projects.</p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6">
       <Partner class="nuxt-content" />

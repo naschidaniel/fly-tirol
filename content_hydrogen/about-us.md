@@ -1,6 +1,7 @@
 ---
 title: About Us
 description: We are an advisory service to provide strategic advice to all actors seeking to advance their green hydrogen Agenda and to start roll-out.
+image: /media/martin-adams-a_PDPUPuNZ8-unsplash-scaled.jpg
 ---
 
 ## THE EXPERIENCE

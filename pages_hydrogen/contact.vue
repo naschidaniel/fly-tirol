@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="hydrogen-advisers.eu"
       headline="Contact"
-      picture="/media/kontakt.jpg"
+      picture="/media/martin-adams-a_PDPUPuNZ8-unsplash-scaled.jpg"
       :link1="telefonNumber"
       :link2="mailAddress"
       :address="address"

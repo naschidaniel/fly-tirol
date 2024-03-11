@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Hydrogen News"
       headline="News"
-      picture="/media/news.jpg"
+      picture="/media/biel-morro-HCha-UHkIg8-unsplash-scaled.jpg"
     >
       <div>
         <p class="mb-2">

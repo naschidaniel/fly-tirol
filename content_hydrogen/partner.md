@@ -1,6 +1,6 @@
 ---
 title: Partner
-description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange zusammenarbeitet.
+description: A list of partners with whom we realize projects.
 ---
 
 <div class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 md:py-12">

@@ -3,14 +3,15 @@
     <PageHeader
       pre-headline="hydrogen-advisers.eu"
       headline="Strategic Advice for your Green Hydrogen Projects"
-      picture="/media/about-us.jpg"
+      picture="/media/chelsea-WvusC5M-TM8-unsplash-scaled.jpg"
     >
-    We are an advisory service to provide strategic advice to all actors seeking to advance their green hydrogen Agenda and to start roll-out.
+      We are an advisory service to provide strategic advice to all actors
+      seeking to advance their green hydrogen Agenda and to start roll-out.
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6">
+      <TeamList :members="members" />
       <AboutUs class="nuxt-content" />
     </div>
-    <TeamList :members="members" />
     <SocialBar />
   </div>
 </template>

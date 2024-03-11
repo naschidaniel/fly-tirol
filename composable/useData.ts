@@ -17,6 +17,7 @@ export function useData() {
   const phoneString: string = config.public.phoneString
   const website: string = config.public.website
   const websiteUrl: string = config.public.websiteUrl
+  const xing: string = config.public.xing
 
   return {
     backend,
@@ -32,5 +33,6 @@ export function useData() {
     phoneString,
     website,
     websiteUrl,
+    xing,
   }
 }

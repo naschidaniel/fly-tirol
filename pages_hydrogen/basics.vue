@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="HYDROGEN"
       headline="Basics"
-      picture="/media/basics.jpg"
+      picture="/media/anwendungsgebiete.png"
     >
       <div>
         <p class="mb-2">
