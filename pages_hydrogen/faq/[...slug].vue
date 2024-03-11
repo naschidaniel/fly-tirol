@@ -1,45 +1,49 @@
 <template>
+    <PageHeader
+      pre-headline="Hydrogen"
+      :headline="page?.title"
+      :picture="page?.image"
+    >
+      <div>
+        <p class="mb-2">{{page.description }}</p>
+      </div>
+    </PageHeader>
   <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
-    <div v-if="page.slug == 'afterparty'">
-      <Afterparty />
+    <div v-if="page.slug == 'buildings'">
+      <Buildings />
     </div>
-    <div v-if="page.slug == 'bike-and-fly-touren'">
-      <BikeAndFlyTouren />
+    <div v-if="page.slug == 'energy-sector'">
+      <EnergySector />
     </div>
-    <div v-if="page.slug == 'e-bike-touren'">
-      <EBikeTouren />
+    <div v-if="page.slug == 'general'">
+      <General />
     </div>
-    <div v-if="page.slug == 'e-bike-verleih'">
-      <EBikeVerleih />
+    <div v-if="page.slug == 'industry'">
+      <Industry />
     </div>
-    <div v-if="page.slug == 'tagesticket'">
-      <Tagesticket />
+    <div v-if="page.slug == 'mobility'">
+      <Mobility />
     </div>
-    <div v-if="page.slug == 'tandemfluege'">
-      <Tandemfluege />
+    <div v-if="page.slug == 'production'">
+      <Production />
     </div>
-    <div v-if="page.slug == 'vortrag'">
-      <Vortrag />
+    <div v-if="page.slug == 'transmission'">
+      <Transmission />
     </div>
-    <div v-if="page.slug == 'weekendticket'">
-      <Weekendticket />
-    </div>
-    <ProductBookProduct />
     <SocialBar />
   </div>
 </template>
 
 <script setup lang="ts">
 import SocialBar from '@/components/SocialBar.vue'
-import ProductBookProduct from '@/components/ProductBookProduct.vue'
-import Afterparty from '@/content_bikeandfly/packages/afterparty.vue'
-import BikeAndFlyTouren from '@/content_bikeandfly/packages/bike-and-fly-touren.vue'
-import EBikeTouren from '@/content_bikeandfly/packages/e-bike-touren.vue'
-import Tagesticket from '@/content_bikeandfly/packages/tagesticket.vue'
-import EBikeVerleih from '@/content_bikeandfly/packages/e-bike-verleih.vue'
-import Tandemfluege from '@/content_bikeandfly/packages/tandemfluege.vue'
-import Vortrag from '@/content_bikeandfly/packages/vortrag.vue'
-import Weekendticket from '@/content_bikeandfly/packages/weekendticket.vue'
+import PageHeader from '@/components/PageHeader.vue'
+import Buildings from '@/content_hydrogen/faq/buildings.vue'
+import EnergySector from '@/content_hydrogen/faq/energy-sector.vue'
+import General from '@/content_hydrogen/faq/general.vue'
+import Industry from '@/content_hydrogen/faq/industry.vue'
+import Mobility from '@/content_hydrogen/faq/mobility.vue'
+import Production from '@/content_hydrogen/faq/production.vue'
+import Transmission from '@/content_hydrogen/faq/transmission.vue'
 import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
 

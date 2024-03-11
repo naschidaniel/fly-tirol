@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Hydrogen"
       headline="Frequently Asked Questions"
-      picture="/media/faq.jpg"
+      picture="/media/general.jpg"
     >
       <div>
         <p class="mb-2">What you always wanted to know about hydrogen</p>

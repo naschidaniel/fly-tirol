@@ -16,9 +16,7 @@
         <div class="card--content__inner">
           <h2 class="text-2xl font-heading font-semibold">
             <NuxtLink :to="metadata.path">
-              <span v-if="isFlyTirol">{{ metadata.title }}</span>
-              <!-- eslint-disable-next-line vue/no-v-html -->
-              <span v-if="isBikeAndFly" v-html="metadata.title"></span>
+              <span>{{ metadata.title }}</span>
             </NuxtLink>
           </h2>
           <ProductDetails
@@ -54,6 +52,7 @@
           :title="isFlyTirol ? metadata.title : 'Info und buchen'"
         >
           <span v-if="isFlyTirol">Mehr erfahren</span>
+          <span v-else-if="isHydrogen">Read More</span>
           <span v-else>Info und buchen</span>
         </NuxtLink>
       </div>
@@ -73,7 +72,7 @@ import { usePage } from '@/composable/usePage'
 const props = defineProps({ path: { type: String, required: true } })
 const { getProduct } = useBackend()
 const { formatPrice } = useFormat()
-const { isFlyTirol, isBikeAndFly } = useData()
+const { isFlyTirol, isBikeAndFly, isHydrogen } = useData()
 const { isCourse, getMetadata } = usePage()
 const metadata = getMetadata(props.path)
 

@@ -2,6 +2,7 @@
 title: Energy Sector
 description: It sounds crazy to first convert electricity into hydrogen, with the respective efficient loss, and then convert it Bach into electricity, again with a sizable efficiency loss. At least 50% of the energy are wasted. How can this still make sense in a green paradigm?
 image: /media/nasa-Q1p7bh3SHj8-unsplash-scaled.jpg
+order: 6
 ---
 
 ## It sounds crazy to first convert electricity into hydrogen, with the respective efficient loss, and then convert it Bach into electricity, again with a sizable efficiency loss. At least 50% of the energy are wasted. How can this still make sense in a green paradigm?

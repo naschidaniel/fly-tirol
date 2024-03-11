@@ -8,8 +8,10 @@ We are a flight school in Westendorf and offer tandem flights, paragliding train
 Come and share our passion with us!
 
 ## bikeandfly.at
-Visit mit at [https://bikeandfly.at](https://bikeandfly.at).
-I am a passionate pilot and would like to show you the world from above. Come with me and share my passion.
+Visit us at [https://bikeandfly.at](https://bikeandfly.at).
+
+## hydrogen-advisers.eu
+Visit us at [http://hydrogen-advisers.eu](http://hydrogen-advisers.eu).
 
 ### Optimize Images
 
@@ -129,3 +131,7 @@ For example, the images for the view `https://fly-tirol.com/acrotrainings/acrotr
 ## License
 The source code is licensed under the MIT licence. Please read the [LICENSE](LICENSE) File for more information.
 Text, informational content, graphics and images are under the licence of [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) unless stated otherwise.
+
+### Images and graphics hydrogen-advisers.eu
+
+hydrogen is responsible for the images, content and licenses.

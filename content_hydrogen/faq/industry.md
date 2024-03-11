@@ -2,6 +2,7 @@
 title: Industry
 description: All the hydrogen produced today is grey hydrogen used in industry. How difficult is it to replace this with green hydrogen?
 image: /media/biel-morro-HCha-UHkIg8-unsplash-scaled.jpg
+order: 4
 ---
 
 ## All the hydrogen produced today is grey hydrogen used in industry. How difficult is it to replace this with green hydrogen?
