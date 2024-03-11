@@ -194,7 +194,7 @@ const hydrogenData = [
   },
   {
     cardTitle: 'FAQ',
-    cardImage: '/media/Rechteck-2.png',
+    cardImage: '/media/general.jpg',
     description: ' What you always wanted to know about hydrogen.',
     to: '/faq',
   },
