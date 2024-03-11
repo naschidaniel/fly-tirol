@@ -1,7 +1,7 @@
 <template>
   <div class="mt-3">
     <div class="flex items-center text-sm -ml-1 mb-2">
-      <IconOutlineLocationMarker class="w-4 h-4" />
+      <IconOutlineLocationMarker v-if="location" class="w-4 h-4" />
       <span class="block leading-none pt-1 ml-1">
         {{ location }}
       </span>
@@ -45,7 +45,7 @@
         {{ theorie }}
       </span>
     </div>
-    <div class="flex items-center text-sm -ml-1 mb-2">
+    <div v-if="!isHydrogen" class="flex items-center text-sm -ml-1 mb-2">
       <IconOutlineCash class="w-4 h-4 mr-1" />
       <span v-if="price" class="block leading-none pt-1 font-bold">
         {{ price }}
@@ -86,6 +86,9 @@ import IconOutlineMinusCircle from './icon/IconOutlineMinusCircle.vue'
 import IconOutlinePaperPlane from './icon/IconOutlinePaperPlane.vue'
 import IconOutlineBattery100 from './icon/IconOutlineBattery100.vue'
 import IconSpinner from './icon/IconSpinner.vue'
+import { useData } from '~/composable/useData'
+
+const { isHydrogen } = useData();
 
 defineProps({
   bikeandfly: { type: String, default: undefined },

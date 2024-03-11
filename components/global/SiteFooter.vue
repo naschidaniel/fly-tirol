@@ -37,7 +37,18 @@
               <NuxtLink to="/dsgvo" class="underline">
                 <span>DSGVO</span>
               </NuxtLink>
-              <NuxtLink to="/impressum" class="underline ml-8 sm:ml-4 md:ml-6">
+              <NuxtLink
+                v-if="isHydrogen"
+                to="/imprint"
+                class="underline ml-8 sm:ml-4 md:ml-6"
+              >
+                <span>imprint</span>
+              </NuxtLink>
+              <NuxtLink
+                v-else
+                to="/impressum"
+                class="underline ml-8 sm:ml-4 md:ml-6"
+              >
                 <span>Impressum</span>
               </NuxtLink>
               <NuxtLink to="/agb" class="underline ml-8 sm:ml-4 md:ml-6">
@@ -54,7 +65,7 @@
 <script setup lang="ts">
 import { useData } from '@/composable/useData'
 
-const { isFlyTirol, mail, phone, phoneString, website } = useData()
+const { isFlyTirol, isHydrogen, mail, phone, phoneString, website } = useData()
 const mailTo = `mailto:${mail}`
 const phoneHref = `tel:${phone}`
 </script>

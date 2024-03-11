@@ -54,9 +54,12 @@ class ResponsiveSource implements ResponsiveSourceInterface {
     const postfix = isThumbnail
       ? `thumbnail_${width}.${image.dimensions.type}`
       : `${width}.${image.dimensions.type}`
-    const postfixWebp = postfix.replace(image.dimensions.type, 'webp')
+    const postfixWebp = postfix.replace(
+      image.dimensions.type,
+      image.dimensions.type,
+    )
     this.srcset = `${prefix}_${postfix}?v=${buildTime} ${width}w`
-    this.srcsetWebp = `${prefix}_${postfixWebp}?v=${buildTime} ${width}w`
+    this.srcsetWebp = '' // `${prefix}_${postfixWebp}?v=${buildTime} ${width}w`
     this.width = width
     this.height = isThumbnail
       ? width

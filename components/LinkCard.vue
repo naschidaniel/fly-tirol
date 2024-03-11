@@ -28,7 +28,8 @@
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
         <NuxtLink :to="to" class="btn-primary btn--large">
-          Mehr erfahren
+          <span v-if="isHydrogen">Read more</span>
+          <span v-else>Mehr erfahren</span>
         </NuxtLink>
       </div>
     </div>
@@ -36,7 +37,10 @@
 </template>
 
 <script setup lang="ts">
+import { useData } from '~/composable/useData';
 import ResponsiveImage from './ResponsiveImage.vue'
+
+const { isHydrogen } = useData();
 
 defineProps({
   cardTitle: { type: String, required: true },

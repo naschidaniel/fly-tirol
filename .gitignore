@@ -105,9 +105,13 @@ bikeandfly*.tar.gz
 # content
 /content_flytirol/**/*.vue
 /content_bikeandfly/**/*.vue
+/content_hydrogen/**/*.vue
 /data/metadataFlyTirol.ts
 /data/metadataBikeAndFly.ts
+/data/metadataHydrogen.ts
 /data/mediaFlyTirol.ts
 /data/mediaBikeAndFly.ts
+/data/mediaHydrogen.ts
 /.public_flytirol
 /.public_bikeandfly
+/.public_hydrogen

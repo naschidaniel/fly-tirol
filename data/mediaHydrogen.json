@@ -1,0 +1,353 @@
+{
+  "/media/HydrogenHeader.png": {
+    "url": "/media/HydrogenHeader.png",
+    "path": "/media/",
+    "file": "HydrogenHeader.png",
+    "stem": "HydrogenHeader",
+    "dimensions": {
+      "height": 800,
+      "width": 1500,
+      "type": "png",
+      "ratio": 1.875
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/Rechteck-2.png": {
+    "url": "/media/Rechteck-2.png",
+    "path": "/media/",
+    "file": "Rechteck-2.png",
+    "stem": "Rechteck-2",
+    "dimensions": {
+      "height": 876,
+      "width": 872,
+      "type": "png",
+      "ratio": 0.995
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/Rechteck-2_blue.png": {
+    "url": "/media/Rechteck-2_blue.png",
+    "path": "/media/",
+    "file": "Rechteck-2_blue.png",
+    "stem": "Rechteck-2_blue",
+    "dimensions": {
+      "height": 876,
+      "width": 872,
+      "type": "png",
+      "ratio": 0.995
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/anwendungsgebiete.png": {
+    "url": "/media/anwendungsgebiete.png",
+    "path": "/media/",
+    "file": "anwendungsgebiete.png",
+    "stem": "anwendungsgebiete",
+    "dimensions": {
+      "height": 604,
+      "width": 996,
+      "type": "png",
+      "ratio": 1.649
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/Rechteck-2_original.png": {
+    "url": "/media/archiv/Rechteck-2_original.png",
+    "path": "/media/archiv/",
+    "file": "Rechteck-2_original.png",
+    "stem": "Rechteck-2_original",
+    "dimensions": {
+      "height": 876,
+      "width": 872,
+      "type": "png",
+      "ratio": 0.995
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/WavyLine-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc.png": {
+    "url": "/media/archiv/WavyLine-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc.png",
+    "path": "/media/archiv/",
+    "file": "WavyLine-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc.png",
+    "stem": "WavyLine-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc",
+    "dimensions": {
+      "height": 464,
+      "width": 4000,
+      "type": "png",
+      "ratio": 8.621
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/WavyLine-Grey-Turned-1-pc7xlzoh8cwfy8ejx7tev0zri2y4f2ye51ykd7vy8w.png": {
+    "url": "/media/archiv/WavyLine-Grey-Turned-1-pc7xlzoh8cwfy8ejx7tev0zri2y4f2ye51ykd7vy8w.png",
+    "path": "/media/archiv/",
+    "file": "WavyLine-Grey-Turned-1-pc7xlzoh8cwfy8ejx7tev0zri2y4f2ye51ykd7vy8w.png",
+    "stem": "WavyLine-Grey-Turned-1-pc7xlzoh8cwfy8ejx7tev0zri2y4f2ye51ykd7vy8w",
+    "dimensions": {
+      "height": 464,
+      "width": 4000,
+      "type": "png",
+      "ratio": 8.621
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/WavyLine-White-mir-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc.png": {
+    "url": "/media/archiv/WavyLine-White-mir-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc.png",
+    "path": "/media/archiv/",
+    "file": "WavyLine-White-mir-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc.png",
+    "stem": "WavyLine-White-mir-1-pc7xlxssuotvb0ha8705q1gubb7dzoqxgsnlenyqlc",
+    "dimensions": {
+      "height": 464,
+      "width": 4000,
+      "type": "png",
+      "ratio": 8.621
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/hydrogen-advisers.png": {
+    "url": "/media/archiv/hydrogen-advisers.png",
+    "path": "/media/archiv/",
+    "file": "hydrogen-advisers.png",
+    "stem": "hydrogen-advisers",
+    "dimensions": {
+      "height": 94,
+      "width": 712,
+      "type": "png",
+      "ratio": 7.574
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/biel-morro-HCha-UHkIg8-unsplash-scaled.jpg": {
+    "url": "/media/biel-morro-HCha-UHkIg8-unsplash-scaled.jpg",
+    "path": "/media/",
+    "file": "biel-morro-HCha-UHkIg8-unsplash-scaled.jpg",
+    "stem": "biel-morro-HCha-UHkIg8-unsplash-scaled",
+    "dimensions": {
+      "height": 1702,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 1.504
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/chelsea-WvusC5M-TM8-unsplash-scaled.jpg": {
+    "url": "/media/chelsea-WvusC5M-TM8-unsplash-scaled.jpg",
+    "path": "/media/",
+    "file": "chelsea-WvusC5M-TM8-unsplash-scaled.jpg",
+    "stem": "chelsea-WvusC5M-TM8-unsplash-scaled",
+    "dimensions": {
+      "height": 1920,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/cropped-hydrogen-ad-favicon-192x192.png": {
+    "url": "/media/cropped-hydrogen-ad-favicon-192x192.png",
+    "path": "/media/",
+    "file": "cropped-hydrogen-ad-favicon-192x192.png",
+    "stem": "cropped-hydrogen-ad-favicon-192x192",
+    "dimensions": {
+      "height": 192,
+      "width": 192,
+      "type": "png",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/footer-logo.png": {
+    "url": "/media/footer-logo.png",
+    "path": "/media/",
+    "file": "footer-logo.png",
+    "stem": "footer-logo",
+    "dimensions": {
+      "height": 348,
+      "width": 243,
+      "type": "png",
+      "ratio": 0.698
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/general.jpg": {
+    "url": "/media/general.jpg",
+    "path": "/media/",
+    "file": "general.jpg",
+    "stem": "general",
+    "dimensions": {
+      "height": 917,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 2.792
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/julian-hochgesang-3-y9vq8uoxk-unsplash.png": {
+    "url": "/media/julian-hochgesang-3-y9vq8uoxk-unsplash.png",
+    "path": "/media/",
+    "file": "julian-hochgesang-3-y9vq8uoxk-unsplash.png",
+    "stem": "julian-hochgesang-3-y9vq8uoxk-unsplash",
+    "dimensions": {
+      "height": 4000,
+      "width": 6000,
+      "type": "png",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/martin-adams-a_PDPUPuNZ8-unsplash-scaled.jpg": {
+    "url": "/media/martin-adams-a_PDPUPuNZ8-unsplash-scaled.jpg",
+    "path": "/media/",
+    "file": "martin-adams-a_PDPUPuNZ8-unsplash-scaled.jpg",
+    "stem": "martin-adams-a_PDPUPuNZ8-unsplash-scaled",
+    "dimensions": {
+      "height": 1707,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/nasa-Q1p7bh3SHj8-unsplash-scaled.jpg": {
+    "url": "/media/nasa-Q1p7bh3SHj8-unsplash-scaled.jpg",
+    "path": "/media/",
+    "file": "nasa-Q1p7bh3SHj8-unsplash-scaled.jpg",
+    "stem": "nasa-Q1p7bh3SHj8-unsplash-scaled",
+    "dimensions": {
+      "height": 1703,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 1.503
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/nicholas-doherty-pONBhDyOFoM-unsplash-scaled.jpg": {
+    "url": "/media/nicholas-doherty-pONBhDyOFoM-unsplash-scaled.jpg",
+    "path": "/media/",
+    "file": "nicholas-doherty-pONBhDyOFoM-unsplash-scaled.jpg",
+    "stem": "nicholas-doherty-pONBhDyOFoM-unsplash-scaled",
+    "dimensions": {
+      "height": 1659,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 1.543
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/GreenEnergyCenter.jpg": {
+    "url": "/media/partner/GreenEnergyCenter.jpg",
+    "path": "/media/partner/",
+    "file": "GreenEnergyCenter.jpg",
+    "stem": "GreenEnergyCenter",
+    "dimensions": {
+      "height": 666,
+      "orientation": 1,
+      "width": 603,
+      "type": "jpg",
+      "ratio": 0.905
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/Hydrogen.png": {
+    "url": "/media/partner/Hydrogen.png",
+    "path": "/media/partner/",
+    "file": "Hydrogen.png",
+    "stem": "Hydrogen",
+    "dimensions": {
+      "height": 666,
+      "width": 603,
+      "type": "png",
+      "ratio": 0.905
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/hydrogen-h2.png": {
+    "url": "/media/partner/hydrogen-h2.png",
+    "path": "/media/partner/",
+    "file": "hydrogen-h2.png",
+    "stem": "hydrogen-h2",
+    "dimensions": {
+      "height": 512,
+      "width": 512,
+      "type": "png",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/christian.png": {
+    "url": "/media/team/christian.png",
+    "path": "/media/team/",
+    "file": "christian.png",
+    "stem": "christian",
+    "dimensions": {
+      "height": 250,
+      "width": 251,
+      "type": "png",
+      "ratio": 1.004
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/partners.png": {
+    "url": "/media/team/partners.png",
+    "path": "/media/team/",
+    "file": "partners.png",
+    "stem": "partners",
+    "dimensions": {
+      "height": 300,
+      "width": 300,
+      "type": "png",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/zhanna.png": {
+    "url": "/media/team/zhanna.png",
+    "path": "/media/team/",
+    "file": "zhanna.png",
+    "stem": "zhanna",
+    "dimensions": {
+      "height": 250,
+      "width": 250,
+      "type": "png",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wavline.png": {
+    "url": "/media/wavline.png",
+    "path": "/media/",
+    "file": "wavline.png",
+    "stem": "wavline",
+    "dimensions": {
+      "height": 1500,
+      "width": 2000,
+      "type": "png",
+      "ratio": 1.333
+    },
+    "alt": "",
+    "title": ""
+  }
+}

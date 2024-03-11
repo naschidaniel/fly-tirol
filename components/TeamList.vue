@@ -8,7 +8,8 @@
               class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
-              <span class="inline-block">Dein Fly Tirol</span>
+              <span v-if="isFlyTirol" class="inline-block">Dein Fly Tirol</span>
+              <span v-else class="inline-block">hydrogen-adviesers.eu</span>
             </span>
             <span class="text-5xl font-heading font-bold">Team</span>
           </h2>
@@ -26,6 +27,9 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import type { TeamMember } from '@/types/data'
+import { useData } from '~/composable/useData'
+
+const { isFlyTirol } = useData()
 
 defineProps({
   members: { type: Array as PropType<TeamMember[]>, required: true },

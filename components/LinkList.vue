@@ -10,15 +10,17 @@
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
               <span class="inline-block"
                 ><span v-if="isBikeAndFly">Bike&Fly.</span
+                ><span v-if="isHydrogen">Interested In Learning</span
                 ><span v-else>Finde das richtige</span></span
               >
             </span>
             <span class="text-5xl font-heading font-bold"
               ><span v-if="isBikeAndFly">Festival Brixental</span
+              ><span v-else-if="isHydrogen">MORE?</span
               ><span v-else>Angebot</span></span
             >
           </h2>
-          <p class="text-lg leading-relaxed max-w-prose">
+          <p v-if="!isHydrogen" class="text-lg leading-relaxed max-w-prose">
             <span v-if="isBikeAndFly">
               <p class="pb-2">
                 Tauche ein in ein Wochenende voller Action, Abenteuer und guter
@@ -69,7 +71,7 @@
 <script setup lang="ts">
 import LinkCard from './LinkCard.vue'
 import { useData } from '@/composable/useData'
-const { isBikeAndFly } = useData()
+const { isBikeAndFly, isFlyTirol, isHydrogen } = useData()
 
 const flyTirolData = [
   {
@@ -168,5 +170,52 @@ const bikeAndFlyData = [
   },
 ]
 
-const linkCardData = isBikeAndFly ? bikeAndFlyData : flyTirolData
+const hydrogenData = [
+  {
+    cardTitle: 'ABOUT US',
+    cardImage: '/media/team/christian.png',
+    description:
+      'We are an advisory service to provide strategic advice to all actors seeking to advance their green hydrogen Agenda and to start roll-out.',
+    to: '/about-us',
+  },
+  {
+    cardTitle: 'BASICS',
+    cardImage: '/media/Rechteck-2.png',
+    description:
+      'This page provides links to basic documents in the hydrogen context. It includes both policy documents but also studies and fundamentals to learn more about the overall context of hydrogen.',
+    to: '/basics',
+  },
+  {
+    cardTitle: 'NEWS',
+    cardImage: '/media/biel-morro-HCha-UHkIg8-unsplash-scaled.jpg',
+    description:
+      'This section lists important news items for the development of the hydrogen economies. It includes links to press releases, reports, company announcements, project proposals, news paper articles and the like.',
+    to: '/news',
+  },
+  {
+    cardTitle: 'FAQ',
+    cardImage: '/media/general.jpg',
+    description: ' What you always wanted to know about hydrogen.',
+    to: '/faq',
+  },
+  {
+    cardTitle: 'PARTNER',
+    cardImage: '/media/chelsea-WvusC5M-TM8-unsplash-scaled.jpg',
+    description: 'A list of partners with whom we realize projects.',
+    to: '/partner',
+  },
+  {
+    cardTitle: 'CONTACT',
+    cardImage: '/media/martin-adams-a_PDPUPuNZ8-unsplash-scaled.jpg',
+    description:
+      'Do you have any questions about hydrogen? Would you like to give us feedback or just say hello? Get in touch with us and we will take care of your request!',
+    to: '/contact',
+  },
+]
+
+const linkCardData = isBikeAndFly
+  ? bikeAndFlyData
+  : isFlyTirol
+    ? flyTirolData
+    : hydrogenData
 </script>

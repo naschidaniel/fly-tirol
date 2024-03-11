@@ -1,4 +1,6 @@
 export * from './metadataFlyTirol'
 export * from './metadataBikeAndFly'
+export * from './metadataHydrogen'
 export * from './mediaFlyTirol'
 export * from './mediaBikeAndFly'
+export * from './mediaHydrogen'

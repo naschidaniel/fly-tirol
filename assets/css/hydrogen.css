@@ -1,0 +1,48 @@
+@tailwind base;
+@font-face {
+  font-family: 'RedHatDisplay';
+  src: url("~/assets/fonts/RedHatDisplayVF.woff2") format("woff2-variations");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: fallback; }
+@font-face {
+  font-family: 'RedHatText';
+  src: url("~/assets/fonts/RedHatTextVF.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: fallback; }
+.btn-primary {
+    @apply relative
+    inline-flex
+    justify-center
+    items-center
+    px-4
+    py-2
+    rounded-md
+    text-base
+    font-medium
+    leading-none
+    tracking-wide
+    text-white
+    bg-brand
+    focus:ring-2
+    focus:ring-blue-400
+    focus:ring-offset-2
+    focus:ring-offset-white
+    focus:ring-opacity-100
+    focus:outline-none
+    transition
+    duration-150
+    ease-in-out; }
+
+.btn--disabled {
+    @apply bg-gray-200
+    text-gray-800;
+}
+
+@layer base {
+  .nuxt-content h1 {
+    @apply text-2xl lg:text-5xl font-medium my-6; }
+  .nuxt-content h2 {
+    @apply text-xl lg:text-3xl font-medium my-8; }
+  }

@@ -61,6 +61,19 @@
         </div>
         <div class="flex justify-center mt-4">
           <button
+            v-if="isHydrogen"
+            class="mx-2"
+            title="Kontaktiere uns auf Xing"
+            @click="openXing()"
+          >
+            <span
+              class="inline-flex items-center justify-center p-2 rounded-full"
+              style="background-color: #006567"
+              ><IconXing style="width: 2em; height: 2em; color: #ececec"
+            /></span>
+          </button>
+          <button
+            v-if="isBikeAndFly && isFlyTirol"
             class="mx-2"
             title="Folge uns auf Instagram"
             @click="openInstagram()"
@@ -119,6 +132,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
+import IconXing from './icon/IconXing.vue'
 import IconInstagram from './icon/IconInstagram.vue'
 import IconFacebook from './icon/IconFacebook.vue'
 import IconOutlineMail from './icon/IconOutlineMail.vue'
@@ -133,16 +147,23 @@ const {
   instagram,
   isFlyTirol,
   isBikeAndFly,
+  isHydrogen,
   mail,
   phone,
   website,
   websiteUrl,
+  xing,
 } = useData()
 const { page } = usePage()
 
 const encodedUrl = computed(() => encodeURI(`${websiteUrl}${page.value.path}`))
 const encodeTitle = computed(() => encodeURI(page.value.title))
 const encodeDescription = computed(() => encodeURI(page.value.description))
+
+function openXing() {
+  const url = `https://at.linkedin.com/in/${xing}/en/`
+  window.open(url, '_blank', 'width=600, height=800')?.focus()
+}
 
 function openInstagram() {
   const url = `https://www.instagram.com/${instagram}/`
@@ -160,7 +181,7 @@ function openMailContact() {
 }
 
 function openMailShare() {
-  const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${encodeTitle.value} – auf ${website}&body=Hallo,%0D%0A%0D%0D%0A%0D${encodeDescription.value}%0D%0A%0D%0D%0A%0Dhttps://${encodedUrl.value}`
+  const url = `mailto:?subject=Schau%20doch%20mal%20vorbei%20bei – ${encodeTitle.value} – auf ${website}&body=Hallo,%0D%0A%0D%0D%0A%0D${encodeDescription.value}%0D%0A%0D%0D%0A%0D${encodedUrl.value}`
   window.location.replace(url)
 }
 
