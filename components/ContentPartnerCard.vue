@@ -58,15 +58,15 @@
             </a>
           </div>
           <div v-if="readMore" class="flex items-center text-sm">
-            <button
-              :href="website"
+            <a
+              :href="readMore"
               target="_blank"
-              :title="website"
+              :title="readMore"
               rel="noopener noreferrer"
               class="btn-primary"
             >
               Read More
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -101,6 +101,7 @@ deploy.sh
 run.sh
 flytirol*.tar.gz
 bikeandfly*.tar.gz
+hydrogen*.tar.gz
 
 # content
 /content_flytirol/**/*.vue

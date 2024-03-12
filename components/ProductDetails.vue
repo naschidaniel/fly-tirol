@@ -88,7 +88,7 @@ import IconOutlineBattery100 from './icon/IconOutlineBattery100.vue'
 import IconSpinner from './icon/IconSpinner.vue'
 import { useData } from '~/composable/useData'
 
-const { isHydrogen } = useData();
+const { isHydrogen } = useData()
 
 defineProps({
   bikeandfly: { type: String, default: undefined },

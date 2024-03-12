@@ -37,10 +37,10 @@
 </template>
 
 <script setup lang="ts">
-import { useData } from '~/composable/useData';
 import ResponsiveImage from './ResponsiveImage.vue'
+import { useData } from '~/composable/useData'
 
-const { isHydrogen } = useData();
+const { isHydrogen } = useData()
 
 defineProps({
   cardTitle: { type: String, required: true },
