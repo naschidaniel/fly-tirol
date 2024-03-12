@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-r from-hydrogreen to-hydroblue">
+  <div :class="isHydrogen ? 'bg-gradient-to-r from-hydrogreen to-hydroblue' : ''">
     <div class="max-w-90 w-full mx-auto">
       <div class="flex items-center justify-between h-10">
         <div class="relative shrink-0 z-10">

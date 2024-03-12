@@ -35,7 +35,7 @@
     "heroicons": "^2.1.1",
     "leaflet": "^1.9.4",
     "nuxt": "^3.10.3",
-    "simple-icons": "^11.7.0"
+    "simple-icons": "^11.8.0"
   },
   "devDependencies": {
     "@nuxt/kit": "^3.10.3",
@@ -44,16 +44,16 @@
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
-    "@types/node": "^20.11.25",
+    "@types/node": "^20.10.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-nuxt": "^4.0.0",
     "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-vue": "^9.22.0",
+    "eslint-plugin-vue": "^9.23.0",
     "glob": "^10.3.10",
     "image-size": "^1.1.1",
     "marked": "^12.0.1",
-    "nitropack": "^2.9.1",
+    "nitropack": "^2.9.3",
     "openapi-typescript-codegen": "^0.27.0",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",

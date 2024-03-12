@@ -19,10 +19,10 @@
     "file": "BikeAndFlyHeader.jpg",
     "stem": "BikeAndFlyHeader",
     "dimensions": {
-      "height": 1297,
+      "height": 1416,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1.542
+      "ratio": 1.412
     },
     "alt": "",
     "title": ""
@@ -62,9 +62,9 @@
     "file": "bike-testival.jpg",
     "stem": "bike-testival",
     "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
+      "height": 1440,
+      "width": 1440,
+      "type": "webp",
       "ratio": 1
     },
     "alt": "",
