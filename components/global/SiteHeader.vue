@@ -11,7 +11,7 @@
             <ResponsiveImage
               v-if="isHydrogen"
               img-class="rounded shadow-md object-cover w-3/4"
-              picture="/media/Rechteck-2_original.png"
+              picture="/media/H2Kugel.png"
             />
           </NuxtLink>
         </div>

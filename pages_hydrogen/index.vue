@@ -41,7 +41,61 @@
       </div>
     </div>
     <div class="max-w-90 w-full mx-auto py-6">
-      <div class="nuxt-content"><IndexPage /></div>
+      <div class="nuxt-content">
+        <h2>The Offer</h2>
+        <h3>We offer advice in the form of…</h3>
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center min-h-40 mt-12"
+        >
+          <div class="p-4 rounded-lg flex items-center justify-center w-1/2">
+            <IconOutlineDocumentDuplicate class="w-6 h-6 mr-4" />
+            concept reviews
+          </div>
+          <div class="p-4 rounded-lg flex items-center justify-center w-1/2">
+            <IconOutlineBarChart class="w-6 h-6 mr-4" />
+            project analysis
+          </div>
+          <div class="p-4 rounded-lg flex items-center justify-center w-1/2">
+            <IconOutlineChat class="w-6 h-6 mr-4" />
+            moderated workshops
+          </div>
+          <div class="p-4 rounded-lg flex items-center justify-center w-1/2">
+            <IconOutlineBook class="w-6 h-6 mr-4" />
+            targeted reports
+          </div>
+          <div class="p-4 rounded-lg flex items-center justify-center w-1/2">
+            <IconOutlinePaperPlane class="w-6 h-6 mr-4" />
+            interactive sessions
+          </div>
+          <div class="p-4 rounded-lg flex items-center justify-center w-1/2">
+            <IconOutlineAcademicCap class="w-6 h-6 mr-4" />
+            strategy development
+          </div>
+        </div>
+        <div
+          class="grid md:grid-cols-2 gap-2 place-items-center mt-16 bg-white text-center shadow-lg"
+        >
+          <div>
+            <ResponsiveImage
+              box-class="w-full"
+              img-class="object-cover object-bottom w-full h-full"
+              :is-lazy="false"
+              :is-preload="true"
+              picture="/media/anwendungsgebiete.png"
+            />
+          </div>
+          <div>
+            <h2>to interested parties from...</h2>
+            <ul class="list-disc text-left">
+              <li>industrial actors</li>
+              <li>project consortia</li>
+              <li>associations</li>
+              <li>investors</li>
+              <li>public administrations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <LinkList />
     <SocialBar />
@@ -51,9 +105,14 @@
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
 import LinkList from '@/components/LinkList.vue'
-import IndexPage from '@/content_hydrogen/index.vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
 import SocialBar from '@/components/SocialBar.vue'
+import IconOutlineAcademicCap from '@/components/icon/IconOutlineAcademicCap.vue'
+import IconOutlineBarChart from '@/components/icon/IconOutlineBarChart.vue'
+import IconOutlineDocumentDuplicate from '@/components/icon/IconOutlineDocumentDuplicate.vue'
+import IconOutlineChat from '@/components/icon/IconOutlineChat.vue'
+import IconOutlinePaperPlane from '@/components/icon/IconOutlinePaperPlane.vue'
+import IconOutlineBook from '@/components/icon/IconOutlineBook.vue'
 
 useMetaTags()
 </script>

@@ -1,4 +1,18 @@
 {
+  "/media/H2Kugel.png": {
+    "url": "/media/H2Kugel.png",
+    "path": "/media/",
+    "file": "H2Kugel.png",
+    "stem": "H2Kugel",
+    "dimensions": {
+      "height": 1630,
+      "width": 1626,
+      "type": "png",
+      "ratio": 0.998
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/HydrogenHeader.png": {
     "url": "/media/HydrogenHeader.png",
     "path": "/media/",
@@ -55,6 +69,164 @@
     "alt": "",
     "title": ""
   },
+  "/media/archiv/Bildschirmfoto 2021-05-31 um 17.10.13.png": {
+    "url": "/media/archiv/Bildschirmfoto 2021-05-31 um 17.10.13.png",
+    "path": "/media/archiv/",
+    "file": "Bildschirmfoto 2021-05-31 um 17.10.13.png",
+    "stem": "Bildschirmfoto 2021-05-31 um 17.10.13",
+    "dimensions": {
+      "height": 400,
+      "width": 932,
+      "type": "png",
+      "ratio": 2.33
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/GHG-Footprint.png": {
+    "url": "/media/archiv/GHG-Footprint.png",
+    "path": "/media/archiv/",
+    "file": "GHG-Footprint.png",
+    "stem": "GHG-Footprint",
+    "dimensions": {
+      "height": 359,
+      "width": 556,
+      "type": "png",
+      "ratio": 1.549
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/H2 Kugel klein.jpg": {
+    "url": "/media/archiv/H2 Kugel klein.jpg",
+    "path": "/media/archiv/",
+    "file": "H2 Kugel klein.jpg",
+    "stem": "H2 Kugel klein",
+    "dimensions": {
+      "height": 482,
+      "orientation": 1,
+      "width": 476,
+      "type": "jpg",
+      "ratio": 0.988
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/H2Kugel winzig.jpg": {
+    "url": "/media/archiv/H2Kugel winzig.jpg",
+    "path": "/media/archiv/",
+    "file": "H2Kugel winzig.jpg",
+    "stem": "H2Kugel winzig",
+    "dimensions": {
+      "height": 182,
+      "orientation": 1,
+      "width": 180,
+      "type": "jpg",
+      "ratio": 0.989
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/H2Kugel winzig.png": {
+    "url": "/media/archiv/H2Kugel winzig.png",
+    "path": "/media/archiv/",
+    "file": "H2Kugel winzig.png",
+    "stem": "H2Kugel winzig",
+    "dimensions": {
+      "height": 182,
+      "width": 180,
+      "type": "png",
+      "ratio": 0.989
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/H2Kugel.jpg": {
+    "url": "/media/archiv/H2Kugel.jpg",
+    "path": "/media/archiv/",
+    "file": "H2Kugel.jpg",
+    "stem": "H2Kugel",
+    "dimensions": {
+      "height": 1630,
+      "orientation": 1,
+      "width": 1626,
+      "type": "jpg",
+      "ratio": 0.998
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/H2Kugel.png": {
+    "url": "/media/archiv/H2Kugel.png",
+    "path": "/media/archiv/",
+    "file": "H2Kugel.png",
+    "stem": "H2Kugel",
+    "dimensions": {
+      "height": 1630,
+      "width": 1626,
+      "type": "png",
+      "ratio": 0.998
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/HA Logo klein.png": {
+    "url": "/media/archiv/HA Logo klein.png",
+    "path": "/media/archiv/",
+    "file": "HA Logo klein.png",
+    "stem": "HA Logo klein",
+    "dimensions": {
+      "height": 48,
+      "width": 354,
+      "type": "png",
+      "ratio": 7.375
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/HA Logo knapp.png": {
+    "url": "/media/archiv/HA Logo knapp.png",
+    "path": "/media/archiv/",
+    "file": "HA Logo knapp.png",
+    "stem": "HA Logo knapp",
+    "dimensions": {
+      "height": 102,
+      "width": 870,
+      "type": "png",
+      "ratio": 8.529
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/HA Logo.png": {
+    "url": "/media/archiv/HA Logo.png",
+    "path": "/media/archiv/",
+    "file": "HA Logo.png",
+    "stem": "HA Logo",
+    "dimensions": {
+      "height": 196,
+      "width": 976,
+      "type": "png",
+      "ratio": 4.98
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/Ohne Titel.jpg": {
+    "url": "/media/archiv/Ohne Titel.jpg",
+    "path": "/media/archiv/",
+    "file": "Ohne Titel.jpg",
+    "stem": "Ohne Titel",
+    "dimensions": {
+      "height": 196,
+      "orientation": 1,
+      "width": 976,
+      "type": "jpg",
+      "ratio": 4.98
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/archiv/Rechteck-2_original.png": {
     "url": "/media/archiv/Rechteck-2_original.png",
     "path": "/media/archiv/",
@@ -65,6 +237,34 @@
       "width": 872,
       "type": "png",
       "ratio": 0.995
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/Sector Integration.png": {
+    "url": "/media/archiv/Sector Integration.png",
+    "path": "/media/archiv/",
+    "file": "Sector Integration.png",
+    "stem": "Sector Integration",
+    "dimensions": {
+      "height": 334,
+      "width": 932,
+      "type": "png",
+      "ratio": 2.79
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/archiv/Vehicles evolution.png": {
+    "url": "/media/archiv/Vehicles evolution.png",
+    "path": "/media/archiv/",
+    "file": "Vehicles evolution.png",
+    "stem": "Vehicles evolution",
+    "dimensions": {
+      "height": 353,
+      "width": 466,
+      "type": "png",
+      "ratio": 1.32
     },
     "alt": "",
     "title": ""
@@ -294,16 +494,30 @@
     "alt": "",
     "title": ""
   },
+  "/media/team/_christian.png": {
+    "url": "/media/team/_christian.png",
+    "path": "/media/team/",
+    "file": "_christian.png",
+    "stem": "_christian",
+    "dimensions": {
+      "height": 250,
+      "width": 251,
+      "type": "png",
+      "ratio": 1.004
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/team/christian.png": {
     "url": "/media/team/christian.png",
     "path": "/media/team/",
     "file": "christian.png",
     "stem": "christian",
     "dimensions": {
-      "height": 250,
-      "width": 251,
+      "height": 692,
+      "width": 597,
       "type": "png",
-      "ratio": 1.004
+      "ratio": 0.863
     },
     "alt": "",
     "title": ""
