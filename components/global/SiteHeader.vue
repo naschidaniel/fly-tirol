@@ -1,5 +1,7 @@
 <template>
-  <div :class="isHydrogen ? 'bg-gradient-to-r from-hydrogreen to-hydroblue' : ''">
+  <div
+    :class="isHydrogen ? 'bg-gradient-to-r from-hydrogreen to-hydroblue' : ''"
+  >
     <div class="max-w-90 w-full mx-auto">
       <div class="flex items-center justify-between h-10">
         <div class="relative shrink-0 z-10">
@@ -9,7 +11,7 @@
             <ResponsiveImage
               v-if="isHydrogen"
               img-class="rounded shadow-md object-cover w-3/4"
-              picture="/media/Rechteck-2_blue.png"
+              picture="/media/Rechteck-2_original.png"
             />
           </NuxtLink>
         </div>

@@ -54,12 +54,12 @@ class ResponsiveSource implements ResponsiveSourceInterface {
     const postfix = isThumbnail
       ? `thumbnail_${width}.${image.dimensions.type}`
       : `${width}.${image.dimensions.type}`
-    const postfixWebp = postfix.replace(
-      image.dimensions.type,
-      image.dimensions.type,
-    )
+    const postfixWebp = postfix.replace(image.dimensions.type, 'webp')
     this.srcset = `${prefix}_${postfix}?v=${buildTime} ${width}w`
-    this.srcsetWebp = '' // `${prefix}_${postfixWebp}?v=${buildTime} ${width}w`
+    this.srcsetWebp =
+      isHydrogen && image.dimensions.type === 'png'
+        ? ''
+        : `${prefix}_${postfixWebp}?v=${buildTime} ${width}w` // fix png
     this.width = width
     this.height = isThumbnail
       ? width
@@ -89,7 +89,7 @@ const props = defineProps({
   isPreload: { type: Boolean, default: false, required: false },
   isThumbnail: { type: Boolean, default: false, required: false },
 })
-const { buildTime } = useData()
+const { buildTime, isHydrogen } = useData()
 const { media } = useMedia()
 
 // see https://vuejs.org/guide/essentials/template-refs.html#accessing-the-refs

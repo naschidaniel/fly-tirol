@@ -5,7 +5,7 @@
     >
       <ResponsiveImage
         box-class="absolute top-0 bottom-0 left-0 right-0"
-        img-class="object-cover object-center md:object-bottom lg:object-bottom w-full h-full"
+        img-class="object-cover object-bottom w-full h-full"
         :is-lazy="false"
         :is-preload="true"
         picture="/media/wavline.png"

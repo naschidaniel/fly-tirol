@@ -27,11 +27,11 @@
     "alt": "",
     "title": ""
   },
-  "/media/Rechteck-2_blue.png": {
-    "url": "/media/Rechteck-2_blue.png",
+  "/media/Rechteck-2_original.png": {
+    "url": "/media/Rechteck-2_original.png",
     "path": "/media/",
-    "file": "Rechteck-2_blue.png",
-    "stem": "Rechteck-2_blue",
+    "file": "Rechteck-2_original.png",
+    "stem": "Rechteck-2_original",
     "dimensions": {
       "height": 876,
       "width": 872,
@@ -332,6 +332,20 @@
       "width": 250,
       "type": "png",
       "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wavline-mirrowd.png": {
+    "url": "/media/wavline-mirrowd.png",
+    "path": "/media/",
+    "file": "wavline-mirrowd.png",
+    "stem": "wavline-mirrowd",
+    "dimensions": {
+      "height": 464,
+      "width": 4000,
+      "type": "png",
+      "ratio": 8.621
     },
     "alt": "",
     "title": ""

@@ -4,7 +4,7 @@
       class="bg-gradient-to-r from-white via-[#160D42] to-white p-[2px] mb-4"
     ></div>
     <div class="flex flex-wrap">
-      <div class="w-full lg:w-1/2">
+      <div v-if="!isHydrogen" class="w-full lg:w-1/2">
         <div class="flex justify-center">
           <span class="font-bold">Teilen</span>&nbsp;in Sozialen Medien
         </div>
@@ -55,7 +55,7 @@
           </button>
         </div>
       </div>
-      <div class="w-full lg:w-1/2 mt-16 lg:mt-0">
+      <div :class="isHydrogen ? 'w-full' : 'w-full lg:w-1/2 mt-16 lg:mt-0'">
         <div class="flex justify-center">
           <span class="font-bold">Kontaktiere uns</span>
         </div>
@@ -63,13 +63,13 @@
           <button
             v-if="isHydrogen"
             class="mx-2"
-            title="Kontaktiere uns auf Xing"
-            @click="openXing()"
+            title="Kontaktiere uns auf LinkedIn"
+            @click="linkedIn()"
           >
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
-              style="background-color: #006567"
-              ><IconXing style="width: 2em; height: 2em; color: #ececec"
+              style="background-color: #0a66c2"
+              ><IconLinkedIn style="width: 2em; height: 2em; color: #ececec"
             /></span>
           </button>
           <button
@@ -95,6 +95,7 @@
               ><IconYouTube style="width: 2em; height: 2em; color: #ececec"
             /></span></button
           ><button
+            v-if="isBikeAndFly && isFlyTirol"
             class="mx-2"
             title="Kontaktiere uns per WhatsApp"
             @click="openWhatsAppContact()"
@@ -132,7 +133,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import IconXing from './icon/IconXing.vue'
+import IconLinkedIn from './icon/IconLinkedIn.vue'
 import IconInstagram from './icon/IconInstagram.vue'
 import IconFacebook from './icon/IconFacebook.vue'
 import IconOutlineMail from './icon/IconOutlineMail.vue'
@@ -160,7 +161,7 @@ const encodedUrl = computed(() => encodeURI(`${websiteUrl}${page.value.path}`))
 const encodeTitle = computed(() => encodeURI(page.value.title))
 const encodeDescription = computed(() => encodeURI(page.value.description))
 
-function openXing() {
+function linkedIn() {
   const url = `https://at.linkedin.com/in/${xing}/en/`
   window.open(url, '_blank', 'width=600, height=800')?.focus()
 }
