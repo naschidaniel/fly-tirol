@@ -3,7 +3,7 @@ title: Weekendticket
 description: Weekendticket
 location: Westendorf
 bikeandfly: bike&fly
-image: /media/packages/weekendticket.jpg
+image: /media/shop/weekendticket.jpg
 order: 2
 ---
 
@@ -15,4 +15,4 @@ Sichere dir jetzt den Eintritt auf das Festival Gelände für alle drei Tage und
 
 - Eintritt auf das Festival Gelände für alle drei Tage
 
-<ContentImageGallery path="/media/packages/gallerie/"/>
+<ContentImageGallery path="/media/shop/gallerie/"/>

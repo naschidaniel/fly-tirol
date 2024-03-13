@@ -3,7 +3,7 @@ title: Vortrag Paul Guschelbauer
 description: Vortrag
 location: Westendorf
 bikeandfly: fly
-image: /media/packages/vortrag.jpg
+image: /media/shop/vortrag.jpg
 order: 8
 ---
 
@@ -21,4 +21,4 @@ Sichere dir jetzt dein Ticket und erlebe einen unvergesslichen und mitreisenden 
 
 - 1,5h Vortrag 
 
-<ContentImageGallery path="/media/packages/gallerie/"/>
+<ContentImageGallery path="/media/shop/gallerie/"/>

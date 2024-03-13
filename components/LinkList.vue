@@ -148,11 +148,11 @@ const bikeAndFlyData = [
     to: '/wanderbird',
   },
   {
-    cardTitle: 'Packages',
-    cardImage: '/media/packages/packages.jpg',
+    cardTitle: 'Shop',
+    cardImage: '/media/shop/shop.jpg',
     description:
       'An diesem Wochenende gibt es von Fly Tirol und Morgensonne auf alle Bike & Fly Angebot spezielle Vergünstigungen für alle Festival-Besucher. Reserviere dir schon jetzt deinen Platz für ein einzigartiges Erlebnis!',
-    to: '/packages',
+    to: '/shop',
   },
   {
     cardTitle: 'Partner',

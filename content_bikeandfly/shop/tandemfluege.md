@@ -3,7 +3,7 @@ title: Tandemflüge
 description: Tandemflüge
 location: Westendorf
 bikeandfly: fly
-image: /media/packages/tandemfluege.jpg
+image: /media/shop/tandemfluege.jpg
 order: 7
 ---
 
@@ -23,4 +23,4 @@ Reserviere dir noch heute deinen Tandemflug in den Kitzbüheler Alpen und erlebe
 -	Tandemflug
 -	Fotos & Videos
 
-<ContentImageGallery path="/media/packages/gallerie/"/>
+<ContentImageGallery path="/media/shop/gallerie/"/>

@@ -38,7 +38,7 @@ module.exports = {
           'kontakt',
           'panoramaflug',
           'programm',
-          'packages',
+          'shop',
           'partner',
           'rettungspackservice',
           'schnupperkurs',

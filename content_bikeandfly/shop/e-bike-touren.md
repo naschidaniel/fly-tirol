@@ -3,7 +3,7 @@ title: E-Bike Touren
 description: E-Bike Touren
 location: Westendorf
 bikeandfly: bike
-image: /media/packages/e-bike-touren.jpg
+image: /media/shop/e-bike-touren.jpg
 order: 5
 ---
 
@@ -19,4 +19,4 @@ Reserviere dir schon jetzt dein einzigartiges Erlebnis!
 
 -	Biketour mit Guide und Leih-E-Bike
 
-<ContentImageGallery path="/media/packages/gallerie/"/>
+<ContentImageGallery path="/media/shop/gallerie/"/>

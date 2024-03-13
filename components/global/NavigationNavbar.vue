@@ -32,7 +32,7 @@
           to="/gleitschirm-testival"
         />
         <NavigationNavbarLink name="Wanderbird" to="/wanderbird" />
-        <NavigationNavbarLink name="Packages" to="/packages" />
+        <NavigationNavbarLink name="Shop" to="/shop" />
         <NavigationNavbarLink name="Partner" to="/partner" />
       </nav>
       <nav v-else class="flex flex-col items-start xl:flex-row">

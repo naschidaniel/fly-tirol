@@ -3,7 +3,7 @@ title: Tagesticket
 description: Tagesticket
 location: Westendorf
 bikeandfly: bike&fly
-image: /media/packages/tagesticket.jpg
+image: /media/shop/tagesticket.jpg
 order: 1
 ---
 
@@ -15,4 +15,4 @@ Bitte wähle unten aus, an welchem der drei Festival Tage du uns besuchen möcht
 
 - Eintritt auf das Festival Gelände für den ausgewählten Tag
 
-<ContentImageGallery path="/media/packages/gallerie/"/>
+<ContentImageGallery path="/media/shop/gallerie/"/>

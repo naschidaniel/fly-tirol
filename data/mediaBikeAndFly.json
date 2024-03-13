@@ -268,189 +268,6 @@
     "alt": "",
     "title": ""
   },
-  "/media/packages/afterparty.jpg": {
-    "url": "/media/packages/afterparty.jpg",
-    "path": "/media/packages/",
-    "file": "afterparty.jpg",
-    "stem": "afterparty",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/bike-and-fly-touren.jpg": {
-    "url": "/media/packages/bike-and-fly-touren.jpg",
-    "path": "/media/packages/",
-    "file": "bike-and-fly-touren.jpg",
-    "stem": "bike-and-fly-touren",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/e-bike-touren.jpg": {
-    "url": "/media/packages/e-bike-touren.jpg",
-    "path": "/media/packages/",
-    "file": "e-bike-touren.jpg",
-    "stem": "e-bike-touren",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/e-bike-verleih.jpg": {
-    "url": "/media/packages/e-bike-verleih.jpg",
-    "path": "/media/packages/",
-    "file": "e-bike-verleih.jpg",
-    "stem": "e-bike-verleih",
-    "dimensions": {
-      "height": 2000,
-      "width": 1901,
-      "type": "jpg",
-      "ratio": 0.951
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/gallerie/fff.jpg": {
-    "url": "/media/packages/gallerie/fff.jpg",
-    "path": "/media/packages/gallerie/",
-    "file": "fff.jpg",
-    "stem": "fff",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/gallerie/xxx.jpg": {
-    "url": "/media/packages/gallerie/xxx.jpg",
-    "path": "/media/packages/gallerie/",
-    "file": "xxx.jpg",
-    "stem": "xxx",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/gallerie/yyy.jpg": {
-    "url": "/media/packages/gallerie/yyy.jpg",
-    "path": "/media/packages/gallerie/",
-    "file": "yyy.jpg",
-    "stem": "yyy",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/gallerie/zzz.jpg": {
-    "url": "/media/packages/gallerie/zzz.jpg",
-    "path": "/media/packages/gallerie/",
-    "file": "zzz.jpg",
-    "stem": "zzz",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/packages.jpg": {
-    "url": "/media/packages/packages.jpg",
-    "path": "/media/packages/",
-    "file": "packages.jpg",
-    "stem": "packages",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/tagesticket.jpg": {
-    "url": "/media/packages/tagesticket.jpg",
-    "path": "/media/packages/",
-    "file": "tagesticket.jpg",
-    "stem": "tagesticket",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/tandemfluege.jpg": {
-    "url": "/media/packages/tandemfluege.jpg",
-    "path": "/media/packages/",
-    "file": "tandemfluege.jpg",
-    "stem": "tandemfluege",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/vortrag.jpg": {
-    "url": "/media/packages/vortrag.jpg",
-    "path": "/media/packages/",
-    "file": "vortrag.jpg",
-    "stem": "vortrag",
-    "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
-      "type": "jpg",
-      "ratio": 1.755
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/packages/weekendticket.jpg": {
-    "url": "/media/packages/weekendticket.jpg",
-    "path": "/media/packages/",
-    "file": "weekendticket.jpg",
-    "stem": "weekendticket",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
   "/media/partner/FlyTirolLogo.jpg": {
     "url": "/media/partner/FlyTirolLogo.jpg",
     "path": "/media/partner/",
@@ -592,6 +409,189 @@
       "width": 4672,
       "type": "jpg",
       "ratio": 0.667
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/afterparty.jpg": {
+    "url": "/media/shop/afterparty.jpg",
+    "path": "/media/shop/",
+    "file": "afterparty.jpg",
+    "stem": "afterparty",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/bike-and-fly-touren.jpg": {
+    "url": "/media/shop/bike-and-fly-touren.jpg",
+    "path": "/media/shop/",
+    "file": "bike-and-fly-touren.jpg",
+    "stem": "bike-and-fly-touren",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/e-bike-touren.jpg": {
+    "url": "/media/shop/e-bike-touren.jpg",
+    "path": "/media/shop/",
+    "file": "e-bike-touren.jpg",
+    "stem": "e-bike-touren",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/e-bike-verleih.jpg": {
+    "url": "/media/shop/e-bike-verleih.jpg",
+    "path": "/media/shop/",
+    "file": "e-bike-verleih.jpg",
+    "stem": "e-bike-verleih",
+    "dimensions": {
+      "height": 2000,
+      "width": 1901,
+      "type": "jpg",
+      "ratio": 0.951
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/gallerie/fff.jpg": {
+    "url": "/media/shop/gallerie/fff.jpg",
+    "path": "/media/shop/gallerie/",
+    "file": "fff.jpg",
+    "stem": "fff",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/gallerie/xxx.jpg": {
+    "url": "/media/shop/gallerie/xxx.jpg",
+    "path": "/media/shop/gallerie/",
+    "file": "xxx.jpg",
+    "stem": "xxx",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/gallerie/yyy.jpg": {
+    "url": "/media/shop/gallerie/yyy.jpg",
+    "path": "/media/shop/gallerie/",
+    "file": "yyy.jpg",
+    "stem": "yyy",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/gallerie/zzz.jpg": {
+    "url": "/media/shop/gallerie/zzz.jpg",
+    "path": "/media/shop/gallerie/",
+    "file": "zzz.jpg",
+    "stem": "zzz",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/packages.jpg": {
+    "url": "/media/shop/packages.jpg",
+    "path": "/media/shop/",
+    "file": "packages.jpg",
+    "stem": "packages",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/tagesticket.jpg": {
+    "url": "/media/shop/tagesticket.jpg",
+    "path": "/media/shop/",
+    "file": "tagesticket.jpg",
+    "stem": "tagesticket",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/tandemfluege.jpg": {
+    "url": "/media/shop/tandemfluege.jpg",
+    "path": "/media/shop/",
+    "file": "tandemfluege.jpg",
+    "stem": "tandemfluege",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/vortrag.jpg": {
+    "url": "/media/shop/vortrag.jpg",
+    "path": "/media/shop/",
+    "file": "vortrag.jpg",
+    "stem": "vortrag",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/shop/weekendticket.jpg": {
+    "url": "/media/shop/weekendticket.jpg",
+    "path": "/media/shop/",
+    "file": "weekendticket.jpg",
+    "stem": "weekendticket",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
     },
     "alt": "",
     "title": ""

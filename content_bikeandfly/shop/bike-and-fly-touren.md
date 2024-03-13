@@ -3,7 +3,7 @@ title: Bike & Fly Touren
 description: Bike & Fly Touren
 location: Westendorf
 bikeandfly: bike&fly
-image: /media/packages/bike-and-fly-touren.jpg
+image: /media/shop/bike-and-fly-touren.jpg
 order: 4
 ---
 
@@ -18,4 +18,4 @@ Reserviere dir schon jetzt dein einzigartiges Erlebnis!
 -	Bike-Tour mit Guide und Leih-E-Bike
 -	Tandemflug , Fotos und Videos
 
-<ContentImageGallery path="/media/packages/gallerie/"/>
+<ContentImageGallery path="/media/shop/gallerie/"/>

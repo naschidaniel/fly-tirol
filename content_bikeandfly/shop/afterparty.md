@@ -3,7 +3,7 @@ title: Afterparty
 description: Afterparty
 location: Westendorf
 bikeandfly: bike&fly
-image: /media/packages/afterparty.jpg
+image: /media/shop/afterparty.jpg
 order: 3
 ---
 
@@ -22,4 +22,4 @@ Mit ihrem unverwechselbaren Stil und ihrer Leidenschaft für elektronische Klän
 
 - Eintritt: Afterparty
 
-<ContentImageGallery path="/media/packages/gallerie/"/>
+<ContentImageGallery path="/media/shop/gallerie/"/>
