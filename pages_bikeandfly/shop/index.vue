@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="shop"
+      headline="Shop"
       picture="/media/shop/shop.jpg"
     >
       <div>

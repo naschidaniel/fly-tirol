@@ -32,6 +32,7 @@
           to="/gleitschirm-testival"
         />
         <NavigationNavbarLink name="Wanderbird" to="/wanderbird" />
+        <NavigationNavbarLink name="Wanderlokal" to="/wanderlokal" />
         <NavigationNavbarLink name="Shop" to="/shop" />
         <NavigationNavbarLink name="Partner" to="/partner" />
       </nav>

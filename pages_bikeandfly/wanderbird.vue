@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="Gleitschirm Testival"
+      headline="Wanderbird"
       picture="/media/wanderbird/wanderbird.jpg"
     >
       <p>

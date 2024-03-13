@@ -62,6 +62,7 @@ module.exports = {
           'Westendorf',
           'weekendticket',
           'wanderbird',
+          'wanderlokal',
           'buildings',
           'general',
           'industry',

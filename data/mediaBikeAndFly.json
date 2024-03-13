@@ -525,11 +525,11 @@
     "alt": "",
     "title": ""
   },
-  "/media/shop/packages.jpg": {
-    "url": "/media/shop/packages.jpg",
+  "/media/shop/shop.jpg": {
+    "url": "/media/shop/shop.jpg",
     "path": "/media/shop/",
-    "file": "packages.jpg",
-    "stem": "packages",
+    "file": "shop.jpg",
+    "stem": "shop",
     "dimensions": {
       "height": 2000,
       "width": 2000,
@@ -672,6 +672,21 @@
     "path": "/media/wanderbird/",
     "file": "wanderbird.jpg",
     "stem": "wanderbird",
+    "dimensions": {
+      "height": 1074,
+      "orientation": 1,
+      "width": 1885,
+      "type": "jpg",
+      "ratio": 1.755
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/wanderlokal.jpg": {
+    "url": "/media/wanderlokal.jpg",
+    "path": "/media/",
+    "file": "wanderlokal.jpg",
+    "stem": "wanderlokal",
     "dimensions": {
       "height": 1074,
       "orientation": 1,
