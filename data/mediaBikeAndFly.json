@@ -62,10 +62,11 @@
     "file": "bike-testival.jpg",
     "stem": "bike-testival",
     "dimensions": {
-      "height": 1440,
-      "width": 1440,
-      "type": "webp",
-      "ratio": 1
+      "height": 1080,
+      "orientation": 1,
+      "width": 1920,
+      "type": "jpg",
+      "ratio": 1.778
     },
     "alt": "",
     "title": ""
