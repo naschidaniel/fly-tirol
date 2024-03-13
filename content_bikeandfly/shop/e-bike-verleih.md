@@ -1,6 +1,6 @@
 ---
-title: E Bike Verleih
-description: E Bike Verleih
+title: E-Bike Verleih
+description: E-Bike Verleih
 location: Westendorf
 bikeandfly: bike
 image: /media/shop/e-bike-verleih.jpg

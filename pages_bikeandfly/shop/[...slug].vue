@@ -12,9 +12,6 @@
     <div v-if="page.slug == 'e-bike-verleih'">
       <EBikeVerleih />
     </div>
-    <div v-if="page.slug == 'tagesticket'">
-      <Tagesticket />
-    </div>
     <div v-if="page.slug == 'tandemfluege'">
       <Tandemfluege />
     </div>
@@ -35,7 +32,6 @@ import ProductBookProduct from '@/components/ProductBookProduct.vue'
 import Afterparty from '@/content_bikeandfly/shop/afterparty.vue'
 import BikeAndFlyTouren from '@/content_bikeandfly/shop/bike-and-fly-touren.vue'
 import EBikeTouren from '@/content_bikeandfly/shop/e-bike-touren.vue'
-import Tagesticket from '@/content_bikeandfly/shop/tagesticket.vue'
 import EBikeVerleih from '@/content_bikeandfly/shop/e-bike-verleih.vue'
 import Tandemfluege from '@/content_bikeandfly/shop/tandemfluege.vue'
 import Vortrag from '@/content_bikeandfly/shop/vortrag.vue'
