@@ -63,8 +63,8 @@ module.exports = {
         hydroblue: '#3984bc',
       },
       fontFamily: {
-        sans: isHydrogen ? ['Comfortaa', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
-        heading: isHydrogen ? ['Comfortaa-Bold', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
+        sans: isHydrogen ? ['Comfortaa', 'RedHatText', 'sans-serif'] : isBikeAndFly ? ['Glimer', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
+        heading: isHydrogen ? ['Comfortaa-Bold', 'RedHatText', 'sans-serif'] : isBikeAndFly ? ['Glimer-Bold', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
       },
       spacing: {
         0.75: '0.1875rem',

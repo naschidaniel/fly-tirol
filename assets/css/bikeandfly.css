@@ -1,7 +1,15 @@
 @tailwind base;
 
 @font-face {
-  font-family: 'RedHatDisplay';
+  font-family: 'Glimer';
+  src: url("~/assets/fonts/Gilmer-Medium.otf") format("opentype");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Glimer-Bold';
   src: url("~/assets/fonts/Gilmer-Bold.otf") format("opentype");
   font-weight: 300 900;
   font-style: normal;
