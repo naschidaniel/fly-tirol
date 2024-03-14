@@ -8,15 +8,15 @@
       >
     </div>
     <div>Version des Docker Images: {{ formatDateTime(buildTime) }}</div>
-    <h2 class="mt-2">Shop Admin Userinterface</h2>
-    <div>
+    <h2 v-if="!isHydrogen" class="mt-2">Shop Admin Userinterface</h2>
+    <div v-if="!isHydrogen">
       Testprodukte:
       <NuxtLink to="/testprodukte">
         <span v-if="isBikeAndFly">https://bikeandfly.at/testprodukte</span>
         <span v-else>https://fly-tirol.com/testprodukte</span>
       </NuxtLink>
     </div>
-    <div>
+    <div v-if="!isHydrogen">
       Admin Interface:
       <a v-if="isBikeAndFly" href="https://bikeandfly.at/shop/admin-ui/"
         >https://bikeandfly.at/shop/admin-ui/</a
@@ -55,7 +55,7 @@
 import { useData } from '@/composable/useData'
 import { useFormat } from '@/composable/useFormat'
 
-const { buildTime, licenses, isBikeAndFly } = useData()
+const { buildTime, licenses, isBikeAndFly, isHydrogen } = useData()
 const { formatDateTime } = useFormat()
 </script>
 

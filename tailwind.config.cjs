@@ -1,4 +1,7 @@
 const isBikeAndFly = process.env.NUXT_PAGE === 'bikeandfly'
+const isFlyTirol = process.env.NUXT_PAGE === 'flytirol'
+const isHydrogen = process.env.NUXT_PAGE === 'hydrogen'
+
 
 const colors = require('tailwindcss/colors')
 const em = (px) => `${px / 16}em`
@@ -31,6 +34,8 @@ const content = [
 
 isBikeAndFly
   ? content.push('pages_bikeandfly/**/*.vue')
+  : isFlyTirol ?
+  content.push('pages_flytirol/**/*.vue')
   : content.push('pages_flytirol/**/*.vue')
 
 const brandColor = isBikeAndFly ? '#22211f' : '#160D42'
@@ -58,8 +63,8 @@ module.exports = {
         hydroblue: '#3984bc',
       },
       fontFamily: {
-        sans: ['RedHatText', 'sans-serif'],
-        heading: ['RedHatDisplay', 'sans-serif'],
+        sans: isHydrogen ? ['Comfortaa', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
+        heading: isHydrogen ? ['Comfortaa-Bold', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
       },
       spacing: {
         0.75: '0.1875rem',

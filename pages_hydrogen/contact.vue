@@ -47,12 +47,10 @@
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
     </div>
     <ContactMap class="mt-10" />
-    <SocialBar />
   </div>
 </template>
 
 <script setup lang="ts">
-import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import IconOutlineLocationMarker from '@/components/icon/IconOutlineLocationMarker.vue'

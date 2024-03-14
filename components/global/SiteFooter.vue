@@ -27,7 +27,7 @@
           <div
             class="flex flex-wrap md:flex-nowrap items-center justify-between"
           >
-            <div class="relative shrink-0 w-full md:w-auto mb-8 md:mb-0">
+            <div class="underline m-4 whitespace-nowrap">
               <NuxtLink
                 to="/"
                 class="block outline-none w-24 whitespace-nowrap"
@@ -38,23 +38,20 @@
             </div>
             <div class="flex flex-wrap sm:flex-nowrap justify-between w-full">
               <div class="flex flex-wrap w-full md:justify-center mb-8 sm:mb-0">
-                <a :href="mailTo" class="underline whitespace-nowrap">
+                <a :href="mailTo" class="underline whitespace-nowrap m-4">
                   {{ mail }}
                 </a>
-                <a
-                  :href="phoneHref"
-                  class="underline ml-8 sm:ml-4 md:ml-6 whitespace-nowrap"
-                >
+                <a :href="phoneHref" class="underline m-4 whitespace-nowrap">
                   {{ phoneString }}
                 </a>
-                <span
-                  v-if="isFlyTirol"
-                  class="hidden lg:block underline ml-8 sm:ml-4 md:ml-6 whitespace-nowrap"
-                >
+                <span v-if="isFlyTirol" class="hidden m-4 whitespace-nowrap">
                   Bergliftstraße 22, 6363 Westendorf
                 </span>
+                <span v-if="isHydrogen" class="underline m-4 whitespace-nowrap">
+                  Kleinvorlderbergstraße 7a, 6111 VOLDERS
+                </span>
               </div>
-              <div class="flex w-full sm:w-auto sm:ml-4">
+              <div class="m-4 flex w-full sm:w-auto sm:ml-4">
                 <NuxtLink v-if="isHydrogen" to="/imprint" class="underline">
                   <span>imprint</span>
                 </NuxtLink>
@@ -74,6 +71,14 @@
                   class="underline ml-8 sm:ml-4 md:ml-6"
                 >
                   <span>AGB</span>
+                </NuxtLink>
+                <NuxtLink
+                  v-if="isHydrogen"
+                  href="https://at.linkedin.com/in/christian-weinberger-62aaa8114/en"
+                  target="_blank"
+                  class="underline ml-8 sm:ml-4 md:ml-6"
+                >
+                  <span>LinkedIn</span>
                 </NuxtLink>
               </div>
             </div>

@@ -12,12 +12,10 @@
       <TeamList :members="members" />
       <AboutUs class="nuxt-content" />
     </div>
-    <SocialBar />
   </div>
 </template>
 
 <script setup lang="ts">
-import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import TeamList from '@/components/TeamList.vue'
 import AboutUs from '@/content_hydrogen/about-us.vue'
@@ -34,9 +32,9 @@ const members: TeamMember[] = [
     information: '',
   },
   {
-    name: 'Zhanna WEINBERGER',
-    picture: '/media/team/zhanna.png',
-    position: 'Assistant',
+    name: 'Dr. Nikolaus Weinberger',
+    picture: '/media/team/partners.png',
+    position: 'Solar-PV und Renewable Energy expert',
     information: '',
   },
   {

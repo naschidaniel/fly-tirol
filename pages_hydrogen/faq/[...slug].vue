@@ -30,12 +30,10 @@
     <div v-if="page.slug == 'transmission'">
       <Transmission />
     </div>
-    <SocialBar />
   </div>
 </template>
 
 <script setup lang="ts">
-import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import Buildings from '@/content_hydrogen/faq/buildings.vue'
 import EnergySector from '@/content_hydrogen/faq/energy-sector.vue'

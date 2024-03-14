@@ -10,13 +10,10 @@
         :is-preload="true"
         picture="/media/wavline.png"
       />
-      <div class="absolute h-40 bottom-0 left-0 right-0"></div>
       <div
         class="relative max-w-90 mx-auto w-full lg:w-11/12 lg:mr-0 lg:ml-auto lg:py-24 z-10"
       >
-        <div
-          class="flex flex-col lg:w-96 max-w-screen-sm lg:shrink-0 -mt-24 md:mt-0"
-        >
+        <div class="flex flex-col max-w-screen-sm lg:shrink-0 -mt-24 md:mt-0">
           <div class="mt-12 sm:mt-6">
             <h1 class="mb-6">
               <span
@@ -98,7 +95,6 @@
       </div>
     </div>
     <LinkList />
-    <SocialBar />
   </div>
 </template>
 

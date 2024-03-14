@@ -18,12 +18,10 @@
     <div class="max-w-90 w-full mx-auto py-6">
       <News class="nuxt-content" />
     </div>
-    <SocialBar />
   </div>
 </template>
 
 <script setup lang="ts">
-import SocialBar from '@/components/SocialBar.vue'
 import News from '@/content_hydrogen/news.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'

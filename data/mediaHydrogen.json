@@ -41,6 +41,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/Rechteck-2_logo.png": {
+    "url": "/media/Rechteck-2_logo.png",
+    "path": "/media/",
+    "file": "Rechteck-2_logo.png",
+    "stem": "Rechteck-2_logo",
+    "dimensions": {
+      "height": 348,
+      "width": 243,
+      "type": "png",
+      "ratio": 0.698
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/Rechteck-2_original.png": {
     "url": "/media/Rechteck-2_original.png",
     "path": "/media/",
