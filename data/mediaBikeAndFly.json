@@ -441,6 +441,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/shop/bike-parkour-rennen.jpg": {
+    "url": "/media/shop/bike-parkour-rennen.jpg",
+    "path": "/media/shop/",
+    "file": "bike-parkour-rennen.jpg",
+    "stem": "bike-parkour-rennen",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/shop/e-bike-touren.jpg": {
     "url": "/media/shop/e-bike-touren.jpg",
     "path": "/media/shop/",
