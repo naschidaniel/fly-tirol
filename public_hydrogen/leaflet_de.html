@@ -19,15 +19,15 @@
     <div id="map" style="height: 400px;"></div>
     <script>
       function openMapsLink(e) {
-          window.open(`https://www.google.com/maps/search/?api=1&query=47.28746425178519%2C11.574985769680675,Hochschwarzweg+24+Volders+Österreich`)
+          window.open(`https://www.google.at/maps/place/Kleinvolderbergstra%C3%9Fe+7a,+6111+Kleinvolderberg/@47.2822362,11.5573417,17z/`)
         }
-        const map = L.map('map').setView([47.28746425178519, 11.574985769680675], 14);
+        const map = L.map('map').setView([47.28238541530233, 11.559954184214451], 14);
         L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
             attribution: "<a href='https://osm.org/copyright'>OpenStreetMap</a> contributors",
             maxZoom: 18,
         }).addTo(map);
 
-        L.marker([47.28746425178519, 11.574985769680675]).bindTooltip("Hochschwarzweg 24 Volders, Österreich", {"permanent": true}).addTo(map).on('click', (e) => openMapsLink(e));
+        L.marker([47.28238541530233, 11.559954184214451]).bindTooltip("Kleinvolderbergstraße 7a Volders, Österreich", {"permanent": true}).addTo(map).on('click', (e) => openMapsLink(e));
     </script>
 </body>
 </html>

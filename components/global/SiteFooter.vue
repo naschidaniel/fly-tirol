@@ -23,7 +23,7 @@
               : 'bg-[#333333] text-gray-300'
         "
       >
-        <div class="max-w-90 w-full mx-auto text-md sm:text-xs">
+        <div class="max-w-90 w-full mx-auto text-xs">
           <div
             class="flex flex-wrap md:flex-nowrap items-center justify-between"
           >
@@ -44,11 +44,19 @@
                 <a :href="phoneHref" class="underline m-4 whitespace-nowrap">
                   {{ phoneString }}
                 </a>
+                <NuxtLink
+                  v-if="isHydrogen"
+                  href="https://at.linkedin.com/in/christian-weinberger-62aaa8114/en"
+                  target="_blank"
+                  class="underline m-4 whitespace-nowrap"
+                >
+                  <span>LinkedIn</span>
+                </NuxtLink>
                 <span v-if="isFlyTirol" class="hidden m-4 whitespace-nowrap">
                   Bergliftstraße 22, 6363 Westendorf
                 </span>
                 <span v-if="isHydrogen" class="underline m-4 whitespace-nowrap">
-                  Kleinvorlderbergstraße 7a, 6111 VOLDERS
+                  Kleinvolderbergstraße 7a, 6111 VOLDERS
                 </span>
               </div>
               <div class="m-4 flex w-full sm:w-auto sm:ml-4">
@@ -71,14 +79,6 @@
                   class="underline ml-8 sm:ml-4 md:ml-6"
                 >
                   <span>AGB</span>
-                </NuxtLink>
-                <NuxtLink
-                  v-if="isHydrogen"
-                  href="https://at.linkedin.com/in/christian-weinberger-62aaa8114/en"
-                  target="_blank"
-                  class="underline ml-8 sm:ml-4 md:ml-6"
-                >
-                  <span>LinkedIn</span>
                 </NuxtLink>
               </div>
             </div>

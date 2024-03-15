@@ -41,8 +41,8 @@
           class="hidden md:block w-5 h-5 mr-1 -mt-0.25"
         />
         <span class="hidden md:block mr-6">Hydrogen-Advisers.eu</span>
-        Christian Weinberger | Hochschwarzweg 24 | A-6111 VOLDERS | Tirol |
-        Österreich
+        Christian Weinberger | Kleinvolderbergstraße 7a | A-6111 VOLDERS | Tirol
+        | Österreich
       </div>
       <div class="h-0.75 bg-brand rounded-full w-full"></div>
     </div>
