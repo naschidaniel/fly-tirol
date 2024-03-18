@@ -33,7 +33,7 @@ const members: TeamMember[] = [
   },
   {
     name: 'Dr. Nikolaus Weinberger',
-    picture: '/media/team/partners.png',
+    picture: '/media/team/nikolaus.jpg',
     position: 'Solar-PV und Renewable Energy expert',
     information: '',
   },
