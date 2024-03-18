@@ -28,6 +28,8 @@ jobs:
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.5.0/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: optimize-images
         run: yarn optimize-images:flytirol
+      - name: generateMediaInformation
+        run: yarn generateMediaInformation
       - name: generateContent
         run: yarn generateContent
       - name: build

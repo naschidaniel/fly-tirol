@@ -24,6 +24,8 @@ jobs:
         run: mkdir .nuxt && echo "{}" > .nuxt/tsconfig.json
       - name: create-public
         run: yarn create-public
+      - name: generateMediaInformation
+        run: yarn generateMediaInformation
       - name: generateContent
         run: yarn generateContent
       - name: build
