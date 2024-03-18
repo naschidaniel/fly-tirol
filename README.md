@@ -1,4 +1,4 @@
-# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build bikeandfly.at](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml)
+# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build bikeandfly.at](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml) [![Build hydrogen-advisers.eu](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_hydrogen.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_hydrogen.yml)
 
 The source code of this project shares components for two websites.
 

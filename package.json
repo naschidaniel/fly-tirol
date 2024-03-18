@@ -23,10 +23,10 @@
     "optimize-images:hydrogen": "yarn create-public:hydrogen && ./image-optimizer --source public_hydrogen/media --destination .public_hydrogen/media --widths 384 512 640 768 1024 1280 1536 --qualities 95 90 80 75 75 75 75",
     "optimize-images": "yarn optimize-images:flytirol && yarn optimize-images:bikeandfly && yarn optimize-images:hydrogen",
     "create-public": "yarn generateMediaInformation && yarn create-public:flytirol && yarn create-public:bikeandfly && yarn create-public:hydrogen",
-    "buildDev": "yarn create-public && yarn optimize-images && yarn generateContent",
-    "buildDev:bikeandfly": "yarn create-public:bikeandfly && yarn optimize-images:bikeandfly && yarn generateContent",
-    "buildDev:flytirol": "yarn create-public:flytirol && yarn optimize-images:flytirol && yarn generateContent",
-    "buildDev:hydrogen": "yarn create-public:hydrogen && yarn optimize-images:hydrogen && yarn generateContent",
+    "buildDev": "yarn create-public && yarn optimize-images && yarn generateContent && yarn generateMediaInformation",
+    "buildDev:bikeandfly": "yarn create-public:bikeandfly && yarn optimize-images:bikeandfly && yarn generateContent && yarn generateMediaInformation",
+    "buildDev:flytirol": "yarn create-public:flytirol && yarn optimize-images:flytirol && yarn generateContent && yarn generateMediaInformation",
+    "buildDev:hydrogen": "yarn create-public:hydrogen && yarn optimize-images:hydrogen && yarn generateContent && yarn generateMediaInformation",
     "openapi": "openapi --input https://fly-tirol.com/shop/swagger.json --output ./types/shop --client fetch --exportModels true --exportCore false --exportSchemas false --exportServices false"
   },
   "dependencies": {
