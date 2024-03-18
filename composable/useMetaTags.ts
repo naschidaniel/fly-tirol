@@ -1,6 +1,6 @@
 import { onMounted } from 'vue'
-import { usePage } from './usePage'
 import { useRuntimeConfig, useHead } from '#app'
+import { usePage } from './usePage'
 
 export function useMetaTags() {
   const { page } = usePage()
