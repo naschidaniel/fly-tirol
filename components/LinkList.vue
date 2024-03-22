@@ -165,7 +165,7 @@ const bikeAndFlyData = [
     cardTitle: 'Kontakt',
     cardImage: '/media/kontakt.jpg',
     description:
-      'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut',
+      'Hast du Fragen zum Festival? Du möchtest uns Feedback geben oder möchtest du einfach nur Hallo sagen? Melde dich bei uns und wir werden uns um dein Anliegen kümmern!',
     to: '/kontakt',
   },
 ]
