@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Gleitschirm Testival"
-      picture="/media/gleitschirm-testival/gleitschirm-testival.jpg"
+      picture="/media/page-header.jpg"
     >
       <p>
         Erlebe das ultimative Gleitschirm-Testival im Rahmen des Bike and Fly

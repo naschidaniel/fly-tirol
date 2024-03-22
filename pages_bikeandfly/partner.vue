@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Partner"
-      picture="/media/partner/partner.jpg"
+      picture="/media/page-header.jpg"
     >
       <p>Eine tolles Festival braucht starke Partner!</p>
       <p>

@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Programm"
-      picture="/media/partner/partner.jpg"
+      picture="/media/page-header.jpg"
     >
       <p>
         Vom <strong>09.08. – 11.08.2024</strong> erwartet euch erstmalig ein

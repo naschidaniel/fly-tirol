@@ -19,10 +19,10 @@
     "file": "BikeAndFlyHeader.jpg",
     "stem": "BikeAndFlyHeader",
     "dimensions": {
-      "height": 1416,
+      "height": 1460,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1.412
+      "ratio": 1.37
     },
     "alt": "",
     "title": ""
@@ -62,11 +62,10 @@
     "file": "bike-testival.jpg",
     "stem": "bike-testival",
     "dimensions": {
-      "height": 1080,
-      "orientation": 1,
-      "width": 1920,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -259,11 +258,24 @@
     "file": "kontakt.jpg",
     "stem": "kontakt",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/page-header.jpg": {
+    "url": "/media/page-header.jpg",
+    "path": "/media/",
+    "file": "page-header.jpg",
+    "stem": "page-header",
+    "dimensions": {
+      "height": 1140,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.754
     },
     "alt": "",
     "title": ""
@@ -334,11 +346,10 @@
     "file": "partner.jpg",
     "stem": "partner",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -545,10 +556,10 @@
     "file": "shop.jpg",
     "stem": "shop",
     "dimensions": {
-      "height": 2000,
+      "height": 1140,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.754
     },
     "alt": "",
     "title": ""

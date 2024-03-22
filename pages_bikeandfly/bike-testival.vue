@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Bike Testival"
-      picture="/media/bike-testival/bike-testival.jpg"
+      picture="/media/page-header.jpg"
     >
       <p>
         Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Festivals

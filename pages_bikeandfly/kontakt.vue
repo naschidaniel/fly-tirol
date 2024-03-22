@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Infohotline"
       headline="Kontakt"
-      picture="/media/kontakt.jpg"
+      picture="/media/page-header.jpg"
       :link1="telefonNumber"
       :link2="mailAddress"
       :address="address"
