@@ -7,9 +7,9 @@ description: Fly Tirol Flugschule - Impressum
 Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz.
 
 ## Anschrift
-<strong>Bike&Fly. Festival Westendorf</strong>
+<strong>BIKE & FLY SPORT & MUSIK</strong>
 
-Bergliftstr. 22, 
+Straßhäusl 85, 
 
 6363 Westendorf,
 
@@ -17,33 +17,29 @@ Bergliftstr. 22,
 
 ## Kontakt
 
-Telefon Büro: <a href="tel:+436763931494"> +43 676 3931494</a>
+Telefon: <a href="tel:+436763931494">+43 676 3931494</a>
 
-E-Mail Büro: <a href="mailto:info@bikeandfly.at">info@bikeandfly.at</a>
+E-Mail: <a href="mailto:info@bikeandfly.at">info@bikeandfly.at</a>
 
-## Daten
+## Vereinsdaten
 
-Unternehmensgegenstand: Paragleiter - Flugschule und Tandemflüge
+Vereinsname: BIKE & FLY SPORT & MUSIK
 
-UID-Nummer: ATU77067656
+ZVR-Zahl: 1785611085
 
-Firmenbuchnummer: 559621y
+Sitz: Westendorf (Westendorf)
 
-Firmenbuchgericht:  Landgericht Innsbruck
+Zustellanschrift: 6363 Westendorf, Straßhäusl 85
 
-Firmensitz: 6363 Westendorf
+Zuständigkeit: Bezirkshauptmannschaft Kitzbühel
 
-Berufsrecht: Gewerbeordnung: www.ris.bka.gv.at
+### Organschaftliche Vertreter
 
-Aufsichtsbehörde/Gewerbebehörde: AERO-Club Wien GmbH
+GründerIn: Kahn Sebastian
 
-Berufsbezeichnung: Flugschule 
+GründerIn: Brunner Gerhard Sebastian
 
-Verleihungsstaat: Österreich
 
-Geschäftsführer: Sebastian Kahn
- 
- 
 ## EU-Streitschlichtung
 
 ### Angaben zur Online-Streitbeilegung
@@ -66,6 +62,6 @@ Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urhe
 ## Bildernachweis
 
 Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich geschützt.
-Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen: Samuel Kahn, Feel Free Sport GmbH
+Die Bilderrechte liegen bei den folgenden Fotografen und Unternehmen: Samuel Kahn, Feel Free Sport GmbH, BIKE & FLY SPORT & MUSIK, Gerhard Brunner
  
 
