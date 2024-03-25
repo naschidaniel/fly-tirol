@@ -6,6 +6,9 @@
     <div v-if="page.slug == 'bike-and-fly-touren'">
       <BikeAndFlyTouren />
     </div>
+    <div v-if="page.slug == 'bike-parkour-rennen'">
+      <BikeParkourRennen />
+    </div>
     <div v-if="page.slug == 'e-bike-touren'">
       <EBikeTouren />
     </div>
@@ -31,6 +34,7 @@ import SocialBar from '@/components/SocialBar.vue'
 import ProductBookProduct from '@/components/ProductBookProduct.vue'
 import Afterparty from '@/content_bikeandfly/shop/afterparty.vue'
 import BikeAndFlyTouren from '@/content_bikeandfly/shop/bike-and-fly-touren.vue'
+import BikeParkourRennen from '@/content_bikeandfly/shop/bike-parkour-rennen.vue'
 import EBikeTouren from '@/content_bikeandfly/shop/e-bike-touren.vue'
 import EBikeVerleih from '@/content_bikeandfly/shop/e-bike-verleih.vue'
 import Tandemfluege from '@/content_bikeandfly/shop/tandemfluege.vue'
