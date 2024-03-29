@@ -252,6 +252,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/kontakt.jpg": {
+    "url": "/media/kontakt.jpg",
+    "path": "/media/",
+    "file": "kontakt.jpg",
+    "stem": "kontakt",
+    "dimensions": {
+      "height": 2000,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/page-header.jpg": {
     "url": "/media/page-header.jpg",
     "path": "/media/",
@@ -287,9 +301,8 @@
     "file": "SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg",
     "stem": "SkiWelt-Logo-Westendorf-Claim-schwarz-4c",
     "dimensions": {
-      "height": 500,
-      "orientation": 1,
-      "width": 1000,
+      "height": 1000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 2
     },
