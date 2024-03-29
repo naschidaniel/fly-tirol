@@ -13,7 +13,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 
 ## Leistung
 
--	BLorem ipsum dolor sit
--	Lorem ipsum dolor sit
+
+- Teilnahme am Bike-Parkour-Rennen
+- Siegerehrung mit tollen Sachpreisen
 
 <ContentImageGallery path="/media/shop/gallerie/"/>
