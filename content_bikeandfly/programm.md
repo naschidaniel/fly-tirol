@@ -51,7 +51,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühshoppen. Die **Al
       <li>Hüpfburg</li>
       <li>Fahrrad Parkour</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
-      <li>Bike&Fly Touren Spezialpreis: 150€</li>
+      <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
       <li>Redbull Hike&Fly Wettbewerb: 10:00 Uhr</li>
       <li>Demo Paragleiter Show: 12:00/14:00/16:00 Uhr</li>
@@ -74,7 +74,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühshoppen. Die **Al
       <li>Hüpfburg</li>
       <li>Fahrrad Parkour</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
-      <li>Bike&Fly Touren Spezialpreis: 150€</li>
+      <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
       <li>Kunstflug Paragleiter Show: 14:00 Uhr</li>
       <li>Alpenrosen Buam: 11:00 Uhr</li>
