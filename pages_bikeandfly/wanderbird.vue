@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Wanderbird"
-      picture="/media/wanderbird/wanderbird.jpg"
+      picture="/media/page-header.jpg"
     >
       <p>
         Der Hike an Fly Wettbewerb für jedermann! Präsentiert wird dieser
