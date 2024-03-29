@@ -33,18 +33,10 @@
               </li>
             </ol>
             <ol v-if="isBikeAndFly" class="list-decimal">
-              <li>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut
-              </li>
-              <li>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut
-              </li>
+              <li>Wähle das für dich passende Ticket aus.</li>
+              <li>Klicke auf die entsprechende Schaltfläche.</li>
+              <li>Bezahle bequem per Überweisung oder Paypal.</li>
+              <li>Drucke dein Ticket mit QR-Code anschließend aus.</li>
             </ol>
           </div>
         </Alert>
