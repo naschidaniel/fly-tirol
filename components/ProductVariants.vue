@@ -16,7 +16,7 @@
       :dates="product?.total_dates"
       :is-show-date="false"
     />
-    <div class="mt-4 flex flex-wrap">
+    <div v-if="product.variants?.length > 0" class="mt-4 flex flex-wrap">
       <div class="w-full p-2">
         <Alert class="mb-4 bg-white">
           <div class="my-2">
