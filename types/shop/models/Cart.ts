@@ -1,11 +1,11 @@
-/* generated using openapi-typescript-codegen -- do no edit */
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
 import type { CartItem } from './CartItem';
 export type Cart = {
     readonly id?: string;
-    cart_items: Array<CartItem>;
+    get_cart_items: Array<CartItem>;
     get_total_price: number;
     get_total_tax: number;
     order_url: string;
@@ -13,10 +13,11 @@ export type Cart = {
     valid_until: string;
     is_valid: boolean;
     is_order_paid: boolean;
+    is_order_created: boolean;
     is_expired: boolean;
+    get_invoice_cart_items: Record<string, string | null>;
     get_tax_dict: Record<string, string | null>;
     readonly order?: string;
     readonly date_added?: string;
-    transaction_id?: string | null;
 };
 

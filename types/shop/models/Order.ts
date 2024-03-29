@@ -1,4 +1,4 @@
-/* generated using openapi-typescript-codegen -- do no edit */
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
@@ -8,7 +8,7 @@ export type Order = {
     readonly id?: string;
     cart?: Cart;
     checkout?: OrderCheckout;
-    paid: boolean;
+    get_status: string;
     order_status_url: string;
     address: string;
     city: string;
@@ -22,7 +22,8 @@ export type Order = {
     readonly invoice_pdf?: string;
     invoice_number?: string;
     invoice_date?: string | null;
-    tax?: number;
+    invoice_products_json?: any;
+    tax_dict_json?: any;
     total?: number;
     zipcode: string;
     customer?: number | null;
@@ -30,7 +31,6 @@ export type Order = {
 export namespace Order {
     export enum payment {
         BANK_TRANSFER = 'BANK TRANSFER',
-        CREDIT_CARD = 'CREDIT CARD',
         ON_SITE = 'ON SITE',
         PAYPAL = 'PAYPAL',
     }

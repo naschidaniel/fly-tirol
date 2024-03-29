@@ -1,15 +1,14 @@
-/* generated using openapi-typescript-codegen -- do no edit */
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
 export type OrderCheckout = {
-    readonly checkout_reference?: string;
+    readonly id?: string;
+    reference_id: string;
     comment?: string;
-    checkout_id?: string;
-    total?: number;
     status?: OrderCheckout.status;
+    payment?: OrderCheckout.payment;
     readonly date_added?: string;
-    sumup_return_value?: any;
     paypal_order_id?: string;
 };
 export namespace OrderCheckout {
@@ -17,8 +16,14 @@ export namespace OrderCheckout {
         CREATED = 'CREATED',
         PENDING = 'PENDING',
         FAILED = 'FAILED',
+        NOT_COMPLETED = 'NOT COMPLETED',
         PAID = 'PAID',
         EXPIRED = 'EXPIRED',
+    }
+    export enum payment {
+        BANK_TRANSFER = 'BANK TRANSFER',
+        ON_SITE = 'ON SITE',
+        PAYPAL = 'PAYPAL',
     }
 }
 

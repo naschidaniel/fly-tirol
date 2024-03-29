@@ -3,9 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { Alert } from './Alert';
-import type { CartItem } from './CartItem';
-export type ResponseCartItem = {
+import type { StatsOpen } from './StatsOpen';
+export type ResponseOpen = {
     alert: Alert;
-    data: CartItem;
+    data: StatsOpen;
 };
 

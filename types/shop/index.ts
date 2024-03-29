@@ -1,4 +1,4 @@
-/* generated using openapi-typescript-codegen -- do no edit */
+/* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
@@ -23,17 +23,24 @@ export type { ResponseCategories } from './models/ResponseCategories';
 export type { ResponseCategory } from './models/ResponseCategory';
 export type { ResponseCheckout } from './models/ResponseCheckout';
 export type { ResponseCheckouts } from './models/ResponseCheckouts';
+export type { ResponseDataCheckouts } from './models/ResponseDataCheckouts';
 export type { ResponseLoginView } from './models/ResponseLoginView';
+export type { ResponseOpen } from './models/ResponseOpen';
 export type { ResponseOrder } from './models/ResponseOrder';
 export type { ResponseOrders } from './models/ResponseOrders';
+export type { ResponsePaymentMethods } from './models/ResponsePaymentMethods';
 export type { ResponsePayPalCaptureCheckout } from './models/ResponsePayPalCaptureCheckout';
 export type { ResponsePayPalCheckout } from './models/ResponsePayPalCheckout';
 export type { ResponseProduct } from './models/ResponseProduct';
 export type { ResponseProductOptionVariant } from './models/ResponseProductOptionVariant';
 export type { ResponseProducts } from './models/ResponseProducts';
 export type { ResponseProductVariant } from './models/ResponseProductVariant';
+export type { ResponseSettings } from './models/ResponseSettings';
 export type { ResponseStats } from './models/ResponseStats';
-export type { ResponseSumUpAPIAppData } from './models/ResponseSumUpAPIAppData';
+export type { ResponseStatsCarts } from './models/ResponseStatsCarts';
+export type { ShopSettings } from './models/ShopSettings';
+export type { StatsCarts } from './models/StatsCarts';
+export type { StatsOpen } from './models/StatsOpen';
+export type { StatsPaymentMethods } from './models/StatsPaymentMethods';
 export type { StatsSales } from './models/StatsSales';
-export { SumUpAPIAppData } from './models/SumUpAPIAppData';
 export { User } from './models/User';
