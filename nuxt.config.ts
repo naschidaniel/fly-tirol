@@ -168,7 +168,7 @@ export default defineNuxtConfig({
         ? '+436767007594'
         : isFlyTirol
           ? '+436763931494'
-          : '+43 664 3585449',
+          : '+436643585449',
       phoneString: isHydrogen
         ? '+43 676 7007594'
         : isFlyTirol
