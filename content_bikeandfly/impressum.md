@@ -17,7 +17,7 @@ Straßhäusl 85,
 
 ## Kontakt
 
-Telefon: <a href="tel:+436763931494">+43 676 3931494</a>
+Telefon: <a href="tel:+436643585449">+43 664 3585449</a>
 
 E-Mail: <a href="mailto:info@bikeandfly.at">info@bikeandfly.at</a>
 

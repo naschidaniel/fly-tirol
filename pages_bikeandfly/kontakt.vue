@@ -67,8 +67,8 @@ const address = {
   name: 'Route',
 }
 const telefonNumber = {
-  href: 'tel:00436763931494',
-  name: '+43 676 3931494',
+  href: 'tel:00436643585449',
+  name: '06643585449',
 }
 const mailAddress = {
   href: 'mailto:info@bikeandfly.at',

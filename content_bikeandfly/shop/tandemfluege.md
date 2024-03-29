@@ -6,7 +6,7 @@ bikeandfly: fly
 image: /media/shop/tandemfluege.jpg
 order: 7
 included: inklusive Fotos & Videos
-excluded: Liftkarte
+excluded: exlusive Liftkarte
 flightDuration: 10 Minuten
 ---
 
