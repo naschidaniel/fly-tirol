@@ -30,7 +30,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühshoppen. Die **Al
       <li>Hüpfburg</li>
       <li>Fahrrad Parkour</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
-      <li>Bike&Fly Touren Spezialpreis: 150€</li>
+      <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
       <li>Demo Paragleiter Show: 17:00 Uhr</li>
       <li>Vortrag von Paul Guschelbauer, Redbull Athlet – X Alps: 17:30 Uhr</li>
