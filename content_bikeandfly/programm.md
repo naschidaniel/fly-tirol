@@ -32,7 +32,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühshoppen. Die **Al
       <li>Tandemflüge Spezialpreis: 100€ inklusive Fotos & Lift</li>
       <li>Bike&Fly Touren Spezialpreis: 150€</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
-      <li>Kunstflug Paragleiter Show: 17:00 Uhr</li>
+      <li>Demo Paragleiter Show: 17:00 Uhr</li>
       <li>Vortrag von Paul Guschelbauer, Redbull Athlet – X Alps: 17:30 Uhr</li>
       <li>Bike&Parkour Rennen für Kinder und Erwachsene: 17:30 Uhr</li>
       <li>Preisverteilung: 19:30 Uhr</li>
@@ -54,7 +54,8 @@ Sonntags startet der **Family Day** mit einem entspannten Frühshoppen. Die **Al
       <li>Bike&Fly Touren Spezialpreis: 150€</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
       <li>Redbull Hike&Fly Wettbewerb: 10:00 Uhr</li>
-      <li>Kunstflug Paragleiter Show: 12:00/14:00/16:00 Uhr</li>
+      <li>Demo Paragleiter Show: 12:00/14:00/16:00 Uhr</li>
+      <li>Demo MTB - Freestyle Show - Fabian Dankl 12:30/1430 Uhr</li>
       <li>MTB – Freestyle Show – Stephan Eberharter: 15:00/19:00 Uhr</li>
       <li>Yellow Brick – Band: 17:00 Uhr</li>
       <li>REBEL MUSIG: 20:00 Uhr</li>
