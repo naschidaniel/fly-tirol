@@ -3,7 +3,7 @@
     id="book-product"
     class="mt-4 w-full border-2 rounded-lg bg-gray-100 px-4 pb-2"
   >
-    <h3>Details zum Angebot</h3>
+    <h3>Details zum Angebot: {{ metadata?.title }}</h3>
     <ProductDetails
       :location="metadata?.location"
       :duration="metadata?.duration"
