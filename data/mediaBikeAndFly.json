@@ -642,8 +642,8 @@
     "file": "fff.jpg",
     "stem": "fff",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -656,8 +656,8 @@
     "file": "xxx.jpg",
     "stem": "xxx",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1
     },
@@ -670,10 +670,10 @@
     "file": "yyy.jpg",
     "stem": "yyy",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -684,25 +684,10 @@
     "file": "zzz.jpg",
     "stem": "zzz",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 2000,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.5
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/wanderbird/wanderbird.jpg": {
-    "url": "/media/wanderbird/wanderbird.jpg",
-    "path": "/media/wanderbird/",
-    "file": "wanderbird.jpg",
-    "stem": "wanderbird",
-    "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
-      "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1
     },
     "alt": "",
     "title": ""
