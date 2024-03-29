@@ -2,7 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 
-import type { ProductVariant } from './ProductVariant';
+import type { ProductVariant } from '@/types/shop/models/ProductVariant';
 
 export type CalenderEntry = {
   productId: string,

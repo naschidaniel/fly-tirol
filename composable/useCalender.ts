@@ -2,9 +2,9 @@ import { ref } from 'vue'
 import type { ComputedRef, Ref } from 'vue'
 import { useData } from './useData'
 import type { CalenderEntry, CalenderMonth } from '@/types/Calender'
-import type { Product } from '@/types/Product'
-import type { ProductVariant } from '@/types/ProductVariant'
-import type { ProductVariantOption } from '@/types/ProductVariantOption'
+import type { Product } from '@/types/shop/models/Product'
+import type { ProductVariant } from '@/types/shop/models/ProductVariant'
+import type { ProductVariantOption } from '@/types/shop/models/ProductVariantOption'
 
 const calender: Ref<CalenderEntry[]> = ref([])
 const calenderCategoriesChecked: Ref<string[]> = ref([])

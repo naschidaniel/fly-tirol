@@ -22,7 +22,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="item in cart?.cart_items" :key="item.id">
+          <tr v-for="item in cart?.get_cart_items" :key="item.id">
             <td class="p-1 sm:p-2 md:p-3 text-left border">
               <p class="text-sm md:text-base font-bold">{{ item.product }}</p>
               <p class="text-sm md:text-md">

@@ -19,10 +19,10 @@
     "file": "BikeAndFlyHeader.jpg",
     "stem": "BikeAndFlyHeader",
     "dimensions": {
-      "height": 1460,
+      "height": 1140,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1.37
+      "ratio": 1.754
     },
     "alt": "",
     "title": ""
@@ -713,11 +713,10 @@
     "file": "wanderlokal.jpg",
     "stem": "wanderlokal",
     "dimensions": {
-      "height": 1074,
-      "orientation": 1,
-      "width": 1885,
+      "height": 720,
+      "width": 1080,
       "type": "jpg",
-      "ratio": 1.755
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""

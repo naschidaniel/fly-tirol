@@ -64,7 +64,7 @@ import type { ComputedRef, Ref } from 'vue'
 import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
 import { useBackend } from '@/composable/useBackend'
-import type { Product } from '@/types/Product'
+import type { Product } from '@/types/shop/models/Product'
 import ProductDetails from '@/components/ProductDetails.vue'
 
 const { updateCart, getProduct } = useBackend()

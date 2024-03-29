@@ -1,8 +1,8 @@
 import { ref } from 'vue'
 import type { Ref } from 'vue'
 import { useData } from './useData'
-import type { Product } from '@/types/Product'
-import type { Cart } from '@/types/Cart'
+import type { Product } from '@/types/shop/models/Product'
+import type { Cart } from '@/types/shop/models/Cart'
 import type { Alert } from '@/types/shop/models/Alert'
 
 export const products: Ref<Product[]> = ref([] as Product[])
@@ -14,11 +14,11 @@ const isShowAlert: Ref<Boolean> = ref(false)
 export function useBackend() {
   const { backend, isHydrogen } = useData()
 
-  const cartItemsLength = computed(() => cart.value?.cart_items?.length || 0)
+  const cartItemsLength = computed(() => cart.value?.get_cart_items?.length || 0)
   const isCartItems = computed(
     () =>
-      cart.value?.cart_items?.length !== undefined &&
-      cart.value?.cart_items?.length >= 1,
+      cart.value?.get_cart_items?.length !== undefined &&
+      cart.value?.get_cart_items?.length >= 1,
   )
   async function initShopBackend() {
     if (!process.client || isHydrogen) return
