@@ -14,7 +14,9 @@ const isShowAlert: Ref<Boolean> = ref(false)
 export function useBackend() {
   const { backend, isHydrogen } = useData()
 
-  const cartItemsLength = computed(() => cart.value?.get_cart_items?.length || 0)
+  const cartItemsLength = computed(
+    () => cart.value?.get_cart_items?.length || 0,
+  )
   const isCartItems = computed(
     () =>
       cart.value?.get_cart_items?.length !== undefined &&
