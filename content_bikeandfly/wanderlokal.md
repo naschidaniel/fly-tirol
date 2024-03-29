@@ -3,4 +3,4 @@ title: Wanderlokal
 description: In jeder Küche zuhause und die Küche für unser Festival.
 ---
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Wo unser Foodtruck haltmacht, verströmt er den Duft der großen, weiten Welt der Kulinarik. Von exotischen Spezialitäten bis hin zu vertrauten Klassikern genießen Sie frische Köstlichkeiten und originelle Rezepte, die wir vor Ort im Truck zubereiten. Tauchen Sie ein in die lebendige Atmosphäre "in the streets", entdecken Sie verschiedenste Länder durch ihre Esskultur und erleben Sie unvergesslichen Genuss – überall und jederzeit.
