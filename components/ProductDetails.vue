@@ -1,6 +1,12 @@
 <template>
   <div class="mt-3">
     <div class="flex items-center text-sm -ml-1 mb-2">
+      <IconOutlineInformationCircle v-if="title" class="w-4 h-4" />
+      <span class="block leading-none pt-1 ml-1">
+        {{ title }}
+      </span>
+    </div>
+    <div class="flex items-center text-sm -ml-1 mb-2">
       <IconOutlineLocationMarker v-if="location" class="w-4 h-4" />
       <span class="block leading-none pt-1 ml-1">
         {{ location }}
@@ -82,6 +88,7 @@ import IconOutlineCake from './icon/IconOutlineCake.vue'
 import IconOutlineCash from './icon/IconOutlineCash.vue'
 import IconOutlineCalendar from './icon/IconOutlineCalendar.vue'
 import IconOutlineLocationMarker from './icon/IconOutlineLocationMarker.vue'
+import IconOutlineInformationCircle from './icon/IconOutlineInformationCircle.vue'
 import IconOutlineMinusCircle from './icon/IconOutlineMinusCircle.vue'
 import IconOutlinePaperPlane from './icon/IconOutlinePaperPlane.vue'
 import IconOutlineBattery100 from './icon/IconOutlineBattery100.vue'
@@ -101,6 +108,7 @@ defineProps({
   praxis: { type: String, default: undefined },
   price: { type: String, default: undefined },
   theorie: { type: String, default: undefined },
+  title: { type: String, default: undefined },
   isShowAgb: { type: Boolean, default: true },
 })
 </script>
