@@ -9,6 +9,7 @@
       :location="metadata?.location"
       :duration="metadata?.duration"
       :excluded="metadata?.excluded"
+      :included="metadata?.included"
       :praxis="metadata?.praxis"
       :flight-duration="metadata?.flightDuration"
       :theorie="metadata?.theorie"

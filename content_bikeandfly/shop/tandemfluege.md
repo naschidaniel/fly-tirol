@@ -5,6 +5,9 @@ location: Westendorf
 bikeandfly: fly
 image: /media/shop/tandemfluege.jpg
 order: 7
+included: inklusive Fotos & Lift
+excluded: exlusive Lorem Ipsum
+flightDuration: 10 Minuten
 ---
 
 # Tandemflüge

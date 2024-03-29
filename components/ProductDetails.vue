@@ -65,6 +65,12 @@
         <span v-else>–</span>
       </span>
     </div>
+    <div v-if="included" class="flex items-center text-sm -ml-1 mb-2">
+      <IconOutlinePlusCircle class="w-4 h-4 mr-1" />
+      <span class="block leading-none pt-1 ml-1">
+        {{ included }}
+      </span>
+    </div>
     <div v-if="excluded" class="flex items-center text-sm -ml-1 mb-2">
       <IconOutlineMinusCircle class="w-4 h-4 mr-1" />
       <span class="block leading-none pt-1 ml-1">
@@ -90,6 +96,7 @@ import IconOutlineCalendar from './icon/IconOutlineCalendar.vue'
 import IconOutlineLocationMarker from './icon/IconOutlineLocationMarker.vue'
 import IconOutlineInformationCircle from './icon/IconOutlineInformationCircle.vue'
 import IconOutlineMinusCircle from './icon/IconOutlineMinusCircle.vue'
+import IconOutlinePlusCircle from './icon/IconOutlinePlusCircle.vue'
 import IconOutlinePaperPlane from './icon/IconOutlinePaperPlane.vue'
 import IconOutlineBattery100 from './icon/IconOutlineBattery100.vue'
 import IconSpinner from './icon/IconSpinner.vue'
@@ -101,6 +108,7 @@ defineProps({
   bikeandfly: { type: String, default: undefined },
   dates: { type: Number, default: undefined },
   duration: { type: String, default: undefined },
+  included: { type: String, default: undefined },
   excluded: { type: String, default: undefined },
   flightDuration: { type: String, default: undefined },
   isShowDate: { type: Boolean, default: true },

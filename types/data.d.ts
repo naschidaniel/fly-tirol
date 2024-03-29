@@ -39,6 +39,7 @@ export interface MetaData {
   flightDuration?: string
   image?: string
   imageGallery?: string
+  included?: string
   isAppointment?: string
   location?: string
   order?: number
