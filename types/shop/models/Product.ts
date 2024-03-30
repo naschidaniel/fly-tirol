@@ -11,6 +11,7 @@ export type Product = {
     href: string;
     total_dates: number;
     digital?: boolean;
+    is_voucher?: boolean;
     orderable: boolean;
     price?: number;
     tax?: number;

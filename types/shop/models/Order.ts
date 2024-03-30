@@ -18,7 +18,6 @@ export type Order = {
     state: string;
     email?: string;
     phone?: string;
-    payment?: Order.payment;
     readonly invoice_pdf?: string;
     invoice_number?: string;
     invoice_date?: string | null;
@@ -28,11 +27,4 @@ export type Order = {
     zipcode: string;
     customer?: number | null;
 };
-export namespace Order {
-    export enum payment {
-        BANK_TRANSFER = 'BANK TRANSFER',
-        ON_SITE = 'ON SITE',
-        PAYPAL = 'PAYPAL',
-    }
-}
 
