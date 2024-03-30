@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Wanderlokal"
-      picture="/media/wanderlokal.jpg"
+      picture="/media/page-header.jpg"
     >
       <p>Wir sind KochArt.</p>
     </PageHeader>
