@@ -19,7 +19,7 @@ Das Weekend-Ticket bietet Ihnen umfassenden Zugang und exklusive Vorteile:
 - **Spezialzugang**: Erhalten Sie Eintritt zu den Highlight-Events, dem Gleitschirm- und Biketestival.
 - **Livekonzerte**: Freier Zugang zu allen musikalischen Darbietungen.
 - **Exklusive Angebote**: Nutzen Sie Sonderpreise für Bike-Touren, Tandemflüge und E-Bike-Verleih.
--
-- <p>Erleben Sie das volle Festivalprogramm mit dem Weekend-Ticket und genießen Sie ein Wochenende voller Action, Musik und Spaß!</p>
+
+<p>Erleben Sie das volle Festivalprogramm mit dem Weekend-Ticket und genießen Sie ein Wochenende voller Action, Musik und Spaß!</p>
 
 <ContentImageGallery path="/media/shop/gallerie/"/>
