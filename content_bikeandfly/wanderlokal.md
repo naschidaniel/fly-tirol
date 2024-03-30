@@ -9,4 +9,4 @@ description: In jeder Küche zuhause und die Küche für unser Festival.
 
 Peter Laiminger & Sophie Aschaber
 
-<ContentImageGallery path="/media/wanderlokal/gallerie"/>
+<ContentImageGallery path="/media/wanderlokal/gallerie/"/>
