@@ -15,11 +15,11 @@ Sichere dir jetzt den Eintritt auf das Festival Gelände für alle drei Tage und
 
 Das Weekend-Ticket bietet Ihnen umfassenden Zugang und exklusive Vorteile:
 
-1. *Unbegrenzter Festivalzugang*: Genießen Sie das komplette Festivalwochenende mit allen Attraktionen.
-2. *Spezialzugang*: Erhalten Sie Eintritt zu den Highlight-Events, dem Gleitschirm- und Biketestival.
-3. *Livekonzerte*: Freier Zugang zu allen musikalischen Darbietungen.
-4. *Exklusive Angebote*: Nutzen Sie Sonderpreise für Bike-Touren, Tandemflüge und E-Bike-Verleih.
-
-Erleben Sie das volle Festivalprogramm mit dem Weekend-Ticket und genießen Sie ein Wochenende voller Action, Musik und Spaß!
+- **Unbegrenzter Festivalzugang**: Genießen Sie das komplette Festivalwochenende mit allen Attraktionen.
+- **Spezialzugang**: Erhalten Sie Eintritt zu den Highlight-Events, dem Gleitschirm- und Biketestival.
+- **Livekonzerte**: Freier Zugang zu allen musikalischen Darbietungen.
+- **Exklusive Angebote**: Nutzen Sie Sonderpreise für Bike-Touren, Tandemflüge und E-Bike-Verleih.
+-
+- <p>Erleben Sie das volle Festivalprogramm mit dem Weekend-Ticket und genießen Sie ein Wochenende voller Action, Musik und Spaß!</p>
 
 <ContentImageGallery path="/media/shop/gallerie/"/>
