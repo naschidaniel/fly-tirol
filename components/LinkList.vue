@@ -10,7 +10,7 @@
               <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
               <span class="inline-block"
                 ><span v-if="isBikeAndFly">Bike&Fly.</span
-                ><span v-if="isHydrogen">Interested In Learning</span
+                ><span v-else-if="isHydrogen">Interested In Learning</span
                 ><span v-else>Finde das richtige</span></span
               >
             </span>
