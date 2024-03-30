@@ -9,4 +9,6 @@ description: In jeder Küche zuhause und die Küche für unser Festival.
 
 Peter Laiminger & Sophie Aschaber
 
+<a href="https://www.wanderlokal.com/" class="btn-primary" target="_blank">WANDERLOKAL - Wir sind KochArt</a>
+
 <ContentImageGallery path="/media/wanderlokal/gallerie/"/>
