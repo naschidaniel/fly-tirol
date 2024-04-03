@@ -30,6 +30,8 @@ Bei Rücktritt durch die/den Teilnehmer:in entstehen folgende Stornogebühren f�
 - Bis 1-7 Tage vor Veranstaltungsbeginn 100 %
 - Bei Nichtantritt 100%
 
+Der Versicherungsschutz für die Stornogebühren liegt ausdrücklich in der Verantwortung der/des Teilnehmer:in.
+
 Rücktritt durch den Veranstalter:
 
 Im Falle einer nicht ausreichenden Teilnehmerzahl behalten wir uns vor, eine Veranstaltung spätestens 7 Tage vor Kursbeginn abzusagen. Für bereits geleistete Zahlungen kann eine Gutschrift erstellt werden oder es findet eine Rücküberweisung statt. 
