@@ -28,7 +28,12 @@ Bei Rücktritt durch die/den Teilnehmer:in entstehen folgende Stornogebühren f�
 - Bis 30 Tage vor Veranstaltungsbeginn: 30%
 - Bis 8-29 Tage vor Veranstaltungsbeginn: 85 %
 - Bis 1-7 Tage vor Veranstaltungsbeginn 100 %
-- Bei Nichtantritt 100% 
+- Bei Nichtantritt 100%
+
+Rücktritt durch den Veranstalter:
+
+Im Falle einer nicht ausreichenden Teilnehmerzahl behalten wir uns vor, eine Veranstaltung spätestens 7 Tage vor Kursbeginn abzusagen. Für bereits geleistete Zahlungen kann eine Gutschrift erstellt werden oder es findet eine Rücküberweisung statt. 
+Das Gleiche gilt für den Fall der Nichtdurchführbarkeit des Kurses oder der Veranstaltung wegen höherer Gewalt. Weitere Ansprüche aus der Absage sind in diesen Fällen ausgeschlossen.
 
 Gefährdet der Teilnehmer seine eigene oder die Sicherheit anderer oder wird der Unterricht in grob fahrlässiger/vorsätzlicher Weise gestört, behält sich die Flugschule das Recht vor, den Vertrag fristlos zu kündigen. Die Kursgebühr wird dann nicht zurückerstattet.
 
