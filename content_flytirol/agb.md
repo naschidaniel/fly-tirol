@@ -30,8 +30,8 @@ Bei Rücktritt durch die/den Teilnehmer:in entstehen folgende Stornogebühren f�
 - Bis 1-7 Tage vor Veranstaltungsbeginn 100 %
 - Bei Nichtantritt 100%
 
+Eine Bearbeitungsgebühr in Höhe von 50 Euro fällt bei Umbuchung eines verbindlich gebuchten Kurses an.
 Der Versicherungsschutz für die Stornogebühren liegt ausdrücklich in der Verantwortung der/des Teilnehmer:in.
-Eine Bearbeitungsgebühr in Höhe von 50 Euro fällt bei Umbuchung eines verbindlich gebuchten Kurses an. 
 
 Rücktritt durch den Veranstalter:
 
