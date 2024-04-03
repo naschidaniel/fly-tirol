@@ -19,17 +19,24 @@ Die Flugschule übernimmt keinerlei Haftung für nachteilige Folgen, die durch d
 
 ## 2. Anmeldung, Rücktritt vom Vertrag, Preise, Zahlungsbedingungen
 
-Die Kund*in stimmt durch Absenden einer Online-Buchung, durch die mündliche Terminfixierung vor Ort oder per Telefon, durch schriftliche Buchung per Mail und/oder durch die Vereinbarung der Einlösung eines Gutscheines den Bedingungen der Flugschule zu und schließt einen rechtskräftigen Vertrag über die vereinbarte Leistung. Die Kurs- bzw. Tandemgebühr ist im Voraus fällig.
+Die Kund*in stimmt durch Absenden einer Online-Buchung, durch die mündliche Terminfixierung vor Ort oder per Telefon, durch schriftliche Buchung per Mail und/oder durch die Vereinbarung der Einlösung eines Gutscheines den Bedingungen der Flugschule zu und schließt einen rechtskräftigen Vertrag über die vereinbarte Leistung.
 
 In den Flugpreisen sind die Bergfahrten nicht inbegriffen. Durch mündliche Zusage oder Buchung über die Website verpflichtet sich die Kund*in zugleich zur Zahlung des Flugpreises. Paragliding Tandemflüge sind ohne Abzug zahlbar.
 
-Ein Rücktritt der Teilnehmer*in vom Vertrag ist bis zwei Wochen vor der Veranstaltung kostenlos, bei Rücktritt nach dieser Frist fallen 100% Stornogebühren an. Grund- und Höhenflugkurse müssen vom Teilnehmer innerhalb eines Jahres abgeschlossen werden, danach gelten sie als konsumiert. Gefährdet der Teilnehmer seine eigene oder die Sicherheit anderer oder wird der Unterricht in grob fahrlässiger/vorsätzlicher Weise gestört, behält sich die Flugschule das Recht vor, den Vertrag fristlos zu kündigen. Die Kursgebühr wird dann nicht zurückerstattet.
+Bei Rücktritt durch die/den Teilnehmer:in entstehen folgende Stornogebühren für alle Kurse und Angebote:
+ 
+Bis 30 Tage vor Veranstaltungsbeginn: 30%
+Bis 8-29 Tage vor Veranstaltungsbeginn: 85 %
+Bis 1-7 Tage vor Veranstaltungsbeginn 100 %
+Bei Nichtantritt 100% 
+
+Gefährdet der Teilnehmer seine eigene oder die Sicherheit anderer oder wird der Unterricht in grob fahrlässiger/vorsätzlicher Weise gestört, behält sich die Flugschule das Recht vor, den Vertrag fristlos zu kündigen. Die Kursgebühr wird dann nicht zurückerstattet.
 
 Leistungsumfang und Preise sind den jeweils gültigen Veranstaltungsbeschreibungen zu entnehmen und beziehen sich auf eine Person. Alle Kurs- und Tandemgebühren sind im Voraus fällig.
 
 ## 3. Gutschein
 
-Der Gutschein hat eine nicht verlängerbare, endgültige Gültigkeit von 12 Monaten ab dem Ausstellungsdatum. Sonderregelungen sind nach Absprache im Einzelfall möglich. Die Gutscheine sind am Flugtag bei der Flugschule abzugeben. Jederzeit möglich ist seitens der Flugschule die Übertragung von Leistungen auf andere Leistungsempfänger bei gleichen Voraussetzungen.
+Der Gutschein hat eine nicht verlängerbare, endgültige Gültigkeit von 36 Monaten ab dem Ausstellungsdatum. Sonderregelungen sind nach Absprache im Einzelfall möglich. Die Gutscheine sind am Flugtag bei der Flugschule abzugeben. Jederzeit möglich ist seitens der Flugschule die Übertragung von Leistungen auf andere Leistungsempfänger bei gleichen Voraussetzungen.
 
 ## 4. Gewährleistung und Verfall von Leistungen
 
