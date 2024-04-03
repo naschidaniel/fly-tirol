@@ -8,14 +8,17 @@
       Vogelperspektive.
     </PageHeader>
     <ProductList />
-    <InfoBox headline="Voraussetzungen für einen Tandemflug">
+    <InfoBox headline="Voraussetzungen für deinen Tandemflug">
       <ul>
-        <li>Festes Schuhwerk</li>
-        <li>
-          Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung
+        <li>Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.
+        !! Keine Sneaker !!
         </li>
         <li>
-          Optische Brille oder Sonnenbrille erwünscht, da sie vor dem Fahrtwind
+          Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.
+          !! Nimm im Sommer trotzdem immer eine Jacke mit !!.
+        </li>
+        <li>
+          Optische Brille oder Sonnenbrille sind empfehlenswert, da sie vor dem Fahrtwind
           beim Fliegen schützt.
         </li>
         <li>
@@ -24,7 +27,7 @@
           mit, damit wir gemeinsam eine Lösung finden können.
         </li>
         <li>
-          Informiere uns außerdem im Voraus, wenn du über 100 kg wiegst, damit
+          Informiere uns außerdem im Voraus, wenn du über 120 kg wiegst, damit
           wir uns entsprechend vorbereiten können.
         </li>
       </ul>
