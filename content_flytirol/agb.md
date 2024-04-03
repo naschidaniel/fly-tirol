@@ -25,10 +25,10 @@ In den Flugpreisen sind die Bergfahrten nicht inbegriffen. Durch mündliche Zusa
 
 Bei Rücktritt durch die/den Teilnehmer:in entstehen folgende Stornogebühren für alle Kurse und Angebote:
  
-Bis 30 Tage vor Veranstaltungsbeginn: 30%
-Bis 8-29 Tage vor Veranstaltungsbeginn: 85 %
-Bis 1-7 Tage vor Veranstaltungsbeginn 100 %
-Bei Nichtantritt 100% 
+- Bis 30 Tage vor Veranstaltungsbeginn: 30%
+- Bis 8-29 Tage vor Veranstaltungsbeginn: 85 %
+- Bis 1-7 Tage vor Veranstaltungsbeginn 100 %
+- Bei Nichtantritt 100% 
 
 Gefährdet der Teilnehmer seine eigene oder die Sicherheit anderer oder wird der Unterricht in grob fahrlässiger/vorsätzlicher Weise gestört, behält sich die Flugschule das Recht vor, den Vertrag fristlos zu kündigen. Die Kursgebühr wird dann nicht zurückerstattet.
 
