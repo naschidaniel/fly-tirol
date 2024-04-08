@@ -10,10 +10,14 @@
         dieser Website zu gewährleisten sowie die Nutzung der Website zu
         analysieren. Weiters verwenden wir optionale Cookies, um unsere
         Werbeaktivitäten zu unterstützen.
-        <NuxtLink to="/dsgvo" class="underline" exact>
-          Nähere Informationen finden Sie in unseren
-          Datenschutzbestimmungen.</NuxtLink
+        <NuxtLink
+          to="/dsgvo"
+          class="underline"
+          exact
         >
+          Nähere Informationen finden Sie in unseren
+          Datenschutzbestimmungen.
+        </NuxtLink>
       </p>
       <div class="w-full text-right py-1">
         <button

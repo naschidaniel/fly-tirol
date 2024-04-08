@@ -1,7 +1,12 @@
 <template>
-  <NuxtLink :to="to" exact class="navbar--link" @click="isOpen = !isOpen">
+  <NuxtLink
+    :to="to"
+    exact
+    class="navbar--link"
+    @click="isOpen = !isOpen"
+  >
     {{ name }}
-    <span class="decorator"></span>
+    <span class="decorator" />
   </NuxtLink>
 </template>
 

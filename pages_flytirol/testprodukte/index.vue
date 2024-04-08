@@ -1,6 +1,9 @@
 <template>
   <div>
-    <PageHeader pre-headline="Shop" headline="Testprodukte">
+    <PageHeader
+      pre-headline="Shop"
+      headline="Testprodukte"
+    >
       Hier findest du eine Auflistung an Testprodukten.
     </PageHeader>
     <ProductList />

@@ -2,8 +2,14 @@
   <div class="card py-4">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
       <div class="card--header bg-white mb-7">
-        <NuxtLink target="_blank" :to="website">
-          <ResponsiveImage img-class="object-scale-down" :picture="image" />
+        <NuxtLink
+          target="_blank"
+          :to="website"
+        >
+          <ResponsiveImage
+            img-class="object-scale-down"
+            :picture="image"
+          />
         </NuxtLink>
       </div>
       <div class="card--content px-8 pb-12">
@@ -11,21 +17,31 @@
           <h3 class="text-2xl font-heading font-semibold mb-1">
             {{ title }}
           </h3>
-          <p v-if="subTitle">{{ subTitle }}</p>
-          <p v-else>&nbsp;</p>
+          <p v-if="subTitle">
+            {{ subTitle }}
+          </p>
+          <p v-else>
+&nbsp;
+          </p>
           <div class="flex items-center text-sm -ml-1 my-2">
             <IconOutlineInformationCircle class="w-6 h-6" />
             <span class="block leading-none pt-1 ml-1 font-bold">
               {{ type }}
             </span>
           </div>
-          <div v-if="address" class="flex items-center text-sm -ml-1 my-2">
+          <div
+            v-if="address"
+            class="flex items-center text-sm -ml-1 my-2"
+          >
             <IconOutlineLocationMarker class="w-6 h-6" />
             <span class="block leading-none pt-1 ml-1">
               {{ address }}
             </span>
           </div>
-          <div v-if="phone" class="flex items-center text-sm -ml-1 my-2">
+          <div
+            v-if="phone"
+            class="flex items-center text-sm -ml-1 my-2"
+          >
             <IconOutlinePhone class="w-6 h-6" />
             <a
               :href="`tel:${phone}`"
@@ -35,7 +51,10 @@
               {{ phone }}
             </a>
           </div>
-          <div v-if="mail" class="flex items-center text-sm -ml-1 my-2">
+          <div
+            v-if="mail"
+            class="flex items-center text-sm -ml-1 my-2"
+          >
             <IconOutlineMail class="w-6 h-6" />
             <a
               :href="`mailto:${mail}`"
@@ -45,7 +64,10 @@
               {{ mail }}
             </a>
           </div>
-          <div v-if="website" class="flex items-center text-sm -ml-1 my-2">
+          <div
+            v-if="website"
+            class="flex items-center text-sm -ml-1 my-2"
+          >
             <IconOutlineLink class="w-6 h-6" />
             <a
               :href="website"
@@ -57,7 +79,10 @@
               {{ website }}
             </a>
           </div>
-          <div v-if="readMore" class="flex items-center text-sm">
+          <div
+            v-if="readMore"
+            class="flex items-center text-sm"
+          >
             <a
               :href="readMore"
               target="_blank"

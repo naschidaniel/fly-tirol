@@ -9,7 +9,7 @@
       >
         <span
           class="block absolute bg-white -bottom-20 left-0 top-auto h-40 w-full -skew-y-6 lg:w-48 lg:h-full lg:top-0 lg:-left-28 lg:-skew-x-12 lg:skew-y-0 z-10 transform rounded-t-4xl lg:rounded-r-4xl"
-        ></span>
+        />
         <ResponsiveImage
           img-class="object-cover object-top w-full h-full"
           :picture="picture"
@@ -23,7 +23,7 @@
             <span
               class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
-              <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
+              <span class="inline-block bg-brand w-7 h-0.75 mr-2" />
               <span class="inline-block">{{ preHeadline }}</span>
             </span>
             <span class="text-4xl lg:text-6xl font-heading font-bold">

@@ -12,7 +12,7 @@
       />
       <div
         class="absolute h-40 bottom-0 left-0 right-0 bg-gradient-to-t from-white"
-      ></div>
+      />
       <div
         class="relative max-w-90 mx-auto w-full lg:w-11/12 lg:mr-0 lg:ml-auto lg:py-24 z-10"
       >
@@ -24,7 +24,7 @@
               <span
                 class="text-lg font-heading font-medium flex flex-row items-center mb-2"
               >
-                <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
+                <span class="inline-block bg-brand w-7 h-0.75 mr-2" />
                 <span class="inline-block">Fly Tirol Flugschule</span>
               </span>
               <span class="text-4xl lg:text-6xl font-heading font-bold">

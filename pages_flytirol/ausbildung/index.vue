@@ -1,6 +1,9 @@
 <template>
   <div>
-    <PageHeader pre-headline="Paragliding" headline="Ausbildung">
+    <PageHeader
+      pre-headline="Paragliding"
+      headline="Ausbildung"
+    >
       Dich hat die Lust am Paragleiten gepackt und du möchtest lernen
       eigenständig zu fliegen? Unter der Leitung von Sebastian Kahn, der
       ausgebildeter Fluglehrer und Team-Weltmeister im Acrobatik-Paragleiten

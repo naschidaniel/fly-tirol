@@ -19,7 +19,7 @@
               <span
                 class="text-lg font-heading font-medium flex flex-row items-center mb-2"
               >
-                <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
+                <span class="inline-block bg-brand w-7 h-0.75 mr-2" />
                 <span class="inline-block text-white">Hydrogen Advisers</span>
               </span>
               <span
@@ -102,7 +102,6 @@
 import { useMetaTags } from '@/composable/useMetaTags'
 import LinkList from '@/components/LinkList.vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
-import SocialBar from '@/components/SocialBar.vue'
 import IconOutlineAcademicCap from '@/components/icon/IconOutlineAcademicCap.vue'
 import IconOutlineBarChart from '@/components/icon/IconOutlineBarChart.vue'
 import IconOutlineDocumentDuplicate from '@/components/icon/IconOutlineDocumentDuplicate.vue'

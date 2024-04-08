@@ -71,10 +71,11 @@
                       ? 'bg-red-200'
                       : 'bg-gray-100'
             "
-            >{{ entry.category }}</span
-          >
+          >{{ entry.category }}</span>
           <h4>
-            <NuxtLink :to="`${entry.href}`">{{ entry.name }}</NuxtLink>
+            <NuxtLink :to="`${entry.href}`">
+              {{ entry.name }}
+            </NuxtLink>
           </h4>
           <div class="mb-2">
             <p>{{ entry.value }}</p>
@@ -91,7 +92,10 @@
         </div>
       </div>
     </div>
-    <div v-if="!isCalenderFiltered" class="text-center">
+    <div
+      v-if="!isCalenderFiltered"
+      class="text-center"
+    >
       <button
         aria-label="Reset filter"
         class="btn-primary"

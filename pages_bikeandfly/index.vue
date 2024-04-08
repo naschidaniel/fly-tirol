@@ -12,7 +12,7 @@
       />
       <div
         class="absolute h-40 bottom-0 left-0 right-0 bg-gradient-to-t from-white"
-      ></div>
+      />
     </div>
     <LinkList />
     <SocialBar />

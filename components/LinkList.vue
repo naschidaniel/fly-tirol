@@ -7,20 +7,15 @@
             <span
               class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
-              <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
-              <span class="inline-block"
-                ><span v-if="isBikeAndFly">Bike&Fly.</span
-                ><span v-else-if="isHydrogen">Interested In Learning</span
-                ><span v-else>Finde das richtige</span></span
-              >
+              <span class="inline-block bg-brand w-7 h-0.75 mr-2" />
+              <span class="inline-block"><span v-if="isBikeAndFly">Bike&Fly.</span><span v-else-if="isHydrogen">Interested In Learning</span><span v-else>Finde das richtige</span></span>
             </span>
-            <span class="text-5xl font-heading font-bold"
-              ><span v-if="isBikeAndFly">Festival Brixental</span
-              ><span v-else-if="isHydrogen">MORE?</span
-              ><span v-else>Angebot</span></span
-            >
+            <span class="text-5xl font-heading font-bold"><span v-if="isBikeAndFly">Festival Brixental</span><span v-else-if="isHydrogen">MORE?</span><span v-else>Angebot</span></span>
           </h2>
-          <p v-if="!isHydrogen" class="text-lg leading-relaxed max-w-prose">
+          <p
+            v-if="!isHydrogen"
+            class="text-lg leading-relaxed max-w-prose"
+          >
             <span v-if="isBikeAndFly">
               <p class="pb-2">
                 Tauche ein in ein Wochenende voller Action, Abenteuer und guter
@@ -40,10 +35,8 @@
                 Adrenalin, Spaß und Musik! Sichere dir jetzt dein Ticket für das
                 Bike and Fly Sport &amp; Musik Festival im Brixental vom 09.08.
                 – 11.08.2024!
-              </p></span
-            >
-            <span v-else
-              >Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
+              </p></span>
+            <span v-else>Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
               den wunderschönen Kitzbüheler Alpen genießen möchtest, du selbst
               ein Paragleitpilot werden möchtest, deine vorhandenen
               Flugfähigkeiten ausbauen willst oder mit uns auf Flugreise gehen

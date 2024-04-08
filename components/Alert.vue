@@ -6,7 +6,7 @@
     <div class="py-2">
       <IconOutlineInformationCircle class="h-6 w-6 text-teal-500 mr-4" />
     </div>
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

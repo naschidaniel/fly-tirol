@@ -1,6 +1,8 @@
 <template>
   <div class="max-w-90 w-full mx-auto">
-    <h1 class="text-4xl lg:text-6xl font-heading font-bold mt-10">Fehler</h1>
+    <h1 class="text-4xl lg:text-6xl font-heading font-bold mt-10">
+      Fehler
+    </h1>
     <div class="flex flex-col items-center mt-10">
       <div>
         <div
@@ -16,7 +18,10 @@
         unter einer neuen Adresse verfügbar.
       </p>
       <div class="mt-6">
-        <button class="btn-primary btn--large" @click="handleError">
+        <button
+          class="btn-primary btn--large"
+          @click="handleError"
+        >
           zurück zur Startseite
         </button>
       </div>

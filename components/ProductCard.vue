@@ -1,7 +1,10 @@
 <template>
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
-      <NuxtLink :to="metadata.path" :title="metadata.title">
+      <NuxtLink
+        :to="metadata.path"
+        :title="metadata.title"
+      >
         <div
           class="card--header aspect-w-16 aspect-h-14 rounded-t-xl bg-gray-200"
         >
@@ -31,7 +34,10 @@
             :is-show-date="isFlyTirol ? isCourse : false"
             :is-show-agb="false"
           />
-          <p v-if="!isCourse" class="text-gray-600 mt-4">
+          <p
+            v-if="!isCourse"
+            class="text-gray-600 mt-4"
+          >
             {{ metadata.description }}
           </p>
         </div>
@@ -72,7 +78,7 @@ import { usePage } from '@/composable/usePage'
 const props = defineProps({ path: { type: String, required: true } })
 const { getProduct } = useBackend()
 const { formatPrice } = useFormat()
-const { isFlyTirol, isBikeAndFly, isHydrogen } = useData()
+const { isFlyTirol, isHydrogen } = useData()
 const { isCourse, getMetadata } = usePage()
 const metadata = getMetadata(props.path)
 

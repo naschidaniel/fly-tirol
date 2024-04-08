@@ -17,28 +17,27 @@
       :dates="product?.total_dates"
       :is-show-date="false"
     />
-    <div v-if="product.variants?.length > 0" class="mt-4 flex flex-wrap">
+    <div
+      v-if="product.variants?.length > 0"
+      class="mt-4 flex flex-wrap"
+    >
       <div class="w-full p-2">
         <Alert class="mb-4 bg-white">
           <div class="my-2">
-            <span v-if="isCourse"
-              >Wähle im Auswahlfeld den für dich passenden Kurs und falls
-              vorhanden die nötigen Zusatzoptionen.</span
-            >
-            <span v-else
-              >Wähle im Auswahlfeld den für dich passenden Angebot und falls
-              vorhanden die nötigen Zusatzoptionen.</span
-            >
+            <span v-if="isCourse">Wähle im Auswahlfeld den für dich passenden Kurs und falls
+              vorhanden die nötigen Zusatzoptionen.</span>
+            <span v-else>Wähle im Auswahlfeld den für dich passenden Angebot und falls
+              vorhanden die nötigen Zusatzoptionen.</span>
           </div>
         </Alert>
       </div>
     </div>
-    <div v-if="product?.variants?.length > 0" class="block">
-      <label for="select-course"
-        ><span class="text-gray-700">
-          Wähle die gewünschte Zusatzoption</span
-        ></label
-      >
+    <div
+      v-if="product?.variants?.length > 0"
+      class="block"
+    >
+      <label for="select-course"><span class="text-gray-700">
+        Wähle die gewünschte Zusatzoption</span></label>
       <select
         v-for="variant in product?.variants"
         id="select-course"
@@ -83,7 +82,6 @@ import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
 import { useBackend } from '@/composable/useBackend'
 import { useCalender } from '~~/composable/useCalender'
-import { useData } from '~~/composable/useData'
 
 const { page, isCourse, getMetadata } = usePage()
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()

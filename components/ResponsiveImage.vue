@@ -1,13 +1,22 @@
 <template>
-  <div ref="imageBox" :class="boxClass">
-    <ClientOnly fallback-tag="span" fallback="Loading image...">
+  <div
+    ref="imageBox"
+    :class="boxClass"
+  >
+    <ClientOnly
+      fallback-tag="span"
+      fallback="Loading image..."
+    >
       <picture>
         <source
           :sizes="pic.sizes"
           :srcset="pic.srcsetsWebp"
           type="image/webp"
-        />
-        <source :srcset="pic.srcsets" type="image/jpeg" />
+        >
+        <source
+          :srcset="pic.srcsets"
+          type="image/jpeg"
+        >
         <img
           :loading="isLazy ? 'lazy' : 'eager'"
           :class="imgClass"
@@ -16,7 +25,7 @@
           :height="pic.fallback.height"
           :width="pic.fallback.width"
           :title="pic.fallback.title"
-        />
+        >
       </picture>
     </ClientOnly>
   </div>

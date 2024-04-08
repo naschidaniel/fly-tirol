@@ -20,15 +20,13 @@
             <a
               :href="serviceNumber.href"
               class="btn-primary btn--large w-full"
-              >{{ serviceNumber.name }}</a
-            >
+            >{{ serviceNumber.name }}</a>
           </div>
           <div class="flex p-2 w-5/6 md:w-1/2">
             <a
               :href="serviceMailAddress.href"
               class="btn-primary btn--large w-full"
-              >{{ serviceMailAddress.name }}</a
-            >
+            >{{ serviceMailAddress.name }}</a>
           </div>
         </div>
       </div>

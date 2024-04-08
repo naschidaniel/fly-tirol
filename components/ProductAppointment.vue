@@ -9,9 +9,7 @@
     />
     <div class="grid grid-cols-1 gap-6 mt-3">
       <label class="block">
-        <span :class="isFormValid ? 'text-gray-700' : 'text-red-600'"
-          >Wähle deinen Wunschtermin</span
-        >
+        <span :class="isFormValid ? 'text-gray-700' : 'text-red-600'">Wähle deinen Wunschtermin</span>
         <input
           v-model="selectedDate"
           type="date"
@@ -23,10 +21,9 @@
               : 'border-gray-300'
           "
           @change="checkDate()"
-        />
+        >
       </label>
-      <label class="block"
-        >Anzahl
+      <label class="block">Anzahl
         <select
           v-model="quantity"
           name="quantity"
@@ -45,14 +42,12 @@
         @click.prevent="bookFlight()"
       >
         Buche deinen Wunschtermin
-        <span v-if="isDateValid"
-          >&nbsp;
+        <span v-if="isDateValid">&nbsp;
           {{
             formatDate(
               selectedDateTimestamp === '' ? undefined : selectedDateTimestamp,
             )
-          }}</span
-        >
+          }}</span>
       </button>
     </div>
   </div>

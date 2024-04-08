@@ -2,9 +2,12 @@
   <div class="mt-20 lg:mt-36">
     <div
       class="bg-gradient-to-r from-white via-[#160D42] to-white p-[2px] mb-4"
-    ></div>
+    />
     <div class="flex flex-wrap">
-      <div v-if="!isHydrogen" class="w-full lg:w-1/2">
+      <div
+        v-if="!isHydrogen"
+        class="w-full lg:w-1/2"
+      >
         <div class="flex justify-center">
           <span class="font-bold">Teilen</span>&nbsp;in Sozialen Medien
         </div>
@@ -18,9 +21,8 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><IconFacebook style="width: 2em; height: 2em; color: #ececec"
-            /></span></button
-          ><button
+            ><IconFacebook style="width: 2em; height: 2em; color: #ececec" /></span>
+          </button><button
             class="mx-2"
             title="Teilen per WhatsApp"
             @click="openWhatsAppShare()"
@@ -28,11 +30,11 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><IconWhatsApp
-                class="whats-app-icon"
-                style="width: 2em; height: 2em; color: #ececec"
-            /></span></button
-          ><button
+            ><IconWhatsApp
+              class="whats-app-icon"
+              style="width: 2em; height: 2em; color: #ececec"
+            /></span>
+          </button><button
             class="mx-2"
             title="Teilen per Twitter"
             @click="openTwitter()"
@@ -40,9 +42,8 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><IconTwitter style="width: 2em; height: 2em; color: #ececec"
-            /></span></button
-          ><button
+            ><IconTwitter style="width: 2em; height: 2em; color: #ececec" /></span>
+          </button><button
             class="mx-2"
             title="Teilen per Mail"
             @click="openMailShare()"
@@ -50,8 +51,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(177, 177, 177)"
-              ><IconOutlineMail style="width: 2em; height: 2em; color: #ececec"
-            /></span>
+            ><IconOutlineMail style="width: 2em; height: 2em; color: #ececec" /></span>
           </button>
         </div>
       </div>
@@ -69,8 +69,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #0a66c2"
-              ><IconLinkedIn style="width: 2em; height: 2em; color: #ececec"
-            /></span>
+            ><IconLinkedIn style="width: 2em; height: 2em; color: #ececec" /></span>
           </button>
           <button
             class="mx-2"
@@ -80,9 +79,8 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #e4405f"
-              ><IconInstagram style="width: 2em; height: 2em; color: #ececec"
-            /></span></button
-          ><button
+            ><IconInstagram style="width: 2em; height: 2em; color: #ececec" /></span>
+          </button><button
             v-if="isFlyTirol"
             class="mx-2"
             title="Folge uns auf YouTube"
@@ -91,9 +89,8 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #e4405f"
-              ><IconYouTube style="width: 2em; height: 2em; color: #ececec"
-            /></span></button
-          ><button
+            ><IconYouTube style="width: 2em; height: 2em; color: #ececec" /></span>
+          </button><button
             class="mx-2"
             title="Kontaktiere uns per WhatsApp"
             @click="openWhatsAppContact()"
@@ -101,18 +98,22 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: #25d366"
-              ><IconWhatsApp
-                class="whats-app-icon"
-                style="width: 2em; height: 2em; color: #ececec"
-            /></span></button
-          ><button class="mx-2" title="Rufe uns an" @click="openPhone()">
+            ><IconWhatsApp
+              class="whats-app-icon"
+              style="width: 2em; height: 2em; color: #ececec"
+            /></span>
+          </button><button
+            class="mx-2"
+            title="Rufe uns an"
+            @click="openPhone()"
+          >
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(90, 78, 255)"
-              ><IconOutlinePhone
-                style="width: 2em; height: 2em; color: #ececec"
-            /></span></button
-          ><button
+            ><IconOutlinePhone
+              style="width: 2em; height: 2em; color: #ececec"
+            /></span>
+          </button><button
             class="mx-2"
             title="Kontaktiere uns per Mail"
             @click="openMailContact()"
@@ -120,8 +121,7 @@
             <span
               class="inline-flex items-center justify-center p-2 rounded-full"
               style="background-color: rgb(81, 169, 252)"
-              ><IconOutlineMail style="width: 2em; height: 2em; color: #ececec"
-            /></span>
+            ><IconOutlineMail style="width: 2em; height: 2em; color: #ececec" /></span>
           </button>
         </div>
       </div>
@@ -145,7 +145,6 @@ import { usePage } from '@/composable/usePage'
 const {
   instagram,
   isFlyTirol,
-  isBikeAndFly,
   isHydrogen,
   mail,
   phone,

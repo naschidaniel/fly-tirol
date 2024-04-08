@@ -6,30 +6,33 @@
         <Alert class="mt-2 md:mr-3">
           <div class="mx-1 md:my-2">
             <ol class="list-decimal">
-              <li v-if="isAppointment">Wunschdatum auswählen</li>
-              <li v-if="!isAppointment">Gutschein bestellen</li>
+              <li v-if="isAppointment">
+                Wunschdatum auswählen
+              </li>
+              <li v-if="!isAppointment">
+                Gutschein bestellen
+              </li>
               <li v-if="!isAppointment">
                 Wir senden dir die Gutscheinkarte per Post zu.
               </li>
               <li>
                 Vereinbare dann einen Zeitpunkt telefonisch unter
-                <a href="tel:00436766422088" class="underline whitespace-nowrap"
-                  >+43 6766422088</a
-                >
+                <a
+                  href="tel:00436766422088"
+                  class="underline whitespace-nowrap"
+                >+43 6766422088</a>
                 oder schreibe uns eine Email
                 <a
                   href="mailto:tandem@fly-tirol.com"
                   class="underline whitespace-nowrap"
-                  >tandem@fly-tirol.com</a
-                >
+                >tandem@fly-tirol.com</a>
                 oder per
                 <a
                   href="https://wa.me/436766422088"
                   target="_blank"
                   class="underline whitespace-nowrap"
                 >
-                  WhatsApp </a
-                >.
+                  WhatsApp </a>.
               </li>
             </ol>
           </div>

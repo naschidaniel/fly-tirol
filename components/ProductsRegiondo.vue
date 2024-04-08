@@ -7,7 +7,7 @@
       frameborder="0"
       height="1100"
       scrolling="no"
-    ></iframe>
+    />
   </div>
 </template>
 

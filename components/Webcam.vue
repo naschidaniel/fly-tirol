@@ -21,7 +21,7 @@
           alt="Gipfel Hohe Salve"
           rel="”noreferrer”"
           class="w-full mx-auto"
-      /></a>
+        ></a>
     </div>
   </div>
 </template>

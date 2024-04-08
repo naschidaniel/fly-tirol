@@ -23,11 +23,13 @@
             <a
               :href="telefonNumber.href"
               class="btn-primary btn--large w-full"
-              >{{ telefonNumber.name }}</a
-            >
+            >{{ telefonNumber.name }}</a>
           </div>
           <div class="flex p-2 w-5/6 md:w-1/2">
-            <a :href="mailAddress.href" class="btn-primary btn--large w-full">{{
+            <a
+              :href="mailAddress.href"
+              class="btn-primary btn--large w-full"
+            >{{
               mailAddress.name
             }}</a>
           </div>
@@ -35,7 +37,7 @@
       </div>
     </PageHeader>
     <div class="max-w-90 mx-auto text-lg font-heading font-medium leading-snug">
-      <div class="h-0.75 bg-brand rounded-full w-full"></div>
+      <div class="h-0.75 bg-brand rounded-full w-full" />
       <div class="flex justify-center py-8 px-8">
         <IconOutlineLocationMarker
           class="hidden md:block w-5 h-5 mr-1 -mt-0.25"
@@ -44,7 +46,7 @@
         Christian Weinberger | Kleinvolderbergstraße 7a | A-6111 VOLDERS | Tirol
         | Österreich
       </div>
-      <div class="h-0.75 bg-brand rounded-full w-full"></div>
+      <div class="h-0.75 bg-brand rounded-full w-full" />
     </div>
     <ContactMap class="mt-10" />
   </div>

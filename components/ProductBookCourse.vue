@@ -1,16 +1,27 @@
 <template>
   <div class="flex flex-wrap">
-    <div v-if="isCourse" class="w-full lg:w-1/2">
+    <div
+      v-if="isCourse"
+      class="w-full lg:w-1/2"
+    >
       <h2>Termine</h2>
-      <div v-if="calenderFiltered.length == 0">Auf Anfrage</div>
-      <div v-else class="flex flex-wrap">
+      <div v-if="calenderFiltered.length == 0">
+        Auf Anfrage
+      </div>
+      <div
+        v-else
+        class="flex flex-wrap"
+      >
         <div
           v-for="month in calenderFiltered"
           :key="month.monthLong"
           class="p-1"
         >
           <h3>{{ month.monthLong }}</h3>
-          <div v-for="course in month.courses" :key="course.value">
+          <div
+            v-for="course in month.courses"
+            :key="course.value"
+          >
             <button
               aria-label="select Date"
               class="inline-flex items-center justify-center px-2 py-1 mr-2 mb-2 leading-none text-gray-900 bg-gray-100 rounded-full border"

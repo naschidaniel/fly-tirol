@@ -5,50 +5,130 @@
       :class="{ open: isOpen, closed: !isOpen }"
       @click="isOpen = !isOpen"
     >
-      <nav v-if="isFlyTirol" class="flex flex-col items-start xl:flex-row">
-        <NavigationNavbarLink name="Tandemfliegen" to="/tandemfliegen" />
-        <NavigationNavbarLink name="Ausbildung" to="/ausbildung" />
-        <NavigationNavbarLink name="Fortbildung" to="/fortbildung" />
+      <nav
+        v-if="isFlyTirol"
+        class="flex flex-col items-start xl:flex-row"
+      >
+        <NavigationNavbarLink
+          name="Tandemfliegen"
+          to="/tandemfliegen"
+        />
+        <NavigationNavbarLink
+          name="Ausbildung"
+          to="/ausbildung"
+        />
+        <NavigationNavbarLink
+          name="Fortbildung"
+          to="/fortbildung"
+        />
         <NavigationNavbarLink
           name="Sicherheitstrainings"
           to="/sicherheitstrainings"
         />
-        <NavigationNavbarLink name="Acrotrainings" to="/acrotrainings" />
-        <NavigationNavbarLink name="Reisen" to="/reisen" />
-        <NavigationNavbarLink name="Termine" to="/termine" />
-        <NavigationNavbarLink name="Team" to="/team" />
-        <NavigationNavbarLink name="Fluggebiet" to="/fluggebiet" />
-        <NavigationNavbarLink name="Service" to="/service" />
+        <NavigationNavbarLink
+          name="Acrotrainings"
+          to="/acrotrainings"
+        />
+        <NavigationNavbarLink
+          name="Reisen"
+          to="/reisen"
+        />
+        <NavigationNavbarLink
+          name="Termine"
+          to="/termine"
+        />
+        <NavigationNavbarLink
+          name="Team"
+          to="/team"
+        />
+        <NavigationNavbarLink
+          name="Fluggebiet"
+          to="/fluggebiet"
+        />
+        <NavigationNavbarLink
+          name="Service"
+          to="/service"
+        />
       </nav>
       <nav
         v-else-if="isBikeAndFly"
         class="flex flex-col items-start xl:flex-row"
       >
-        <NavigationNavbarLink name="Home" to="/" />
-        <NavigationNavbarLink name="Programm" to="/programm" />
-        <NavigationNavbarLink name="Bike Testival" to="/bike-testival" />
+        <NavigationNavbarLink
+          name="Home"
+          to="/"
+        />
+        <NavigationNavbarLink
+          name="Programm"
+          to="/programm"
+        />
+        <NavigationNavbarLink
+          name="Bike Testival"
+          to="/bike-testival"
+        />
         <NavigationNavbarLink
           name="Gleitschirm Testival"
           to="/gleitschirm-testival"
         />
-        <NavigationNavbarLink name="Wanderbird" to="/wanderbird" />
-        <NavigationNavbarLink name="Wanderlokal" to="/wanderlokal" />
-        <NavigationNavbarLink name="Shop" to="/shop" />
-        <NavigationNavbarLink name="Partner" to="/partner" />
+        <NavigationNavbarLink
+          name="Wanderbird"
+          to="/wanderbird"
+        />
+        <NavigationNavbarLink
+          name="Wanderlokal"
+          to="/wanderlokal"
+        />
+        <NavigationNavbarLink
+          name="Shop"
+          to="/shop"
+        />
+        <NavigationNavbarLink
+          name="Partner"
+          to="/partner"
+        />
       </nav>
-      <nav v-else class="flex flex-col items-start xl:flex-row">
-        <NavigationNavbarLink name="HOME" to="/" />
-        <NavigationNavbarLink name="ABOUT US" to="/about-us" />
-        <NavigationNavbarLink name="BASICS" to="/basics" />
-        <NavigationNavbarLink name="NEWS" to="/news" />
-        <NavigationNavbarLink name="FAQ" to="/faq" />
-        <NavigationNavbarLink name="PARTNER" to="/partner" />
+      <nav
+        v-else
+        class="flex flex-col items-start xl:flex-row"
+      >
+        <NavigationNavbarLink
+          name="HOME"
+          to="/"
+        />
+        <NavigationNavbarLink
+          name="ABOUT US"
+          to="/about-us"
+        />
+        <NavigationNavbarLink
+          name="BASICS"
+          to="/basics"
+        />
+        <NavigationNavbarLink
+          name="NEWS"
+          to="/news"
+        />
+        <NavigationNavbarLink
+          name="FAQ"
+          to="/faq"
+        />
+        <NavigationNavbarLink
+          name="PARTNER"
+          to="/partner"
+        />
       </nav>
     </div>
 
     <div class="flex">
-      <div class="mr-2 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
-        <NuxtLink v-if="!isHydrogen" class="btn-primary" to="/buchen" exact>
+      <div
+        class="mr-2 my-1 xl:my-0 z-10"
+        @click="toggleIfDropdownIsOpen()"
+      >
+        <NuxtLink
+          v-if="!isHydrogen"
+          class="btn-primary"
+          to="/buchen"
+          exact
+        >
           <IconOutlineShoppingCart
             class="mr-1"
             style="height: 1em; width: 1em"
@@ -56,11 +136,24 @@
           ({{ cartItemsLength }})
         </NuxtLink>
       </div>
-      <div class="mr-3 my-1 xl:my-0 z-10" @click="toggleIfDropdownIsOpen()">
-        <NuxtLink v-if="!isHydrogen" class="btn-primary" to="/kontakt" exact>
+      <div
+        class="mr-3 my-1 xl:my-0 z-10"
+        @click="toggleIfDropdownIsOpen()"
+      >
+        <NuxtLink
+          v-if="!isHydrogen"
+          class="btn-primary"
+          to="/kontakt"
+          exact
+        >
           <span>Kontakt</span>
         </NuxtLink>
-        <NuxtLink v-else class="btn-primary" to="/contact" exact>
+        <NuxtLink
+          v-else
+          class="btn-primary"
+          to="/contact"
+          exact
+        >
           <span>CONTACT</span>
         </NuxtLink>
       </div>
@@ -70,8 +163,14 @@
           class="p-2 rounded-md text-brand focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-white focus:ring-opacity-100 focus:outline-none transition duration-150 ease-in-out"
           @click="isOpen = !isOpen"
         >
-          <IconOutlineX v-if="isOpen" class="h-6 w-6" />
-          <IconOutlineMenu v-else class="h-6 w-6" />
+          <IconOutlineX
+            v-if="isOpen"
+            class="h-6 w-6"
+          />
+          <IconOutlineMenu
+            v-else
+            class="h-6 w-6"
+          />
         </button>
       </div>
     </div>

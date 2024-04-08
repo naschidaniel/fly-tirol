@@ -1,6 +1,9 @@
 <template>
   <div>
-    <PageHeader pre-headline="Paragliding" headline="Fortbildung">
+    <PageHeader
+      pre-headline="Paragliding"
+      headline="Fortbildung"
+    >
       Du hast deinen A-Schein bereits und möchtest deine Fähigkeiten ausbauen?
       Ob Thermikfliegen oder Tandemschein, wir helfen dir dabei ein besserer
       Pilot zu werden!

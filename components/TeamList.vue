@@ -7,9 +7,15 @@
             <span
               class="text-lg font-heading font-medium flex flex-row items-center mb-2"
             >
-              <span class="inline-block bg-brand w-7 h-0.75 mr-2"></span>
-              <span v-if="isFlyTirol" class="inline-block">Dein Fly Tirol</span>
-              <span v-else class="inline-block">hydrogen-adviesers.eu</span>
+              <span class="inline-block bg-brand w-7 h-0.75 mr-2" />
+              <span
+                v-if="isFlyTirol"
+                class="inline-block"
+              >Dein Fly Tirol</span>
+              <span
+                v-else
+                class="inline-block"
+              >hydrogen-adviesers.eu</span>
             </span>
             <span class="text-5xl font-heading font-bold">Team</span>
           </h2>
@@ -17,8 +23,14 @@
       </div>
     </div>
     <div class="card--grid grid-gap-2 w-full">
-      <div v-for="member in members" :key="member.name">
-        <team-member-card v-if="member.name" :member="member" />
+      <div
+        v-for="member in members"
+        :key="member.name"
+      >
+        <team-member-card
+          v-if="member.name"
+          :member="member"
+        />
       </div>
     </div>
   </div>

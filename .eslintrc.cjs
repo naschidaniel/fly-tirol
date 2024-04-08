@@ -4,13 +4,8 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: [
-    '@nuxtjs/eslint-config-typescript',
-    'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['@nuxt/eslint-config'],
   rules: {
-    '@typescript-eslint/no-unused-vars': 'off',
     'vue/multi-word-component-names': [
       'error',
       {

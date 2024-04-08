@@ -7,7 +7,10 @@
           img-class="object-contain"
           :picture="member.picture"
         />
-        <div v-else class="flex justify-center items-center">
+        <div
+          v-else
+          class="flex justify-center items-center"
+        >
           <IconOutlineEmojiHappy class="w-36 h-36 text-gray-400" />
         </div>
       </div>

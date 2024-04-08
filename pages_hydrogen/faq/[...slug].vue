@@ -5,7 +5,9 @@
     :picture="page?.image"
   >
     <div>
-      <p class="mb-2">{{ page.description }}</p>
+      <p class="mb-2">
+        {{ page.description }}
+      </p>
     </div>
   </PageHeader>
   <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">

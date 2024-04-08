@@ -44,7 +44,7 @@ export function useBackend() {
     isShowAlert.value = value.type === 'error'
     if (value.type === 'error') {
       console.error(value.message)
-    } else if (value.type === 'error') {
+    } else if (value.type === 'warning') {
       console.warn(value.message)
     } else {
       console.log(value.message)

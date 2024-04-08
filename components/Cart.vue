@@ -6,7 +6,9 @@
           Es wurden noch keine Produkte in den Warenkorb hinzugefügt.
         </p>
         <p class="text-sm">
-          <NuxtLink to="/">Hier geht es zur Startseite</NuxtLink>
+          <NuxtLink to="/">
+            Hier geht es zur Startseite
+          </NuxtLink>
         </p>
       </div>
     </Alert>
@@ -17,14 +19,23 @@
             <th class="w-1/2 p-1 md:p-2 text-sm md:text-base border">
               Produkt
             </th>
-            <th class="w-1/4 p-1 md:p-2 text-sm md:text-base border">Preis</th>
-            <th class="w-1/4 p-1 md:p-2 text-sm md:text-base border">Anzahl</th>
+            <th class="w-1/4 p-1 md:p-2 text-sm md:text-base border">
+              Preis
+            </th>
+            <th class="w-1/4 p-1 md:p-2 text-sm md:text-base border">
+              Anzahl
+            </th>
           </tr>
         </thead>
         <tbody>
-          <tr v-for="item in cart?.get_cart_items" :key="item.id">
+          <tr
+            v-for="item in cart?.get_cart_items"
+            :key="item.id"
+          >
             <td class="p-1 sm:p-2 md:p-3 text-left border">
-              <p class="text-sm md:text-base font-bold">{{ item.product }}</p>
+              <p class="text-sm md:text-base font-bold">
+                {{ item.product }}
+              </p>
               <p class="text-sm md:text-md">
                 {{ item.comment }}
               </p>
@@ -64,11 +75,36 @@
                       )
                   "
                 >
-                  <option :selected="item.quantity === 1" value="1">1</option>
-                  <option :selected="item.quantity === 2" value="2">2</option>
-                  <option :selected="item.quantity === 3" value="3">3</option>
-                  <option :selected="item.quantity === 4" value="4">4</option>
-                  <option :selected="item.quantity === 5" value="5">5</option>
+                  <option
+                    :selected="item.quantity === 1"
+                    value="1"
+                  >
+                    1
+                  </option>
+                  <option
+                    :selected="item.quantity === 2"
+                    value="2"
+                  >
+                    2
+                  </option>
+                  <option
+                    :selected="item.quantity === 3"
+                    value="3"
+                  >
+                    3
+                  </option>
+                  <option
+                    :selected="item.quantity === 4"
+                    value="4"
+                  >
+                    4
+                  </option>
+                  <option
+                    :selected="item.quantity === 5"
+                    value="5"
+                  >
+                    5
+                  </option>
                 </select>
               </div>
             </td>
@@ -76,25 +112,19 @@
         </tbody>
       </table>
       <div class="text-right mt-6">
-        <span
-          >Gesamtpreis:
+        <span>Gesamtpreis:
           <span class="font-bold">{{
             formatPrice(cart?.get_total_price)
-          }}</span></span
-        ><br />
-        <span class="text-sm"
-          >Im Preis ist die Mehrwertsteuer von
-          {{ formatPrice(cart?.get_total_tax) }} enthalten.</span
-        ><br />
+          }}</span></span><br>
+        <span class="text-sm">Im Preis ist die Mehrwertsteuer von
+          {{ formatPrice(cart?.get_total_tax) }} enthalten.</span><br>
         <button
           :href="cart?.order_url"
           aria-label="Delete Order"
           class="mt-2 btn-warning btn--large"
           @click.prevent="deleteCart(cart?.id)"
         >
-          <IconOutlineShoppingBag style="height: 1em; width: 1em" />&nbsp;<span
-            >Warenkorb löschen</span
-          >
+          <IconOutlineShoppingBag style="height: 1em; width: 1em" />&nbsp;<span>Warenkorb löschen</span>
         </button>
       </div>
       <div class="flex justify-center mt-5">
@@ -103,9 +133,7 @@
           aria-label="Order Products"
           class="btn-primary btn--large"
         >
-          <IconOutlineShoppingBag style="height: 1em; width: 1em" />&nbsp;<span
-            >Bestellung abschließen</span
-          >
+          <IconOutlineShoppingBag style="height: 1em; width: 1em" />&nbsp;<span>Bestellung abschließen</span>
         </a>
       </div>
     </div>

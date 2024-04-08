@@ -12,7 +12,7 @@
       <TestTandemflug />
       <ProductBookTandemflight />
     </div>
-    <div></div>
+    <div />
     <SocialBar />
   </div>
 </template>

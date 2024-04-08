@@ -15,7 +15,10 @@
       <div class="card--content px-8 pb-12">
         <div class="card--content__inner">
           <h3 class="text-xl font-heading font-semibold mb-4">
-            <NuxtLink :to="to" :title="cardTitle">
+            <NuxtLink
+              :to="to"
+              :title="cardTitle"
+            >
               {{ cardTitle }}
             </NuxtLink>
           </h3>
@@ -27,7 +30,10 @@
     </div>
     <div class="flex justify-end pr-8 z-10">
       <div class="transform -translate-y-2/4">
-        <NuxtLink :to="to" class="btn-primary btn--large">
+        <NuxtLink
+          :to="to"
+          class="btn-primary btn--large"
+        >
           <span v-if="isHydrogen">Read more</span>
           <span v-else>Mehr erfahren</span>
         </NuxtLink>

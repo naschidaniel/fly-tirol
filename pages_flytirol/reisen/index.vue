@@ -1,6 +1,9 @@
 <template>
   <div>
-    <PageHeader pre-headline="Paragliding" headline="Reisen">
+    <PageHeader
+      pre-headline="Paragliding"
+      headline="Reisen"
+    >
       Flieg mit uns im Urlaub! Kombiniere eine wunderschöne Reise mit deiner
       Leidenschaft fürs fliegen und lerne dabei von absoluten Profis dazu. Sieh
       dir unseren Reisekalender an und nutze die einmalige Möglichkeit

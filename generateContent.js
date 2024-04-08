@@ -14,8 +14,7 @@ function generate(nuxtPage) {
   content.forEach((filePath) => {
     const folder = filePath.split('/')[filePath.split('/').length - 2]
     const slug = filePath
-      .split('/')
-      [filePath.split('/').length - 1].replace('.md', '')
+      .split('/')[filePath.split('/').length - 1].replace('.md', '')
     const lang = slug.includes('__en') ? 'en' : 'de'
     const path =
       folder === `content_${nuxtPage}` && slug === 'index'

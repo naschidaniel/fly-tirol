@@ -1,6 +1,9 @@
 <template>
   <div>
-    <PageHeader pre-headline="Gehe mit FlyTirol" headline="Tandemfliegen">
+    <PageHeader
+      pre-headline="Gehe mit FlyTirol"
+      headline="Tandemfliegen"
+    >
       Einmal das Gefühl der Freiheit hoch über den Gipfeln der Kitzbüheler Alpen
       mit Blick auf den Alpenhauptkamm und den Wilden Kaiser bei einem
       Tandemflug mit einem unserer Top-Tandempiloten genießen! Egal ob im Winter
@@ -10,8 +13,9 @@
     <ProductList />
     <InfoBox headline="Voraussetzungen für deinen Tandemflug">
       <ul>
-        <li>Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.
-        !! Keine Sneaker !!
+        <li>
+          Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.
+          !! Keine Sneaker !!
         </li>
         <li>
           Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.

@@ -38,10 +38,16 @@
             </div>
             <div class="flex flex-wrap sm:flex-nowrap justify-between w-full">
               <div class="flex flex-wrap w-full md:justify-center mb-8 sm:mb-0">
-                <a :href="mailTo" class="underline whitespace-nowrap m-4">
+                <a
+                  :href="mailTo"
+                  class="underline whitespace-nowrap m-4"
+                >
                   {{ mail }}
                 </a>
-                <a :href="phoneHref" class="underline m-4 whitespace-nowrap">
+                <a
+                  :href="phoneHref"
+                  class="underline m-4 whitespace-nowrap"
+                >
                   {{ phoneString }}
                 </a>
                 <NuxtLink
@@ -52,18 +58,32 @@
                 >
                   <span>LinkedIn</span>
                 </NuxtLink>
-                <span v-if="isFlyTirol" class="hidden m-4 whitespace-nowrap">
+                <span
+                  v-if="isFlyTirol"
+                  class="hidden m-4 whitespace-nowrap"
+                >
                   Bergliftstraße 22, 6363 Westendorf
                 </span>
-                <span v-if="isHydrogen" class="underline m-4 whitespace-nowrap">
+                <span
+                  v-if="isHydrogen"
+                  class="underline m-4 whitespace-nowrap"
+                >
                   Kleinvolderbergstraße 7a, 6111 VOLDERS
                 </span>
               </div>
               <div class="m-4 flex w-full sm:w-auto sm:ml-4">
-                <NuxtLink v-if="isHydrogen" to="/imprint" class="underline">
+                <NuxtLink
+                  v-if="isHydrogen"
+                  to="/imprint"
+                  class="underline"
+                >
                   <span>imprint</span>
                 </NuxtLink>
-                <NuxtLink v-if="!isHydrogen" to="/dsgvo" class="underline">
+                <NuxtLink
+                  v-if="!isHydrogen"
+                  to="/dsgvo"
+                  class="underline"
+                >
                   <span>DSGVO</span>
                 </NuxtLink>
                 <NuxtLink
