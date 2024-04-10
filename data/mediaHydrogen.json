@@ -536,11 +536,41 @@
     "alt": "",
     "title": ""
   },
+  "/media/team/christian_optimized.jpg": {
+    "url": "/media/team/christian_optimized.jpg",
+    "path": "/media/team/",
+    "file": "christian_optimized.jpg",
+    "stem": "christian_optimized",
+    "dimensions": {
+      "height": 692,
+      "orientation": 1,
+      "width": 538,
+      "type": "jpg",
+      "ratio": 0.777
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/team/nikolaus.jpg": {
     "url": "/media/team/nikolaus.jpg",
     "path": "/media/team/",
     "file": "nikolaus.jpg",
     "stem": "nikolaus",
+    "dimensions": {
+      "height": 531,
+      "orientation": 1,
+      "width": 413,
+      "type": "jpg",
+      "ratio": 0.778
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/nikolaus_optimized.jpg": {
+    "url": "/media/team/nikolaus_optimized.jpg",
+    "path": "/media/team/",
+    "file": "nikolaus_optimized.jpg",
+    "stem": "nikolaus_optimized",
     "dimensions": {
       "height": 531,
       "orientation": 1,
@@ -565,6 +595,21 @@
     "alt": "",
     "title": ""
   },
+  "/media/team/olivier_optimized.jpg": {
+    "url": "/media/team/olivier_optimized.jpg",
+    "path": "/media/team/",
+    "file": "olivier_optimized.jpg",
+    "stem": "olivier_optimized",
+    "dimensions": {
+      "height": 960,
+      "orientation": 1,
+      "width": 746,
+      "type": "jpg",
+      "ratio": 0.777
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/team/partners.png": {
     "url": "/media/team/partners.png",
     "path": "/media/team/",
@@ -575,6 +620,21 @@
       "width": 300,
       "type": "png",
       "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/team/partners_optimized.jpg": {
+    "url": "/media/team/partners_optimized.jpg",
+    "path": "/media/team/",
+    "file": "partners_optimized.jpg",
+    "stem": "partners_optimized",
+    "dimensions": {
+      "height": 900,
+      "orientation": 1,
+      "width": 700,
+      "type": "jpg",
+      "ratio": 0.778
     },
     "alt": "",
     "title": ""

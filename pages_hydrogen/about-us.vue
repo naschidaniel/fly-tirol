@@ -27,25 +27,25 @@ useMetaTags()
 const members: TeamMember[] = [
   {
     name: 'Christian WEINBERGER',
-    picture: '/media/team/christian.png',
+    picture: '/media/team/christian_optimized.jpg',
     position: 'Senior Advisor',
     information: '',
   },
   {
     name: 'Dr. Nikolaus WEINBERGER',
-    picture: '/media/team/nikolaus.jpg',
+    picture: '/media/team/nikolaus_optimized.jpg',
     position: 'Solar-PV und Renewable Energy expert',
     information: '',
   },
   {
     name: 'Olivier BUCHELI',
-    picture: '/media/team/olivier.jpg',
+    picture: '/media/team/olivier_optimized.jpg',
     position: 'Electrolyser and fuel cell technology expert',
     information: '',
   },
   {
     name: 'Further partners',
-    picture: '',
+    picture: '/media/team/partners_optimized.jpg',
     position: 'welcome',
     information: '',
   },
