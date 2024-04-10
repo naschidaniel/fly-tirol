@@ -14,9 +14,15 @@
           <IconOutlineUsers class="w-40 h-40 text-gray-400" />
         </div>
       </div>
-      <div class="card--content px-8 pb-8">
+      <div
+        class="px-8 pb-8"
+        :class="!isHydrogen ? 'card--content' : ''"
+      >
         <div class="card--content__inner">
-          <h3 class="text-2xl font-heading font-semibold mb-1">
+          <h3
+            class="text-2xl font-heading font-semibold mb-1"
+            :class="!isHydrogen ? 'mt-1' : 'mt-10'"
+          >
             {{ member.name }}
           </h3>
           <div class="flex items-start -ml-1">
@@ -35,9 +41,12 @@
 </template>
 
 <script setup lang="ts">
+import { useData } from '~/composable/useData';
 import IconOutlineClipboardList from './icon/IconOutlineClipboardList.vue'
 import IconOutlineUsers from './icon/IconOutlineUsers.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
+
+const {isHydrogen} = useData()
 
 defineProps({ member: { type: Object, required: true } })
 </script>
