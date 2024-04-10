@@ -9,6 +9,7 @@ export type Order = {
     cart?: Cart;
     checkout?: OrderCheckout;
     get_status: string;
+    get_payment: Order.get_payment;
     order_status_url: string;
     address: string;
     city: string;
@@ -27,4 +28,11 @@ export type Order = {
     zipcode: string;
     customer?: number | null;
 };
+export namespace Order {
+    export enum get_payment {
+        BANK_TRANSFER = 'BANK TRANSFER',
+        ON_SITE = 'ON SITE',
+        PAYPAL = 'PAYPAL',
+    }
+}
 

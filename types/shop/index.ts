@@ -9,7 +9,7 @@ export type { CartItem } from './models/CartItem';
 export type { Category } from './models/Category';
 export { Checkout } from './models/Checkout';
 export type { LoginViewData } from './models/LoginViewData';
-export type { Order } from './models/Order';
+export { Order } from './models/Order';
 export { OrderCheckout } from './models/OrderCheckout';
 export type { Product } from './models/Product';
 export type { ProductVariant } from './models/ProductVariant';

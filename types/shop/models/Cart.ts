@@ -17,6 +17,7 @@ export type Cart = {
     is_expired: boolean;
     get_invoice_cart_items: Record<string, string | null>;
     get_tax_dict: Record<string, string | null>;
+    get_order_id: string;
     readonly order?: string;
     readonly date_added?: string;
 };
