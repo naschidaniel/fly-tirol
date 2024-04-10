@@ -551,6 +551,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/team/olivier.jpg": {
+    "url": "/media/team/olivier.jpg",
+    "path": "/media/team/",
+    "file": "olivier.jpg",
+    "stem": "olivier",
+    "dimensions": {
+      "height": 960,
+      "width": 962,
+      "type": "jpg",
+      "ratio": 1.002
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/team/partners.png": {
     "url": "/media/team/partners.png",
     "path": "/media/team/",

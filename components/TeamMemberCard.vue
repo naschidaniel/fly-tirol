@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="card--container w-full rounded-xl bg-white shadow-xl">
-      <div class="card--header aspect-w-2 aspect-h-3 rounded-t-xl bg-gray-200">
+      <div class="card--header rounded-t-xl bg-gray-200">
         <ResponsiveImage
           v-if="member.picture"
           img-class="object-contain"
@@ -9,9 +9,9 @@
         />
         <div
           v-else
-          class="flex justify-center items-center"
+          class="flex justify-center items-center h-96"
         >
-          <IconOutlineEmojiHappy class="w-36 h-36 text-gray-400" />
+          <IconOutlineUsers class="w-40 h-40 text-gray-400" />
         </div>
       </div>
       <div class="card--content px-8 pb-8">
@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
 import IconOutlineClipboardList from './icon/IconOutlineClipboardList.vue'
-import IconOutlineEmojiHappy from './icon/IconOutlineEmojiHappy.vue'
+import IconOutlineUsers from './icon/IconOutlineUsers.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
 
 defineProps({ member: { type: Object, required: true } })

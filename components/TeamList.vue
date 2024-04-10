@@ -27,7 +27,7 @@
         v-for="member in members"
         :key="member.name"
       >
-        <team-member-card
+        <TeamMemberCard
           v-if="member.name"
           :member="member"
         />

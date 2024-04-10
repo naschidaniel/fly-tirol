@@ -32,14 +32,20 @@ const members: TeamMember[] = [
     information: '',
   },
   {
-    name: 'Dr. Nikolaus Weinberger',
+    name: 'Dr. Nikolaus WEINBERGER',
     picture: '/media/team/nikolaus.jpg',
     position: 'Solar-PV und Renewable Energy expert',
     information: '',
   },
   {
+    name: 'Olivier BUCHELI',
+    picture: '/media/team/olivier.jpg',
+    position: 'Electrolyser and fuel cell technology expert',
+    information: '',
+  },
+  {
     name: 'Further partners',
-    picture: '/media/team/partners.png',
+    picture: '',
     position: 'welcome',
     information: '',
   },
