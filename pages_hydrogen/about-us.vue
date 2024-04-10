@@ -8,8 +8,8 @@
       We are an advisory service to provide strategic advice to all actors
       seeking to advance their green hydrogen Agenda and to start roll-out.
     </PageHeader>
+    <TeamList :members="members" />
     <div class="max-w-90 w-full mx-auto py-6">
-      <TeamList :members="members" />
       <AboutUs class="nuxt-content" />
     </div>
   </div>
