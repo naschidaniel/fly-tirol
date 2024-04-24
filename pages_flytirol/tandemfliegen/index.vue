@@ -14,13 +14,11 @@
     <InfoBox headline="Voraussetzungen für deinen Tandemflug">
       <ul>
         <li>
-          Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.
-          
+          Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.<br>
           !! Keine Sneaker !!
         </li>
         <li>
-          Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.
-          
+          Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.<br>
           !! Nimm im Sommer trotzdem immer eine Jacke mit !!.
         </li>
         <li>
@@ -28,8 +26,7 @@
           beim Fliegen schützt.
         </li>
         <li>
-          Ein Mindestgewicht von 25 kg und keine Einschränkung beim Gehen.
-          
+          Ein Mindestgewicht von 25 kg und keine Einschränkung beim Gehen.<br>
           Sollte es eine Einschränkung geben, teile uns dies bitte im Voraus
           mit, damit wir gemeinsam eine Lösung finden können.
         </li>
