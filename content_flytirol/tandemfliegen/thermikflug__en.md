@@ -1,6 +1,6 @@
 ---
 title: Thermal Paragliding
-description: During our thermal paragliding experience, we utilize thermal updrafts, mimicking birds, to soar over the breathtaking scenery of the Kitzbühel Alps for approximately 30 minutes.
+description: During our thermal paragliding experience, we utilize thermal updrafts, mimicking birds, to soar over the breathtaking scenery of the Kitzbühel Alps for approximately 30-35 minutes.
 location: Westendorf
 excluded: The listed price does not include lift and photos.
 isAppointment: true
@@ -12,7 +12,7 @@ order: 2
 
 If you want to extend your tandem flying adventure, our Thermal Tandem Paragliding is the perfect choice for you!
 
-Similar to birds, we use thermal updrafts to extend the flight experience to approximately 30. As thermals typically become strong enough only around midday, we schedule flights between 12:30 and 17:00. Since thermal flights depend on seasonal and weather conditions, please consult our Tandem Hotline before making a reservation.
+Similar to birds, we use thermal updrafts to extend the flight experience to approximately 30-35 min. As thermals typically become strong enough only around midday, we schedule flights between 12:30 and 17:00. Since thermal flights depend on seasonal and weather conditions, please consult our Tandem Hotline before making a reservation.
 
 ## Information
 
