@@ -7,7 +7,7 @@ Drei Tage lang verwandelt sich das Gelände der Talstation der Alpenrosenbahn in
 
 Ob freitags am **Kids Day** mit einem **Bike & Parkour-Rennen** für alle Altersklassen oder einem spannenden **Vortrag vom X-Alps-Piloten Paul Guschelbauer** über seine Reise beim X-Alps. An allen drei Festivaltagen findet unter anderem ein **Bike- und Gleitschirm-Testival** statt, bei dem man das neueste Material testen kann.
 
-Samstags findet der **Festival Day** statt. Hier werden neben den sportlichen Attraktionen wie einer **MTB-Freestyle-Show von Stefan Eberharter** und einer **Flugshow von zwei Weltmeistern** auch ordentlich mit Musikbands und DJs eingeheizt. Unter anderem sorgen **Yellow Brick** und **Rebel Musig** für gute Stimmung.
+Samstags findet der **Festival Day** statt. Hier werden neben den sportlichen Attraktionen wie einer **MTB-Freestyle-Show von Stefan Eberharter** und einer **Flugshow von zwei Weltmeistern** auch ordentlich mit Musikbands und DJs eingeheizt. Unter anderem sorgen **Yellow Brick Road** und **Rebel Musig** für gute Stimmung.
 
 Ein besonderes Schmankerl ist samstags der **Wanderbird Cup**, ein Hike-&-Fly-Wettbewerb von **Paul Guschelbauer**, einem der erfolgreichsten Streckenflugpiloten, **in Kooperation mit Red Bull**.
 
