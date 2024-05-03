@@ -51,6 +51,9 @@ Der Gutschein hat eine nicht verlängerbare, endgültige Gültigkeit von 36 Mona
 
 Ist die Durchführung/Beendigung eines Kurses witterungsbedingt nicht möglich oder scheidet ein Teilnehmer aufgrund einer Verletzung oder Krankheit aus, bestehen keine Ansprüche auf Erstattung der Kursgebühr. Entgangene Kursinhalte können innerhalb von 12 Monaten nachgeholt werden. Dies gilt jedoch nicht für Kurse, die Reisen beinhalten. Bleibt der Kursteilnehmer während des Kurses ohne Entschuldigung fern, so besteht kein Anspruch auf Ersatz.
 
+Für unsere Sicherheits/Acrotrainings garantieren wir 5 Trainingsflüge. 
+Sollte witterungsbedingt die garantierte Mindestfluganzahl des jeweiligen Trainings nicht erreicht werden, kann die/der Teilnehmer:in die fehlenden Flüge innerhalb eines Jahres ab Kursende nachholen.
+
 ## 5. Haftung, Versicherung
 
 Die Flugschule und ihre Beauftragten haften für Unfall- und Unfallfolgeschäden nur insoweit, als die Haftpflichtversicherung - ohne auf die vorher Genannten Rückgriff zu nehmen - für den Schaden aufkommt. Jede darüber hinausgehende Haftung der Vorgenannten für allfällige Schäden ist ausgeschlossen.
