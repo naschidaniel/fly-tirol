@@ -40,7 +40,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Preisverteilung: 19:30 Uhr</li>
       <li>DJ Standy: 22:00-00:00 Uhr</li>
     </ul>
-    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival</p>
+    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival.</p>
   </div>
   <div class="bg-[#b0def1] shadow-md rounded-lg p-4">
     <h3>Samstag, 10.08.24 – Festival Day</h3>
@@ -64,7 +64,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>REBEL MUSIG: 21:00 Uhr</li>
       <li>Afterparty – Alpenrosensaal: 22:00-04:00 Uhr</li>
     </ul>
-    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival und zur Festival- Afterparty</p>
+    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival und zur Festival- Afterparty.</p>
   </div>
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
     <h3>Sonntag, 11.08 – Family Day</h3>
@@ -84,7 +84,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Demo Paragleiter Show: 14:00 Uhr</li>
       <li>Alpenrosen Buam: 11:00 Uhr</li>
     </ul>
-    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival</p>
+    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival.</p>
   </div>
 </div>
 
