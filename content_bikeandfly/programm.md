@@ -58,10 +58,10 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Redbull Hike&Fly Wettbewerb: 10:00 Uhr</li>
       <li>Demo Paragleiter Show: 12:00/14:00/16:00 Uhr</li>
       <li>MTB - Freestyle Show - Fabian Dankl 12:30/14:30 Uhr</li>
-      <li>MTB – Freestyle Show – Stephan Eberharter: 15:00/19:00 Uhr</li>
+      <li>MTB – Freestyle Show – Stephan Eberharter: 15:00/20:00 Uhr</li>
       <li>Yellow Brick – Band: 17:00 Uhr</li>
-      <li>REBEL MUSIG: 20:00 Uhr</li>
-      <li>Afterparty – Alpenrosensaal: 22:00-05:00 Uhr</li>
+      <li>REBEL MUSIG: 21:00 Uhr</li>
+      <li>Afterparty – Alpenrosensaal: 22:00-04:00 Uhr</li>
     </ul>
   </div>
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
