@@ -27,6 +27,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Testival Paragliding</li>
       <li>Testival Fahrrad</li>
       <li>Musik/DJ (Kenny Baker unter Tags)</li>
+      <li>Musik/DJ (DJock Norris)</li>
       <li>Hüpfburg</li>
       <li>Fahrrad Parkour</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
@@ -35,9 +36,9 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Demo Paragleiter Show: 17:00 Uhr</li>
       <li>MTB - Freestyle Show - Fabian Dankl</li>
       <li>Vortrag von Paul Guschelbauer, Redbull Athlet – X Alps: 17:30 Uhr</li>
-      <li>Bike&Parkour Rennen für Kinder und Erwachsene: 17:30 Uhr</li>
+      <li>Bike&Parkour Rennen für Kinder und Erwachsene: 17:00 Uhr</li>
       <li>Preisverteilung: 19:30 Uhr</li>
-      <li>DJ Standy: 20:00-23:00 Uhr</li>
+      <li>DJ Standy: 22:00-00:00 Uhr</li>
     </ul>
   </div>
   <div class="bg-[#b0def1] shadow-md rounded-lg p-4">
