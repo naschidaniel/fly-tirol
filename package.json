@@ -31,21 +31,21 @@
   },
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.12.0",
-    "core-js": "^3.37.0",
+    "core-js": "^3.37.1",
     "heroicons": "^2.1.3",
     "leaflet": "^1.9.4",
     "nuxt": "^3.11.2",
-    "simple-icons": "^11.14.0"
+    "simple-icons": "^11.15.0"
   },
   "devDependencies": {
-    "@nuxt/eslint-config": "^0.3.10",
+    "@nuxt/eslint-config": "^0.3.13",
     "@nuxt/kit": "^3.11.2",
     "@nuxt/postcss8": "^1.1.3",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.7",
-    "@types/node": "^20.12.8",
+    "@types/node": "^20.12.12",
     "eslint": "^8.57.0",
-    "glob": "^10.3.12",
+    "glob": "^10.3.15",
     "image-size": "^1.1.1",
     "marked": "^12.0.2",
     "nitropack": "^2.9.6",
