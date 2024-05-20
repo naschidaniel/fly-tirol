@@ -2,9 +2,11 @@ image-optimizer.exe
 image-optimizer
 flytirol*.tar.gz
 bikeandfly*.tar.gz
+hydrogen*.tar.gz
 node_modules
 .git
 .github
 .nuxt
 .public_flytirol
 .public_bikeandfly
+.public_hydrogen
