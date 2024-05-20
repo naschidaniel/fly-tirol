@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: '20.10.0'
+          node-version: '20.12.2'
       - run: yarn install
       - name: create .nuxt tsconfig
         run: mkdir .nuxt && echo "{}" > .nuxt/tsconfig.json
