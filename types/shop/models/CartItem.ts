@@ -2,12 +2,12 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { Product } from './Product';
 import type { ProductVariantOption } from './ProductVariantOption';
 export type CartItem = {
     readonly id?: string;
-    readonly product?: string;
+    product: Product;
     product_variant: Array<ProductVariantOption>;
-    product_price: number;
     item_price: number;
     get_total_item_price: number;
     comment?: string;

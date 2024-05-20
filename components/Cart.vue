@@ -16,14 +16,17 @@
       <table class="table-fixed border w-full">
         <thead>
           <tr>
-            <th class="w-1/2 p-1 md:p-2 text-sm md:text-base border">
+            <th class="w-2/5 p-1 md:p-2 text-sm md:text-base border">
               Produkt
             </th>
-            <th class="w-1/4 p-1 md:p-2 text-sm md:text-base border">
-              Preis
+            <th class="w-1/5 p-1 md:p-2 text-sm md:text-base border">
+              Einzelpreis
             </th>
-            <th class="w-1/4 p-1 md:p-2 text-sm md:text-base border">
+            <th class="w-1/5 p-1 md:p-2 text-sm md:text-base border">
               Anzahl
+            </th>
+            <th class="w-1/5 p-1 md:p-2 text-sm md:text-base border">
+              Preis
             </th>
           </tr>
         </thead>
@@ -34,7 +37,7 @@
           >
             <td class="p-1 sm:p-2 md:p-3 text-left border">
               <p class="text-sm md:text-base font-bold">
-                {{ item.product }}
+                {{ item.product.name }}
               </p>
               <p class="text-sm md:text-md">
                 {{ item.comment }}
@@ -107,6 +110,9 @@
                   </option>
                 </select>
               </div>
+            </td>
+            <td class="text-sm md:text-base p-1 md:p-3 text-center border">
+              {{ formatPrice(item.get_total_item_price) }}
             </td>
           </tr>
         </tbody>
