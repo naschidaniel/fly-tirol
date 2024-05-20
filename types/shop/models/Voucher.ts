@@ -6,12 +6,17 @@ import type { Order } from './Order';
 export type Voucher = {
     readonly id?: string;
     order?: Order;
+    voucher_status_url: string;
     readonly date_added?: string;
-    readonly valid_added?: string;
+    valid_until?: string | null;
+    date_used?: string | null;
     email?: string;
+    name?: string;
     status?: Voucher.status;
     voucher_dict_json?: any;
-    readonly vouchers_pdf?: string;
+    readonly voucher_pdf?: string;
+    comment?: string;
+    voucher_number?: string;
 };
 export namespace Voucher {
     export enum status {

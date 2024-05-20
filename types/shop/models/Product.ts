@@ -10,12 +10,18 @@ export type Product = {
     slug: string;
     href: string;
     total_dates: number;
-    digital?: boolean;
+    is_shipping?: boolean;
     is_voucher?: boolean;
-    orderable: boolean;
     price?: number;
-    tax?: number;
     readonly category?: string;
+    vatrate?: Product.vatrate;
     variants: Array<ProductVariant>;
 };
+export namespace Product {
+    export enum vatrate {
+        NORMAL_VATRATE = 'NORMAL_VATRATE',
+        REDUCED_VATRATE = 'REDUCED_VATRATE',
+        ZERO_VATRATE = 'ZERO_VATRATE',
+    }
+}
 
