@@ -116,8 +116,7 @@
           <span class="font-bold">{{
             formatPrice(cart?.get_total_price)
           }}</span></span><br>
-        <span class="text-sm">Im Preis ist die Mehrwertsteuer von
-          {{ formatPrice(cart?.get_total_tax) }} enthalten.</span><br>
+        <span class="text-sm">Im Preis ist die gesetzliche Mehrwertsteuer enthalten.</span><br>
         <button
           :href="cart?.order_url"
           aria-label="Delete Order"
