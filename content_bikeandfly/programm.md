@@ -23,25 +23,25 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
     <p>Einlass: 09:00-23:00 Uhr</p>
     <h4>Tagesprogramm</h4>
     <ul>
-      #Verpflegung/Unterhaltung:
+      # Verpflegung/Unterhaltung:
       <li>Wanderlokal – Streetfood</li>
       <li>Hüpfburg</li>
-      #Bike:
+      # Bike:
       <li>Testival Fahrrad</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <li>Fahrrad Parkour</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
       <li>Bike&Parkour Rennen für Kinder und Erwachsene: 17:00 Uhr</li>
       <li>Preisverteilung: 19:30 Uhr</li>
-      #Fly:
+      # Fly:
       <li>Testival Paragliding</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      #Musik:
+      # Musik:
       <li>Musik/DJ (Kenny Baker unter Tags)</li>
       <li>Musik/DJ (DJock Norris)</li>
       <li>DJ Standy: 22:00-00:00 Uhr</li>
-      #Shows:
+      # Shows:
       <li>Demo Paragleiter Show: 17:00 Uhr</li>
       <li>MTB - Freestyle Show - Fabian Dankl</li>
       <li>Vortrag von Paul Guschelbauer, Redbull Athlet – X Alps: 17:30 Uhr</li>
