@@ -79,19 +79,25 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
     <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival und zur Festival- Afterparty.</p>
   </div>
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
-    <h3>Sonntag, 11.08 – Family Day</h3>
+    <h2>Sonntag, 11.08 – Family Day</h2>
     <p>Einlass - Frühshoppen: 09:00 – open end (21:00 Uhr)</p>
-    <h4>Tagesprogramm</h4>
+    <h3>Tagesprogramm</h3>
     <ul>
+      <h4>Verpflegung/Unterhaltung:</h4>
       <li>Wanderlokal – Streetfood</li>
-      <li>Testival Paragliding</li>
-      <li>Testival Fahrrad</li>
-      <li>Musik/DJ</li>
       <li>Hüpfburg</li>
+      <h4>Bike:</h4>
+      <li>Testival Fahrrad</li>
+      <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <li>Fahrrad Parkour</li>
+      <li>Fahrradverleih Spezialpreis: 20€</li>
+      <h4>Fly:</h4>
+      <li>Testival Paragliding</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      <li>Fahrradverleih Spezialpreis: 20€</li>
+      <h4>Musik:</h4>
+      <li>Musik/DJ</li>
+      <h4>Shows:</h4>
       <li>MTB - Freestyle Show - Fabian Dankl</li>
       <li>Demo Paragleiter Show: 14:00 Uhr</li>
       <li>Alpenrosen Buam: 11:00 Uhr</li>
