@@ -24,33 +24,24 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
     <h3>Tagesprogramm</h3>
     <ul>
       <h4>Verpflegung/Unterhaltung:</h4>
-      
       <li>Wanderlokal – Streetfood</li>
       <li>Hüpfburg</li>
-      
       <h4>Bike:</h4>
-      
       <li>Testival Fahrrad</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <li>Fahrrad Parkour</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
       <li>Bike&Parkour Rennen für Kinder und Erwachsene: 17:00 Uhr</li>
       <li>Preisverteilung: 19:30 Uhr</li>
-      
       <h4>Fly:</h4>
-      
       <li>Testival Paragliding</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      
       <h4>Musik:</h4>
-      
       <li>Musik/DJ (Kenny Baker unter Tags)</li>
       <li>Musik/DJ (DJock Norris)</li>
       <li>DJ Standy: 22:00-00:00 Uhr</li>
-     
       <h4>Shows:</h4>
-      
       <li>Demo Paragleiter Show: 17:00 Uhr</li>
       <li>MTB - Freestyle Show - Fabian Dankl</li>
       <li>Vortrag von Paul Guschelbauer, Redbull Athlet – X Alps: 17:30 Uhr</li>
@@ -63,32 +54,23 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
     <h3>Tagesprogramm</h3>
     <ul>
       <h4>Verpflegung/Unterhaltung:</h4>
-      
       <li>Wanderlokal - Streetfood</li>
       <li>Hüpfburg</li>
-      
       <h4>Bike:</h4>
-      
       <li>Testival Fahrrad</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <li>Fahrrad Parkour</li>
       <li>Fahrradverleih Spezialpreis: 20€</li>
-
       <h4>Fly:</h4>
-
       <li>Testival Paragliding</li>
       <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
-
       <h4>Musik:</h4>
-
       <li>Musik/DJ</li>
       <li>Yellow Brick – Band: 17:00 Uhr</li>
       <li>REBEL MUSIG: 21:00 Uhr</li>
       <li>Afterparty – Alpenrosensaal: 22:00-04:00 Uhr</li>
-      
       <h4>Shows:</h4>
-      
       <li>Redbull Hike&Fly Wettbewerb: 10:00 Uhr</li>
       <li>Demo Paragleiter Show: 12:00/14:00/16:00 Uhr</li>
       <li>MTB - Freestyle Show - Fabian Dankl 12:30/14:30 Uhr</li>
