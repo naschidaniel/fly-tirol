@@ -124,7 +124,7 @@ export default defineNuxtConfig({
               : 'https://fly-tirol.com',
         },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      link: [{ rel: 'icon', href: '/favicon.ico' }],
     },
   },
 
