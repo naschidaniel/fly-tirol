@@ -116,7 +116,7 @@ export function useBackend() {
 
   async function whoami(): Promise<any> {
     if (!process.client || isHydrogen) return
-    await useFetch(`${backend}/shop/api/user/`, {
+    await useFetch(`${backend}/shop/api/user/whoami/`, {
       method: 'GET',
       onResponse({ response }) {
         user.value = response._data.data
