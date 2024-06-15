@@ -130,9 +130,15 @@ export function useBackend() {
   }
 
   async function updateCart(body: string): Promise<void> {
+    const csrftoken = getCookie("csrftoken");
     await useFetch(`${backend}/shop/api/cart/${cartId.value}`, {
       method: 'POST',
       body,
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "X-CSRFToken": csrftoken as string,
+      },
       onResponse({ response }) {
         cart.value = response._data.data
         cartId.value = response._data.data.id
@@ -154,13 +160,34 @@ export function useBackend() {
     return product
   }
 
+  function getCookie(name: string) {
+    let cookieValue = undefined;
+    if (document.cookie && document.cookie !== "") {
+      const cookies = document.cookie.split(";");
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === name + "=") {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+
   async function updateProduct(
     pk: string | undefined,
     quantity: string,
   ): Promise<void> {
+    const csrftoken = getCookie("csrftoken");
     await useFetch(`${backend}/shop/api/cartitem/${pk}`, {
       method: 'POST',
       body: JSON.stringify({ quantity }),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "X-CSRFToken": csrftoken as string,
+      },
       onResponse({ response }) {
         updateAlert(response._data.alert)
       },
@@ -172,8 +199,14 @@ export function useBackend() {
   }
 
   async function deleteProduct(pk: string | undefined): Promise<void> {
+    const csrftoken = getCookie("csrftoken");
     await useFetch(`${backend}/shop/api/cartitem/${pk}`, {
       method: 'DELETE',
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "X-CSRFToken": csrftoken as string,
+      },
       onResponse({ response }) {
         updateAlert(response._data.alert)
       },
@@ -185,8 +218,14 @@ export function useBackend() {
   }
 
   async function deleteCart(pk: string | undefined): Promise<void> {
+    const csrftoken = getCookie("csrftoken");
     await useFetch(`${backend}/shop/api/cart/${pk}`, {
       method: 'DELETE',
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "X-CSRFToken": csrftoken as string,
+      },
       onResponse({ response }) {
         updateAlert(response._data.alert)
       },
