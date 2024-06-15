@@ -19,8 +19,10 @@ import SiteHeader from '@/components/global/SiteHeader.vue'
 import { useBackend } from '@/composable/useBackend'
 
 const { isHydrogen } = useData()
-const { isShowAlert, initShopBackend, initCart } = useBackend()
+const { isShowAlert, initShopBackend, initCart, getCsrfToken, whoami } = useBackend()
 
+getCsrfToken()
+whoami()
 initShopBackend()
 initCart()
 </script>

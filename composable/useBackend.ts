@@ -4,10 +4,12 @@ import { useData } from './useData'
 import type { Product } from '@/types/shop/models/Product'
 import type { Cart } from '@/types/shop/models/Cart'
 import type { Alert } from '@/types/shop/models/Alert'
+import type { User } from '@/types/shop/models/User'
 
 export const products: Ref<Product[]> = ref([] as Product[])
 const cartId: Ref<string | null> = ref(null)
 const cart: Ref<Cart | undefined> = ref(undefined)
+const user: Ref<User | undefined> = ref(undefined);
 const alert: Ref<Alert | undefined> = ref(undefined)
 const isShowAlert: Ref<Boolean> = ref(false)
 
@@ -93,6 +95,40 @@ export function useBackend() {
     })
   }
 
+  async function getCsrfToken(): Promise<any> {
+    if (!process.client || isHydrogen) return
+    await useFetch(`${backend}/shop/api/getcsrf/`, {
+      method: 'GET',
+      onResponse() {
+        updateAlert({
+          message: 'The csrf token has been set correct',
+          type: 'success',
+        })
+      },
+      onResponseError() {
+        updateAlert({
+          message: 'Failed set the csrf token',
+          type: 'error',
+        })
+      },
+    })
+  }
+
+  async function whoami(): Promise<any> {
+    if (!process.client || isHydrogen) return
+    await useFetch(`${backend}/shop/api/user/`, {
+      method: 'GET',
+      onResponse({ response }) {
+        user.value = response._data.data
+        updateAlert(response._data.alert)
+      },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
+
+    })
+  }
+
   async function updateCart(body: string): Promise<void> {
     await useFetch(`${backend}/shop/api/cart/${cartId.value}`, {
       method: 'POST',
@@ -164,11 +200,14 @@ export function useBackend() {
 
   return {
     alert,
+    user,
     isShowAlert,
     cart,
     deleteProduct,
     deleteCart,
     updateProduct,
+    getCsrfToken,
+    whoami,
     cartItemsLength,
     isCartItems,
     getProduct,
