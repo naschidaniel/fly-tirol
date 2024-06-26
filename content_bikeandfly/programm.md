@@ -26,6 +26,8 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <h4>Verpflegung/Unterhaltung:</h4>
       <li>Wanderlokal – Streetfood</li>
       <li>Hüpfburg</li>
+      <h4>Charity:</h4>
+      <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
       <h4>Bike:</h4>
       <li>Testival Fahrrad</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
@@ -56,6 +58,9 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <h4>Verpflegung/Unterhaltung:</h4>
       <li>Wanderlokal - Streetfood</li>
       <li>Hüpfburg</li>
+      <h4>Charity:</h4>
+      <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
+      <li>Geben für Leben Stand - Leukämiehelfer Österreich (Stammzellspende) für einen guten Zweck</li>
       <h4>Bike:</h4>
       <li>Testival Fahrrad</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
@@ -86,6 +91,8 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <h4>Verpflegung/Unterhaltung:</h4>
       <li>Wanderlokal – Streetfood</li>
       <li>Hüpfburg</li>
+      <h4>Charity:</h4>
+      <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
       <h4>Bike:</h4>
       <li>Testival Fahrrad</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
