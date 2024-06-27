@@ -44,8 +44,8 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Musik/DJ (DJock Norris)</li>
       <li>DJ Standy: 22:00-00:00 Uhr</li>
       <h4>Shows:</h4>
-      <li>Demo Paragleiter Show: 17:00 Uhr</li>
-      <li>MTB - Freestyle Show - Fabian Dankl</li>
+      <li>Demo Paragleiter Show: 15:00 Uhr</li>
+      <li>MTB - Freestyle Show - Fabian Dankl: 18:30</li>
       <li>Vortrag von Paul Guschelbauer, Redbull Athlet – X Alps: 17:30 Uhr</li>
     </ul>
     <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival.</p>
