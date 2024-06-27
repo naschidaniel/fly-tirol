@@ -60,7 +60,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Hüpfburg</li>
       <h4>Charity:</h4>
       <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
-      <li>Geben für Leben Stand - Leukämiehelfer Österreich (Stammzellspende) 14:00 - 16:30</li>
+      <li>Geben für Leben Stand - Leukämiehelfer Österreich (Stammzellspende): 14:00 - 16:30</li>
       <h4>Bike:</h4>
       <li>Testival Fahrrad</li>
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
