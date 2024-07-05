@@ -37,6 +37,7 @@ export type { ResponseProductOptionVariant } from './models/ResponseProductOptio
 export type { ResponseProducts } from './models/ResponseProducts';
 export type { ResponseProductVariant } from './models/ResponseProductVariant';
 export type { ResponseSettings } from './models/ResponseSettings';
+export type { ResponseShipping } from './models/ResponseShipping';
 export type { ResponseStats } from './models/ResponseStats';
 export type { ResponseStatsCarts } from './models/ResponseStatsCarts';
 export type { ResponseSystemstatus } from './models/ResponseSystemstatus';
@@ -44,6 +45,7 @@ export type { ResponseVatRate } from './models/ResponseVatRate';
 export type { ResponseVatRates } from './models/ResponseVatRates';
 export type { ResponseVoucher } from './models/ResponseVoucher';
 export type { ResponseVouchers } from './models/ResponseVouchers';
+export { ShippingNote } from './models/ShippingNote';
 export type { ShopSettings } from './models/ShopSettings';
 export type { StatsCarts } from './models/StatsCarts';
 export type { StatsOpen } from './models/StatsOpen';

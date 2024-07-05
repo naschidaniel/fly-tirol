@@ -22,6 +22,10 @@ export type Order = {
     comment?: string;
     name?: string;
     country: string;
+    shipping_name?: string;
+    shippig_address?: string;
+    shipping_city?: string;
+    shipping_country?: string;
     email?: string;
     phone?: string;
     readonly invoice_pdf?: string;
