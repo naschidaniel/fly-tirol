@@ -1,36 +1,38 @@
 <template>
-  <PageHeader
-    pre-headline="Hydrogen"
-    :headline="page?.title"
-    :picture="page?.image"
-  >
-    <div>
-      <p class="mb-2">
-        {{ page.description }}
-      </p>
-    </div>
-  </PageHeader>
-  <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
-    <div v-if="page.slug == 'buildings'">
-      <Buildings />
-    </div>
-    <div v-if="page.slug == 'energy-sector'">
-      <EnergySector />
-    </div>
-    <div v-if="page.slug == 'general'">
-      <General />
-    </div>
-    <div v-if="page.slug == 'industry'">
-      <Industry />
-    </div>
-    <div v-if="page.slug == 'mobility'">
-      <Mobility />
-    </div>
-    <div v-if="page.slug == 'production'">
-      <Production />
-    </div>
-    <div v-if="page.slug == 'transmission'">
-      <Transmission />
+  <div>
+    <PageHeader
+      pre-headline="Hydrogen"
+      :headline="page?.title"
+      :picture="page?.image"
+    >
+      <div>
+        <p class="mb-2">
+          {{ page.description }}
+        </p>
+      </div>
+    </PageHeader>
+    <div class="max-w-90 w-full mx-auto pt-8 nuxt-content">
+      <div v-if="page.slug == 'buildings'">
+        <Buildings />
+      </div>
+      <div v-if="page.slug == 'energy-sector'">
+        <EnergySector />
+      </div>
+      <div v-if="page.slug == 'general'">
+        <General />
+      </div>
+      <div v-if="page.slug == 'industry'">
+        <Industry />
+      </div>
+      <div v-if="page.slug == 'mobility'">
+        <Mobility />
+      </div>
+      <div v-if="page.slug == 'production'">
+        <Production />
+      </div>
+      <div v-if="page.slug == 'transmission'">
+        <Transmission />
+      </div>
     </div>
   </div>
 </template>
