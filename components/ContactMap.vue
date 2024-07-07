@@ -15,11 +15,12 @@
 import { usePage } from '@/composable/usePage'
 
 const { page } = usePage()
-const map =
-  page.value?.location === 'Westendorf'
+const map
+  = page.value?.location === 'Westendorf'
     ? '/leaflet_de_westendorf.html'
     : '/leaflet_de.html'
 </script>
+
 <style scoped>
 .mapContainer {
   width: 100%;

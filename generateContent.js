@@ -16,8 +16,8 @@ function generate(nuxtPage) {
     const slug = filePath
       .split('/')[filePath.split('/').length - 1].replace('.md', '')
     const lang = slug.includes('__en') ? 'en' : 'de'
-    const path =
-      folder === `content_${nuxtPage}` && slug === 'index'
+    const path
+      = folder === `content_${nuxtPage}` && slug === 'index'
         ? '/'
         : folder === `content_${nuxtPage}`
           ? `/${slug}/`
@@ -42,13 +42,13 @@ function generate(nuxtPage) {
         // Parse Values
         if (entry[0] === 'order') {
           metadata[entry[0]] = parseInt(entry[1])
-        } else {
+        }
+        else {
           metadata[entry[0]] = entry[1]
         }
       })
     const pages = Object.keys(metadata)
       .sort()
-      // eslint-disable-next-line no-sequences
       .reduce((r, k) => ((r[k] = metadata[k]), r), {})
     metadataPages.push(pages)
     const content = ['<template>', '<div>']
@@ -62,12 +62,12 @@ function generate(nuxtPage) {
     }
     if (isContentImageGallery) {
       content.push(
-        "import ContentImageGallery from '@/components/ContentImageGallery.vue'",
+        'import ContentImageGallery from \'@/components/ContentImageGallery.vue\'',
       )
     }
     if (isContentPartnerCard) {
       content.push(
-        "import ContentPartnerCard from '@/components/ContentPartnerCard.vue'",
+        'import ContentPartnerCard from \'@/components/ContentPartnerCard.vue\'',
       )
     }
     if (isContentImageGallery || isContentPartnerCard) {
@@ -80,8 +80,8 @@ function generate(nuxtPage) {
   })
 
   const json = JSON.stringify(metadataPages, null, 2)
-  const constName =
-    nuxtPage === 'hydrogen'
+  const constName
+    = nuxtPage === 'hydrogen'
       ? 'metadataHydrogen'
       : nuxtPage === 'flytirol'
         ? 'metadataFlyTirol'

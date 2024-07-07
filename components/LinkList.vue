@@ -64,6 +64,7 @@
 <script setup lang="ts">
 import LinkCard from './LinkCard.vue'
 import { useData } from '@/composable/useData'
+
 const { isBikeAndFly, isFlyTirol, isHydrogen } = useData()
 
 const flyTirolData = [

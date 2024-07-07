@@ -152,6 +152,6 @@ import { useBackend } from '@/composable/useBackend'
 import { useFormat } from '@/composable/useFormat'
 
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()
-const { cart, isCartItems, deleteCart, deleteProduct, updateProduct } =
-  useBackend()
+const { cart, isCartItems, deleteCart, deleteProduct, updateProduct }
+  = useBackend()
 </script>

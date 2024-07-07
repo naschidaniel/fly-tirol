@@ -69,7 +69,7 @@ const { page, getMetadata } = usePage()
 
 const metadata = getMetadata(page.value.path)
 const selectedDate: Ref<string> = ref('')
-const quantity: Ref<Number> = ref(1)
+const quantity: Ref<number> = ref(1)
 const isFormValid: Ref<boolean> = ref(true)
 const isDateValid: Ref<boolean> = ref(false)
 

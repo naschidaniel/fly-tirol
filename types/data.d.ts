@@ -3,7 +3,6 @@ export interface Cookie {
   value: string
 }
 
-
 export interface License {
   license: string
   name: string
@@ -27,7 +26,7 @@ export interface MediaInformation {
 }
 
 export interface MetaData {
-  bikeandfly?: "bike" | "bike&fly" | "fly"
+  bikeandfly?: 'bike' | 'bike&fly' | 'fly'
   lang: string
   category: string
   description: string

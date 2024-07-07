@@ -1,4 +1,4 @@
-<!-- https://tailwindcss.com/docs/animation MIT Licensed-->
+<!-- https://tailwindcss.com/docs/animation MIT Licensed -->
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"

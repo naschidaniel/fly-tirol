@@ -57,7 +57,7 @@ onMounted(() => {
 function setOptionDateString(optionDateString: string) {
   selectedDateString.value = optionDateString
   if (window?.innerWidth <= 768) {
-    // @ts-ignore
+    // @ts-expect-error TODO document is possible null
     document
       .getElementById('book-product')
       .scrollIntoView({ block: 'start', behavior: 'smooth' })

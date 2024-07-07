@@ -41,12 +41,12 @@
 </template>
 
 <script setup lang="ts">
-import { useData } from '~/composable/useData';
 import IconOutlineClipboardList from './icon/IconOutlineClipboardList.vue'
 import IconOutlineUsers from './icon/IconOutlineUsers.vue'
 import ResponsiveImage from './ResponsiveImage.vue'
+import { useData } from '~/composable/useData'
 
-const {isHydrogen} = useData()
+const { isHydrogen } = useData()
 
 defineProps({ member: { type: Object, required: true } })
 </script>

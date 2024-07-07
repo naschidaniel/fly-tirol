@@ -68,6 +68,7 @@ import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
 import { useData } from '@/composable/useData'
 import ProductVariants from '@/components/ProductVariants.vue'
+
 const { page, getMetadata } = usePage()
 const { isFlyTirol, isBikeAndFly } = useData()
 

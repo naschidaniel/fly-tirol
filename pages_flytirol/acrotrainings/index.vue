@@ -6,7 +6,7 @@
     >
       Fahre mit Fly Tirol und Sebastian Kahn, dem Team-Weltmeister im
       Acro-Paragleiten 2014 und Vizeweltmeister im Synchron-Acro-Paragleiten, zu
-      den zwei schönsten Fluggebieten Europas, um dort zu trainieren und neue Tricks zu erlernen 
+      den zwei schönsten Fluggebieten Europas, um dort zu trainieren und neue Tricks zu erlernen
       oder bereits erlernte zu perfektionieren.
     </PageHeader>
     <ProductList />

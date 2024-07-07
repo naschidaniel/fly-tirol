@@ -1,10 +1,10 @@
 /* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
-/* eslint-disable */
-import type { Checkout } from './Checkout';
-export type ResponseDataCheckouts = {
-    chechouts: Array<Checkout>;
-    count: number;
-};
 
+import type { Checkout } from './Checkout'
+
+export type ResponseDataCheckouts = {
+  chechouts: Array<Checkout>
+  count: number
+}

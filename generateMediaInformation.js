@@ -3,8 +3,8 @@ import { glob } from 'glob'
 import sizeOf from 'image-size'
 
 for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen']) {
-  const constName =
-    nuxtPage === 'hydrogen'
+  const constName
+    = nuxtPage === 'hydrogen'
       ? 'mediaHydrogen'
       : nuxtPage === 'flytirol'
         ? 'mediaFlyTirol'
@@ -20,8 +20,8 @@ for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen']) {
       const file = filePath.split('/').reverse()[0]
       const path = filePath.replace(staticPath, '').replace(file, '')
       const dimensions = sizeOf(filePath)
-      dimensions.ratio =
-        Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
+      dimensions.ratio
+        = Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
       return {
         url,
         path,
@@ -35,7 +35,8 @@ for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen']) {
     .forEach((img) => {
       if (Object.keys(mediaJson).includes(img.url)) {
         mediaJson[img.url].dimensions = img.dimensions
-      } else {
+      }
+      else {
         mediaJson[img.url] = img
       }
     })

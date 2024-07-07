@@ -115,8 +115,8 @@ watchEffect(() => {
 function resetSelectedDateString(): void {
   if (
     !product.value?.variants
-      ?.flatMap((o) => o.options)
-      .map((a) => a.value)
+      ?.flatMap(o => o.options)
+      .map(a => a.value)
       .includes(selectedDateString.value as string)
   ) {
     selectedDateString.value = undefined
@@ -125,9 +125,9 @@ function resetSelectedDateString(): void {
 
 function initSelectedVariants(): void {
   if (
-    product.value?.variants === undefined ||
-    product.value?.variants?.length ===
-      Object.keys(selectedOptions.value).length
+    product.value?.variants === undefined
+    || product.value?.variants?.length
+    === Object.keys(selectedOptions.value).length
   )
     return
   for (const variant of product.value.variants) {
@@ -137,10 +137,10 @@ function initSelectedVariants(): void {
 
 function updateSelectedVariants(variant: ProductVariant, value: string): void {
   selectedOptions.value[variant.name] = value
-  const newValue = variant.options.find((o) => o.value === value)
+  const newValue = variant.options.find(o => o.value === value)
   if (newValue === undefined) return
   const selectedVariantsIndex = selectedVariants.value.findIndex(
-    (o) => o.product_variant === newValue?.product_variant,
+    o => o.product_variant === newValue?.product_variant,
   )
   if (selectedVariantsIndex !== -1) {
     selectedVariants.value.splice(selectedVariantsIndex, 1)

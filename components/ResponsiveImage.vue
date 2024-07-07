@@ -65,8 +65,8 @@ class ResponsiveSource implements ResponsiveSourceInterface {
       : `${width}.${image.dimensions.type}`
     const postfixWebp = postfix.replace(image.dimensions.type, 'webp')
     this.srcset = `${prefix}_${postfix}?v=${buildTime} ${width}w`
-    this.srcsetWebp =
-      isHydrogen && image.dimensions.type === 'png'
+    this.srcsetWebp
+      = isHydrogen && image.dimensions.type === 'png'
         ? ''
         : `${prefix}_${postfixWebp}?v=${buildTime} ${width}w` // fix png
     this.width = width
@@ -105,7 +105,7 @@ const { media } = useMedia()
 const imageBox = ref(null) // template ref
 
 const image = Object.values(media).find(
-  (img) => img.url === props.picture,
+  img => img.url === props.picture,
 ) as MediaInformation
 
 const pic: ResponsiveImage = reactive({
@@ -123,18 +123,18 @@ const pic: ResponsiveImage = reactive({
 
 const setImage = function () {
   if (image === undefined) {
-    // eslint-disable-next-line no-console
     console.warn(
       `The image '${props.picture}' can not be found in the /media.json file. You have to run ./generateMediaInformation.js.`,
     )
-  } else {
+  }
+  else {
     const sourcesets: ResponsiveSource[] = []
     // TODO viewport is not rendered after reload
-    const viewport =
-      // @ts-ignore
-      imageBox.value?.clientWidth !== 0
-        ? // @ts-ignore
-          Math.ceil((imageBox.value?.clientWidth / window?.innerWidth) * 100)
+    const viewport
+      // @ts-expect-error TODO document is possible null
+      = imageBox.value?.clientWidth !== 0
+      // @ts-expect-error TODO document is possible null
+        ? Math.ceil((imageBox.value?.clientWidth / window?.innerWidth) * 100)
         : 100
     for (const width of [384, 512, 640, 768, 1024, 1280, 1536]) {
       sourcesets.push(
@@ -147,9 +147,9 @@ const setImage = function () {
         ),
       )
     }
-    pic.srcsets = sourcesets.map((s) => s.srcset).join(', ')
-    pic.srcsetsWebp = sourcesets.map((s) => s.srcsetWebp).join(', ')
-    pic.sizes = sourcesets.map((s) => s.sizes).join(', ')
+    pic.srcsets = sourcesets.map(s => s.srcset).join(', ')
+    pic.srcsetsWebp = sourcesets.map(s => s.srcsetWebp).join(', ')
+    pic.sizes = sourcesets.map(s => s.sizes).join(', ')
   }
 }
 

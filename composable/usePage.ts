@@ -16,13 +16,13 @@ export function usePage() {
       : metadataBikeAndFly
 
   const routeFullPath = `${route.fullPath.split('?')[0]}/`.replace('//', '/')
-  if (metadataPages.find((p) => p.path === routeFullPath) === undefined) {
+  if (metadataPages.find(p => p.path === routeFullPath) === undefined) {
     showError('Page not Found')
   }
   const page: ComputedRef<MetaData> = computed(() => {
     return (
-      metadataPages.find((p) => p.path === routeFullPath) ||
-      ({
+      metadataPages.find(p => p.path === routeFullPath)
+      || ({
         slug: '',
         title: '',
         lang: '',
@@ -33,28 +33,29 @@ export function usePage() {
 
   const isCourse = computed(
     () =>
-      !page.value.path?.includes('/tandemfliegen') &&
-      !page.value.path?.includes('/service') &&
-      isFlyTirol,
+      !page.value.path?.includes('/tandemfliegen')
+      && !page.value.path?.includes('/service')
+      && isFlyTirol,
   )
 
   const pages: ComputedRef<MetaData[]> = computed(() => {
     return metadataPages
       .filter(
-        (p) =>
+        p =>
           p.category === route.name && p.slug !== 'index' && p.lang === 'de',
       )
       .sort((a, b) => {
         if (a.order !== undefined && b.order !== undefined) {
           return a?.order - b?.order
-        } else {
+        }
+        else {
           return 9999
         }
       })
   })
 
   function getMetadata(path: string): MetaData {
-    return metadataPages.find((p) => p.path === path) as MetaData
+    return metadataPages.find(p => p.path === path) as MetaData
   }
   return { isCourse, getMetadata, page, pages }
 }

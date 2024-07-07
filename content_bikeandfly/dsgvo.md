@@ -16,13 +16,13 @@ Definitionen der verwendeten Begriffe (z.B. “personenbezogene Daten” oder �
 
 Wir, der Websitebetreiber bzw. Seitenprovider, erheben aufgrund unseres berechtigten Interesses (s. Art. 6 Abs. 1 lit. f. DSGVO) Daten über Zugriffe auf die Website und speichern diese als „Server-Logfiles“ auf dem Server der Website ab. Folgende Daten werden so protokolliert:
 
-•	Besuchte Website
-•	Uhrzeit zum Zeitpunkt des Zugriffes
-•	Menge der gesendeten Daten in Byte
-•	Quelle/Verweis, von welchem Sie auf die Seite gelangten
-•	Verwendeter Browser
-•	Verwendetes Betriebssystem
-•	Verwendete IP-Adresse
+• Besuchte Website
+• Uhrzeit zum Zeitpunkt des Zugriffes
+• Menge der gesendeten Daten in Byte
+• Quelle/Verweis, von welchem Sie auf die Seite gelangten
+• Verwendeter Browser
+• Verwendetes Betriebssystem
+• Verwendete IP-Adresse
 
 Die Server-Logfiles werden für maximal 7 Tage gespeichert und anschließend gelöscht. Die Speicherung der Daten erfolgt aus Sicherheitsgründen, um z. B. Missbrauchsfälle aufklären zu können. Müssen Daten aus Beweisgründen aufgehoben werden, sind sie solange von der Löschung ausgenommen bis der Vorfall endgültig geklärt ist.
 
@@ -31,9 +31,9 @@ Die Server-Logfiles werden für maximal 7 Tage gespeichert und anschließend gel
 Diese Website verwendet Cookies zur pseudonymisierten Reichweitenmessung, die entweder von unserem Server oder dem Server Dritter an den Browser des Nutzers übertragen werden. Bei Cookies handelt es sich um kleine Dateien, welche auf Ihrem Endgerät gespeichert werden. Ihr Browser greift auf diese Dateien zu. Durch den Einsatz von Cookies erhöht sich die Benutzerfreundlichkeit und Sicherheit dieser Website.
 Falls Sie nicht möchten, dass Cookies zur Reichweitenmessung auf Ihrem Endgerät gespeichert werden, können Sie dem Einsatz dieser Dateien hier widersprechen:
 
-•	Cookie-Deaktivierungsseite der Netzwerkwerbeinitiative: http://optout.networkadvertising.org/?c=1#!/
-•	Cookie-Deaktivierungsseite der US-amerikanischen Website: http://optout.aboutads.info/?c=2#!/
-•	Cookie-Deaktivierungsseite der europäischen Website: http://optout.networkadvertising.org/?c=1#!/
+• Cookie-Deaktivierungsseite der Netzwerkwerbeinitiative: http://optout.networkadvertising.org/?c=1#!/
+• Cookie-Deaktivierungsseite der US-amerikanischen Website: http://optout.aboutads.info/?c=2#!/
+• Cookie-Deaktivierungsseite der europäischen Website: http://optout.networkadvertising.org/?c=1#!/
 
 Gängige Browser bieten die Einstellungsoption, Cookies nicht zuzulassen. Hinweis: Es ist nicht gewährleistet, dass Sie auf alle Funktionen dieser Website ohne Einschränkungen zugreifen können, wenn Sie entsprechende Einstellungen vornehmen.
 
@@ -72,9 +72,9 @@ Alternativ verhindern Sie mit einem Klick auf diesen Link, dass Google Analytics
 
 Hier finden Sie weitere Informationen zur Datennutzung durch die Google Inc.: 
 
-•	https://policies.google.com/privacy/partners?hl=de (Daten, die von Google-Partnern erhoben werden)
-•	https://adssettings.google.de/authenticated (Einstellungen über Werbung, die Ihnen angezeigt wird)
-•	https://policies.google.com/technologies/ads?hl=de (Verwendung von Cookies in Anzeigen)
+• https://policies.google.com/privacy/partners?hl=de (Daten, die von Google-Partnern erhoben werden)
+• https://adssettings.google.de/authenticated (Einstellungen über Werbung, die Ihnen angezeigt wird)
+• https://policies.google.com/technologies/ads?hl=de (Verwendung von Cookies in Anzeigen)
 
 ## Nutzung von Social-Media-Plugins von Facebook
 
@@ -89,9 +89,9 @@ Das Plugin informiert die Facebook Inc. darüber, dass Sie als Nutzer diese Webs
 Nutzen Sie die Funktionen des Plugins – etwa indem Sie einen Beitrag teilen oder „liken“ –, werden die entsprechenden Informationen ebenfalls an die Facebook Inc. übermittelt.
 Möchten Sie verhindern, dass die Facebook. Inc. diese Daten mit Ihrem Facebook-Konto verknüpft, loggen Sie sich bitte vor dem Besuch dieser Website bei Facebook aus und löschen Sie die gespeicherten Cookies. Über Ihr Facebook-Profil können Sie weitere Einstellungen zur Datenverarbeitung für Werbezwecke tätigen oder der Nutzung Ihrer Daten für Werbezwecke widersprechen. Zu den Einstellungen gelangen Sie hier: 
 
-•	Profileinstellungen bei Facebook: https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen
-•	Cookie-Deaktivierungsseite der US-amerikanischen Website: http://optout.aboutads.info/?c=2#!/
-•	Cookie-Deaktivierungsseite der europäischen Website: http://optout.networkadvertising.org/?c=1#!/
+• Profileinstellungen bei Facebook: https://www.facebook.com/ads/preferences/?entry_product=ad_settings_screen
+• Cookie-Deaktivierungsseite der US-amerikanischen Website: http://optout.aboutads.info/?c=2#!/
+• Cookie-Deaktivierungsseite der europäischen Website: http://optout.networkadvertising.org/?c=1#!/
 
 Welche Daten, zu welchem Zweck und in welchem Umfang Facebook Daten erhebt, nutzt und verarbeitet und welche Rechte sowie Einstellungsmöglichkeiten Sie zum Schutz Ihrer Privatsphäre haben, können Sie in den Datenschutzrichtlinien von Facebook nachlesen. Diese finden Sie hier: https://www.facebook.com/about/privacy/ 
 
