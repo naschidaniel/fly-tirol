@@ -1,4 +1,4 @@
-FROM node:20-bullseye
+FROM node:20.12.2-bullseye
 
 ARG NUXT_PAGE
 
@@ -18,7 +18,7 @@ WORKDIR /app
 
 COPY .output  /app/
 
-ENV HOST 0.0.0.0
+ENV HOST=0.0.0.0
 
 EXPOSE $PORT
 
