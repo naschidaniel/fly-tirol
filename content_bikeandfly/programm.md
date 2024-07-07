@@ -106,8 +106,8 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Musik/DJ</li>
       <h4>Shows:</h4>
       <li>MTB - Freestyle Show - Fabian Dankl</li>
-      <li>Demo Paragleiter Show: 14:00 Uhr</li>
       <li>Alpenrosen Buam: 11:00 Uhr</li>
+      <li>Demo Paragleiter Show: 14:00 Uhr</li>
     </ul>
     <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival.</p>
   </div>
