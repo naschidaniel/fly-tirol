@@ -20,5 +20,5 @@ Thermikflüge sind in der Regel nur in den Frühjahrs- und Sommermonaten möglic
 
 Der angegebene Preis versteht sich **ohne** Lift und Fotos. 
 
-Alle Infos zu unseren Fotopaketen erhältst du von unserer Tandemhotline. 
-Kontaktiere uns gerne via WhatsApp. Die Nummer findest du hier -> [https://fly-tirol.com/kontakt](https://fly-tirol.com/kontakt).
+Alle Infos zu unseren Fotopaketen erhältst du von unserer **Tandemhotline.** 
+Kontaktiere diese gerne via WhatsApp. Die Nummer findest du hier -> [https://fly-tirol.com/kontakt](https://fly-tirol.com/kontakt).
