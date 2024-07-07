@@ -19,7 +19,8 @@
           !! KEINE SNEAKER !!
         </li>
         <li>
-          Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.<br>
+          Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.
+          
           !! Nimm im Sommer trotzdem immer eine Jacke mit !!.
         </li>
         <li>
@@ -27,7 +28,8 @@
           beim Fliegen schützt.
         </li>
         <li>
-          Ein Mindestgewicht von 25 kg und keine Einschränkung beim Gehen.<br>
+          Ein Mindestgewicht von 25 kg und keine Einschränkung beim Gehen.
+          
           Sollte es eine Einschränkung geben, teile uns dies bitte im Voraus
           mit, damit wir gemeinsam eine Lösung finden können.
         </li>
