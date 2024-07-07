@@ -21,4 +21,7 @@ Panoramaflüge sind das ganze Jahr über möglich und unterscheiden sich dadurch
 Bitte kontaktiere bei einer Onlinebuchung immer unsere Tandemhotline, da wir deinen Wunschtermin auf Wetterverhältnisse und unsere Verfügbarkeit abstimmen müssen.
 
 Der angegebene Preis versteht sich **ohne** Lift und Fotos. 
-Alle Infos zu unseren Fotopaketen erhältst du von unserer Tandemhotline. Die Nummer findest du hier -> [https://fly-tirol.com/kontakt](https://fly-tirol.com/kontakt).
+
+Alle Infos zu unseren Fotopaketen erhältst du von unserer **Tandemhotline.** 
+Kontaktiere diese gerne via WhatsApp. Die Nummer findest du hier -> [https://fly-tirol.com/kontakt](https://fly-tirol.com/kontakt).
+
