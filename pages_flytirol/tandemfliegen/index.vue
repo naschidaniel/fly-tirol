@@ -14,8 +14,8 @@
     <InfoBox headline="Voraussetzungen für deinen Tandemflug">
       <ul>
         <li>
-          Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.<br>
-          !! Keine Sneaker !!
+          Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.
+          **KEINE SNEAKER**
         </li>
         <li>
           Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.<br>
