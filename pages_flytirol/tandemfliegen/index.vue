@@ -21,7 +21,7 @@
         <li>
           Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.
           
-          !! Nimm im Sommer trotzdem immer eine Jacke mit !!.
+          !! Nimm im Sommer trotzdem immer eine Jacke mit !!
         </li>
         <li>
           Optische Brille oder Sonnenbrille sind empfehlenswert, da sie vor dem Fahrtwind
