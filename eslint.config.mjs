@@ -1,10 +1,12 @@
-module.exports = {
-  root: true,
-  env: {
-    browser: true,
-    node: true,
+import withNuxt from './.nuxt/eslint.config.mjs'
+
+export default withNuxt({
+  files: ['**/*.ts', '**/*.tsx'],
+}).override('nuxt/typescript/rules', {
+  rules: {
+    '@typescript-eslint/no-explicit-any': 'off',
   },
-  extends: ['@nuxt/eslint-config'],
+}).override('nuxt/configs', {
   rules: {
     'vue/multi-word-component-names': [
       'error',
@@ -68,4 +70,6 @@ module.exports = {
       },
     ],
   },
-}
+},
+
+)

@@ -8,7 +8,7 @@ const isBikeAndFly = process.env.NUXT_PAGE === 'bikeandfly'
 const isHydrogen = process.env.NUXT_PAGE === 'hydrogen'
 
 const licenses: License[] = Object.keys(packages.dependencies)
-  .map((dependency) =>
+  .map(dependency =>
     JSON.parse(
       readFileSync(`node_modules/${dependency}/package.json`, {
         encoding: 'utf8',
@@ -20,7 +20,7 @@ const licenses: License[] = Object.keys(packages.dependencies)
       (({
         name,
         version,
-        license
+        license,
       }) as License),
   )
 
@@ -32,9 +32,9 @@ if (!(isBikeAndFly || isFlyTirol || isHydrogen)) {
 
 if (
   !(
-    existsSync('data/metadataFlyTirol.ts') ||
-    existsSync('data/metadataBikeAndFly.ts') ||
-    existsSync('data/metadataHydrogen.ts')
+    existsSync('data/metadataFlyTirol.ts')
+    || existsSync('data/metadataBikeAndFly.ts')
+    || existsSync('data/metadataHydrogen.ts')
   )
 ) {
   console.error(
@@ -158,7 +158,6 @@ export default defineNuxtConfig({
       isFlyTirol,
       isBikeAndFly,
       isHydrogen,
-      // @ts-ignore
       licenses,
       xing: isHydrogen ? 'christian-weinberger-62aaa8114' : '',
       mail: isHydrogen
@@ -189,7 +188,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+
+  eslint: {
+    checker: true,
+    config: {
+      stylistic: true,
+    },
+  },
 
   typescript: {
     typeCheck: true,
@@ -205,5 +211,5 @@ export default defineNuxtConfig({
     },
   },
 
-  compatibilityDate: '2024-07-07'
+  compatibilityDate: '2024-07-07',
 })
