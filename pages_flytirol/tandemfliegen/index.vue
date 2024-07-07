@@ -15,7 +15,8 @@
       <ul>
         <li>
           Festes Schuhwerk - am besten Bergschuhe mit gutem Profil.
-          **KEINE SNEAKER**
+          
+          !! KEINE SNEAKER !!
         </li>
         <li>
           Sportliche und den Temperaturen sowie dem Wetter angepasste Kleidung.<br>
