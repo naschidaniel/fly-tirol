@@ -17,11 +17,11 @@ const licenses: License[] = Object.keys(packages.dependencies)
   )
   .map(
     ({ name, version, license }) =>
-      ({
+      (({
         name,
         version,
-        license,
-      }) as License,
+        license
+      }) as License),
   )
 
 if (!(isBikeAndFly || isFlyTirol || isHydrogen)) {
@@ -44,6 +44,7 @@ if (
 
 export default defineNuxtConfig({
   ssr: true,
+
   dir: {
     pages: isHydrogen
       ? 'pages_hydrogen'
@@ -56,6 +57,7 @@ export default defineNuxtConfig({
         ? '.public_bikeandfly'
         : '.public_flytirol',
   },
+
   app: {
     head: {
       htmlAttrs: {
@@ -186,6 +188,7 @@ export default defineNuxtConfig({
           : 'https://bikeandfly.at',
     },
   },
+
   modules: ['@nuxtjs/tailwindcss'],
 
   typescript: {
@@ -201,4 +204,6 @@ export default defineNuxtConfig({
       linkExactActiveClass: 'active',
     },
   },
+
+  compatibilityDate: '2024-07-07'
 })
