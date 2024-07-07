@@ -72,7 +72,7 @@ Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **A
       <li>Bike&Fly Touren Spezialpreis: 145€</li>
       <h4>Musik:</h4>
       <li>Musik/DJ</li>
-      <li>Yellow Brick – Band: 17:00 Uhr</li>
+      <li>Yellow Brick Road – Band: 17:00 Uhr</li>
       <li>REBEL MUSIG: 21:00 Uhr</li>
       <li>Afterparty – Alpenrosensaal: 22:00-04:00 Uhr</li>
       <h4>Shows:</h4>
