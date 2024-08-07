@@ -1,11 +1,11 @@
 /* generated using openapi-typescript-codegen -- do not edit */
 /* istanbul ignore file */
 /* tslint:disable */
-
-import type { Alert } from './Alert'
-import type { Order } from './Order'
-
+/* eslint-disable */
+import type { Alert } from './Alert';
+import type { Order } from './Order';
 export type ResponseOrder = {
-  alert: Alert
-  data: Order
-}
+    alert: Alert;
+    data: Order;
+};
+
