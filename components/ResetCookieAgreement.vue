@@ -5,26 +5,30 @@
       Hier finden Sie eine Auflistung aller gespeicherten Cookies.
     </div>
     <table class="w-full">
-      <tr class="border">
-        <th class="border">
-          Cookie-Name
-        </th>
-        <th class="border">
-          Cookie-Wert
-        </th>
-      </tr>
-      <tr
-        v-for="cookie of allCookies"
-        :key="cookie.name"
-        class="border"
-      >
-        <td class="p-1 text-sm lg:text-base align-top border text-center">
-          {{ cookie?.name }}
-        </td>
-        <td class="p-1 text-sm lg:text-base break-all border">
-          {{ cookie?.value }}
-        </td>
-      </tr>
+      <thead>
+        <tr class="border">
+          <th class="border">
+            Cookie-Name
+          </th>
+          <td class="border">
+            Cookie-Wert
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          v-for="cookie of allCookies"
+          :key="cookie.name"
+          class="border"
+        >
+          <th class="p-1 text-sm lg:text-base align-top border text-center">
+            {{ cookie?.name }}
+          </th>
+          <td class="p-1 text-sm lg:text-base break-all border">
+            {{ cookie?.value }}
+          </td>
+        </tr>
+      </tbody>
     </table>
     <div class="flex justify-center">
       <button
