@@ -2,20 +2,22 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
+import type { ShippingNoteOrder } from './ShippingNoteOrder';
 export type ShippingNote = {
     readonly id?: string;
+    orders: Array<ShippingNoteOrder>;
     readonly date_added?: string;
     comment?: string;
     email?: string;
-    shipping_name?: string;
-    shippig_address?: string;
-    shipping_city?: string;
-    shipping_country?: string;
+    name?: string;
+    address?: string;
+    zipcode?: string;
+    phone?: string;
+    city?: string;
+    country?: string;
     status?: ShippingNote.status;
-    shipping_dict_json?: any;
-    readonly shipping_pdf?: string;
-    shipping_number?: string;
-    orders: Array<string>;
+    readonly shippingnote_pdf?: string;
+    shippingnote_number?: string;
 };
 export namespace ShippingNote {
     export enum status {

@@ -4,6 +4,8 @@
 /* eslint-disable */
 import type { Cart } from './Cart';
 import type { OrderCheckout } from './OrderCheckout';
+import type { OrderItem } from './OrderItem';
+import type { OrderShippingNote } from './OrderShippingNote';
 export type Order = {
     readonly id?: string;
     cart?: Cart;
@@ -16,6 +18,8 @@ export type Order = {
     get_vatrate_dict: Record<string, string | null>;
     get_total_netto_price: number;
     get_total_price: number;
+    shippingnote: OrderShippingNote;
+    get_orderitems: Array<OrderItem>;
     address: string;
     city: string;
     readonly date_added?: string;
@@ -25,13 +29,13 @@ export type Order = {
     shipping_name?: string;
     shippig_address?: string;
     shipping_city?: string;
+    shipping_zipcode?: string;
     shipping_country?: string;
     email?: string;
     phone?: string;
     readonly invoice_pdf?: string;
     invoice_number?: string;
     invoice_date?: string | null;
-    invoice_data_json?: any;
     zipcode: string;
     customer?: number | null;
 };

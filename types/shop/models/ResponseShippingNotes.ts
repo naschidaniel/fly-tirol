@@ -3,9 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { Alert } from './Alert';
-import type { ResponseCategoriesData } from './ResponseCategoriesData';
-export type ResponseCategories = {
+import type { ResponseShippingNotesData } from './ResponseShippingNotesData';
+export type ResponseShippingNotes = {
     alert: Alert;
-    data: ResponseCategoriesData;
+    data: ResponseShippingNotesData;
 };
 

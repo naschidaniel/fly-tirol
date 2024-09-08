@@ -3,7 +3,9 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { Alert } from './Alert';
+import type { ResponseOrdersData } from './ResponseOrdersData';
 export type ResponseOrders = {
     alert: Alert;
+    data: ResponseOrdersData;
 };
 
