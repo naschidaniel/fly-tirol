@@ -2,7 +2,6 @@ import { ref } from 'vue'
 import type { Ref } from 'vue'
 import { useData } from './useData'
 import type { Product } from '@/types/shop/models/Product'
-import type { ResponseProduct } from '@/types/shop/models/ResponseProduct'
 import type { Cart } from '@/types/shop/models/Cart'
 import type { Alert } from '@/types/shop/models/Alert'
 import type { User } from '@/types/shop/models/User'
@@ -27,7 +26,7 @@ export function useBackend() {
   )
   async function initShopBackend() {
     if (!import.meta.client || isHydrogen) return
-    await useFetch<ResponseProduct>(`${backend}/shop/api/products`, {
+    await useFetch(`${backend}/shop/api/products`, {
       onResponse({ response }) {
         products.value = response._data?.data.products
         updateAlert(response._data?.alert)
