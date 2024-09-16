@@ -146,7 +146,7 @@ const bikeAndFlyData = [
     cardTitle: 'Expo Area',
     cardImage: '/media/shop/shop.jpg',
     description:
-      'An diesem Wochenende gibt es von Fly Tirol und Morgensonne auf alle Bike & Fly Angebot spezielle Vergünstigungen für alle Festival-Besucher. Reserviere dir schon jetzt deinen Platz für ein einzigartiges Erlebnis!',
+      'Besuche unsere Expo Area und tauche ein in die Welt der besten Bike- und Gleitschirmhersteller! Hier hast du die Gelegenheit, die neuesten Modelle und innovativsten Ausstattungen aus erster Hand zu erleben.',
     to: '/shop',
   },
   {
