@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-description:
+description: ""
 location: Westendorf
 bikeandfly: fly
 image: /media/shop/vortrag.jpg

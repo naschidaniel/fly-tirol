@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-description:
+description: ""
 location: Westendorf
 bikeandfly: bike&fly
 image: /media/shop/bike-and-fly-touren.jpg

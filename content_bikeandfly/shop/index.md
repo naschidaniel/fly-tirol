@@ -1,4 +1,4 @@
 ---
 title: Expo Area
-description:
+description: ""
 ---

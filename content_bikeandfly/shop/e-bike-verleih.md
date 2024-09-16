@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-description:
+description: ""
 location: Westendorf
 bikeandfly: bike
 image: /media/shop/e-bike-verleih.jpg
