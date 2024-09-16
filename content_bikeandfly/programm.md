@@ -3,28 +3,28 @@ title: Programm
 description: Bike and Fly Festival in Westendorf
 ---
 
-Drei Tage lang verwandelt sich das Gelände der Talstation der Alpenrosenbahn in Westendorf in ein Spektakel, das für jeden etwas zu bieten hat.
+Drei Tage lang verwandelt sich das Gelände der Talstation der Alpenrosenbahn in Westendorf in ein spektakuläres Event, das für jeden Besucher etwas zu bieten hat. Egal ob Adrenalinjunkie oder Genussmensch, ob jung oder alt – für alle Altersklassen wird ein abwechslungsreiches Programm geboten. Mit spannenden Aktivitäten und unvergesslichen Erlebnissen kommt garantiert keine Langeweile auf.
 
-Ob freitags am **Kids Day** mit einem **Bike & Parkour-Rennen** für alle Altersklassen oder einem spannenden **Vortrag vom X-Alps-Piloten Paul Guschelbauer** über seine Reise beim X-Alps. An allen drei Festivaltagen findet unter anderem ein **Bike- und Gleitschirm-Testival** statt, bei dem man das neueste Material testen kann.
+An allen drei Festivaltagen steht das Bike- und Gleitschirm-Testival im Mittelpunkt, bei dem Besucher die Möglichkeit haben, das neueste Equipment auszuprobieren und sich von Experten beraten zu lassen. Hier können die modernsten Bikes getestet oder der Nervenkitzel beim Gleitschirmfliegen erlebt werden – alles in der beeindruckenden Kulisse der Tiroler Alpen.
 
-Samstags findet der **Festival Day** statt. Hier werden neben den sportlichen Attraktionen wie einer **MTB-Freestyle-Show von Stefan Eberharter** und einer **Flugshow von zwei Weltmeistern** auch ordentlich mit Musikbands und DJs eingeheizt. Unter anderem sorgen **Yellow Brick Road** und **Rebel Musig** für gute Stimmung.
+Für beste Unterhaltung sorgen zudem zahlreiche Live-Bands, atemberaubende Flugshows und eine spektakuläre Mountainbike-Show, die das Publikum mit waghalsigen Stunts und eindrucksvollen Performances begeistern werden. Die perfekte Kombination aus Action und Show, die jeden in den Bann zieht.
 
-Ein besonderes Schmankerl ist samstags der **Wanderbird Cup**, ein Hike-&-Fly-Wettbewerb von **Paul Guschelbauer**, einem der erfolgreichsten Streckenflugpiloten, **in Kooperation mit Red Bull**.
+Wir hoffen, den Wanderbird Cup, einen Hike-&-Fly-Wettbewerb unter der Schirmherrschaft von Paul Guschelbauer, einem der erfolgreichsten Streckenflugpiloten der Welt, in Kooperation mit Red Bull, im Jahr 2025 wieder bei uns begrüßen zu dürfen.
 
-Im Anschluss an das Festival findet für alle, die noch nicht nach Hause gehen wollen, eine **Afterparty im Alpenrosensaal in Westendorf** statt. Der Mainact kommt dafür extra aus Berlin angereist.
+Am Sonntag beginnt der Tag entspannt mit einem gemütlichen Frühschoppen. Für musikalische Untermalung ist gesorgt, während lokale Spezialitäten und erfrischende Getränke bereitstehen, um den Tag in vollen Zügen zu genießen.
 
-Sonntags startet der **Family Day** mit einem entspannten Frühschoppen. Die **Alpenrosen Buam** hinterlegen mit volkstümlichen und modernen Liedern den finalen Tag des Festivals. Das **Wanderlokal** versorgt die Gäste des Bike-and-Fly-Festivals das ganze Wochenende über mit lokalen kulinarischen Köstlichkeiten. Für alle Abenteurer gibt es das ganze Wochenende über **Spezialpreise auf Tandemflüge, den Bike-Verleih und geführte Bike-(and-Fly)-Touren.**
+Das ganze Wochenende über gibt es für alle Abenteuerlustigen, Tandemflüge, einen Bike-Verleih sowie geführte Bike- und Fly-Touren. Egal, ob du abheben oder auf zwei Rädern durch die Berge sausen möchtest – hier ist für jeden das passende Abenteuer dabei!
 
 ## Timetable
 
 <div class="grid md:grid-cols-3 gap-4 mb-10">
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
-    <h2>Freitag, 09.08.24 – KIDS Day</h2>
-    <p>Einlass: 09:00-23:00 Uhr</p>
-    <h3>Tagesprogramm</h3>
+    <h2>Freitag, Coming Soon!</h2>
+    <p></p>
+    <h3></h3>
     <ul>
-      <h4>Verpflegung/Unterhaltung:</h4>
-      <li>Wanderlokal – Streetfood</li>
+      <h4></h4>
+      <li></li>
       <li>Hüpfburg</li>
       <h4>Charity:</h4>
       <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
