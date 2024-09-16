@@ -19,36 +19,7 @@ Das ganze Wochenende über gibt es für alle Abenteuerlustigen, Tandemflüge, ei
 
 <div class="grid md:grid-cols-3 gap-4 mb-10">
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
-    <h2>Freitag, Coming Soon!</h2>
-    <p></p>
-    <h3></h3>
-    <ul>
-      <h4></h4>
-      <li></li>
-      <li>Hüpfburg</li>
-      <h4>Charity:</h4>
-      <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
-      <h4>Bike:</h4>
-      <li>Testival Fahrrad</li>
-      <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      <li>Fahrrad Parkour</li>
-      <li>Fahrradverleih Spezialpreis: 20€</li>
-      <li>Bike&Parkour Rennen für Kinder und Erwachsene: 17:00 Uhr</li>
-      <li>Preisverteilung: 19:30 Uhr</li>
-      <h4>Fly:</h4>
-      <li>Testival Paragliding</li>
-      <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
-      <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      <h4>Musik:</h4>
-      <li>Musik/DJ (Kenny Baker unter Tags)</li>
-      <li>Musik/DJ (DJock Norris)</li>
-      <li>DJ Standy: 22:00-00:00 Uhr</li>
-      <h4>Shows:</h4>
-      <li>Demo Paragleiter Show: 15:00 Uhr</li>
-      <li>Vortrag von Paul Guschelbauer, Redbull Athlet – X Alps: 17:30 Uhr</li>
-      <li>MTB - Freestyle Show - Fabian Dankl: 18:30 Uhr</li>
-    </ul>
-    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival.</p>
+    <h2>Coming Soon!</h2>
   </div>
   <div class="bg-[#b0def1] shadow-md rounded-lg p-4">
     <h2>Samstag, 10.08.24 – Festival Day</h2>
