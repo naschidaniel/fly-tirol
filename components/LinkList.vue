@@ -32,9 +32,10 @@
               </p>
               <p class="pb-2">
                 Verpasse nicht dieses unvergessliche Wochenende voller
-                Adrenalin, Spaß und Musik! Sichere dir jetzt dein Ticket für das
-                Bike and Fly Sport &amp; Musik Festival im Brixental vom 09.08.
-                – 11.08.2024!
+                Adrenalin, Spaß und Musik!
+              </p></span>
+            <p class="pb-2">
+                Infos und Zeitraum für das "Bike and Fly" 2025 folgen bald! Seid bereit!
               </p></span>
             <span v-else>Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
               den wunderschönen Kitzbüheler Alpen genießen möchtest, du selbst
