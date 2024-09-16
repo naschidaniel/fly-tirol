@@ -22,65 +22,10 @@ Das ganze Wochenende über gibt es für alle Abenteuerlustigen, Tandemflüge, ei
     <h2>Coming Soon!</h2>
   </div>
   <div class="bg-[#b0def1] shadow-md rounded-lg p-4">
-    <h2>Samstag, 10.08.24 – Festival Day</h2>
-    <p>Einlass: 09:00-23:00 Uhr</p>
-    <h3>Tagesprogramm</h3>
-    <ul>
-      <h4>Verpflegung/Unterhaltung:</h4>
-      <li>Wanderlokal - Streetfood</li>
-      <li>Hüpfburg</li>
-      <h4>Charity:</h4>
-      <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
-      <li>Geben für Leben - Leukämiehilfe Österreich (Stammzelltypisierungsaktion & Info): 14:00 - 16:30 Uhr</li>
-      <h4>Bike:</h4>
-      <li>Testival Fahrrad</li>
-      <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      <li>Fahrrad Parkour</li>
-      <li>Fahrradverleih Spezialpreis: 20€</li>
-      <h4>Fly:</h4>
-      <li>Testival Paragliding</li>
-      <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
-      <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      <h4>Musik:</h4>
-      <li>Musik/DJ</li>
-      <li>Yellow Brick Road – Band: 17:00 Uhr</li>
-      <li>REBEL MUSIG: 21:00 Uhr</li>
-      <li>Afterparty – Alpenrosensaal: 22:00-04:00 Uhr</li>
-      <h4>Shows:</h4>
-      <li>Redbull Hike&Fly Wettbewerb: 10:00 Uhr</li>
-      <li>Demo Paragleiter Show: 12:00/14:00/16:00 Uhr</li>
-      <li>MTB - Freestyle Show - Fabian Dankl 12:30/14:30 Uhr</li>
-      <li>MTB – Freestyle Show – Stephan Eberharter: 15:00/20:00 Uhr</li>
-      </ul>
-    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival und zur Festival- Afterparty.</p>
+    <h2>Coming Soon!</h2>
   </div>
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
-    <h2>Sonntag, 11.08 – Family Day</h2>
-    <p>Einlass - Frühshoppen: 09:00 – open end (21:00 Uhr)</p>
-    <h3>Tagesprogramm</h3>
-    <ul>
-      <h4>Verpflegung/Unterhaltung:</h4>
-      <li>Wanderlokal – Streetfood</li>
-      <li>Hüpfburg</li>
-      <h4>Charity:</h4>
-      <li>Große Mukoviszidose-Tombola für einen guten Zweck</li>
-      <h4>Bike:</h4>
-      <li>Testival Fahrrad</li>
-      <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      <li>Fahrrad Parkour</li>
-      <li>Fahrradverleih Spezialpreis: 20€</li>
-      <h4>Fly:</h4>
-      <li>Testival Paragliding</li>
-      <li>Tandemflüge Spezialpreis: 95€ inklusive Fotos & Videos</li>
-      <li>Bike&Fly Touren Spezialpreis: 145€</li>
-      <h4>Musik:</h4>
-      <li>Musik/DJ</li>
-      <h4>Shows:</h4>
-      <li>MTB - Freestyle Show - Fabian Dankl</li>
-      <li>Alpenrosen Buam: 11:00 Uhr</li>
-      <li>Demo Paragleiter Show: 14:00 Uhr</li>
-    </ul>
-    <p>Zusätzlich gibt es Shuttle-Transfer vom Parkplatz zum Festival.</p>
+    <h2>Coming Soon!</h2>
   </div>
 </div>
 
