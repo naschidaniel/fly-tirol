@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-description: Tandemflüge
+description:
 location: Westendorf
 bikeandfly: fly
 image: /media/shop/tandemfluege.jpg
