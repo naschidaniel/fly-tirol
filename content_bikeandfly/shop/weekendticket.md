@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-description: Weekendticket
+description:
 location: Westendorf
 bikeandfly: bike&fly
 image: /media/shop/weekendticket.jpg
