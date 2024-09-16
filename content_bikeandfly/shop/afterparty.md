@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-description: Afterparty
+description:
 location: Westendorf
 bikeandfly: bike&fly
 image: /media/shop/afterparty.jpg
