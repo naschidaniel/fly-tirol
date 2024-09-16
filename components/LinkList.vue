@@ -33,8 +33,8 @@
               <p class="pb-2">
                 Verpasse nicht dieses unvergessliche Wochenende voller
                 Adrenalin, Spaß und Musik!
-              </p></span>
-            <p class="pb-2">
+              </p>
+              <p class="pb-2">
                 Infos und Zeitraum für das "Bike and Fly" 2025 folgen bald! Seid bereit!
               </p></span>
             <span v-else>Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in

@@ -9,5 +9,7 @@ export type ShopSettings = {
     voucher_number_prefix?: string;
     allowed_payment_methods: Array<string>;
     readonly available_payment_methods?: string;
+    generate_invoice?: boolean;
+    generate_invoice_payment_methods?: Array<string>;
 };
 

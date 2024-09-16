@@ -6,10 +6,10 @@
       picture="/media/page-header.jpg"
     >
       <p>
-        Die Vorbereitungen für 2025 laufen bereits auf Hochtouren! 
-        
+        Die Vorbereitungen für 2025 laufen bereits auf Hochtouren!
+
         Es erwartet euch wieder ein unvergessliches Erlebnis mit vielen Highlights und neuen Überraschungen, die das Event noch spektakulärer machen werden.
-        
+
         Bleibt gespannt auf weitere Details!
       </p>
     </PageHeader>
