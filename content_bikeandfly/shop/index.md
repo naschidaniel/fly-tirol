@@ -1,4 +1,4 @@
 ---
-title: shop
-description: shop
+title: Expo Area
+description:
 ---
