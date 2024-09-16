@@ -1,6 +1,6 @@
 ---
 title: Coming Soon!
-description: Bike Parkour Rennen
+description:
 location: Westendorf
 bikeandfly: bike
 image: /media/shop/bike-parkour-rennen.jpg
