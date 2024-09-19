@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Strategic Advice for your Green Hydrogen Projects</title>
+    <meta name="description" content="We are an advisory service to provide strategic advice to all actors seeking to advance their green hydrogen Agenda and to start roll-out.!">
+    <meta name="author" content="hydrogen-advisers.eu">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body style="margin:0;padding:0">
+    <div id="map" style="height: 400px;"></div>
+    <script>
+      function openMapsLink(e) {
+          window.open(`https://www.google.at/maps/place/Kleinvolderbergstra%C3%9Fe+7a,+6111+Kleinvolderberg/@47.2822362,11.5573417,17z/`)
+        }
+        const map = L.map('map').setView([47.28238541530233, 11.559954184214451], 14);
+        L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: "<a href='https://osm.org/copyright'>OpenStreetMap</a> contributors",
+            maxZoom: 18,
+        }).addTo(map);
+
+        L.marker([47.28238541530233, 11.559954184214451]).bindTooltip("Kleinvolderbergstraße 7a Volders, Österreich", {"permanent": true}).addTo(map).on('click', (e) => openMapsLink(e));
+    </script>
+</body>
+</html>

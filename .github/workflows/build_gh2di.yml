@@ -1,29 +1,33 @@
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
-name: Build latest
+name: Build gh2di.eu
 
 jobs:
   build:
-    strategy:
-      fail-fast: false
-      matrix:
-        page: [flytirol, bikeandfly, hydrogen, gh2di]
     runs-on: ubuntu-latest
-    name: Build ${{ matrix.page }} latest
+    name: Build gh2di.at
     env:
-      NUXT_PAGE: ${{ matrix.page }}
-      NUXT_BACKEND: ${{ matrix.page }}
+      NUXT_PAGE: gh2di
+      NUXT_BACKEND: gh2di
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: '20.12.2'
       - run: yarn install
-      - run: yarn upgrade --latest
       - name: create .nuxt tsconfig
         run: mkdir .nuxt && echo "{}" > .nuxt/tsconfig.json
       - name: create-public
-        run: yarn create-public
+        run: yarn create-public:gh2di
+      - name: get image-optimizer
+        run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.5.0/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
+      - name: optimize-images
+        run: yarn optimize-images:gh2di
       - name: generateMediaInformation
         run: yarn generateMediaInformation
       - name: generateContent

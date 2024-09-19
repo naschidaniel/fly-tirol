@@ -14,7 +14,7 @@ const alert: Ref<Alert | undefined> = ref(undefined)
 const isShowAlert: Ref<boolean> = ref(false)
 
 export function useBackend() {
-  const { backend, isHydrogen } = useData()
+  const { backend, isHydrogen, isGh2di } = useData()
 
   const cartItemsLength = computed(
     () => cart.value?.get_cart_items?.length || 0,
@@ -25,7 +25,7 @@ export function useBackend() {
       && cart.value?.get_cart_items?.length >= 1,
   )
   async function initShopBackend() {
-    if (!import.meta.client || isHydrogen) return
+    if (!import.meta.client || isHydrogen || isGh2di) return
     await useFetch(`${backend}/shop/api/products`, {
       onResponse({ response }) {
         products.value = response._data?.data.products
@@ -56,7 +56,7 @@ export function useBackend() {
   }
 
   async function initCart() {
-    if (!import.meta.client || isHydrogen) return
+    if (!import.meta.client || isHydrogen || isGh2di) return
     const _cartId = localStorage.getItem('cartId')
     if (_cartId === null) {
       console.log('Cart ID is null')
@@ -99,7 +99,7 @@ export function useBackend() {
   }
 
   async function getCsrfToken(): Promise<any> {
-    if (!import.meta.client || isHydrogen) return
+    if (!import.meta.client || isHydrogen || isGh2di) return
     await useFetch(`${backend}/shop/api/getcsrf/`, {
       method: 'GET',
       onResponse() {
@@ -118,7 +118,7 @@ export function useBackend() {
   }
 
   async function whoami(): Promise<any> {
-    if (!import.meta.client || isHydrogen) return
+    if (!import.meta.client || isHydrogen || isGh2di) return
     await useFetch(`${backend}/shop/api/user/whoami/`, {
       method: 'GET',
       onResponse({ response }) {
