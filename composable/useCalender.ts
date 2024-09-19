@@ -53,8 +53,8 @@ export function useCalender() {
     )
     const _products
       = productPath !== undefined
-        ? response.data.filter((p: Product) => p.href === productPath)
-        : response.data
+        ? response.data.products.filter((p: Product) => p.href === productPath)
+        : response.data.products
     calender.value = _products
       .flatMap((p: Product) => {
         return p.variants.flatMap((v: ProductVariant) => {
