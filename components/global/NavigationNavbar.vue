@@ -79,8 +79,12 @@
           to="/wanderlokal"
         />
         <NavigationNavbarLink
-          name="Shop"
-          to="/shop"
+          name="Expo Area"
+          to="/expo"
+        />
+        <NavigationNavbarLink
+          name="Charity"
+          to="/charity"
         />
         <NavigationNavbarLink
           name="Partner"

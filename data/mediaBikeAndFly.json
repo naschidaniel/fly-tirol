@@ -126,6 +126,34 @@
     "alt": "",
     "title": ""
   },
+  "/media/expo/hersteller1.jpg": {
+    "url": "/media/expo/hersteller1.jpg",
+    "path": "/media/expo/",
+    "file": "hersteller1.jpg",
+    "stem": "hersteller1",
+    "dimensions": {
+      "height": 1370,
+      "width": 1350,
+      "type": "jpg",
+      "ratio": 0.985
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/expo/hersteller2.jpg": {
+    "url": "/media/expo/hersteller2.jpg",
+    "path": "/media/expo/",
+    "file": "hersteller2.jpg",
+    "stem": "hersteller2",
+    "dimensions": {
+      "height": 1370,
+      "width": 1350,
+      "type": "jpg",
+      "ratio": 0.985
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/gleitschirm-testival/gallerie/fff.jpg": {
     "url": "/media/gleitschirm-testival/gallerie/fff.jpg",
     "path": "/media/gleitschirm-testival/gallerie/",
