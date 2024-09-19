@@ -1,6 +1,7 @@
 const isBikeAndFly = process.env.NUXT_PAGE === 'bikeandfly'
 const isFlyTirol = process.env.NUXT_PAGE === 'flytirol'
 const isHydrogen = process.env.NUXT_PAGE === 'hydrogen'
+const isGh2di = process.env.NUXT_PAGE === 'gh2di'
 
 const colors = require('tailwindcss/colors')
 
@@ -23,10 +24,6 @@ const content = [
   'components/**/*.vue',
   'layouts/**/*.vue',
   'pages/**/*.vue',
-  'content_flytirol/**/*.vue',
-  'content_bikeandfly/**/*.vue',
-  'pages_flytirol/**/*.vue',
-  'pages_bikeandfly/**/*.vue',
   'plugins/**/*.{js,ts}',
   'app.vue',
   'error.vue',
@@ -36,7 +33,9 @@ isBikeAndFly
   ? content.push('pages_bikeandfly/**/*.vue')
   : isFlyTirol
     ? content.push('pages_flytirol/**/*.vue')
-    : content.push('pages_flytirol/**/*.vue')
+    : isHydrogen
+      ? content.push('pages_hydrogen/**/*.vue')
+      : content.push('pages_gh2di/**/*.vue')
 
 const brandColor = isBikeAndFly ? '#22211f' : '#160D42'
 
@@ -63,8 +62,8 @@ module.exports = {
         hydroblue: '#3984bc',
       },
       fontFamily: {
-        sans: isHydrogen ? ['Comfortaa', 'RedHatText', 'sans-serif'] : isBikeAndFly ? ['Glimer', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
-        heading: isHydrogen ? ['Comfortaa-Bold', 'RedHatText', 'sans-serif'] : isBikeAndFly ? ['Glimer-Bold', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
+        sans: (isHydrogen || isGh2di) ? ['Comfortaa', 'RedHatText', 'sans-serif'] : isBikeAndFly ? ['Glimer', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
+        heading: (isHydrogen || isGh2di) ? ['Comfortaa-Bold', 'RedHatText', 'sans-serif'] : isBikeAndFly ? ['Glimer-Bold', 'RedHatText', 'sans-serif'] : ['RedHatText', 'sans-serif'],
       },
       spacing: {
         '0.75': '0.1875rem',

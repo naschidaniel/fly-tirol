@@ -10,6 +10,7 @@ export function useData() {
   const isDevelopment: boolean = config.public.isDevelopment
   const isFlyTirol: boolean = config.public.isFlyTirol
   const isHydrogen: boolean = config.public.isHydrogen
+  const isGh2di: boolean = config.public.isGh2di
   const isBikeAndFly: boolean = config.public.isBikeAndFly
   const licenses: License[] = config.public.licenses as License[]
   const mail: string = config.public.mail
@@ -27,6 +28,7 @@ export function useData() {
     isFlyTirol,
     isBikeAndFly,
     isHydrogen,
+    isGh2di,
     licenses,
     mail,
     phone,

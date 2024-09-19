@@ -2,13 +2,15 @@ import { readFileSync, writeFile } from 'fs'
 import { glob } from 'glob'
 import sizeOf from 'image-size'
 
-for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen']) {
+for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen', 'gh2di']) {
   const constName
-    = nuxtPage === 'hydrogen'
-      ? 'mediaHydrogen'
-      : nuxtPage === 'flytirol'
-        ? 'mediaFlyTirol'
-        : 'mediaBikeAndFly'
+    = nuxtPage === 'gh2di'
+      ? 'mediaGh2di'
+      : nuxtPage === 'hydrogen'
+        ? 'mediaHydrogen'
+        : nuxtPage === 'flytirol'
+          ? 'mediaFlyTirol'
+          : 'mediaBikeAndFly'
   const mediaJson = JSON.parse(readFileSync(`data/${constName}.json`))
   const images = glob.sync(`public_${nuxtPage}/media/**/*.{jpg,png}`)
   const staticPath = `public_${nuxtPage}`

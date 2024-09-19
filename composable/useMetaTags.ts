@@ -24,12 +24,14 @@ export function useMetaTags() {
         property: 'og:description',
         content: page.value.description,
       },
-      {
+    ]
+    if (config.public.isBikeAndFly || config.public.isFlyTirol) {
+      meta.push({
         hid: 'og:image',
         property: 'og:image',
         content: config.public.isBikeAndFly
-          ? 'https://bikeandfly.at/media/BikeAndFlyLogo_sm.jpg'
-          : 'https://fly-tirol.com/media/FlyTirolLogo_sm.jpg',
+          ? 'https://bikeandfly.at/media/BikeAndFlyLogo_384.jpg'
+          : 'https://fly-tirol.com/media/FlyTirolLogo_384.jpg',
       },
       {
         hid: 'og:type',
@@ -42,8 +44,8 @@ export function useMetaTags() {
         content: config.public.isBikeAndFly
           ? `https://bikeandfly.at${page.value.path}`
           : `https://fly-tirol.com${page.value.path}`,
-      },
-    ]
+      })
+    }
     useHead({
       meta,
       title,
