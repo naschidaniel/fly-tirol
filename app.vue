@@ -2,7 +2,7 @@
   <div>
     <div class="flex min-h-screen flex-col">
       <SiteGlobalAlert v-if="isShowAlert" />
-      <SiteCookieBanner v-if="!isHydrogen || !isGh2di" />
+      <SiteCookieBanner v-if="!(isHydrogen || isGh2di)" />
       <SiteHeader
         v-if="!isGh2di"
         class="py-6"
