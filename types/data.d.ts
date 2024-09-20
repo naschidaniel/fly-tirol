@@ -54,10 +54,3 @@ export interface TeamMember {
   picture: string
   position: string
 }
-
-export interface ExpoEntry {
-  information: string
-  name: string
-  picture: string
-  href: string
-}

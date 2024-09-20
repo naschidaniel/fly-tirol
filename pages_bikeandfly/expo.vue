@@ -20,7 +20,9 @@
         </p>
       </div>
     </PageHeader>
-    <ExpoList :items="items" />
+    <div class="max-w-90 w-full mx-auto py-6">
+      <Expo class="nuxt-content" />
+    </div>
     <SocialBar />
   </div>
 </template>
@@ -28,24 +30,8 @@
 <script setup lang="ts">
 import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
-import ExpoList from '@/components/ExpoList.vue'
-import type { ExpoEntry } from '~~/types/data'
+import Expo from '@/content_bikeandfly/expo.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()
-
-const items: ExpoEntry[] = [
-  {
-    name: 'Hersteller 1',
-    picture: '/media/expo/hersteller1.jpg',
-    href: 'https://bikeandfly.at',
-    information: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-  },
-  {
-    name: 'Hersteller 2',
-    picture: '/media/expo/hersteller2.jpg',
-    href: 'https://bikeandfly.at',
-    information: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam',
-  },
-]
 </script>
