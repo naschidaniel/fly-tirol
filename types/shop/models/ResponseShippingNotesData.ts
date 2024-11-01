@@ -5,5 +5,6 @@
 import type { ShippingNote } from './ShippingNote';
 export type ResponseShippingNotesData = {
     shippingnotes: Array<ShippingNote>;
+    count: number;
 };
 

@@ -5,5 +5,6 @@
 import type { Category } from './Category';
 export type ResponseCategoriesData = {
     categories: Array<Category>;
+    count: number;
 };
 

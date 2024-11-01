@@ -2,9 +2,9 @@
 /* istanbul ignore file */
 /* tslint:disable */
 /* eslint-disable */
-import type { Voucher } from './Voucher';
-export type ResponseVouchersData = {
-    vouchers: Array<Voucher>;
+import type { User } from './User';
+export type ResponseAccountsData = {
+    users: Array<User>;
     count: number;
 };
 

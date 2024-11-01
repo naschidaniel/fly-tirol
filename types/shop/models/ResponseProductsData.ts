@@ -5,5 +5,6 @@
 import type { Product } from './Product';
 export type ResponseProductsData = {
     products: Array<Product>;
+    count: number;
 };
 
