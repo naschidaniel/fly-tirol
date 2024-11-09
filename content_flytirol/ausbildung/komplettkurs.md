@@ -12,11 +12,9 @@ order: 1
 
 ## Vom Fußgänger zum Piloten
 
-Unser Komplettpaket bietet alles, was du benötigst, um ein **eigenständiger Pilot** zu werden! Du profitierst dabei von allen genannten Vorteilen, die auch bei der Buchung einzelner Kurse gelten – angefangen vom Grundkurs über die Höhenflugseminare, den Theoriekurs und die Leihausrüstung. Durch die Buchung des A-Schein Komplettkurses musst du nicht jeden Kurs einzeln buchen und **sparst dabei sogar**!
+Mit diesem exklusiven Kurs wirst du in nur zwei Wochen vom Anfänger zum echten Profi am Himmel! Während der theoretischen und praktischen Grundausbildung wirst du erste Flugversuche unternehmen und Schritt für Schritt wertvolle Erfahrungen im idealen Fluggelände sammeln. So wirst du optimal auf die A-Schein Prüfung vorbereitet – sowohl theoretisch als auch praktisch. 
 
-Der **A-Schein Komplettkurs** setzt sich aus dem **Grundkurs**, dem **Theoriekurs** und den **Höhenflügen** zusammen und bildet somit das Gesamtpaket, um vom Fußgänger zum Piloten zu werden.
-
-**Der Grundkurs** sollte **innerhalb einer Woche** absolviert werden und ist drei Jahre lang gültig, um die Lizenz abzuschließen. Die **Höhenflüge** kannst du nach Absprache mit uns **zeitlich flexibel** gestalten, um sie optimal auf dich anzupassen.
+Der Kompaktkurs überzeugt nicht nur durch seinen hervorragenden Preisvorteil, sondern bietet auch die Flexibilität, den Kurs auf einen längeren Zeitraum zu verteilen, z.B. in zwei einwöchige Einheiten.
 
 Dein Ziel ist es, **40 Höhenflüge** zu absolvieren, die dich dann zur **praktischen Prüfung** berechtigen. Die **theoretische Prüfung** kann bereits vorher abgelegt werden.
 
