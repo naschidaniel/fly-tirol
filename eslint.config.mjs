@@ -6,7 +6,7 @@ export default withNuxt({
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
   },
-}).override('nuxt/configs', {
+}).override('nuxt/javascript', {
   rules: {
     'vue/multi-word-component-names': [
       'error',

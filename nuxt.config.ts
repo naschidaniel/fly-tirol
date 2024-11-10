@@ -45,22 +45,11 @@ if (
 }
 
 export default defineNuxtConfig({
+
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
   ssr: true,
 
-  dir: {
-    pages: isGh2di
-      ? 'pages_gh2di'
-      : isHydrogen
-        ? 'pages_hydrogen'
-        : isBikeAndFly
-          ? 'pages_bikeandfly'
-          : 'pages_flytirol',
-    public: isHydrogen
-      ? '.public_hydrogen'
-      : isBikeAndFly
-        ? '.public_bikeandfly'
-        : '.public_flytirol',
-  },
+  components: true,
 
   app: {
     head: {
@@ -148,7 +137,11 @@ export default defineNuxtConfig({
       ? ['~/assets/css/main.css', '~/assets/css/bikeandfly.css']
       : ['~/assets/css/main.css', '~/assets/css/flytirol.css'],
 
-  components: true,
+  router: {
+    options: {
+      linkExactActiveClass: 'active',
+    },
+  },
 
   runtimeConfig: {
     public: {
@@ -209,7 +202,26 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+  dir: {
+    pages: isGh2di
+      ? 'pages_gh2di'
+      : isHydrogen
+        ? 'pages_hydrogen'
+        : isBikeAndFly
+          ? 'pages_bikeandfly'
+          : 'pages_flytirol',
+    public: isHydrogen
+      ? '.public_hydrogen'
+      : isBikeAndFly
+        ? '.public_bikeandfly'
+        : '.public_flytirol',
+  },
+
+  compatibilityDate: '2024-07-07',
+
+  typescript: {
+    typeCheck: true,
+  },
 
   eslint: {
     checker: true,
@@ -218,19 +230,7 @@ export default defineNuxtConfig({
     },
   },
 
-  typescript: {
-    typeCheck: true,
-  },
-
   tailwindcss: {
     configPath: '~/tailwind.config.cjs',
   },
-
-  router: {
-    options: {
-      linkExactActiveClass: 'active',
-    },
-  },
-
-  compatibilityDate: '2024-07-07',
 })
