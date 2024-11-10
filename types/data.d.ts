@@ -27,7 +27,6 @@ export interface MediaInformation {
 
 export interface MetaData {
   bikeandfly?: 'bike' | 'bike&fly' | 'fly'
-  lang: string
   category: string
   description: string
   draft?: string
@@ -38,6 +37,7 @@ export interface MetaData {
   imageGallery?: string
   included?: string
   isAppointment?: string
+  lang: string
   location?: string
   order?: number
   path: string

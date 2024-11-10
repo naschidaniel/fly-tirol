@@ -28,6 +28,8 @@
             :duration="metadata.duration"
             :praxis="metadata.praxis"
             :flight-duration="metadata.flightDuration"
+            :included="metadata.included"
+            :excluded="metadata.excluded"
             :theorie="metadata.theorie"
             :price="price"
             :dates="product?.total_dates"

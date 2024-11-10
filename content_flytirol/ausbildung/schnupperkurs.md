@@ -6,6 +6,7 @@ image: /media/ausbildung/schnupperkurs.jpg
 theorie: 1 Theorieeinheit
 praxis: 1 Tag am Übungshang
 order: 5
+included: inklusive Leihausrüstung
 ---
 
 # Schnupperkurs

@@ -6,6 +6,7 @@ image: /media/ausbildung/tagesbetreuung.jpg
 theorie: nach Tagesprogramm
 praxis: nach Tagesprogramm
 order: 6
+excluded: exklusive Leihausrüstung
 ---
 
 # Tagesbetreuung
