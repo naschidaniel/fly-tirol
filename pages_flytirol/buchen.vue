@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
-    <h1>Buchen</h1>
+    <h1>Mein Warenkorb</h1>
     <Cart />
   </div>
 </template>

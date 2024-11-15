@@ -13,6 +13,7 @@ export default withNuxt({
       {
         ignores: [
           '[...slug]',
+          'account',
           'afterparty',
           'Agb',
           'Alert',

@@ -49,6 +49,10 @@
           name="Service"
           to="/service"
         />
+        <NavigationNavbarLink
+          name="Kontakt"
+          to="/kontakt"
+        />
       </nav>
       <nav
         v-else-if="isBikeAndFly"
@@ -90,6 +94,10 @@
           name="Partner"
           to="/partner"
         />
+        <NavigationNavbarLink
+          name="Kontakt"
+          to="/kontakt"
+        />
       </nav>
       <nav
         v-else
@@ -119,6 +127,10 @@
           name="PARTNER"
           to="/partner"
         />
+        <NavigationNavbarLink
+          name="CONTACT"
+          to="/contact"
+        />
       </nav>
     </div>
 
@@ -147,18 +159,13 @@
         <NuxtLink
           v-if="!isHydrogen"
           class="btn-primary"
-          to="/kontakt"
+          to="/account"
           exact
         >
-          <span>Kontakt</span>
-        </NuxtLink>
-        <NuxtLink
-          v-else
-          class="btn-primary"
-          to="/contact"
-          exact
-        >
-          <span>CONTACT</span>
+          <IconOutlineUser
+            class="mr-1"
+            style="height: 1em; width: 1em"
+          />
         </NuxtLink>
       </div>
       <div class="xl:mr-0 xl:hidden z-50">
@@ -184,6 +191,7 @@
 <script setup lang="ts">
 import IconOutlineMenu from '../icon/IconOutlineMenu.vue'
 import IconOutlineShoppingCart from '../icon/IconOutlineShoppingCart.vue'
+import IconOutlineUser from '../icon/IconOutlineUser.vue'
 import IconOutlineX from '../icon/IconOutlineX.vue'
 import NavigationNavbarLink from './NavigationNavbarLink.vue'
 import { useData } from '@/composable/useData'
