@@ -152,22 +152,16 @@
           ({{ cartItemsLength }})
         </NuxtLink>
       </div>
-      <div
-        class="mr-3 my-1 xl:my-0 z-10"
-        @click="toggleIfDropdownIsOpen()"
+      <a
+        v-if="!isHydrogen"
+        class="btn-primary mr-3 my-1 xl:my-0 z-10"
+        :href="user?.is_authenticated && user?.role === 'CUSTOMER' ? `/shop/user-ui/user?user-id=${user.id}` : user?.is_authenticated ? `/shop/admin-ui/user?user-id=${user.id}` : `/shop/user-ui/login`"
       >
-        <NuxtLink
-          v-if="!isHydrogen"
-          class="btn-primary"
-          to="/account"
-          exact
-        >
-          <IconOutlineUser
-            class="mr-1"
-            style="height: 1em; width: 1em"
-          />
-        </NuxtLink>
-      </div>
+        <IconOutlineUser
+          class="mr-1"
+          style="height: 1em; width: 1em"
+        />
+      </a>
       <div class="xl:mr-0 xl:hidden z-50">
         <button
           aria-label="Toggle Dropdown Menu"
@@ -200,7 +194,7 @@ import { useBackend } from '@/composable/useBackend'
 
 const { isFlyTirol, isBikeAndFly, isHydrogen } = useData()
 const { isOpen } = useNavigation()
-const { cartItemsLength } = useBackend()
+const { cartItemsLength, user } = useBackend()
 
 function toggleIfDropdownIsOpen() {
   if (isOpen.value) {

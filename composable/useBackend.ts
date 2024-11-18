@@ -155,6 +155,30 @@ export function useBackend() {
     })
   }
 
+  async function loginUser(email: string, password: string): Promise<void> {
+    const csrftoken = getCookie('csrftoken')
+    await useFetch(`${backend}/shop/api/user/login/`, {
+      method: 'POST',
+      body: {
+        email,
+        password,
+        next: '/account',
+      },
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'X-CSRFToken': csrftoken as string,
+      },
+      onResponse({ response }) {
+        user.value = response._data.data
+        updateAlert(response._data.alert)
+      },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
+    })
+  }
+
   function getProduct(category: string, slug: string): Product {
     const product: Product
       = products.value.find(
@@ -250,6 +274,7 @@ export function useBackend() {
     updateProduct,
     getCsrfToken,
     whoami,
+    loginUser,
     cartItemsLength,
     isCartItems,
     getProduct,
