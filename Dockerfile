@@ -1,4 +1,4 @@
-FROM node:20.12.2-bullseye
+FROM node:22.11.0-bullseye
 
 ARG NUXT_PAGE
 
