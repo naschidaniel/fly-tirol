@@ -70,9 +70,9 @@ export function useCalender() {
               month: o.start_month,
               monthLong: o.start_iso_date
                 ? new Date(o.start_iso_date as string).toLocaleString('de-de', {
-                  month: 'long',
-                  year: 'numeric',
-                })
+                    month: 'long',
+                    year: 'numeric',
+                  })
                 : undefined,
               value: o.value,
               options: p.variants.filter(e => !e.date_variant),
