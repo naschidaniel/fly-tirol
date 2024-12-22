@@ -8,7 +8,7 @@ praxis: –
 order: 1
 ---
 
-# Skill und Performance Training Brixental
+# Skill / Performance Training Brixental
 
 Entdecke das Brixental – wir zeigen Dir die besten Fluggebiete, und Du zeigst uns Deine Skills! Gemeinsam erreichen wir neue Höhen.
 
