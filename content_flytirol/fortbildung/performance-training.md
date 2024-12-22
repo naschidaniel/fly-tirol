@@ -3,9 +3,9 @@ title: Skill und Performance Training
 description: Erweitere deine Skills im Brixental 
 location: Brixental
 image: /media/fortbildung/performance
-theorie: -
+theorie: –
 praxis: –
-order: 1
+order: 6
 ---
 
 # Skill / Performance Training Brixental

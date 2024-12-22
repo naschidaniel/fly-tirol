@@ -131,7 +131,7 @@ function initSelectedVariants(): void {
   )
     return
   for (const variant of product.value.variants) {
-    updateSelectedVariants(variant, variant.options[0].value)
+    updateSelectedVariants(variant, variant.options[0]?.value)
   }
 }
 
