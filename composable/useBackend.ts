@@ -45,13 +45,13 @@ export function useBackend() {
     alert.value = value
     isShowAlert.value = value.type === 'error'
     if (value.type === 'error') {
-      console.error(value.message)
+      console.error(`${value.type} – ${value.message} - ${value.url}`)
     }
     else if (value.type === 'warning') {
-      console.warn(value.message)
+      console.warn(`${value.type} – ${value.message} - ${value.url}`)
     }
     else {
-      console.log(value.message)
+      console.log(`${value.type} – ${value.message} - ${value.url}`)
     }
   }
 
@@ -85,6 +85,7 @@ export function useBackend() {
           updateAlert({
             message: `Failed to init the Cart. The ${_cartId} has been removed from localStorage`,
             type: 'error',
+            url: '',
           })
           localStorage.removeItem('cartId')
           cartId.value = null
@@ -100,18 +101,21 @@ export function useBackend() {
 
   async function getCsrfToken(): Promise<any> {
     if (!import.meta.client || isHydrogen || isGh2di) return
-    await useFetch(`${backend}/shop/api/getcsrf/`, {
+    const url = `${backend}/shop/api/getcsrf/`
+    await useFetch(url, {
       method: 'GET',
       onResponse() {
         updateAlert({
           message: 'The csrf token has been set correct',
           type: 'success',
+          url: url,
         })
       },
       onResponseError() {
         updateAlert({
           message: 'Failed set the csrf token',
           type: 'error',
+          url: url,
         })
       },
     })
@@ -148,30 +152,6 @@ export function useBackend() {
         updateAlert(response._data.alert)
         localStorage.setItem('cartId', response._data.data.id)
         navigateTo('/buchen')
-      },
-      onResponseError({ response }) {
-        updateAlert(response._data?.alert)
-      },
-    })
-  }
-
-  async function loginUser(email: string, password: string): Promise<void> {
-    const csrftoken = getCookie('csrftoken')
-    await useFetch(`${backend}/shop/api/user/login/`, {
-      method: 'POST',
-      body: {
-        email,
-        password,
-        next: '/account',
-      },
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'X-CSRFToken': csrftoken as string,
-      },
-      onResponse({ response }) {
-        user.value = response._data.data
-        updateAlert(response._data.alert)
       },
       onResponseError({ response }) {
         updateAlert(response._data?.alert)
@@ -274,7 +254,6 @@ export function useBackend() {
     updateProduct,
     getCsrfToken,
     whoami,
-    loginUser,
     cartItemsLength,
     isCartItems,
     getProduct,
