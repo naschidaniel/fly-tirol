@@ -67,11 +67,14 @@ import Alert from '@/components/Alert.vue'
 import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
 import { useData } from '@/composable/useData'
+import { useBackend } from '@/composable/useBackend'
 import ProductVariants from '@/components/ProductVariants.vue'
 
+const { initProduct } = useBackend()
 const { page, getMetadata } = usePage()
 const { isFlyTirol, isBikeAndFly } = useData()
 
 const metadata = getMetadata(page.value.path)
+initProduct(page.value.category, page.value.slug)
 useMetaTags()
 </script>

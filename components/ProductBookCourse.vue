@@ -42,14 +42,16 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from 'vue'
 import ProductVariants from '@/components/ProductVariants.vue'
 import { useCalender } from '@/composable/useCalender'
 import { usePage } from '@/composable/usePage'
+import { useBackend } from '@/composable/useBackend'
 
 const { isCourse, page } = usePage()
+const { initProduct } = useBackend()
 const { calenderFiltered, initCalender, selectedDateString } = useCalender()
 
+initProduct(page.value.category, page.value.slug)
 onMounted(() => {
   initCalender(page.value.path)
 })

@@ -30,6 +30,12 @@ import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import ProductList from '@/components/ProductList.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
+import { useBackend } from '@/composable/useBackend'
+import { usePage } from '@/composable/usePage'
 
 useMetaTags()
+const { page } = usePage()
+const { initShopBackend } = useBackend()
+
+initShopBackend(page.value.category)
 </script>

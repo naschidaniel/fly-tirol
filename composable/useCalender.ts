@@ -45,7 +45,7 @@ export function useCalender() {
         'Content-Type': 'application/json',
       },
     }
-    const response = await fetch(`${backend}/shop/api/products`, request).then(
+    const response = await fetch(`${backend}/shop/api/products?categories=ausbildung,fortbildung,sicherheitstrainings,acrotrainings,reisen`, request).then(
       (response) => {
         const data = response.json()
         return data

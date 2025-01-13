@@ -18,7 +18,7 @@
       :is-show-date="false"
     />
     <div
-      v-if="product.variants?.length > 0"
+      v-if="product?.variants?.length > 0"
       class="mt-4 flex flex-wrap"
     >
       <div class="w-full p-2">
@@ -71,11 +71,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watchEffect } from 'vue'
-import type { ComputedRef, Ref } from 'vue'
+import { ref, watchEffect } from 'vue'
+import type { Ref } from 'vue'
 import Alert from '@/components/Alert.vue'
 import ProductDetails from '@/components/ProductDetails.vue'
-import type { Product } from '@/types/shop/models/Product'
 import type { ProductVariant } from '@/types/shop/models/ProductVariant'
 import type { ProductVariantOption } from '@/types/shop/models/ProductVariantOption'
 import { useFormat } from '@/composable/useFormat'
@@ -86,7 +85,7 @@ import { useCalender } from '~~/composable/useCalender'
 const { page, isCourse, getMetadata } = usePage()
 const { formatPrice, formatProductVariantOptionTitle } = useFormat()
 const { selectedDateString } = useCalender()
-const { getProduct, updateCart } = useBackend()
+const { updateCart, product } = useBackend()
 
 const pickedProduct: Ref<ProductVariant> = ref({} as ProductVariant)
 const metadata = getMetadata(page.value.path)
@@ -94,13 +93,8 @@ const selectedVariants: Ref<ProductVariantOption[]> = ref([])
 
 const selectedOptions: Ref<{ [key: string]: string | undefined }> = ref({})
 
-const product: ComputedRef<Product> = computed(() =>
-  getProduct(metadata?.category, metadata?.slug),
-)
-
 watchEffect(() => {
   if (product.value) {
-    resetSelectedDateString()
     initSelectedVariants()
   }
   if (selectedDateString.value) {
@@ -111,17 +105,6 @@ watchEffect(() => {
     }
   }
 })
-
-function resetSelectedDateString(): void {
-  if (
-    !product.value?.variants
-      ?.flatMap(o => o.options)
-      .map(a => a.value)
-      .includes(selectedDateString.value as string)
-  ) {
-    selectedDateString.value = undefined
-  }
-}
 
 function initSelectedVariants(): void {
   if (

@@ -59,10 +59,9 @@ import type { ComputedRef, Ref } from 'vue'
 import { useFormat } from '@/composable/useFormat'
 import { usePage } from '@/composable/usePage'
 import { useBackend } from '@/composable/useBackend'
-import type { Product } from '@/types/shop/models/Product'
 import ProductDetails from '@/components/ProductDetails.vue'
 
-const { updateCart, getProduct } = useBackend()
+const { updateCart, product } = useBackend()
 
 const { formatDate, formatPrice } = useFormat()
 const { page, getMetadata } = usePage()
@@ -72,10 +71,6 @@ const selectedDate: Ref<string> = ref('')
 const quantity: Ref<number> = ref(1)
 const isFormValid: Ref<boolean> = ref(true)
 const isDateValid: Ref<boolean> = ref(false)
-
-const product: ComputedRef<Product> = computed(() =>
-  getProduct(metadata?.category, metadata?.slug),
-)
 
 const today: ComputedRef<string> = computed(
   () => new Date().toISOString().split('T')[0],

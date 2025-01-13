@@ -40,6 +40,8 @@
 import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
+import { useBackend } from '@/composable/useBackend'
+import { usePage } from '@/composable/usePage'
 
 const serviceNumber = {
   href: 'tel:00436766422088',
@@ -51,4 +53,8 @@ const serviceMailAddress = {
 }
 
 useMetaTags()
+const { page } = usePage()
+const { initShopBackend } = useBackend()
+
+initShopBackend(page.value.category)
 </script>

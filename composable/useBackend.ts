@@ -1,6 +1,7 @@
 import { ref } from 'vue'
 import type { Ref } from 'vue'
 import { useData } from './useData'
+import { useCalender } from './useCalender'
 import type { Product } from '@/types/shop/models/Product'
 import type { Cart } from '@/types/shop/models/Cart'
 import type { Alert } from '@/types/shop/models/Alert'
@@ -12,9 +13,11 @@ const cart: Ref<Cart | undefined> = ref(undefined)
 const user: Ref<User | undefined> = ref(undefined)
 const alert: Ref<Alert | undefined> = ref(undefined)
 const isShowAlert: Ref<boolean> = ref(false)
+const product: Ref<Product> = ref({} as Product)
 
 export function useBackend() {
   const { backend, isHydrogen, isGh2di } = useData()
+  const { selectedDateString } = useCalender()
 
   const cartItemsLength = computed(
     () => cart.value?.get_cart_items?.length || 0,
@@ -24,11 +27,25 @@ export function useBackend() {
       cart.value?.get_cart_items?.length !== undefined
       && cart.value?.get_cart_items?.length >= 1,
   )
-  async function initShopBackend() {
+  async function initShopBackend(category: string) {
     if (!import.meta.client || isHydrogen || isGh2di) return
-    await useFetch(`${backend}/shop/api/products`, {
+    await useFetch(`${backend}/shop/api/products?categories=${category}`, {
       onResponse({ response }) {
         products.value = response._data?.data.products
+        updateAlert(response._data?.alert)
+      },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
+    })
+  }
+
+  async function initProduct(category: string, slug: string) {
+    if (!import.meta.client || isHydrogen || isGh2di) return
+    await useFetch(`${backend}/shop/api/product?category=${category}&slug=${slug}`, {
+      onResponse({ response }) {
+        product.value = response._data?.data
+        selectedDateString.value = response._data?.data.variants[0].options[0].value
         updateAlert(response._data?.alert)
       },
       onResponseError({ response }) {
@@ -260,5 +277,7 @@ export function useBackend() {
     updateCart,
     initCart,
     initShopBackend,
+    initProduct,
+    product,
   }
 }

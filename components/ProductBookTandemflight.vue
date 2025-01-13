@@ -58,11 +58,14 @@ import Alert from '@/components/Alert.vue'
 import ProductAppointment from '@/components/ProductAppointment.vue'
 import { usePage } from '@/composable/usePage'
 import { useMetaTags } from '@/composable/useMetaTags'
+import { useBackend } from '@/composable/useBackend'
 import ProductVariants from '@/components/ProductVariants.vue'
 
 useMetaTags()
 const { page } = usePage()
+const { initProduct } = useBackend()
 
+initProduct(page.value.category, page.value.slug)
 const isAppointment = computed(
   () => page.value.slug !== 'tandemflug-geschenkkarte',
 )
