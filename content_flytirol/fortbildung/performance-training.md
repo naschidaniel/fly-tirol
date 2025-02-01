@@ -53,3 +53,4 @@ ihr Können auf das nächste Level heben wollen.
 **Gezieltes Einschätzen & Trainieren:**
 - Der Flugbedingungen
 - Deiner Fähigkeiten
+- Deiner mentalen Herangehensweise
