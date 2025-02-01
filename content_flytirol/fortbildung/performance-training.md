@@ -10,23 +10,23 @@ order: 6
 
 # Skill / Performance Training Brixental
 
-Wir zeigen dir **das Brixental** und du zeigst uns **deine Skills!** Gemeinsam erreichen wir 
-**neue Höhen**.
+Wir zeigen dir **das Brixental**, und du zeigst uns **deine Skills!** Gemeinsam erreichen wir
+neue Höhen.
 
-Das Team von Fly Tirol steht in den Flugsituationen an deiner Seite. Gemeinsam finden 
-wir Wege, deine Komfortzone zu erweitern und Ruhe & Freude an deinem Flugstil zu 
-finden.
+Das Team von Fly Tirol steht dir **in allen Flugsituationen zur Seite**. Gemeinsam finden
+wir Wege, deine Komfortzone zu erweitern und mehr Ruhe & Freude in deinem Flugstil zu
+entwickeln.
 
-Wir begleiten dich im 5-Tageskurs durch die abwechslungsreichen Fluggebiete. 
+Wir begleiten dich in unserem **5-Tages-Kurs** durch abwechslungsreiche Fluggebiete.
 
-Soaring, Zwischenlanden, Aufdrehen – wir bringen DICH **mental und physisch an dein Ziel!** 
+Soaring, Zwischenlanden, Aufdrehen – wir bringen DICH **mental und physisch an dein Ziel!**
 
 ## Zielgruppe
 
-Pilotinnen & Piloten mit A-Schein/Paragleiterschein, die ihre Komfortzone verlassen und 
-ihr Können auf das nächste Level heben wollen.  
+Pilotinnen & Piloten mit A-Schein/Paragleiterschein, die ihre Komfortzone verlassen und
+ihr Können auf das nächste Level bringen wollen.
 
-### Voraussetzungen:
+### Voraussetzungen
 
 - A-Schein
 - Selbstständiges Starten/-Landen
