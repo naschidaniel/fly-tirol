@@ -12,6 +12,7 @@ export type OrderItem = {
     item_price?: number;
     is_shipping?: boolean;
     voucher_number?: any;
+    readonly updated_at?: string;
     product_vatrate?: OrderItem.product_vatrate;
     product_vatrate_float?: number;
     order: string;

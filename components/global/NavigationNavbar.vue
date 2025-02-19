@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between xl:w-full">
     <div
-      class="navbar--wrapper fixed flex justify-end p-16 pt-32 z-40 w-full h-screen xl:h-auto xl:relative xl:justify-center xl:p-0 xl:z-0"
+      class="navbar--wrapper fixed flex justify-end p-16 pt-60 z-40 w-full h-screen xl:h-auto xl:relative xl:justify-center xl:p-0 xl:z-0"
       :class="{ open: isOpen, closed: !isOpen }"
       @click="isOpen = !isOpen"
     >
@@ -59,36 +59,28 @@
         class="flex flex-col items-start xl:flex-row"
       >
         <NavigationNavbarLink
-          name="Home"
-          to="/"
-        />
-        <NavigationNavbarLink
           name="Programm"
           to="/programm"
         />
         <NavigationNavbarLink
-          name="Bike Testival"
-          to="/bike-testival"
+          name="Expo Area"
+          to="/expo-area"
         />
         <NavigationNavbarLink
-          name="Gleitschirm Testival"
-          to="/gleitschirm-testival"
-        />
-        <NavigationNavbarLink
-          name="Wanderbird"
+          name="Wanderbird Cup"
           to="/wanderbird"
         />
         <NavigationNavbarLink
-          name="Wanderlokal"
-          to="/wanderlokal"
+          name="Bike Parkour Race"
+          to="/bike-parkour-race"
         />
         <NavigationNavbarLink
-          name="Expo Area"
-          to="/expo"
+          name="Livemusik"
+          to="/livemusik"
         />
         <NavigationNavbarLink
-          name="Charity"
-          to="/charity"
+          name="Streetfood"
+          to="/streetfood"
         />
         <NavigationNavbarLink
           name="Partner"
@@ -140,7 +132,7 @@
         @click="toggleIfDropdownIsOpen()"
       >
         <NuxtLink
-          v-if="!isHydrogen"
+          v-if="isFlyTirol"
           class="btn-primary"
           to="/buchen"
           exact
@@ -153,7 +145,7 @@
         </NuxtLink>
       </div>
       <a
-        v-if="!isHydrogen"
+        v-if="isFlyTirol"
         class="btn-primary mr-3 my-1 xl:my-0 z-10"
         :href="user?.is_authenticated && user?.role === 'CUSTOMER' ? `/shop/user-ui/user?user-id=${user.id}` : user?.is_authenticated ? `/shop/admin-ui/user?user-id=${user.id}` : `/shop/user-ui/login`"
       >

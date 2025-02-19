@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="Charity"
+      headline="Livemusik"
       picture="/media/page-header.jpg"
     >
       <p>
@@ -10,7 +10,7 @@
       </p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6">
-      <Charity class="nuxt-content" />
+      <LiveMusik class="nuxt-content" />
     </div>
     <SocialBar />
   </div>
@@ -20,7 +20,7 @@
 import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
-import Charity from '@/content_bikeandfly/charity.vue'
+import LiveMusik from '@/content_bikeandfly/livemusik.vue'
 
 useMetaTags()
 </script>

@@ -4,13 +4,12 @@
   >
     <div class="max-w-90 w-full mx-auto">
       <div
-        class="flex items-center justify-between"
-        :class="isHydrogen ? 'h-24' : 'h-10'"
+        class="flex items-center justify-between h-24"
       >
         <div class="relative shrink-0 z-10">
           <NuxtLink
             to="/"
-            class="block outline-none w-24"
+            class="block outline-none w-36"
             exact
           >
             <FlyTirolLogo

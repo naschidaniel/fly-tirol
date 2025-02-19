@@ -6,16 +6,21 @@ import type { ProductVariant } from './ProductVariant';
 export type Product = {
     readonly id?: string;
     name: string;
+    readonly created_at?: string;
+    description?: string;
     allow_comment?: boolean;
     slug: string;
     href: string;
+    length?: number | null;
     total_dates: number;
     is_shipping?: boolean;
     is_voucher?: boolean;
     price?: number;
     readonly category?: string;
+    readonly updated_at?: string;
     vatrate?: Product.vatrate;
     variants: Array<ProductVariant>;
+    wide?: number | null;
 };
 export namespace Product {
     export enum vatrate {

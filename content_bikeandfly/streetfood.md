@@ -1,5 +1,5 @@
 ---
-title: Wanderlokal
+title: Streetfood
 description: In jeder Küche zuhause und die Küche für unser Festival.
 ---
 
@@ -11,4 +11,4 @@ So wandern auch wir seit mehr als zehn Jahren durch die Küchen dieser Welt, las
 
 <a href="https://www.wanderlokal.com/" class="btn-primary" target="_blank">WANDERLOKAL - Wir sind KochArt</a>
 
-<ContentImageGallery path="/media/wanderlokal/gallerie/"/>
+<ContentImageGallery path="/media/streetfood/gallerie/"/>

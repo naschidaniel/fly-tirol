@@ -21,7 +21,7 @@
       </div>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6">
-      <Expo class="nuxt-content" />
+      <ExpoArea class="nuxt-content" />
     </div>
     <SocialBar />
   </div>
@@ -30,7 +30,7 @@
 <script setup lang="ts">
 import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
-import Expo from '@/content_bikeandfly/expo.vue'
+import ExpoArea from '@/content_bikeandfly/expo-area.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 
 useMetaTags()

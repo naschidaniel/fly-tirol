@@ -113,57 +113,7 @@ const flyTirolData = [
   },
 ]
 
-const bikeAndFlyData = [
-  {
-    cardTitle: 'Programm',
-    cardImage: '/media/programm/programm.jpg',
-    description:
-      'Das Festival bietet spannende Vorträge, Workshops und Konzerte zu aktuellen Themen.',
-    to: '/programm',
-  },
-  {
-    cardTitle: 'Bike Testival',
-    cardImage: '/media/bike-testival/bike-testival.jpg',
-    description:
-      'Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Festivals im Brixental!',
-    to: '/bike-testival',
-  },
-  {
-    cardTitle: 'Gleitschirm Testival',
-    cardImage: '/media/gleitschirm-testival/gleitschirm-testival.jpg',
-    description:
-      'Erlebe das ultimative Gleitschirm-Testival im Rahmen des Bike and Fly Festivals im Brixental!',
-    to: '/gleitschirm-testival',
-  },
-  {
-    cardTitle: 'Wanderbird',
-    cardImage: '/media/wanderbird/wanderbird.jpg',
-    description:
-      'Der Hike an Fly Wettbewerb für jedermann! Präsentiert wird dieser aufregende Wettbewerb von Paul Guschelbauer, Red Bull und Partner.',
-    to: '/wanderbird',
-  },
-  {
-    cardTitle: 'Expo Area',
-    cardImage: '/media/shop/shop.jpg',
-    description:
-      'Besuche unsere Expo Area und tauche ein in die Welt der besten Bike- und Gleitschirmhersteller! Hier hast du die Gelegenheit, die neuesten Modelle und innovativsten Ausstattungen aus erster Hand zu erleben.',
-    to: '/shop',
-  },
-  {
-    cardTitle: 'Partner',
-    cardImage: '/media/partner/partner.jpg',
-    description:
-      'Wir sind stolz darauf, unsere großartigen Partner beim Bike and Fly Festival zu präsentieren! Ein herzliches Dankeschön geht an unsere Partner, die uns dabei unterstützen, dieses Festival zu einem unvergesslichen Erlebnis zu machen.',
-    to: '/partner',
-  },
-  {
-    cardTitle: 'Kontakt',
-    cardImage: '/media/kontakt.jpg',
-    description:
-      'Hast du Fragen zum Festival? Du möchtest uns Feedback geben oder möchtest du einfach nur Hallo sagen? Melde dich bei uns und wir werden uns um dein Anliegen kümmern!',
-    to: '/kontakt',
-  },
-]
+const bikeAndFlyData = []
 
 const hydrogenData = [
   {
@@ -209,7 +159,7 @@ const hydrogenData = [
 ]
 
 const linkCardData = isBikeAndFly
-  ? bikeAndFlyData
+  ? []
   : isFlyTirol
     ? flyTirolData
     : hydrogenData
