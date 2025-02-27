@@ -27,31 +27,72 @@
     "alt": "",
     "title": ""
   },
-  "/media/Flying.jpg": {
-    "url": "/media/Flying.jpg",
-    "path": "/media/",
-    "file": "Flying.jpg",
-    "stem": "Flying",
+  "/media/bike-parkour-race/gallerie/BFF24-01048.jpg": {
+    "url": "/media/bike-parkour-race/gallerie/BFF24-01048.jpg",
+    "path": "/media/bike-parkour-race/gallerie/",
+    "file": "BFF24-01048.jpg",
+    "stem": "BFF24-01048",
     "dimensions": {
-      "height": 1591,
-      "width": 2500,
+      "height": 1333,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.571
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/available-soon.jpg": {
-    "url": "/media/available-soon.jpg",
-    "path": "/media/",
-    "file": "available-soon.jpg",
-    "stem": "available-soon",
+  "/media/bike-parkour-race/gallerie/DSC01178.jpg": {
+    "url": "/media/bike-parkour-race/gallerie/DSC01178.jpg",
+    "path": "/media/bike-parkour-race/gallerie/",
+    "file": "DSC01178.jpg",
+    "stem": "DSC01178",
     "dimensions": {
-      "height": 1080,
-      "orientation": 1,
-      "width": 1920,
+      "height": 1333,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 1.778
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/bike-parkour-race/gallerie/DSC01323.jpg": {
+    "url": "/media/bike-parkour-race/gallerie/DSC01323.jpg",
+    "path": "/media/bike-parkour-race/gallerie/",
+    "file": "DSC01323.jpg",
+    "stem": "DSC01323",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/bike-parkour-race/gallerie/DSC01325.jpg": {
+    "url": "/media/bike-parkour-race/gallerie/DSC01325.jpg",
+    "path": "/media/bike-parkour-race/gallerie/",
+    "file": "DSC01325.jpg",
+    "stem": "DSC01325",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/bike-parkour-race/gallerie/DSC01337.jpg": {
+    "url": "/media/bike-parkour-race/gallerie/DSC01337.jpg",
+    "path": "/media/bike-parkour-race/gallerie/",
+    "file": "DSC01337.jpg",
+    "stem": "DSC01337",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
@@ -126,30 +167,44 @@
     "alt": "",
     "title": ""
   },
-  "/media/expo/hersteller1.jpg": {
-    "url": "/media/expo/hersteller1.jpg",
-    "path": "/media/expo/",
-    "file": "hersteller1.jpg",
-    "stem": "hersteller1",
+  "/media/expo-area/gallerie/BFF24_20240810-01284.jpg": {
+    "url": "/media/expo-area/gallerie/BFF24_20240810-01284.jpg",
+    "path": "/media/expo-area/gallerie/",
+    "file": "BFF24_20240810-01284.jpg",
+    "stem": "BFF24_20240810-01284",
     "dimensions": {
-      "height": 1370,
-      "width": 1350,
+      "height": 1333,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 0.985
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/expo/hersteller2.jpg": {
-    "url": "/media/expo/hersteller2.jpg",
-    "path": "/media/expo/",
-    "file": "hersteller2.jpg",
-    "stem": "hersteller2",
+  "/media/expo-area/gallerie/BFF24_20240810-01301.jpg": {
+    "url": "/media/expo-area/gallerie/BFF24_20240810-01301.jpg",
+    "path": "/media/expo-area/gallerie/",
+    "file": "BFF24_20240810-01301.jpg",
+    "stem": "BFF24_20240810-01301",
     "dimensions": {
-      "height": 1370,
-      "width": 1350,
+      "height": 1333,
+      "width": 2000,
       "type": "jpg",
-      "ratio": 0.985
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/expo-area/gallerie/BFF24_20240810-01303.jpg": {
+    "url": "/media/expo-area/gallerie/BFF24_20240810-01303.jpg",
+    "path": "/media/expo-area/gallerie/",
+    "file": "BFF24_20240810-01303.jpg",
+    "stem": "BFF24_20240810-01303",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
@@ -224,56 +279,168 @@
     "alt": "",
     "title": ""
   },
-  "/media/index/gallerie/fff.jpg": {
-    "url": "/media/index/gallerie/fff.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "fff.jpg",
-    "stem": "fff",
+  "/media/index/slideshow/BFF24-01172.jpg": {
+    "url": "/media/index/slideshow/BFF24-01172.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-01172.jpg",
+    "stem": "BFF24-01172",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/xxx.jpg": {
-    "url": "/media/index/gallerie/xxx.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "xxx.jpg",
-    "stem": "xxx",
-    "dimensions": {
-      "height": 2500,
-      "width": 2500,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/index/gallerie/yyy.jpg": {
-    "url": "/media/index/gallerie/yyy.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "yyy.jpg",
-    "stem": "yyy",
-    "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 1333,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/index/gallerie/zzz.jpg": {
-    "url": "/media/index/gallerie/zzz.jpg",
-    "path": "/media/index/gallerie/",
-    "file": "zzz.jpg",
-    "stem": "zzz",
+  "/media/index/slideshow/BFF24-01204.jpg": {
+    "url": "/media/index/slideshow/BFF24-01204.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-01204.jpg",
+    "stem": "BFF24-01204",
     "dimensions": {
-      "height": 1667,
-      "width": 2500,
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24-01373.jpg": {
+    "url": "/media/index/slideshow/BFF24-01373.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-01373.jpg",
+    "stem": "BFF24-01373",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24-01685.jpg": {
+    "url": "/media/index/slideshow/BFF24-01685.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-01685.jpg",
+    "stem": "BFF24-01685",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24-01757.jpg": {
+    "url": "/media/index/slideshow/BFF24-01757.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-01757.jpg",
+    "stem": "BFF24-01757",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24-01832.jpg": {
+    "url": "/media/index/slideshow/BFF24-01832.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-01832.jpg",
+    "stem": "BFF24-01832",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24-02072.jpg": {
+    "url": "/media/index/slideshow/BFF24-02072.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-02072.jpg",
+    "stem": "BFF24-02072",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24-02112.jpg": {
+    "url": "/media/index/slideshow/BFF24-02112.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24-02112.jpg",
+    "stem": "BFF24-02112",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24_20240810-01303.jpg": {
+    "url": "/media/index/slideshow/BFF24_20240810-01303.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24_20240810-01303.jpg",
+    "stem": "BFF24_20240810-01303",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/BFF24_20240810-01350.jpg": {
+    "url": "/media/index/slideshow/BFF24_20240810-01350.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "BFF24_20240810-01350.jpg",
+    "stem": "BFF24_20240810-01350",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/DSC01240.jpg": {
+    "url": "/media/index/slideshow/DSC01240.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "DSC01240.jpg",
+    "stem": "DSC01240",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/index/slideshow/DSC01325.jpg": {
+    "url": "/media/index/slideshow/DSC01325.jpg",
+    "path": "/media/index/slideshow/",
+    "file": "DSC01325.jpg",
+    "stem": "DSC01325",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
       "type": "jpg",
       "ratio": 1.5
     },
@@ -290,6 +457,90 @@
       "width": 2000,
       "type": "jpg",
       "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/livemusik/gallerie/BFF24-01734.jpg": {
+    "url": "/media/livemusik/gallerie/BFF24-01734.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "BFF24-01734.jpg",
+    "stem": "BFF24-01734",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/livemusik/gallerie/BFF24-01929.jpg": {
+    "url": "/media/livemusik/gallerie/BFF24-01929.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "BFF24-01929.jpg",
+    "stem": "BFF24-01929",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/livemusik/gallerie/BFF24-02042.jpg": {
+    "url": "/media/livemusik/gallerie/BFF24-02042.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "BFF24-02042.jpg",
+    "stem": "BFF24-02042",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/livemusik/gallerie/BFF24-02112.jpg": {
+    "url": "/media/livemusik/gallerie/BFF24-02112.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "BFF24-02112.jpg",
+    "stem": "BFF24-02112",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/livemusik/gallerie/BFF24-02165.jpg": {
+    "url": "/media/livemusik/gallerie/BFF24-02165.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "BFF24-02165.jpg",
+    "stem": "BFF24-02165",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/livemusik/gallerie/BFF24-02251.jpg": {
+    "url": "/media/livemusik/gallerie/BFF24-02251.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "BFF24-02251.jpg",
+    "stem": "BFF24-02251",
+    "dimensions": {
+      "height": 1333,
+      "width": 2000,
+      "type": "jpg",
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
@@ -381,72 +632,44 @@
     "alt": "",
     "title": ""
   },
-  "/media/programm/gallerie/fff.jpg": {
-    "url": "/media/programm/gallerie/fff.jpg",
+  "/media/programm/gallerie/BFF24_20240809-01204.jpg": {
+    "url": "/media/programm/gallerie/BFF24_20240809-01204.jpg",
     "path": "/media/programm/gallerie/",
-    "file": "fff.jpg",
-    "stem": "fff",
+    "file": "BFF24_20240809-01204.jpg",
+    "stem": "BFF24_20240809-01204",
     "dimensions": {
-      "height": 2000,
+      "height": 1333,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/programm/gallerie/xxx.jpg": {
-    "url": "/media/programm/gallerie/xxx.jpg",
+  "/media/programm/gallerie/BFF24_20240810-01354.jpg": {
+    "url": "/media/programm/gallerie/BFF24_20240810-01354.jpg",
     "path": "/media/programm/gallerie/",
-    "file": "xxx.jpg",
-    "stem": "xxx",
+    "file": "BFF24_20240810-01354.jpg",
+    "stem": "BFF24_20240810-01354",
     "dimensions": {
-      "height": 2000,
+      "height": 1333,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/programm/gallerie/yyy.jpg": {
-    "url": "/media/programm/gallerie/yyy.jpg",
+  "/media/programm/gallerie/BFF24_20240810-01644.jpg": {
+    "url": "/media/programm/gallerie/BFF24_20240810-01644.jpg",
     "path": "/media/programm/gallerie/",
-    "file": "yyy.jpg",
-    "stem": "yyy",
+    "file": "BFF24_20240810-01644.jpg",
+    "stem": "BFF24_20240810-01644",
     "dimensions": {
-      "height": 2000,
+      "height": 1333,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/programm/gallerie/zzz.jpg": {
-    "url": "/media/programm/gallerie/zzz.jpg",
-    "path": "/media/programm/gallerie/",
-    "file": "zzz.jpg",
-    "stem": "zzz",
-    "dimensions": {
-      "height": 2000,
-      "width": 1697,
-      "type": "jpg",
-      "ratio": 0.849
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/programm/programm.jpg": {
-    "url": "/media/programm/programm.jpg",
-    "path": "/media/programm/",
-    "file": "programm.jpg",
-    "stem": "programm",
-    "dimensions": {
-      "height": 7008,
-      "width": 4672,
-      "type": "jpg",
-      "ratio": 0.667
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
@@ -633,155 +856,84 @@
     "alt": "",
     "title": ""
   },
-  "/media/streetfood/gallerie/fff.jpg": {
-    "url": "/media/streetfood/gallerie/fff.jpg",
+  "/media/streetfood/gallerie/BFF24-01726.jpg": {
+    "url": "/media/streetfood/gallerie/BFF24-01726.jpg",
     "path": "/media/streetfood/gallerie/",
-    "file": "fff.jpg",
-    "stem": "fff",
+    "file": "BFF24-01726.jpg",
+    "stem": "BFF24-01726",
     "dimensions": {
-      "height": 2000,
+      "height": 1333,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/streetfood/gallerie/xxx.jpg": {
-    "url": "/media/streetfood/gallerie/xxx.jpg",
+  "/media/streetfood/gallerie/IMG_0355.jpg": {
+    "url": "/media/streetfood/gallerie/IMG_0355.jpg",
     "path": "/media/streetfood/gallerie/",
-    "file": "xxx.jpg",
-    "stem": "xxx",
+    "file": "IMG_0355.jpg",
+    "stem": "IMG_0355",
     "dimensions": {
-      "height": 2000,
+      "height": 1332,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.502
     },
     "alt": "",
     "title": ""
   },
-  "/media/streetfood/gallerie/yyy.jpg": {
-    "url": "/media/streetfood/gallerie/yyy.jpg",
+  "/media/streetfood/gallerie/IMG_0381.jpg": {
+    "url": "/media/streetfood/gallerie/IMG_0381.jpg",
     "path": "/media/streetfood/gallerie/",
-    "file": "yyy.jpg",
-    "stem": "yyy",
+    "file": "IMG_0381.jpg",
+    "stem": "IMG_0381",
     "dimensions": {
-      "height": 2000,
+      "height": 1183,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.691
     },
     "alt": "",
     "title": ""
   },
-  "/media/streetfood/gallerie/zzz.jpg": {
-    "url": "/media/streetfood/gallerie/zzz.jpg",
-    "path": "/media/streetfood/gallerie/",
-    "file": "zzz.jpg",
-    "stem": "zzz",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/tandemfliegen_salve.jpg": {
-    "url": "/media/tandemfliegen_salve.jpg",
-    "path": "/media/",
-    "file": "tandemfliegen_salve.jpg",
-    "stem": "tandemfliegen_salve",
-    "dimensions": {
-      "height": 3000,
-      "orientation": 1,
-      "width": 4000,
-      "type": "jpg",
-      "ratio": 1.333
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/wanderbird/gallerie/fff.jpg": {
-    "url": "/media/wanderbird/gallerie/fff.jpg",
+  "/media/wanderbird/gallerie/BFF24_Wanderbird-01363.jpg": {
+    "url": "/media/wanderbird/gallerie/BFF24_Wanderbird-01363.jpg",
     "path": "/media/wanderbird/gallerie/",
-    "file": "fff.jpg",
-    "stem": "fff",
+    "file": "BFF24_Wanderbird-01363.jpg",
+    "stem": "BFF24_Wanderbird-01363",
     "dimensions": {
-      "height": 2000,
+      "height": 1333,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/wanderbird/gallerie/xxx.jpg": {
-    "url": "/media/wanderbird/gallerie/xxx.jpg",
+  "/media/wanderbird/gallerie/BFF24_Wanderbird-01405.jpg": {
+    "url": "/media/wanderbird/gallerie/BFF24_Wanderbird-01405.jpg",
     "path": "/media/wanderbird/gallerie/",
-    "file": "xxx.jpg",
-    "stem": "xxx",
+    "file": "BFF24_Wanderbird-01405.jpg",
+    "stem": "BFF24_Wanderbird-01405",
     "dimensions": {
-      "height": 2000,
+      "height": 1333,
       "width": 2000,
       "type": "jpg",
-      "ratio": 1
+      "ratio": 1.5
     },
     "alt": "",
     "title": ""
   },
-  "/media/wanderbird/gallerie/yyy.jpg": {
-    "url": "/media/wanderbird/gallerie/yyy.jpg",
+  "/media/wanderbird/gallerie/BFF24_Wanderbird-01439.jpg": {
+    "url": "/media/wanderbird/gallerie/BFF24_Wanderbird-01439.jpg",
     "path": "/media/wanderbird/gallerie/",
-    "file": "yyy.jpg",
-    "stem": "yyy",
+    "file": "BFF24_Wanderbird-01439.jpg",
+    "stem": "BFF24_Wanderbird-01439",
     "dimensions": {
-      "height": 2000,
+      "height": 1333,
       "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/wanderbird/gallerie/zzz.jpg": {
-    "url": "/media/wanderbird/gallerie/zzz.jpg",
-    "path": "/media/wanderbird/gallerie/",
-    "file": "zzz.jpg",
-    "stem": "zzz",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/wanderbird/wanderbird.jpg": {
-    "url": "/media/wanderbird/wanderbird.jpg",
-    "path": "/media/wanderbird/",
-    "file": "wanderbird.jpg",
-    "stem": "wanderbird",
-    "dimensions": {
-      "height": 2000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/wanderlokal.jpg": {
-    "url": "/media/wanderlokal.jpg",
-    "path": "/media/",
-    "file": "wanderlokal.jpg",
-    "stem": "wanderlokal",
-    "dimensions": {
-      "height": 720,
-      "width": 1080,
       "type": "jpg",
       "ratio": 1.5
     },

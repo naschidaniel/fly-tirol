@@ -113,8 +113,6 @@ const flyTirolData = [
   },
 ]
 
-const bikeAndFlyData = []
-
 const hydrogenData = [
   {
     cardTitle: 'ABOUT US',

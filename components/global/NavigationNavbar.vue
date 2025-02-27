@@ -184,7 +184,7 @@ import { useData } from '@/composable/useData'
 import { useNavigation } from '@/composable/useNavigation'
 import { useBackend } from '@/composable/useBackend'
 
-const { isFlyTirol, isBikeAndFly, isHydrogen } = useData()
+const { isFlyTirol, isBikeAndFly } = useData()
 const { isOpen } = useNavigation()
 const { cartItemsLength, user } = useBackend()
 

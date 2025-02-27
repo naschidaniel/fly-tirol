@@ -5,4 +5,12 @@ description: Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Fest
 
 # Bike Parkour Race
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Seid dabei, wenn wir am Samstag, den 08.08. um 10:00 Uhr, unser aufregendes Fahrradrennen für Groß und Klein starten! Egal, ob ihr Anfänger oder erfahrene Radfahrer seid, unser Festival bietet für jede Altersgruppe die perfekte Herausforderung.
+
+Freut euch auf spannende Parcours, die eure Geschicklichkeit und Technik auf die Probe stellen! Hier könnt ihr nicht nur euer Können zeigen, sondern wir garantieren auch jede Menge Spaß. Die verschiedenen Altersgruppen starten nacheinander, sodass jeder die Chance hat, sein Bestes zu geben und die Atmosphäre des Wettbewerbs zu genießen. Im Anschluss findet eine feierliche Preisverteilung statt! Hier werden die besten Fahrer geehrt und es gibt tolle Preise zu gewinnen.
+
+Kommt vorbei, bringt eure Familie und Freunde mit und erlebt einen unvergesslichen Tag voller Action, Sport und Gemeinschaft! Lasst uns gemeinsam die Freude am Radfahren feiern! 
+
+Seid dabei – wir freuen uns auf euch!
+
+<ContentImageGallery path="/media/bike-parkour-race/gallerie/"/>
