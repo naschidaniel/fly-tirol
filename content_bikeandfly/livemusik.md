@@ -3,19 +3,6 @@ title: Livemusik
 description: Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Festivals im Brixental!
 ---
 
-# Livemusik
-
-Seid bereit für ein unvergessliches Erlebnis voller Musik, Spaß und guter Laune! Unser Sommerfestival bringt die besten Bands und DJs zusammen, um euch ein spektakuläres Wochenende zu bieten, das ihr nicht verpassen dürft.
-
-Taucht ein in die mitreißenden Klänge und tanzt zu den Beats, die euch durch den Tag und die Nacht begleiten. 
-
-Von energiegeladenen Live-Auftritten bis hin zu pulsierenden DJ-Sets – für jeden Musikgeschmack ist etwas dabei!
-
-Genießt die entspannte Atmosphäre, leckere Speisen vom Street Food und erfrischende Getränke, während ihr mit Freunden und Familie feiert. Denn wir garantieren, unser Festival hat für jeden etwas zu bieten.
-
-Lasst euch von der einzigartigen Stimmung mitreißen und erlebt unvergessliche Momente, die ihr noch lange in Erinnerung behalten werdet.
-
-
 ## Unser Musikprogramm:
 
 ### Freitag:

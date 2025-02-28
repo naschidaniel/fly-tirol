@@ -6,7 +6,7 @@
       picture="/media/page-header.jpg"
     >
       <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        Seid dabei, wenn wir am Samstag, den 08.08. um 10:00 Uhr, unser aufregendes Fahrradrennen für Groß und Klein starten! Egal, ob ihr Anfänger oder erfahrene Radfahrer seid, unser Festival bietet für jede Altersgruppe die perfekte Herausforderung.
       </p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6">
