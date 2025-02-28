@@ -15,6 +15,20 @@
       />
     </div>
     <LinkList />
+    <div class="max-w-90 w-full mx-auto py-6">
+      <div class="flex justify-center items-center">
+        <iframe
+          width="1120"
+          height="630"
+          src="https://www.youtube.com/embed/z631e8LEUUs?si=d01CdAOflLU-qKBS"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        />
+      </div>
+    </div>
     <SocialBar />
   </div>
 </template>

@@ -19,6 +19,7 @@ export function useData() {
   const website: string = config.public.website
   const websiteUrl: string = config.public.websiteUrl
   const xing: string = config.public.xing
+  const youtube: string = config.public.youtube
 
   return {
     backend,
@@ -36,5 +37,6 @@ export function useData() {
     website,
     websiteUrl,
     xing,
+    youtube,
   }
 }

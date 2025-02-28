@@ -81,7 +81,7 @@
               style="background-color: #e4405f"
             ><IconInstagram style="width: 2em; height: 2em; color: #ececec" /></span>
           </button><button
-            v-if="isFlyTirol"
+            v-if="isFlyTirol || isBikeAndFly"
             class="mx-2"
             title="Folge uns auf YouTube"
             @click="openYouTube()"
@@ -146,11 +146,13 @@ const {
   instagram,
   isFlyTirol,
   isHydrogen,
+  isBikeAndFly,
   mail,
   phone,
   website,
   websiteUrl,
   xing,
+  youtube,
 } = useData()
 const { page } = usePage()
 
@@ -193,7 +195,7 @@ function openTwitter() {
 }
 
 function openYouTube() {
-  const url = `https://www.youtube.com/channel/UCcHbWKpX02FQI94FOHVvfQA`
+  const url = youtube
   window.open(url)
 }
 

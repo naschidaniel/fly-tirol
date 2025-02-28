@@ -192,6 +192,7 @@ export default defineNuxtConfig({
           : isFlyTirol
             ? 'fly-tirol.com'
             : 'bikeandfly.at',
+      youtube: isBikeAndFly ? 'https://www.youtube.com/@BikeFlyFestivalBrixental' : '',
       websiteUrl: isBikeAndFly
         ? 'https://gh2di.eu'
         : isHydrogen
