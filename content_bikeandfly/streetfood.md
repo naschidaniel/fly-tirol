@@ -3,12 +3,8 @@ title: Streetfood
 description: In jeder Küche zuhause und die Küche für unser Festival.
 ---
 
-**Wer wandert der wundert sich** – über neue Eindrücke und Erlebnisse, Erfahrungen und womöglich neue Erkenntnisse. Wer wandert bewundert – die **Schönheit, Vielfalt und grenzenlose Genialität von Mutter Natur**. Wer wandert muss nicht immer ankommen.
+Das Bike & Fly – Festival ist nicht nur ein Ort für sportliche Höchstleistungen, sondern auch ein Fest für alle Feinschmecker! Lass dir diese Gelegenheit nicht entgehen, um die besten Streetfood-Kreationen zu probieren und gleichzeitig die mitreißende Stimmung des Festivals zu genießen.
 
-So wandern auch wir seit mehr als zehn Jahren durch die Küchen dieser Welt, lassen uns gerne inspirieren von der **Kreativität und Geschmacksvielfalt internationaler Kulinarik**, bleiben jedoch stets unseren Wurzeln treu und lassen die traditionelle Tiroler-Küche in unsere Arbeit miteinfließen. Mit dem **Wanderlokal**, wollen wir Farbe auf den Küchentisch bringen, Leute begeistern und Freude bereiten.
-
-**Peter Laiminger & Sophie Aschaber**
-
-<a href="https://www.wanderlokal.com/" class="btn-primary" target="_blank">WANDERLOKAL - Wir sind KochArt</a>
+Markiere dir den Termin im Kalender und sei dabei, wenn Sport und Kulinarik aufeinandertreffen!
 
 <ContentImageGallery path="/media/streetfood/gallerie/"/>

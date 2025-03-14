@@ -5,9 +5,10 @@
       headline="Streetfood"
       picture="/media/page-header.jpg"
     >
-      <p>Wo unser Foodtruck haltmacht, verströmt er den Duft der großen, weiten Welt der Kulinarik.</p>
-      <p>Von exotischen Spezialitäten bis hin zu vertrauten Klassikern genießen Sie frische Köstlichkeiten und originelle Rezepte, die wir vor Ort im Truck zubereiten.</p>
-      <p>Wir sind KochArt.</p>
+      <p>
+        Erlebe die Vielfalt des Streetfoods beim Bike & Fly – Festival! Wir freuen uns, euch mitteilen zu können, dass in diesem Jahr zum ersten Mal der Street Food Market Austria Teil unseres Festivals ist!
+      </p>
+      <p>Freut euch auf eine köstliche Auswahl an Leckereien und Fingerfoods, die garantiert jeden Geschmack treffen. Mit über 15 Jahren Erfahrung sind sie die Nummer 1 in ganz Österreich.</p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
       <Streetfood />

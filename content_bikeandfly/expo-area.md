@@ -38,9 +38,25 @@ Sichere dir schon jetzt dein Ticket für das **Bike and Fly Festival im Brixenta
 
 # Charity
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Charity-Engagement beim Sommerfestival
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Wir freuen uns, euch mitteilen zu können, dass unser Sommerfestival in diesem Jahr auch eine wichtige Charity-Komponente hat!
+
+Gemeinsam setzen wir uns für die Unterstützung von Menschen mit Mukoviszidose ein.
+
+Besucht unseren Charity-Stand, wo die Organisation vom CF-Team Tirol und Vorarlberg eine spannende Tombola vorbereitet hat.
+
+Mit jedem Los, das ihr kauft, unterstützt ihr die Hilfe für viele Betroffene, denn jede Spende zählt.
+
+Am Samstag wird zudem der Stand „Geben für Leben“ vertreten sein.
+
+Hier habt ihr die Möglichkeit, euch zu registrieren und mehr über die wichtigen Projekte zu erfahren, die das Leben vieler Menschen positiv beeinflussen.
+
+Euer Engagement kann helfen, Hoffnung zu schenken und Leben zu retten!
+
+Kommt vorbei, informiert euch und lasst uns gemeinsam Gutes tun, während wir ein fantastisches Festival erleben.
+
+Unsere Teams freuen sich auf euren Besuch am Charity-Stand und darauf, gemeinsam mit euch einen positiven Beitrag zu leisten!
 
 
 <ContentImageGallery path="/media/expo-area/gallerie/"/>
