@@ -75,7 +75,7 @@
           to="/bike-parkour-race"
         />
         <NavigationNavbarLink
-          name="Livemusik"
+          name="Musik - DJs -FM4"
           to="/livemusik"
         />
         <NavigationNavbarLink

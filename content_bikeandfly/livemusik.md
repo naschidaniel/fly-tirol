@@ -1,5 +1,5 @@
 ---
-title: Livemusik
+title: Livemusik - DJs
 description: Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Festivals im Brixental!
 ---
 

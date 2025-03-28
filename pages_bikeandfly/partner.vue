@@ -5,7 +5,7 @@
       headline="Partner"
       picture="/media/page-header.jpg"
     >
-      <p>Eine tolles Festival braucht starke Partner!</p>
+      <p>Ein tolles Festival braucht starke Partner!</p>
       <p>
         Wir sind stolz darauf, unsere großartigen Partner beim Bike and Fly
         Festival zu präsentieren! Ein herzliches Dankeschön geht an unsere

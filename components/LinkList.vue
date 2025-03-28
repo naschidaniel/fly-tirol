@@ -22,11 +22,11 @@
                 Musik beim Bike and Fly Festival im malerischen Westendorf im
                 Brixental. Dieses Event vereint die aufregende Welt des
                 Mountainbikens mit der Freiheit des Gleitschirmfliegens und der
-                Energie mitreißender Live-Musik.
+                Energie mitreißender Livemusik - DJs.
               </p>
               <p class="pb-2">
                 Genieße die entspannte Atmosphäre, köstliche lokale
-                Spezialitäten, großartige Live-Musik, ein Bike und
+                Spezialitäten, großartige Livemusik - DJs, ein Bike und
                 Gleitschirm-Testival und ein umfangreiches Programm für Klein
                 und Groß.
               </p>
