@@ -10,7 +10,7 @@
         >
           <ResponsiveImage
             img-class="object-cover"
-            :picture="metadata.image"
+            :picture="metadata.image as string"
             :is-thumbnail="true"
           />
         </div>

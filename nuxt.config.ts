@@ -66,7 +66,6 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
-          hid: 'og:title',
           property: 'og:title',
           content: isGh2di
             ? 'gh2di.eu Strategic Advice for your Green Hydrogen Projects'
@@ -77,12 +76,10 @@ export default defineNuxtConfig({
                 : 'Fly-Tirol.com - Flugschule Kitzbühleralpen',
         },
         {
-          hid: 'twitter:card',
           name: 'twitter:card',
           content: 'summary',
         },
         {
-          hid: 'description',
           name: 'description',
           content: (isHydrogen || isGh2di)
             ? 'We are an advisory service to provide strategic advice to all actors seeking to advance their green hydrogen Agenda and to start roll-out.'
@@ -91,7 +88,6 @@ export default defineNuxtConfig({
               : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
         },
         {
-          hid: 'og:description',
           property: 'og:description',
           content: (isHydrogen || isGh2di)
             ? 'We are an advisory service to provide strategic advice to all actors seeking to advance their green hydrogen Agenda and to start roll-out.'
@@ -100,7 +96,6 @@ export default defineNuxtConfig({
               : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
         },
         {
-          hid: 'og:image',
           property: 'og:image',
           content: isGh2di
             ? 'https://gh2di.eu/media/logo_384.png'
@@ -111,12 +106,10 @@ export default defineNuxtConfig({
                 : 'https://fly-tirol.com/media/FlyTirolLogo_384.jpg',
         },
         {
-          hid: 'og:type',
           property: 'og:type',
           content: 'article',
         },
         {
-          hid: 'og:url',
           property: 'og:url',
           content: isGh2di
             ? 'https://gh2di.eu'

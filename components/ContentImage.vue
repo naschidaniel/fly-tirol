@@ -9,6 +9,6 @@
 import ResponsiveImage from './ResponsiveImage.vue'
 
 defineProps({
-  picture: { type: String, default: '', required: true },
+  picture: { type: String, required: true },
 })
 </script>

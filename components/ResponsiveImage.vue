@@ -92,7 +92,7 @@ interface ResponsiveImage {
 
 const props = defineProps({
   boxClass: { type: String, default: '', required: false },
-  picture: { type: String, default: '', required: true },
+  picture: { type: String, required: true },
   imgClass: { type: String, default: '', required: false },
   isLazy: { type: Boolean, default: true, required: false },
   isPreload: { type: Boolean, default: false, required: false },
