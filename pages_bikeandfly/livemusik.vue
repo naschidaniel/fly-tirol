@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="Livemusik"
+      headline="Livemusik - DJs"
       picture="/media/page-header.jpg"
     >
       <p class="mt-2">
