@@ -1,6 +1,6 @@
 import { readFileSync, writeFile } from 'fs'
 import { glob } from 'glob'
-import sizeOf from 'image-size'
+import { imageSize } from 'image-size'
 
 for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen', 'gh2di']) {
   const constName
@@ -21,9 +21,9 @@ for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen', 'gh2di']) {
       const url = filePath.replace(staticPath, '')
       const file = filePath.split('/').reverse()[0]
       const path = filePath.replace(staticPath, '').replace(file, '')
-      const dimensions = sizeOf(filePath)
-      dimensions.ratio
-        = Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
+      const buffer = readFileSync(filePath)
+      const dimensions = imageSize(buffer)
+      dimensions.ratio = Math.round((dimensions?.width / dimensions?.height) * 1000) / 1000
       return {
         url,
         path,
@@ -33,8 +33,7 @@ for (const nuxtPage of ['flytirol', 'bikeandfly', 'hydrogen', 'gh2di']) {
         alt: '',
         title: '',
       }
-    })
-    .forEach((img) => {
+    }).forEach((img) => {
       if (Object.keys(mediaJson).includes(img.url)) {
         mediaJson[img.url].dimensions = img.dimensions
       }
