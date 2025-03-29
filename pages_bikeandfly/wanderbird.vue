@@ -6,7 +6,7 @@
       picture="/media/page-header.jpg"
     >
       <p>
-        Der Hike an Fly Wettbewerb für jedermann! Präsentiert wird dieser
+        Der Hike & Fly Wettbewerb für jedermann! Präsentiert wird dieser
         aufregende Wettbewerb von Paul Guschelbauer, Red Bull und Partner.
       </p>
     </PageHeader>
