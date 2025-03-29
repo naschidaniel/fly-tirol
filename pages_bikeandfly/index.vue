@@ -8,7 +8,7 @@
         img-class="object-cover object-center md:object-bottom lg:object-center w-full h-full"
         :is-lazy="false"
         :is-preload="true"
-        picture="/media/BikeAndFlyHeader.jpg"
+        :picture="headerImage"
       />
       <div
         class="absolute h-40 bottom-0 left-0 right-0 bg-gradient-to-t from-white"
@@ -38,6 +38,8 @@ import { useMetaTags } from '@/composable/useMetaTags'
 import LinkList from '@/components/LinkList.vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
 import SocialBar from '@/components/SocialBar.vue'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 </script>

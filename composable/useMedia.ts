@@ -15,7 +15,11 @@ export function useMedia() {
         ? mediaHydrogen
         : mediaBikeAndFly
 
+  const headerImageGallery = Object.values(media).filter(img => img.path === '/media/index/slideshow/')
+  const headerImage = ref(headerImageGallery[Math.floor(Math.random() * (headerImageGallery.length))].url)
+
   return {
     media,
+    headerImage,
   }
 }

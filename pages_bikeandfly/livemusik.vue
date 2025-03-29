@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Livemusik - DJs"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
     >
       <p class="mt-2">
         Seid bereit für ein unvergessliches Erlebnis voller Musik, Spaß und guter Laune! Unser Sommerfestival bringt die besten DJs zusammen, um euch ein spektakuläres Wochenende zu bieten, das ihr nicht verpassen dürft.
@@ -33,6 +33,8 @@ import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import LiveMusik from '@/content_bikeandfly/livemusik.vue'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 </script>

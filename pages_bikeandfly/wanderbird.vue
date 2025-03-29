@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Wanderbird"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
     >
       <p>
         Der Hike & Fly Wettbewerb für jedermann! Präsentiert wird dieser
@@ -19,6 +19,8 @@
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
 import Wanderbird from '~/content_bikeandfly/wanderbird.vue'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 </script>

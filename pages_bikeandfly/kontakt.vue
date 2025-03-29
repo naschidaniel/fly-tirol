@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Infohotline"
       headline="Kontakt"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
       :link1="telefonNumber"
       :link2="mailAddress"
       :address="address"
@@ -66,7 +66,9 @@ import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import IconOutlineLocationMarker from '@/components/icon/IconOutlineLocationMarker.vue'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 const address = {
   href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
   name: 'Route',

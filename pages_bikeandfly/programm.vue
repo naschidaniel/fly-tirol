@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Programm"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
     >
       <p>
         Die Vorbereitungen für 2025 laufen bereits auf Hochtouren!
@@ -22,6 +22,8 @@
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
 import Programm from '@/content_bikeandfly/programm.vue'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 </script>

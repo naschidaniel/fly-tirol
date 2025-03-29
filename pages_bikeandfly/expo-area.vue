@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Expo Area"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
     >
       <div>
         <p class="mb-2">
@@ -32,6 +32,8 @@ import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import ExpoArea from '@/content_bikeandfly/expo-area.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 </script>

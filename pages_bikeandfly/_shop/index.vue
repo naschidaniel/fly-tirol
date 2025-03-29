@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Expo Area"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
     >
       <div>
         <p class="mb-2">
@@ -32,7 +32,9 @@ import ProductList from '@/components/ProductList.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import { useBackend } from '@/composable/useBackend'
 import { usePage } from '@/composable/usePage'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 const { page } = usePage()
 const { initShopBackend } = useBackend()

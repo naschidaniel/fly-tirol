@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Partner"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
     >
       <p>Ein tolles Festival braucht starke Partner!</p>
       <p>
@@ -25,6 +25,8 @@ import SocialBar from '@/components/SocialBar.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import Partner from '@/content_bikeandfly/partner.vue'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 </script>

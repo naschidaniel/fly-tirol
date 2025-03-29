@@ -3,7 +3,7 @@
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
       headline="Streetfood"
-      picture="/media/page-header.jpg"
+      :picture="headerImage"
     >
       <p>
         Erlebe die Vielfalt des Streetfoods beim Bike & Fly – Festival! Wir freuen uns, euch mitteilen zu können, dass in diesem Jahr zum ersten Mal der Street Food Market Austria Teil unseres Festivals ist!
@@ -19,6 +19,8 @@
 <script setup lang="ts">
 import { useMetaTags } from '@/composable/useMetaTags'
 import Streetfood from '~/content_bikeandfly/streetfood.vue'
+import { useMedia } from '@/composable/useMedia'
 
+const { headerImage } = useMedia()
 useMetaTags()
 </script>
