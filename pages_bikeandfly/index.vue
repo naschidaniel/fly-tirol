@@ -16,6 +16,18 @@
     </div>
     <LinkList />
     <div class="max-w-90 w-full mx-auto py-6">
+      <div class="flex justify-center items-center mb-6">
+        <iframe
+          width="1120"
+          height="630"
+          src="https://www.youtube.com/embed/v3mfoPTZSZ8?si=VfrgbrRbHfEiYONE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        />
+      </div>
       <div class="flex justify-center items-center">
         <iframe
           width="1120"
