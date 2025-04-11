@@ -34,7 +34,7 @@ Eine Bearbeitungsgebühr in Höhe von 50 Euro fällt bei Umbuchung eines verbind
 
 Der Versicherungsschutz für die Stornogebühren liegt ausdrücklich in der Verantwortung der/des Teilnehmer:in.
 
-Rücktritt durch den Veranstalter:
+**Rücktritt durch den Veranstalter:**
 
 Im Falle einer nicht ausreichenden Teilnehmerzahl behalten wir uns vor, eine Veranstaltung spätestens 14 Tage vor Kursbeginn abzusagen. Für bereits geleistete Zahlungen kann eine Gutschrift erstellt werden.
 
