@@ -40,6 +40,8 @@ export default withNuxt({
           'programm',
           'shop',
           'partner',
+          'livemusik',
+          'streetfood',
           'rettungspackservice',
           'schnupperkurs',
           'service',
