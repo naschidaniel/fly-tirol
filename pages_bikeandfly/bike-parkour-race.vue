@@ -13,6 +13,12 @@
       <BikeParkourRace class="nuxt-content" />
     </div>
     <div class="max-w-90 w-full mx-auto py-6">
+      <h2 class="py-6">
+        Anmeldeformular
+      </h2>
+      <p class="py-6">
+        Hier könnt ihr euch für das Bike Parkour Rennen anmelden. Bitte füllt alle Felder aus und sendet das Formular mit euren Email-Client an <a :href="`mailto:${mail}`">{{ mail }}</a>. Wir freuen uns auf eure Teilnahme!
+      </p>
       <RegistrationForm />
     </div>
     <SocialBar />
@@ -26,7 +32,9 @@ import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import BikeParkourRace from '@/content_bikeandfly/bike-parkour-race.vue'
 import { useMedia } from '@/composable/useMedia'
+import { useData } from '@/composable/useData'
 
+const { mail } = useData()
 const { headerImage } = useMedia()
 useMetaTags()
 </script>

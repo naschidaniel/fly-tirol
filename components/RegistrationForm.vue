@@ -84,7 +84,7 @@
         type="submit"
         class="btn-primary btn--large w-full sm:w-auto text-center"
       >
-        Submit
+        Absenden
       </button>
     </form>
   </div>
