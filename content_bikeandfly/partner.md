@@ -4,8 +4,22 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
 ---
 
 <div class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 md:py-12">
+  <ContentPartnerCard image="/media/partner/11er-genuss-busLogo.jpg" type="Partner" title="11er Genuss Bus" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/Alexanders_AutomobileLogo.jpg" type="Partner" title="Alexanders Automobile" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/apotheke_westendorf_logoLogo.jpg" type="Partner" title="Apotheke Westendorf" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/appartementmorgensonneLogo.jpg" type="Unterkunft" title="Morgensonne" sub-title="Gerhard Brunner" address="Straßhäusl 85, 6363 Westendorf" phone="0043 664 3585449" website="https://www.morgensonne-tirol.at" mail="appartement@morgensonne-tirol.at" />
+  <ContentPartnerCard image="/media/partner/brixental-logo-region-rgb-redLogo.jpg" type="Tourismusverband" title="Kitzbüheler Alpen" sub-title="Infobüro Westendorf" address="Schulgasse 2, 6363 Westendorf" phone="0043 57507 2300" website="https://kitzbueheler-alpen.com" mail="westendorf@kitzbuehel-alpen.com" />
+  <ContentPartnerCard image="/media/partner/Coca-Cola Schriftzug SchwarzLogo.jpg" type="Partner" title="Coca Cola" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/eventverleihtirolLogo.jpg" type="Partner" title="Event Verleih Tirol" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/FlyTirolLogo.jpg" type="Flugschule" title="Fly Tirol" sub-title="Flugschule" address="Bergliftstraße 22, A-6363 Westendorf" phone="0043 676 3931494" mail="info@fly-tirol.com" website="https://fly-tirol.com"/>
-  <ContentPartnerCard image="/media/partner/appartementmorgensonne.jpg" type="Unterkunft" title="Morgensonne" sub-title="Gerhard Brunner" address="Straßhäusl 85, 6363 Westendorf" phone="0043 664 3585449" website="https://www.morgensonne-tirol.at/home-landingpage.html" mail="appartement@morgensonne-tirol.at" />
-  <ContentPartnerCard image="/media/partner/brixental-logo-region-rgb-red.jpg" type="Tourismusverband" title="Kitzbüheler Alpen" sub-title="Infobüro Westendorf" address="Schulgasse 2, 6363 Westendorf" phone="0043 57507 2300" website="https://kitzbueheler-alpen.com" mail="westendorf@kitzbuehel-alpen.com" />
-  <ContentPartnerCard image="/media/partner/SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg" type="Lift" title="Skiwelt Westendorf" sub-title="Bergbahn" address="Bergliftstraße 18, 6363 Westendorf" phone="0043 5334 2000 0" website="https://westendorf.at" mail="info@westendorf.at" />
+  <ContentPartnerCard image="/media/partner/gluecksgefuehl.jpg" type="Partner" title="Glücksgefühl Hochzeitsplannung und Trauerreden" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/huber_und_orthoferLogo.jpg" type="Partner" title="Huber & Orthofer" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/pletzer_und_partnerLogo.jpg" type="Partner" title="Pletzer & Partner OG" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/RENThier-sportshopLogo.jpg" type="Partner" title="RENThier Sportshop" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/skiweltLogo.jpg" type="Lift" title="Skiwelt Westendorf" sub-title="Bergbahn" address="Bergliftstraße 18, 6363 Westendorf" phone="0043 5334 2000 0" website="https://westendorf.at" mail="info@westendorf.at" />
+  <ContentPartnerCard image="/media/partner/soda-zitronLogo.jpg" type="Partner" title="Soda Zitron" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/steinbachLogo.jpg" type="Partner" title="Steinbach" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/streetFoodMarketLogo.jpg" type="Partner" title="Sreet Food Market Austria" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/tabularasaLogo.jpg" type="Partner" title="Tabularasa" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/tr_eventtechnikLogo.jpg" type="Partner" title="TR Eventtechnik" sub-title="" address="" phone="" mail="" website=""/>
 </div>

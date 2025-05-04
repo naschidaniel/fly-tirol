@@ -559,73 +559,252 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/11er-genuss-busLogo.jpg": {
+    "url": "/media/partner/11er-genuss-busLogo.jpg",
+    "path": "/media/partner/",
+    "file": "11er-genuss-busLogo.jpg",
+    "stem": "11er-genuss-busLogo",
+    "dimensions": {
+      "height": 788,
+      "width": 788,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/Alexanders_AutomobileLogo.jpg": {
+    "url": "/media/partner/Alexanders_AutomobileLogo.jpg",
+    "path": "/media/partner/",
+    "file": "Alexanders_AutomobileLogo.jpg",
+    "stem": "Alexanders_AutomobileLogo",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/Coca-Cola Schriftzug SchwarzLogo.jpg": {
+    "url": "/media/partner/Coca-Cola Schriftzug SchwarzLogo.jpg",
+    "path": "/media/partner/",
+    "file": "Coca-Cola Schriftzug SchwarzLogo.jpg",
+    "stem": "Coca-Cola Schriftzug SchwarzLogo",
+    "dimensions": {
+      "height": 1200,
+      "width": 1200,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/FlyTirolLogo.jpg": {
     "url": "/media/partner/FlyTirolLogo.jpg",
     "path": "/media/partner/",
     "file": "FlyTirolLogo.jpg",
     "stem": "FlyTirolLogo",
     "dimensions": {
-      "height": 500,
-      "orientation": 1,
+      "height": 1000,
       "width": 1000,
       "type": "jpg",
-      "ratio": 2
+      "ratio": 1
     },
     "alt": "",
     "title": ""
   },
-  "/media/partner/SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg": {
-    "url": "/media/partner/SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg",
+  "/media/partner/RENThier-sportshopLogo.jpg": {
+    "url": "/media/partner/RENThier-sportshopLogo.jpg",
     "path": "/media/partner/",
-    "file": "SkiWelt-Logo-Westendorf-Claim-schwarz-4c.jpg",
-    "stem": "SkiWelt-Logo-Westendorf-Claim-schwarz-4c",
+    "file": "RENThier-sportshopLogo.jpg",
+    "stem": "RENThier-sportshopLogo",
+    "dimensions": {
+      "height": 800,
+      "width": 800,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/apotheke_westendorf_logoLogo.jpg": {
+    "url": "/media/partner/apotheke_westendorf_logoLogo.jpg",
+    "path": "/media/partner/",
+    "file": "apotheke_westendorf_logoLogo.jpg",
+    "stem": "apotheke_westendorf_logoLogo",
+    "dimensions": {
+      "height": 800,
+      "width": 800,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/appartementmorgensonneLogo.jpg": {
+    "url": "/media/partner/appartementmorgensonneLogo.jpg",
+    "path": "/media/partner/",
+    "file": "appartementmorgensonneLogo.jpg",
+    "stem": "appartementmorgensonneLogo",
+    "dimensions": {
+      "height": 2048,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/brixental-logo-region-rgb-redLogo.jpg": {
+    "url": "/media/partner/brixental-logo-region-rgb-redLogo.jpg",
+    "path": "/media/partner/",
+    "file": "brixental-logo-region-rgb-redLogo.jpg",
+    "stem": "brixental-logo-region-rgb-redLogo",
     "dimensions": {
       "height": 1000,
-      "width": 2000,
-      "type": "jpg",
-      "ratio": 2
-    },
-    "alt": "",
-    "title": ""
-  },
-  "/media/partner/appartementmorgensonne.jpg": {
-    "url": "/media/partner/appartementmorgensonne.jpg",
-    "path": "/media/partner/",
-    "file": "appartementmorgensonne.jpg",
-    "stem": "appartementmorgensonne",
-    "dimensions": {
-      "height": 500,
-      "orientation": 1,
       "width": 1000,
       "type": "jpg",
-      "ratio": 2
+      "ratio": 1
     },
     "alt": "",
     "title": ""
   },
-  "/media/partner/brixental-logo-region-rgb-red.jpg": {
-    "url": "/media/partner/brixental-logo-region-rgb-red.jpg",
+  "/media/partner/eventverleihtirolLogo.jpg": {
+    "url": "/media/partner/eventverleihtirolLogo.jpg",
     "path": "/media/partner/",
-    "file": "brixental-logo-region-rgb-red.jpg",
-    "stem": "brixental-logo-region-rgb-red",
+    "file": "eventverleihtirolLogo.jpg",
+    "stem": "eventverleihtirolLogo",
     "dimensions": {
-      "height": 500,
-      "orientation": 1,
-      "width": 1000,
+      "height": 1181,
+      "width": 1181,
       "type": "jpg",
-      "ratio": 2
+      "ratio": 1
     },
     "alt": "",
     "title": ""
   },
-  "/media/partner/partner.jpg": {
-    "url": "/media/partner/partner.jpg",
+  "/media/partner/gluecksgefuehl.jpg": {
+    "url": "/media/partner/gluecksgefuehl.jpg",
     "path": "/media/partner/",
-    "file": "partner.jpg",
-    "stem": "partner",
+    "file": "gluecksgefuehl.jpg",
+    "stem": "gluecksgefuehl",
+    "dimensions": {
+      "height": 3153,
+      "width": 3153,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/huber_und_orthoferLogo.jpg": {
+    "url": "/media/partner/huber_und_orthoferLogo.jpg",
+    "path": "/media/partner/",
+    "file": "huber_und_orthoferLogo.jpg",
+    "stem": "huber_und_orthoferLogo",
+    "dimensions": {
+      "height": 1951,
+      "width": 1951,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/pletzer_und_partnerLogo.jpg": {
+    "url": "/media/partner/pletzer_und_partnerLogo.jpg",
+    "path": "/media/partner/",
+    "file": "pletzer_und_partnerLogo.jpg",
+    "stem": "pletzer_und_partnerLogo",
+    "dimensions": {
+      "height": 1424,
+      "width": 1424,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/skiweltLogo.jpg": {
+    "url": "/media/partner/skiweltLogo.jpg",
+    "path": "/media/partner/",
+    "file": "skiweltLogo.jpg",
+    "stem": "skiweltLogo",
     "dimensions": {
       "height": 2000,
       "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/soda-zitronLogo.jpg": {
+    "url": "/media/partner/soda-zitronLogo.jpg",
+    "path": "/media/partner/",
+    "file": "soda-zitronLogo.jpg",
+    "stem": "soda-zitronLogo",
+    "dimensions": {
+      "height": 400,
+      "width": 400,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/steinbachLogo.jpg": {
+    "url": "/media/partner/steinbachLogo.jpg",
+    "path": "/media/partner/",
+    "file": "steinbachLogo.jpg",
+    "stem": "steinbachLogo",
+    "dimensions": {
+      "height": 400,
+      "width": 400,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/streetFoodMarketLogo.jpg": {
+    "url": "/media/partner/streetFoodMarketLogo.jpg",
+    "path": "/media/partner/",
+    "file": "streetFoodMarketLogo.jpg",
+    "stem": "streetFoodMarketLogo",
+    "dimensions": {
+      "height": 816,
+      "width": 816,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/tabularasaLogo.jpg": {
+    "url": "/media/partner/tabularasaLogo.jpg",
+    "path": "/media/partner/",
+    "file": "tabularasaLogo.jpg",
+    "stem": "tabularasaLogo",
+    "dimensions": {
+      "height": 2369,
+      "width": 2369,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/tr_eventtechnikLogo.jpg": {
+    "url": "/media/partner/tr_eventtechnikLogo.jpg",
+    "path": "/media/partner/",
+    "file": "tr_eventtechnikLogo.jpg",
+    "stem": "tr_eventtechnikLogo",
+    "dimensions": {
+      "height": 400,
+      "width": 400,
       "type": "jpg",
       "ratio": 1
     },
