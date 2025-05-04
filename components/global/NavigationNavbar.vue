@@ -67,7 +67,7 @@
           to="/expo-area"
         />
         <NavigationNavbarLink
-          name="Wanderbird Cup"
+          name="Wanderbird Red Bull"
           to="/wanderbird"
         />
         <NavigationNavbarLink
