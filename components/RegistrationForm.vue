@@ -105,19 +105,18 @@ function submit() {
   const subject = `Registrierung für das Bike Parkour Rennen 2025 - ${first_name.value} ${last_name.value}`
   const body = `Hallo Bike & Fly Festival Team,
 
-Anbei meine Daten fü die Registrierung für das Bike Parkour Rennen 2025! Hier sind meine Angaben:
+Anbei meine Daten für die Registrierung für das Bike Parkour Rennen 2025! Hier sind meine Angaben:
 
 - Name: ${first_name.value} ${last_name.value}
 - Alter: ${age.value}
 - E-Mail: ${email.value}
 
 Ich habe die AGB und DSGVO gelesen und akzeptiere diese.
-Falls einige dieser Informationen nicht korrekt sind, antworten Sie bitte auf diese E-Mail, um Ihre Daten zu aktualisieren.
 
-Wir freuen uns darauf, Sie bei der Veranstaltung zu sehen!
+Ich freue mich auf das Event und bin gespannt auf die Herausforderung!
 
-Mit freundlichen Grüßen,
-Das Bike & Fly Festival Team`
+
+Mit freundlichen Grüßen`
 
   window.location.href = `mailto:${mail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 }
