@@ -70,7 +70,7 @@ import { useMedia } from '@/composable/useMedia'
 
 const { headerImage } = useMedia()
 const address = {
-  href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Fly+Tirol+-+Flugschule+Kitzbüheler+Alpen',
+  href: 'https://www.google.com/maps/search/?api=1&query=47.427568476534546%2C12.213300968591906,Bike&Fly+Westendorf',
   name: 'Route',
 }
 const telefonNumber = {
