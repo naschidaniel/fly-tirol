@@ -19,6 +19,7 @@ export type Order = {
     get_total_netto_price: number;
     get_total_price: number;
     shippingnote: OrderShippingNote;
+    is_shipping_equal_invoice: boolean;
     get_orderitems: Array<OrderItem>;
     address: string;
     city: string;

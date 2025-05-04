@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between xl:w-full">
     <div
-      class="navbar--wrapper fixed flex justify-end p-16 pt-60 z-40 w-full h-screen xl:h-auto xl:relative xl:justify-center xl:p-0 xl:z-0"
+      class="navbar--wrapper fixed flex justify-end p-16 pt-40 z-40 w-full h-screen xl:h-auto xl:relative xl:justify-center xl:p-0 xl:z-0"
       :class="{ open: isOpen, closed: !isOpen }"
       @click="isOpen = !isOpen"
     >
