@@ -48,7 +48,7 @@
           <label
             for="email"
             class="block mb-2 text-sm font-medium text-gray-900"
-          >Email address</label>
+          >Email Adresse</label>
           <input
             id="email"
             v-model="email"
