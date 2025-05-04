@@ -1,0 +1,124 @@
+<template>
+  <div>
+    <form @submit.prevent="submit">
+      <div class="grid gap-6 mb-6 md:grid-cols-2">
+        <div>
+          <label
+            for="first_name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Vorname</label>
+          <input
+            id="first_name"
+            v-model="first_name"
+            type="text"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Max"
+            required
+          >
+        </div>
+        <div>
+          <label
+            for="last_name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Nachname</label>
+          <input
+            id="last_name"
+            v-model="last_name"
+            type="text"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Mustermann"
+            required
+          >
+        </div>
+        <div>
+          <label
+            for="last_name"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Alter</label>
+          <input
+            id="last_name"
+            v-model="age"
+            type="number"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="10"
+            required
+          >
+        </div>
+        <div>
+          <label
+            for="email"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Email address</label>
+          <input
+            id="email"
+            v-model="email"
+            type="email"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="john.doe@company.com"
+            required
+          >
+        </div>
+      </div>
+      <div class="flex items-start mb-6">
+        <div class="flex items-center h-5">
+          <input
+            id="remember"
+            type="checkbox"
+            value=""
+            class="w-4 h-4 border border-gray-300 rounded-sm bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800"
+            required
+          >
+        </div>
+        <label
+          for="remember"
+          class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+        >Eltern haften für ihre Kinder am Parkourrennen wenn sich jemand verletzt. Vor dem abschicken haben Sie die <a
+          href="/agb"
+          class="text-blue-600 hover:underline dark:text-blue-500"
+        >AGB</a> und <a
+          href="/dsgvo"
+          class="text-blue-600 hover:underline dark:text-blue-500"
+        >DSGVO</a> gelesen.</label>
+      </div>
+      <button
+        type="submit"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useData } from '@/composable/useData'
+
+const { mail } = useData()
+
+const first_name = ref('')
+const last_name = ref('')
+const age = ref('')
+const email = ref('')
+
+function submit() {
+  const subject = `Registrierung für das Bike Parkour Rennen 2025 - ${first_name.value} ${last_name.value}`
+  const body = `Hallo Bike & Fly Festival Team,
+
+Anbei meine Daten fü die Registrierung für das Bike Parkour Rennen 2025! Hier sind meine Angaben:
+
+- Name: ${first_name.value} ${last_name.value}
+- Alter: ${age.value}
+- E-Mail: ${email.value}
+
+Ich habe die AGB und DSGVO gelesen und akzeptiere diese.
+Falls einige dieser Informationen nicht korrekt sind, antworten Sie bitte auf diese E-Mail, um Ihre Daten zu aktualisieren.
+
+Wir freuen uns darauf, Sie bei der Veranstaltung zu sehen!
+
+Mit freundlichen Grüßen,
+Das Bike & Fly Festival Team`
+
+  window.location.href = `mailto:${mail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+}
+</script>

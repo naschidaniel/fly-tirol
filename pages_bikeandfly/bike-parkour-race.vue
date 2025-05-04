@@ -12,12 +12,16 @@
     <div class="max-w-90 w-full mx-auto py-6">
       <BikeParkourRace class="nuxt-content" />
     </div>
+    <div class="max-w-90 w-full mx-auto py-6">
+      <RegistrationForm />
+    </div>
     <SocialBar />
   </div>
 </template>
 
 <script setup lang="ts">
 import SocialBar from '@/components/SocialBar.vue'
+import RegistrationForm from '@/components/RegistrationForm.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { useMetaTags } from '@/composable/useMetaTags'
 import BikeParkourRace from '@/content_bikeandfly/bike-parkour-race.vue'
