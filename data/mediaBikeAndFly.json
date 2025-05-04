@@ -629,6 +629,34 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/achrainer.jpg": {
+    "url": "/media/partner/achrainer.jpg",
+    "path": "/media/partner/",
+    "file": "achrainer.jpg",
+    "stem": "achrainer",
+    "dimensions": {
+      "height": 768,
+      "width": 768,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/alpenhof.jpg": {
+    "url": "/media/partner/alpenhof.jpg",
+    "path": "/media/partner/",
+    "file": "alpenhof.jpg",
+    "stem": "alpenhof",
+    "dimensions": {
+      "height": 790,
+      "width": 790,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/apotheke_westendorf_logoLogo.jpg": {
     "url": "/media/partner/apotheke_westendorf_logoLogo.jpg",
     "path": "/media/partner/",
@@ -657,6 +685,49 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/appartmenthoepfl.jpg": {
+    "url": "/media/partner/appartmenthoepfl.jpg",
+    "path": "/media/partner/",
+    "file": "appartmenthoepfl.jpg",
+    "stem": "appartmenthoepfl",
+    "dimensions": {
+      "height": 1112,
+      "width": 1112,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/atera.jpg": {
+    "url": "/media/partner/atera.jpg",
+    "path": "/media/partner/",
+    "file": "atera.jpg",
+    "stem": "atera",
+    "dimensions": {
+      "height": 2500,
+      "width": 2500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/bergloewe.jpg": {
+    "url": "/media/partner/bergloewe.jpg",
+    "path": "/media/partner/",
+    "file": "bergloewe.jpg",
+    "stem": "bergloewe",
+    "dimensions": {
+      "height": 500,
+      "orientation": 1,
+      "width": 500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/brixental-logo-region-rgb-redLogo.jpg": {
     "url": "/media/partner/brixental-logo-region-rgb-redLogo.jpg",
     "path": "/media/partner/",
@@ -671,6 +742,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/erstesparkasse.jpg": {
+    "url": "/media/partner/erstesparkasse.jpg",
+    "path": "/media/partner/",
+    "file": "erstesparkasse.jpg",
+    "stem": "erstesparkasse",
+    "dimensions": {
+      "height": 2560,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/eventverleihtirolLogo.jpg": {
     "url": "/media/partner/eventverleihtirolLogo.jpg",
     "path": "/media/partner/",
@@ -679,6 +764,20 @@
     "dimensions": {
       "height": 1181,
       "width": 1181,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/fm4.jpg": {
+    "url": "/media/partner/fm4.jpg",
+    "path": "/media/partner/",
+    "file": "fm4.jpg",
+    "stem": "fm4",
+    "dimensions": {
+      "height": 547,
+      "width": 547,
       "type": "jpg",
       "ratio": 1
     },
@@ -713,6 +812,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/inkerbell.jpg": {
+    "url": "/media/partner/inkerbell.jpg",
+    "path": "/media/partner/",
+    "file": "inkerbell.jpg",
+    "stem": "inkerbell",
+    "dimensions": {
+      "height": 1526,
+      "width": 1526,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/pletzer_und_partnerLogo.jpg": {
     "url": "/media/partner/pletzer_und_partnerLogo.jpg",
     "path": "/media/partner/",
@@ -721,6 +834,34 @@
     "dimensions": {
       "height": 1424,
       "width": 1424,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/reiterstueberl.jpg": {
+    "url": "/media/partner/reiterstueberl.jpg",
+    "path": "/media/partner/",
+    "file": "reiterstueberl.jpg",
+    "stem": "reiterstueberl",
+    "dimensions": {
+      "height": 4589,
+      "width": 4589,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/schokos.jpg": {
+    "url": "/media/partner/schokos.jpg",
+    "path": "/media/partner/",
+    "file": "schokos.jpg",
+    "stem": "schokos",
+    "dimensions": {
+      "height": 1727,
+      "width": 1727,
       "type": "jpg",
       "ratio": 1
     },
@@ -749,6 +890,34 @@
     "dimensions": {
       "height": 400,
       "width": 400,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/sportkecht.jpg": {
+    "url": "/media/partner/sportkecht.jpg",
+    "path": "/media/partner/",
+    "file": "sportkecht.jpg",
+    "stem": "sportkecht",
+    "dimensions": {
+      "height": 400,
+      "width": 400,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/stefantaxi.jpg": {
+    "url": "/media/partner/stefantaxi.jpg",
+    "path": "/media/partner/",
+    "file": "stefantaxi.jpg",
+    "stem": "stefantaxi",
+    "dimensions": {
+      "height": 600,
+      "width": 600,
       "type": "jpg",
       "ratio": 1
     },
@@ -797,6 +966,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/toitoiunddixi.jpg": {
+    "url": "/media/partner/toitoiunddixi.jpg",
+    "path": "/media/partner/",
+    "file": "toitoiunddixi.jpg",
+    "stem": "toitoiunddixi",
+    "dimensions": {
+      "height": 2560,
+      "width": 2560,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/tr_eventtechnikLogo.jpg": {
     "url": "/media/partner/tr_eventtechnikLogo.jpg",
     "path": "/media/partner/",
@@ -805,6 +988,34 @@
     "dimensions": {
       "height": 400,
       "width": 400,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/wanderbird.jpg": {
+    "url": "/media/partner/wanderbird.jpg",
+    "path": "/media/partner/",
+    "file": "wanderbird.jpg",
+    "stem": "wanderbird",
+    "dimensions": {
+      "height": 500,
+      "width": 500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/zipfer.jpg": {
+    "url": "/media/partner/zipfer.jpg",
+    "path": "/media/partner/",
+    "file": "zipfer.jpg",
+    "stem": "zipfer",
+    "dimensions": {
+      "height": 500,
+      "width": 500,
       "type": "jpg",
       "ratio": 1
     },
@@ -1029,6 +1240,20 @@
     "dimensions": {
       "height": 2000,
       "width": 2000,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/streetfood/gallerie/AstreetFoodMarketLogo.jpg": {
+    "url": "/media/streetfood/gallerie/AstreetFoodMarketLogo.jpg",
+    "path": "/media/streetfood/gallerie/",
+    "file": "AstreetFoodMarketLogo.jpg",
+    "stem": "AstreetFoodMarketLogo",
+    "dimensions": {
+      "height": 816,
+      "width": 816,
       "type": "jpg",
       "ratio": 1
     },
