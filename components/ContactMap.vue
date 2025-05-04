@@ -13,12 +13,16 @@
 
 <script setup lang="ts">
 import { usePage } from '@/composable/usePage'
+import { useData } from '@/composable/useData'
 
+const { isBikeAndFly } = useData()
 const { page } = usePage()
 const map
-  = page.value?.location === 'Westendorf'
-    ? '/leaflet_de_westendorf.html'
-    : '/leaflet_de.html'
+  = isBikeAndFly
+    ? '/leaflet_de_bikeandfly.html'
+    : page.value?.location === 'Westendorf'
+      ? '/leaflet_de_westendorf.html'
+      : '/leaflet_de.html'
 </script>
 
 <style scoped>
