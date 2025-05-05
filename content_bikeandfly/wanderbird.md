@@ -1,15 +1,20 @@
 ---
 title: Wanderbird
-description: Der Hike & Fly Wettbewerb für jedermann! Präsentiert wird dieser aufregende Wettbewerb von Paul Guschelbauer, Red Bull und Partner.
+description: Lass uns gemeinsam das Hike & Fly-Spiel spielen!! Präsentiert wird dieser aufregende Hike und Fly Community Event von Paul Guschelbauer, Red Bull und Partner.
 ---
 
-Die Rennstrecke ist so gestaltet, dass jeder, **vom Hike & Fly Anfänger bis zum Profi**, daran teilnehmen kann.
+Lass uns gemeinsam das Hike & Fly-Spiel spielen!
+Ihre Reise beginnt hier
 
-Sei Teil dieser aufregenden und unvergesslichen Veranstaltung und **erlebe den Wanderbirdcup** – eine unvergessliche Reise **durch die Brixentaler Berglandschaft.**
+Holen Sie sich Ihre erste kostenlose WANDERBIRD-Probe
 
-Auf der Webseite von <a href="https://www.wanderbird.io/" target="_blank">WANDERBIRD - HIKE & FLY</a> kannst du dich Informieren und für das Event anmelden
+Entspannter Hike & Fly-Tag mit deiner Community und Hike & Fly-Athleten
+
+Tauchen Sie ein in den WANDERBIRD-Geist und finden Sie Ihren Weg zu unseren Trophäen und unserer Akademie.
+
+Auf der Webseite von <a href="https://www.wanderbird.io/community-hf-westendorf" target="_blank">WANDERBIRD - HIKE & FLY</a> kannst du dich Informieren und für das Event anmelden
 
 
-<a href="https://www.wanderbird.io/" class="btn-primary" target="_blank">WANDERBIRD - HIKE & FLY Webseite</a>
+<a href="https://www.wanderbird.io/community-hf-westendorf" class="btn-primary" target="_blank">WANDERBIRD - HIKE & FLY Webseite</a>
 
 <ContentImageGallery path="/media/wanderbird/gallerie/"/>

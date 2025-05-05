@@ -2,12 +2,11 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="Wanderbird"
+      headline="Wanderbird Red Bull"
       :picture="headerImage"
     >
       <p>
-        Der Hike & Fly Wettbewerb für jedermann! Präsentiert wird dieser
-        aufregende Wettbewerb von Paul Guschelbauer, Red Bull und Partner.
+        Lass uns gemeinsam das Hike & Fly-Spiel spielen!! Präsentiert wird dieser aufregende Hike & Fly Community Event von Paul Guschelbauer, Red Bull und Partner.
       </p>
     </PageHeader>
     <div class="max-w-90 w-full mx-auto py-6 nuxt-content">
