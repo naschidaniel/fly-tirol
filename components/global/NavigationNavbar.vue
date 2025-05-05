@@ -79,7 +79,7 @@
           to="/livemusik"
         />
         <NavigationNavbarLink
-          name="Streetfood"
+          name="Streetfood Market Austria"
           to="/streetfood"
         />
         <NavigationNavbarLink
