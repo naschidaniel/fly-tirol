@@ -34,13 +34,13 @@
           <label
             for="last_name"
             class="block mb-2 text-sm font-medium text-gray-900"
-          >Alter</label>
+          >Geburtsjahr</label>
           <input
             id="last_name"
-            v-model="age"
+            v-model="year_of_birth"
             type="number"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-            placeholder="10"
+            placeholder="2010"
             required
           >
         </div>
@@ -98,7 +98,7 @@ const { mail } = useData()
 
 const first_name = ref('')
 const last_name = ref('')
-const age = ref('')
+const year_of_birth = ref('')
 const email = ref('')
 
 function submit() {
@@ -108,10 +108,19 @@ function submit() {
 Anbei meine Daten für die Registrierung für das Bike Parkour Rennen 2025! Hier sind meine Angaben:
 
 - Name: ${first_name.value} ${last_name.value}
-- Alter: ${age.value}
+- Geburtsjahr: ${year_of_birth.value}
 - E-Mail: ${email.value}
 
 Ich habe die AGB und DSGVO gelesen und akzeptiere diese.
+
+Das Nenngeld von 15 Euro werde ich an die Kontoverbindung überweisen.
+
+Bitte überweisen Sie vorarb das Nenngeld von 15 Euro auf das Konto:
+Bike&Fly Sport&Musik
+Iban: AT04 2050 5000 0033 4615
+BIC: SPKIAT2KXXX
+Verwendungszweck: Bike Parkour Rennen ${first_name.value} ${last_name.value}
+
 
 Ich freue mich auf das Event und bin gespannt auf die Herausforderung!
 

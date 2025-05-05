@@ -19,7 +19,14 @@
       <p class="py-6">
         Hier könnt ihr euch für das Bike Parkour Rennen anmelden. Bitte füllt alle Felder aus und sendet das Formular mit euren Email-Client an <a :href="`mailto:${mail}`">{{ mail }}</a>. Wir freuen uns auf eure Teilnahme!
       </p>
-      <RegistrationForm />
+      <p class="py-2">
+        Bitte überweisen Sie vorarb das Nenngeld von 15 Euro auf das Konto:<br>
+        Bike&Fly Sport&Musik<br>
+        Iban: AT04 2050 5000 0033 4615<br>
+        BIC: SPKIAT2KXXX<br>
+        Verwendungszweck: Bike Parkour Rennen [[Namen]]<br>
+      </p>
+      <RegistrationForm class="my-6" />
     </div>
     <SocialBar />
   </div>
