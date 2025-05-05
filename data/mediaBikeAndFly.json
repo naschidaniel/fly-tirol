@@ -798,6 +798,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/holzbaulindner.jpg": {
+    "url": "/media/partner/holzbaulindner.jpg",
+    "path": "/media/partner/",
+    "file": "holzbaulindner.jpg",
+    "stem": "holzbaulindner",
+    "dimensions": {
+      "height": 500,
+      "width": 500,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/huber_und_orthoferLogo.jpg": {
     "url": "/media/partner/huber_und_orthoferLogo.jpg",
     "path": "/media/partner/",

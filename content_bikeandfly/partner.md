@@ -20,6 +20,7 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
   <ContentPartnerCard image="/media/partner/FlyTirolLogo.jpg" type="Flugschule" title="Fly Tirol" sub-title="Flugschule" address="Bergliftstraße 22, A-6363 Westendorf" phone="0043 676 3931494" mail="info@fly-tirol.com" website="https://fly-tirol.com"/>
   <ContentPartnerCard image="/media/partner/fm4.jpg" type="Partner" title="FM4" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/gluecksgefuehl.jpg" type="Partner" title="Glücksgefühl Hochzeitsplanung und Trauerreden" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/holzbaulindner.jpg" type="Partner" title="Holzbau Lindner" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/huber_und_orthoferLogo.jpg" type="Partner" title="Huber & Orthofer" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/inkerbell.jpg" type="Partner" title="Inkerbell" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/pletzer_und_partnerLogo.jpg" type="Partner" title="Pletzer & Partner OG" sub-title="" address="" phone="" mail="" website=""/>
