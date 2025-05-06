@@ -22,7 +22,7 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
   <ContentPartnerCard image="/media/partner/gluecksgefuehl.jpg" type="Partner" title="Glücksgefühl" sub-title="Hochzeitsplanung und Trauerreden" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/holzbaulindner.jpg" type="Partner" title="Holzbau Lindner" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/huber_und_orthoferLogo.jpg" type="Partner" title="Huber & Orthofer" sub-title="" address="" phone="" mail="" website=""/>
-  <ContentPartnerCard image="/media/partner/inkerbell.jpg" type="Partner" title="INKerbell" sub-title="" address="" phone="" mail="" website=""/> 
+  <ContentPartnerCard image="/media/partner/inkerbell.jpg" type="Partner" title="INKerbell TATTOOS - TIROL" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/pletzer_und_partnerLogo.jpg" type="Partner" title="Pletzer & Partner OG" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/reiterstueberl.jpg" type="Partner" title="Reiterstüberl" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/RENThier-sportshopLogo.jpg" type="Partner" title="RENThier Sportshop" sub-title="" address="" phone="" mail="" website=""/>
@@ -33,7 +33,7 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
   <ContentPartnerCard image="/media/partner/stefantaxi.jpg" type="Partner" title="Stefan Taxi" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/steinbachLogo.jpg" type="Partner" title="Steinbach" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/streetFoodMarketLogo.jpg" type="Partner" title="Sreet Food Market Austria" sub-title="" address="" phone="" mail="" website=""/>
-  <ContentPartnerCard image="/media/partner/tabularasaLogo.jpg" type="Partner" title="Tabularasa" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/tabularasaLogo.jpg" type="Partner" title="TabulaRasa" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/toitoiunddixi.jpg" type="Partner" title="Toi Toi & Dixi" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/tr_eventtechnikLogo.jpg" type="Partner" title="TR Eventtechnik" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/wanderbird.jpg" type="Partner" title="Wanderbird Red Bull" sub-title="" address="" phone="" mail="" website="https://www.wanderbird.io/"/> 
