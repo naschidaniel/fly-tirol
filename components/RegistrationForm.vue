@@ -37,10 +37,9 @@
           >Geburtsjahr</label>
           <input
             id="last_name"
-            v-model="year_of_birth"
-            type="number"
+            v-model="birthdate"
+            type="date"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-            placeholder="2010"
             required
           >
         </div>
@@ -98,7 +97,7 @@ const { mail } = useData()
 
 const first_name = ref('')
 const last_name = ref('')
-const year_of_birth = ref('')
+const birthdate = ref('')
 const email = ref('')
 
 function submit() {
@@ -108,7 +107,7 @@ function submit() {
 Anbei meine Daten für die Registrierung für das Bike Parkour Rennen 2025! Hier sind meine Angaben:
 
 - Name: ${first_name.value} ${last_name.value}
-- Geburtsjahr: ${year_of_birth.value}
+- Geburtsdatum: ${birthdate.value}
 - E-Mail: ${email.value}
 
 Ich habe die AGB und DSGVO gelesen und akzeptiere diese.
