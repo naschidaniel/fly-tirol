@@ -111,7 +111,9 @@ function submit() {
     email: email.value,
   })
     .then(() => {
-      alert('Formular erfolgreich gesendet!')
+      alert('Formular erfolgreich gesendet!'); {
+        window.location.reload()
+      }
     })
     .catch((error) => {
       console.error('Fehler beim Senden des Formulars:', error)
