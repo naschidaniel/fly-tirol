@@ -671,6 +671,34 @@
     "alt": "",
     "title": ""
   },
+  "/media/livemusik/gallerie/fm4.jpg": {
+    "url": "/media/livemusik/gallerie/fm4.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "fm4.jpg",
+    "stem": "fm4",
+    "dimensions": {
+      "height": 547,
+      "width": 547,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/livemusik/gallerie/tabularasaLogo.jpg": {
+    "url": "/media/livemusik/gallerie/tabularasaLogo.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "tabularasaLogo.jpg",
+    "stem": "tabularasaLogo",
+    "dimensions": {
+      "height": 2369,
+      "width": 2369,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/page-header.jpg": {
     "url": "/media/page-header.jpg",
     "path": "/media/",
