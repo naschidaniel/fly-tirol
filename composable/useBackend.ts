@@ -178,7 +178,7 @@ export function useBackend() {
 
   async function postRegistrationForm(body: object): Promise<void> {
     const csrftoken = getCookie('csrftoken')
-    await useFetch(`${backend}/shop/api/cart/${cartId.value}`, {
+    await useFetch(`${backend}/shop/api/contact/registration`, {
       method: 'POST',
       body,
       headers: {
