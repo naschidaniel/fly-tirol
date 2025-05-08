@@ -2,7 +2,7 @@
   <div>
     <PageHeader
       pre-headline="Bike&Fly. Festival Brixental"
-      headline="BikeParkourRace"
+      headline="Bike Parkour Race"
       :picture="headerImage"
     >
       <p>
