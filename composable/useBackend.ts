@@ -176,6 +176,25 @@ export function useBackend() {
     })
   }
 
+  async function postRegistrationForm(body: object): Promise<void> {
+    const csrftoken = getCookie('csrftoken')
+    await useFetch(`${backend}/shop/api/cart/${cartId.value}`, {
+      method: 'POST',
+      body,
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'X-CSRFToken': csrftoken as string,
+      },
+      onResponse({ response }) {
+        updateAlert(response._data.alert)
+      },
+      onResponseError({ response }) {
+        updateAlert(response._data?.alert)
+      },
+    })
+  }
+
   function getProduct(category: string, slug: string): Product {
     const product: Product
       = products.value.find(
@@ -243,7 +262,7 @@ export function useBackend() {
 
   async function deleteCart(pk: string | undefined): Promise<void> {
     const csrftoken = getCookie('csrftoken')
-    await useFetch(`${backend}/shop/api/cart/${pk}`, {
+    await useFetch(`${backend}/shop/api/contactform/${pk}`, {
       method: 'DELETE',
       headers: {
         'Accept': 'application/json',
@@ -272,6 +291,7 @@ export function useBackend() {
     getCsrfToken,
     whoami,
     cartItemsLength,
+    postRegistrationForm,
     isCartItems,
     getProduct,
     updateCart,

@@ -91,9 +91,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useData } from '@/composable/useData'
+import { useBackend } from '@/composable/useBackend'
 
-const { mail } = useData()
+const { postRegistrationForm } = useBackend()
 
 const first_name = ref('')
 const last_name = ref('')
@@ -101,31 +101,17 @@ const birthdate = ref('')
 const email = ref('')
 
 function submit() {
-  const subject = `Registrierung für das Bike Parkour Rennen 2025 - ${first_name.value} ${last_name.value}`
-  const body = `Hallo Bike & Fly Festival Team,
-
-Anbei meine Daten für die Registrierung für das Bike Parkour Rennen 2025! Hier sind meine Angaben:
-
-- Name: ${first_name.value} ${last_name.value}
-- Geburtsdatum: ${birthdate.value}
-- E-Mail: ${email.value}
-
-Ich habe die AGB und DSGVO gelesen und akzeptiere diese.
-
-Das Nenngeld von 15 Euro werde ich an die Kontoverbindung überweisen.
-
-Bitte überweisen Sie vorarb das Nenngeld von 15 Euro auf das Konto:
-Bike&Fly Sport&Musik
-Iban: AT04 2050 5000 0033 4615
-BIC: SPKIAT2KXXX
-Verwendungszweck: Bike Parkour Rennen ${first_name.value} ${last_name.value}
-
-
-Ich freue mich auf das Event und bin gespannt auf die Herausforderung!
-
-
-Mit freundlichen Grüßen`
-
-  window.location.href = `mailto:${mail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+  postRegistrationForm({
+    name: `${first_name.value} ${last_name.value}`,
+    birthdate: birthdate.value,
+    email: email.value,
+  })
+    .then(() => {
+      alert('Formular erfolgreich gesendet!')
+    })
+    .catch((error) => {
+      console.error('Fehler beim Senden des Formulars:', error)
+      alert('Fehler beim Senden des Formulars. Bitte versuchen Sie es später erneut.')
+    })
 }
 </script>
