@@ -89,9 +89,9 @@ body {
     @apply mb-5
   }
   .nuxt-content h3 {
-    @apply text-xl font-medium my-2; }
+    @apply text-xl font-medium mt-10 my-4; }
   .nuxt-content h4 {
-    @apply text-lg font-medium my-2; }
+    @apply text-lg font-medium mt-10 my-4; }
   .nuxt-content h5 {
     @apply font-medium mt-2 my-2; }
   .nuxt-content h6 {

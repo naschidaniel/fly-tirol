@@ -53,7 +53,7 @@
             v-model="email"
             type="email"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-            placeholder="john.doe@company.com"
+            placeholder="max@example.com"
             required
           >
         </div>
@@ -101,6 +101,10 @@ const date_of_birth = ref('')
 const email = ref('')
 
 function submit() {
+  if (!first_name.value || !last_name.value || !date_of_birth.value || !email.value) {
+    alert('Bitte füllen Sie alle Felder aus.')
+    return
+  }
   postRegistrationForm({
     name: `${first_name.value} ${last_name.value}`,
     date_of_birth: date_of_birth.value,
