@@ -37,7 +37,7 @@
           >Geburtsjahr</label>
           <input
             id="last_name"
-            v-model="birthdate"
+            v-model="date_of_birth"
             type="date"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             required
@@ -97,13 +97,13 @@ const { postRegistrationForm } = useBackend()
 
 const first_name = ref('')
 const last_name = ref('')
-const birthdate = ref('')
+const date_of_birth = ref('')
 const email = ref('')
 
 function submit() {
   postRegistrationForm({
     name: `${first_name.value} ${last_name.value}`,
-    birthdate: birthdate.value,
+    date_of_birth: date_of_birth.value,
     email: email.value,
   })
     .then(() => {
