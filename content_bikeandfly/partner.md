@@ -4,6 +4,7 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
 ---
 
 <div class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 md:py-12">
+  <ContentPartnerCard image="/media/expo-area/first-degree.jpg" type="Partner" title="First 1° Degree" sub-title="" address="" phone="" mail="" website="https://firstdegree-mtb.com"/>
   <ContentPartnerCard image="/media/partner/11er-genuss-busLogo.jpg" type="Partner" title="11er Genuss Bus" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/achrainer.jpg" type="Partner" title="Achrainer Metallwerkstatt" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/Alexanders_AutomobileLogo.jpg" type="Partner" title="Alex Automobile Kramsach" sub-title="" address="Hagau 148, 6233 Voldöpp" phone="0043 5337 21641" mail="" website=""/>
