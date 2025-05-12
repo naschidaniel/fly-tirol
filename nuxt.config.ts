@@ -84,7 +84,7 @@ export default defineNuxtConfig({
           content: (isHydrogen || isGh2di)
             ? 'We are an advisory service to provide strategic advice to all actors seeking to advance their green hydrogen Agenda and to start roll-out.'
             : isBikeAndFly
-              ? 'Das Bike&Fly. Festival Brixental - Von 9. bis 11. August wird die Talstation der Alpenrosenbahn zum Treffpunkt für Abenteuerlustige und Freizeitsportler.'
+              ? 'Das Bike&Fly. Festival Brixental - Von 08. bis 10. August 2025 wird die Talstation der Alpenrosenbahn zum Treffpunkt für Abenteuerlustige und Freizeitsportler.'
               : 'Die Fly Tirol Flugschule in Westendorf ist dein Ansprechpartner rund um das Thema “Paragleiten” in den Kitzbüheler Alpen und darüber hinaus!',
         },
         {
