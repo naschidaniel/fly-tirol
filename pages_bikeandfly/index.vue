@@ -15,7 +15,8 @@
       />
     </div>
     <LinkList />
-    <div class="max-w-90 w-full mx-auto py-6">
+    <CountDown />
+    <div class="max-w-90 w-full mx-auto py-6 mt-4">
       <div class="flex justify-center items-center mb-6">
         <iframe
           width="1120"
@@ -51,6 +52,7 @@ import LinkList from '@/components/LinkList.vue'
 import ResponsiveImage from '@/components/ResponsiveImage.vue'
 import SocialBar from '@/components/SocialBar.vue'
 import { useMedia } from '@/composable/useMedia'
+import CountDown from '@/components/CountDown.Client.vue'
 
 const { headerImage } = useMedia()
 useMetaTags()

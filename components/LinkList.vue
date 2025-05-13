@@ -31,7 +31,7 @@
                 und Groß.
               </p>
               <p class="pb-2">
-                Verpasse nicht dieses unvergessliche Wochenende voller
+                Verpasse nicht dieses unvergessliche Wochenende am 08. bis 10. August 2025 voller
                 Adrenalin, Spaß und Musik!
               </p>
             </span>
