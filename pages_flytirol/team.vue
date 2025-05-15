@@ -43,17 +43,5 @@ const members: TeamMember[] = [
       'Staatlich geprüfter Fluglehrer, DHV Prüfer, Performancetrainer, Tandempilot',
     information: '',
   },
-  {
-    name: 'Martin Perdacher',
-    picture: '/media/team/martin.jpg',
-    position: 'Tandemkoordinator/-pilot, Social Media Manager',
-    information: '',
-  },
-  {
-    name: 'Roman Gartelgruber',
-    picture: '/media/team/roman.jpg',
-    position: 'Tandempilot',
-    information: '',
-  },
 ]
 </script>
