@@ -24,7 +24,7 @@ Main Acts:
 - KRISTIAN DAVIDEK 
 - JOYCE MUNIZ 
 
-DJOCK NORRIS (Event Dj)
+DJOCK NORRIS (Event DJ)
 
 - AL ECTRO
 - BÄRIGER BURSCH
@@ -33,6 +33,6 @@ DJOCK NORRIS (Event Dj)
 
 ### Bike&Fly Afterparty Alpenrosensaal (Foyer) am Samstag 09.08.25 ab 23:30 Uhr
 
-- DJOCK NORRIS (Event Dj)
+- DJOCK NORRIS (Event DJ)
 
 <ContentImageGallery path="/media/livemusik/gallerie/"/>

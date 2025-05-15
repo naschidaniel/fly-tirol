@@ -79,6 +79,10 @@
           to="/livemusik"
         />
         <NavigationNavbarLink
+          name="Event DJ / Moderation"
+          to="/event-dj"
+        />
+        <NavigationNavbarLink
           name="Streetfood Market Austria"
           to="/streetfood"
         />

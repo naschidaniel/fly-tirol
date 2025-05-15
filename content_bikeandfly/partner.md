@@ -17,6 +17,7 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
   <ContentPartnerCard image="/media/partner/brixental-logo-region-rgb-redLogo.jpg" type="Tourismusverband" title="Kitzbüheler Alpen" sub-title="Infobüro Westendorf" address="Schulgasse 2, 6363 Westendorf" phone="0043 57507 2300" website="https://kitzbueheler-alpen.com" mail="westendorf@kitzbuehel-alpen.com" />
   <ContentPartnerCard image="/media/partner/Coca-Cola Schriftzug SchwarzLogo.jpg" type="Partner" title="Coca Cola" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/erstesparkasse.jpg" type="Partner" title="Erste Sparkasse" sub-title="" address="" phone="" mail="" website=""/> 
+  <ContentPartnerCard image="/media/partner/Event_DJ_Logo.jpg" type="Partner" title="Event DJ" sub-title="" address="" phone="" mail="" website="https://linktr.ee/event_dj"/>
   <ContentPartnerCard image="/media/partner/eventverleihtirolLogo.jpg" type="Partner" title="Event Verleih Tirol" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/FlyTirolLogo.jpg" type="Flugschule" title="Fly Tirol" sub-title="Flugschule" address="Bergliftstraße 22, A-6363 Westendorf" phone="0043 676 3931494" mail="info@fly-tirol.com" website="https://fly-tirol.com"/>
   <ContentPartnerCard image="/media/partner/fm4.jpg" type="Partner" title="FM4" sub-title="" address="" phone="" mail="" website=""/> 

@@ -167,6 +167,62 @@
     "alt": "",
     "title": ""
   },
+  "/media/event-dj/gallerie/8_djock-norris.jpg": {
+    "url": "/media/event-dj/gallerie/8_djock-norris.jpg",
+    "path": "/media/event-dj/gallerie/",
+    "file": "8_djock-norris.jpg",
+    "stem": "8_djock-norris",
+    "dimensions": {
+      "height": 625,
+      "width": 625,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/event-dj/gallerie/Event_DJ_Reini_Gossner_1.jpg": {
+    "url": "/media/event-dj/gallerie/Event_DJ_Reini_Gossner_1.jpg",
+    "path": "/media/event-dj/gallerie/",
+    "file": "Event_DJ_Reini_Gossner_1.jpg",
+    "stem": "Event_DJ_Reini_Gossner_1",
+    "dimensions": {
+      "height": 1656,
+      "width": 1656,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/event-dj/gallerie/Event_DJ_Reini_Gossner_2.jpg": {
+    "url": "/media/event-dj/gallerie/Event_DJ_Reini_Gossner_2.jpg",
+    "path": "/media/event-dj/gallerie/",
+    "file": "Event_DJ_Reini_Gossner_2.jpg",
+    "stem": "Event_DJ_Reini_Gossner_2",
+    "dimensions": {
+      "height": 1074,
+      "width": 1074,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/event-dj/gallerie/Event_DJ_logo.jpg": {
+    "url": "/media/event-dj/gallerie/Event_DJ_logo.jpg",
+    "path": "/media/event-dj/gallerie/",
+    "file": "Event_DJ_logo.jpg",
+    "stem": "Event_DJ_logo",
+    "dimensions": {
+      "height": 1050,
+      "width": 1050,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/expo-area/advance.jpg": {
     "url": "/media/expo-area/advance.jpg",
     "path": "/media/expo-area/",
@@ -261,6 +317,20 @@
       "width": 2000,
       "type": "jpg",
       "ratio": 1.5
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/expo-area/gaubags_logo_bw.jpg": {
+    "url": "/media/expo-area/gaubags_logo_bw.jpg",
+    "path": "/media/expo-area/",
+    "file": "gaubags_logo_bw.jpg",
+    "stem": "gaubags_logo_bw",
+    "dimensions": {
+      "height": 2481,
+      "width": 2481,
+      "type": "jpg",
+      "ratio": 1
     },
     "alt": "",
     "title": ""
@@ -727,6 +797,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/livemusik/gallerie/Event_DJ_logo.jpg": {
+    "url": "/media/livemusik/gallerie/Event_DJ_logo.jpg",
+    "path": "/media/livemusik/gallerie/",
+    "file": "Event_DJ_logo.jpg",
+    "stem": "Event_DJ_logo",
+    "dimensions": {
+      "height": 1050,
+      "width": 1050,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/page-header.jpg": {
     "url": "/media/page-header.jpg",
     "path": "/media/",
@@ -777,6 +861,20 @@
     "dimensions": {
       "height": 1200,
       "width": 1200,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/Event_DJ_logo.jpg": {
+    "url": "/media/partner/Event_DJ_logo.jpg",
+    "path": "/media/partner/",
+    "file": "Event_DJ_logo.jpg",
+    "stem": "Event_DJ_logo",
+    "dimensions": {
+      "height": 1050,
+      "width": 1050,
       "type": "jpg",
       "ratio": 1
     },

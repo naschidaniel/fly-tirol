@@ -10,6 +10,7 @@ description: Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Fest
   <ContentPartnerCard image="/media/expo-area/atera.jpg" type="Bike" title="Atera" sub-title="" address="" phone="" mail="" website="https://www.atera.de"/>
   <ContentPartnerCard image="/media/expo-area/first-degree.jpg" type="Bike" title="First 1° Degree" sub-title="" address="" phone="" mail="" website="https://firstdegree-mtb.com"/>
   <ContentPartnerCard image="/media/expo-area/flow.jpg" type="Fly" title="Flow Paragliders" sub-title="" address="" phone="" mail="" website="https://www.flowparagliders.de"/>
+  <ContentPartnerCard image="/media/expo-area/gaubags_logo_bw.jpg" type="Bike" title="Gaubags" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/expo-area/nova.jpg" type="Fly" title="Nova Paragliders" sub-title="" address="" phone="" mail="" website="https://www.nova.eu"/>
   <ContentPartnerCard image="/media/expo-area/rent-a-bike.jpg" type="Bike" title="Rent-A-Bike" sub-title="" address="" phone="" mail="" website="https://www.rent-a-bike.at"/>
   <ContentPartnerCard image="/media/expo-area/skywalk.jpg" type="Fly" title="Skywalk Paragliders" sub-title="" address="" phone="" mail="" website="https://skywalk.info"/>

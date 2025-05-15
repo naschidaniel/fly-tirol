@@ -7,4 +7,10 @@ Das Bike & Fly – Festival ist nicht nur ein Ort für sportliche Höchstleistun
 
 Markiere dir den Termin im Kalender und sei dabei, wenn Sport und Kulinarik aufeinandertreffen!
 
+## Unser Öffnungszeiten:
+
+* Freitag 08.08.25 ab 15:00 bis 22:00 Uhr
+* Samstag 09.08.25 ab 11:00 bis 23:00 Uhr
+* Sonntag 10.08.25 ab 11:00 bis 20:00 Uhr
+
 <ContentImageGallery path="/media/streetfood/gallerie/"/>
