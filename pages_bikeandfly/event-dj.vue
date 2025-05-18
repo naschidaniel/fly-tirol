@@ -6,9 +6,6 @@
       :picture="headerImage"
     >
       <p class="mt-2">
-        DJ und Entertainer der alten Schule
-      </p>
-      <p class="mt-2">
         Reini Gossner [DJock Norris] ist ein DJ der alten Schule, der sein Handwerk schon in den frühen
         90igern auf zwei Turntables und einem analogen Mixer gelernt hat. Seine Leidenschaft zum Auflegen
         ist bis heute ungebrochen, auch wenn er das Vinyl durch digitale Technik ersetz hat.

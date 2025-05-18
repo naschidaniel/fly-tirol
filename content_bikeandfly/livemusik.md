@@ -34,5 +34,6 @@ DJOCK NORRIS (Event DJ)
 ### Bike&Fly Afterparty Alpenrosensaal (Foyer) am Samstag 09.08.25 ab 23:30 Uhr
 
 - DJOCK NORRIS (Event DJ)
+- <a href="https://www.facebook.com/events/s/bikefly-sportmusik-festival-af/1556561438292114/" target="_blank">Facebook Veranstallung</a>
 
 <ContentImageGallery path="/media/livemusik/gallerie/"/>

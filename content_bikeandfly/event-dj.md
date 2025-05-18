@@ -5,7 +5,7 @@ description: Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Fest
 
 ## Event DJ & Moderator
 
-Mit flinken Fingern und einem hohen Maß für musikalisches Gespür versteht es, unterschiedliche
+Mit flinken Fingern und einem hohen Maß für musikalisches Gespür versteht er es, unterschiedliche
 Musikgenres in seinen einzigartigen Mash-ups zu verschmelzen und so das Publikum auf „besondere
 Art“ zu begeistern und jeden Dancefloor in ein pulsierendes Erlebnis zu verwandeln.
 
@@ -14,8 +14,6 @@ der das Publikums mit Fachwissen und einem lockeren Augenzwinkern begeistern kan
 
 Ob Hochzeit, Geburtstag, Firmenevent oder Festivalbühne – DJock Norris bringt als mobiler Event DJ
 heiße Beats, Stimmung und Unterhaltung auf höchstem Niveau
-
-DJock Norris - Event DJ für unser Festival.
 
 <ContentImageGallery path="/media/event-dj/gallerie/"/>
 

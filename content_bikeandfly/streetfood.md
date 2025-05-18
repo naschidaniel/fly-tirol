@@ -13,4 +13,8 @@ Markiere dir den Termin im Kalender und sei dabei, wenn Sport und Kulinarik aufe
 * Samstag 09.08.25 ab 11:00 bis 23:00 Uhr
 * Sonntag 10.08.25 ab 11:00 bis 20:00 Uhr
 
+## Links
+
+- <a href="https://www.facebook.com/events/s/bikefood-bikefly-sportmusik-fe/1198098297834069/" target="_blank">Facebook Veranstallung</a>
+
 <ContentImageGallery path="/media/streetfood/gallerie/"/>
