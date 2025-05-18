@@ -29,10 +29,27 @@
               :class="course.value === selectedDateString ? 'border-brand' : ''"
               @click="setOptionDateString(course.value)"
             >
-              {{ course.value }}
+              <span
+                class="inline-flex items-center justify-center p-2 leading-none text-gray-900 rounded-full"
+                :class="
+                  !course.is_available
+                    ? 'bg-red-300'
+                    : 'bg-green-300'
+                "
+              /> <span class="px-2">{{ course.value }}</span>
             </button>
           </div>
         </div>
+      </div>
+      <div
+        v-if="calenderFiltered.length != 0"
+        class="mt-10"
+      >
+        <span
+          class="inline-flex items-center justify-center p-2 leading-none text-gray-900 rounded-full bg-red-300"
+        >ausgebut</span> <span
+          class="inline-flex items-center justify-center p-2 leading-none text-gray-900 rounded-full bg-green-300 ml-3"
+        >verfügbar</span>
       </div>
     </div>
     <div class="w-full lg:px-4 lg:mt-0 lg:w-1/2">

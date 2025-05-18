@@ -34,7 +34,7 @@ export function useFormat() {
   ): string {
     return option === undefined
       ? ''
-      : `${option.value} + ${formatPrice(option.price)}`
+      : `${option.value} + ${formatPrice(option.price)} ${option.is_available ? '' : ' (ausgebucht)'}`
   }
 
   return {

@@ -61,8 +61,10 @@
       </select>
     </div>
     <button
+      :disabled="!selectedVariants.every((v) => v.is_available)"
       :aria-label="`Book ${pickedProduct}`"
-      class="mt-6 btn-primary w-full"
+      class="mt-6 w-full"
+      :class="!selectedVariants.every((v) => v.is_available) ? 'btn-disabled' : 'btn-primary'"
       @click.prevent="addProduct()"
     >
       <span>Buchen</span>

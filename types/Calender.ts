@@ -9,6 +9,7 @@ export type CalenderEntry = {
   date_variant: boolean
   end_iso_date: string
   href: string
+  is_available: boolean
   month: string
   monthLong: string | undefined
   name: string

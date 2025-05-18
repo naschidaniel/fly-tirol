@@ -11,5 +11,6 @@ export type ProductVariantOption = {
     readonly end_iso_date?: string;
     value: string;
     price?: number;
+    is_available?: boolean;
 };
 

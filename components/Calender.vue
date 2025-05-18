@@ -79,7 +79,18 @@
           </h4>
           <div class="mb-2">
             <p>{{ entry.value }}</p>
-            <div class="flex justify-end mt-2">
+            <div class="flex justify-between mt-2">
+              <div>
+                <span
+                  v-if="!entry.is_available"
+                  class="inline-flex items-center justify-center px-2 py-1 leading-none text-gray-900 rounded-full"
+                  :class="
+                    !entry.is_available
+                      ? 'bg-red-300'
+                      : ''
+                  "
+                >ausgebucht</span>
+              </div>
               <NuxtLink
                 :to="entry.href"
                 :title="`${entry.name} - ${entry.value}`"

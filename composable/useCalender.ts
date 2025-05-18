@@ -68,6 +68,7 @@ export function useCalender() {
               start_iso_date: o.start_iso_date,
               end_iso_date: o.end_iso_date,
               month: o.start_month,
+              is_available: o.is_available,
               monthLong: o.start_iso_date
                 ? new Date(o.start_iso_date as string).toLocaleString('de-de', {
                     month: 'long',
