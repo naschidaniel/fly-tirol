@@ -47,7 +47,7 @@
       >
         <span
           class="inline-flex items-center justify-center p-2 leading-none text-gray-900 rounded-full bg-red-300"
-        >ausgebut</span> <span
+        >ausgebucht</span> <span
           class="inline-flex items-center justify-center p-2 leading-none text-gray-900 rounded-full bg-green-300 ml-3"
         >verfügbar</span>
       </div>
