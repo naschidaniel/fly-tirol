@@ -19,13 +19,48 @@ Das ganze Wochenende über gibt es für alle Abenteuerlustigen, Tandemflüge, ei
 
 <div class="grid md:grid-cols-3 gap-4 mb-10">
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
-    <h2>Coming Soon!</h2>
+    <h2>Freitag 08.08.2025</h2>
+    <ul>
+      <li>09:00 – 18-00 Uhr 》 EXPO GELÄNDE</li>
+      <li>11:30 Uhr 》 OPENING Festivalgelände</li>
+      <li>12:00 Uhr  》 Anmeldung Bike Parkour Race</li>
+      <li>13:45 Uhr 》 Demo Flugshows - TEAM AIRBOUND</li>
+      <li>14:00 Uhr 》 START Bike Parkour Race</li>
+      <li>16:30 Uhr 》 AIRBAG Show & MTB Show Fabian Dankl</li>
+      <li>17:00 Uhr 》 PREISVERTEILUNG</li>
+      <li>17:30 Uhr 》 Demo Flugshow TEAM AIRBOUND</li>
+      <li>18:00 - 00:30 Uhr 》 TabulaRasa (Drum&Bass)</li>
+    </ul>
   </div>
   <div class="bg-[#b0def1] shadow-md rounded-lg p-4">
-    <h2>Coming Soon!</h2>
+    <h2>Samstag 09.08.2025</h2>
+    <ul>
+      <li>09:00 - 18:00 Uhr 》 EXPO GELÄNDE</li>
+      <li>09:00 - 10:15 Uhr 》 YOGA WANDERBIRD H&F</li> 
+      <li>10:00 Uhr 》 OPENING Festivalgelände</li>
+      <li>10:30 Uhr 》 START WANDERBIRD H&F (Paul Guschelbauer)</li>
+      <li>13:00 Uhr 》 Demo Flugshow TEAM AIRBOUND</li>
+      <li>13:30 Uhr 》 AIRBAG Show & MTB Show Fabian Dankl</li>
+      <li>15:00 - 00:30 Uhr 》 <strong>MAINSTAGE PRESENTED BY FM4</strong></li>
+      <li>18:30 Uhr 》  ( SURPRISE! )</li>
+    </ul>
+    <h2 class="mt-4">TIMETABLE MAINSTAGE PRESENTED BY FM4</h2>
+    <ul>
+      <li>15:00 - 16:30 Uhr 》 KENNY BAKER</li>
+      <li>16:30 - 18:00 Uhr 》 BÄRIGER BURSCH</li>
+      <li>18:00 - 19:00 Uhr 》 KLANGWELTEN</li>
+      <li>19:00 - 20:30 Uhr 》 AL ECTRO</li>
+      <li>20:30 - 22:30 Uhr 》 KRISTIAN DAVIDEK (FM4)</li>
+      <li>22:30 - 00:30 Uhr 》 JOYCE MUNIZ (FM4)</li>
+      <li>AFTERPARTY: 23:30 - 04:00 ALPENROSENSAAL WESTENDORF (Foyer)</li>
+    </ul>
   </div>
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
-    <h2>Coming Soon!</h2>
+    <h2>Sonntag 10.08.2025</h2>
+    <ul>
+      <li>09:00 - 18:00 Uhr 》 EXPO GELÄNDE</li>
+      <li>14:00 - 17:00 Uhr 》 SHOWS VON ALLEN ATHLETEN ( Bike&Paragliding)</li>
+    </ul>
   </div>
 </div>
 
