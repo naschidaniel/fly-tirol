@@ -14,6 +14,7 @@ description: Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Fest
   <ContentPartnerCard image="/media/expo-area/nova.jpg" type="Fly" title="Nova Paragliders" sub-title="" address="" phone="" mail="" website="https://www.nova.eu"/>
   <ContentPartnerCard image="/media/expo-area/rent-a-bike.jpg" type="Bike" title="Rent-A-Bike" sub-title="" address="" phone="" mail="" website="https://www.rent-a-bike.at"/>
   <ContentPartnerCard image="/media/expo-area/skywalk.jpg" type="Fly" title="Skywalk Paragliders" sub-title="" address="" phone="" mail="" website="https://skywalk.info"/>
+  <ContentPartnerCard image="/media/expo-area/swing.jpg" type="Fly" title="Swing Paragliders" sub-title="" address="" phone="" mail="" website="https://swing.de"/>
   <ContentPartnerCard image="/media/expo-area/thok-e-bikes.jpg" type="Bike" title="Thok E-Bikes" sub-title="" address="" phone="" mail="" website="https://www.thokbikes.com"/>
   <ContentPartnerCard image="/media/expo-area/turnpoint.jpg" type="Fly" title="Turnpoint" sub-title="" address="" phone="" mail="" website="https://turnpoint.de"/>
 </div>

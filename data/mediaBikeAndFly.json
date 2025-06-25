@@ -377,6 +377,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/expo-area/swing.jpg": {
+    "url": "/media/expo-area/swing.jpg",
+    "path": "/media/expo-area/",
+    "file": "swing.jpg",
+    "stem": "swing",
+    "dimensions": {
+      "height": 980,
+      "width": 980,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/expo-area/thok-e-bikes.jpg": {
     "url": "/media/expo-area/thok-e-bikes.jpg",
     "path": "/media/expo-area/",
