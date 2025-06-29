@@ -41,18 +41,8 @@ Das ganze Wochenende über gibt es für alle Abenteuerlustigen, Tandemflüge, ei
       <li>10:30 Uhr 》 START WANDERBIRD H&F (Paul Guschelbauer)</li>
       <li>13:00 Uhr 》 Demo Flugshow TEAM AIRBOUND</li>
       <li>13:30 Uhr 》 AIRBAG Show & MTB Show Fabian Dankl</li>
-      <li>15:00 - 00:30 Uhr 》 <strong>MAINSTAGE PRESENTED BY FM4</strong></li>
+      <li>15:00 - 00:30 Uhr 》 <span class="text-lg">MAINSTAGE PRESENTED BY FM4</span></li>
       <li>18:30 Uhr 》  ( SURPRISE! )</li>
-    </ul>
-    <h2 class="mt-4">TIMETABLE MAINSTAGE PRESENTED BY FM4</h2>
-    <ul>
-      <li>15:00 - 16:30 Uhr 》 KENNY BAKER</li>
-      <li>16:30 - 18:00 Uhr 》 BÄRIGER BURSCH</li>
-      <li>18:00 - 19:00 Uhr 》 KLANGWELTEN</li>
-      <li>19:00 - 20:30 Uhr 》 AL ECTRO</li>
-      <li>20:30 - 22:30 Uhr 》 KRISTIAN DAVIDEK (FM4)</li>
-      <li>22:30 - 00:30 Uhr 》 JOYCE MUNIZ (FM4)</li>
-      <li>AFTERPARTY: 23:30 - 04:00 ALPENROSENSAAL WESTENDORF (Foyer)</li>
     </ul>
   </div>
   <div class="bg-[#c2deba] shadow-md rounded-lg p-4">
