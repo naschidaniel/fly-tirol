@@ -1,6 +1,6 @@
 ---
 title: Wanderbird
-description: Lass uns gemeinsam das Hike & Fly-Spiel spielen!! Präsentiert wird dieser aufregende Hike und Fly Community Event von Paul Guschelbauer, Red Bull und Partner.
+description: Lass uns gemeinsam das Hike & Fly-Spiel spielen!! Präsentiert wird dieser aufregende Hike und Fly Community Event von Paul Guschelbauer.
 ---
 
 Lass uns gemeinsam das Hike & Fly-Spiel spielen!

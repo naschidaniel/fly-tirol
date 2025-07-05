@@ -243,8 +243,8 @@
     "file": "atera.jpg",
     "stem": "atera",
     "dimensions": {
-      "height": 2500,
-      "width": 2500,
+      "height": 940,
+      "width": 940,
       "type": "jpg",
       "ratio": 1
     },
@@ -343,6 +343,20 @@
     "dimensions": {
       "height": 600,
       "width": 600,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/expo-area/reflect.jpg": {
+    "url": "/media/expo-area/reflect.jpg",
+    "path": "/media/expo-area/",
+    "file": "reflect.jpg",
+    "stem": "reflect",
+    "dimensions": {
+      "height": 1500,
+      "width": 1500,
       "type": "jpg",
       "ratio": 1
     },

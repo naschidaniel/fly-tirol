@@ -7,11 +7,12 @@ description: Erlebe das ultimative Bike-Testival im Rahmen des Bike and Fly Fest
 
 <div class="card--grid grid-gap-1 md:max-w-90 mx-auto py-4 md:py-12">
   <ContentPartnerCard image="/media/expo-area/advance.jpg" type="Fly" title="Advance Paragliders" sub-title="" address="" phone="" mail="" website="https://www.advance.swiss"/>
-  <ContentPartnerCard image="/media/expo-area/atera.jpg" type="Bike" title="Atera" sub-title="" address="" phone="" mail="" website="https://www.atera.de"/>
+  <ContentPartnerCard image="/media/expo-area/atera.jpg" type="Bike" title="Atera Trägersysteme" sub-title="für deinen aktiven Lebensstil seit 1963" address="Im Herrach 1, D-88299 Leutkirch im Allgäu" phone="+49 (0) 75 61 - 98 344 0" mail="info@atera.de" website="https://www.atera.de"/>
   <ContentPartnerCard image="/media/expo-area/first-degree.jpg" type="Bike" title="First 1° Degree" sub-title="" address="" phone="" mail="" website="https://firstdegree-mtb.com"/>
   <ContentPartnerCard image="/media/expo-area/flow.jpg" type="Fly" title="Flow Paragliders" sub-title="" address="" phone="" mail="" website="https://www.flowparagliders.de"/>
   <ContentPartnerCard image="/media/expo-area/gaubags_logo_bw.jpg" type="Bike" title="Gaubags" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/expo-area/nova.jpg" type="Fly" title="Nova Paragliders" sub-title="" address="" phone="" mail="" website="https://www.nova.eu"/>
+  <ContentPartnerCard image="/media/expo-area/reflect.jpg" type="Bike" title="Reflect" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/expo-area/rent-a-bike.jpg" type="Bike" title="Rent-A-Bike" sub-title="" address="" phone="" mail="" website="https://www.rent-a-bike.at"/>
   <ContentPartnerCard image="/media/expo-area/skywalk.jpg" type="Fly" title="Skywalk Paragliders" sub-title="" address="" phone="" mail="" website="https://skywalk.info"/>
   <ContentPartnerCard image="/media/expo-area/swing.jpg" type="Fly" title="Swing Paragliders" sub-title="" address="" phone="" mail="" website="https://swing.de"/>

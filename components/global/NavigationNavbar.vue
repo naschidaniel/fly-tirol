@@ -67,7 +67,7 @@
           to="/expo-area"
         />
         <NavigationNavbarLink
-          name="Wanderbird Red Bull"
+          name="Wanderbird Community Hike & Fly"
           to="/wanderbird"
         />
         <NavigationNavbarLink

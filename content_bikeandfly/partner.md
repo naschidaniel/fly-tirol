@@ -38,6 +38,6 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
   <ContentPartnerCard image="/media/partner/tabularasaLogo.jpg" type="Partner" title="TabulaRasa" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/toitoiunddixi.jpg" type="Partner" title="Toi Toi & Dixi" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/tr_eventtechnikLogo.jpg" type="Partner" title="TR Eventtechnik" sub-title="" address="" phone="" mail="" website=""/>
-  <ContentPartnerCard image="/media/partner/wanderbird.jpg" type="Partner" title="Wanderbird Red Bull" sub-title="" address="" phone="" mail="" website="https://www.wanderbird.io/"/> 
+  <ContentPartnerCard image="/media/partner/wanderbird.jpg" type="Partner" title="Wanderbird" sub-title="" address="" phone="" mail="" website="https://www.wanderbird.io/"/> 
   <ContentPartnerCard image="/media/partner/zipfer.jpg" type="Partner" title="Zipfer" sub-title="" address="" phone="" mail="" website=""/>
 </div>

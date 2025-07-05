@@ -9,7 +9,7 @@ An allen drei Festivaltagen steht das Bike- und Gleitschirm-Testival im Mittelpu
 
 Für beste Unterhaltung sorgen zudem zahlreiche Live-Bands, atemberaubende Flugshows und eine spektakuläre Mountainbike-Show, die das Publikum mit waghalsigen Stunts und eindrucksvollen Performances begeistern werden. Die perfekte Kombination aus Action und Show, die jeden in den Bann zieht.
 
-Wir hoffen, den Wanderbird Cup, einen Hike-&-Fly-Wettbewerb unter der Schirmherrschaft von Paul Guschelbauer, einem der erfolgreichsten Streckenflugpiloten der Welt, in Kooperation mit Red Bull, im Jahr 2025 wieder bei uns begrüßen zu dürfen.
+Wir hoffen, den Wanderbird Cup, einen Hike-&-Fly-Wettbewerb unter der Schirmherrschaft von Paul Guschelbauer, einem der erfolgreichsten Streckenflugpiloten der Welt im Jahr 2025 wieder bei uns begrüßen zu dürfen.
 
 Am Sonntag beginnt der Tag entspannt mit einem gemütlichen Frühschoppen. Für musikalische Untermalung ist gesorgt, während lokale Spezialitäten und erfrischende Getränke bereitstehen, um den Tag in vollen Zügen zu genießen.
 
