@@ -1050,20 +1050,6 @@
     "alt": "",
     "title": ""
   },
-  "/media/partner/erstesparkasse.jpg": {
-    "url": "/media/partner/erstesparkasse.jpg",
-    "path": "/media/partner/",
-    "file": "erstesparkasse.jpg",
-    "stem": "erstesparkasse",
-    "dimensions": {
-      "height": 2560,
-      "width": 2560,
-      "type": "jpg",
-      "ratio": 1
-    },
-    "alt": "",
-    "title": ""
-  },
   "/media/partner/eventverleihtirolLogo.jpg": {
     "url": "/media/partner/eventverleihtirolLogo.jpg",
     "path": "/media/partner/",
@@ -1162,6 +1148,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/partner/karer.jpg": {
+    "url": "/media/partner/karer.jpg",
+    "path": "/media/partner/",
+    "file": "karer.jpg",
+    "stem": "karer",
+    "dimensions": {
+      "height": 2048,
+      "width": 2048,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/partner/pletzer_und_partnerLogo.jpg": {
     "url": "/media/partner/pletzer_und_partnerLogo.jpg",
     "path": "/media/partner/",
@@ -1226,6 +1226,20 @@
     "dimensions": {
       "height": 400,
       "width": 400,
+      "type": "jpg",
+      "ratio": 1
+    },
+    "alt": "",
+    "title": ""
+  },
+  "/media/partner/sparkasse.jpg": {
+    "url": "/media/partner/sparkasse.jpg",
+    "path": "/media/partner/",
+    "file": "sparkasse.jpg",
+    "stem": "sparkasse",
+    "dimensions": {
+      "height": 1600,
+      "width": 1600,
       "type": "jpg",
       "ratio": 1
     },

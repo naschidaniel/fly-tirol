@@ -16,7 +16,6 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
   <ContentPartnerCard image="/media/partner/bergloewe.jpg" type="Partner" title="Berglöwe" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/brixental-logo-region-rgb-redLogo.jpg" type="Tourismusverband" title="Kitzbüheler Alpen" sub-title="Infobüro Westendorf" address="Schulgasse 2, 6363 Westendorf" phone="0043 57507 2300" website="https://kitzbueheler-alpen.com" mail="westendorf@kitzbuehel-alpen.com" />
   <ContentPartnerCard image="/media/partner/Coca-Cola Schriftzug SchwarzLogo.jpg" type="Partner" title="Coca Cola" sub-title="" address="" phone="" mail="" website=""/>
-  <ContentPartnerCard image="/media/partner/erstesparkasse.jpg" type="Partner" title="Erste Sparkasse" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/Event_DJ_logo.jpg" type="Partner" title="Event DJ" sub-title="" address="" phone="" mail="" website="https://linktr.ee/event_dj"/>
   <ContentPartnerCard image="/media/partner/eventverleihtirolLogo.jpg" type="Partner" title="Event Verleih Tirol" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/FlyTirolLogo.jpg" type="Flugschule" title="Fly Tirol" sub-title="Flugschule" address="Bergliftstraße 22, A-6363 Westendorf" phone="0043 676 3931494" mail="info@fly-tirol.com" website="https://fly-tirol.com"/>
@@ -25,12 +24,14 @@ description: Die Partner die mit der Flugschule Fly-Tirol Westendorf schon lange
   <ContentPartnerCard image="/media/partner/holzbaulindner.jpg" type="Partner" title="Holzbau Lindner" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/huber_und_orthoferLogo.jpg" type="Partner" title="Huber & Orthofer" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/inkerbell.jpg" type="Partner" title="INKerbell TATTOOS - TIROL" sub-title="" address="" phone="" mail="" website=""/> 
+  <ContentPartnerCard image="/media/partner/karer.jpg" type="Partner" title="Karer Bau" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/pletzer_und_partnerLogo.jpg" type="Partner" title="Pletzer & Partner OG" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/reiterstueberl.jpg" type="Partner" title="Reiterstüberl" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/RENThier-sportshopLogo.jpg" type="Partner" title="RENThier Sportshop" sub-title="" address="" phone="" mail="" website=""/>
   <ContentPartnerCard image="/media/partner/schokos.jpg" type="Partner" title="Tattoo Schokos 25 Ink" sub-title="" address="Mühltal 6, 6263 Westendorf" phone="06764676269" mail="" website="https://www.instagram.com/schokos_25_ink"/> 
   <ContentPartnerCard image="/media/partner/skiweltLogo.jpg" type="Lift" title="Skiwelt Westendorf" sub-title="Bergbahn" address="Bergliftstraße 18, 6363 Westendorf" phone="0043 5334 2000 0" website="https://westendorf.at" mail="info@westendorf.at" />
   <ContentPartnerCard image="/media/partner/soda-zitronLogo.jpg" type="Partner" title="Soda Zitron Austria" sub-title="" address="" phone="" mail="" website=""/>
+  <ContentPartnerCard image="/media/partner/sparkasse.jpg" type="Partner" title="Erste Sparkasse" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/sportkecht.jpg" type="Partner" title="Sport Kecht" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/stefantaxi.jpg" type="Partner" title="Stefan Taxi" sub-title="" address="" phone="" mail="" website=""/> 
   <ContentPartnerCard image="/media/partner/steinbachLogo.jpg" type="Partner" title="Steinbach" sub-title="" address="" phone="" mail="" website=""/>
