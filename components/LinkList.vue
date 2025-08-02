@@ -34,6 +34,9 @@
                 Verpasse nicht dieses unvergessliche Wochenende am 08. bis 10. August 2025 voller
                 Adrenalin, Spaß und Musik!
               </p>
+              <p class="pb-2">
+                Der Eintritt am Freitag und Samstag ist bis 18:00 Uhr frei. Ab 18:00 Uhr haben wir eine Abendkassa mit 10 Euro Eintritt für unser DJ Proramm. <br> Am Sonntag ist der Eintritt den ganzen Tag frei.
+              </p>
             </span>
             <span v-else>Egal ob du einmal das Gefühl der Freiheit bei einem Tandemflug in
               den wunderschönen Kitzbüheler Alpen genießen möchtest, du selbst

@@ -29,11 +29,35 @@
           allowfullscreen
         />
       </div>
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center mb-6">
         <iframe
           width="1120"
           height="630"
           src="https://www.youtube.com/embed/z631e8LEUUs?si=d01CdAOflLU-qKBS"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        />
+      </div>
+      <div class="flex justify-center items-center mb-6">
+        <iframe
+          width="1120"
+          height="630"
+          src="https://www.youtube.com/embed/S_LV7ra9ghY?si=v8Fz75QD_pZgdRKN"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        />
+      </div>
+      <div class="flex justify-center items-center mb-6">
+        <iframe
+          width="1120"
+          height="630"
+          src="https://www.youtube.com/embed/FAzM7Bw7fIs?si=da1531FfxiOdmE6c"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
