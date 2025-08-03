@@ -18,6 +18,12 @@
     <CountDown />
     <div class="max-w-90 w-full mx-auto py-6 mt-4">
       <div class="flex justify-center items-center mb-6">
+        <ResponsiveImage
+          picture="/media/plakat.jpg"
+          alt="Bike and Fly Festival Brixental"
+        />
+      </div>
+      <div class="flex justify-center items-center mb-6">
         <iframe
           width="1120"
           height="630"

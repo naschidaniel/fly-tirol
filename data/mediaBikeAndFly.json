@@ -1372,6 +1372,20 @@
     "alt": "",
     "title": ""
   },
+  "/media/plakat.jpg": {
+    "url": "/media/plakat.jpg",
+    "path": "/media/",
+    "file": "plakat.jpg",
+    "stem": "plakat",
+    "dimensions": {
+      "height": 1350,
+      "width": 1080,
+      "type": "jpg",
+      "ratio": 0.8
+    },
+    "alt": "",
+    "title": ""
+  },
   "/media/programm/gallerie/BFF24_20240809-01204.jpg": {
     "url": "/media/programm/gallerie/BFF24_20240809-01204.jpg",
     "path": "/media/programm/gallerie/",
