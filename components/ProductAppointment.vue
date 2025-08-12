@@ -73,7 +73,7 @@ const isFormValid: Ref<boolean> = ref(true)
 const isDateValid: Ref<boolean> = ref(false)
 
 const today: ComputedRef<string> = computed(
-  () => new Date().toISOString().split('T')[0],
+  () => new Date().toISOString().split('T')[0] as string,
 )
 
 const selectedDateTimestamp: ComputedRef<Date | ''> = computed(() =>

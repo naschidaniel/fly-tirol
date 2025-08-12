@@ -53,7 +53,7 @@ export function useFlyCookies() {
 
   function getAllCookies(): void {
     allCookies.value = document.cookie.split('; ').map((c) => {
-      return { name: c.split('=')[0], value: c.split('=')[1] }
+      return { name: c.split('=')[0], value: c.split('=')[1] } as Cookie
     })
   }
 

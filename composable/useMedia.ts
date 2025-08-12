@@ -1,3 +1,4 @@
+import { computed } from 'vue'
 import { useRuntimeConfig } from '#app'
 import { mediaFlyTirol, mediaHydrogen, mediaBikeAndFly, mediaGh2di } from '@/data'
 
@@ -16,7 +17,15 @@ export function useMedia() {
         : mediaBikeAndFly
 
   const headerImageGallery = Object.values(media).filter(img => img.path === '/media/index/slideshow/')
-  const headerImage = headerImageGallery.length ? ref(headerImageGallery[Math.floor(Math.random() * (headerImageGallery.length))].url) : ref('')
+  const headerImage = computed(() => {
+    const randomNumber = Math.floor(Math.random() * (headerImageGallery.length))
+    if (headerImageGallery[randomNumber]?.url === undefined) {
+      return ''
+    }
+    else {
+      return headerImageGallery[randomNumber].url
+    }
+  })
 
   return {
     media,

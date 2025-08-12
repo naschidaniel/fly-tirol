@@ -116,7 +116,8 @@ function initSelectedVariants(): void {
   )
     return
   for (const variant of product.value.variants) {
-    updateSelectedVariants(variant, variant.options[0]?.value)
+    if (variant.options[0]?.value === undefined) continue
+    updateSelectedVariants(variant, variant.options[0].value)
   }
 }
 
