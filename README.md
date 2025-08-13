@@ -1,4 +1,4 @@
-# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build bikeandfly.at](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml) [![Build hydrogen-advisers.eu](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_hydrogen.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_hydrogen.yml) [![Build gh2di.eu](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_gh2di.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_gh2di.yml)
+# flying-in-tirol [![Build fly-tirol.com](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_flytirol.yml) [![Build bikeandfly.at](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_bikeandfly.yml) [![Build hydrogen-advisers.eu](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_hydrogen.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_hydrogen.yml) [![Build gh2di.eu](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_gh2di.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_gh2di.yml)[![Build tandempoint.at](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_tandempoint.yml/badge.svg)](https://github.com/naschidaniel/fly-tirol/actions/workflows/build_tandempoint.yml)
 
 
 The source code of this project shares components for two websites.
@@ -12,10 +12,13 @@ Come and share our passion with us!
 Visit us at [https://bikeandfly.at](https://bikeandfly.at).
 
 ## hydrogen-advisers.eu
-Visit us at [http://hydrogen-advisers.eu](http://hydrogen-advisers.eu).
+Visit us at [https://hydrogen-advisers.eu](https://hydrogen-advisers.eu).
 
 ## gh2di.eu
-Visit us at [http://gh2di.eu](http://gh2di.eu).
+Visit us at [https://gh2di.eu](https://gh2di.eu).
+
+## tandempoint.at
+Visit us at [https://tandempoint.at](https://tandempoint.at).
 
 ### Optimize Images
 
@@ -44,7 +47,7 @@ echo 'NUXT_BACKEND="flytirol"' > .env
 
 export NUXT_PAGE=flytirol
 # OR
-export NUXT_PAGE=whiteclout
+export NUXT_PAGE=tandempoint
 
 # install dependencies
 $ yarn

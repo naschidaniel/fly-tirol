@@ -5,15 +5,15 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
-name: Build gh2di.eu
+name: Build tandempoint.at
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build gh2di.eu
+    name: Build tandempoint.at
     env:
-      NUXT_PAGE: gh2di
-      NUXT_BACKEND: gh2di
+      NUXT_PAGE: tandempoint
+      NUXT_BACKEND: tandempoint
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -23,11 +23,11 @@ jobs:
       - name: create .nuxt tsconfig
         run: mkdir .nuxt && echo "{}" > .nuxt/tsconfig.json
       - name: create-public
-        run: yarn create-public:gh2di
+        run: yarn create-public:tandempoint
       - name: get image-optimizer
         run: curl -L https://github.com/naschidaniel/image-optimizer/releases/download/v0.5.0/image-optimizer-linux --output image-optimizer && chmod +x image-optimizer
       - name: optimize-images
-        run: yarn optimize-images:gh2di
+        run: yarn optimize-images:tandempoint
       - name: generateMediaInformation
         run: yarn generateMediaInformation
       - name: generateContent

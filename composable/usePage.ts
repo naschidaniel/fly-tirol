@@ -1,21 +1,23 @@
 import { computed } from 'vue'
 import type { ComputedRef } from 'vue'
 import { useData } from './useData'
-import { metadataFlyTirol, metadataBikeAndFly, metadataHydrogen, metadataGh2di } from '@/data'
+import { metadataFlyTirol, metadataBikeAndFly, metadataHydrogen, metadataGh2di, metadataTandemPoint } from '@/data'
 import { useRoute, showError } from '#imports'
 import type { MetaData } from '~/types/data'
 
 export function usePage() {
   const route = useRoute()
-  const { isFlyTirol, isHydrogen, isGh2di } = useData()
+  const { isFlyTirol, isHydrogen, isGh2di, isTandemPoint } = useData()
 
-  const metadataPages = isFlyTirol
-    ? metadataFlyTirol
-    : isHydrogen
-      ? metadataHydrogen
-      : isGh2di
-        ? metadataGh2di
-        : metadataBikeAndFly
+  const metadataPages = isTandemPoint
+    ? metadataTandemPoint
+    : isFlyTirol
+      ? metadataFlyTirol
+      : isHydrogen
+        ? metadataHydrogen
+        : isGh2di
+          ? metadataGh2di
+          : metadataBikeAndFly
 
   const routeFullPath = `${route.fullPath.split('?')[0]}/`.replace('//', '/')
   if (metadataPages.find(p => p.path === routeFullPath) === undefined) {

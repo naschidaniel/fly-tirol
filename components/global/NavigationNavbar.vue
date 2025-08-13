@@ -96,6 +96,23 @@
         />
       </nav>
       <nav
+        v-else-if="isTandemPoint"
+        class="flex flex-col items-start xl:flex-row"
+      >
+        <NavigationNavbarLink
+          name="Preise Tandemfliegen"
+          to="/preise-tandemfliegen"
+        />
+        <NavigationNavbarLink
+          name="Team"
+          to="/team"
+        />
+        <NavigationNavbarLink
+          name="Kontakt"
+          to="/kontakt"
+        />
+      </nav>
+      <nav
         v-else
         class="flex flex-col items-start xl:flex-row"
       >
@@ -136,7 +153,7 @@
         @click="toggleIfDropdownIsOpen()"
       >
         <NuxtLink
-          v-if="isFlyTirol"
+          v-if="isFlyTirol || isTandemPoint"
           class="btn-primary"
           to="/buchen"
           exact
@@ -149,7 +166,7 @@
         </NuxtLink>
       </div>
       <a
-        v-if="isFlyTirol"
+        v-if="isFlyTirol || isTandemPoint"
         class="btn-primary mr-3 my-1 xl:my-0 z-10"
         :href="user?.is_authenticated && user?.role === 'CUSTOMER' ? `/shop/user-ui/user?user-id=${user.id}` : user?.is_authenticated ? `/shop/admin-ui/user?user-id=${user.id}` : `/shop/user-ui/login`"
       >
@@ -188,7 +205,7 @@ import { useData } from '@/composable/useData'
 import { useNavigation } from '@/composable/useNavigation'
 import { useBackend } from '@/composable/useBackend'
 
-const { isFlyTirol, isBikeAndFly } = useData()
+const { isFlyTirol, isBikeAndFly, isTandemPoint } = useData()
 const { isOpen } = useNavigation()
 const { cartItemsLength, user } = useBackend()
 

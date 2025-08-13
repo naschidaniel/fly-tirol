@@ -16,7 +16,10 @@
             v-if="!isHydrogen"
             class="text-lg leading-relaxed max-w-prose"
           >
-            <span v-if="isBikeAndFly">
+            <span v-if="isTandemPoint">
+              Spüren Sie die Freiheit, genießen Sie die atemberaubende Aussicht und machen Sie Ihren Traum vom Fliegen wahr.
+            </span>
+            <span v-else-if="isBikeAndFly">
               <p class="pb-2">
                 Tauche ein in ein Wochenende voller Action, Abenteuer und guter
                 Musik beim Bike and Fly Festival im malerischen Westendorf im
@@ -67,7 +70,7 @@
 import LinkCard from './LinkCard.vue'
 import { useData } from '@/composable/useData'
 
-const { isBikeAndFly, isFlyTirol, isHydrogen } = useData()
+const { isBikeAndFly, isFlyTirol, isHydrogen, isTandemPoint } = useData()
 
 const flyTirolData = [
   {
@@ -111,6 +114,30 @@ const flyTirolData = [
     cardImage: '/media/service/service.jpg',
     description: 'Dein Gleitschirm in besten Händen',
     to: '/service',
+  },
+]
+
+const tandemPointData = [
+  {
+    cardTitle: 'Preise Tandemfliegen',
+    cardImage: '/media/preise/preise.jpg',
+    description:
+      'Erfahren Sie alles über die Preise für unsere Tandemflüge von TandemPoint.',
+    to: '/preise-tandemfliegen',
+  },
+  {
+    cardTitle: 'Team',
+    cardImage: '/media/team/team.jpg',
+    description:
+      'Erfahren Sie alles über unser Team und unsere Piloten von TandemPoint.',
+    to: '/team',
+  },
+  {
+    cardTitle: 'Kontakt',
+    cardImage: '/media/kontakt/kontakt.jpg',
+    description:
+      'Kommen Sie mit uns ins Gespräch. Wir freuen uns auf Ihre Anfrage.',
+    to: '/kontakt',
   },
 ]
 
@@ -159,7 +186,9 @@ const hydrogenData = [
 
 const linkCardData = isBikeAndFly
   ? []
-  : isFlyTirol
-    ? flyTirolData
-    : hydrogenData
+  : isTandemPoint
+    ? tandemPointData
+    : isFlyTirol
+      ? flyTirolData
+      : hydrogenData
 </script>

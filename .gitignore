@@ -109,9 +109,11 @@ gh2di*.tar.gz
 /content_bikeandfly/**/*.vue
 /content_hydrogen/**/*.vue
 /content_gh2di/**/*.vue
+/content_tandempoint/**/*.vue
 /data/metadata*.ts
 /data/media*.ts
 /.public_flytirol
 /.public_bikeandfly
 /.public_hydrogen
 /.public_gh2di
+/.public_tandempoint

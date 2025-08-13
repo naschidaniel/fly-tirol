@@ -15,14 +15,16 @@
 import { usePage } from '@/composable/usePage'
 import { useData } from '@/composable/useData'
 
-const { isBikeAndFly } = useData()
+const { isBikeAndFly, isTandemPoint } = useData()
 const { page } = usePage()
 const map
-  = isBikeAndFly
-    ? '/leaflet_de_bikeandfly.html'
-    : page.value?.location === 'Westendorf'
-      ? '/leaflet_de_westendorf.html'
-      : '/leaflet_de.html'
+  = isTandemPoint
+    ? '/leaflet_de_tandempoint.html'
+    : isBikeAndFly
+      ? '/leaflet_de_bikeandfly.html'
+      : page.value?.location === 'Westendorf'
+        ? '/leaflet_de_westendorf.html'
+        : '/leaflet_de.html'
 </script>
 
 <style scoped>

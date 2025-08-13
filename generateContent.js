@@ -81,13 +81,15 @@ function generate(nuxtPage) {
 
   const json = JSON.stringify(metadataPages, null, 2)
   const constName
-    = nuxtPage === 'gh2di'
-      ? 'metadataGh2di'
-      : nuxtPage === 'hydrogen'
-        ? 'metadataHydrogen'
-        : nuxtPage === 'flytirol'
-          ? 'metadataFlyTirol'
-          : 'metadataBikeAndFly'
+    = nuxtPage === 'tandempoint'
+      ? 'metadataTandemPoint'
+      : nuxtPage === 'gh2di'
+        ? 'metadataGh2di'
+        : nuxtPage === 'hydrogen'
+          ? 'metadataHydrogen'
+          : nuxtPage === 'flytirol'
+            ? 'metadataFlyTirol'
+            : 'metadataBikeAndFly'
   writeFile(
     `data/${constName}.ts`,
     `import type { MetaData } from '@/types/data'\n\n export const ${constName}: MetaData[] = ${json}`,
@@ -98,7 +100,7 @@ function generate(nuxtPage) {
 }
 
 export default function main() {
-  for (const pagePage of ['flytirol', 'bikeandfly', 'hydrogen', 'gh2di']) {
+  for (const pagePage of ['flytirol', 'bikeandfly', 'hydrogen', 'gh2di', 'tandempoint']) {
     generate(pagePage)
   }
 }

@@ -12,6 +12,7 @@ export function useData() {
   const isHydrogen: boolean = config.public.isHydrogen
   const isGh2di: boolean = config.public.isGh2di
   const isBikeAndFly: boolean = config.public.isBikeAndFly
+  const isTandemPoint: boolean = config.public.isTandemPoint
   const licenses: License[] = config.public.licenses as License[]
   const mail: string = config.public.mail
   const phone: string = config.public.phone
@@ -30,6 +31,7 @@ export function useData() {
     isBikeAndFly,
     isHydrogen,
     isGh2di,
+    isTandemPoint,
     licenses,
     mail,
     phone,

@@ -200,7 +200,7 @@ function openYouTube() {
 }
 
 function openWhatsAppContact() {
-  const url = `whatsapp://send?phone=${phone}`
+  const url = `wa.me://${phone}`
   window.open(url)
 }
 
