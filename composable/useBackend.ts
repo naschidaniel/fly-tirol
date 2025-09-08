@@ -46,7 +46,7 @@ export function useBackend() {
     await useFetch(`${backend}/shop/api/product?category=${category}&slug=${slug}`, {
       onResponse({ response }) {
         product.value = (response._data as ResponseProduct)?.data
-        selectedDateString.value = (response._data as ResponseProduct)?.data.variants[0].options[0].value
+        selectedDateString.value = (response._data as ResponseProduct)?.data?.variants[0]?.options[0]?.value
         updateAlert((response._data as ResponseProduct)?.alert)
       },
       onResponseError({ response }) {
