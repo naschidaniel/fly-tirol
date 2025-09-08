@@ -12,7 +12,7 @@ const calenderProductsChecked: Ref<string[]> = ref([])
 const lastMonth
   = parseInt(new Date().toLocaleString('de-de', { month: 'numeric' })) - 1
 const months = Array.from({ length: 36 - lastMonth }, (_, i) =>
-  new Date(Date.UTC(2023, i + lastMonth, 1, 0, 0, 0)).toLocaleString('de-de', {
+  new Date(Date.UTC(2025, i + lastMonth, 1, 0, 0, 0)).toLocaleString('de-de', {
     month: 'long',
     year: 'numeric',
   }),
