@@ -6,9 +6,10 @@ import type { Product } from '@/types/shop/models/Product'
 import type { Cart } from '@/types/shop/models/Cart'
 import type { Alert } from '@/types/shop/models/Alert'
 import type { User } from '@/types/shop/models/User'
+import type { ResponseAccount, ResponseAlert, ResponseCart, ResponseCartItem, ResponseProduct, ResponseProducts } from '~/types/shop'
 
 export const products: Ref<Product[]> = ref([] as Product[])
-const cartId: Ref<string | null> = ref(null)
+const cartId: Ref<string | null | undefined> = ref(null)
 const cart: Ref<Cart | undefined> = ref(undefined)
 const user: Ref<User | undefined> = ref(undefined)
 const alert: Ref<Alert | undefined> = ref(undefined)
@@ -31,11 +32,11 @@ export function useBackend() {
     if (!import.meta.client || isHydrogen || isGh2di) return
     await useFetch(`${backend}/shop/api/products?categories=${category}`, {
       onResponse({ response }) {
-        products.value = response._data?.data.products
-        updateAlert(response._data?.alert)
+        products.value = (response._data as ResponseProducts)?.data.products
+        updateAlert((response._data as ResponseProducts)?.alert)
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseProducts)?.alert)
       },
     })
   }
@@ -44,12 +45,12 @@ export function useBackend() {
     if (!import.meta.client || isHydrogen || isGh2di) return
     await useFetch(`${backend}/shop/api/product?category=${category}&slug=${slug}`, {
       onResponse({ response }) {
-        product.value = response._data?.data
-        selectedDateString.value = response._data?.data.variants[0].options[0].value
-        updateAlert(response._data?.alert)
+        product.value = (response._data as ResponseProduct)?.data
+        selectedDateString.value = (response._data as ResponseProduct)?.data.variants[0].options[0].value
+        updateAlert((response._data as ResponseProduct)?.alert)
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseProduct)?.alert)
       },
     })
   }
@@ -92,10 +93,10 @@ export function useBackend() {
           cartId.value = null
         }
         try {
-          cart.value = response._data.data
-          updateAlert(response._data.alert)
-          cartId.value = response._data.data.id
-          localStorage.setItem('cartId', response._data.data.id)
+          cart.value = (response._data as ResponseCart).data
+          updateAlert((response._data as ResponseCart).alert)
+          cartId.value = (response._data as ResponseCart).data.id
+          localStorage.setItem('cartId', (response._data as ResponseCart).data.id as string)
           console.info(`The Cart ${_cartId} was loaded from local storrage`)
         }
         catch {
@@ -111,7 +112,7 @@ export function useBackend() {
         options.query.t = new Date()
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseCart)?.alert)
       },
     })
   }
@@ -143,11 +144,11 @@ export function useBackend() {
     await useFetch(`${backend}/shop/api/user/whoami/`, {
       method: 'GET',
       onResponse({ response }) {
-        user.value = response._data.data
-        updateAlert(response._data.alert)
+        user.value = (response._data as ResponseAccount).data
+        updateAlert((response._data as ResponseAccount).alert)
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseAccount)?.alert)
       },
 
     })
@@ -164,14 +165,14 @@ export function useBackend() {
         'X-CSRFToken': csrftoken as string,
       },
       onResponse({ response }) {
-        cart.value = response._data.data
-        cartId.value = response._data.data.id
-        updateAlert(response._data.alert)
-        localStorage.setItem('cartId', response._data.data.id)
+        cart.value = (response._data as ResponseCart).data
+        cartId.value = (response._data as ResponseCart).data.id
+        updateAlert((response._data as ResponseCart).alert)
+        localStorage.setItem('cartId', (response._data as ResponseCart).data.id as string)
         navigateTo('/buchen')
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseCart)?.alert)
       },
     })
   }
@@ -187,10 +188,10 @@ export function useBackend() {
         'X-CSRFToken': csrftoken as string,
       },
       onResponse({ response }) {
-        updateAlert(response._data.alert)
+        updateAlert((response._data as ResponseAlert).alert)
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseAlert)?.alert)
       },
     })
   }
@@ -232,10 +233,10 @@ export function useBackend() {
         'X-CSRFToken': csrftoken as string,
       },
       onResponse({ response }) {
-        updateAlert(response._data.alert)
+        updateAlert((response._data as ResponseCartItem).alert)
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseCartItem)?.alert)
       },
     })
     await initCart()
@@ -251,10 +252,10 @@ export function useBackend() {
         'X-CSRFToken': csrftoken as string,
       },
       onResponse({ response }) {
-        updateAlert(response._data.alert)
+        updateAlert((response._data as ResponseCartItem).alert)
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseCartItem)?.alert)
       },
     })
     await initCart()
@@ -270,10 +271,10 @@ export function useBackend() {
         'X-CSRFToken': csrftoken as string,
       },
       onResponse({ response }) {
-        updateAlert(response._data.alert)
+        updateAlert((response._data as ResponseAlert).alert)
       },
       onResponseError({ response }) {
-        updateAlert(response._data?.alert)
+        updateAlert((response._data as ResponseAlert)?.alert)
       },
     })
     localStorage.removeItem('cartId')
