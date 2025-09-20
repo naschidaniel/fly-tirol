@@ -5,7 +5,7 @@
       Bike & Fly Festival
     </div>
     <div class="text-2xl font-bold mb-6">
-      08. bis 10. August 2025
+      19. bis 21. Juni 2026
     </div>
     <div class="flex flex-row items-center justify-center">
       <div>
@@ -47,7 +47,7 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
-const countDownDate = new Date('2025-08-08').getTime()
+const countDownDate = new Date('2026-06-19').getTime()
 const days = ref(0)
 const hours = ref(0)
 const minutes = ref(0)
